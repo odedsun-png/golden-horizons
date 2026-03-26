@@ -13,15 +13,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1">
+          <Link href="/" className="flex items-center">
             <img src="/logo.svg" alt="Golden Horizons" className="h-10 w-auto" />
-              <span className="font-bold text-foreground">horizons</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4 md:gap-6">
-            {/* Destinations Link */}
             <Link
               href="/destinations"
               className="text-sm font-semibold tracking-wide uppercase text-foreground/80 hover:text-foreground transition-colors"
@@ -29,7 +26,6 @@ export default function Header() {
               Rankings
             </Link>
 
-            {/* Search */}
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
               className="p-2 text-foreground/70 hover:text-foreground transition-colors"
@@ -37,7 +33,6 @@ export default function Header() {
               {isSearchOpen ? <X className="w-5 h-5" /> : <Search className="w-5 h-5" />}
             </button>
 
-            {/* Subscribe Button */}
             <Link
               href="#subscribe"
               className="px-5 py-2.5 bg-foreground text-background text-sm font-semibold tracking-wide uppercase rounded hover:bg-foreground/90 transition-colors"
@@ -73,7 +68,6 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden pb-6 border-t border-border/50 pt-4 animate-in slide-in-from-top-2 duration-200">
-            {/* Mobile Search */}
             <div className="relative mb-4">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <input
@@ -83,7 +77,6 @@ export default function Header() {
               />
             </div>
 
-            {/* Mobile Rankings Link */}
             <Link
               href="/destinations"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -92,7 +85,6 @@ export default function Header() {
               Top Retirement Destinations
             </Link>
 
-            {/* Mobile Subscribe */}
             <Link
               href="#subscribe"
               onClick={() => setIsMobileMenuOpen(false)}
