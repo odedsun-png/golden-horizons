@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 70" width="340" height="70">
+  <!-- Sun rays -->
+  <g transform="translate(32, 35)">
+    <!-- Ray lines -->
+    <line x1="0" y1="-22" x2="0" y2="-17" stroke="#C8923A" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="10.5" y1="-19.5" x2="8" y2="-15.3" stroke="#C8923A" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="19.5" y1="-10.5" x2="15.3" y2="-8" stroke="#C8923A" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-10.5" y1="-19.5" x2="-8" y2="-15.3" stroke="#C8923A" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-19.5" y1="-10.5" x2="-15.3" y2="-8" stroke="#C8923A" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="22" y1="0" x2="17" y2="0" stroke="#C8923A" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-22" y1="0" x2="-17" y2="0" stroke="#C8923A" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Horizon line -->
+    <line x1="-22" y1="5" x2="22" y2="5" stroke="#C8923A" stroke-width="1.5"/>
+
+    <!-- Sun semicircle -->
+    <path d="M -13 5 A 13 13 0 0 1 13 5" fill="#D4A84B" stroke="#C8923A" stroke-width="1"/>
+  </g>
+
+  <!-- GOLDEN HORIZONS text -->
+  <text x="62" y="33" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="bold" letter-spacing="3" fill="#2C2416" text-anchor="start">GOLDEN HORIZONS</text>
+
+  <!-- Tagline -->
+  <text x="63" y="50" font-family="Georgia, 'Times New Roman', serif" font-size="8.5" letter-spacing="2.5" fill="#8B7355" text-anchor="start">YOUR GUIDE TO RETIREMENT ABROAD</text>
+</svg>
