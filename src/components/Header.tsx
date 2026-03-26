@@ -14,8 +14,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-1">
-            <span className="text-xl md:text-2xl tracking-tight">
-              <span className="font-light text-foreground/80">golden</span>
+            <img src="/logo.svg" alt="Golden Horizons" className="h-10 w-auto" />
               <span className="font-bold text-foreground">horizons</span>
             </span>
           </Link>
