@@ -27,10 +27,7 @@ export default function Footer() {
           </div>
 
           {/* Brand */}
-          <div className="text-[11px] sm:text-xs text-white/40">
-            <span className="font-light">golden</span>
-            <span className="font-semibold">horizons</span>
-          </div>
+          <img src="/logo.svg" alt="Golden Horizons" className="h-8 w-auto opacity-70" />
 
           {/* Address */}
           <p className="text-[11px] sm:text-xs text-white/40">
@@ -39,7 +36,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-[11px] sm:text-xs text-white/40">
-            © 2026 Golden Horizons — All rights reserved
+            Â© 2026 Golden Horizons â All rights reserved
           </p>
         </div>
       </div>
