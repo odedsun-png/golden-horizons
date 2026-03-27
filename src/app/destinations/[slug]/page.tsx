@@ -14,10 +14,7 @@ function ScoreBar({ label, score }: { label: string; score: number }) {
         <span className="text-sm font-bold text-amber-600">{score}/100</span>
       </div>
       <div className="w-full bg-gray-200 rounded-full h-2">
-        <div
-          className="bg-amber-500 h-2 rounded-full"
-          style={{ width: `${score}%` }}
-        />
+        <div className="bg-amber-500 h-2 rounded-full" style={{ width: `${score}%` }} />
       </div>
     </div>
   );
@@ -26,14 +23,14 @@ function ScoreBar({ label, score }: { label: string; score: number }) {
 export default async function DestinationDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const dest = getDestinationDetail(params.slug);
+  const { slug } = await params;
+  const dest = getDestinationDetail(slug);
   if (!dest) return notFound();
 
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Hero */}
       <div className="bg-gradient-to-br from-amber-700 to-amber-500 text-white py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <p className="text-amber-200 text-sm uppercase tracking-widest mb-2">{dest.region}</p>
@@ -44,12 +41,10 @@ export default async function DestinationDetailPage({
 
       <div className="max-w-4xl mx-auto px-6 py-12 space-y-12">
 
-        {/* Summary */}
         <section>
           <p className="text-lg text-gray-700 leading-relaxed">{dest.summary}</p>
         </section>
 
-        {/* QoL Scores */}
         <section className="bg-white rounded-2xl shadow p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Quality of Life Scores</h2>
           <ScoreBar label="Overall Quality of Life" score={dest.qolScore} />
@@ -60,7 +55,6 @@ export default async function DestinationDetailPage({
           <ScoreBar label="Climate" score={dest.climateScore} />
         </section>
 
-        {/* Pros & Cons */}
         <section className="grid md:grid-cols-2 gap-6">
           <div className="bg-green-50 rounded-2xl p-6">
             <h2 className="text-xl font-bold text-green-800 mb-4">✅ Pros</h2>
@@ -86,7 +80,6 @@ export default async function DestinationDetailPage({
           </div>
         </section>
 
-        {/* Visa */}
         <section className="bg-white rounded-2xl shadow p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">🛂 Visa Information</h2>
           <div className="grid md:grid-cols-2 gap-4 mb-4">
@@ -118,7 +111,6 @@ export default async function DestinationDetailPage({
           </div>
         </section>
 
-        {/* Taxes */}
         <section className="bg-white rounded-2xl shadow p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">💰 Tax Overview</h2>
           <p className="text-gray-700 mb-4">{dest.taxes.summary}</p>
@@ -139,7 +131,6 @@ export default async function DestinationDetailPage({
           <p className="mt-4 text-sm text-gray-500 italic">{dest.taxes.notes}</p>
         </section>
 
-        {/* Healthcare */}
         <section className="bg-white rounded-2xl shadow p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">🏥 Healthcare</h2>
           <p className="text-gray-700 mb-4">{dest.healthcare.summary}</p>
@@ -159,7 +150,6 @@ export default async function DestinationDetailPage({
           </div>
         </section>
 
-        {/* Cost of Living */}
         <section className="bg-white rounded-2xl shadow p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">🏠 Cost of Living</h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -190,7 +180,6 @@ export default async function DestinationDetailPage({
           </div>
         </section>
 
-        {/* Back link */}
         <div className="text-center pb-8">
           
             href="/destinations"
