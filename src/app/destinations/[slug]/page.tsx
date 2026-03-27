@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getDestinationDetail, getAllDestinationDetails } from "@/lib/destination-details";
 import { notFound } from "next/navigation";
 
@@ -177,9 +178,9 @@ export default async function DestinationDetailPage({ params }: Props) {
         </section>
 
         <div className="text-center pb-8">
-          <a href="/destinations" className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-full transition">
+          <Link href="/destinations" className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-full transition">
             Back to All Destinations
-          </a>
+          </Link>
         </div>
 
       </div>
