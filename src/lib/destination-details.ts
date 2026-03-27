@@ -50,7 +50,7 @@ export const destinationDetails: Record<string, DestinationDetail> = {
     country: "Portugal",
     region: "Europe",
     tagline: "Sunny coastlines, low cost, and a welcoming expat culture",
-    heroImage: "/images/portugal.jpg",
+    heroImage: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1400&q=80",
     qolScore: 88,
     costScore: 82,
     healthcareScore: 85,
