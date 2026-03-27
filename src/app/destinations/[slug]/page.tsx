@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getDestinationDetail, getAllDestinationDetails } from "@/lib/destination-details";
 import { notFound } from "next/navigation";
 
@@ -30,11 +31,23 @@ export default async function DestinationDetailPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-gradient-to-br from-amber-700 to-amber-500 text-white py-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-amber-200 text-sm uppercase tracking-widest mb-2">{dest.region}</p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">{dest.name}</h1>
-          <p className="text-xl text-amber-100">{dest.tagline}</p>
+
+      {/* Hero with image */}
+      <div className="relative h-80 md:h-96 w-full overflow-hidden">
+        {dest.heroImage ? (
+          <img
+            src={dest.heroImage}
+            alt={dest.name}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-amber-500" />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 p-8 max-w-4xl mx-auto">
+          <p className="text-amber-300 text-sm uppercase tracking-widest mb-1">{dest.region}</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">{dest.name}</h1>
+          <p className="text-lg text-white/80">{dest.tagline}</p>
         </div>
       </div>
 
