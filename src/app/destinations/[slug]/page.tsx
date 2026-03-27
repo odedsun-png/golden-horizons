@@ -20,17 +20,15 @@ function ScoreBar({ label, score }: { label: string; score: number }) {
   );
 }
 
-export default async function DestinationDetailPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+type Props = { params: Promise<{ slug: string }> };
+
+export default async function DestinationDetailPage({ params }: Props) {
   const { slug } = await params;
   const dest = getDestinationDetail(slug);
   if (!dest) return notFound();
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-br from-amber-700 to-amber-500 text-white py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <p className="text-amber-200 text-sm uppercase tracking-widest mb-2">{dest.region}</p>
@@ -57,22 +55,22 @@ export default async function DestinationDetailPage({
 
         <section className="grid md:grid-cols-2 gap-6">
           <div className="bg-green-50 rounded-2xl p-6">
-            <h2 className="text-xl font-bold text-green-800 mb-4">✅ Pros</h2>
+            <h2 className="text-xl font-bold text-green-800 mb-4">Pros</h2>
             <ul className="space-y-2">
               {dest.pros.map((pro) => (
                 <li key={pro} className="flex items-start gap-2 text-green-900">
-                  <span className="mt-1 text-green-500">•</span>
+                  <span className="mt-1 text-green-500">+</span>
                   <span>{pro}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="bg-red-50 rounded-2xl p-6">
-            <h2 className="text-xl font-bold text-red-800 mb-4">⚠️ Cons</h2>
+            <h2 className="text-xl font-bold text-red-800 mb-4">Cons</h2>
             <ul className="space-y-2">
               {dest.cons.map((con) => (
                 <li key={con} className="flex items-start gap-2 text-red-900">
-                  <span className="mt-1 text-red-400">•</span>
+                  <span className="mt-1 text-red-400">-</span>
                   <span>{con}</span>
                 </li>
               ))}
@@ -81,7 +79,7 @@ export default async function DestinationDetailPage({
         </section>
 
         <section className="bg-white rounded-2xl shadow p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">🛂 Visa Information</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Visa Information</h2>
           <div className="grid md:grid-cols-2 gap-4 mb-4">
             <div>
               <p className="text-sm text-gray-500">Visa Type</p>
@@ -98,21 +96,19 @@ export default async function DestinationDetailPage({
               </div>
             )}
           </div>
-          <div>
-            <p className="text-sm text-gray-500 mb-2">Requirements</p>
-            <ul className="space-y-1">
-              {dest.visa.requirements.map((req) => (
-                <li key={req} className="flex items-start gap-2 text-gray-700">
-                  <span className="text-amber-500">→</span>
-                  <span>{req}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <p className="text-sm text-gray-500 mb-2">Requirements</p>
+          <ul className="space-y-1">
+            {dest.visa.requirements.map((req) => (
+              <li key={req} className="flex items-start gap-2 text-gray-700">
+                <span className="text-amber-500">→</span>
+                <span>{req}</span>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section className="bg-white rounded-2xl shadow p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">💰 Tax Overview</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Tax Overview</h2>
           <p className="text-gray-700 mb-4">{dest.taxes.summary}</p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-gray-50 rounded-xl p-4">
@@ -132,7 +128,7 @@ export default async function DestinationDetailPage({
         </section>
 
         <section className="bg-white rounded-2xl shadow p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">🏥 Healthcare</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Healthcare</h2>
           <p className="text-gray-700 mb-4">{dest.healthcare.summary}</p>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-gray-50 rounded-xl p-4">
@@ -151,7 +147,7 @@ export default async function DestinationDetailPage({
         </section>
 
         <section className="bg-white rounded-2xl shadow p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">🏠 Cost of Living</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Cost of Living</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-amber-50 rounded-xl p-4">
               <p className="text-sm text-gray-500">Monthly Budget (Solo)</p>
@@ -181,15 +177,12 @@ export default async function DestinationDetailPage({
         </section>
 
         <div className="text-center pb-8">
-          
-            href="/destinations"
-            className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-full transition"
-          >
-            ← Back to All Destinations
+          <a href="/destinations" className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3 rounded-full transition">
+            Back to All Destinations
           </a>
         </div>
 
       </div>
-    </main>
+    </div>
   );
 }
