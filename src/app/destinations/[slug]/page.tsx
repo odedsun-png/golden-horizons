@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   return getAllDestinationIds().map((id) => ({ slug: id }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const d = getDestinationById(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const d = getDestinationById(slug);
   if (!d) return { title: "Not Found" };
   return {
     title: `${d.name} Retirement Guide 2026 — Golden Horizons`,
@@ -27,10 +28,7 @@ function QolBar({ label, score, icon }: { label: string; score: number; icon: st
           <span className="text-xs font-bold text-primary">{score}/10</span>
         </div>
         <div className="h-1.5 bg-border rounded-full overflow-hidden">
-          <div
-            className="h-full rounded-full bg-primary transition-all"
-            style={{ width: `${score * 10}%` }}
-          />
+          <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${score * 10}%` }} />
         </div>
       </div>
     </div>
@@ -49,47 +47,35 @@ function KeyTakeaway({ text }: { text: string }) {
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="mb-5">
-      <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-foreground/50 mb-2">
-        {children}
-      </h2>
+      <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-foreground/50 mb-2">{children}</h2>
       <div className="w-8 h-px bg-primary" />
     </div>
   );
 }
 
 const qolIcons: Record<string, string> = {
-  healthcareQuality: "🏥",
-  safety: "🛡️",
-  englishProficiency: "🗣️",
-  infrastructure: "🏗️",
-  expatCommunity: "👥",
-  climate: "☀️",
+  healthcareQuality: "🏥", safety: "🛡️", englishProficiency: "🗣️",
+  infrastructure: "🏗️", expatCommunity: "👥", climate: "☀️",
 };
 
 const qolLabels: Record<string, string> = {
-  healthcareQuality: "Healthcare Quality",
-  safety: "Safety",
-  englishProficiency: "English Proficiency",
-  infrastructure: "Infrastructure",
-  expatCommunity: "Expat Community",
-  climate: "Climate",
+  healthcareQuality: "Healthcare Quality", safety: "Safety",
+  englishProficiency: "English Proficiency", infrastructure: "Infrastructure",
+  expatCommunity: "Expat Community", climate: "Climate",
 };
 
 type CostKey = "rent1br" | "rent2br" | "groceries" | "dining" | "utilities" | "transportation" | "healthcare" | "entertainment";
 
 const costLabels: Array<{ key: CostKey; label: string }> = [
-  { key: "rent1br", label: "1BR Rent" },
-  { key: "rent2br", label: "2BR Rent" },
-  { key: "groceries", label: "Groceries" },
-  { key: "dining", label: "Dining Out" },
-  { key: "utilities", label: "Utilities" },
-  { key: "transportation", label: "Transport" },
-  { key: "healthcare", label: "Healthcare" },
-  { key: "entertainment", label: "Entertainment" },
+  { key: "rent1br", label: "1BR Rent" }, { key: "rent2br", label: "2BR Rent" },
+  { key: "groceries", label: "Groceries" }, { key: "dining", label: "Dining Out" },
+  { key: "utilities", label: "Utilities" }, { key: "transportation", label: "Transport" },
+  { key: "healthcare", label: "Healthcare" }, { key: "entertainment", label: "Entertainment" },
 ];
 
-export default function DestinationPage({ params }: { params: { slug: string } }) {
-  const d = getDestinationById(params.slug);
+export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const d = getDestinationById(slug);
   if (!d) notFound();
 
   const avgQol = Math.round(
@@ -155,7 +141,6 @@ export default function DestinationPage({ params }: { params: { slug: string } }
 
             {/* Main Column */}
             <div className="lg:col-span-2 space-y-12">
-
               <section>
                 <SectionHeading>Overview</SectionHeading>
                 <p className="text-foreground/80 leading-relaxed">{d.overview}</p>
@@ -230,16 +215,10 @@ export default function DestinationPage({ params }: { params: { slug: string } }
                 <SectionHeading>Visa & Residency</SectionHeading>
                 <div className="bg-white border border-border p-6 rounded-sm">
                   <div className="flex flex-wrap gap-3 mb-4">
-                    <span className="text-xs font-semibold bg-primary text-white px-3 py-1 rounded-full">
-                      {d.visa.type}
-                    </span>
-                    <span className="text-xs bg-muted px-3 py-1 rounded-full text-foreground/70">
-                      Min income: {d.visa.minIncome}
-                    </span>
+                    <span className="text-xs font-semibold bg-primary text-white px-3 py-1 rounded-full">{d.visa.type}</span>
+                    <span className="text-xs bg-muted px-3 py-1 rounded-full text-foreground/70">Min income: {d.visa.minIncome}</span>
                     {d.visa.ssSaccepted && (
-                      <span className="text-xs bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">
-                        ✓ Social Security accepted
-                      </span>
+                      <span className="text-xs bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">✓ Social Security accepted</span>
                     )}
                   </div>
                   <p className="text-sm text-foreground/80 leading-relaxed">{d.visa.summary}</p>
@@ -251,15 +230,9 @@ export default function DestinationPage({ params }: { params: { slug: string } }
                 <SectionHeading>Taxes</SectionHeading>
                 <div className="bg-white border border-border p-6 rounded-sm">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {d.taxes.usTaxTreaty && (
-                      <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ US Tax Treaty</span>
-                    )}
-                    {d.taxes.totalizationAgreement && (
-                      <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ Totalization Agreement</span>
-                    )}
-                    {!d.taxes.hostTaxesSS && (
-                      <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ SS Not Taxed Locally</span>
-                    )}
+                    {d.taxes.usTaxTreaty && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ US Tax Treaty</span>}
+                    {d.taxes.totalizationAgreement && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ Totalization Agreement</span>}
+                    {!d.taxes.hostTaxesSS && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ SS Not Taxed Locally</span>}
                   </div>
                   <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wide">Foreign Income Tax</p>
                   <p className="text-sm font-semibold text-foreground mb-3">{d.taxes.foreignIncomeTax}</p>
@@ -303,10 +276,7 @@ export default function DestinationPage({ params }: { params: { slug: string } }
                   <span className="text-xs text-muted-foreground uppercase tracking-wide">Overall Avg</span>
                   <span className="text-2xl font-bold text-primary">{avgQol}<span className="text-xs text-muted-foreground font-normal">/10</span></span>
                 </div>
-                <Link
-                  href="/destinations"
-                  className="mt-5 block w-full text-center px-4 py-3 bg-foreground text-background text-xs font-semibold tracking-widest uppercase rounded-sm hover:bg-foreground/90 transition-colors"
-                >
+                <Link href="/destinations" className="mt-5 block w-full text-center px-4 py-3 bg-foreground text-background text-xs font-semibold tracking-widest uppercase rounded-sm hover:bg-foreground/90 transition-colors">
                   Compare All Countries
                 </Link>
               </div>
@@ -316,10 +286,7 @@ export default function DestinationPage({ params }: { params: { slug: string } }
                 <p className="text-white/60 text-xs leading-relaxed mb-4">
                   Get weekly visa updates, expat guides, and insider tips for {d.name} delivered free.
                 </p>
-                <Link
-                  href="/#subscribe"
-                  className="block w-full text-center px-4 py-3 bg-primary text-white text-xs font-semibold tracking-widest uppercase rounded-sm hover:bg-primary/90 transition-colors"
-                >
+                <Link href="/#subscribe" className="block w-full text-center px-4 py-3 bg-primary text-white text-xs font-semibold tracking-widest uppercase rounded-sm hover:bg-primary/90 transition-colors">
                   Subscribe Free →
                 </Link>
               </div>
