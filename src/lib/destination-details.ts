@@ -1,368 +1,381 @@
-export interface DestinationDetail {
-  slug: string;
-  name: string;
-  country: string;
-  region: string;
-  tagline: string;
-  heroImage: string;
-  qolScore: number;
-  costScore: number;
-  healthcareScore: number;
-  safetyScore: number;
-  internetScore: number;
-  climateScore: number;
-  pros: string[];
-  cons: string[];
-  visa: {
-    type: string;
-    duration: string;
-    requirements: string[];
-    minIncome?: string;
-  };
-  taxes: {
-    summary: string;
-    incomeTax: string;
-    capitalGains: string;
-    remittanceBased: boolean;
-    notes: string;
-  };
-  healthcare: {
-    summary: string;
-    publicAvailable: boolean;
-    avgMonthlyPremium: string;
-    quality: string;
-  };
-  costs: {
-    monthlyBudgetSolo: string;
-    monthlyBudgetCouple: string;
-    rent1br: string;
-    mealOut: string;
-    groceries: string;
-    transport: string;
-  };
-  summary: string;
-}
-
-export const destinationDetails: Record<string, DestinationDetail> = {
-  portugal: {
-    slug: "portugal",
-    name: "Portugal",
-    country: "Portugal",
-    region: "Europe",
-    tagline: "Sunny coastlines, low cost, and a welcoming expat culture",
-    heroImage: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1400&q=80",
-    qolScore: 88,
-    costScore: 82,
-    healthcareScore: 85,
-    safetyScore: 90,
-    internetScore: 80,
-    climateScore: 92,
-    pros: [
-      "Affordable cost of living vs. Western Europe",
-      "Excellent healthcare system",
-      "High safety — one of the safest countries in the world",
-      "Warm climate with 300+ sunny days/year",
-      "English widely spoken",
-      "Golden Visa and D7 Passive Income Visa available",
-      "Strong expat community",
-    ],
-    cons: [
-      "Bureaucracy can be slow",
-      "Property prices rising fast in Lisbon/Porto",
-      "Lower salaries if you work locally",
-      "Language barrier outside tourist areas",
-    ],
-    visa: {
-      type: "D7 Passive Income Visa",
-      duration: "2 years (renewable)",
-      requirements: [
-        "Proof of passive income (pension, rental, dividends)",
-        "Clean criminal record",
-        "Health insurance",
-        "Proof of accommodation",
-      ],
-      minIncome: "~€760/month",
-    },
-    taxes: {
-      summary: "Portugal offers the NHR tax regime for new residents.",
-      incomeTax: "Flat 20% under NHR for qualifying income",
-      capitalGains: "28% on capital gains",
-      remittanceBased: false,
-      notes: "NHR status lasts 10 years. Foreign pension income may be taxed at 10%.",
-    },
-    healthcare: {
-      summary: "Portugal has a strong national health service (SNS) and excellent private options.",
-      publicAvailable: true,
-      avgMonthlyPremium: "~€60–€150/month private",
-      quality: "Excellent — ranked top 15 globally",
-    },
-    costs: {
-      monthlyBudgetSolo: "€1,500–€2,200",
-      monthlyBudgetCouple: "€2,200–€3,200",
-      rent1br: "€800–€1,400/month (Lisbon), €500–€900 (smaller cities)",
-      mealOut: "€10–€20 per person",
-      groceries: "€200–€350/month",
-      transport: "€40/month public transit",
-    },
-    summary:
-      "Portugal consistently ranks as one of the best countries for retirees and remote workers. Its combination of safety, healthcare, climate, and relatively low cost of living make it a top choice for Americans and Canadians seeking a European base.",
-  },
-
-  mexico: {
-    slug: "mexico",
-    name: "Mexico",
-    country: "Mexico",
-    region: "Latin America",
-    tagline: "Vibrant culture, warm weather, and unbeatable value",
-    heroImage: "https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1400&q=80",
-    qolScore: 78,
-    costScore: 92,
-    healthcareScore: 72,
-    safetyScore: 62,
-    internetScore: 74,
-    climateScore: 88,
-    pros: [
-      "Very low cost of living",
-      "Close to the US — easy flights home",
-      "Rich culture and food scene",
-      "Warm climate year-round in most areas",
-      "Large expat communities in CDMX, Oaxaca, Merida",
-      "Temporary residency easy to obtain",
-    ],
-    cons: [
-      "Safety concerns in certain regions",
-      "Healthcare quality varies significantly by city",
-      "Bureaucracy and legal complexity",
-      "Air quality issues in Mexico City",
-    ],
-    visa: {
-      type: "Temporary Resident Visa",
-      duration: "1–4 years",
-      requirements: [
-        "Proof of income or savings",
-        "Application at Mexican consulate",
-        "Background check",
-      ],
-      minIncome: "~$1,620 USD/month",
-    },
-    taxes: {
-      summary: "Mexico taxes residents on worldwide income.",
-      incomeTax: "1.92%–35% progressive",
-      capitalGains: "25% flat or 35% on net gain",
-      remittanceBased: false,
-      notes: "US-Mexico tax treaty helps avoid double taxation.",
-    },
-    healthcare: {
-      summary: "Private healthcare is affordable and high quality in major cities.",
-      publicAvailable: true,
-      avgMonthlyPremium: "~$100–$250 USD/month private",
-      quality: "Good in cities, limited in rural areas",
-    },
-    costs: {
-      monthlyBudgetSolo: "$1,200–$2,000 USD",
-      monthlyBudgetCouple: "$1,800–$2,800 USD",
-      rent1br: "$500–$1,200 USD/month",
-      mealOut: "$5–$15 USD",
-      groceries: "$150–$300 USD/month",
-      transport: "$20–$50 USD/month",
-    },
-    summary:
-      "Mexico offers North Americans an easy transition abroad — familiar products, short flights home, and a dramatically lower cost of living. Best suited to those comfortable navigating safety considerations and drawn to vibrant Latin culture.",
-  },
-
-  thailand: {
-    slug: "thailand",
-    name: "Thailand",
-    country: "Thailand",
-    region: "Southeast Asia",
-    tagline: "World-class food, tropical paradise, and ultra-low costs",
-    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1400&q=80",
-    qolScore: 80,
-    costScore: 95,
-    healthcareScore: 82,
-    safetyScore: 78,
-    internetScore: 76,
-    climateScore: 80,
-    pros: [
-      "Extremely low cost of living",
-      "World-class private hospitals",
-      "Amazing food and culture",
-      "Warm weather year-round",
-      "Friendly locals and large expat community",
-      "Thailand LTR Visa available for 10 years",
-    ],
-    cons: [
-      "Hot and humid — extreme heat in summer",
-      "Language barrier is significant",
-      "Cannot own land as a foreigner",
-      "Visa rules can be complex",
-      "Air quality issues in Chiang Mai (burning season)",
-    ],
-    visa: {
-      type: "Long-Term Resident (LTR) Visa",
-      duration: "10 years",
-      requirements: [
-        "Passive income of $40,000+/year OR $80k savings",
-        "Health insurance with $50k coverage",
-        "Background check",
-      ],
-      minIncome: "$40,000 USD/year",
-    },
-    taxes: {
-      summary: "Thailand taxes income earned in Thailand. Foreign-sourced income rules changed in 2024.",
-      incomeTax: "0%–35% progressive",
-      capitalGains: "Taxed as ordinary income",
-      remittanceBased: true,
-      notes: "LTR visa holders get tax exemptions on foreign-sourced income.",
-    },
-    healthcare: {
-      summary: "Thailand has excellent private hospitals especially in Bangkok and Chiang Mai.",
-      publicAvailable: false,
-      avgMonthlyPremium: "~$80–$200 USD/month",
-      quality: "Excellent private, basic public",
-    },
-    costs: {
-      monthlyBudgetSolo: "$1,000–$1,800 USD",
-      monthlyBudgetCouple: "$1,500–$2,500 USD",
-      rent1br: "$300–$800 USD/month",
-      mealOut: "$2–$10 USD",
-      groceries: "$100–$200 USD/month",
-      transport: "$30–$80 USD/month",
-    },
-    summary:
-      "Thailand is the ultimate value destination — unbeatable cost of living, excellent private healthcare, and a rich culture. The new LTR visa makes long-term stays easier than ever for retirees and remote workers with foreign income.",
-  },
-
-  spain: {
-    slug: "spain",
-    name: "Spain",
-    country: "Spain",
-    region: "Europe",
-    tagline: "Passionate culture, stunning cities, and Mediterranean lifestyle",
-    heroImage: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1400&q=80",
-    qolScore: 87,
-    costScore: 78,
-    healthcareScore: 88,
-    safetyScore: 86,
-    internetScore: 82,
-    climateScore: 90,
-    pros: [
-      "High quality of life",
-      "Excellent food and wine culture",
-      "Strong public healthcare system",
-      "Affordable vs. Northern Europe",
-      "Non-Lucrative Visa available for retirees",
-      "Rich history and arts scene",
-    ],
-    cons: [
-      "Bureaucracy is slow and complex",
-      "High unemployment — local job market tough",
-      "Wealth tax applies to residents",
-      "Spanish language required for daily life outside cities",
-    ],
-    visa: {
-      type: "Non-Lucrative Visa",
-      duration: "1 year (renewable)",
-      requirements: [
-        "Proof of income (~€2,400/month)",
-        "Health insurance",
-        "Clean criminal record",
-        "Cannot work for Spanish companies",
-      ],
-      minIncome: "~€2,400/month",
-    },
-    taxes: {
-      summary: "Spain taxes worldwide income. The Beckham Law offers a flat 24% for qualifying new residents.",
-      incomeTax: "19%–47% progressive (or 24% flat under Beckham Law)",
-      capitalGains: "19%–28%",
-      remittanceBased: false,
-      notes: "Wealth tax applies above €700k in most regions. Beckham Law lasts 6 years.",
-    },
-    healthcare: {
-      summary: "Spain has one of the best public healthcare systems in the world.",
-      publicAvailable: true,
-      avgMonthlyPremium: "~€50–€150/month private",
-      quality: "Excellent — ranked top 10 globally",
-    },
-    costs: {
-      monthlyBudgetSolo: "€1,800–€2,800",
-      monthlyBudgetCouple: "€2,500–€3,800",
-      rent1br: "€700–€1,500/month (Madrid/Barcelona), €500–€900 elsewhere",
-      mealOut: "€12–€25 per person",
-      groceries: "€250–€400/month",
-      transport: "€50/month public transit",
-    },
-    summary:
-      "Spain offers a passionate high-quality lifestyle at a fraction of Northern European costs. With world-class healthcare, beautiful cities, and a welcoming culture, it is ideal for retirees and remote workers seeking a full European experience.",
-  },
-
-  panama: {
-    slug: "panama",
-    name: "Panama",
-    country: "Panama",
-    region: "Latin America",
-    tagline: "Dollar economy, pensionado perks, and tropical convenience",
-    heroImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80",
-    qolScore: 76,
-    costScore: 84,
-    healthcareScore: 78,
-    safetyScore: 72,
-    internetScore: 78,
-    climateScore: 80,
-    pros: [
-      "Uses US dollar — no currency risk",
-      "Pensionado visa — best retiree visa in the world",
-      "Territorial tax system — foreign income not taxed",
-      "Modern infrastructure",
-      "Easy access to US flights",
-      "Retiree discounts of 25–50% on many services",
-    ],
-    cons: [
-      "Hot and humid year-round",
-      "Income inequality and poverty visible",
-      "Limited cultural scene outside Panama City",
-      "Heavy traffic in Panama City",
-    ],
-    visa: {
-      type: "Pensionado Visa",
-      duration: "Permanent",
-      requirements: [
-        "Proof of lifetime pension of $1,000+/month",
-        "Background check",
-        "Medical certificate",
-      ],
-      minIncome: "$1,000 USD/month pension",
-    },
-    taxes: {
-      summary: "Panama uses a territorial tax system — only Panama-sourced income is taxed.",
-      incomeTax: "0% on foreign income",
-      capitalGains: "10% on Panama-sourced gains",
-      remittanceBased: false,
-      notes: "Ideal for retirees with foreign pensions or investment income.",
-    },
-    healthcare: {
-      summary: "Good private healthcare in Panama City, more limited in rural areas.",
-      publicAvailable: true,
-      avgMonthlyPremium: "~$100–$200 USD/month",
-      quality: "Good in Panama City",
-    },
-    costs: {
-      monthlyBudgetSolo: "$1,500–$2,500 USD",
-      monthlyBudgetCouple: "$2,000–$3,500 USD",
-      rent1br: "$700–$1,400 USD/month (Panama City)",
-      mealOut: "$8–$20 USD",
-      groceries: "$200–$350 USD/month",
-      transport: "$30–$80 USD/month",
-    },
-    summary:
-      "Panama is arguably the world's best retirement destination for Americans. The Pensionado visa grants extraordinary discounts, the dollar eliminates currency risk, and the territorial tax system means your foreign income is completely untouched.",
-  },
+export type QolScores = {
+  healthcareQuality: number; safety: number; englishProficiency: number;
+  infrastructure: number; expatCommunity: number; climate: number;
+};
+export type CostBreakdown = {
+  rent1br: string; rent2br: string; groceries: string; dining: string;
+  utilities: string; transportation: string; healthcare: string;
+  entertainment: string; totalCouple: string; totalSingle: string;
+};
+export type DestinationDetail = {
+  id: string; name: string; flag: string; region: string; bestCities: string[];
+  heroImage: string; tagline: string; overview: string; ilRank: string; budgetTier: string;
+  qol: QolScores; costs: CostBreakdown; pros: string[]; cons: string[];
+  healthcare: { summary: string; privateInsurance: string; keyTakeaway: string; };
+  visa: { type: string; minIncome: string; ssSaccepted: boolean; summary: string; keyTakeaway: string; };
+  taxes: { foreignIncomeTax: string; hostTaxesSS: boolean; usTaxTreaty: boolean; totalizationAgreement: boolean; summary: string; keyTakeaway: string; };
+  lifestyle: { summary: string; currency: string; climate: string; };
 };
 
-export function getDestinationDetail(slug: string): DestinationDetail | null {
-  return destinationDetails[slug] ?? null;
+export const destinationDetails: DestinationDetail[] = [
+  {
+    id: "portugal", name: "Portugal", flag: "🇵🇹", region: "Europe",
+    bestCities: ["Algarve", "Lisbon", "Porto", "Silver Coast", "Cascais", "Azores"],
+    heroImage: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=80",
+    tagline: "Europe's #1 Retirement Destination in 2026",
+    ilRank: "#1 International Living 2026", budgetTier: "$2,500–$4,000/mo couple",
+    overview: "Portugal claims the #1 spot in International Living's 2026 Global Retirement Index. With 300+ sunny Algarve days, a clear EU citizenship path after 5 years, world-class SNS public healthcare, and the NHR 2.0 regime offering a 10% flat tax on foreign pensions, Portugal delivers an unmatched mix of safety, culture, and value. It ranks #7 on the Global Peace Index and is one of the world's most welcoming nations for expats.",
+    qol: { healthcareQuality: 9, safety: 9, englishProficiency: 8, infrastructure: 9, expatCommunity: 9, climate: 9 },
+    costs: { rent1br: "$1,000–$1,800", rent2br: "$1,300–$2,500", groceries: "$300–$450", dining: "$200–$400", utilities: "$120–$180", transportation: "$80–$150", healthcare: "$100–$200", entertainment: "$150–$250", totalCouple: "$2,500–$4,000", totalSingle: "$1,500–$2,500" },
+    pros: ["#1 International Living 2026 — top overall retirement destination", "NHR 2.0: 10% flat tax on all foreign-source pensions for 10 years", "EU citizenship after just 5 years of legal residency", "300+ sunny days in the Algarve; very safe (#7 Global Peace Index)", "World-class SNS public healthcare accessible to legal residents", "English widely spoken — Lisbon, Algarve, and Porto"],
+    cons: ["Lisbon and Porto costs rising rapidly — look inland for value", "NHR 2.0 less generous than the original (10% vs. full exemption)", "Portuguese bureaucracy can be slow — plan for delays", "Winters in Porto are rainy; Algarve remains the top climate zone"],
+    healthcare: { summary: "Portugal's SNS is ranked among Europe's best and is free for all legal residents. Private insurance costs $100–$200/month and gives fast access to English-speaking specialists. The Algarve is particularly well-served for expats.", privateInsurance: "$100–$200/month", keyTakeaway: "EU-standard public healthcare free for residents plus excellent affordable private care. Strong English-speaking medical access throughout the Algarve." },
+    visa: { type: "D7 Passive Income Visa", minIncome: "~$1,400/month", ssSaccepted: true, summary: "The D7 requires ~$1,400/month in passive income (pensions, SS, investments). It leads to a 2-year permit, renewable for 3-year periods, and after 5 years you qualify for permanent residency and citizenship. A Golden Visa investment pathway also exists.", keyTakeaway: "One of Europe's most accessible retirement visas. Social Security counts as qualifying income and the 5-year EU citizenship path is unmatched." },
+    taxes: { foreignIncomeTax: "NHR 2.0: 10% flat tax on foreign pensions for 10 years", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: true, summary: "NHR 2.0 offers new residents a 10% flat tax on foreign pension income for 10 years — far below Portugal's standard rates (up to 48%). The US-Portugal treaty and totalization agreement prevent double taxation on Social Security.", keyTakeaway: "NHR 2.0 is one of Europe's best retiree tax regimes. A 10% flat rate plus a US treaty makes Portugal highly tax-efficient compared to France or Spain." },
+    lifestyle: { summary: "Life in Portugal centers on excellent food, wine, and a relaxed Mediterranean pace. The Algarve draws tens of thousands of expats with golden beaches, world-class golf, and a vibrant English-speaking community. Lisbon and Porto offer world-class culture at prices well below Paris or Madrid.", currency: "EUR (Euro)", climate: "Algarve: 300+ sunny days, mild winters (55–65°F). Lisbon: warm and sunny. Porto: temperate with more rain." },
+  },
+  {
+    id: "mexico", name: "Mexico", flag: "🇲🇽", region: "North America",
+    bestCities: ["Lake Chapala", "San Miguel de Allende", "Puerto Vallarta", "Mérida", "Oaxaca"],
+    heroImage: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=1200&q=80",
+    tagline: "The Closest Affordable Retirement Destination to the US",
+    ilRank: "#5 International Living 2026", budgetTier: "$1,500–$3,000/mo couple",
+    overview: "Mexico is the most popular international retirement destination for Americans. Lake Chapala hosts the world's largest American expat community (20,000+). The US-Mexico tax treaty and totalization agreement protect Social Security income. US-trained doctors, JCI-accredited hospitals, and costs 50–70% below US levels make healthcare a major draw.",
+    qol: { healthcareQuality: 8, safety: 6, englishProficiency: 7, infrastructure: 7, expatCommunity: 10, climate: 9 },
+    costs: { rent1br: "$500–$900", rent2br: "$700–$1,400", groceries: "$250–$400", dining: "$150–$300", utilities: "$60–$100", transportation: "$50–$100", healthcare: "$100–$200", entertainment: "$100–$200", totalCouple: "$1,500–$3,000", totalSingle: "$1,000–$1,800" },
+    pros: ["Closest major retirement destination to the US — direct flights everywhere", "World's largest American expat community at Lake Chapala (20,000+)", "US-Mexico tax treaty and totalization agreement protect Social Security", "US-trained doctors, JCI-accredited hospitals, excellent private care", "Rich culture, food, arts, and year-round perfect highland climate", "Permanent residency after 4 years on Temporary Resident Visa"],
+    cons: ["Higher income requirement than Panama or Colombia ($2,500/month or $42,000 savings)", "Safety varies dramatically — research your specific city carefully", "Peso currency risk for locally-held savings", "Coastal property requires a fideicomiso (bank trust) for foreign ownership"],
+    healthcare: { summary: "Major cities have JCI-accredited hospitals with US-trained physicians. Specialist visits cost $40–$80, dental work runs 70–80% below US prices. IMSS public healthcare available to residents for ~$500/year.", privateInsurance: "$100–$300/month", keyTakeaway: "US-caliber private healthcare at 60–70% below US costs. Proximity to US border hospitals for complex procedures gives retirees the best of both worlds." },
+    visa: { type: "Temporary Resident Visa → Permanent (4 years)", minIncome: "$2,500/month or $42,000 in savings", ssSaccepted: true, summary: "Mexico's Temporary Resident Visa requires $2,500/month in income or $42,000 in savings. After 4 years, permanent residency requires no ongoing income. Social Security counts. Application done at a Mexican consulate in the US.", keyTakeaway: "Higher income requirement than Panama or Colombia, but compensates with the world's largest US expat infrastructure, a US tax treaty, and unmatched proximity to the US." },
+    taxes: { foreignIncomeTax: "US-Mexico treaty: retirees generally not taxed on foreign pensions and SS", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: true, summary: "The US-Mexico tax treaty means foreign pensions and Social Security are generally not subject to Mexican income tax. The totalization agreement prevents dual Social Security taxation. You still owe US taxes but won't pay twice.", keyTakeaway: "One of the few Latin American countries with both a US tax treaty AND a totalization agreement, making tax planning straightforward for American retirees." },
+    lifestyle: { summary: "Lake Chapala's Ajijic is a fully established expat village with English-language theater, international restaurants, and American-style stores. San Miguel de Allende offers a UNESCO Heritage city with arts and festivals. Puerto Vallarta combines Pacific beaches with sophisticated dining.", currency: "MXN (Mexican Peso) — USD widely accepted in expat areas", climate: "Lake Chapala and San Miguel: near-perfect year-round (65–80°F). Coast: hot and humid. Mérida: warm tropical." },
+  },
+  {
+    id: "costa-rica", name: "Costa Rica", flag: "🇨🇷", region: "Central America",
+    bestCities: ["Escazú", "Atenas", "Tamarindo", "Lake Arenal", "Manuel Antonio"],
+    heroImage: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200&q=80",
+    tagline: "Pura Vida Retirement in a Stable, Green Paradise",
+    ilRank: "Top 3 International Living 2026", budgetTier: "$2,000–$3,500/mo couple",
+    overview: "Costa Rica abolished its military in 1948, has a stable democracy with strong rule of law, and its CAJA public healthcare is ranked among the best in Latin America. The Central Valley enjoys a famously perfect 'eternal spring' climate of 65–80°F year-round. Foreign Social Security and pension income is not taxed, and the Pensionado visa is one of the most straightforward in the region.",
+    qol: { healthcareQuality: 9, safety: 8, englishProficiency: 7, infrastructure: 7, expatCommunity: 8, climate: 9 },
+    costs: { rent1br: "$600–$1,000", rent2br: "$800–$1,500", groceries: "$300–$450", dining: "$200–$350", utilities: "$100–$160", transportation: "$70–$120", healthcare: "$50–$150", entertainment: "$150–$250", totalCouple: "$2,000–$3,500", totalSingle: "$1,200–$2,000" },
+    pros: ["CAJA public healthcare — excellent coverage for legal residents at low cost", "No tax on foreign Social Security or pension income (territorial system)", "Stable democracy — no military since 1948, strong rule of law", "Central Valley 'eternal spring': perfect 65–80°F year-round", "Pensionado visa with only $1,000/month income requirement", "Extraordinary biodiversity — beaches, volcanoes, rainforest"],
+    cons: ["Long rainy season (May–November) with heavy afternoon rains on Pacific coast", "Rural roads can be very rough — 4WD recommended outside central areas", "Bureaucracy is notoriously slow — residency can take 1–2 years", "Rising costs in recent years; peso currency risk"],
+    healthcare: { summary: "CAJA (Caja Costarricense de Seguro Social) is Central America's best public healthcare system, available to residents for $50–$150/month. Private hospitals in Escazú and Santa Ana are excellent and affordable — specialist visits cost $50–$100.", privateInsurance: "$50–$150/month (CAJA contribution)", keyTakeaway: "CAJA is solid for routine and emergency care. Many expats combine CAJA for primary care with affordable private specialists. No language barrier in major expat healthcare facilities." },
+    visa: { type: "Pensionado / Rentista Visa", minIncome: "$1,000/month pension OR $2,500/month rentista", ssSaccepted: true, summary: "The Pensionado visa requires just $1,000/month in pension income (including Social Security) — one of Latin America's lowest bars. Processing takes 12–24 months. Pensionado holders get a one-time duty-free import of household goods.", keyTakeaway: "One of the easiest retirement visas in Latin America for anyone receiving a pension or Social Security. The $1,000/month threshold is achievable for most American retirees." },
+    taxes: { foreignIncomeTax: "Territorial — SS and foreign pensions are not taxed", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Costa Rica's territorial tax system means only Costa Rica-sourced income is taxed. US Social Security, pension, 401k, and investment income from abroad are completely exempt from Costa Rican tax.", keyTakeaway: "Foreign income is completely tax-free. Combined with the Pensionado visa, Costa Rica is one of the most tax-efficient retirement destinations in the Americas." },
+    lifestyle: { summary: "The Pura Vida lifestyle is genuine — relaxed, nature-focused, and centered on outdoor adventure. Escazú and Atenas offer the most developed expat infrastructure. Beach communities like Tamarindo and Manuel Antonio offer Pacific lifestyle. Lake Arenal delivers stunning volcanic views.", currency: "CRC (Costa Rican Colón) — USD accepted in many expat areas", climate: "Central Valley: eternal spring 65–80°F. Pacific coast: hot/dry Dec–Apr, rainy May–Nov. Caribbean: warm and wet." },
+  },
+  {
+    id: "spain", name: "Spain", flag: "🇪🇸", region: "Europe",
+    bestCities: ["Valencia", "Málaga", "Costa del Sol", "Alicante", "Seville", "Canary Islands"],
+    heroImage: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=1200&q=80",
+    tagline: "World-Class Culture, Healthcare & the Best Climate in Europe",
+    ilRank: "Top 15 International Living 2026", budgetTier: "$2,500–$4,500/mo couple",
+    overview: "Spain offers one of Europe's highest qualities of life at costs well below France or Germany. The Sistema Nacional de Salud is ranked among the world's best healthcare systems and is free for legal residents. The Canary Islands offer what many consider the best year-round climate in Europe. Spain has a US tax treaty and totalization agreement.",
+    qol: { healthcareQuality: 9, safety: 9, englishProficiency: 6, infrastructure: 9, expatCommunity: 8, climate: 9 },
+    costs: { rent1br: "$900–$1,800", rent2br: "$1,200–$2,500", groceries: "$350–$500", dining: "$200–$400", utilities: "$130–$200", transportation: "$90–$150", healthcare: "$100–$200", entertainment: "$150–$300", totalCouple: "$2,500–$4,500", totalSingle: "$1,500–$2,500" },
+    pros: ["Sistema Nacional de Salud ranked #7 globally — free for legal residents", "US tax treaty and totalization agreement protect Social Security", "Canary Islands: best year-round climate in all of Europe", "World-class food, wine, and cultural heritage", "EU membership — travel freedom across 27 EU countries", "Path to Spanish citizenship after 10 years of legal residency"],
+    cons: ["Progressive income tax up to 47% — one of Europe's higher rates", "Non-Lucrative Visa requires ~$2,400/month income, no work permitted", "NLV bureaucracy is challenging; annual renewal paperwork is extensive", "Barcelona and Madrid are expensive; Costa del Sol is more affordable"],
+    healthcare: { summary: "Spain's SNS is consistently ranked among Europe's best and covers all legal residents free of charge. Private care is also excellent: GP visits cost $20–$40, specialists $40–$80. Private insurance runs $100–$200/month.", privateInsurance: "$100–$200/month", keyTakeaway: "World-class public healthcare free for legal residents. The Canary Islands have strong English-speaking medical infrastructure for expats." },
+    visa: { type: "Non-Lucrative Visa (NLV)", minIncome: "~$2,400/month (no work permitted)", ssSaccepted: true, summary: "Spain's NLV requires ~$2,400/month in proven passive income and prohibits employment in Spain. Applied for at a Spanish consulate in the US. Annual renewal required. After 5 years: permanent residency. After 10 years: citizenship.", keyTakeaway: "The NLV is workable for retirees with solid passive income, but the bureaucracy is real. Budget for an immigration lawyer ($1,500–$3,000) for the application and renewals." },
+    taxes: { foreignIncomeTax: "Progressive 19–47%; Beckham Law: 24% flat for qualifying new residents", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: true, summary: "Spain's standard income tax is progressive up to 47%, but the Beckham Law offers a 24% flat rate for qualifying new residents for up to 6 years. The US-Spain treaty and totalization agreement prevent double taxation on Social Security.", keyTakeaway: "Rates are high at the top end but the US treaty prevents double taxation. The Beckham Law flat rate is attractive for those who qualify. Consult a cross-border tax specialist before moving." },
+    lifestyle: { summary: "Spain's lifestyle is arguably the finest in Europe — exceptional food, wine culture, afternoon cafés, and a social culture that prizes time with family. Valencia is popular for beaches and affordable Mediterranean living. The Canary Islands offer subtropical climate with year-round beach access.", currency: "EUR (Euro)", climate: "Costa del Sol and Canary Islands: 300+ sunny days, mild year-round. Madrid: hot summers, cold winters. Basque Country: rainy." },
+  },
+  {
+    id: "panama", name: "Panama", flag: "🇵🇦", region: "Central America",
+    bestCities: ["Panama City", "Boquete", "Coronado", "Pedasi", "Volcán"],
+    heroImage: "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80",
+    tagline: "The World's Best Retirement Visa & Zero Tax on Foreign Income",
+    ilRank: "Top 5 International Living 2026", budgetTier: "$2,500–$4,500/mo couple",
+    overview: "Panama's Pensionado program is widely considered the world's best retirement visa — immediate permanent residency with just $1,000/month in pension income, plus a comprehensive discount program (25% off flights, 50% off entertainment, 20% off medical bills). Panama uses the US dollar and does not tax any foreign-source income.",
+    qol: { healthcareQuality: 8, safety: 7, englishProficiency: 7, infrastructure: 8, expatCommunity: 8, climate: 7 },
+    costs: { rent1br: "$700–$1,200", rent2br: "$1,000–$2,000", groceries: "$350–$500", dining: "$200–$350", utilities: "$80–$150", transportation: "$60–$120", healthcare: "$100–$250", entertainment: "$150–$250", totalCouple: "$2,500–$4,500", totalSingle: "$1,500–$2,500" },
+    pros: ["World's best retirement visa: Pensionado with only $1,000/month pension requirement", "USD economy — zero currency risk for American retirees", "No tax on any foreign income: SS, pensions, 401k, investments all tax-free", "Pensionado discounts: 25% airlines, 50% entertainment, 20% medical bills", "Johns Hopkins-affiliated hospital in Panama City at 50% US cost", "Immediate permanent residency — no waiting period"],
+    cons: ["Hot and humid in Panama City and coastal lowlands year-round (85–95°F)", "No US tax treaty — you still owe US taxes but Panama adds zero burden", "Some crime in certain Panama City neighborhoods — choose location carefully", "Boquete in the highlands is beautiful but isolated; services limited"],
+    healthcare: { summary: "Panama City has Central America's best private healthcare. Pacífica Salud Hospital is Johns Hopkins-affiliated with US-standard care at 50–70% lower prices. Private specialist visits cost $60–$100. Boquete has a small clinic; serious cases go to David or Panama City.", privateInsurance: "$100–$250/month", keyTakeaway: "Central America's best hospital infrastructure. The Pensionado card provides 20–25% discounts on all medical expenses. World-class options without leaving the country." },
+    visa: { type: "Pensionado Visa — Immediate Permanent Residency", minIncome: "$1,000/month from a qualifying pension", ssSaccepted: true, summary: "Social Security fully qualifies. No maximum age, no health requirement, immediate permanent residency. Processing takes 2–4 months. Requires pension income proof, apostilled documents, and clean criminal background. The Pensionado card unlocks the extensive discount program.", keyTakeaway: "If you have $1,000/month in pension or Social Security income, Panama grants immediate permanent residency with the world's best retiree discount program. The most straightforward major retirement visa available." },
+    taxes: { foreignIncomeTax: "Territorial — NO tax on any foreign income (SS, pensions, 401k, investments)", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Panama's strict territorial tax system means every dollar of US Social Security, pension, 401k, investment dividends, and rental income from outside Panama enters completely tax-free. No US-Panama treaty, so Americans still owe US income taxes — but Panama adds zero additional burden.", keyTakeaway: "One of the world's purest territorial tax systems. Combined with USD as official currency, American retirees experience zero Panamanian tax on their retirement income." },
+    lifestyle: { summary: "Panama City is a modern, cosmopolitan capital with world-class restaurants and an active expat scene. Boquete in the highlands (4,000 ft) has Panama's best climate — a perpetual 65–75°F spring and a strong North American expat community. Coronado on the Pacific coast attracts beach lifestyle retirees.", currency: "USD (official currency) — zero currency risk", climate: "Panama City and coast: tropical, hot 85–95°F year-round. Boquete highlands: cool spring-like, 60–75°F year-round." },
+  },
+  {
+    id: "thailand", name: "Thailand", flag: "🇹🇭", region: "SE Asia",
+    bestCities: ["Chiang Mai", "Bangkok", "Hua Hin", "Phuket", "Koh Samui"],
+    heroImage: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200&q=80",
+    tagline: "World-Class Healthcare at a Fraction of US Cost",
+    ilRank: "Top 10 International Living 2026", budgetTier: "$1,500–$3,000/mo couple",
+    overview: "Thailand draws more long-term expat retirees than almost any other country in Asia. Bumrungrad International Hospital in Bangkok is consistently rated among the world's top 10 private hospitals at 50–70% below US costs. Chiang Mai is repeatedly ranked the #1 expat city in the world for cost of living. Thailand has a US tax treaty.",
+    qol: { healthcareQuality: 9, safety: 8, englishProficiency: 7, infrastructure: 8, expatCommunity: 10, climate: 7 },
+    costs: { rent1br: "$400–$800", rent2br: "$600–$1,200", groceries: "$200–$350", dining: "$100–$250", utilities: "$80–$150", transportation: "$50–$100", healthcare: "$100–$200", entertainment: "$100–$200", totalCouple: "$1,500–$3,000", totalSingle: "$900–$1,800" },
+    pros: ["World-class private hospitals (Bumrungrad Bangkok) at 50–70% below US prices", "Chiang Mai ranked #1 expat city globally — enormous welcoming community", "Very affordable — comfortable life costs $1,500–$2,000/month for a couple", "US-Thailand tax treaty prevents double taxation on Social Security", "Rich culture, incredible cuisine, warm and welcoming Thai people", "Excellent infrastructure in major cities — fast internet, modern transport"],
+    cons: ["Annual visa renewal required — no permanent residency option for most retirees", "$22,000 must be maintained in Thai bank OR $1,800/month income proof", "New 2024 tax rules make some foreign remittances potentially taxable", "Heat and humidity March–May; rainy season June–October can be intense"],
+    healthcare: { summary: "Thailand has SE Asia's best private healthcare. Bumrungrad International serves 1.1 million patients annually with 200+ doctors trained in the US and Europe. Specialist visits cost $30–$60, hospitalization $100–$200/night, major surgery 60–75% below US prices.", privateInsurance: "$100–$200/month", keyTakeaway: "Among the world's best private healthcare for the price. Most expats in Chiang Mai and Bangkok have zero anxiety about medical access — modern, English-speaking, and transformatively affordable." },
+    visa: { type: "Non-Immigrant O-A Retirement Visa (age 50+)", minIncome: "$1,800/month OR $22,000 in Thai bank", ssSaccepted: true, summary: "Thailand's retirement visa requires either 800,000 Thai Baht (~$22,000) in a Thai bank account or $1,800/month in income. Renewed annually. Health insurance with minimum coverage levels required. No pathway to permanent residency for most retirees.", keyTakeaway: "The annual renewal and $22,000 bank deposit are the main friction points. Most expats adapt to this rhythm and consider the extraordinary quality of life well worth the trade-off." },
+    taxes: { foreignIncomeTax: "Changing 2024+: foreign remittances to Thailand potentially taxable — consult advisor", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: false, summary: "Thailand's 2024 tax changes may subject some foreign income remitted to Thailand to local tax. The US-Thailand treaty helps prevent double taxation, but the specific rules are still evolving. Consult a cross-border tax specialist before moving.", keyTakeaway: "The 2024 tax changes add complexity. Work with a Thai tax advisor to structure remittances efficiently. The US-Thailand treaty remains in force and provides meaningful protection." },
+    lifestyle: { summary: "Chiang Mai is the Thailand expat epicenter — walkable, low-key, with excellent cafés, night markets, and one of the world's best street food scenes. Bangkok offers world-class dining and nightlife. Hua Hin and Koh Samui offer coastal lifestyle. Thai culture is warm and welcoming with a deep sanuk (fun-loving) spirit.", currency: "THB (Thai Baht) — USD not widely accepted outside tourist areas", climate: "Cool season (Nov–Feb): 65–85°F — the best time. Hot season (Mar–May): 90–100°F. Rainy season (Jun–Oct): daily afternoon rains." },
+  },
+  {
+    id: "ecuador", name: "Ecuador", flag: "🇪🇨", region: "South America",
+    bestCities: ["Cuenca", "Quito", "Cotacachi", "Salinas", "Vilcabamba"],
+    heroImage: "https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=1200&q=80",
+    tagline: "USD Economy, Perfect Climate & South America's Best Value",
+    ilRank: "Top 10 International Living 2026", budgetTier: "$1,500–$2,500/mo couple",
+    overview: "Ecuador offers US dollars as official currency (zero exchange rate risk), a territorial tax system exempting foreign SS and pensions, and Cuenca — a UNESCO World Heritage city with a near-perfect spring climate at 8,400 feet elevation. The Pensioner Visa requires only $800/month for retirees 65+, one of the lowest income requirements in South America.",
+    qol: { healthcareQuality: 7, safety: 6, englishProficiency: 5, infrastructure: 6, expatCommunity: 8, climate: 9 },
+    costs: { rent1br: "$300–$600", rent2br: "$500–$900", groceries: "$200–$350", dining: "$100–$200", utilities: "$60–$100", transportation: "$40–$80", healthcare: "$100–$150", entertainment: "$80–$150", totalCouple: "$1,500–$2,500", totalSingle: "$900–$1,400" },
+    pros: ["USD official currency — zero exchange rate risk", "Cuenca: perfect 60–70°F spring climate year-round at 8,400 ft elevation", "No tax on foreign Social Security or pensions (territorial tax system)", "Low $800/month pension visa requirement (age 65+)", "Excellent private healthcare at a fraction of US cost", "One of South America's most affordable countries for quality living"],
+    cons: ["National security has worsened in recent years — research current conditions", "Altitude in Cuenca and Quito (8,000–9,000 ft) affects some retirees", "Spanish essential — English not widely spoken outside expat areas", "Rural infrastructure outside major cities can be limited"],
+    healthcare: { summary: "Cuenca and Quito have excellent private healthcare. Specialist visits cost $20–$50, dental work is 70–80% below US prices. Hospital Monte Sinaí in Cuenca and Metropolitano in Quito are the top private facilities.", privateInsurance: "$100–$150/month", keyTakeaway: "Cuenca's private healthcare is excellent for routine and specialist care at transformatively low prices. The USD economy means no currency risk when paying medical bills." },
+    visa: { type: "Pensioner Visa (Rentista or Jubilado)", minIncome: "$800/month (age 65+) or $1,400/month (under 65)", ssSaccepted: true, summary: "Ecuador's Jubilado visa requires $800/month in pension or Social Security income for those 65+. Those under 65 need $1,400/month. Ecuador uses the USD so there's no conversion complexity. The visa leads to permanent residency.", keyTakeaway: "At $800/month for 65+ retirees, Ecuador's pension visa is one of the most accessible in the hemisphere. USD income qualifies directly with no conversion complexity." },
+    taxes: { foreignIncomeTax: "Territorial — SS and foreign pensions not taxed in Ecuador", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Ecuador's territorial tax system means only Ecuador-sourced income is taxed locally. US Social Security, pensions, and investment income are completely exempt from Ecuadorian income tax.", keyTakeaway: "Zero Ecuadorian tax on foreign retirement income, combined with USD as official currency, makes Ecuador exceptionally straightforward financially for American retirees." },
+    lifestyle: { summary: "Cuenca is a walkable colonial city with flower markets, excellent restaurants, and a vibrant arts scene at astonishing value. A couple can live very comfortably for $1,500–$2,000/month. Vilcabamba in the south draws health-conscious retirees to the 'Valley of Longevity.' Salinas offers affordable Pacific beach lifestyle.", currency: "USD (official currency) — identical to US dollar", climate: "Cuenca: perpetual spring 60–70°F year-round. Coast: tropical. Amazon: hot and humid. Vilcabamba: warm valley 70–80°F." },
+  },
+  {
+    id: "malaysia", name: "Malaysia", flag: "🇲🇾", region: "SE Asia",
+    bestCities: ["Penang", "Kuala Lumpur", "Ipoh", "Langkawi", "Kota Kinabalu"],
+    heroImage: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80",
+    tagline: "English-Speaking Asia with World-Class Healthcare",
+    ilRank: "Top 5 International Living 2026", budgetTier: "$1,500–$2,800/mo couple",
+    overview: "Malaysia is the most developed, English-friendly, and internationally connected retirement destination in Southeast Asia. English is an official language in many contexts. Penang Island has been voted the #1 expat city in the world multiple times. Malaysia does not tax foreign-source income, and its JCI-accredited hospitals deliver world-class care at a fraction of US prices.",
+    qol: { healthcareQuality: 9, safety: 8, englishProficiency: 9, infrastructure: 9, expatCommunity: 9, climate: 6 },
+    costs: { rent1br: "$400–$800", rent2br: "$600–$1,200", groceries: "$200–$350", dining: "$100–$250", utilities: "$70–$130", transportation: "$50–$100", healthcare: "$100–$200", entertainment: "$100–$200", totalCouple: "$1,500–$2,800", totalSingle: "$900–$1,600" },
+    pros: ["English widely spoken — easiest non-English-speaking country for Americans", "JCI-accredited world-class hospitals at 50–70% below US costs", "No tax on foreign-source income brought into Malaysia (restored 2022)", "Penang voted #1 expat city globally multiple times", "Modern infrastructure — fast internet, excellent public transport in KL", "Extraordinary multicultural food scene (Malay, Chinese, Indian fusion)"],
+    cons: ["MM2H visa now requires $10,000/month income + $350,000 in liquid assets — very restrictive", "Tropical heat and humidity year-round — not ideal for those preferring cooler climates", "If MM2H doesn't qualify, long-term legal residency options are limited", "Air quality can be poor during annual haze season from Indonesian fires"],
+    healthcare: { summary: "Gleneagles, Pantai, and KPJ Healthcare operate JCI-accredited facilities across Penang and KL with English-speaking doctors. Specialist visits cost $30–$60, major surgery runs 60–70% below US prices.", privateInsurance: "$100–$200/month", keyTakeaway: "Best combination of healthcare quality and affordability in Asia outside Thailand. English-speaking doctors and modern facilities make it very accessible for American retirees." },
+    visa: { type: "MM2H — Malaysia My Second Home (10-year renewable)", minIncome: "$10,000/month + $350,000 in liquid assets (2023 requirements)", ssSaccepted: true, summary: "MM2H was significantly tightened in 2021–2023, raising income requirements from $2,000/month to $10,000/month with a $350,000 liquid asset requirement. This makes MM2H out of reach for most middle-income retirees. Malaysia is reviewing the program again.", keyTakeaway: "MM2H is currently only suitable for high-net-worth retirees ($10k/month income + $350k assets). If you don't qualify, Malaysia is best used as a base with annual visa renewals while the program evolves." },
+    taxes: { foreignIncomeTax: "No tax on foreign-source income remitted to Malaysia", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Malaysia does not tax foreign-source income remitted to Malaysia — a major exemption reinstated in 2022. US Social Security, pensions, and investment income from the US are not subject to Malaysian tax.", keyTakeaway: "Malaysia's tax treatment of foreign income is very favorable. Combined with no wealth tax or inheritance tax, the overall tax burden for foreign retirees is minimal." },
+    lifestyle: { summary: "Malaysia's lifestyle is defined by extraordinary cultural diversity — Malay, Chinese, and Indian influences create a food scene consistently ranked among the world's best. Penang's Georgetown is a UNESCO Heritage city with colonial architecture and a thriving café culture. The Cameron Highlands provide cool escape from tropical heat.", currency: "MYR (Malaysian Ringgit) — USD not widely accepted", climate: "Tropical year-round: warm 75–95°F. Cameron Highlands: cool 50–70°F." },
+  },
+  {
+    id: "greece", name: "Greece", flag: "🇬🇷", region: "Europe",
+    bestCities: ["Athens", "Crete", "Corfu", "Rhodes", "Thessaloniki", "Nafplio"],
+    heroImage: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=1200&q=80",
+    tagline: "7% Flat Tax on Pensions & Mediterranean Island Lifestyle",
+    ilRank: "Top 10 International Living 2026", budgetTier: "$2,000–$3,500/mo couple",
+    overview: "Greece offers one of Europe's most remarkable tax incentives for foreign retirees: a flat 7% tax on all foreign pension income for qualifying new residents, valid for 10 years. Beyond the tax benefit, Greece delivers 250–300 sunny days, extraordinary island lifestyle, world-class Mediterranean cuisine, and EU access — all at costs well below France, Spain, or Portugal.",
+    qol: { healthcareQuality: 8, safety: 8, englishProficiency: 7, infrastructure: 7, expatCommunity: 7, climate: 9 },
+    costs: { rent1br: "$600–$1,200", rent2br: "$900–$1,800", groceries: "$300–$450", dining: "$150–$300", utilities: "$120–$200", transportation: "$70–$130", healthcare: "$100–$200", entertainment: "$100–$200", totalCouple: "$2,000–$3,500", totalSingle: "$1,200–$2,000" },
+    pros: ["7% flat tax on ALL foreign pension income for 10 years — best pension tax in Europe", "250–300 sunny days, iconic island lifestyle (Crete, Corfu, Rhodes)", "EU membership — freedom to travel and live throughout Europe", "Costs well below Western Europe while maintaining European quality of life", "World-class Mediterranean diet and cuisine culture", "US-Greece tax treaty provides additional double-taxation protection"],
+    cons: ["Greek bureaucracy is notoriously complex — allow extra time for any official process", "Language barrier: Greek is essential for daily life outside tourist/expat areas", "Public services outside Athens and major cities can be limited", "Economic history of instability — though significantly improved since 2020"],
+    healthcare: { summary: "Greece has a public ESY system for legal residents and an affordable private system with English-speaking doctors in Athens and major cities. Private specialist visits cost $50–$150. Private insurance runs $100–$200/month.", privateInsurance: "$100–$200/month", keyTakeaway: "Private healthcare in Athens and major cities is solid and affordable. The 7% flat tax savings alone can fund excellent private health insurance with significant money left over." },
+    visa: { type: "Non-EU Retirement Visa / Digital Nomad Visa / Golden Visa", minIncome: "~$2,000/month", ssSaccepted: true, summary: "Greece offers several residency pathways for non-EU retirees, requiring approximately $2,000/month in passive income. The Golden Visa requires €250,000+ in real estate. After 5 years: permanent residency. After 7 years: citizenship eligibility.", keyTakeaway: "The combination of the non-EU retirement visa and the 7% pension flat tax is exceptional. The tax benefit alone can save retirees tens of thousands compared to other European alternatives." },
+    taxes: { foreignIncomeTax: "7% flat tax on ALL foreign pension income for 10 years (special Article 5A regime)", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: false, summary: "Greece's Article 5A regime offers new tax residents a flat 7% tax on all foreign pension income for 10 years. This applies to Social Security, private pensions, 401k distributions. A €500,000 investment in Greek real estate or bonds is required.", keyTakeaway: "The 7% flat tax is the best pension tax regime in Europe for most retirees. A couple with $60,000/year in pension income pays only $4,200 in Greek taxes — vs. $12,000–$25,000 in France or Germany." },
+    lifestyle: { summary: "Greece's lifestyle centers on the Mediterranean pace — long meals, evening walks along the seafront, and a deep connection to food and history. The islands (Crete, Corfu, Rhodes) each have distinct characters. Athens has world-class museums and restaurants. The expat community on Crete and Corfu is growing rapidly.", currency: "EUR (Euro)", climate: "Mediterranean: 250–300 sunny days. Hot dry summers (85–95°F), mild winters (50–65°F). Islands: spectacular spring and fall." },
+  },
+  {
+    id: "colombia", name: "Colombia", flag: "🇨🇴", region: "South America",
+    bestCities: ["Medellín (El Poblado)", "Cartagena", "Santa Marta", "Bogotá", "Manizales"],
+    heroImage: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=1200&q=80",
+    tagline: "Eternal Spring Climate & Latin America's Lowest Visa Income Requirement",
+    ilRank: "Top 10 International Living 2026", budgetTier: "$1,500–$2,800/mo couple",
+    overview: "Medellín — once infamous for crime — is now regularly cited as one of the world's most innovative cities, drawing tech entrepreneurs, digital nomads, and retirees worldwide. El Poblado and Laureles offer an exceptional combination: a perpetual spring climate (70–80°F year-round), world-class hospitals, excellent restaurants, and a vibrant expat community at costs 40–60% below comparable US living. Colombia's Pension Visa requires just $750/month — the lowest in Latin America.",
+    qol: { healthcareQuality: 8, safety: 6, englishProficiency: 5, infrastructure: 7, expatCommunity: 8, climate: 10 },
+    costs: { rent1br: "$400–$800", rent2br: "$600–$1,200", groceries: "$200–$350", dining: "$100–$250", utilities: "$70–$120", transportation: "$40–$80", healthcare: "$100–$200", entertainment: "$100–$200", totalCouple: "$1,500–$2,800", totalSingle: "$900–$1,600" },
+    pros: ["Lowest pension visa income requirement in Latin America: $750/month", "Medellín: 'Eternal Spring' climate — 70–80°F year-round, zero seasonal variation", "World-class JCI-accredited hospitals; growing medical tourism hub", "No tax on foreign income for the first 5 years of residency", "Vibrant, growing expat community in El Poblado and Laureles", "Exceptional food scene, coffee culture, and arts community"],
+    cons: ["Safety reputation is improving but research current conditions for your neighborhood", "Spanish is essential — English not widely spoken outside expat areas", "No US tax treaty — you still owe US taxes, but Colombia adds nothing for first 5 years", "Peso weakens against USD over time — savings in COP lose value"],
+    healthcare: { summary: "Medellín has Latin America's fastest-growing medical tourism industry. Clínica Las Américas and Hospital Pablo Tobón Uribe are Joint Commission-accredited with English-speaking specialists. Cosmetic surgery, dental, cardiac, and orthopedic procedures draw thousands of Americans annually.", privateInsurance: "$100–$200/month", keyTakeaway: "Medellín's private healthcare is world-class. Quality, English-speaking specialists, and costs 60–70% below US prices make it excellent for American retirees." },
+    visa: { type: "Pension Visa (M-2) / Rentista Visa", minIncome: "$750/month pension (lowest in Latin America)", ssSaccepted: true, summary: "Colombia's Pension Visa requires just $750/month in pension or Social Security income — the lowest bar in all of Latin America. The Rentista visa for non-pension passive income requires $2,500/month. Both lead to permanent residency after 5 years.", keyTakeaway: "At $750/month, Colombia's pension visa is accessible to nearly every American retiree receiving Social Security. Combined with the first-five-years tax exemption on foreign income, it's one of the best deals in the region." },
+    taxes: { foreignIncomeTax: "Foreign income not taxed — for the first 5 years of residency", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "New Colombian tax residents are not taxed on foreign-source income for their first 5 years of residency. After 5 years, Colombia taxes residents on worldwide income. There is no US-Colombia tax treaty.", keyTakeaway: "Five years of zero Colombian tax on your US retirement income is an excellent window. Plan ahead for what happens after year 5 — either consult a tax advisor or plan your strategy early." },
+    lifestyle: { summary: "El Poblado in Medellín is essentially a self-contained expat village with hundreds of restaurants, rooftop bars, co-working spaces, and English-language social clubs. The city's MetroCable connects hillside neighborhoods with stunning views. Cartagena offers walled colonial city romance with Caribbean beach access.", currency: "COP (Colombian Peso) — weakening trend against USD over time", climate: "Medellín: perpetual spring 70–80°F. Bogotá: cool 52–65°F. Cartagena: hot Caribbean 85–95°F year-round." },
+  },
+  {
+    id: "vietnam", name: "Vietnam", flag: "🇻🇳", region: "SE Asia",
+    bestCities: ["Da Nang", "Hoi An", "Hanoi", "Ho Chi Minh City", "Nha Trang"],
+    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&q=80",
+    tagline: "Southeast Asia's Best Value for Budget-Conscious Retirees",
+    ilRank: "Emerging destination", budgetTier: "Under $1,500/mo couple",
+    overview: "Vietnam offers arguably the best value for money of any retirement destination in Asia. A couple can live extremely comfortably in Da Nang or Hoi An for $1,000–$1,500/month, with excellent private healthcare, world-class food, a beautiful coastline, and warm culture. Da Nang is a modern city with wide beaches and a growing international community.",
+    qol: { healthcareQuality: 7, safety: 9, englishProficiency: 6, infrastructure: 7, expatCommunity: 7, climate: 7 },
+    costs: { rent1br: "$300–$600", rent2br: "$500–$900", groceries: "$150–$250", dining: "$80–$180", utilities: "$40–$80", transportation: "$30–$60", healthcare: "$80–$150", entertainment: "$80–$150", totalCouple: "$1,000–$1,800", totalSingle: "$700–$1,200" },
+    pros: ["Lowest cost of living for quality lifestyle in all of Asia", "Extraordinary food culture — Vietnamese cuisine is world-class and very affordable", "Da Nang: modern beach city with fast internet and growing expat infrastructure", "Very safe for expats — low violent crime throughout the country", "Territorial tax system — foreign income not taxed for non-working retirees", "Warm, genuinely welcoming Vietnamese culture"],
+    cons: ["No official retirement visa — most expats rely on tourist visa renewals or workarounds", "US Social Security payments can be restricted for Vietnamese residents (consult SSA)", "Language barrier is significant — Vietnamese is difficult, English limited outside cities", "Air quality in Hanoi and Ho Chi Minh City can be poor"],
+    healthcare: { summary: "Private healthcare has improved dramatically, especially in Da Nang, Hanoi, and Ho Chi Minh City. FV Hospital in Ho Chi Minh City is internationally accredited. For complex care, Bangkok (2-hour flight) is the regional center most expats use.", privateInsurance: "$80–$150/month", keyTakeaway: "Healthcare is adequate for routine care in major expat cities. Have a plan for complex care — most expats use Bangkok or Singapore. Medical evacuation insurance is strongly recommended." },
+    visa: { type: "E-Visa / Tourist Extensions (no official retirement visa)", minIncome: "No official retirement visa exists", ssSaccepted: false, summary: "Vietnam does not have a dedicated retirement visa program. Most long-term expat retirees use e-visas for 90 days, then border runs, or longer-term business visas. The Vietnamese government has discussed creating a retirement visa but nothing official exists as of 2026.", keyTakeaway: "The lack of an official retirement visa is Vietnam's biggest practical challenge. Most expats make it work through e-visa renewals, but it adds ongoing uncertainty compared to countries with clear residency programs." },
+    taxes: { foreignIncomeTax: "Territorial — foreign income not taxed for non-working expat retirees", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Vietnam's territorial tax system means income earned outside Vietnam is not taxed locally for non-working residents. However, US Social Security has restrictions on payment to residents of certain countries — Vietnam is on a restricted list.", keyTakeaway: "Zero Vietnamese tax on foreign retirement income is great, but the US Social Security restriction for Vietnamese residents is a serious issue for many retirees. Confirm your situation with the SSA before moving." },
+    lifestyle: { summary: "Vietnam's lifestyle rewards adaptable, adventurous retirees. The food culture is extraordinary — fresh, light, and incredibly affordable. Da Nang offers a modern beach city with excellent seafood restaurants and a growing expat scene. Hoi An is a beautifully preserved ancient trading town with tailors, cooking classes, and a magical Old Town.", currency: "VND (Vietnamese Dong) — USD widely accepted in tourist and expat areas", climate: "Da Nang: best weather year-round (75–90°F). North: 4 seasons (cold winters). South: tropical. Rainy season varies by region." },
+  },
+  {
+    id: "italy", name: "Italy", flag: "🇮🇹", region: "Europe",
+    bestCities: ["Tuscany", "Sicily", "Puglia", "Abruzzo", "Lake Como", "Bologna"],
+    heroImage: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&q=80",
+    tagline: "€100k Flat Tax, Free Healthcare & World's Best Food Culture",
+    ilRank: "Top 15 International Living 2026", budgetTier: "$2,500–$5,000/mo couple",
+    overview: "Italy offers two extraordinary tax incentives: the €100,000 flat tax option (pay just €100,000/year on ALL foreign income — ideal for those with $500,000+ annual income), or the 7% flat tax for retirees who move to specified southern Italian towns with populations under 20,000. Legal residents access Italy's SSN — one of the world's best healthcare systems — completely free.",
+    qol: { healthcareQuality: 9, safety: 8, englishProficiency: 5, infrastructure: 8, expatCommunity: 7, climate: 8 },
+    costs: { rent1br: "$800–$1,800", rent2br: "$1,000–$2,500", groceries: "$350–$500", dining: "$200–$400", utilities: "$130–$220", transportation: "$80–$150", healthcare: "$0–$250", entertainment: "$150–$300", totalCouple: "$2,500–$5,000", totalSingle: "$1,400–$2,800" },
+    pros: ["€100k flat tax on ALL foreign income — extraordinary for high-income retirees", "7% flat tax option for qualifying southern villages (under 20,000 population)", "Free public healthcare (SSN) for legal residents — one of the world's best systems", "World's greatest food, wine, and cultural heritage", "Affordable in the south: Puglia, Abruzzo, Sicily offer quality at lower cost", "US-Italy tax treaty and totalization agreement prevent double taxation"],
+    cons: ["Italian bureaucracy is notorious — plan for frustrating delays in any official process", "Italian language is essential — English very limited outside northern cities and tourist areas", "Income requirement of ~$2,580/month ($31,000/year) for the Elective Residency Visa", "North-south quality gap is significant — rural south has less infrastructure"],
+    healthcare: { summary: "Italy's SSN is consistently ranked among Europe's top 5 healthcare systems and is completely free for legal residents. Private supplemental insurance ($100–$250/month) provides faster specialist access. The north has world-class specialist care; Sicily and Puglia are adequate for most needs.", privateInsurance: "$100–$250/month (supplemental for faster access)", keyTakeaway: "Free world-class public healthcare for legal residents is Italy's most underrated benefit. Combined with the €100k flat tax, the financial package for qualifying retirees is extraordinary." },
+    visa: { type: "Elective Residency Visa (ERV)", minIncome: "~$2,580/month ($31,000/year) in passive income", ssSaccepted: true, summary: "Italy's ERV requires proof of at least $31,000/year in passive income from outside Italy (pensions, investments, SS, rental income). The visa is renewed annually. After 5 years: permanent residency. After 10 years: citizenship eligibility. An immigration lawyer is highly recommended.", keyTakeaway: "The higher income requirement compensates with free world-class healthcare, extraordinary cultural lifestyle, and the €100k flat tax option for those with significant income." },
+    taxes: { foreignIncomeTax: "€100,000 flat tax on ALL foreign income OR 7% flat for qualifying southern villages", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: true, summary: "Option 1: Pay a flat €100,000/year on ALL foreign income regardless of total amount — ideal if your foreign income exceeds ~$500,000/year. Option 2: Move to a qualifying southern village and pay a flat 7% on all foreign pension income for up to 10 years.", keyTakeaway: "The 7% southern village flat tax is one of Europe's best deals for moderate-income retirees. The €100k lump-sum option is extraordinary for high earners. The US-Italy treaty ensures no double taxation." },
+    lifestyle: { summary: "Italy's lifestyle is unlike anywhere else — daily life revolves around extraordinary food markets, neighborhood trattorias, Sunday lunches, and a pace that prioritizes pleasure. The south (Puglia, Sicily, Abruzzo) offers an authentic, slower-paced Italian experience at significantly lower costs than Tuscany or the north.", currency: "EUR (Euro)", climate: "Southern Italy and Sicily: Mediterranean, 300 sunny days. Tuscany: temperate. Northern lakes: mild summers, cold winters." },
+  },
+  {
+    id: "france", name: "France", flag: "🇫🇷", region: "Europe",
+    bestCities: ["Provence", "Languedoc", "Bordeaux", "Normandy", "French Riviera", "Paris"],
+    heroImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
+    tagline: "The World's #1 Healthcare System & Unmatched Quality of Life",
+    ilRank: "Top 20 International Living 2026", budgetTier: "$4,000+/mo couple",
+    overview: "France is the gold standard of quality of life. The World Health Organization ranks France's healthcare system #1 globally. Legal residents access it through Sécurité Sociale at very low cost. The French way of life — exceptional food markets, neighborhood bistros, outstanding public transport, and a cultural commitment to leisure — is genuinely extraordinary. Best suited for retirees who prioritize quality of life above financial optimization.",
+    qol: { healthcareQuality: 10, safety: 8, englishProficiency: 6, infrastructure: 10, expatCommunity: 7, climate: 8 },
+    costs: { rent1br: "$1,200–$2,500", rent2br: "$1,500–$3,500", groceries: "$400–$600", dining: "$300–$600", utilities: "$150–$250", transportation: "$100–$200", healthcare: "$100–$300", entertainment: "$200–$400", totalCouple: "$3,000–$6,000", totalSingle: "$1,800–$3,500" },
+    pros: ["WHO-ranked #1 healthcare system globally — exceptional quality for legal residents", "Unmatched quality of life: food markets, bistros, wine culture, cultural heritage", "Excellent public transport — TGV high-speed trains connect the entire country", "EU access — freedom to travel throughout 27 EU member countries", "US-France tax treaty and totalization agreement prevent double taxation on SS", "Diverse regions: Provence's sunshine, Bordeaux's wine, Normandy's history"],
+    cons: ["Progressive income tax up to 45% — among the highest in Europe", "Language barrier is real — French is required for daily life outside Paris and tourist areas", "Notorious bureaucracy — any official process takes significant time and patience", "Paris and the Riviera are extremely expensive — affordable France is in the countryside"],
+    healthcare: { summary: "France's Sécurité Sociale is the world's gold standard for universal healthcare. Legal residents contribute $100–$300/month for Mutuelle (supplemental insurance) and receive essentially complete coverage. Doctor visits cost €25–€35, with most reimbursed.", privateInsurance: "$100–$300/month (Mutuelle supplemental)", keyTakeaway: "World's best healthcare system, period. The Mutuelle supplemental insurance fills in the gaps for a modest monthly cost. Quality and accessibility for legal residents are unmatched anywhere." },
+    visa: { type: "Long Stay Visitor Visa (VLS-TS Visiteur)", minIncome: "~$2,000–$2,500/month (no work permitted, annual renewal)", ssSaccepted: true, summary: "France's Long Stay Visitor Visa requires approximately $2,000–$2,500/month in sufficient income and prohibits any employment. Renewed annually. After 5 years: Carte de Résident (permanent residency). After 5 years with French language skills: citizenship eligibility.", keyTakeaway: "The income requirement is moderate, but France's bureaucracy is real — work with an immigration specialist and budget extra time and patience for the initial application and annual renewals." },
+    taxes: { foreignIncomeTax: "Progressive up to 45%; US-France treaty prevents full double taxation", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: true, summary: "France has progressive income taxes up to 45%, but the US-France tax treaty prevents genuine double taxation on Social Security and pension income. A foreign tax credit typically offsets much of the French tax liability for American retirees.", keyTakeaway: "France is not a tax haven, but the headline 45% rate overstates the burden for most retirees. The treaty credit system means you pay tax once — either to the US or France, not both. A bilingual tax advisor is essential." },
+    lifestyle: { summary: "Life in France is an art form — the concept of joie de vivre shapes everything: the morning croissant, the two-hour lunch, the evening apéritif, the Sunday market. Provence, the Languedoc, and the Dordogne offer affordable French countryside living. Bordeaux is a world-class city. The Riviera is glamorous but very expensive.", currency: "EUR (Euro)", climate: "Provence: 300 sunny days, Mediterranean. Paris: temperate, grey winters. Normandy: rainy and cool. Riviera: warm and glamorous." },
+  },
+  {
+    id: "new-zealand", name: "New Zealand", flag: "🇳🇿", region: "Pacific",
+    bestCities: ["Auckland", "Queenstown", "Wellington", "Nelson", "Bay of Plenty"],
+    heroImage: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1200&q=80",
+    tagline: "#2 Safest Country on Earth with World-Class English-Speaking Infrastructure",
+    ilRank: "Special mention", budgetTier: "$4,000+/mo couple",
+    overview: "New Zealand is consistently ranked #2 on the Global Peace Index, #1 for migrant acceptance, and offers an English-speaking, high-quality-of-life experience in one of the world's most spectacularly beautiful environments. The catch: there is no straightforward retirement visa for Americans. Immigration is complex and typically requires significant financial resources.",
+    qol: { healthcareQuality: 9, safety: 10, englishProficiency: 10, infrastructure: 9, expatCommunity: 8, climate: 7 },
+    costs: { rent1br: "$1,400–$2,200", rent2br: "$1,800–$3,000", groceries: "$400–$600", dining: "$250–$450", utilities: "$150–$250", transportation: "$100–$200", healthcare: "$180–$400", entertainment: "$200–$350", totalCouple: "$3,500–$6,000", totalSingle: "$2,000–$3,500" },
+    pros: ["Ranked #2 Global Peace Index — one of the safest countries on earth", "Ranked #1 globally for migrant acceptance and welcoming culture", "English-speaking — zero language barrier", "Spectacular natural beauty: fjords, mountains, beaches, geothermal areas", "Excellent public healthcare system for legal residents", "US-NZ tax treaty prevents double taxation"],
+    cons: ["No simple retirement visa — immigration is complex and expensive", "Very high cost of living — one of the most expensive countries in this guide", "Far from the US — 12+ hour flight to the West Coast", "NZ taxes residents on worldwide income (though US treaty provides credits)"],
+    healthcare: { summary: "New Zealand's public healthcare system is excellent and free for legal residents, providing comprehensive coverage including specialist referrals, surgery, and hospitalization. Private health insurance ($180–$400/month) provides faster access to elective procedures.", privateInsurance: "$180–$400/month", keyTakeaway: "Excellent English-speaking healthcare free for legal residents. Far superior to most expat healthcare situations in Asia or Latin America." },
+    visa: { type: "Active Investor Plus / Parent Retirement Visa (complex)", minIncome: "Very high — NZD 5M (~$3M USD) for Active Investor Plus", ssSaccepted: false, summary: "New Zealand does not have a straightforward retirement visa for Americans. The Active Investor Plus visa requires NZD 5 million ($3M+) in acceptable investments. The Parent Retirement Visa requires NZ citizen or resident children to sponsor parents. An immigration attorney is essential.", keyTakeaway: "New Zealand's lack of a simple retirement visa is the primary barrier. If you have family connections or significant assets ($3M+), it's achievable. Otherwise explore other options first." },
+    taxes: { foreignIncomeTax: "NZ taxes residents on worldwide income; US-NZ treaty prevents double taxation", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: true, summary: "New Zealand taxes residents on worldwide income, but the US-NZ tax treaty and totalization agreement ensure American retirees don't pay twice. NZ has no capital gains tax, which can be advantageous for investment-heavy portfolios.", keyTakeaway: "Taxes are manageable with the treaty in place, and NZ's no-capital-gains-tax policy is attractive for investors. Work with a dual US-NZ tax advisor to optimize your structure." },
+    lifestyle: { summary: "New Zealand's lifestyle is defined by spectacular natural beauty and an outdoor culture. Queenstown is the adventure sports capital of the world. The Bay of Plenty offers beach lifestyle in a warmer setting. Auckland is a modern Pacific city with excellent restaurants. New Zealand's down-to-earth culture is warmly welcoming.", currency: "NZD (New Zealand Dollar)", climate: "Auckland: mild, subtropical. Queenstown: 4 seasons including skiing. Bay of Plenty: warm and sunny. Wellington: windy." },
+  },
+  {
+    id: "panama-azores", name: "Portugal — Azores", flag: "🇵🇹", region: "Atlantic Islands",
+    bestCities: ["Ponta Delgada (São Miguel)", "Angra (Terceira)", "Faial", "Flores"],
+    heroImage: "https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?w=1200&q=80",
+    tagline: "Europe's Best-Kept Secret — 30% Cheaper than Portugal Mainland",
+    ilRank: "Hidden gem", budgetTier: "$1,800–$2,800/mo couple",
+    overview: "The Azores are nine volcanic islands in the mid-Atlantic — technically Portuguese territory with all the benefits of EU membership, Portuguese residency pathways, and the NHR 2.0 tax regime — but at costs 30–40% below mainland Portugal. São Miguel is the largest island, with thermal springs, crater lakes, and a year-round mild climate.",
+    qol: { healthcareQuality: 8, safety: 10, englishProficiency: 7, infrastructure: 7, expatCommunity: 6, climate: 7 },
+    costs: { rent1br: "$600–$1,000", rent2br: "$800–$1,400", groceries: "$250–$400", dining: "$150–$300", utilities: "$100–$180", transportation: "$50–$100", healthcare: "$100–$200", entertainment: "$100–$200", totalCouple: "$1,800–$2,800", totalSingle: "$1,100–$1,700" },
+    pros: ["30–40% cheaper than mainland Portugal with all the same visa and tax benefits", "EU citizenship path via D7 visa + 5 years residency", "NHR 2.0: 10% flat tax on foreign pensions for 10 years", "Extremely safe — tiny island communities with very low crime", "Stunning volcanic landscapes, thermal springs, whale watching", "Very authentic Portuguese culture — not touristy or crowded"],
+    cons: ["More rain and overcast days than mainland Portugal — lush but grey", "Limited entertainment and dining options compared to Lisbon or Porto", "Inter-island travel requires flights or ferry — no direct Europe bridge", "Some supply chains from mainland — certain goods cost more"],
+    healthcare: { summary: "The Azores use Portugal's SNS, providing EU-standard public healthcare to all legal residents. São Miguel has the best medical facilities; complex cases are flown to Lisbon. Private supplemental insurance costs $100–$200/month.", privateInsurance: "$100–$200/month", keyTakeaway: "Healthcare is solid for routine needs and emergencies. Lisbon is accessible by a 2-hour TAP flight for complex care. Full NHR 2.0 tax savings apply exactly as on the mainland." },
+    visa: { type: "D7 Passive Income Visa (same as Portugal mainland)", minIncome: "~$1,400/month", ssSaccepted: true, summary: "Exactly the same D7 visa process as mainland Portugal, requiring approximately $1,400/month in passive income. All the same NHR 2.0 tax benefits apply. The Azores are an autonomous region of Portugal within the EU, so residency counts fully toward the 5-year Portugal citizenship requirement.", keyTakeaway: "Same visa, same tax benefits, same citizenship pathway as mainland Portugal — but 30–40% lower cost of living. An underappreciated arbitrage opportunity for retirees who want Europe without Lisbon prices." },
+    taxes: { foreignIncomeTax: "NHR 2.0: 10% flat tax on foreign pensions for 10 years", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: true, summary: "Identical to mainland Portugal: NHR 2.0 regime with 10% flat tax on foreign-source pension income for 10 years. US-Portugal tax treaty and totalization agreement are fully applicable.", keyTakeaway: "Full Portugal tax benefits in a place that costs 30–40% less than the mainland. The financial case for the Azores over Lisbon or the Algarve is compelling for budget-conscious retirees seeking EU residence." },
+    lifestyle: { summary: "Life in the Azores is defined by nature, tranquility, and authenticity. São Miguel has dramatic calderas, hydrothermal hot springs (the famous Termas das Furnas), whale and dolphin watching, and a relaxed capital with excellent cafés. The growing expat community includes remote workers, artists, and retirees.", currency: "EUR (Euro)", climate: "Mild year-round: 55–75°F. Green and lush. More rain than mainland. Never freezing, never very hot. Best months: June–September." },
+  },
+  {
+    id: "malta", name: "Malta", flag: "🇲🇹", region: "Europe",
+    bestCities: ["Sliema", "St. Julian's", "Valletta", "Gozo", "Marsaskala"],
+    heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+    tagline: "Only English-Speaking EU Country with 15% Flat Tax & 300 Sunny Days",
+    ilRank: "Top 10 International Living 2026", budgetTier: "$2,500–$4,000/mo couple",
+    overview: "Malta is uniquely positioned: the only country that is simultaneously EU member, English co-official language, 300+ sunny days, Mediterranean lifestyle, 15% flat tax on foreign income, and a fast-track to EU citizenship. At just 122 square miles, Malta is small but its compactness is an advantage — everything is accessible within 30 minutes.",
+    qol: { healthcareQuality: 8, safety: 9, englishProficiency: 10, infrastructure: 8, expatCommunity: 8, climate: 9 },
+    costs: { rent1br: "$900–$1,500", rent2br: "$1,200–$2,000", groceries: "$300–$450", dining: "$200–$350", utilities: "$100–$200", transportation: "$50–$100", healthcare: "$100–$200", entertainment: "$150–$250", totalCouple: "$2,500–$4,000", totalSingle: "$1,400–$2,200" },
+    pros: ["Only English-speaking EU country — zero language barrier in a European setting", "15% flat tax on all foreign income remitted to Malta (Malta Retirement Programme)", "EU citizenship pathway — one of the fastest in the EU (3–5 years with investment)", "300+ sunny days; Mediterranean lifestyle with beautiful beaches", "Extremely safe — consistently one of the EU's lowest crime rates", "EU-standard public healthcare free for legal residents"],
+    cons: ["Small island — limited natural space; can feel confining for some retirees", "Property is expensive and limited — renting is often more practical", "Summer tourist season brings significant crowds and heat (90s°F)", "Some supply chains from mainland Europe — certain goods cost more"],
+    healthcare: { summary: "Malta's public healthcare system (Mater Dei Hospital) is EU-standard and free for legal residents, with English-speaking doctors throughout. Private healthcare is excellent: specialist visits cost $50–$100, and private insurance runs $100–$200/month.", privateInsurance: "$100–$200/month", keyTakeaway: "EU-standard English-speaking healthcare free for residents. Malta's small size means everything is accessible — no long drives to reach quality hospitals." },
+    visa: { type: "Malta Retirement Programme (MRP)", minIncome: "~$2,000/month (+ Malta property requirement)", ssSaccepted: true, summary: "The MRP requires a minimum annual tax liability of €7,500 (at the 15% flat rate), proof of income, and either purchase of Maltese property (minimum €275,000) or lease (minimum €9,600/year). The MRP provides a 15% flat tax on all foreign income remitted to Malta.", keyTakeaway: "The MRP's 15% flat tax is competitive. The property requirement adds upfront cost, but Malta's EU citizenship pathway may justify the investment for those seeking full EU residency rights." },
+    taxes: { foreignIncomeTax: "15% flat tax on all foreign income remitted to Malta (Malta Retirement Programme)", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: false, summary: "Under the MRP, all foreign income remitted to Malta is taxed at a flat 15% rate, with a minimum annual tax of €7,500. The US-Malta tax treaty prevents genuine double taxation — the flat Malta tax typically offsets against US tax liability.", keyTakeaway: "15% flat is higher than Greece's 7% or Portugal's 10%, but Malta's unique position as the only English-speaking EU country makes the premium worthwhile for many retirees." },
+    lifestyle: { summary: "Malta's lifestyle punches well above its weight. The UNESCO capital Valletta has extraordinary Baroque architecture, world-class museums, and a vibrant dining scene. Gozo (a 25-minute ferry) offers a slower Maltese lifestyle with dramatic clifftop scenery and excellent diving. The social scene is active — yacht clubs, international schools, English-language theater.", currency: "EUR (Euro)", climate: "Mediterranean: 300+ sunny days. Hot summers (90s°F), mild winters (60s°F in the day). No central heating needed in most homes." },
+  },
+  {
+    id: "belize", name: "Belize", flag: "🇧🇿", region: "Central America",
+    bestCities: ["San Ignacio", "Ambergris Caye", "Placencia", "Corozal", "Hopkins"],
+    heroImage: "https://images.unsplash.com/photo-1534850336045-c6c6d287f89e?w=1200&q=80",
+    tagline: "English-Speaking Caribbean Retirement with No Tax on Foreign Income",
+    ilRank: "Top 15 International Living 2026", budgetTier: "$1,500–$2,500/mo couple",
+    overview: "Belize is the only English-speaking country in Central America, operates on Belize dollars pegged 2:1 to the US dollar, applies no tax to any foreign-source income, and offers the QRP program with a straightforward $2,000/month income requirement. The Belize Barrier Reef — second largest in the world — makes Ambergris Caye a world-class diving and fishing destination.",
+    qol: { healthcareQuality: 5, safety: 6, englishProficiency: 10, infrastructure: 5, expatCommunity: 7, climate: 7 },
+    costs: { rent1br: "$400–$800", rent2br: "$600–$1,200", groceries: "$250–$400", dining: "$150–$300", utilities: "$100–$200", transportation: "$60–$120", healthcare: "$100–$200", entertainment: "$100–$200", totalCouple: "$1,500–$2,500", totalSingle: "$900–$1,500" },
+    pros: ["Only English-speaking country in Central America — zero language barrier", "No tax on foreign income under territorial tax system", "QRP visa: duty-free import of household goods and car", "World-class diving — Belize Barrier Reef (UNESCO World Heritage Site)", "Belize dollar pegged 2:1 to USD — simple, stable currency relationship", "Warm, laid-back Caribbean lifestyle with strong British legal traditions"],
+    cons: ["Healthcare is limited — serious conditions require travel to Guatemala, Mexico, or the US", "Belize City has higher crime rates — most expats choose island or inland living", "Import-dependent economy means food and goods cost more than regional neighbors", "Infrastructure outside tourist areas is basic — roads, internet, utilities can be poor"],
+    healthcare: { summary: "Healthcare is Belize's primary weakness. Private clinics on Ambergris Caye and San Ignacio are adequate for routine care. For any serious condition, most expats fly to Mérida, Mexico (3 hours) or Miami. Medical evacuation insurance is essential.", privateInsurance: "$100–$200/month + medical evacuation insurance strongly recommended", keyTakeaway: "Belize is not the destination for retirees with significant health needs. For healthy retirees who prioritize English-speaking Caribbean lifestyle over medical infrastructure, it works well — but have a plan for serious care." },
+    visa: { type: "QRP — Qualified Retired Persons Program", minIncome: "$2,000/month from abroad", ssSaccepted: true, summary: "The QRP program requires age 45+, $2,000/month in qualifying income from abroad (Social Security counts), and a clean background check. QRP holders receive immediate residency, duty-free import of household goods and a vehicle, and exemption from all taxes on foreign-source income.", keyTakeaway: "The QRP's standout benefit is the duty-free car import — saving $15,000–$30,000 for expats shipping vehicles from the US. Combined with no foreign income tax, it's a genuinely compelling package for healthy retirees." },
+    taxes: { foreignIncomeTax: "Territorial — no tax on any foreign-source income", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Belize has a strict territorial tax system: only income sourced within Belize is taxed. All US Social Security, pensions, investments, and rental income from outside Belize is completely exempt. QRP holders receive a statutory exemption.", keyTakeaway: "Zero Belizean tax on all foreign income. The QRP program provides an explicit statutory guarantee of this exemption, making it one of the most legally secure tax arrangements for foreign retirees in the Americas." },
+    lifestyle: { summary: "Belize rewards retirees who want a genuinely relaxed Caribbean lifestyle without language barriers. Ambergris Caye's San Pedro is a golf-cart town with world-class snorkeling right off the beach. San Ignacio in the Cayo District offers jungle adventure and Mayan ruins. Hopkins Village is a traditional Garifuna community with a growing wellness scene.", currency: "BZD (Belize Dollar) — pegged 2:1 to USD, so $1 USD = $2 BZD always", climate: "Tropical: warm year-round 75–90°F. Dry season: Nov–May. Rainy season: June–November. Ambergris Caye gets sea breezes year-round." },
+  },
+  {
+    id: "argentina", name: "Argentina", flag: "🇦🇷", region: "South America",
+    bestCities: ["Buenos Aires", "Mendoza", "Córdoba", "Bariloche", "Salta"],
+    heroImage: "https://images.unsplash.com/photo-1612294037637-ec328d0e075e?w=1200&q=80",
+    tagline: "Paris of South America with Extraordinary USD Purchasing Power",
+    ilRank: "Not in standard rankings", budgetTier: "Under $1,500/mo couple",
+    overview: "Argentina offers extraordinary USD purchasing power due to the peso's persistent weakness — effectively 3–5x as much value as other Latin American capitals. Buenos Aires is genuinely world-class: European architecture, outstanding steak and wine culture, excellent opera and theater, and sophistication that rivals any global capital. Mendoza's wine country rivals Napa.",
+    qol: { healthcareQuality: 8, safety: 6, englishProficiency: 5, infrastructure: 7, expatCommunity: 7, climate: 7 },
+    costs: { rent1br: "$300–$600", rent2br: "$500–$900", groceries: "$150–$300", dining: "$100–$250", utilities: "$40–$80", transportation: "$30–$60", healthcare: "$80–$150", entertainment: "$100–$200", totalCouple: "$1,000–$2,000", totalSingle: "$700–$1,200" },
+    pros: ["Extraordinary USD purchasing power — peso weakness makes everything dramatically cheaper", "Buenos Aires: world-class culture, dining, theater, and architecture at budget prices", "Mendoza wine country rivals Napa — excellent wine tourism lifestyle", "European-influenced culture: excellent beef, wine, opera, and tango", "Excellent private hospitals in Buenos Aires with European-trained doctors", "US-Argentina tax treaty provides some protection against double taxation"],
+    cons: ["Economic instability: inflation cycles, currency controls, and political uncertainty", "Safety requires vigilance — Buenos Aires has pickpocketing and petty crime", "Visa requires $2,000/month income (higher than Colombia or Ecuador)", "Currency situation complex — managing finances with peso controls requires expertise"],
+    healthcare: { summary: "Buenos Aires has excellent private healthcare — many doctors trained in Europe or the US, modern facilities, and costs very low for Americans. Hospital Alemán, Hospital Británico, and Hospital Italiano are private institutions with international standards and English-speaking staff.", privateInsurance: "$80–$150/month", keyTakeaway: "Buenos Aires private healthcare is genuinely excellent. European-trained doctors at a fraction of US cost. The USD exchange advantage means even premium private care is astonishingly affordable for Americans." },
+    visa: { type: "Rentista / Pensionado Visa", minIncome: "$2,000/month passive income OR qualifying pension", ssSaccepted: true, summary: "Argentina's Rentista visa requires $2,000/month in passive income from a foreign source. The peso exchange advantage means even a modest US income converts to significant local purchasing power. Work with a local attorney to navigate the residency process.", keyTakeaway: "The income requirement is higher than Colombia or Ecuador, but the USD purchasing power Argentina provides makes your actual spending go dramatically further. A $2,000/month income lives like $6,000–$8,000 in local terms." },
+    taxes: { foreignIncomeTax: "Argentina taxes residents on worldwide income — but USD advantage offsets the burden", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: false, summary: "Argentina taxes residents on worldwide income, but the extreme USD purchasing power advantage typically more than offsets any local tax burden for American retirees. The US-Argentina treaty provides some protection. Complex currency controls require expert help.", keyTakeaway: "Argentina's taxes sound concerning on paper, but the practical impact for most retirees is modest given the peso exchange advantage. Work with a bilingual tax advisor to structure your finances correctly." },
+    lifestyle: { summary: "Buenos Aires is one of the world's great cities — its Palermo, Recoleta, and San Telmo neighborhoods offer a European city experience at Latin American prices. Sunday markets, asados (barbecues), world-class wine bars, and some of the world's best steakhouses define the social calendar. The tango culture is genuine and accessible.", currency: "ARS (Argentine Peso) — significant USD advantage; consult experts for legal exchange", climate: "Buenos Aires: temperate like New York but reversed seasons. Mendoza: sunny and dry. Bariloche: mountain, 4 full seasons." },
+  },
+  {
+    id: "bolivia", name: "Bolivia", flag: "🇧🇴", region: "South America",
+    bestCities: ["Sucre", "Santa Cruz", "Cochabamba"],
+    heroImage: "https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=1200&q=80",
+    tagline: "South America's Most Affordable Country with Sucre's Perfect Climate",
+    ilRank: "Budget pick", budgetTier: "Under $1,500/mo couple",
+    overview: "Bolivia is the most affordable country in South America and one of the cheapest retirement destinations in the world. Sucre, the constitutional capital, offers what many consider the most perfect climate on earth — a near-constant 63°F average year-round thanks to its 9,100 ft elevation. The colonial city has UNESCO World Heritage status.",
+    qol: { healthcareQuality: 5, safety: 7, englishProficiency: 4, infrastructure: 5, expatCommunity: 4, climate: 8 },
+    costs: { rent1br: "$200–$400", rent2br: "$300–$600", groceries: "$100–$200", dining: "$60–$120", utilities: "$30–$60", transportation: "$20–$40", healthcare: "$60–$120", entertainment: "$50–$100", totalCouple: "$800–$1,400", totalSingle: "$600–$900" },
+    pros: ["Cheapest country in South America — extraordinary USD purchasing power", "Sucre: perfect spring climate year-round at 9,100 ft (63°F average)", "Sucre is a UNESCO World Heritage colonial city — stunning architecture", "Boliviano pegged to USD — no currency risk", "Safe in Sucre and smaller cities — peaceful atmosphere", "Bolivia has remarkable natural beauty: salt flats, Amazon, Lake Titicaca"],
+    cons: ["No official retirement visa — tourist visa renewals required", "Healthcare for serious conditions requires travel to Santa Cruz or abroad", "Very high altitude (9,000+ ft in Sucre, 12,000 ft in La Paz) — not suitable for everyone", "English not spoken — Spanish essential for daily life"],
+    healthcare: { summary: "Bolivia's healthcare is the primary limitation. Sucre has private clinics adequate for routine care, but anything serious requires travel to Santa Cruz or abroad. Medical evacuation insurance is essential.", privateInsurance: "$60–$120/month + medical evacuation insurance", keyTakeaway: "Bolivia works for healthy retirees seeking the world's most affordable lifestyle in a beautiful setting. For those with ongoing health needs, other destinations are more suitable." },
+    visa: { type: "Tourist Visa / Residence through investment or marriage", minIncome: "No official retirement visa — tourist renewals typical", ssSaccepted: false, summary: "Bolivia does not have a dedicated retirement visa. Most long-term foreign residents use regular tourist visa renewals or obtain residence through investment or marriage to a Bolivian citizen. This requires working with a local immigration attorney.", keyTakeaway: "Bolivia's lack of a retirement visa is its most significant practical limitation. This is a destination for adaptable, adventurous retirees comfortable navigating an imperfect bureaucratic system in exchange for the world's lowest retirement costs." },
+    taxes: { foreignIncomeTax: "Territorial — foreign pension income generally not taxed for residents", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Bolivia operates on a territorial tax system and foreign-source pension income is generally not taxed for non-working expat residents. There is no US-Bolivia tax treaty.", keyTakeaway: "Minimal Bolivian tax burden on foreign retirement income, combined with the lowest cost of living in South America, makes Bolivia financially compelling for those willing to accept its limitations." },
+    lifestyle: { summary: "Sucre is Bolivia's crown jewel — a Spanish colonial city of whitewashed buildings, flower-filled plazas, and weekend artisan markets. Bolivia's natural wonders are extraordinary: the Salar de Uyuni (world's largest salt flat), Lake Titicaca, and the Amazon basin are all accessible for the adventurous retiree.", currency: "BOB (Boliviano) — pegged to USD", climate: "Sucre: perfect spring 63°F year-round (9,100 ft). La Paz: cold at 12,000 ft. Santa Cruz: hot tropical. Copacabana: mild lakeside." },
+  },
+  {
+    id: "cambodia", name: "Cambodia", flag: "🇰🇭", region: "SE Asia",
+    bestCities: ["Phnom Penh", "Siem Reap", "Kampot", "Sihanoukville"],
+    heroImage: "https://images.unsplash.com/photo-1568733126608-7cd9b0a753c6?w=1200&q=80",
+    tagline: "Easiest Visa in Asia & USD Economy with Near-Zero Cost of Living",
+    ilRank: "Budget pick", budgetTier: "Under $1,500/mo couple",
+    overview: "Cambodia is one of the world's most accessible long-term retirement destinations: the E-class business visa costs just $290/year with no income requirement, is renewable indefinitely, and Cambodia uses the US dollar as its de facto currency. The country has the ancient temples of Angkor Wat, beautiful riverfront towns like Kampot, and costs so low that a comfortable couple's lifestyle is under $1,500/month.",
+    qol: { healthcareQuality: 5, safety: 7, englishProficiency: 6, infrastructure: 5, expatCommunity: 7, climate: 6 },
+    costs: { rent1br: "$250–$500", rent2br: "$400–$800", groceries: "$150–$250", dining: "$80–$180", utilities: "$40–$80", transportation: "$30–$60", healthcare: "$80–$160", entertainment: "$80–$150", totalCouple: "$1,000–$1,800", totalSingle: "$700–$1,100" },
+    pros: ["World's easiest long-term visa: E-class at $290/year, no income test", "USD official currency — zero currency risk for American retirees", "Extremely low cost of living — one of the cheapest quality-of-life options in Asia", "Angkor Wat and extraordinary ancient temple complexes on the doorstep", "Kampot: charming, safe riverside town with growing expat community", "Warm, Buddhist-influenced culture with genuine hospitality"],
+    cons: ["Serious medical care requires travel to Thailand (Bangkok) — no local options for complex care", "Very hot year-round: 80–100°F; rainy season May–October with heavy daily rain", "Sihanoukville has been heavily developed by Chinese investors — much less charming", "Limited long-term visa stability — political situation bears monitoring"],
+    healthcare: { summary: "Royal Phnom Penh Hospital is the top private option with evacuation services to Bangkok. In Siem Reap and Kampot, care is limited to routine matters. Medical evacuation insurance to Thailand is not optional.", privateInsurance: "$80–$160/month + medical evacuation to Thailand essential", keyTakeaway: "Use Bangkok's world-class hospitals for annual checkups and serious care. Budget for quarterly trips to Thailand — even with those costs, Cambodia remains dramatically cheaper than any Western retirement destination." },
+    visa: { type: "E-Class Business Visa ($290/year — no income requirement)", minIncome: "None — just $290/year visa fee", ssSaccepted: false, summary: "Cambodia's E-class visa is the most accessible long-term visa in all of Asia. Pay $35 for the initial visa, extend for one year at a time for $290, and renew indefinitely. No income proof, no health check, no property requirement.", keyTakeaway: "No other country in Asia offers indefinite legal residency with zero income requirements for just $290/year. For retirees on any budget, Cambodia's visa situation is unmatched." },
+    taxes: { foreignIncomeTax: "Territorial — foreign income not taxed for non-working expat retirees", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Cambodia operates on a territorial tax system — income earned outside Cambodia is not taxed locally for non-working expat retirees. There is no US-Cambodia tax treaty.", keyTakeaway: "Zero Cambodian tax on foreign retirement income, combined with the lowest visa cost in Asia and a USD economy, makes Cambodia extraordinary from a financial access perspective." },
+    lifestyle: { summary: "Phnom Penh is a surprisingly modern, cosmopolitan capital with excellent French-influenced restaurants and a thriving arts scene. Siem Reap is magical — the Angkor temples are one of humanity's greatest achievements. Kampot is the slow-travel favorite: a colonial riverside town with pepper plantations and an exceptionally relaxed pace.", currency: "USD (widely used as official currency alongside Cambodian Riel)", climate: "Tropical: hot year-round (85–100°F). Dry season: Nov–Apr. Rainy season: May–Oct with heavy afternoon storms." },
+  },
+  {
+    id: "northern-cyprus", name: "Northern Cyprus", flag: "🇨🇾", region: "Mediterranean",
+    bestCities: ["Kyrenia (Girne)", "Famagusta", "Karpaz Peninsula", "Nicosia (North)"],
+    heroImage: "https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?w=1200&q=80",
+    tagline: "Mediterranean Lifestyle at Budget Prices — Europe's Hidden Retirement Secret",
+    ilRank: "Hidden gem", budgetTier: "Under $1,500/mo couple",
+    overview: "Northern Cyprus is one of Europe's best-kept retirement secrets — a Mediterranean island with 300+ sunny days, beautiful beaches, low crime, and a significant British and European expat community, all at costs dramatically below Malta, Greece, or southern Cyprus. English is widely spoken due to British colonial history.",
+    qol: { healthcareQuality: 7, safety: 9, englishProficiency: 8, infrastructure: 7, expatCommunity: 7, climate: 9 },
+    costs: { rent1br: "$300–$600", rent2br: "$500–$900", groceries: "$200–$350", dining: "$100–$200", utilities: "$80–$150", transportation: "$50–$100", healthcare: "$100–$200", entertainment: "$100–$200", totalCouple: "$1,200–$2,200", totalSingle: "$800–$1,400" },
+    pros: ["Mediterranean lifestyle (beaches, 300 sunny days) at budget prices", "Low crime — very safe for expats throughout the territory", "Low/no tax on foreign-source pension income for resident expats", "English widely spoken due to British colonial history", "Beautiful beaches and coastline comparable to the Greek islands", "Strong, established British and European expat community in Kyrenia"],
+    cons: ["Territory not recognized by most countries — only Turkey recognizes Northern Cyprus", "Complex property ownership history — use a reputable lawyer for any purchase", "Limited US banking options — American financial institutions avoid the territory", "Turkish Lira is volatile — use USD or GBP as your base currency"],
+    healthcare: { summary: "Private hospitals in Kyrenia and Nicosia North have English-speaking doctors adequate for routine and moderate medical needs. More complex cases go to Turkey or the EU via southern Cyprus. Private insurance runs $100–$200/month.", privateInsurance: "$100–$200/month", keyTakeaway: "Healthcare is adequate but plan for Turkey or EU access for complex care. The significantly lower costs compared to EU Mediterranean alternatives can fund regular medical travel and still leave you ahead financially." },
+    visa: { type: "Residence Permit (property ownership or sufficient income proof)", minIncome: "~$1,000/month (sufficient funds demonstration)", ssSaccepted: true, summary: "Northern Cyprus residence permits are relatively straightforward — property owners qualify automatically, and those renting can demonstrate sufficient income (~$1,000/month). Annual renewal is typical. There is no pathway to formal EU citizenship through Northern Cyprus residence.", keyTakeaway: "Easy to obtain residency at a low income threshold. The lack of EU citizenship pathway is the main limitation compared to southern Cyprus, Portugal, or Malta." },
+    taxes: { foreignIncomeTax: "Low/no tax on foreign-source pension income for expat residents", hostTaxesSS: false, usTaxTreaty: false, totalizationAgreement: false, summary: "Northern Cyprus applies low or no tax on foreign-source pension income for qualifying expat residents. The territory is not a recognized state so there is no US tax treaty. Strong USD purchasing power against the Turkish Lira provides significant financial advantage.", keyTakeaway: "Low local tax burden plus strong USD purchasing power against the Lira makes Northern Cyprus financially attractive. Work with a local financial advisor familiar with both US and Northern Cyprus tax environments." },
+    lifestyle: { summary: "Kyrenia (Girne) is the expat hub — an ancient harbor town with a Crusader castle, boutique restaurants, and a social scene centered on the yacht marina. The Karpaz Peninsula at the island's eastern tip is extraordinarily unspoiled — wild beaches, free-roaming donkeys, and Greco-Roman ruins. The lifestyle is a genuine bargain compared to anything comparable in EU Mediterranean countries.", currency: "TRY (Turkish Lira) — USD and GBP widely accepted in Kyrenia expat areas", climate: "Mediterranean: 300+ sunny days. Hot summers (90s°F), mild winters (60s°F). Beach weather 6+ months of the year." },
+  },
+  {
+    id: "philippines", name: "Philippines", flag: "🇵🇭", region: "SE Asia",
+    bestCities: ["Cebu City", "Dumaguete", "Metro Manila", "Davao", "Tagaytay"],
+    heroImage: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200&q=80",
+    tagline: "English-Speaking Asia with No Tax on Foreign Pensions & Deposit-Only Visa",
+    ilRank: "Top 15 International Living 2026", budgetTier: "$1,200–$2,500/mo couple",
+    overview: "The Philippines is the only country in Southeast Asia with English as a co-official language, making it dramatically more accessible for American retirees. The country does not tax foreign pensions or Social Security income. The SRRV requires only a refundable deposit of $10,000–$20,000 with no ongoing income requirement. A US-Philippines tax treaty provides additional protection.",
+    qol: { healthcareQuality: 7, safety: 6, englishProficiency: 10, infrastructure: 6, expatCommunity: 8, climate: 7 },
+    costs: { rent1br: "$300–$700", rent2br: "$500–$1,000", groceries: "$150–$300", dining: "$100–$200", utilities: "$80–$150", transportation: "$40–$80", healthcare: "$80–$150", entertainment: "$100–$200", totalCouple: "$1,200–$2,500", totalSingle: "$800–$1,500" },
+    pros: ["English co-official language — zero language barrier in an Asian country", "No tax on foreign pensions or Social Security income", "SRRV visa: no income requirement — just $10,000–$20,000 refundable deposit", "US-Philippines tax treaty provides additional double-taxation protection", "Warm, hospitable Filipino culture with deep American cultural connections", "Affordable tropical island lifestyle — Dumaguete and Cebu are popular expat hubs"],
+    cons: ["Typhoon season (July–October) — some islands are frequently hit", "Upfront deposit required for SRRV ($10,000–$20,000, though fully refundable)", "Internet reliability and power outages vary outside major cities", "Traffic in Manila is notoriously terrible — most expats avoid the capital"],
+    healthcare: { summary: "Manila and Cebu have excellent JCI-accredited private hospitals with English-speaking doctors (Makati Medical Center, St. Luke's Medical Center). Dumaguete has Silliman University Medical Center. Private insurance runs $80–$150/month.", privateInsurance: "$80–$150/month", keyTakeaway: "Major Philippine cities have excellent English-speaking private hospitals. The English language makes navigating the system completely stress-free for American retirees." },
+    visa: { type: "SRRV — Special Resident Retiree's Visa", minIncome: "No income requirement — $10,000–$20,000 refundable deposit", ssSaccepted: false, summary: "The SRRV requires a one-time refundable deposit of $10,000 (age 50+ with private pension) or $20,000 (age 35–50), placed in a Philippine bank. No ongoing income requirement. The deposit is fully refundable when you leave. The visa grants multiple-entry privileges and annual renewal.", keyTakeaway: "The SRRV is uniquely appealing for retirees without substantial pension income. A $20,000 deposit (earning interest in the Philippine bank) is the only requirement — no monthly income test." },
+    taxes: { foreignIncomeTax: "No — foreign pensions and SS are completely tax-free", hostTaxesSS: false, usTaxTreaty: true, totalizationAgreement: false, summary: "The Philippines taxes resident aliens only on Philippine-source income. Foreign pensions, Social Security, 401k distributions, and investment income from outside the Philippines are completely exempt from Philippine income tax. The US-Philippines tax treaty provides additional protections.", keyTakeaway: "Zero Philippine tax on all foreign retirement income, English language, US cultural familiarity, and a US tax treaty — the Philippines offers a uniquely accessible package for American retirees seeking Asian lifestyle." },
+    lifestyle: { summary: "Dumaguete on Negros island is the most popular retiree destination — a relaxed university city with excellent diving, a charming boulevard, and very affordable living. Cebu City offers urban amenities and easy island-hopping. Tagaytay near Manila has a cool highland climate with dramatic views of the Taal volcano lake.", currency: "PHP (Philippine Peso) — USD widely accepted in tourist and expat areas", climate: "Tropical: warm 75–90°F year-round. Typhoon season: July–October. Dumaguete and southern Visayas: less typhoon-prone than north." },
+  },
+];
+
+export function getDestinationById(id: string): DestinationDetail | undefined {
+  return destinationDetails.find((d) => d.id === id);
 }
 
-export function getAllDestinationDetails(): DestinationDetail[] {
-  return Object.values(destinationDetails);
+export function getAllDestinationIds(): string[] {
+  return destinationDetails.map((d) => d.id);
 }
