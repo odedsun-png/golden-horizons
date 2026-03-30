@@ -1,0 +1,1 @@
+Retirees gained patience and a deeper connection with the landscape as they planned each leg of their journey. The tactile experience of maps often sparked fond conversations and shared laughter in small cafés.
