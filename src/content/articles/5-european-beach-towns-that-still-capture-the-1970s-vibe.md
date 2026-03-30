@@ -1,1 +1,1 @@
-For retirees it means slow strolls, art-filled quiet afternoons, and compact streets that are easy to navigate. Day trips to nearby coves and accessible local markets make daily life pleasant without modern hustle.
+Easy walking lanes and accessible beaches make Sitges a breeze for retirees seeking gentle strolls amid lively plazas. The relaxed nightlife and arts scene provide vibrant social spots without overwhelming crowds.
