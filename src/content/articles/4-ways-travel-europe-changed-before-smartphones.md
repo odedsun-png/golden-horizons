@@ -1,1 +1,1 @@
-Retirees can savor the tactile joy of unfolding a paper map and relive the deliberate pace of discovery. Without GPS, each turn felt like a meaningful choice on a well-earned adventure.
+Retirees appreciate this unhurried pace. Using paper maps invites reflection, encourages patience, and makes every route part of the travel story.
