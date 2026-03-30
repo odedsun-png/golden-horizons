@@ -1,1 +1,1 @@
-Retirees gained patience and a deeper connection with the landscape as they planned each leg of their journey. The tactile experience of maps often sparked fond conversations and shared laughter in small cafés.
+Retirees can savor the tactile joy of unfolding a paper map and relive the deliberate pace of discovery. Without GPS, each turn felt like a meaningful choice on a well-earned adventure.
