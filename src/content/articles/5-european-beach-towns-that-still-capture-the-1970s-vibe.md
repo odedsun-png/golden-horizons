@@ -1,0 +1,1 @@
+For retirees it means slow strolls, art-filled quiet afternoons, and compact streets that are easy to navigate. Day trips to nearby coves and accessible local markets make daily life pleasant without modern hustle.
