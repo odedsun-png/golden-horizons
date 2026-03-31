@@ -1,1 +1,0 @@
-For retirees, maps encouraged relaxed planning and easy storytelling. They offer tactile comfort, make sharing plans simple, and are gentler on the eyes than tiny screens.
