@@ -184,35 +184,6 @@ export default async function ArticlePage({
               <span>Published: {mdArticle.date}</span>
             </div>
 
-            {/* Structure badges */}
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-              {[
-                `${totalItems} Items`,
-                "1 Paragraph per Item",
-                `${totalItems} Ad Slots`,
-                "600–800 Words",
-                "2–3 min Read Time",
-              ].map((label) => {
-                const [num, ...rest] = label.split(" ");
-                return (
-                  <div
-                    key={label}
-                    style={{
-                      background: "#f0ebe0",
-                      border: "1px solid #d4af37",
-                      borderRadius: "20px",
-                      padding: "4px 12px",
-                      fontFamily: "Arial, sans-serif",
-                      fontSize: "0.72rem",
-                      color: "#1a3a2a",
-                      fontWeight: 600,
-                    }}
-                  >
-                    <span style={{ color: "#b8860b" }}>{num}</span> {rest.join(" ")}
-                  </div>
-                );
-              })}
-            </div>
           </div>
 
           {/* ── Intro ── */}
