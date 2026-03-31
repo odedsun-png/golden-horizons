@@ -199,7 +199,7 @@ function parseMakeComRaw(raw: string): {
   const title = parts[0];
   const intro = parts[1] || "";
   const items: ArticleItem[] = [];
-  let closing = "";
+  const closing = "";
 
   // Remaining parts alternate between headings and paragraphs
   // Pattern: Heading, *paragraph, paragraph, Heading, *paragraph, paragraph...
