@@ -1,1 +1,0 @@
-For retirees this means easy walks, short train rides to Barcelona for specialist care, and a year-round cultural calendar at a relaxed pace. The welcoming expat scene and calm harbor make daily life simple and sociable.
