@@ -182,14 +182,13 @@ function parseMakeComRaw(raw: string): {
   closing: string;
 } {
   // The file contains literal backslash-n characters (\n as two chars, not newline)
-  // Separator pattern is: &\n\n& (ampersand + backslash + n + backslash + n + ampersand)
-  // We split on this literal 6-char sequence
-  const SEP = "&\\n\\n&";
-  const rawParts = raw.split(SEP);
+  // Separator pattern is: &\n\n& or &\n\n*& (with optional asterisk before closing &)
+  // We split on this regex pattern
+  const rawParts = raw.split(/&\\n\\n\*?&/);
 
-  // Clean each part: remove leading/trailing & and *& markers
+  // Clean each part: trim whitespace
   const parts = rawParts
-    .map((p) => p.replace(/^&|&$/g, "").replace(/^\*&|&\*$|^\*/, "").trim())
+    .map((p) => p.trim())
     .filter(Boolean);
 
   if (parts.length === 0) {
