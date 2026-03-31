@@ -11,26 +11,22 @@ export default function ArticlesPage() {
   const mdSlugs = getAllMarkdownSlugs();
   const mdArticles = mdSlugs
     .map((slug) => parseMarkdownArticle(slug))
-    .filter(Boolean)
+    .filter((a): a is NonNullable<typeof a> => a !== null)
     .map((a) => ({
-      slug: a!.slug,
-      title: a!.title,
-      category: a!.category,
-      intro: a!.intro,
-      date: a!.date,
-      image: a!.items[0]?.image || "",
-      source: "markdown" as const,
+      slug: a.slug,
+      title: a.title,
+      category: a.category,
+      intro: a.intro,
+      image: a.items[0]?.image || "",
     }));
 
   // ── Hardcoded data.ts articles ──
   const dataArticles = getAllArticles().map((a) => ({
     slug: a.slug,
     title: a.title,
-    category: typeof a.category === "string" ? a.category : a.category?.name || "Travel",
+    category: a.category.name,
     intro: a.intro || "",
-    date: a.date || "",
     image: a.image || "",
-    source: "data" as const,
   }));
 
   // Deduplicate: Markdown takes priority
@@ -59,7 +55,7 @@ export default function ArticlesPage() {
               fontSize: "0.68rem",
               fontWeight: 800,
               letterSpacing: "3px",
-              textTransform: "uppercase",
+              textTransform: "uppercase" as const,
               color: "#d4af37",
               marginBottom: "10px",
             }}
@@ -115,20 +111,9 @@ export default function ArticlesPage() {
                     borderRadius: "8px",
                     overflow: "hidden",
                     boxShadow: "0 2px 12px rgba(0,0,0,0.07)",
-                    transition: "transform 0.2s, box-shadow 0.2s",
                     height: "100%",
                     display: "flex",
-                    flexDirection: "column",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)";
-                    (e.currentTarget as HTMLDivElement).style.boxShadow =
-                      "0 8px 24px rgba(0,0,0,0.13)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
-                    (e.currentTarget as HTMLDivElement).style.boxShadow =
-                      "0 2px 12px rgba(0,0,0,0.07)";
+                    flexDirection: "column" as const,
                   }}
                 >
                   {/* Card image */}
@@ -150,7 +135,7 @@ export default function ArticlesPage() {
                         style={{
                           width: "100%",
                           height: "100%",
-                          objectFit: "cover",
+                          objectFit: "cover" as const,
                           display: "block",
                         }}
                       />
@@ -181,7 +166,14 @@ export default function ArticlesPage() {
                   </div>
 
                   {/* Card body */}
-                  <div style={{ padding: "20px 22px 24px", flex: 1, display: "flex", flexDirection: "column" }}>
+                  <div
+                    style={{
+                      padding: "20px 22px 24px",
+                      flex: 1,
+                      display: "flex",
+                      flexDirection: "column" as const,
+                    }}
+                  >
                     {/* Category */}
                     <div
                       style={{
@@ -189,7 +181,7 @@ export default function ArticlesPage() {
                         fontSize: "0.65rem",
                         fontWeight: 800,
                         letterSpacing: "2px",
-                        textTransform: "uppercase",
+                        textTransform: "uppercase" as const,
                         color: "#d4af37",
                         marginBottom: "8px",
                       }}
@@ -221,10 +213,10 @@ export default function ArticlesPage() {
                           color: "#666",
                           lineHeight: 1.55,
                           marginBottom: "14px",
+                          overflow: "hidden",
                           display: "-webkit-box",
                           WebkitLineClamp: 2,
-                          WebkitBoxOrient: "vertical",
-                          overflow: "hidden",
+                          WebkitBoxOrient: "vertical" as const,
                         }}
                       >
                         {article.intro}
@@ -239,9 +231,6 @@ export default function ArticlesPage() {
                         fontWeight: 700,
                         color: "#1a3a2a",
                         letterSpacing: "0.5px",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "4px",
                       }}
                     >
                       Read article →
