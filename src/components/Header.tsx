@@ -26,6 +26,13 @@ export default function Header() {
               Rankings
             </Link>
 
+            <Link
+              href="/articles"
+              className="text-sm font-semibold tracking-wide uppercase text-foreground/80 hover:text-foreground transition-colors"
+            >
+              Articles
+            </Link>
+
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
               className="p-2 text-foreground/70 hover:text-foreground transition-colors"
@@ -80,9 +87,17 @@ export default function Header() {
             <Link
               href="/destinations"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full text-left px-3 py-2 mb-4 bg-primary/10 rounded-lg text-primary font-semibold"
+              className="block w-full text-left px-3 py-2 mb-2 bg-primary/10 rounded-lg text-primary font-semibold"
             >
               Top Retirement Destinations
+            </Link>
+
+            <Link
+              href="/articles"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block w-full text-left px-3 py-2 mb-4 bg-primary/10 rounded-lg text-primary font-semibold"
+            >
+              Articles
             </Link>
 
             <Link
