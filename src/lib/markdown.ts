@@ -181,20 +181,15 @@ function parseMakeComRaw(raw: string): {
   items: ArticleItem[];
   closing: string;
 } {
-  // Split on the &\n\n& separator (literal backslash-n or actual newlines)
-  // Make.com outputs literal \n characters as the string "\n" not actual newlines
-  // So we need to handle both cases
-  let normalized = raw;
+  // The file contains literal backslash-n characters (\n as two chars, not newline)
+  // Separator pattern is: &\n\n& (ampersand + backslash + n + backslash + n + ampersand)
+  // We split on this literal 6-char sequence
+  const SEP = "&\\n\\n&";
+  const rawParts = raw.split(SEP);
 
-  // Replace literal \n\n with actual double newlines
-  normalized = normalized.replace(/\\n\\n/g, "\n\n");
-  // Replace literal \n with actual newlines
-  normalized = normalized.replace(/\\n/g, "\n");
-
-  // Now split on &\n\n& or just \n\n
-  const parts = normalized
-    .split(/&\n\n&|\n\n/)
-    .map((p) => p.replace(/^&|&$/g, "").replace(/^\*&|&\*$/g, "").trim())
+  // Clean each part: remove leading/trailing & and *& markers
+  const parts = rawParts
+    .map((p) => p.replace(/^&|&$/g, "").replace(/^\*&|&\*$|^\*/, "").trim())
     .filter(Boolean);
 
   if (parts.length === 0) {
