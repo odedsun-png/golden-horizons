@@ -1,1 +1,0 @@
-For retirees, the tactile act of planning can be calming and nostalgic. It encourages slower decisions, less screen time, and richer storytelling at family gatherings.
