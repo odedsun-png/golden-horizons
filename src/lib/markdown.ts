@@ -31,7 +31,7 @@ export type MarkdownArticle = {
 const ARTICLES_DIR = path.join(process.cwd(), "src", "content", "articles");
 
 // ─────────────────────────────────────────────
-// Parse a single Markdown file
+// Parse frontmatter
 // ─────────────────────────────────────────────
 
 function parseFrontmatter(raw: string): { meta: Record<string, string>; body: string } {
@@ -60,28 +60,32 @@ function parseFrontmatter(raw: string): { meta: Record<string, string>; body: st
   return { meta, body };
 }
 
+// ─────────────────────────────────────────────
+// Parse article body
+// ─────────────────────────────────────────────
+
 function parseArticleBody(body: string): { items: ArticleItem[]; closing: string } {
   const items: ArticleItem[] = [];
   let closing = "";
 
-  // Split on H2 headings (## Heading)
-  // Each item block starts with ## and contains image, paragraph, and optional closing
-  const sections = body.split(/^## /m).filter(Boolean);
+  // Split body into: item sections (before ---closing---) and closing (after)
+  const closingMarkerIdx = body.indexOf("---closing---");
+  let itemsBody = body;
 
-  // Check for a closing block (starts with "---closing---" or is the last non-item section)
-  let closingRaw = "";
+  if (closingMarkerIdx !== -1) {
+    itemsBody = body.slice(0, closingMarkerIdx).trim();
+    closing = body.slice(closingMarkerIdx + "---closing---".length).trim();
+  }
+
+  // Split on H2 headings (## Heading)
+  const sections = itemsBody.split(/^## /m).filter(Boolean);
 
   for (const section of sections) {
     const lines = section.split("\n");
     const heading = lines[0].trim();
 
-    // Skip if this is a closing marker
-    if (heading.toLowerCase() === "closing" || heading.toLowerCase() === "summary") {
-      closingRaw = lines.slice(1).join("\n").trim();
-      continue;
-    }
+    if (!heading) continue;
 
-    // Parse image line: ![alt](url) or with credit comment
     let image = "";
     let imageAlt = "";
     let imageCredit = "Unsplash";
@@ -96,10 +100,13 @@ function parseArticleBody(body: string): { items: ArticleItem[]; closing: string
       if (imgMatch) {
         imageAlt = imgMatch[1];
         image = imgMatch[2];
-        // Check next line for credit
-        if (i + 1 < lines.length && lines[i + 1].startsWith("*Photo credit:")) {
-          imageCredit = lines[i + 1].replace(/^\*Photo credit:\s*/i, "").replace(/\*$/, "").trim();
-          i++; // skip credit line
+        // Check next line for credit: *Photo credit: ...*
+        if (i + 1 < lines.length && lines[i + 1].match(/^\*Photo credit:/i)) {
+          imageCredit = lines[i + 1]
+            .replace(/^\*Photo credit:\s*/i, "")
+            .replace(/\*$/, "")
+            .trim();
+          i++;
         }
         continue;
       }
@@ -111,34 +118,28 @@ function parseArticleBody(body: string): { items: ArticleItem[]; closing: string
         continue;
       }
 
-      // Paragraph text (skip empty lines)
-      if (line.trim()) {
-        paragraphLines.push(line.trim());
-      }
+      // Skip empty lines
+      if (!line.trim()) continue;
+
+      paragraphLines.push(line.trim());
     }
 
-    if (heading) {
-      items.push({
-        number: itemNumber,
-        heading,
-        image,
-        imageAlt: imageAlt || heading,
-        imageCredit,
-        paragraph: paragraphLines.join(" "),
-      });
-    }
-  }
-
-  // Look for closing block after the last ## section
-  const closingMatch = body.match(/^---closing---\s*\n([\s\S]+?)(?:^---|\s*$)/m);
-  if (closingMatch) {
-    closing = closingMatch[1].trim();
-  } else if (closingRaw) {
-    closing = closingRaw;
+    items.push({
+      number: itemNumber,
+      heading,
+      image,
+      imageAlt: imageAlt || heading,
+      imageCredit,
+      paragraph: paragraphLines.join(" "),
+    });
   }
 
   return { items, closing };
 }
+
+// ─────────────────────────────────────────────
+// Public API
+// ─────────────────────────────────────────────
 
 export function parseMarkdownArticle(slug: string): MarkdownArticle | null {
   const filePath = path.join(ARTICLES_DIR, `${slug}.md`);
@@ -156,15 +157,17 @@ export function parseMarkdownArticle(slug: string): MarkdownArticle | null {
     title: meta.title || slug.replace(/-/g, " "),
     category: meta.category || "Travel",
     intro: meta.intro || "",
-    date: meta.date || new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }),
+    date:
+      meta.date ||
+      new Date().toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      }),
     items,
     closing,
   };
 }
-
-// ─────────────────────────────────────────────
-// Get all article slugs from the content directory
-// ─────────────────────────────────────────────
 
 export function getAllMarkdownSlugs(): string[] {
   if (!fs.existsSync(ARTICLES_DIR)) {
