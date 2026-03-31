@@ -1,1 +1,0 @@
-Retirees appreciate this unhurried pace. Using paper maps invites reflection, encourages patience, and makes every route part of the travel story.
