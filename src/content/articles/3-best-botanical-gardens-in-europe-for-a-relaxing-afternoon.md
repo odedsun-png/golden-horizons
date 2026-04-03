@@ -1,1 +1,0 @@
----\ntitle: {{1.`1`}}\ncategory: {{1.`2`}}\nslug: {{1.`4`}}\ndate: 2026-04-02\n---\n\n{{14.choices[0].message.content}}
