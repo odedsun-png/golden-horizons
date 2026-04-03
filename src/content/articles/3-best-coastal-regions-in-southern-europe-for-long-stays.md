@@ -1,0 +1,1 @@
+---\ntitle: {{1.`1`}}\nslug: {{1.`4`}}\ncategory: {{1.`2`}}\ndate: {{now}}\n---\n\n{{2.choices[0].message.content}}
