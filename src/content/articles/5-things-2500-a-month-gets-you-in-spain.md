@@ -1,1 +1,0 @@
----\ntitle: {{1.`1`}}\ncategory: {{1.`2`}}\nslug: {{1.`4`}}\ndate: {{formatDate(now; \NaN)}}\n---\n\n{{3.ARTICLE}}
