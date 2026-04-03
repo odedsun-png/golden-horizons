@@ -1,1 +1,0 @@
----\ntitle: 5 Things $2,000 a Month Gets You in Portugal\ncategory: Geography\nslug: 5-things-2000-a-month-gets-you-in-portugal\ndate: 2026-04-02\n---\n\n
