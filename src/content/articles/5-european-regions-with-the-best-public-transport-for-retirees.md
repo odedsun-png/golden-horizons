@@ -1,0 +1,1 @@
+---\ntitle: 5 European Regions with the Best Public Transport for Retirees\nslug: 5-european-regions-with-the-best-public-transport-for-retirees\ncategory: Geography\ndate: 2026-04-02\n---\n\n
