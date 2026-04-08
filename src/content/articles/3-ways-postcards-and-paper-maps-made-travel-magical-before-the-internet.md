@@ -4,8 +4,8 @@ category: Nostalgia
 slug: 3-ways-postcards-and-paper-maps-made-travel-magical-before-the-internet
 date: 2026-04-08
 image: 
-image2: https://images.pexels.com/photos/18016895/pexels-photo-18016895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-image3: https://images.pexels.com/photos/4340787/pexels-photo-4340787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+image2: https://images.pexels.com/photos/3014826/pexels-photo-3014826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+image3: https://images.pexels.com/photos/32078778/pexels-photo-32078778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 description: Discover inspiring destinations for retirees.
 featured: false
 ---
