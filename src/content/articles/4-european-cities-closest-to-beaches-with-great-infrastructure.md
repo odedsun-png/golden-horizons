@@ -1,10 +1,20 @@
----\ntitle: 4 European Cities Closest to Beaches with Great Infrastructure\ncategory: Geography\nslug: 4-european-cities-closest-to-beaches-with-great-infrastructure\ndate: 2026-04-08\nimage: https://i.ibb.co/23jzg1Jw/4-european-cities-closest-to-beaches-with-great-infrastructure.png\ndescription: Discover inspiring destinations for retirees.\nfeatured: false\n---\n\n# Discovering Coastal European Gems: Perfect Cities for Retirees
+---
+title: 4 European Cities Closest to Beaches with Great Infrastructure
+category: Geography
+slug: 4-european-cities-closest-to-beaches-with-great-infrastructure
+date: 2026-04-08
+image: 
+description: Discover inspiring destinations for retirees.
+featured: false
+---
+
+# Discovering Coastal European Gems: Perfect Cities for Retirees
 
 Retirement is not just an end but a new beginning, a time to explore the world at your own pace. Imagine spending your golden years in a vibrant European city, where the beach is just a stone's throw away. These cities not only offer the beauty of the sea but also the infrastructure and amenities that make life comfortable and fulfilling for retirees. Here, we explore four European cities that strike the perfect balance between coastal charm and urban convenience.
 
 ## Lisbon, Portugal
 
-![Lisbon city](https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80)
+![Lisbon city](https://images.pexels.com/photos/10031300/pexels-photo-10031300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 
 Lisbon, the sun-kissed capital of Portugal, offers a unique blend of traditional charm and modern amenities. Known for its hilly landscape and historic trams, this city is a haven for retirees seeking both cultural experiences and relaxation by the sea.
 
@@ -24,7 +34,7 @@ The city is rich in history and culture, with plenty of museums, galleries, and 
 
 ## Barcelona, Spain
 
-![Spanish coast](https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80)
+![Spanish coast](https://images.pexels.com/photos/36935779/pexels-photo-36935779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 
 Barcelona combines the allure of the Mediterranean coast with vibrant city life. Known for its architectural marvels by Antoni Gaudí and lively atmosphere, Barcelona is a city that never sleeps.
 
@@ -44,7 +54,7 @@ Barcelona is a city of art and history. Visit the Sagrada Familia and Park Güel
 
 ## Nice, France
 
-![Mediterranean cliffs](https://images.unsplash.com/photo-1559113202-c916b8e44373?w=800&q=80)
+![Mediterranean cliffs](https://images.pexels.com/photos/9729435/pexels-photo-9729435.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 
 Nestled on the French Riviera, Nice is a city that epitomizes elegance and leisure. With its stunning sea views and mild climate, Nice is a delightful destination for retirees seeking a blend of beachside relaxation and urban sophistication.
 
@@ -64,7 +74,7 @@ The city’s old town, Vieux Nice, is a maze of narrow streets full of charming 
 
 ## Athens, Greece
 
-![Greek islands](https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80)
+![Greek islands](https://images.pexels.com/photos/17699658/pexels-photo-17699658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 
 Athens, the cradle of Western civilization, offers retirees a chance to live amidst history. With its close proximity to stunning beaches and a wealth of ancient sites, Athens is a city where the past and present coexist harmoniously.
 
