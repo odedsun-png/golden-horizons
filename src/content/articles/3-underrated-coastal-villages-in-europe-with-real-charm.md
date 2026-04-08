@@ -1,4 +1,13 @@
----\ntitle: 3 Underrated Coastal Villages in Europe with Real Charm\ncategory: Hidden Gems\nslug: 3-underrated-coastal-villages-in-europe-with-real-charm\nimage: https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg\nimage2: https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg\nimage3: https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg\n---\n\n# Discovering Europe's Hidden Gems: 3 Underrated Coastal Villages Perfect for Retirees
+---
+title: 3 Underrated Coastal Villages in Europe with Real Charm
+category: Hidden Gems
+slug: 3-underrated-coastal-villages-in-europe-with-real-charm
+image: 
+image2: https://images.pexels.com/photos/34491899/pexels-photo-34491899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+image3: https://images.pexels.com/photos/36129547/pexels-photo-36129547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+---
+
+# Discovering Europe's Hidden Gems: 3 Underrated Coastal Villages Perfect for Retirees
 
 For those who have spent years working hard and are now looking to spend their retirement in serenity, Europe offers a treasure trove of charming coastal villages that promise peace, beauty, and a slower pace of life. While places like the French Riviera or the Amalfi Coast are often at the forefront of people's minds, Europe is home to many lesser-known coastal gems that offer an equally alluring experience without the bustling crowds. Here are three underrated coastal villages that retirees should consider for their next chapter.
 
