@@ -3,7 +3,7 @@ title: 4 Cities with the Most Photogenic Streets in Europe
 category: Architecture
 slug: 4-cities-with-the-most-photogenic-streets-in-europe
 date: 2026-04-08
-image: 
+image: https://images.pexels.com/photos/17307600/pexels-photo-17307600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 image2: https://images.pexels.com/photos/17307600/pexels-photo-17307600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 image3: https://images.pexels.com/photos/33787078/pexels-photo-33787078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 description: Discover inspiring destinations for retirees.
