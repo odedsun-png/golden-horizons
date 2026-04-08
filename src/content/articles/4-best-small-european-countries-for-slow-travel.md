@@ -3,7 +3,7 @@ title: 4 Best Small European Countries for Slow Travel
 category: Geography
 slug: 4-best-small-european-countries-for-slow-travel
 date: 2026-04-08
-image: 
+image: https://images.pexels.com/photos/4245299/pexels-photo-4245299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 image2: https://images.pexels.com/photos/4245299/pexels-photo-4245299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 image3: https://images.pexels.com/photos/15227757/pexels-photo-15227757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 description: Discover inspiring destinations for retirees.
