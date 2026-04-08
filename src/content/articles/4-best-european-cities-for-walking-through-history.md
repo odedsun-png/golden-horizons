@@ -3,7 +3,7 @@ title: 4 Best European Cities for Walking Through History
 category: Architecture
 slug: 4-best-european-cities-for-walking-through-history
 date: 2026-04-08
-image: 
+image: https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 image2: https://images.pexels.com/photos/5714731/pexels-photo-5714731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 image3: https://images.pexels.com/photos/18729069/pexels-photo-18729069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 description: Discover inspiring destinations for retirees.
