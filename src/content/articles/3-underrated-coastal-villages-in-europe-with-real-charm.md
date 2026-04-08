@@ -2,7 +2,7 @@
 title: 3 Underrated Coastal Villages in Europe with Real Charm
 category: Hidden Gems
 slug: 3-underrated-coastal-villages-in-europe-with-real-charm
-image: 
+image: https://images.pexels.com/photos/34491899/pexels-photo-34491899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 image2: https://images.pexels.com/photos/34491899/pexels-photo-34491899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 image3: https://images.pexels.com/photos/36129547/pexels-photo-36129547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
