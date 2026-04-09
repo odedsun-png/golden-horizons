@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 // Types
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 
 export type ArticleItem = {
   number: number;
@@ -25,15 +25,15 @@ export type MarkdownArticle = {
   closing: string;
 };
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 // Paths
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 
 const ARTICLES_DIR = path.join(process.cwd(), "src", "content", "articles");
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 // Unsplash image lookup by keyword
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 
 const UNSPLASH_KEYWORDS: Record<string, string> = {
   bath: "photo-1534445867742-43195f401b6c",
@@ -71,17 +71,17 @@ function getUnsplashImage(heading: string): string {
   return `https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80`;
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 // Detect format: proper Markdown vs Make.com raw
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 
 function isProperMarkdown(raw: string): boolean {
   return raw.startsWith("---") || raw.includes("\n## ");
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 // Parse frontmatter (for proper Markdown files)
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 
 function parseFrontmatter(raw: string): { meta: Record<string, string>; body: string } {
   const meta: Record<string, string> = {};
@@ -104,9 +104,9 @@ function parseFrontmatter(raw: string): { meta: Record<string, string>; body: st
   return { meta, body };
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 // Parse proper Markdown body (## headings format)
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 
 function parseProperMarkdownBody(body: string): { items: ArticleItem[]; closing: string } {
   const items: ArticleItem[] = [];
@@ -172,9 +172,9 @@ function parseProperMarkdownBody(body: string): { items: ArticleItem[]; closing:
   return { items, closing };
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
-// Parse Make.com raw format: "Title&\n\n&Intro&\n\n&Heading&\n\n*&Para1&\n\n&Para2"
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
+// Parse Make.com raw format
+// ─────────────────────────────────────────────
 
 function parseMakeComRaw(raw: string): {
   title: string;
@@ -182,12 +182,8 @@ function parseMakeComRaw(raw: string): {
   items: ArticleItem[];
   closing: string;
 } {
-  // The file contains literal backslash-n characters (\n as two chars, not newline)
-  // Separator pattern is: &\n\n& or &\n\n*& (with optional asterisk before closing &)
-  // We split on this regex pattern
   const rawParts = raw.split(/&\\n\\n\*?&/);
 
-  // Clean each part: trim whitespace
   const parts = rawParts
     .map((p) => p.trim())
     .filter(Boolean);
@@ -201,16 +197,10 @@ function parseMakeComRaw(raw: string): {
   const items: ArticleItem[] = [];
   const closing = "";
 
-  // Remaining parts alternate between headings and paragraphs
-  // Pattern: Heading, *paragraph, paragraph, Heading, *paragraph, paragraph...
-  // A heading is typically Title Case or starts with a number/keyword
-  // A paragraph starts with * or is plain text after a heading
-
   let i = 2;
   while (i < parts.length) {
     const part = parts[i];
 
-    // Check if this looks like a section heading (not starting with * or lowercase)
     const isHeading =
       !part.startsWith("*") &&
       (part.match(/^[A-Z0-9#]/) || part.match(/^Secret|^Tip|^Place|^Town|^City|^Way/i));
@@ -219,7 +209,6 @@ function parseMakeComRaw(raw: string): {
       const heading = part.replace(/^#+\s*/, "").trim();
       const paragraphParts: string[] = [];
 
-      // Collect following paragraphs until next heading
       let j = i + 1;
       while (j < parts.length) {
         const next = parts[j];
@@ -245,7 +234,6 @@ function parseMakeComRaw(raw: string): {
 
       i = j;
     } else {
-      // Orphan paragraph â attach to last item or skip
       if (items.length > 0) {
         items[items.length - 1].paragraph += " " + part.replace(/^\*/, "").trim();
       }
@@ -256,9 +244,9 @@ function parseMakeComRaw(raw: string): {
   return { title, intro, items, closing };
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 // Public API
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ─────────────────────────────────────────────
 
 export function parseMarkdownArticle(slug: string): MarkdownArticle | null {
   const filePath = path.join(ARTICLES_DIR, `${slug}.md`);
@@ -268,7 +256,7 @@ export function parseMarkdownArticle(slug: string): MarkdownArticle | null {
   const raw = fs.readFileSync(filePath, "utf-8");
 
   if (isProperMarkdown(raw)) {
-    // ââ Proper Markdown format ââ
+    // ── Proper Markdown format ──
     const { meta, body } = parseFrontmatter(raw);
     const { items, closing } = parseProperMarkdownBody(body);
     return {
@@ -276,7 +264,7 @@ export function parseMarkdownArticle(slug: string): MarkdownArticle | null {
       title: meta.title || slug.replace(/-/g, " "),
       category: meta.category || "Travel",
       intro: meta.intro || "",
-      image: meta.image || '',
+      image: meta.image || "",
       date:
         meta.date ||
         new Date().toLocaleDateString("en-US", {
@@ -288,13 +276,13 @@ export function parseMarkdownArticle(slug: string): MarkdownArticle | null {
       closing,
     };
   } else {
-    // ââ Make.com raw format ââ
+    // ── Make.com raw format ──
     const { title, intro, items, closing } = parseMakeComRaw(raw);
-      image: '',
     return {
       slug,
       title: title || slug.replace(/-/g, " "),
       category: "Travel",
+      image: "",
       intro,
       date: new Date().toLocaleDateString("en-US", {
         month: "long",
