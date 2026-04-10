@@ -17,7 +17,7 @@ export default function ArticlesPage() {
       title: a.title,
       category: a.category,
       intro: a.intro,
-      image: a.items[0]?.image || "",
+      image: a.image || a.items[0]?.image || "",
     }));
 
   // ── Hardcoded data.ts articles ──
