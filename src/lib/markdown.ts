@@ -82,6 +82,8 @@ function isProperMarkdown(raw: string): boolean {
 // ─────────────────────────────────────────────
 // Parse frontmatter (for proper Markdown files)
 // ─────────────────────────────────────────────
+// FIXED: Handles both real newlines (\n) and literal escape sequences (\\n)
+// This is needed because Make.com scenarios may write literal \n instead of real newlines
 
 function parseFrontmatter(raw: string): { meta: Record<string, string>; body: string } {
   const meta: Record<string, string> = {};
@@ -93,14 +95,27 @@ function parseFrontmatter(raw: string): { meta: Record<string, string>; body: st
     return { meta, body: raw };
   }
   const frontmatter = raw.slice(3, end).trim();
-  const body = raw.slice(end + 3).trim();
-  for (const line of frontmatter.split("\n")) {
+  let body = raw.slice(end + 3).trim();
+
+  // CRITICAL FIX: Support both real newlines (\n) and literal escape sequences (\\n)
+  // GitHub Actions/Make.com sometimes writes literal \n instead of real newlines
+  const lines = frontmatter.includes("\\n")
+    ? frontmatter.split("\\n")
+    : frontmatter.split("\n");
+
+  for (const line of lines) {
     const colon = line.indexOf(":");
     if (colon === -1) continue;
     const key = line.slice(0, colon).trim();
     const value = line.slice(colon + 1).trim().replace(/^["']|["']$/g, "");
     meta[key] = value;
   }
+
+  // CRITICAL FIX: Strip leading \n sequences and H1 title line from body
+  // Pattern: ^(\\n)*#[^\n]*(\n|\\n)?
+  // This removes: literal \n at start + H1 heading + optional newline after
+  body = body.replace(/^(\\n)*#[^\n]*(\n|\\n)?/, "").trim();
+
   return { meta, body };
 }
 
