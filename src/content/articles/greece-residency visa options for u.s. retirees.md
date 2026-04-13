@@ -1,4 +1,3 @@
----
 title: Greece — Residency Visa Options for U.S. Retirees
 category: Visa
 slug: greece-residency-visa-options-for-us-retirees
