@@ -7,9 +7,9 @@ import { getArticleBySlug, getAllArticles } from "@/lib/data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ———————————————————————————————————————————
 // Static params: combine Markdown slugs + hardcoded data slugs
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ———————————————————————————————————————————
 
 export function generateStaticParams() {
   const mdSlugs = getAllMarkdownSlugs().map((slug) => ({ slug }));
@@ -22,9 +22,9 @@ export function generateStaticParams() {
   return combined;
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ———————————————————————————————————————————
 // Ad Slot Component
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ———————————————————————————————————————————
 
 function AdSlot({ slot }: { slot: number }) {
   return (
@@ -65,16 +65,16 @@ function AdSlot({ slot }: { slot: number }) {
           color: "#92600a",
         }}
       >
-        <span>Ad Slot {slot} â Google AdSense / Mediavine</span>
-        <span style={{ fontSize: "0.7rem", color: "#b8860b" }}>728Ã90 or Responsive Display</span>
+        <span>Ad Slot {slot} — Google AdSense / Mediavine</span>
+        <span style={{ fontSize: "0.7rem", color: "#b8860b" }}>728×90 or Responsive Display</span>
       </div>
     </div>
   );
 }
 
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ———————————————————————————————————————————
 // Page Component
-// âââââââââââââââââââââââââââââââââââââââââââââ
+// ———————————————————————————————————————————
 
 export default async function ArticlePage({
   params,
@@ -83,7 +83,7 @@ export default async function ArticlePage({
 }) {
   const { slug } = await params;
 
-  // ââ Try Markdown file first ââ
+  // —— Try Markdown file first ——
   const mdArticle = parseMarkdownArticle(slug);
 
   if (mdArticle) {
@@ -102,7 +102,7 @@ export default async function ArticlePage({
             lineHeight: "1.75",
           }}
         >
-          {/* ââ Meta Block ââ */}
+          {/* —— Meta Block —— */}
           <div
             style={{
               padding: "44px 0 28px",
@@ -178,9 +178,9 @@ export default async function ArticlePage({
               <span>
                 By <strong style={{ color: "#1a3a2a" }}>Golden Horizons Team</strong>
               </span>
-              <span style={{ color: "#ccc" }}>Â·</span>
-              <span>Read time: 2â3 minutes</span>
-              <span style={{ color: "#ccc" }}>Â·</span>
+              <span style={{ color: "#ccc" }}>·</span>
+              <span>Read time: 2–3 minutes</span>
+              <span style={{ color: "#ccc" }}>·</span>
               <span>Published: {mdArticle.date}</span>
             </div>
 
@@ -202,14 +202,14 @@ export default async function ArticlePage({
             </div>
           )}
 
-          {/* ââ Intro ââ */}
+          {/* —— Intro —— */}
           {mdArticle.intro && (
             <div style={{ marginBottom: "40px" }}>
               <p style={{ fontSize: "1.05rem", color: "#3a3a3a" }}>{mdArticle.intro}</p>
             </div>
           )}
 
-          {/* ââ List Items ââ */}
+          {/* —— List Items —— */}
           {mdArticle.items.map((item, idx) => (
             <div
               key={idx}
@@ -250,8 +250,8 @@ export default async function ArticlePage({
                 {item.heading}
               </h2>
 
-              {/* Item image */}
-              {item.image && (
+              {/* Item image — skip first item (Why Retire Here has no image) */}
+              {item.image && idx > 0 && (
                 <div style={{ marginBottom: "18px" }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -298,7 +298,7 @@ export default async function ArticlePage({
             </div>
           ))}
 
-          {/* ââ Closing block ââ */}
+          {/* —— Closing block —— */}
           {mdArticle.closing && (
             <div
               style={{
@@ -328,7 +328,7 @@ export default async function ArticlePage({
             </div>
           )}
 
-          {/* ââ Back to all stories ââ */}
+          {/* —— Back to all stories —— */}
           <div style={{ marginTop: "48px", paddingTop: "24px", borderTop: "1px solid #e8e0d0" }}>
             <Link
               href="/"
@@ -354,7 +354,7 @@ export default async function ArticlePage({
     );
   }
 
-  // ââ Fall back to hardcoded data.ts articles ââ
+  // —— Fall back to hardcoded data.ts articles ——
   const article = getArticleBySlug(slug);
 
   if (!article) {
