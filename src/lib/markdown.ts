@@ -32,46 +32,6 @@ export type MarkdownArticle = {
 const ARTICLES_DIR = path.join(process.cwd(), "src", "content", "articles");
 
 // ─────────────────────────────────────────────
-// Unsplash image lookup by keyword
-// ─────────────────────────────────────────────
-
-const UNSPLASH_KEYWORDS: Record<string, string> = {
-  bath: "photo-1534445867742-43195f401b6c",
-  spa: "photo-1544161515-4ab6ce6db874",
-  europe: "photo-1467269204594-9661b134dd2b",
-  travel: "photo-1488646953014-85cb44e25828",
-  vintage: "photo-1516483638261-f4dbaf036963",
-  booking: "photo-1436491865332-7a61a109cc05",
-  vacation: "photo-1507525428034-b723cf961d3e",
-  city: "photo-1480714378408-67cf0d13bc1b",
-  train: "photo-1474487548417-781cb6d646b3",
-  map: "photo-1524661135-423995f22d0b",
-  guidebook: "photo-1481627834876-b7833e8f5570",
-  hotel: "photo-1566073771259-6a8506099945",
-  food: "photo-1414235077428-338989a2e8c0",
-  beach: "photo-1507525428034-b723cf961d3e",
-  mountain: "photo-1464822759023-fed622ff2c3b",
-  portugal: "photo-1555881400-74d7acaacd8b",
-  france: "photo-1502602898657-3e91760cbb34",
-  italy: "photo-1516483638261-f4dbaf036963",
-  greece: "photo-1533105079780-92b9be482077",
-  spain: "photo-1543783207-ec64e4d95325",
-  retirement: "photo-1516483638261-f4dbaf036963",
-  retiree: "photo-1488646953014-85cb44e25828",
-};
-
-function getUnsplashImage(heading: string): string {
-  const lower = heading.toLowerCase();
-  for (const [keyword, photoId] of Object.entries(UNSPLASH_KEYWORDS)) {
-    if (lower.includes(keyword)) {
-      return `https://images.unsplash.com/${photoId}?w=800&q=80`;
-    }
-  }
-  // Default travel image
-  return `https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80`;
-}
-
-// ─────────────────────────────────────────────
 // Detect format: proper Markdown vs Make.com raw
 // ─────────────────────────────────────────────
 
@@ -142,7 +102,7 @@ function parseProperMarkdownBody(body: string): { items: ArticleItem[]; closing:
 
     let image = "";
     let imageAlt = "";
-    let imageCredit = "Unsplash";
+    let imageCredit = "Pexels";
     const paragraphLines: string[] = [];
     let itemNumber = items.length + 1;
 
@@ -170,10 +130,9 @@ function parseProperMarkdownBody(body: string): { items: ArticleItem[]; closing:
       paragraphLines.push(line.trim());
     }
 
-    // Auto-assign image if none found
-    if (!image) {
-      image = getUnsplashImage(heading);
-    }
+    // NO fallback image — if no ![photo] tag exists, image stays empty
+    // This prevents generic stock photos from appearing in sections
+    // that intentionally have no image (e.g., "Why Retire Here")
 
     items.push({
       number: itemNumber,
@@ -241,9 +200,9 @@ function parseMakeComRaw(raw: string): {
       items.push({
         number: items.length + 1,
         heading,
-        image: getUnsplashImage(heading),
+        image: "",
         imageAlt: heading,
-        imageCredit: "Unsplash",
+        imageCredit: "Pexels",
         paragraph: paragraphParts.join(" "),
       });
 
