@@ -22,7 +22,7 @@ export default function FeaturedStories() {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Main Article */}
           <Link
-            href={`/article/${mainArticle.slug}`}
+            href={`/articles/${mainArticle.slug}`}
             className="group block"
           >
             <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-5">
@@ -54,7 +54,7 @@ export default function FeaturedStories() {
             {sideArticles.map((article) => (
               <Link
                 key={article.id}
-                href={`/article/${article.slug}`}
+                href={`/articles/${article.slug}`}
                 className="group flex gap-5"
               >
                 <div className="relative w-40 h-28 flex-shrink-0 overflow-hidden rounded-sm">
