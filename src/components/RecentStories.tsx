@@ -20,7 +20,7 @@ export default function RecentStories() {
           {recentArticles.map((article) => (
             <Link
               key={article.id}
-              href={`/article/${article.slug}`}
+              href={`/articles/${article.slug}`}
               className="group block"
             >
               <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
