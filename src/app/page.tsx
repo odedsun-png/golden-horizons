@@ -3,13 +3,15 @@ import Footer from "@/components/Footer";
 import HeroSlider from "@/components/HeroSlider";
 import FeaturedStories from "@/components/FeaturedStories";
 import RecentStories from "@/components/RecentStories";
+import { getArticleCards } from "@/lib/markdown";
 
-export default function Home() {
+export default async function Home() {
+  const heroArticles = getArticleCards(3);
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HeroSlider />
+        <HeroSlider articles={heroArticles} />
         <FeaturedStories />
         <RecentStories />
       </main>
