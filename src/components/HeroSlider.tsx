@@ -1,16 +1,13 @@
 "use client";
-
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { heroArticles } from "@/lib/data";
+import type { ArticleCard } from "@/lib/markdown";
 
-export default function HeroSlider() {
+export default function HeroSlider({ articles: heroArticles }: { articles: ArticleCard[] }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isClient, setIsClient] = useState(false);
-
   useEffect(() => { setIsClient(true); }, []);
-
   useEffect(() => {
     if (!isClient) return;
     const timer = setInterval(() => {
@@ -18,13 +15,11 @@ export default function HeroSlider() {
     }, 6000);
     return () => clearInterval(timer);
   }, [isClient]);
-
   const goToSlide = useCallback((index: number) => { setCurrentSlide(index); }, []);
   const prevSlide = useCallback(() => { setCurrentSlide((prev) => (prev - 1 + heroArticles.length) % heroArticles.length); }, []);
   const nextSlide = useCallback(() => { setCurrentSlide((prev) => (prev + 1) % heroArticles.length); }, []);
-
   const article = heroArticles[currentSlide];
-
+  if (!article) return null;
   return (
     <section className="relative h-[70vh] min-h-[500px] max-h-[800px] overflow-hidden">
       {heroArticles.map((item, index) => (
@@ -58,4 +53,4 @@ export default function HeroSlider() {
       </div>
     </section>
   );
-                          }
+}
