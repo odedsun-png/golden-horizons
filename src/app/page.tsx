@@ -2,8 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSlider from "@/components/HeroSlider";
 import FeaturedStories from "@/components/FeaturedStories";
+import Newsletter from "@/components/Newsletter";
 import RecentStories from "@/components/RecentStories";
-import NewsletterCTA from "@/components/NewsletterCTA";
 import { getArticleCards } from "@/lib/markdown";
 
 export default async function Home() {
@@ -14,7 +14,7 @@ export default async function Home() {
       <main>
         <HeroSlider articles={heroArticles} />
         <FeaturedStories />
-        <NewsletterCTA />
+        <Newsletter />
         <RecentStories />
       </main>
       <Footer />
