@@ -278,3 +278,18 @@ export function getAllMarkdownSlugs(): string[] {
     .filter((file) => file.endsWith(".md"))
     .map((file) => file.replace(/\.md$/, ""));
 }
+const CATEGORY_COLORS: Record<string, string> = {
+  Beach: "#0ea5e9", Ocean: "#0ea5e9", Healthcare: "#10b981",
+  Health: "#10b981", Finance: "#8b5cf6", Money: "#8b5cf6",
+  Community: "#ec4899", Food: "#f97316", Culture: "#f59e0b",
+  Travel: "#06b6d4", Lifestyle: "#84cc16",
+};
+function getCategoryColor(n: string) { return CATEGORY_COLORS[n] ?? "#6b7280"; }
+export type ArticleCard = { id: string; slug: string; title: string; image: string; excerpt: string; category: { name: string; color: string }; };
+export function getAllArticles(): MarkdownArticle[] {
+  return getAllMarkdownSlugs().map(s => parseMarkdownArticle(s)).filter((a): a is MarkdownArticle => a !== null).sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+export function getArticleCards(limit?: number): ArticleCard[] {
+  const arts = limit ? getAllArticles().slice(0, limit) : getAllArticles();
+  return arts.map(a => ({ id: a.slug, slug: a.slug, title: a.title, image: (a as any).image ?? "", excerpt: (a as any).excerpt ?? "", category: { name: (a as any).category ?? "Travel", color: getCategoryColor((a as any).category ?? "") } }));
+}
