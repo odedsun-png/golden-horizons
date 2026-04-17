@@ -291,5 +291,15 @@ export function getAllArticles(): MarkdownArticle[] {
 }
 export function getArticleCards(limit?: number): ArticleCard[] {
   const arts = limit ? getAllArticles().slice(0, limit) : getAllArticles();
-  return arts.map(a => ({ id: a.slug, slug: a.slug, title: a.title, image: (a as any).image ?? "", excerpt: (a as any).excerpt ?? "", category: { name: (a as any).category ?? "Travel", color: getCategoryColor((a as any).category ?? "") } }));
+  return arts.map(a => ({
+    id: a.slug,
+    slug: a.slug,
+    title: a.title,
+    image: a.image ?? "",
+    excerpt: a.intro ?? "",
+    category: {
+      name: a.category ?? "Travel",
+      color: getCategoryColor(a.category ?? "")
+    }
+  }));
 }
