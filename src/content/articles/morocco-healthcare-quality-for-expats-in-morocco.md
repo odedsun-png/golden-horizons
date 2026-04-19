@@ -3,7 +3,7 @@ title: "Morocco — Healthcare Quality for Expats in Morocco"
 category: Healthcare
 slug: morocco-healthcare-quality-for-expats-in-morocco
 date: 2026-04-14
-image: https://images.pexels.com/photos/30447655/pexels-photo-30447655.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/31148696/pexels-photo-31148696.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Explore Morocco's healthcare system for expats, from modern medical facilities to affordable care options, making it a viable choice for your retirement abroad.
 featured: false
 ---
