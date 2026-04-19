@@ -4,7 +4,7 @@ category: Hidden Gems
 slug: turkiye-hidden-coastal-towns-like-kas-for-retirement
 date: 2026-04-17
 image: https://images.pexels.com/photos/34447873/pexels-photo-34447873.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
-description: Practical retirement guide.
+description: Discover Türkiye's hidden coastal gems like Kaş, where history and stunning Mediterranean views create the perfect backdrop for a peaceful retirement.
 featured: false
 ---
 
