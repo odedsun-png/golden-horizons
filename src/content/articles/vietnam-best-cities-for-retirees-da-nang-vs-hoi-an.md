@@ -3,7 +3,7 @@ title: "Vietnam — Best Cities for Retirees: Da Nang vs Hội An"
 category: Best Cities
 slug: vietnam-best-cities-for-retirees-da-nang-vs-hoi-an
 date: 2026-04-17
-image: https://images.pexels.com/photos/32759627/pexels-photo-32759627.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/2154144/pexels-photo-2154144.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Discover the charm of Vietnam's top retirement spots, Da Nang and Hội An, where vibrant culture meets affordability and natural beauty.
 featured: false
 ---
