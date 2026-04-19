@@ -4,7 +4,7 @@ category: Culture
 slug: costa-rica-food-nature-and-pura-vida-culture-for-retirees
 date: 2026-04-17
 image: https://images.pexels.com/photos/12832297/pexels-photo-12832297.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
-description: Practical retirement guide.
+description: Embrace Costa Rica's Pura Vida lifestyle with vibrant wildlife, delicious cuisine, and serene beaches, making every day of retirement an adventure.
 featured: false
 ---
 
