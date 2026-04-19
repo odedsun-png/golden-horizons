@@ -3,7 +3,7 @@ title: "Malaysia — Best Cities for Retirees: Penang vs Kuala Lumpur"
 category: Best Cities
 slug: malaysia-best-cities-for-retirees-penang-vs-kuala-lumpur
 date: 2026-04-16
-image: https://images.pexels.com/photos/5904675/pexels-photo-5904675.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/145488/pexels-photo-145488.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Explore the unique charms of Penang and Kuala Lumpur for retirees, from cultural delights and scenic vistas to affordable living and warm communities.
 featured: false
 ---
