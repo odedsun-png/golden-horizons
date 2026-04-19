@@ -4,7 +4,7 @@ category: Cost
 slug: albania-what-2000-a-month-gets-you-in-tirana
 date: 2026-04-16
 image: https://images.pexels.com/photos/16142688/pexels-photo-16142688.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
-description: Practical retirement guide.
+description: Explore Tirana's vibrant culture and history while enjoying a comfortable retirement lifestyle on a budget of $2,000 a month in Albania's charming capital.
 featured: false
 ---
 
