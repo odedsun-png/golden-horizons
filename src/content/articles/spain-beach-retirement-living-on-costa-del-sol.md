@@ -4,7 +4,7 @@ category: Beach
 slug: spain-beach-retirement-living-on-costa-del-sol
 date: 2026-04-16
 image: https://images.pexels.com/photos/29890130/pexels-photo-29890130.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
-description: Practical retirement guide.
+description: Embrace the Mediterranean dream on Costa del Sol, where affordable seaside living, vibrant culture, and endless sunshine create a perfect retirement haven.
 featured: false
 ---
 
