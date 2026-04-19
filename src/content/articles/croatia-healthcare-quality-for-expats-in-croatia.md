@@ -3,7 +3,7 @@ title: "Croatia — Healthcare Quality for Expats in Croatia"
 category: Healthcare
 slug: croatia-healthcare-quality-for-expats-in-croatia
 date: 2026-04-19
-image: https://images.pexels.com/photos/30958652/pexels-photo-30958652.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/9306783/pexels-photo-9306783.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Explore Croatia's high-quality healthcare and affordable living costs ideal for retirees seeking tranquility and modern amenities.
 featured: false
 ---
