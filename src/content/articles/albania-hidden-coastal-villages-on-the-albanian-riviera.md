@@ -3,7 +3,7 @@ title: "Albania — Hidden Coastal Villages on the Albanian Riviera"
 category: Hidden Gems
 slug: albania-hidden-coastal-villages-on-the-albanian-riviera
 date: 2026-04-19
-image: https://images.pexels.com/photos/16142688/pexels-photo-16142688.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/7783236/pexels-photo-7783236.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Explore Albania's Riviera, where affordable living meets Mediterranean charm, offering retirees serene coastal villages and vibrant communities.
 featured: false
 ---
