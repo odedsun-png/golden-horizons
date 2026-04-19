@@ -3,7 +3,7 @@ title: "Panama — Expat Life in Boquete’s Coffee Highlands"
 category: Expat
 slug: panama-expat-life-in-boquetes-coffee-highlands
 date: 2026-04-17
-image: https://images.pexels.com/photos/14840759/pexels-photo-14840759.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/5263084/pexels-photo-5263084.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Discover the charm of Boquete, where lush landscapes and world-class coffee meet affordable living and a thriving expat community in Panama's highlands.
 featured: false
 ---
