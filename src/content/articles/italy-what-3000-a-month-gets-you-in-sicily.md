@@ -4,7 +4,7 @@ category: Cost
 slug: italy-what-3000-a-month-gets-you-in-sicily
 date: 2026-04-15
 image: https://images.pexels.com/photos/33560795/pexels-photo-33560795.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
-description: Practical retirement guide.
+description: Live comfortably in Sicily on $3,000/month, enjoying seaside towns, fresh cuisine, and vibrant culture while exploring the island's rich history and stunning landscapes.
 featured: false
 ---
 
