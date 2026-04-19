@@ -3,7 +3,7 @@ title: "Portugal — Beach Retirement Living in Lagos vs Albufeira"
 category: Beach
 slug: portugal-beach-retirement-living-in-lagos-vs-albufeira
 date: 2026-04-17
-image: https://images.pexels.com/photos/37101580/pexels-photo-37101580.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/6698516/pexels-photo-6698516.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Compare the tranquil charm of Lagos with the lively energy of Albufeira to find your perfect beach retirement haven along Portugal's stunning Algarve coast.
 featured: false
 ---
