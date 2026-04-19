@@ -4,7 +4,7 @@ category: Best Cities
 slug: peru-best-cities-for-retirees-arequipa-vs-lima
 date: 2026-04-16
 image: https://images.pexels.com/photos/17043367/pexels-photo-17043367.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
-description: Practical retirement guide.
+description: Explore the vibrant lifestyles and retirement perks of Arequipa and Lima, from scenic views and rich culture to cost of living and healthcare options.
 featured: false
 ---
 
