@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
+import Link from 'next/link';
 
 const SLIDES = [
   {
@@ -356,7 +357,7 @@ export default function HeroSection() {
 
         {/* Nav */}
         <nav className="gh-nav" aria-label="Main navigation">
-          <a href="/" className="gh-logo" aria-label="Golden Horizons home">
+          <Link href="/" className="gh-logo" aria-label="Golden Horizons home">
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
               <circle cx="17" cy="23" r="9" stroke="#dcb770" strokeWidth="1.8"/>
               <path d="M8 23 Q17 7 26 23" fill="none" stroke="#dcb770" strokeWidth="1.8" strokeLinecap="round"/>
@@ -367,10 +368,10 @@ export default function HeroSection() {
               <span className="gh-logo-name">Golden Horizons</span>
               <span className="gh-logo-tag">Your Guide to Retirement Abroad</span>
             </div>
-          </a>
+          </Link>
           <div className="gh-nav-links">
-            <a href="/rankings">Rankings</a>
-            <a href="/articles">Articles</a>
+            <Link href="/rankings">Rankings</Link>
+            <Link href="/articles">Articles</Link>
             <button className="gh-nav-btn">Subscribe</button>
           </div>
         </nav>
@@ -405,7 +406,6 @@ export default function HeroSection() {
               className={`gh-dot${current === i ? ' active' : ''}`}
               onClick={() => goTo(i)}
               aria-label={`Slide ${i + 1}`}
-              aria-selected={current === i}
             />
           ))}
         </div>
