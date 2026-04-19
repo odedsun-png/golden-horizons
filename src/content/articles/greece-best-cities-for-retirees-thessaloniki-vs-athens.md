@@ -4,7 +4,7 @@ category: Best Cities
 slug: greece-best-cities-for-retirees-thessaloniki-vs-athens
 date: 2026-04-17
 image: https://images.pexels.com/photos/31084749/pexels-photo-31084749.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
-description: Practical retirement guide.
+description: Explore the vibrant culture and stunning landscapes of Greece as we compare Thessaloniki's relaxed charm with Athens' bustling history for your retirement dream.
 featured: false
 ---
 
