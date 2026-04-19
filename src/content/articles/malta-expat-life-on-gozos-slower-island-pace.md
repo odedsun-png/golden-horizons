@@ -3,7 +3,7 @@ title: "Malta — Expat Life on Gozo’s Slower Island Pace"
 category: Expat
 slug: malta-expat-life-on-gozos-slower-island-pace
 date: 2026-04-17
-image: https://images.pexels.com/photos/33345640/pexels-photo-33345640.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/34159787/pexels-photo-34159787.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Experience the serene charm of Gozo, Malta's tranquil island, where retirees enjoy affordable living, rich history, and a laid-back Mediterranean lifestyle.
 featured: false
 ---
