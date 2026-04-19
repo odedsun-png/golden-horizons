@@ -3,7 +3,7 @@ title: "Spain — Mediterranean Oceanfront Living in Málaga Province"
 category: Beach
 slug: spain-mediterranean-oceanfront-living-in-malaga-province
 date: 2026-04-17
-image: https://images.pexels.com/photos/29890130/pexels-photo-29890130.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/9735238/pexels-photo-9735238.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Retire to Málaga Province and savor sun-drenched beaches, rich culture, and affordable oceanfront living along Spain's stunning Costa del Sol.
 featured: false
 ---
