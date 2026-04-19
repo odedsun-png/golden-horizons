@@ -1,13 +1,10 @@
 import Link from "next/link";
 import { getArticleCards } from "@/lib/markdown";
-
 export default async function FeaturedStories() {
   const articles = getArticleCards(4);
   if (articles.length === 0) return null;
-
   const mainArticle = articles[0];
   const sideArticles = articles.slice(1, 4);
-
   return (
     <section className="py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +16,7 @@ export default async function FeaturedStories() {
         </div>
         <div className="grid lg:grid-cols-2 gap-8">
           <Link href={`/articles/${mainArticle.slug}`} className="group block">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-5">
+            <div className="relative h-[220px] sm:h-[280px] md:aspect-[4/3] md:h-auto overflow-hidden rounded-sm mb-5">
               <img
                 src={mainArticle.image}
                 alt={mainArticle.title}
@@ -42,7 +39,6 @@ export default async function FeaturedStories() {
               </span>
             </div>
           </Link>
-
           <div className="space-y-6">
             {sideArticles.map((article) => (
               <Link
