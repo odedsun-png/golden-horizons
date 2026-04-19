@@ -3,7 +3,7 @@ title: "Albania — Healthcare Quality for Expats in Albania"
 category: Healthcare
 slug: albania-healthcare-quality-for-expats-in-albania
 date: 2026-04-19
-image: https://images.pexels.com/photos/16142688/pexels-photo-16142688.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/11783520/pexels-photo-11783520.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Learn about the healthcare landscape for expats in Albania, where affordable living meets cultural richness, perfect for an enriched retirement abroad.
 featured: false
 ---
