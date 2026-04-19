@@ -3,7 +3,7 @@ title: "Türkiye — Residency Options for American Retirees"
 category: Visa
 slug: turkiye-residency-options-for-american-retirees
 date: 2026-04-19
-image: https://images.pexels.com/photos/35592599/pexels-photo-35592599.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/17820913/pexels-photo-17820913.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Discover affordable retirement in Türkiye, offering rich culture, vibrant cities, and a welcoming community for American retirees seeking a unique lifestyle.
 featured: false
 ---
