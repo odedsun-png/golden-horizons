@@ -3,7 +3,7 @@ title: "Peru — Expat Life in Miraflores by the Pacific"
 category: Expat
 slug: peru-expat-life-in-miraflores-by-the-pacific
 date: 2026-04-19
-image: https://images.pexels.com/photos/10807161/pexels-photo-10807161.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/17016331/pexels-photo-17016331.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Explore retirement in Miraflores, Peru, a coastal jewel blending cultural heritage, modern living, and affordable luxury with Pacific views.
 featured: false
 ---
