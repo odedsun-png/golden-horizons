@@ -3,7 +3,7 @@ title: "Montenegro — Seafood, Café Life, and Balkan Culture"
 category: Culture
 slug: montenegro-seafood-cafe-life-and-balkan-culture
 date: 2026-04-16
-image: https://images.pexels.com/photos/27151344/pexels-photo-27151344.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/19738038/pexels-photo-19738038.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Savor the flavors of Montenegro's seafood and café culture while immersing yourself in the rich tapestry of Balkan traditions and stunning Adriatic views.
 featured: false
 ---
