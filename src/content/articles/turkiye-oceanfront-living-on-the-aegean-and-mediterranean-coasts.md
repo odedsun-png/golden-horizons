@@ -3,7 +3,7 @@ title: "Türkiye — Oceanfront Living on the Aegean and Mediterranean Coasts"
 category: Beach
 slug: turkiye-oceanfront-living-on-the-aegean-and-mediterranean-coasts
 date: 2026-04-19
-image: https://images.pexels.com/photos/37104179/pexels-photo-37104179.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/34934405/pexels-photo-34934405.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Explore Türkiye's coastal charm for retirement with sunny beaches, lively expat communities, and affordable living on a $2-5k monthly budget.
 featured: false
 ---
