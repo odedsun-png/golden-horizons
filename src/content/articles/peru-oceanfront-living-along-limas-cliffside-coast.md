@@ -3,7 +3,7 @@ title: "Peru — Oceanfront Living Along Lima’s Cliffside Coast"
 category: Beach
 slug: peru-oceanfront-living-along-limas-cliffside-coast
 date: 2026-04-17
-image: https://images.pexels.com/photos/17043367/pexels-photo-17043367.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/13962371/pexels-photo-13962371.png?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 description: Experience Lima's vibrant coastal life, where retirees enjoy stunning cliffside views, modern comforts, and a rich cultural tapestry in Peru's capital city.
 featured: false
 ---
