@@ -370,9 +370,6 @@ export default function HeroSection() {
             </div>
           </Link>
           <div className="gh-nav-links">
-            <Link href="/rankings">Rankings</Link>
-            <Link href="/articles">Articles</Link>
-            <button className="gh-nav-btn">Subscribe</button>
           </div>
         </nav>
 
