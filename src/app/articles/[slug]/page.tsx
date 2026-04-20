@@ -144,12 +144,12 @@ function IntroText({ text }: { text: string }) {
       {chunks.map((chunk, i) => (
         <p key={i} style={{
           fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
-          fontSize: i === 0 ? "1.22rem" : "1.1rem",
-          fontWeight: i === 0 ? 500 : 400,
+          fontSize: "1.15rem",
+          fontWeight: 400,
           lineHeight: 1.85,
-          color: i === 0 ? "#1a1a1a" : "#444",
+          color: "#333",
           marginBottom: "20px",
-          letterSpacing: i === 0 ? "-0.01em" : "normal",
+          letterSpacing: "normal",
         }}>{chunk}</p>
       ))}
     </div>
@@ -171,7 +171,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <div style={{ marginBottom: "16px" }}>
                 <span style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "2.5px", textTransform: "uppercase", color: "#c8a84e" }}>{mdArticle.category}</span>
               </div>
-              <h1 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontSize: "clamp(2rem, 5vw, 2.8rem)", fontWeight: 900, lineHeight: 1.12, color: "#1a1a1a", marginBottom: "20px", letterSpacing: "-0.5px" }}>{mdArticle.title}</h1>
+              <h1 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontSize: "clamp(1.8rem, 4vw, 2.4rem)", fontWeight: 900, lineHeight: 1.12, color: "#1a1a1a", marginBottom: "20px", letterSpacing: "-0.5px" }}>{mdArticle.title}</h1>
               <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.82rem", color: "#888", display: "flex", flexWrap: "wrap", gap: "4px 12px", alignItems: "center", marginBottom: "32px" }}>
                 <span>By <strong style={{ color: "#1a1a1a", fontWeight: 600 }}>Golden Horizons Team</strong></span>
                 <span style={{ color: "#ddd" }}>&#8226;</span>
