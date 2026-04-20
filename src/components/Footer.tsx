@@ -37,7 +37,7 @@ export default function Footer() {
             </svg>
           </Link>
 
-          <p className="text-[11px] sm:text-xs text-white/40">21-14 Greenwood Dr, Fair Lawn, NJ 07410, USA</p>
+          <p className="text-[11px] sm:text-xs text-white/40">Fair Lawn, NJ 07410, USA</p>
           <p className="text-[11px] sm:text-xs text-white/40">© 2026 Golden Horizons — All rights reserved</p>
         </div>
       </div>
