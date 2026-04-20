@@ -34,13 +34,12 @@ export default function Newsletter() {
     <section id="subscribe" className="bg-[#1f2326] py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-10 items-center">
+
           {/* Phone Mockup */}
           <div className="relative flex justify-center md:justify-start">
             <div className="relative w-64 md:w-72">
-              {/* Phone Frame */}
               <div className="relative bg-white rounded-[2.5rem] p-3 shadow-2xl">
                 <div className="bg-gray-100 rounded-[2rem] overflow-hidden">
-                  {/* Phone Screen Content */}
                   <div className="p-4">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="text-sm font-bold text-gray-800">golden</span>
@@ -63,7 +62,6 @@ export default function Newsletter() {
                   </div>
                 </div>
               </div>
-              {/* Decorative Elements */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl" />
               <div className="absolute -top-4 -left-4 w-16 h-16 bg-accent/20 rounded-full blur-lg" />
             </div>
@@ -71,17 +69,17 @@ export default function Newsletter() {
 
           {/* Content */}
           <div className="text-white text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4">
-              Your next chapter is waiting.
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 leading-tight">
+              What if your best years are still ahead?
             </h2>
-            <p className="text-white/70 text-lg mb-8 max-w-md mx-auto md:mx-0">
-              Golden Horizons is your guide to the world's best retirement destinations. Start exploring today.
+            <p className="text-white/70 mb-8 max-w-md mx-auto md:mx-0 leading-relaxed" style={{ fontSize: "18px" }}>
+              Get simple ideas each day about places where your retirement could feel easier, more affordable, and more enjoyable.
             </p>
 
             {status === "success" ? (
               <div className="bg-accent/20 border border-accent/30 rounded-lg p-4 max-w-md mx-auto md:mx-0">
-                <p className="text-accent font-semibold">
-                  You're in!
+                <p className="text-accent font-semibold" style={{ fontSize: "18px" }}>
+                  You're in! Your first idea is on its way.
                 </p>
               </div>
             ) : (
@@ -92,32 +90,32 @@ export default function Newsletter() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Your Email Address"
-                    className="flex-1 px-5 py-3.5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                    className="flex-1 px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                    style={{ fontSize: "17px", paddingTop: "14px", paddingBottom: "14px" }}
                     required
                     disabled={status === "loading"}
                   />
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="px-8 py-3.5 bg-white text-foreground font-semibold tracking-wide uppercase text-sm rounded hover:bg-white/90 transition-colors disabled:opacity-70"
+                    className="px-8 bg-white text-foreground font-semibold tracking-wide rounded hover:bg-white/90 transition-colors disabled:opacity-70 whitespace-nowrap"
+                    style={{ fontSize: "15px", paddingTop: "14px", paddingBottom: "14px" }}
                   >
-                    {status === "loading" ? "..." : "Join"}
+                    {status === "loading" ? "..." : "Send me new ideas →"}
                   </button>
                 </div>
                 {status === "error" && (
-                  <p className="text-red-400 text-sm mt-3">
+                  <p className="text-red-400 mt-3" style={{ fontSize: "16px" }}>
                     Something went wrong. Please try again.
                   </p>
                 )}
-                <p className="text-white/40 text-xs mt-4">
-                  By subscribing you agree to our{" "}
-                  <a href="#" className="underline hover:text-white/60">Privacy Policy</a>
-                  {" "}and{" "}
-                  <a href="#" className="underline hover:text-white/60">Terms of Use</a>.
+                <p className="text-white/40 mt-4" style={{ fontSize: "15px" }}>
+                  One short email. No pressure. Just ideas worth considering.
                 </p>
               </form>
             )}
           </div>
+
         </div>
       </div>
     </section>
