@@ -1,10 +1,23 @@
 import Link from "next/link";
 import { getArticleCards } from "@/lib/markdown";
+
+function shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 export default async function FeaturedStories() {
-  const articles = getArticleCards(4);
-  if (articles.length === 0) return null;
+  const all = getArticleCards(100);
+  if (all.length === 0) return null;
+
+  const articles = shuffleArray(all).slice(0, 4);
   const mainArticle = articles[0];
   const sideArticles = articles.slice(1, 4);
+
   return (
     <section className="py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
