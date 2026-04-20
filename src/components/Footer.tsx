@@ -1,7 +1,5 @@
 "use client";
-
 import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className="bg-[#1f2326] py-8">
@@ -9,15 +7,16 @@ export default function Footer() {
         <div className="flex flex-col items-center text-center space-y-4">
           {/* Legal Links */}
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] sm:text-xs text-white/50">
+            <Link href="/about" className="hover:text-white/80 transition-colors">About Us</Link>
+            <span className="text-white/30">|</span>
             <Link href="/privacy-policy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
             <span className="text-white/30">|</span>
             <Link href="/terms-of-use" className="hover:text-white/80 transition-colors">Terms of Use</Link>
             <span className="text-white/30">|</span>
             <Link href="/disclaimer" className="hover:text-white/80 transition-colors">Disclaimer</Link>
             <span className="text-white/30">|</span>
-            <a href="mailto:hello@goldenhorizons.com" className="hover:text-white/80 transition-colors">Contact</a>
+            <Link href="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
           </div>
-
           {/* Logo — gold version for dark background */}
           <Link href="/" className="flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52" width="160" height="52">
@@ -36,7 +35,6 @@ export default function Footer() {
               <text x="49" y="37" fontFamily="Georgia, 'Times New Roman', serif" fontSize="6.5" letterSpacing="2" fill="#8B7355" textAnchor="start">YOUR GUIDE TO RETIREMENT ABROAD</text>
             </svg>
           </Link>
-
           <p className="text-[11px] sm:text-xs text-white/40">Fair Lawn, NJ 07410, USA</p>
           <p className="text-[11px] sm:text-xs text-white/40">© 2026 Golden Horizons — All rights reserved</p>
         </div>
