@@ -390,7 +390,7 @@ export default function HeroSection() {
                 <p className="gh-support">{slide.support}</p>
                 <p className="gh-trigger">{slide.trigger}</p>
                 <div className="gh-cta-row">
-                  <button className="gh-cta-btn">Explore Where Your Money Goes Further</button>
+                  <Link href="/articles" className="gh-cta-btn">Explore Where Your Money Goes Further</Link>
                   <span className="gh-cta-sub">See what $2,000/month<br />gets you around the world</span>
                 </div>
               </div>
