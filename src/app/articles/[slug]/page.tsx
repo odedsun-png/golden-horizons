@@ -14,16 +14,129 @@ export function generateStaticParams() {
   return combined;
 }
 
-function AdSlot({ slot }: { slot: number }) {
+const FACTS = [
+  "The average American can live comfortably in Portugal for $2,200/month — including rent, food, and healthcare.",
+  "In Mexico's Lake Chapala region, a couple can live well on $2,500/month — with year-round spring-like weather.",
+  "Croatia offers EU-quality healthcare at a fraction of U.S. costs, with many expats paying under $200/month.",
+  "Panama's Pensionado visa gives retirees discounts on everything from flights to restaurant bills.",
+  "In Malaysia, a modern 2-bedroom apartment in Penang rents for as little as $600/month.",
+  "Over 700,000 Americans currently receive their Social Security checks abroad every month.",
+  "Colombia's Medellín was named one of the world's most innovative cities — and a 2BR apartment costs ~$800/month.",
+  "Vietnam offers some of the world's best street food, a low cost of living, and a growing expat community.",
+];
+
+function NewsletterSlot() {
   return (
-    <div style={{ background: "#faf8f4", border: "1px solid #e8e0d0", borderRadius: "4px", padding: "16px 20px", margin: "32px 0", textAlign: "center" }}>
-      <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.6rem", color: "#b8860b", letterSpacing: "2px", textTransform: "uppercase", marginBottom: "8px" }}>Advertisement</div>
-      <div style={{ background: "#f5f0e8", borderRadius: "4px", height: "90px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "4px", fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.78rem", color: "#92600a" }}>
-        <span>Ad Slot {slot}</span>
-        <span style={{ fontSize: "0.68rem", color: "#b8860b" }}>728x90 or Responsive Display</span>
+    <div style={{
+      background: "linear-gradient(135deg, #1a3a2a 0%, #0f2419 100%)",
+      borderRadius: "8px",
+      padding: "32px 36px",
+      margin: "40px 0",
+      textAlign: "center",
+    }}>
+      <div style={{
+        fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
+        fontSize: "0.62rem",
+        letterSpacing: "2.5px",
+        textTransform: "uppercase",
+        color: "#c8a84e",
+        marginBottom: "12px",
+        fontWeight: 700,
+      }}>Free Weekly Newsletter</div>
+      <h3 style={{
+        fontFamily: "'Playfair Display', Georgia, serif",
+        fontSize: "1.45rem",
+        fontWeight: 700,
+        color: "#ffffff",
+        lineHeight: 1.3,
+        marginBottom: "12px",
+      }}>Your next chapter is waiting.</h3>
+      <p style={{
+        fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
+        fontSize: "0.95rem",
+        color: "rgba(255,255,255,0.70)",
+        lineHeight: 1.65,
+        marginBottom: "24px",
+        maxWidth: "420px",
+        margin: "0 auto 24px",
+      }}>
+        Every week we share the best retirement destinations, cost breakdowns, and expat tips — straight to your inbox.
+      </p>
+      <a
+        href="https://golden-horizons.org/#subscribe"
+        style={{
+          display: "inline-block",
+          background: "#c8a84e",
+          color: "#1a1a1a",
+          fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
+          fontSize: "0.78rem",
+          fontWeight: 700,
+          letterSpacing: "1.5px",
+          textTransform: "uppercase",
+          textDecoration: "none",
+          padding: "13px 32px",
+          borderRadius: "4px",
+        }}
+      >
+        Subscribe Free →
+      </a>
+      <p style={{
+        fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
+        fontSize: "0.72rem",
+        color: "rgba(255,255,255,0.35)",
+        marginTop: "12px",
+      }}>No spam. Unsubscribe anytime.</p>
+    </div>
+  );
+}
+
+function FactSlot({ slot }: { slot: number }) {
+  const fact = FACTS[(slot - 1) % FACTS.length];
+  return (
+    <div style={{
+      background: "#faf8f2",
+      border: "1px solid #e8dfc8",
+      borderLeft: "4px solid #c8a84e",
+      borderRadius: "4px",
+      padding: "24px 28px",
+      margin: "40px 0",
+      display: "flex",
+      gap: "16px",
+      alignItems: "flex-start",
+    }}>
+      <div style={{
+        fontSize: "1.4rem",
+        lineHeight: 1,
+        flexShrink: 0,
+        marginTop: "2px",
+      }}>💡</div>
+      <div>
+        <div style={{
+          fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
+          fontSize: "0.62rem",
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+          color: "#c8a84e",
+          fontWeight: 700,
+          marginBottom: "8px",
+        }}>Did You Know?</div>
+        <p style={{
+          fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
+          fontSize: "1rem",
+          lineHeight: 1.7,
+          color: "#2a2a2a",
+          margin: 0,
+        }}>{fact}</p>
       </div>
     </div>
   );
+}
+
+function AdSlot({ slot }: { slot: number }) {
+  if (slot % 2 === 1) {
+    return <NewsletterSlot />;
+  }
+  return <FactSlot slot={slot} />;
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -158,4 +271,4 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <Footer />
     </div>
   );
-                    }
+}
