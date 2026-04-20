@@ -104,12 +104,7 @@ function FactSlot({ slot }: { slot: number }) {
       gap: "16px",
       alignItems: "flex-start",
     }}>
-      <div style={{
-        fontSize: "1.4rem",
-        lineHeight: 1,
-        flexShrink: 0,
-        marginTop: "2px",
-      }}>💡</div>
+      <div style={{ fontSize: "1.4rem", lineHeight: 1, flexShrink: 0, marginTop: "2px" }}>💡</div>
       <div>
         <div style={{
           fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
@@ -133,10 +128,32 @@ function FactSlot({ slot }: { slot: number }) {
 }
 
 function AdSlot({ slot }: { slot: number }) {
-  if (slot % 2 === 1) {
-    return <NewsletterSlot />;
-  }
+  if (slot % 2 === 1) return <NewsletterSlot />;
   return <FactSlot slot={slot} />;
+}
+
+/* Splits intro into short readable paragraphs of max 2 sentences each */
+function IntroText({ text }: { text: string }) {
+  const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+  const chunks: string[] = [];
+  for (let i = 0; i < sentences.length; i += 2) {
+    chunks.push(sentences.slice(i, i + 2).join(" ").trim());
+  }
+  return (
+    <div style={{ marginBottom: "40px" }}>
+      {chunks.map((chunk, i) => (
+        <p key={i} style={{
+          fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
+          fontSize: i === 0 ? "1.22rem" : "1.1rem",
+          fontWeight: i === 0 ? 500 : 400,
+          lineHeight: 1.85,
+          color: i === 0 ? "#1a1a1a" : "#444",
+          marginBottom: "20px",
+          letterSpacing: i === 0 ? "-0.01em" : "normal",
+        }}>{chunk}</p>
+      ))}
+    </div>
+  );
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -163,45 +180,47 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <span>{mdArticle.date}</span>
               </div>
             </div>
+
             {mdArticle.image && (
               <div style={{ margin: "0 -24px 40px" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={mdArticle.image} alt={mdArticle.title} style={{ width: "100%", height: "480px", objectFit: "cover", display: "block" }} />
               </div>
             )}
-            {mdArticle.intro && (
-              <div style={{ marginBottom: "40px" }}>
-                <p style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1.12rem", lineHeight: 1.8, color: "#333" }}>{mdArticle.intro}</p>
-              </div>
-            )}
+
+            {/* ── INTRO — split into short paragraphs, first line larger/medium weight ── */}
+            {mdArticle.intro && <IntroText text={mdArticle.intro} />}
+
             {mdArticle.items.map((item, idx) => (
               <div key={idx} style={{ marginBottom: "48px" }}>
-                <h2 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontSize: "1.75rem", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.3, marginBottom: "20px", paddingBottom: "12px", borderBottom: "2px solid #c8a84e" }}>{item.heading}</h2>
+                <h2 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontSize: "1.85rem", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.3, marginBottom: "20px", paddingBottom: "12px", borderBottom: "2px solid #c8a84e" }}>{item.heading}</h2>
                 {item.image && idx > 0 && (
                   <div style={{ margin: "0 -24px 24px" }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={item.image} alt={item.imageAlt} loading="lazy" style={{ width: "100%", height: "440px", objectFit: "cover", display: "block" }} />
                   </div>
                 )}
-                <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1.05rem", lineHeight: 1.85, color: "#333" }}>
+                <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1.15rem", lineHeight: 1.9, color: "#333" }}>
                   {item.paragraph.split(". ").reduce((acc: string[][], sentence, i, arr) => {
                     const lastGroup = acc[acc.length - 1];
-                    if (!lastGroup || lastGroup.length >= 4) { acc.push([sentence + (i < arr.length - 1 ? "." : "")]); }
+                    if (!lastGroup || lastGroup.length >= 3) { acc.push([sentence + (i < arr.length - 1 ? "." : "")]); }
                     else { lastGroup.push(sentence + (i < arr.length - 1 ? "." : "")); }
                     return acc;
                   }, []).map((group, gIdx) => (
-                    <p key={gIdx} style={{ marginBottom: "18px" }}>{group.join(" ")}</p>
+                    <p key={gIdx} style={{ marginBottom: "22px" }}>{group.join(" ")}</p>
                   ))}
                 </div>
                 <AdSlot slot={idx + 1} />
               </div>
             ))}
+
             {mdArticle.closing && (
               <div style={{ background: "#1a3a2a", color: "#fff", borderRadius: "4px", padding: "32px 36px", margin: "48px 0" }}>
                 <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.65rem", letterSpacing: "2.5px", textTransform: "uppercase", color: "#c8a84e", marginBottom: "12px" }}>Golden Horizons</div>
-                <p style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1rem", lineHeight: 1.75, color: "#e0ddd5" }}>{mdArticle.closing}</p>
+                <p style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#e0ddd5" }}>{mdArticle.closing}</p>
               </div>
             )}
+
             <div style={{ marginTop: "48px", paddingTop: "24px", borderTop: "1px solid #e8e0d0" }}>
               <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#1a3a2a", textDecoration: "none", fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontWeight: 600, fontSize: "0.88rem" }}>
                 <ArrowLeft style={{ width: "16px", height: "16px" }} />
