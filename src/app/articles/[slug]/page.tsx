@@ -221,7 +221,20 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </div>
             )}
 
-            <div style={{ marginTop: "48px", paddingTop: "24px", borderTop: "1px solid #e8e0d0" }}>
+            {/* ── DISCLAIMER ── */}
+            <div style={{
+              borderTop: "1px solid #e8e0d0",
+              marginTop: "48px",
+              paddingTop: "24px",
+              fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif",
+              fontSize: "0.82rem",
+              lineHeight: 1.7,
+              color: "#888",
+            }}>
+              <em>The information in this article is intended for general informational purposes only. Costs, visa requirements, healthcare policies, and local conditions change frequently. Always verify current details with official government sources, consult a licensed financial advisor, and speak with a qualified immigration attorney before making any relocation or retirement decisions. Golden Horizons does not provide legal, financial, or medical advice.</em>
+            </div>
+
+            <div style={{ marginTop: "24px", paddingTop: "24px", borderTop: "1px solid #e8e0d0" }}>
               <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#1a3a2a", textDecoration: "none", fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontWeight: 600, fontSize: "0.88rem" }}>
                 <ArrowLeft style={{ width: "16px", height: "16px" }} />
                 Back to all stories
