@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -20,14 +21,6 @@ interface Destination {
   region: string;
   tagline: string;
   articles: Article[];
-}
-
-interface LeafletMap {
-  remove: () => void;
-}
-
-interface LeafletMarker {
-  getElement: () => HTMLElement | null;
 }
 
 const DESTINATIONS: Destination[] = [
@@ -57,8 +50,8 @@ const DESTINATIONS: Destination[] = [
 
 export default function WorldMap() {
   const mapRef = useRef<HTMLDivElement>(null);
-  const leafletMapRef = useRef<LeafletMap | null>(null);
-  const markersRef = useRef<LeafletMarker[]>([]);
+  const leafletMapRef = useRef<any>(null);
+  const markersRef = useRef<any[]>([]);
   const [selected, setSelected] = useState<Destination | null>(null);
   const [mapReady, setMapReady] = useState(false);
 
@@ -73,7 +66,7 @@ export default function WorldMap() {
     const script = document.createElement("script");
     script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
     script.onload = () => {
-      const L = (window as Window & { L: typeof import("leaflet") }).L;
+      const L = (window as any).L;
       if (!mapRef.current) return;
 
       const map = L.map(mapRef.current, {
@@ -88,7 +81,7 @@ export default function WorldMap() {
         maxZoom: 10,
       }).addTo(map);
 
-      leafletMapRef.current = map as unknown as LeafletMap;
+      leafletMapRef.current = map;
 
       DESTINATIONS.forEach((dest) => {
         const isRanked = dest.rank !== null;
@@ -115,7 +108,7 @@ export default function WorldMap() {
           }
         });
 
-        markersRef.current.push(marker as unknown as LeafletMarker);
+        markersRef.current.push(marker);
       });
 
       setMapReady(true);
