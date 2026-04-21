@@ -97,5 +97,3 @@ export default async function RecentStories() {
   );
 
 }
-
-delete the recent stories and add the map
