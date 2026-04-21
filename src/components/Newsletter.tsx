@@ -39,22 +39,23 @@ export default function Newsletter() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-10 items-stretch">
 
-          {/* Phone Mockup */}
+          {/* Phone Mockup — fills full height of right column */}
           <div className="relative flex justify-center md:justify-start">
-            <div className="relative w-full max-w-sm">
-              <div className="relative bg-white rounded-[2rem] p-4 shadow-2xl">
-                <div className="bg-gray-100 rounded-[1.5rem] overflow-hidden">
-                  <div className="p-4">
+            <div className="relative w-full max-w-sm flex flex-col">
+              <div className="relative bg-white rounded-[2rem] p-4 shadow-2xl flex-1 flex flex-col">
+                <div className="bg-gray-100 rounded-[1.5rem] overflow-hidden flex-1 flex flex-col">
+                  <div className="p-4 flex flex-col flex-1">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="text-sm font-bold text-gray-800">golden</span>
                       <span className="text-sm font-light text-gray-500">horizons</span>
                     </div>
                     <div className="text-xs text-gray-500 mb-2">Latest Article</div>
-                    <div className="rounded-lg overflow-hidden mb-3">
+                    <div className="rounded-lg overflow-hidden mb-3 flex-1">
                       <img
                         src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=400&q=80"
                         alt="Featured destination"
-                        className="w-full h-52 object-cover"
+                        className="w-full h-full object-cover"
+                        style={{ minHeight: "200px" }}
                       />
                     </div>
                     <h4 className="font-bold text-gray-800 text-sm mb-1">
@@ -71,11 +72,10 @@ export default function Newsletter() {
             </div>
           </div>
 
-          {/* Content */}
-          <div className="text-white text-center md:text-left">
+          {/* Content — fully centered */}
+          <div className="text-white text-center flex flex-col justify-center">
 
             {status === "success" ? (
-              /* ── STRONG SUCCESS CONFIRMATION ── */
               <div style={{
                 background: "linear-gradient(135deg, #1a3a2a 0%, #0f2419 100%)",
                 border: "2px solid #c8a84e",
@@ -140,11 +140,11 @@ export default function Newsletter() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 leading-tight">
                   What if your best years are still ahead?
                 </h2>
-                <p className="text-white/70 mb-8 max-w-md mx-auto md:mx-0 leading-relaxed" style={{ fontSize: "18px" }}>
+                <p className="text-white/70 mb-8 leading-relaxed" style={{ fontSize: "18px" }}>
                   Get simple ideas each day about places where your retirement could feel easier, more affordable, and more enjoyable.
                 </p>
 
-                <form onSubmit={handleSubmit} className="max-w-md mx-auto md:mx-0">
+                <form onSubmit={handleSubmit} className="w-full">
 
                   {/* ── NAME FIELDS ── */}
                   <div className="flex flex-col gap-3 mb-3">
@@ -153,7 +153,7 @@ export default function Newsletter() {
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
                       placeholder="First Name"
-                      className="flex-1 px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      className="w-full px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
                       style={{ fontSize: "15px", paddingTop: "12px", paddingBottom: "12px" }}
                       disabled={status === "loading"}
                     />
@@ -162,7 +162,7 @@ export default function Newsletter() {
                       value={lastName}
                       onChange={(e) => setLastName(e.target.value)}
                       placeholder="Last Name"
-                      className="flex-1 px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      className="w-full px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
                       style={{ fontSize: "15px", paddingTop: "12px", paddingBottom: "12px" }}
                       disabled={status === "loading"}
                     />
@@ -175,7 +175,7 @@ export default function Newsletter() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Your Email Address"
-                      className="flex-1 px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      className="w-full px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
                       style={{ fontSize: "17px", paddingTop: "14px", paddingBottom: "14px" }}
                       required
                       disabled={status === "loading"}
@@ -183,7 +183,7 @@ export default function Newsletter() {
                     <button
                       type="submit"
                       disabled={status === "loading"}
-                      className="px-8 bg-white text-foreground font-semibold tracking-wide rounded hover:bg-white/90 transition-colors disabled:opacity-70 whitespace-nowrap"
+                      className="w-full px-8 bg-white text-foreground font-semibold tracking-wide rounded hover:bg-white/90 transition-colors disabled:opacity-70"
                       style={{ fontSize: "15px", paddingTop: "14px", paddingBottom: "14px" }}
                     >
                       {status === "loading" ? "Subscribing..." : "Send me new ideas →"}
