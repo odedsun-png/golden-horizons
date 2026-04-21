@@ -60,7 +60,7 @@ function NewsletterSlot() {
         maxWidth: "420px",
         margin: "0 auto 24px",
       }}>
-        Every week we share the best retirement destinations, cost breakdowns, and expat tips — straight to your inbox.
+        Every day we share the best retirement destinations, cost breakdowns, and expat tips — straight to your inbox.
       </p>
       <a
         href="https://golden-horizons.org/#subscribe"
