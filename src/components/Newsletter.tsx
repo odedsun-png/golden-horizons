@@ -147,7 +147,7 @@ export default function Newsletter() {
                 <form onSubmit={handleSubmit} className="max-w-md mx-auto md:mx-0">
 
                   {/* ── NAME FIELDS ── */}
-                  <div className="flex gap-3 mb-3">
+                  <div className="flex flex-col gap-3 mb-3">
                     <input
                       type="text"
                       value={firstName}
@@ -169,7 +169,7 @@ export default function Newsletter() {
                   </div>
 
                   {/* ── EMAIL + SUBMIT ── */}
-                  <div className="flex flex-col sm:flex-row gap-3">
+                  <div className="flex flex-col gap-3">
                     <input
                       type="email"
                       value={email}
