@@ -195,6 +195,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {/* ── INTRO — split into short paragraphs, first line larger/medium weight ── */}
             {mdArticle.intro && <IntroText text={mdArticle.intro} />}
 
+            {/* ── IN-ARTICLE EMAIL CAPTURE — fires after intro, at peak reader engagement ── */}
+            <NewsletterSlot />
+
             {mdArticle.items.map((item, idx) => (
               <div key={idx} style={{ marginBottom: "48px" }}>
                 <h2 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontSize: "1.85rem", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.3, marginBottom: "20px", paddingBottom: "12px", borderBottom: "2px solid #c8a84e" }}>{item.heading}</h2>
