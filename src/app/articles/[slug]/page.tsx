@@ -42,7 +42,7 @@ function NewsletterSlot() {
         color: "#c8a84e",
         marginBottom: "12px",
         fontWeight: 700,
-      }}>Free Daily Newsletter</div>
+      }}>Free Weekly Newsletter</div>
       <h3 style={{
         fontFamily: "'Playfair Display', Georgia, serif",
         fontSize: "1.45rem",
@@ -60,7 +60,7 @@ function NewsletterSlot() {
         maxWidth: "420px",
         margin: "0 auto 24px",
       }}>
-        Every day we share the best retirement destinations, cost breakdowns, and expat tips — straight to your inbox.
+        Every week we share the best retirement destinations, cost breakdowns, and expat tips — straight to your inbox.
       </p>
       <a
         href="https://golden-horizons.org/#subscribe"
@@ -128,7 +128,7 @@ function FactSlot({ slot }: { slot: number }) {
 }
 
 function AdSlot({ slot }: { slot: number }) {
-  if (slot % 2 === 1) return <NewsletterSlot />;
+
   return <FactSlot slot={slot} />;
 }
 
@@ -195,8 +195,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {/* ── INTRO — split into short paragraphs, first line larger/medium weight ── */}
             {mdArticle.intro && <IntroText text={mdArticle.intro} />}
 
-            {/* ── IN-ARTICLE EMAIL CAPTURE — fires after intro, at peak reader engagement ── */}
-            <NewsletterSlot />
 
             {mdArticle.items.map((item, idx) => (
               <div key={idx} style={{ marginBottom: "48px" }}>
