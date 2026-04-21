@@ -35,15 +35,15 @@ export default function Newsletter() {
   };
 
   return (
-    <section id="subscribe" className="bg-[#1f2326] py-16 md:py-20">
+    <section id="subscribe" className="bg-[#2c3235] py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid md:grid-cols-2 gap-10 items-stretch">
 
           {/* Phone Mockup */}
           <div className="relative flex justify-center md:justify-start">
-            <div className="relative w-64 md:w-72">
-              <div className="relative bg-white rounded-[2.5rem] p-3 shadow-2xl">
-                <div className="bg-gray-100 rounded-[2rem] overflow-hidden">
+            <div className="relative w-full max-w-sm">
+              <div className="relative bg-white rounded-[2rem] p-4 shadow-2xl">
+                <div className="bg-gray-100 rounded-[1.5rem] overflow-hidden">
                   <div className="p-4">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="text-sm font-bold text-gray-800">golden</span>
@@ -54,7 +54,7 @@ export default function Newsletter() {
                       <img
                         src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=400&q=80"
                         alt="Featured destination"
-                        className="w-full h-32 object-cover"
+                        className="w-full h-52 object-cover"
                       />
                     </div>
                     <h4 className="font-bold text-gray-800 text-sm mb-1">
