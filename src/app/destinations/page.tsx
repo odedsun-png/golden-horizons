@@ -37,6 +37,19 @@ export default function DestinationsPage() {
           </div>
         </section>
 
+        {/* Cost Calculator — moved to top for immediate engagement */}
+        <section className="py-16 md:py-20 bg-muted/30">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-10 text-center">
+              <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-foreground/70 mb-3">
+                Plan Your Budget
+              </h2>
+              <div className="w-12 h-1 bg-primary mx-auto" />
+            </div>
+            <CostCalculator />
+          </div>
+        </section>
+
         {/* Rankings List */}
         <section className="py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -256,19 +269,6 @@ export default function DestinationsPage() {
             <p className="text-sm text-muted-foreground mt-4">
               *Ratings based on 1-5 scale. Cost rating: higher = more affordable. Monthly costs are estimates for moderate lifestyle.
             </p>
-          </div>
-        </section>
-
-        {/* Cost Calculator */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-10 text-center">
-              <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-foreground/70 mb-3">
-                Plan Your Budget
-              </h2>
-              <div className="w-12 h-1 bg-primary mx-auto" />
-            </div>
-            <CostCalculator />
           </div>
         </section>
 
