@@ -16,6 +16,13 @@ export default function Footer() {
             <Link href="/disclaimer" className="hover:text-white/80 transition-colors">Disclaimer</Link>
             <span className="text-white/30">|</span>
             <Link href="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
+            <span className="text-white/30">|</span>
+            <a
+              href="https://app.brevo.com/contact/unsubscribe?email={{ contact.EMAIL }}"
+              className="hover:text-white/80 transition-colors"
+            >
+              Unsubscribe
+            </a>
           </div>
           {/* Logo — gold version for dark background */}
           <Link href="/" className="flex items-center gap-2">
