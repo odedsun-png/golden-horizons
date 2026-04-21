@@ -69,51 +69,111 @@ export default function Newsletter() {
 
           {/* Content */}
           <div className="text-white text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 leading-tight">
-              What if your best years are still ahead?
-            </h2>
-            <p className="text-white/70 mb-8 max-w-md mx-auto md:mx-0 leading-relaxed" style={{ fontSize: "18px" }}>
-              Get simple ideas each day about places where your retirement could feel easier, more affordable, and more enjoyable.
-            </p>
 
             {status === "success" ? (
-              <div className="bg-accent/20 border border-accent/30 rounded-lg p-4 max-w-md mx-auto md:mx-0">
-                <p className="text-accent font-semibold" style={{ fontSize: "18px" }}>
-                  You're in! Your first idea is on its way.
+              /* ── STRONG SUCCESS CONFIRMATION ── */
+              <div style={{
+                background: "linear-gradient(135deg, #1a3a2a 0%, #0f2419 100%)",
+                border: "2px solid #c8a84e",
+                borderRadius: "12px",
+                padding: "40px 36px",
+                textAlign: "center",
+              }}>
+                {/* Big checkmark */}
+                <div style={{
+                  width: "64px",
+                  height: "64px",
+                  background: "#c8a84e",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "0 auto 20px",
+                }}>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M7 16.5L13 22.5L25 10" stroke="#1a1a1a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+                <div style={{
+                  fontFamily: "'Source Sans 3', sans-serif",
+                  fontSize: "0.65rem",
+                  letterSpacing: "2.5px",
+                  textTransform: "uppercase",
+                  color: "#c8a84e",
+                  fontWeight: 700,
+                  marginBottom: "10px",
+                }}>You're subscribed</div>
+                <h3 style={{
+                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontSize: "1.6rem",
+                  fontWeight: 700,
+                  color: "#ffffff",
+                  lineHeight: 1.3,
+                  marginBottom: "12px",
+                }}>Welcome to Golden Horizons!</h3>
+                <p style={{
+                  fontSize: "1rem",
+                  color: "rgba(255,255,255,0.65)",
+                  lineHeight: 1.7,
+                  marginBottom: "20px",
+                }}>
+                  Your first issue is on its way. Check your inbox — and your spam folder just in case.
                 </p>
+                <div style={{
+                  display: "inline-block",
+                  background: "rgba(200,168,78,0.15)",
+                  border: "1px solid rgba(200,168,78,0.3)",
+                  borderRadius: "8px",
+                  padding: "10px 20px",
+                  fontSize: "0.85rem",
+                  color: "#c8a84e",
+                  fontWeight: 600,
+                }}>
+                  Next step: Add newsletter@golden-horizons.org to your contacts
+                </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="max-w-md mx-auto md:mx-0">
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Your Email Address"
-                    className="flex-1 px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
-                    style={{ fontSize: "17px", paddingTop: "14px", paddingBottom: "14px" }}
-                    required
-                    disabled={status === "loading"}
-                  />
-                  <button
-                    type="submit"
-                    disabled={status === "loading"}
-                    className="px-8 bg-white text-foreground font-semibold tracking-wide rounded hover:bg-white/90 transition-colors disabled:opacity-70 whitespace-nowrap"
-                    style={{ fontSize: "15px", paddingTop: "14px", paddingBottom: "14px" }}
-                  >
-                    {status === "loading" ? "..." : "Send me new ideas →"}
-                  </button>
-                </div>
-                {status === "error" && (
-                  <p className="text-red-400 mt-3" style={{ fontSize: "16px" }}>
-                    Something went wrong. Please try again.
-                  </p>
-                )}
-                <p className="text-white/40 mt-4" style={{ fontSize: "15px" }}>
-                  One short email. No pressure. Just ideas worth considering.
+              <>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 leading-tight">
+                  What if your best years are still ahead?
+                </h2>
+                <p className="text-white/70 mb-8 max-w-md mx-auto md:mx-0 leading-relaxed" style={{ fontSize: "18px" }}>
+                  Get simple ideas each day about places where your retirement could feel easier, more affordable, and more enjoyable.
                 </p>
-              </form>
+
+                <form onSubmit={handleSubmit} className="max-w-md mx-auto md:mx-0">
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Your Email Address"
+                      className="flex-1 px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      style={{ fontSize: "17px", paddingTop: "14px", paddingBottom: "14px" }}
+                      required
+                      disabled={status === "loading"}
+                    />
+                    <button
+                      type="submit"
+                      disabled={status === "loading"}
+                      className="px-8 bg-white text-foreground font-semibold tracking-wide rounded hover:bg-white/90 transition-colors disabled:opacity-70 whitespace-nowrap"
+                      style={{ fontSize: "15px", paddingTop: "14px", paddingBottom: "14px" }}
+                    >
+                      {status === "loading" ? "Subscribing..." : "Send me new ideas →"}
+                    </button>
+                  </div>
+                  {status === "error" && (
+                    <p className="text-red-400 mt-3" style={{ fontSize: "16px" }}>
+                      Something went wrong. Please try again.
+                    </p>
+                  )}
+                  <p className="text-white/40 mt-4" style={{ fontSize: "15px" }}>
+                    One short email. No pressure. Just ideas worth considering.
+                  </p>
+                </form>
+              </>
             )}
+
           </div>
 
         </div>
