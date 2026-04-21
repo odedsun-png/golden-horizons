@@ -4,6 +4,8 @@ import { useState } from "react";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -16,12 +18,14 @@ export default function Newsletter() {
       const response = await fetch("/.netlify/functions/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, firstName, lastName }),
       });
 
       if (response.ok) {
         setStatus("success");
         setEmail("");
+        setFirstName("");
+        setLastName("");
       } else {
         setStatus("error");
       }
@@ -79,7 +83,6 @@ export default function Newsletter() {
                 padding: "40px 36px",
                 textAlign: "center",
               }}>
-                {/* Big checkmark */}
                 <div style={{
                   width: "64px",
                   height: "64px",
@@ -142,6 +145,30 @@ export default function Newsletter() {
                 </p>
 
                 <form onSubmit={handleSubmit} className="max-w-md mx-auto md:mx-0">
+
+                  {/* ── NAME FIELDS ── */}
+                  <div className="flex gap-3 mb-3">
+                    <input
+                      type="text"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                      placeholder="First Name"
+                      className="flex-1 px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      style={{ fontSize: "15px", paddingTop: "12px", paddingBottom: "12px" }}
+                      disabled={status === "loading"}
+                    />
+                    <input
+                      type="text"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                      placeholder="Last Name"
+                      className="flex-1 px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                      style={{ fontSize: "15px", paddingTop: "12px", paddingBottom: "12px" }}
+                      disabled={status === "loading"}
+                    />
+                  </div>
+
+                  {/* ── EMAIL + SUBMIT ── */}
                   <div className="flex flex-col sm:flex-row gap-3">
                     <input
                       type="email"
@@ -162,6 +189,7 @@ export default function Newsletter() {
                       {status === "loading" ? "Subscribing..." : "Send me new ideas →"}
                     </button>
                   </div>
+
                   {status === "error" && (
                     <p className="text-red-400 mt-3" style={{ fontSize: "16px" }}>
                       Something went wrong. Please try again.
