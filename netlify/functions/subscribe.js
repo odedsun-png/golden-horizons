@@ -21,7 +21,7 @@ exports.handler = async (event) => {
   const listId = parseInt(process.env.BREVO_LIST_ID, 10);
   if (!apiKey || !listId) return {statusCode:500,headers,body:JSON.stringify({message:"Config error"})};
 
-  const attributes: Record<string, string> = {};
+  const attributes = {};
   if (firstName) attributes.FIRSTNAME = firstName;
   if (lastName) attributes.LASTNAME = lastName;
 
