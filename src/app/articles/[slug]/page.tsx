@@ -42,7 +42,7 @@ function NewsletterSlot() {
         color: "#c8a84e",
         marginBottom: "12px",
         fontWeight: 700,
-      }}>Free Weekly Newsletter</div>
+      }}>Free Daily Newsletter</div>
       <h3 style={{
         fontFamily: "'Playfair Display', Georgia, serif",
         fontSize: "1.45rem",
