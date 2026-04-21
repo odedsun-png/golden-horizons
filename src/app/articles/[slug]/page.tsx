@@ -172,12 +172,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <span style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "2.5px", textTransform: "uppercase", color: "#c8a84e" }}>{mdArticle.category}</span>
               </div>
               <h1 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontSize: "clamp(1.8rem, 4vw, 2.4rem)", fontWeight: 900, lineHeight: 1.12, color: "#1a1a1a", marginBottom: "20px", letterSpacing: "-0.5px" }}>{mdArticle.title}</h1>
+
+              {/* ── BYLINE ── */}
               <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.82rem", color: "#888", display: "flex", flexWrap: "wrap", gap: "4px 12px", alignItems: "center", marginBottom: "32px" }}>
-                <span>By <strong style={{ color: "#1a1a1a", fontWeight: 600 }}>Golden Horizons Team</strong></span>
+                <span>By <strong style={{ color: "#1a1a1a", fontWeight: 600 }}>Golden Horizons Editorial Team</strong></span>
+                <span style={{ color: "#ddd" }}>&#8226;</span>
+                <span>Reviewed by <strong style={{ color: "#1a1a1a", fontWeight: 600 }}>Golden Horizons Editors</strong></span>
+                <span style={{ color: "#ddd" }}>&#8226;</span>
+                <span>Last Updated: <strong style={{ color: "#1a1a1a", fontWeight: 600 }}>{mdArticle.date}</strong></span>
                 <span style={{ color: "#ddd" }}>&#8226;</span>
                 <span>Read time: 2-3 minutes</span>
-                <span style={{ color: "#ddd" }}>&#8226;</span>
-                <span>{mdArticle.date}</span>
               </div>
             </div>
 
