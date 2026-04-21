@@ -41,7 +41,7 @@ export default function Header() {
             </button>
 
             <Link
-              href="#subscribe"
+              href="/#subscribe"
               className="px-5 py-2.5 bg-foreground text-background text-sm font-semibold tracking-wide uppercase rounded hover:bg-foreground/90 transition-colors"
             >
               Subscribe
@@ -101,7 +101,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="#subscribe"
+              href="/#subscribe"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-center px-5 py-3 bg-foreground text-background text-sm font-semibold tracking-wide uppercase rounded hover:bg-foreground/90 transition-colors"
             >
