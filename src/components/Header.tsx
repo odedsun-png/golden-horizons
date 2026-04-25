@@ -12,41 +12,44 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <img src="/logo.svg" alt="Golden Horizons" className="h-10 w-auto" />
-          </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-4 md:gap-6">
-            <Link
-              href="/destinations"
-              className="text-sm font-semibold tracking-wide uppercase text-foreground/80 hover:text-foreground transition-colors"
-            >
-              Rankings
+          {/* Logo + Nav grouped left */}
+          <div className="flex items-center gap-8">
+            <Link href="/" className="flex items-center">
+              <img src="/logo.svg" alt="Golden Horizons" className="h-10 w-auto" />
             </Link>
 
-            <Link
-              href="/articles"
-              className="text-sm font-semibold tracking-wide uppercase text-foreground/80 hover:text-foreground transition-colors"
-            >
-              Articles
-            </Link>
+            <nav className="hidden md:flex items-center gap-6">
+              <Link
+                href="/destinations"
+                className="text-sm font-semibold tracking-wide uppercase text-foreground/80 hover:text-foreground transition-colors"
+              >
+                Rankings
+              </Link>
+              <Link
+                href="/articles"
+                className="text-sm font-semibold tracking-wide uppercase text-foreground/80 hover:text-foreground transition-colors"
+              >
+                Articles
+              </Link>
+            </nav>
+          </div>
 
+          {/* Right side: Search + Subscribe */}
+          <div className="hidden md:flex items-center gap-4">
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
               className="p-2 text-foreground/70 hover:text-foreground transition-colors"
             >
               {isSearchOpen ? <X className="w-5 h-5" /> : <Search className="w-5 h-5" />}
             </button>
-
             <Link
               href="/#subscribe"
               className="px-5 py-2.5 bg-foreground text-background text-sm font-semibold tracking-wide uppercase rounded hover:bg-foreground/90 transition-colors"
             >
               Subscribe
             </Link>
-          </nav>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -83,7 +86,6 @@ export default function Header() {
                 className="w-full pl-12 pr-4 py-3 bg-muted rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
               />
             </div>
-
             <Link
               href="/destinations"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -91,7 +93,6 @@ export default function Header() {
             >
               Top Retirement Destinations
             </Link>
-
             <Link
               href="/articles"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -99,7 +100,6 @@ export default function Header() {
             >
               Articles
             </Link>
-
             <Link
               href="/#subscribe"
               onClick={() => setIsMobileMenuOpen(false)}
