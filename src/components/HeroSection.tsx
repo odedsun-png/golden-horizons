@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
+import RetirementFinder from '@/components/RetirementFinder';
 
 const SLIDES = [
   {
@@ -39,14 +40,10 @@ const DELAY = 8000;
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
   const [visible, setVisible] = useState(0);
+  const [finderOpen, setFinderOpen] = useState(false);
 
-  const goTo = useCallback((n: number) => {
-    setCurrent(n);
-  }, []);
-
-  const next = useCallback(() => {
-    setCurrent((c) => (c + 1) % SLIDES.length);
-  }, []);
+  const goTo = useCallback((n: number) => { setCurrent(n); }, []);
+  const next = useCallback(() => { setCurrent((c) => (c + 1) % SLIDES.length); }, []);
 
   useEffect(() => {
     const t = setTimeout(() => setVisible(current), 50);
@@ -66,26 +63,29 @@ export default function HeroSection() {
         .gh-hero {
           position: relative;
           width: 100%;
-          height: 100vh;
-          min-height: 600px;
+          min-height: 100vh;
           overflow: hidden;
           background: #1a1d21;
           font-family: 'Inter', sans-serif;
+          display: flex;
+          flex-direction: column;
         }
 
         .gh-bg {
-          position: absolute;
+          position: fixed;
           inset: 0;
           background-size: cover;
           opacity: 0;
           transition: opacity 1.4s ease;
           will-change: opacity;
+          pointer-events: none;
+          z-index: 0;
         }
 
         .gh-bg.active { opacity: 1; }
 
         .gh-overlay {
-          position: absolute;
+          position: fixed;
           inset: 0;
           background: linear-gradient(
             180deg,
@@ -94,19 +94,18 @@ export default function HeroSection() {
             rgba(26,29,33,0.78) 60%,
             rgba(26,29,33,0.55) 100%
           );
-          z-index: 2;
+          z-index: 1;
+          pointer-events: none;
         }
 
         .gh-nav {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
+          position: relative;
           z-index: 30;
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 24px 56px;
+          flex-shrink: 0;
         }
 
         .gh-logo {
@@ -117,64 +116,41 @@ export default function HeroSection() {
           color: #fff;
         }
 
-        .gh-logo-text {
-          display: flex;
-          flex-direction: column;
-          line-height: 1;
-        }
+        .gh-logo-text { display: flex; flex-direction: column; line-height: 1; }
 
         .gh-logo-name {
           font-family: 'Playfair Display', serif;
-          font-size: 17px;
-          font-weight: 700;
-          color: #fff;
-          letter-spacing: 0.06em;
-          text-transform: uppercase;
+          font-size: 17px; font-weight: 700; color: #fff;
+          letter-spacing: 0.06em; text-transform: uppercase;
         }
 
         .gh-logo-tag {
-          font-size: 9px;
-          color: rgba(255,255,255,0.50);
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          margin-top: 3px;
+          font-size: 9px; color: rgba(255,255,255,0.50);
+          letter-spacing: 0.18em; text-transform: uppercase; margin-top: 3px;
         }
 
-        .gh-nav-links {
-          display: flex;
-          gap: 36px;
-          align-items: center;
-        }
+        .gh-nav-links { display: flex; gap: 36px; align-items: center; }
 
         .gh-content {
-          position: absolute;
-          inset: 0;
+          position: relative;
           z-index: 10;
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
           text-align: center;
-          padding: 80px 80px 200px;
+          padding: 48px 80px 60px;
+          flex: 1;
         }
 
         .gh-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          background: rgba(255,255,255,0.08);
-          border: 1px solid rgba(255,255,255,0.16);
-          border-radius: 100px;
-          padding: 6px 18px;
-          margin-bottom: 32px;
+          display: inline-flex; align-items: center; gap: 8px;
+          background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16);
+          border-radius: 100px; padding: 6px 18px; margin-bottom: 32px;
         }
 
         .gh-badge-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background: #dcb770;
-          animation: gh-pulse 2.4s ease-in-out infinite;
+          width: 6px; height: 6px; border-radius: 50%;
+          background: #dcb770; animation: gh-pulse 2.4s ease-in-out infinite;
         }
 
         @keyframes gh-pulse {
@@ -183,147 +159,106 @@ export default function HeroSection() {
         }
 
         .gh-badge-label {
-          font-size: 11px;
-          font-weight: 600;
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          color: rgba(255,255,255,0.80);
+          font-size: 11px; font-weight: 600;
+          letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.80);
         }
 
         .gh-slides {
-          position: relative;
-          width: 100%;
-          height: 300px;
+          position: relative; width: 100%; height: 280px; flex-shrink: 0;
         }
 
         .gh-slide {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          opacity: 0;
-          transition: opacity 1s ease;
-          pointer-events: none;
+          position: absolute; top: 0; left: 0; right: 0;
+          display: flex; flex-direction: column; align-items: center;
+          opacity: 0; transition: opacity 1s ease; pointer-events: none;
         }
 
-        .gh-slide.active {
-          opacity: 1;
-          pointer-events: auto;
-        }
+        .gh-slide.active { opacity: 1; pointer-events: auto; }
 
         .gh-slogan {
           font-family: 'Playfair Display', serif;
-          font-size: 58px;
-          font-weight: 700;
-          color: #ffffff;
-          line-height: 1.15;
-          letter-spacing: -0.02em;
-          margin-bottom: 20px;
-          max-width: 900px;
+          font-size: 58px; font-weight: 700; color: #ffffff;
+          line-height: 1.15; letter-spacing: -0.02em;
+          margin-bottom: 20px; max-width: 900px;
         }
 
         .gh-support {
-          font-size: 20px;
-          font-weight: 300;
-          color: rgba(255,255,255,0.70);
-          line-height: 1.70;
-          max-width: 650px;
-          margin: 0 auto 10px;
+          font-size: 20px; font-weight: 300; color: rgba(255,255,255,0.70);
+          line-height: 1.70; max-width: 650px; margin: 0 auto 10px;
         }
 
         .gh-trigger {
-          font-size: 16px;
-          font-style: italic;
-          color: #dcb770;
-          margin-bottom: 32px;
-          opacity: 0.92;
+          font-size: 16px; font-style: italic;
+          color: #dcb770; margin-bottom: 32px; opacity: 0.92;
         }
 
         .gh-cta-row {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 24px;
-          flex-wrap: wrap;
+          display: flex; align-items: center;
+          justify-content: center; gap: 24px; flex-wrap: wrap;
         }
 
         .gh-cta-btn {
-          background: #dcb770;
-          color: #1a1a1a;
-          border: none;
-          padding: 17px 38px;
-          border-radius: 6px;
-          font-family: 'Inter', sans-serif;
-          font-size: 15px;
-          font-weight: 700;
-          cursor: pointer;
-          transition: background 0.2s, transform 0.15s;
-          white-space: nowrap;
-          text-decoration: none;
-          display: inline-block;
+          background: #dcb770; color: #1a1a1a; border: none;
+          padding: 17px 38px; border-radius: 6px;
+          font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700;
+          cursor: pointer; transition: background 0.2s, transform 0.15s;
+          white-space: nowrap; display: inline-flex; align-items: center; gap: 8px;
         }
 
-        .gh-cta-btn:hover {
-          background: #e8c980;
-          transform: translateY(-2px);
-        }
+        .gh-cta-btn:hover { background: #e8c980; transform: translateY(-2px); }
 
         .gh-cta-sub {
-          font-size: 13px;
-          color: rgba(255,255,255,0.55);
-          line-height: 1.5;
+          font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5;
         }
 
+        /* ── Finder dropdown panel ── */
+        .gh-finder-panel {
+          width: 100%; max-width: 680px;
+          margin: 0 auto;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: max-height 0.55s ease, opacity 0.4s ease, margin-top 0.4s ease;
+          margin-top: 0;
+        }
+
+        .gh-finder-panel.open {
+          max-height: 1000px;
+          opacity: 1;
+          margin-top: 28px;
+        }
+
+        /* dots / counter */
         .gh-dots {
-          position: absolute;
-          bottom: 32px;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 20;
-          display: flex;
-          align-items: center;
-          gap: 10px;
+          position: relative; z-index: 20;
+          display: flex; align-items: center; justify-content: center;
+          gap: 10px; padding: 24px 0 20px; flex-shrink: 0;
         }
 
         .gh-dot {
-          height: 4px;
-          border-radius: 2px;
+          height: 4px; border-radius: 2px;
           background: rgba(255,255,255,0.28);
-          cursor: pointer;
-          border: none;
-          padding: 0;
-          transition: background 0.3s, width 0.3s;
-          width: 28px;
+          cursor: pointer; border: none; padding: 0;
+          transition: background 0.3s, width 0.3s; width: 28px;
         }
 
-        .gh-dot.active {
-          background: #dcb770;
-          width: 56px;
-        }
+        .gh-dot.active { background: #dcb770; width: 56px; }
 
         .gh-counter {
-          position: absolute;
-          bottom: 28px;
-          right: 56px;
-          z-index: 20;
-          font-size: 12px;
-          color: rgba(255,255,255,0.35);
-          letter-spacing: 0.10em;
-          font-weight: 600;
+          position: absolute; bottom: 20px; right: 56px; z-index: 20;
+          font-size: 12px; color: rgba(255,255,255,0.35);
+          letter-spacing: 0.10em; font-weight: 600;
         }
 
         @media (max-width: 900px) {
           .gh-nav { padding: 16px 24px; }
           .gh-nav-links a { display: none; }
-          .gh-content { padding: 80px 24px 80px; }
+          .gh-content { padding: 32px 24px 40px; }
           .gh-slogan { font-size: 32px; }
           .gh-support { font-size: 17px; }
-          .gh-slides { height: 390px; }
+          .gh-slides { height: 380px; }
           .gh-cta-row { flex-direction: column; gap: 14px; }
-          .gh-cta-btn { width: 100%; text-align: center; box-sizing: border-box; }
+          .gh-cta-btn { width: 100%; justify-content: center; box-sizing: border-box; }
           .gh-counter { right: 24px; }
         }
       `}</style>
@@ -333,10 +268,7 @@ export default function HeroSection() {
           <div
             key={i}
             className={`gh-bg${visible === i ? ' active' : ''}`}
-            style={{
-              backgroundImage: `url('${slide.bg}')`,
-              backgroundPosition: slide.bgPos,
-            }}
+            style={{ backgroundImage: `url('${slide.bg}')`, backgroundPosition: slide.bgPos }}
           />
         ))}
 
@@ -370,18 +302,28 @@ export default function HeroSection() {
                 <h1 className="gh-slogan">{slide.slogan}</h1>
                 <p className="gh-support">{slide.support}</p>
                 <p className="gh-trigger">{slide.trigger}</p>
-
                 <div className="gh-cta-row">
-                  {/* A — Finder button replaces the PDF guide button */}
-                  <a href="#finder" className="gh-cta-btn">
-                    🎯 Find My Retirement Destination →
-                  </a>
+                  <button
+                    className="gh-cta-btn"
+                    onClick={() => setFinderOpen((o) => !o)}
+                    aria-expanded={finderOpen}
+                  >
+                    🎯 Find My Retirement Destination
+                    <span style={{ fontSize: 11, opacity: 0.7 }}>
+                      {finderOpen ? '▲' : '▼'}
+                    </span>
+                  </button>
                   <span className="gh-cta-sub">
                     Answer 6 questions — get your top 3 matches
                   </span>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Full RetirementFinder — slides open on button click */}
+          <div className={`gh-finder-panel${finderOpen ? ' open' : ''}`}>
+            <RetirementFinder />
           </div>
         </div>
 
