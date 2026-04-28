@@ -11,11 +11,10 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Original hero restored */}
         <HeroSection />
 
-        {/* Retirement Finder — collapsible box below hero */}
-        <section className="py-10 bg-muted/30">
+        {/* Finder — anchor matches href="#finder" in hero button */}
+        <section id="finder" className="py-10 bg-muted/30 scroll-mt-4">
           <div className="max-w-2xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-6">
               <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-foreground/60 mb-2">
