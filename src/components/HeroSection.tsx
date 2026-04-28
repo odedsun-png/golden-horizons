@@ -61,43 +61,42 @@ export default function HeroSection() {
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 
         .gh-hero {
-          position: relative;
+          position: relative;           /* ← FIXED: was causing bleed into rest of page */
           width: 100%;
           min-height: 100vh;
-          overflow: hidden;
           background: #1a1d21;
           font-family: 'Inter', sans-serif;
           display: flex;
           flex-direction: column;
+          overflow: hidden;             /* contain the absolute bg images */
         }
 
+        /* Background slides — absolute inside hero, not fixed */
         .gh-bg {
-          position: fixed;
+          position: absolute;
           inset: 0;
           background-size: cover;
           opacity: 0;
           transition: opacity 1.4s ease;
           will-change: opacity;
-          pointer-events: none;
           z-index: 0;
         }
-
         .gh-bg.active { opacity: 1; }
 
         .gh-overlay {
-          position: fixed;
+          position: absolute;
           inset: 0;
           background: linear-gradient(
             180deg,
-            rgba(26,29,33,0.55) 0%,
-            rgba(26,29,33,0.78) 40%,
-            rgba(26,29,33,0.78) 60%,
-            rgba(26,29,33,0.55) 100%
+            rgba(26,29,33,0.50) 0%,
+            rgba(26,29,33,0.75) 35%,
+            rgba(26,29,33,0.75) 65%,
+            rgba(26,29,33,0.50) 100%
           );
           z-index: 1;
-          pointer-events: none;
         }
 
+        /* Nav */
         .gh-nav {
           position: relative;
           z-index: 30;
@@ -109,28 +108,22 @@ export default function HeroSection() {
         }
 
         .gh-logo {
-          display: flex;
-          align-items: center;
-          gap: 11px;
-          text-decoration: none;
-          color: #fff;
+          display: flex; align-items: center; gap: 11px;
+          text-decoration: none; color: #fff;
         }
-
         .gh-logo-text { display: flex; flex-direction: column; line-height: 1; }
-
         .gh-logo-name {
           font-family: 'Playfair Display', serif;
           font-size: 17px; font-weight: 700; color: #fff;
           letter-spacing: 0.06em; text-transform: uppercase;
         }
-
         .gh-logo-tag {
           font-size: 9px; color: rgba(255,255,255,0.50);
           letter-spacing: 0.18em; text-transform: uppercase; margin-top: 3px;
         }
-
         .gh-nav-links { display: flex; gap: 36px; align-items: center; }
 
+        /* Content */
         .gh-content {
           position: relative;
           z-index: 10;
@@ -138,55 +131,64 @@ export default function HeroSection() {
           flex-direction: column;
           align-items: center;
           text-align: center;
-          padding: 48px 80px 60px;
+          padding: 40px 80px 60px;
           flex: 1;
         }
 
+        /* Badge — now a clickable link */
         .gh-badge {
           display: inline-flex; align-items: center; gap: 8px;
-          background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16);
-          border-radius: 100px; padding: 6px 18px; margin-bottom: 32px;
+          background: rgba(255,255,255,0.08);
+          border: 1px solid rgba(255,255,255,0.20);
+          border-radius: 100px;
+          padding: 7px 20px;
+          margin-bottom: 32px;
+          text-decoration: none;
+          transition: background 0.2s, border-color 0.2s;
+          cursor: pointer;
+        }
+        .gh-badge:hover {
+          background: rgba(220,183,112,0.15);
+          border-color: rgba(220,183,112,0.50);
         }
 
         .gh-badge-dot {
           width: 6px; height: 6px; border-radius: 50%;
-          background: #dcb770; animation: gh-pulse 2.4s ease-in-out infinite;
+          background: #dcb770;
+          animation: gh-pulse 2.4s ease-in-out infinite;
         }
-
         @keyframes gh-pulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50% { opacity: 0.4; transform: scale(0.8); }
         }
-
         .gh-badge-label {
           font-size: 11px; font-weight: 600;
-          letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.80);
+          letter-spacing: 0.18em; text-transform: uppercase;
+          color: rgba(255,255,255,0.80);
         }
 
+        /* Slide container — fixed height so layout is stable when finder closed */
         .gh-slides {
           position: relative; width: 100%; height: 280px; flex-shrink: 0;
         }
-
         .gh-slide {
           position: absolute; top: 0; left: 0; right: 0;
           display: flex; flex-direction: column; align-items: center;
           opacity: 0; transition: opacity 1s ease; pointer-events: none;
         }
-
         .gh-slide.active { opacity: 1; pointer-events: auto; }
 
         .gh-slogan {
           font-family: 'Playfair Display', serif;
-          font-size: 58px; font-weight: 700; color: #ffffff;
+          font-size: 58px; font-weight: 700; color: #fff;
           line-height: 1.15; letter-spacing: -0.02em;
           margin-bottom: 20px; max-width: 900px;
         }
-
         .gh-support {
-          font-size: 20px; font-weight: 300; color: rgba(255,255,255,0.70);
-          line-height: 1.70; max-width: 650px; margin: 0 auto 10px;
+          font-size: 20px; font-weight: 300;
+          color: rgba(255,255,255,0.70); line-height: 1.70;
+          max-width: 650px; margin: 0 auto 10px;
         }
-
         .gh-trigger {
           font-size: 16px; font-style: italic;
           color: #dcb770; margin-bottom: 32px; opacity: 0.92;
@@ -196,15 +198,13 @@ export default function HeroSection() {
           display: flex; align-items: center;
           justify-content: center; gap: 24px; flex-wrap: wrap;
         }
-
         .gh-cta-btn {
           background: #dcb770; color: #1a1a1a; border: none;
-          padding: 17px 38px; border-radius: 6px;
-          font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700;
+          padding: 17px 40px; border-radius: 6px;
+          font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700;
           cursor: pointer; transition: background 0.2s, transform 0.15s;
-          white-space: nowrap; display: inline-flex; align-items: center; gap: 8px;
+          white-space: nowrap; display: inline-flex; align-items: center; gap: 10px;
         }
-
         .gh-cta-btn:hover { background: #e8c980; transform: translateY(-2px); }
 
         .gh-cta-sub {
@@ -213,35 +213,32 @@ export default function HeroSection() {
 
         /* ── Finder dropdown panel ── */
         .gh-finder-panel {
-          width: 100%; max-width: 680px;
+          width: 100%; max-width: 760px;       /* wider */
           margin: 0 auto;
           max-height: 0;
           overflow: hidden;
           opacity: 0;
-          transition: max-height 0.55s ease, opacity 0.4s ease, margin-top 0.4s ease;
+          transition: max-height 0.55s ease, opacity 0.4s ease, margin-top 0.35s ease;
           margin-top: 0;
         }
-
         .gh-finder-panel.open {
-          max-height: 1000px;
+          max-height: 1100px;
           opacity: 1;
           margin-top: 28px;
         }
 
-        /* dots / counter */
+        /* Dots */
         .gh-dots {
           position: relative; z-index: 20;
           display: flex; align-items: center; justify-content: center;
           gap: 10px; padding: 24px 0 20px; flex-shrink: 0;
         }
-
         .gh-dot {
           height: 4px; border-radius: 2px;
           background: rgba(255,255,255,0.28);
           cursor: pointer; border: none; padding: 0;
           transition: background 0.3s, width 0.3s; width: 28px;
         }
-
         .gh-dot.active { background: #dcb770; width: 56px; }
 
         .gh-counter {
@@ -252,8 +249,7 @@ export default function HeroSection() {
 
         @media (max-width: 900px) {
           .gh-nav { padding: 16px 24px; }
-          .gh-nav-links a { display: none; }
-          .gh-content { padding: 32px 24px 40px; }
+          .gh-content { padding: 32px 20px 40px; }
           .gh-slogan { font-size: 32px; }
           .gh-support { font-size: 17px; }
           .gh-slides { height: 380px; }
@@ -264,6 +260,8 @@ export default function HeroSection() {
       `}</style>
 
       <section className="gh-hero" aria-label="Golden Horizons — Retirement Abroad">
+
+        {/* Background images — absolute, contained inside hero */}
         {SLIDES.map((slide, i) => (
           <div
             key={i}
@@ -271,9 +269,9 @@ export default function HeroSection() {
             style={{ backgroundImage: `url('${slide.bg}')`, backgroundPosition: slide.bgPos }}
           />
         ))}
-
         <div className="gh-overlay" />
 
+        {/* Nav */}
         <nav className="gh-nav" aria-label="Main navigation">
           <Link href="/" className="gh-logo" aria-label="Golden Horizons home">
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
@@ -290,12 +288,16 @@ export default function HeroSection() {
           <div className="gh-nav-links" />
         </nav>
 
+        {/* Main content */}
         <div className="gh-content">
-          <div className="gh-badge">
+
+          {/* Badge — links to /subscribe */}
+          <Link href="/subscribe" className="gh-badge">
             <span className="gh-badge-dot" aria-hidden="true" />
             <span className="gh-badge-label">Free Retirement Guide</span>
-          </div>
+          </Link>
 
+          {/* Slides */}
           <div className="gh-slides" aria-live="polite" aria-atomic="true">
             {SLIDES.map((slide, i) => (
               <div key={i} className={`gh-slide${visible === i ? ' active' : ''}`}>
@@ -309,9 +311,7 @@ export default function HeroSection() {
                     aria-expanded={finderOpen}
                   >
                     🎯 Find My Retirement Destination
-                    <span style={{ fontSize: 11, opacity: 0.7 }}>
-                      {finderOpen ? '▲' : '▼'}
-                    </span>
+                    <span style={{ fontSize: 12, opacity: 0.75 }}>{finderOpen ? '▲' : '▼'}</span>
                   </button>
                   <span className="gh-cta-sub">
                     Answer 6 questions — get your top 3 matches
@@ -321,12 +321,13 @@ export default function HeroSection() {
             ))}
           </div>
 
-          {/* Full RetirementFinder — slides open on button click */}
+          {/* Finder — opens inline, no inner "Start" card */}
           <div className={`gh-finder-panel${finderOpen ? ' open' : ''}`}>
-            <RetirementFinder />
+            {finderOpen && <RetirementFinder defaultOpen={true} />}
           </div>
         </div>
 
+        {/* Dots */}
         <div className="gh-dots" role="tablist" aria-label="Slide navigation">
           {SLIDES.map((_, i) => (
             <button
@@ -341,6 +342,7 @@ export default function HeroSection() {
         <div className="gh-counter" aria-hidden="true">
           {String(current + 1).padStart(2, '0')} / {String(SLIDES.length).padStart(2, '0')}
         </div>
+
       </section>
     </>
   );
