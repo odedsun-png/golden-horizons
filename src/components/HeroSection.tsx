@@ -19,9 +19,9 @@ const SLIDES = [
     bgPos: 'center 55%',
   },
   {
-    slogan: 'Are you retiring where you want… or just where you’re used to?',
+    slogan: "Are you retiring where you want\u2026 or just where you\u2019re used to?",
     support: 'Many people never explore their options — even when a better lifestyle could be within reach.',
-    trigger: 'It’s a question worth thinking about before you decide.',
+    trigger: "It\u2019s a question worth thinking about before you decide.",
     bg: 'https://images.stockcake.com/public/6/c/5/6c59ecc6-8ff5-490a-981c-574d81c26c24_large/sunlit-outdoor-dining-stockcake.jpg',
     bgPos: 'center 40%',
   },
@@ -263,6 +263,7 @@ export default function HeroSection() {
           transition: background 0.2s, transform 0.15s;
           white-space: nowrap;
           text-decoration: none;
+          display: inline-block;
         }
 
         .gh-cta-btn:hover {
@@ -349,13 +350,11 @@ export default function HeroSection() {
               <circle cx="17" cy="10" r="3.2" fill="#dcb770" />
               <line x1="17" y1="13.5" x2="17" y2="14.5" stroke="#dcb770" strokeWidth="1.8" strokeLinecap="round" />
             </svg>
-
             <div className="gh-logo-text">
               <span className="gh-logo-name">Golden Horizons</span>
               <span className="gh-logo-tag">Your Guide to Retirement Abroad</span>
             </div>
           </Link>
-
           <div className="gh-nav-links" />
         </nav>
 
@@ -373,17 +372,12 @@ export default function HeroSection() {
                 <p className="gh-trigger">{slide.trigger}</p>
 
                 <div className="gh-cta-row">
-                  <a
-                    href="https://golden-horizons.org/golden_horizons_final.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="gh-cta-btn"
-                  >
-                    Get My Free Guide & Daily Ideas →
+                  {/* A — Finder button replaces the PDF guide button */}
+                  <a href="#finder" className="gh-cta-btn">
+                    🎯 Find My Retirement Destination →
                   </a>
-
                   <span className="gh-cta-sub">
-                    Free guide + one short daily newsletter
+                    Answer 6 questions — get your top 3 matches
                   </span>
                 </div>
               </div>
