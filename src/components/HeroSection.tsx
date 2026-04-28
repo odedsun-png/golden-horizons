@@ -149,7 +149,7 @@ export default function HeroSection() {
         .gh-slides-text {
           position: relative;
           width: 100%;
-          height: 220px;   /* just enough for slogan + support + trigger */
+          height: 340px;   /* tall enough for slogan + support + trigger */
           flex-shrink: 0;
           margin-bottom: 32px;
         }
