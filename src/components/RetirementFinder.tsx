@@ -30,7 +30,7 @@ const all26: Country[] = [
   { id:"italy", flag:"🇮🇹", name:"Italy", region:"europe", coupleMin:2500, coupleMax:5000, singleMin:1400, singleMax:2800, lifestyle:["city","countryside","beach"], english:false, taxFree:false, easyVisa:false, beach:true, acceptsSS:true, acceptsSavings:true, acceptsOther:true, desc:"7% flat tax in southern villages. Free SSN healthcare. World's greatest food and wine culture.", img:"https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80" },
   { id:"france", flag:"🇫🇷", name:"France", region:"europe", coupleMin:3000, coupleMax:6000, singleMin:1800, singleMax:3500, lifestyle:["city","countryside"], english:false, taxFree:false, easyVisa:false, beach:false, acceptsSS:true, acceptsSavings:true, acceptsOther:true, desc:"WHO-ranked #1 healthcare globally. Unmatched quality of life via food, culture, and rail.", img:"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80" },
   { id:"new-zealand", flag:"🇳🇿", name:"New Zealand", region:"other", coupleMin:3500, coupleMax:6000, singleMin:2000, singleMax:3500, lifestyle:["city","countryside","beach"], english:true, taxFree:false, easyVisa:false, beach:true, acceptsSS:false, acceptsSavings:true, acceptsOther:false, desc:"#2 safest country on Earth. English-speaking, spectacular nature, world-class infrastructure.", img:"https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80" },
-  { id:"panama-azores", flag:"🇵🇹", name:"Portugal — Azores", region:"europe", coupleMin:1800, coupleMax:2800, singleMin:1100, singleMax:1700, lifestyle:["countryside","beach"], english:true, taxFree:false, easyVisa:true, beach:true, acceptsSS:true, acceptsSavings:true, acceptsOther:true, desc:"30–40% cheaper than mainland Portugal with identical D7 visa and NHR 2.0 tax benefits.", img:"https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?w=600&q=80" },
+  { id:"portugal-azores", flag:"🇵🇹", name:"Portugal — Azores", region:"europe", coupleMin:1800, coupleMax:2800, singleMin:1100, singleMax:1700, lifestyle:["countryside","beach"], english:true, taxFree:false, easyVisa:true, beach:true, acceptsSS:true, acceptsSavings:true, acceptsOther:true, desc:"30–40% cheaper than mainland Portugal with identical D7 visa and NHR 2.0 tax benefits.", img:"https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?w=600&q=80" },
   { id:"malta", flag:"🇲🇹", name:"Malta", region:"europe", coupleMin:2500, coupleMax:4000, singleMin:1400, singleMax:2200, lifestyle:["city","beach"], english:true, taxFree:false, easyVisa:true, beach:true, acceptsSS:true, acceptsSavings:true, acceptsOther:false, desc:"Only English-speaking EU country. 15% flat tax, 300 sunny days, EU citizenship pathway.", img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" },
   { id:"belize", flag:"🇧🇿", name:"Belize", region:"americas", coupleMin:1500, coupleMax:2500, singleMin:900, singleMax:1500, lifestyle:["beach","countryside"], english:true, taxFree:true, easyVisa:true, beach:true, acceptsSS:true, acceptsSavings:false, acceptsOther:false, desc:"Only English-speaking country in Central America. Zero tax on foreign income, world-class diving.", img:"https://images.unsplash.com/photo-1534850336045-c6c6d287f89e?w=600&q=80" },
   { id:"argentina", flag:"🇦🇷", name:"Argentina", region:"americas", coupleMin:1000, coupleMax:2000, singleMin:700, singleMax:1200, lifestyle:["city","countryside"], english:false, taxFree:false, easyVisa:false, beach:false, acceptsSS:false, acceptsSavings:true, acceptsOther:true, desc:"Paris of South America. Extraordinary USD purchasing power, world-class steak and wine culture.", img:"https://images.unsplash.com/photo-1612294037637-ec328d0e075e?w=600&q=80" },
@@ -45,19 +45,19 @@ const all26: Country[] = [
 ];
 
 const STEPS = [
-  { id:"who", label:"Who's retiring?", icon:"👤" },
-  { id:"budget", label:"Monthly budget", icon:"💰" },
-  { id:"income", label:"Proof of income", icon:"📄" },
-  { id:"region", label:"Preferred region", icon:"🌍" },
-  { id:"lifestyle", label:"Lifestyle vibe", icon:"🌅" },
-  { id:"extras", label:"Must-haves", icon:"✅" },
+  { id:"who",      label:"Who's retiring?",   icon:"👤" },
+  { id:"budget",   label:"Monthly budget",    icon:"💰" },
+  { id:"income",   label:"Proof of income",   icon:"📄" },
+  { id:"region",   label:"Preferred region",  icon:"🌍" },
+  { id:"lifestyle",label:"Lifestyle vibe",    icon:"🌅" },
+  { id:"extras",   label:"Must-haves",        icon:"✅" },
 ];
 
 const gold = "#d4a017";
 const dark = "#1f2326";
 
 type Props = {
-  /** When true, skip the collapsed "Start" card and render the quiz immediately */
+  /** Skip the collapsed "Start" card — quiz renders immediately */
   defaultOpen?: boolean;
 };
 
@@ -66,27 +66,31 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({
     who:"", budget:"", income:"", region:"", lifestyle:"",
-    english:false, taxFree:false, easyVisa:false
+    english:false, taxFree:false, easyVisa:false,
   });
   const [results, setResults] = useState<(Country & { score: number })[] | null>(null);
 
   function setA(key: keyof Answers, val: string | boolean) {
-    setAnswers(a => ({...a, [key]: val}));
+    setAnswers(a => ({ ...a, [key]: val }));
   }
   function toggle(key: keyof Answers) {
-    setAnswers(a => ({...a, [key]: !a[key]}));
+    setAnswers(a => ({ ...a, [key]: !a[key] }));
   }
 
   function findMatches() {
     const { who, budget, income, region, lifestyle, english, taxFree, easyVisa } = answers;
     const isCouple = who === "couple";
-    const [bMin, bMax] = budget === "under1500" ? [0,1500] : budget === "1500_2500" ? [1500,2500] : budget === "2500_4000" ? [2500,4000] : [4000,99999];
+    const [bMin, bMax] =
+      budget === "under1500"  ? [0, 1500]      :
+      budget === "1500_2500"  ? [1500, 2500]   :
+      budget === "2500_4000"  ? [2500, 4000]   :
+                                [4000, 99999];
 
     const pool = all26.filter(c => {
       if (region !== "any" && c.region !== region) return false;
-      if (income === "ss" && !c.acceptsSS) return false;
+      if (income === "ss"      && !c.acceptsSS)      return false;
       if (income === "savings" && !c.acceptsSavings) return false;
-      if (income === "other" && !c.acceptsOther) return false;
+      if (income === "other"   && !c.acceptsOther)   return false;
       return true;
     });
 
@@ -95,13 +99,13 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
       const cMin = isCouple ? c.coupleMin : c.singleMin;
       const cMax = isCouple ? c.coupleMax : c.singleMax;
       if (cMin <= bMax && cMax >= bMin) score += 3;
-      if (lifestyle === "beach" && c.beach) score += 2;
-      else if (lifestyle === "city" && c.lifestyle.includes("city")) score += 2;
+      if      (lifestyle === "beach"       && c.beach)                      score += 2;
+      else if (lifestyle === "city"        && c.lifestyle.includes("city")) score += 2;
       else if (lifestyle === "countryside" && c.lifestyle.includes("countryside")) score += 2;
-      else if (lifestyle === "any") score += 1;
-      if (english) { if (c.english) score += 5; else score -= 3; }
-      if (taxFree && c.taxFree) score += 2;
-      if (easyVisa && c.easyVisa) score += 2;
+      else if (lifestyle === "any")                                          score += 1;
+      if (english  && c.english)   score += 5; else if (english)  score -= 3;
+      if (taxFree  && c.taxFree)   score += 2;
+      if (easyVisa && c.easyVisa)  score += 2;
       return { ...c, score };
     }).sort((a, b) => b.score - a.score);
 
@@ -117,198 +121,251 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
     setAnswers({ who:"", budget:"", income:"", region:"", lifestyle:"", english:false, taxFree:false, easyVisa:false });
     setStep(0);
     setResults(null);
+    if (!defaultOpen) setOpen(false);
   }
 
   const canNext =
-    (step === 0 && answers.who) ||
-    (step === 1 && answers.budget) ||
-    (step === 2 && answers.income) ||
-    (step === 3 && answers.region) ||
-    (step === 4 && answers.lifestyle) ||
+    (step === 0 && !!answers.who)     ||
+    (step === 1 && !!answers.budget)  ||
+    (step === 2 && !!answers.income)  ||
+    (step === 3 && !!answers.region)  ||
+    (step === 4 && !!answers.lifestyle) ||
     step === 5;
 
-  return (
-    <div style={{maxWidth:680,margin:"0 auto"}}>
-      {/* Collapsed start card — only shown when not embedded (defaultOpen=false) */}
-      {!open && (
-        <button onClick={() => setOpen(true)} style={{width:"100%",padding:"20px 28px",background:"#fff",border:`2px solid ${gold}`,borderRadius:14,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"space-between",boxShadow:"0 4px 20px rgba(0,0,0,0.08)"}}>
-          <div style={{display:"flex",alignItems:"center",gap:14}}>
-            <span style={{fontSize:28}}>🎯</span>
-            <div style={{textAlign:"left"}}>
-              <div style={{fontSize:16,fontWeight:700,color:dark}}>Find My Perfect Retirement Destination</div>
-              <div style={{fontSize:12,color:"#888",marginTop:2}}>Answer 6 quick questions — we match you to the best countries</div>
+  /* ─── Collapsed "Start" card (standalone use only) ─── */
+  if (!open) {
+    return (
+      <div style={{ maxWidth: 760, margin: "0 auto" }}>
+        <button
+          onClick={() => setOpen(true)}
+          style={{
+            width: "100%", padding: "22px 32px",
+            background: "#fff", border: `2px solid ${gold}`,
+            borderRadius: 14, cursor: "pointer",
+            display: "flex", alignItems: "center", justifyContent: "space-between",
+            boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <span style={{ fontSize: 32 }}>🎯</span>
+            <div style={{ textAlign: "left" }}>
+              <div style={{ fontSize: 18, fontWeight: 700, color: dark }}>Find My Perfect Retirement Destination</div>
+              <div style={{ fontSize: 14, color: "#888", marginTop: 3 }}>Answer 6 quick questions — we match you to the best countries</div>
             </div>
           </div>
-          <div style={{background:gold,color:"#fff",borderRadius:8,padding:"8px 16px",fontSize:13,fontWeight:700,flexShrink:0}}>Start →</div>
+          <div style={{ background: gold, color: "#fff", borderRadius: 8, padding: "10px 20px", fontSize: 15, fontWeight: 700, flexShrink: 0 }}>
+            Start →
+          </div>
         </button>
-      )}
+      </div>
+    );
+  }
 
-      {open && (
-        <div style={{background:"#fff",borderRadius:16,padding:"32px 28px",boxShadow:"0 4px 32px rgba(0,0,0,0.10)"}}>
+  /* ─── Open quiz / results ─── */
+  return (
+    <div style={{ maxWidth: 760, margin: "0 auto" }}>
+      <div style={{
+        background: "#fff", borderRadius: 18,
+        padding: "36px 36px",
+        boxShadow: "0 8px 48px rgba(0,0,0,0.14)",
+      }}>
 
-          {results && (
-            <>
-              <div style={{textAlign:"center",marginBottom:24}}>
-                <div style={{fontSize:32,marginBottom:8}}>🎯</div>
-                <div style={{fontSize:20,fontWeight:700,color:"#111",marginBottom:4}}>Your top retirement matches</div>
-                <div style={{fontSize:13,color:"#888"}}>Click any country to see its full profile</div>
+        {/* ── RESULTS ── */}
+        {results && (
+          <>
+            <div style={{ textAlign: "center", marginBottom: 28 }}>
+              <div style={{ fontSize: 36, marginBottom: 10 }}>🎯</div>
+              <div style={{ fontSize: 24, fontWeight: 700, color: "#111", marginBottom: 6 }}>Your top retirement matches</div>
+              <div style={{ fontSize: 15, color: "#888" }}>Click any country to see its full profile</div>
+            </div>
+
+            {results.length === 0 ? (
+              <div style={{ textAlign: "center", padding: "40px 0", color: "#888" }}>
+                <div style={{ fontSize: 36, marginBottom: 14 }}>🔍</div>
+                <div style={{ fontSize: 17, fontWeight: 600, marginBottom: 8 }}>No exact matches found</div>
+                <div style={{ fontSize: 14 }}>Try &quot;Open to anywhere&quot; or a different income type.</div>
               </div>
-              {results.length === 0 ? (
-                <div style={{textAlign:"center",padding:"32px 0",color:"#888"}}>
-                  <div style={{fontSize:32,marginBottom:12}}>🔍</div>
-                  <div style={{fontSize:15,fontWeight:600,marginBottom:8}}>No exact matches found</div>
-                  <div style={{fontSize:13}}>Try &quot;Open to anywhere&quot; or a different income type.</div>
-                </div>
-              ) : (
-                <div style={{display:"flex",flexDirection:"column",gap:14,marginBottom:24}}>
-                  {results.map((c, i) => (
-                    <Link key={c.id} href={`/destinations/${c.id}`} style={{display:"flex",background:"#f9f9f9",borderRadius:12,overflow:"hidden",border:"1px solid #eee",textDecoration:"none"}}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={c.img} alt={c.name} style={{width:110,height:95,objectFit:"cover",flexShrink:0}} />
-                      <div style={{padding:"12px 14px",flex:1}}>
-                        <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:5}}>
-                          <span style={{background:gold,color:"#fff",borderRadius:20,fontSize:11,fontWeight:700,padding:"2px 8px"}}>#{i+1} Match</span>
-                          <span style={{fontSize:18}}>{c.flag}</span>
-                          <span style={{fontSize:15,fontWeight:700,color:"#111"}}>{c.name}</span>
-                        </div>
-                        <div style={{fontSize:12,color:"#555",lineHeight:1.55,marginBottom:5}}>{c.desc}</div>
-                        <div style={{fontSize:11,color:"#aaa",fontStyle:"italic"}}>
-                          {answers.who === "couple"
-                            ? `$${c.coupleMin.toLocaleString()}–$${c.coupleMax.toLocaleString()}/mo couple`
-                            : `$${c.singleMin.toLocaleString()}–$${c.singleMax.toLocaleString()}/mo single`}
-                        </div>
+            ) : (
+              <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 28 }}>
+                {results.map((c, i) => (
+                  <Link
+                    key={c.id}
+                    href={`/destinations/${c.id}`}
+                    style={{
+                      display: "flex", background: "#f9f9f9", borderRadius: 14,
+                      overflow: "hidden", border: "1px solid #eee", textDecoration: "none",
+                    }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={c.img} alt={c.name} style={{ width: 130, height: 110, objectFit: "cover", flexShrink: 0 }} />
+                    <div style={{ padding: "14px 18px", flex: 1 }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+                        <span style={{ background: gold, color: "#fff", borderRadius: 20, fontSize: 12, fontWeight: 700, padding: "3px 10px" }}>
+                          #{i + 1} Match
+                        </span>
+                        <span style={{ fontSize: 20 }}>{c.flag}</span>
+                        <span style={{ fontSize: 17, fontWeight: 700, color: "#111" }}>{c.name}</span>
                       </div>
-                      <div style={{display:"flex",alignItems:"center",padding:"0 16px",color:gold,fontSize:18,flexShrink:0}}>→</div>
-                    </Link>
-                  ))}
-                </div>
-              )}
-              <div style={{display:"flex",gap:10}}>
-                <button onClick={restart} style={{flex:1,padding:"11px",background:"#f3f3f3",border:"none",borderRadius:8,fontSize:13,fontWeight:600,cursor:"pointer",color:"#444"}}>← Start Over</button>
-                <Link href="/destinations" style={{flex:1,padding:"11px",background:dark,color:"#fff",borderRadius:8,fontSize:13,fontWeight:600,textAlign:"center",textDecoration:"none",display:"flex",alignItems:"center",justifyContent:"center"}}>See All 26 Countries →</Link>
-              </div>
-              {/* Only show close button when not embedded */}
-              {!defaultOpen && (
-                <button onClick={() => { setOpen(false); restart(); }} style={{width:"100%",marginTop:10,padding:"8px",background:"none",border:"none",color:"#bbb",fontSize:12,cursor:"pointer"}}>✕ Close</button>
-              )}
-            </>
-          )}
-
-          {!results && (
-            <>
-              <div style={{display:"flex",gap:5,marginBottom:8}}>
-                {STEPS.map((s, i) => (
-                  <div key={s.id} style={{flex:1,height:4,borderRadius:4,background:i<=step?gold:"#eee",transition:"background 0.3s"}} />
+                      <div style={{ fontSize: 13, color: "#555", lineHeight: 1.6, marginBottom: 6 }}>{c.desc}</div>
+                      <div style={{ fontSize: 12, color: "#aaa", fontStyle: "italic" }}>
+                        {answers.who === "couple"
+                          ? `$${c.coupleMin.toLocaleString()}–$${c.coupleMax.toLocaleString()}/mo couple`
+                          : `$${c.singleMin.toLocaleString()}–$${c.singleMax.toLocaleString()}/mo single`}
+                      </div>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center", padding: "0 20px", color: gold, fontSize: 20, flexShrink: 0 }}>→</div>
+                  </Link>
                 ))}
               </div>
-              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:22}}>
-                <span style={{fontSize:11,color:"#bbb"}}>Step {step+1} of {STEPS.length}</span>
-                {/* Only show ✕ close when not embedded in hero */}
-                {!defaultOpen && (
-                  <button onClick={() => { setOpen(false); restart(); }} style={{background:"none",border:"none",color:"#bbb",fontSize:18,cursor:"pointer",lineHeight:1}}>✕</button>
-                )}
+            )}
+
+            <div style={{ display: "flex", gap: 12 }}>
+              <button
+                onClick={restart}
+                style={{ flex: 1, padding: "13px", background: "#f3f3f3", border: "none", borderRadius: 10, fontSize: 15, fontWeight: 600, cursor: "pointer", color: "#444" }}
+              >
+                ← Start Over
+              </button>
+              <Link
+                href="/destinations"
+                style={{ flex: 1, padding: "13px", background: dark, color: "#fff", borderRadius: 10, fontSize: 15, fontWeight: 600, textAlign: "center", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center" }}
+              >
+                See All 26 Countries →
+              </Link>
+            </div>
+          </>
+        )}
+
+        {/* ── QUIZ ── */}
+        {!results && (
+          <>
+            {/* Progress bar */}
+            <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
+              {STEPS.map((s, i) => (
+                <div key={s.id} style={{ flex: 1, height: 5, borderRadius: 4, background: i <= step ? gold : "#eee", transition: "background 0.3s" }} />
+              ))}
+            </div>
+
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 26 }}>
+              <span style={{ fontSize: 13, color: "#bbb" }}>Step {step + 1} of {STEPS.length}</span>
+              {!defaultOpen && (
+                <button onClick={restart} style={{ background: "none", border: "none", color: "#bbb", fontSize: 20, cursor: "pointer", lineHeight: 1 }}>✕</button>
+              )}
+            </div>
+
+            <div style={{ textAlign: "center", marginBottom: 26 }}>
+              <div style={{ fontSize: 36, marginBottom: 8 }}>{STEPS[step].icon}</div>
+              <div style={{ fontSize: 22, fontWeight: 700, color: "#111" }}>{STEPS[step].label}</div>
+            </div>
+
+            {/* Step 0 — Who */}
+            {step === 0 && (
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                {([["single","Solo retiree","👤"],["couple","Retiring as a couple","👫"]] as const).map(([v, label, icon]) => (
+                  <button key={v} onClick={() => setA("who", v)} style={{ padding: "28px 16px", borderRadius: 14, border: `2px solid ${answers.who === v ? gold : "#e5e5e5"}`, background: answers.who === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "center", transition: "all 0.15s" }}>
+                    <div style={{ fontSize: 36, marginBottom: 10 }}>{icon}</div>
+                    <div style={{ fontSize: 15, fontWeight: 600, color: "#222" }}>{label}</div>
+                  </button>
+                ))}
               </div>
-              <div style={{textAlign:"center",marginBottom:22}}>
-                <div style={{fontSize:28,marginBottom:6}}>{STEPS[step].icon}</div>
-                <div style={{fontSize:18,fontWeight:700,color:"#111"}}>{STEPS[step].label}</div>
+            )}
+
+            {/* Step 1 — Budget */}
+            {step === 1 && (
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                {([["under1500","Under $1,500","🟢 Very budget"],["1500_2500","$1,500–$2,500","🟡 Comfortable"],["2500_4000","$2,500–$4,000","🟠 Premium"],["4000plus","$4,000+","🔵 Luxury"]] as const).map(([v, label, sub]) => (
+                  <button key={v} onClick={() => setA("budget", v)} style={{ padding: "22px 16px", borderRadius: 14, border: `2px solid ${answers.budget === v ? gold : "#e5e5e5"}`, background: answers.budget === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "center", transition: "all 0.15s" }}>
+                    <div style={{ fontSize: 15, fontWeight: 700, color: "#222", marginBottom: 5 }}>{label}</div>
+                    <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
+                  </button>
+                ))}
               </div>
+            )}
 
-              {step === 0 && (
-                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
-                  {([["single","Solo retiree","👤"],["couple","Retiring as a couple","👫"]] as const).map(([v,label,icon]) => (
-                    <button key={v} onClick={() => setA("who", v)} style={{padding:"22px 12px",borderRadius:12,border:`2px solid ${answers.who===v?gold:"#e5e5e5"}`,background:answers.who===v?"#fffbf0":"#fff",cursor:"pointer",textAlign:"center",transition:"all 0.15s"}}>
-                      <div style={{fontSize:30,marginBottom:8}}>{icon}</div>
-                      <div style={{fontSize:13,fontWeight:600,color:"#222"}}>{label}</div>
-                    </button>
-                  ))}
-                </div>
-              )}
+            {/* Step 2 — Income */}
+            {step === 2 && (
+              <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                {([
+                  ["ss",      "🏛️ Social Security",         "Monthly SS check — accepted by most retirement visas"],
+                  ["savings", "🏦 Savings / Investments",   "Bank statements or investment portfolio"],
+                  ["other",   "💼 Pension / Rental / Business", "Private pension, rental income, annuity, or business income"],
+                ] as const).map(([v, label, desc]) => (
+                  <button key={v} onClick={() => setA("income", v)} style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: "18px", borderRadius: 14, border: `2px solid ${answers.income === v ? gold : "#e5e5e5"}`, background: answers.income === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "left", transition: "all 0.15s" }}>
+                    <div style={{ width: 26, height: 26, borderRadius: 7, background: answers.income === v ? gold : "#e5e5e5", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2 }}>
+                      {answers.income === v && <span style={{ color: "#fff", fontSize: 14, fontWeight: 700 }}>✓</span>}
+                    </div>
+                    <div>
+                      <div style={{ fontSize: 16, fontWeight: 700, color: "#222", marginBottom: 4 }}>{label}</div>
+                      <div style={{ fontSize: 13, color: "#777", lineHeight: 1.5 }}>{desc}</div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            )}
 
-              {step === 1 && (
-                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
-                  {([["under1500","Under $1,500","🟢 Very budget"],["1500_2500","$1,500–$2,500","🟡 Comfortable"],["2500_4000","$2,500–$4,000","🟠 Premium"],["4000plus","$4,000+","🔵 Luxury"]] as const).map(([v,label,sub]) => (
-                    <button key={v} onClick={() => setA("budget", v)} style={{padding:"18px 12px",borderRadius:12,border:`2px solid ${answers.budget===v?gold:"#e5e5e5"}`,background:answers.budget===v?"#fffbf0":"#fff",cursor:"pointer",textAlign:"center",transition:"all 0.15s"}}>
-                      <div style={{fontSize:13,fontWeight:700,color:"#222",marginBottom:4}}>{label}</div>
-                      <div style={{fontSize:11,color:"#888"}}>{sub}</div>
-                    </button>
-                  ))}
-                </div>
-              )}
+            {/* Step 3 — Region */}
+            {step === 3 && (
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                {([["europe","🇪🇺 Europe"],["americas","🌎 The Americas"],["asia","🌏 Asia"],["any","🌍 Open to anywhere"]] as const).map(([v, label]) => (
+                  <button key={v} onClick={() => setA("region", v)} style={{ padding: "24px 16px", borderRadius: 14, border: `2px solid ${answers.region === v ? gold : "#e5e5e5"}`, background: answers.region === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "center", fontSize: 16, fontWeight: 600, color: "#222", transition: "all 0.15s" }}>
+                    {label}
+                  </button>
+                ))}
+              </div>
+            )}
 
-              {step === 2 && (
-                <div style={{display:"flex",flexDirection:"column",gap:12}}>
-                  {([
-                    ["ss","🏛️ Social Security","Monthly SS check — accepted by most retirement visas"],
-                    ["savings","🏦 Savings / Investments","Bank statements or investment portfolio"],
-                    ["other","💼 Pension / Rental / Business","Private pension, rental income, annuity, or business income"]
-                  ] as const).map(([v,label,desc]) => (
-                    <button key={v} onClick={() => setA("income", v)} style={{display:"flex",alignItems:"flex-start",gap:14,padding:"16px",borderRadius:12,border:`2px solid ${answers.income===v?gold:"#e5e5e5"}`,background:answers.income===v?"#fffbf0":"#fff",cursor:"pointer",textAlign:"left",transition:"all 0.15s"}}>
-                      <div style={{width:24,height:24,borderRadius:6,background:answers.income===v?gold:"#e5e5e5",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0,marginTop:2}}>
-                        {answers.income===v && <span style={{color:"#fff",fontSize:13,fontWeight:700}}>✓</span>}
-                      </div>
-                      <div>
-                        <div style={{fontSize:14,fontWeight:700,color:"#222",marginBottom:3}}>{label}</div>
-                        <div style={{fontSize:12,color:"#777",lineHeight:1.5}}>{desc}</div>
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              )}
+            {/* Step 4 — Lifestyle */}
+            {step === 4 && (
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                {([["beach","🏖️ Beach & coast","Sun, sand, diving"],["city","🏙️ City life","Culture, dining, walkable"],["countryside","🌿 Countryside","Nature, quiet, mountains"],["any","✨ Surprise me","Best overall match"]] as const).map(([v, icon, sub]) => (
+                  <button key={v} onClick={() => setA("lifestyle", v)} style={{ padding: "22px 16px", borderRadius: 14, border: `2px solid ${answers.lifestyle === v ? gold : "#e5e5e5"}`, background: answers.lifestyle === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "center", transition: "all 0.15s" }}>
+                    <div style={{ fontSize: 15, fontWeight: 700, color: "#222", marginBottom: 5 }}>{icon}</div>
+                    <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
+                  </button>
+                ))}
+              </div>
+            )}
 
-              {step === 3 && (
-                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
-                  {([["europe","🇪🇺 Europe"],["americas","🌎 The Americas"],["asia","🌏 Asia"],["any","🌍 Open to anywhere"]] as const).map(([v,label]) => (
-                    <button key={v} onClick={() => setA("region", v)} style={{padding:"20px 12px",borderRadius:12,border:`2px solid ${answers.region===v?gold:"#e5e5e5"}`,background:answers.region===v?"#fffbf0":"#fff",cursor:"pointer",textAlign:"center",fontSize:14,fontWeight:600,color:"#222",transition:"all 0.15s"}}>
-                      {label}
-                    </button>
-                  ))}
-                </div>
-              )}
+            {/* Step 5 — Extras */}
+            {step === 5 && (
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                <div style={{ fontSize: 14, color: "#999", textAlign: "center", marginBottom: 4 }}>Select any that matter — or skip and find matches</div>
+                {([
+                  ["english",  "🗣️ English widely spoken", "No language barrier — official or near-official English"],
+                  ["taxFree",  "💵 Tax-free foreign income","Keep more of your SS & pension abroad"],
+                  ["easyVisa", "✅ Easy visa / residency",  "Straightforward, fast approval process"],
+                ] as const).map(([key, label, sub]) => (
+                  <button key={key} onClick={() => toggle(key)} style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 18px", borderRadius: 14, border: `2px solid ${answers[key] ? gold : "#e5e5e5"}`, background: answers[key] ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "left", transition: "all 0.15s" }}>
+                    <div style={{ width: 24, height: 24, borderRadius: 7, background: answers[key] ? gold : "#e5e5e5", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      {answers[key] && <span style={{ color: "#fff", fontSize: 14, fontWeight: 700 }}>✓</span>}
+                    </div>
+                    <div>
+                      <div style={{ fontSize: 15, fontWeight: 600, color: "#222" }}>{label}</div>
+                      <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            )}
 
-              {step === 4 && (
-                <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
-                  {([["beach","🏖️ Beach & coast","Sun, sand, diving"],["city","🏙️ City life","Culture, dining, walkable"],["countryside","🌿 Countryside","Nature, quiet, mountains"],["any","✨ Surprise me","Best overall match"]] as const).map(([v,icon,sub]) => (
-                    <button key={v} onClick={() => setA("lifestyle", v)} style={{padding:"18px 12px",borderRadius:12,border:`2px solid ${answers.lifestyle===v?gold:"#e5e5e5"}`,background:answers.lifestyle===v?"#fffbf0":"#fff",cursor:"pointer",textAlign:"center",transition:"all 0.15s"}}>
-                      <div style={{fontSize:13,fontWeight:700,color:"#222",marginBottom:4}}>{icon}</div>
-                      <div style={{fontSize:11,color:"#888"}}>{sub}</div>
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              {step === 5 && (
-                <div style={{display:"flex",flexDirection:"column",gap:10}}>
-                  <div style={{fontSize:12,color:"#999",textAlign:"center",marginBottom:4}}>Select any that matter — or skip and find matches</div>
-                  {([
-                    ["english","🗣️ English widely spoken","No language barrier — official or near-official English"],
-                    ["taxFree","💵 Tax-free foreign income","Keep more of your SS & pension abroad"],
-                    ["easyVisa","✅ Easy visa / residency","Straightforward, fast approval process"]
-                  ] as const).map(([key,label,sub]) => (
-                    <button key={key} onClick={() => toggle(key)} style={{display:"flex",alignItems:"center",gap:14,padding:"14px 16px",borderRadius:12,border:`2px solid ${answers[key]?gold:"#e5e5e5"}`,background:answers[key]?"#fffbf0":"#fff",cursor:"pointer",textAlign:"left",transition:"all 0.15s"}}>
-                      <div style={{width:22,height:22,borderRadius:6,background:answers[key]?gold:"#e5e5e5",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
-                        {answers[key] && <span style={{color:"#fff",fontSize:13,fontWeight:700}}>✓</span>}
-                      </div>
-                      <div>
-                        <div style={{fontSize:13,fontWeight:600,color:"#222"}}>{label}</div>
-                        <div style={{fontSize:11,color:"#888"}}>{sub}</div>
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              <div style={{display:"flex",gap:10,marginTop:24}}>
-                {step > 0 && (
-                  <button onClick={back} style={{padding:"12px 20px",background:"#f3f3f3",border:"none",borderRadius:8,fontSize:13,fontWeight:600,cursor:"pointer",color:"#444"}}>← Back</button>
-                )}
-                <button onClick={next} disabled={!canNext} style={{flex:1,padding:"13px",background:canNext?dark:"#ccc",color:"#fff",border:"none",borderRadius:8,fontSize:14,fontWeight:700,cursor:canNext?"pointer":"not-allowed",transition:"background 0.2s"}}>
-                  {step === STEPS.length - 1 ? "Find My Matches 🎯" : "Next →"}
+            {/* Nav buttons */}
+            <div style={{ display: "flex", gap: 12, marginTop: 28 }}>
+              {step > 0 && (
+                <button onClick={back} style={{ padding: "14px 24px", background: "#f3f3f3", border: "none", borderRadius: 10, fontSize: 15, fontWeight: 600, cursor: "pointer", color: "#444" }}>
+                  ← Back
                 </button>
-              </div>
-            </>
-          )}
-        </div>
-      )}
+              )}
+              <button
+                onClick={next}
+                disabled={!canNext}
+                style={{ flex: 1, padding: "15px", background: canNext ? dark : "#ccc", color: "#fff", border: "none", borderRadius: 10, fontSize: 16, fontWeight: 700, cursor: canNext ? "pointer" : "not-allowed", transition: "background 0.2s" }}
+              >
+                {step === STEPS.length - 1 ? "Find My Matches 🎯" : "Next →"}
+              </button>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 }
