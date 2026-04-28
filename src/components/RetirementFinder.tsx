@@ -56,8 +56,13 @@ const STEPS = [
 const gold = "#d4a017";
 const dark = "#1f2326";
 
-export default function RetirementFinder() {
-  const [open, setOpen] = useState(false);
+type Props = {
+  /** When true, skip the collapsed "Start" card and render the quiz immediately */
+  defaultOpen?: boolean;
+};
+
+export default function RetirementFinder({ defaultOpen = false }: Props) {
+  const [open, setOpen] = useState(defaultOpen);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({
     who:"", budget:"", income:"", region:"", lifestyle:"",
@@ -124,6 +129,7 @@ export default function RetirementFinder() {
 
   return (
     <div style={{maxWidth:680,margin:"0 auto"}}>
+      {/* Collapsed start card — only shown when not embedded (defaultOpen=false) */}
       {!open && (
         <button onClick={() => setOpen(true)} style={{width:"100%",padding:"20px 28px",background:"#fff",border:`2px solid ${gold}`,borderRadius:14,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"space-between",boxShadow:"0 4px 20px rgba(0,0,0,0.08)"}}>
           <div style={{display:"flex",alignItems:"center",gap:14}}>
@@ -181,7 +187,10 @@ export default function RetirementFinder() {
                 <button onClick={restart} style={{flex:1,padding:"11px",background:"#f3f3f3",border:"none",borderRadius:8,fontSize:13,fontWeight:600,cursor:"pointer",color:"#444"}}>← Start Over</button>
                 <Link href="/destinations" style={{flex:1,padding:"11px",background:dark,color:"#fff",borderRadius:8,fontSize:13,fontWeight:600,textAlign:"center",textDecoration:"none",display:"flex",alignItems:"center",justifyContent:"center"}}>See All 26 Countries →</Link>
               </div>
-              <button onClick={() => { setOpen(false); restart(); }} style={{width:"100%",marginTop:10,padding:"8px",background:"none",border:"none",color:"#bbb",fontSize:12,cursor:"pointer"}}>✕ Close</button>
+              {/* Only show close button when not embedded */}
+              {!defaultOpen && (
+                <button onClick={() => { setOpen(false); restart(); }} style={{width:"100%",marginTop:10,padding:"8px",background:"none",border:"none",color:"#bbb",fontSize:12,cursor:"pointer"}}>✕ Close</button>
+              )}
             </>
           )}
 
@@ -194,7 +203,10 @@ export default function RetirementFinder() {
               </div>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:22}}>
                 <span style={{fontSize:11,color:"#bbb"}}>Step {step+1} of {STEPS.length}</span>
-                <button onClick={() => { setOpen(false); restart(); }} style={{background:"none",border:"none",color:"#bbb",fontSize:18,cursor:"pointer",lineHeight:1}}>✕</button>
+                {/* Only show ✕ close when not embedded in hero */}
+                {!defaultOpen && (
+                  <button onClick={() => { setOpen(false); restart(); }} style={{background:"none",border:"none",color:"#bbb",fontSize:18,cursor:"pointer",lineHeight:1}}>✕</button>
+                )}
               </div>
               <div style={{textAlign:"center",marginBottom:22}}>
                 <div style={{fontSize:28,marginBottom:6}}>{STEPS[step].icon}</div>
