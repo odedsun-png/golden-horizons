@@ -19,9 +19,9 @@ const SLIDES = [
     bgPos: 'center 55%',
   },
   {
-    slogan: 'Are you retiring where you want… or just where you're used to?',
+    slogan: "Are you retiring where you want... or just where you are used to?",
     support: 'Many people never explore their options — even when a better lifestyle could be within reach.',
-    trigger: 'It's a question worth thinking about before you decide.',
+    trigger: "It is a question worth thinking about before you decide.",
     bg: 'https://images.stockcake.com/public/6/c/5/6c59ecc6-8ff5-490a-981c-574d81c26c24_large/sunlit-outdoor-dining-stockcake.jpg',
     bgPos: 'center 40%',
   },
