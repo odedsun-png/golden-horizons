@@ -20,7 +20,7 @@ export default function Newsletter() {
 
         .nl-section {
           background: #3a3d41;
-          padding: 80px 24px;
+          padding: 40px 24px;
           font-family: 'Inter', sans-serif;
           position: relative;
           overflow: hidden;
@@ -48,7 +48,7 @@ export default function Newsletter() {
           align-items: center;
           justify-content: center;
           gap: 6px;
-          margin-bottom: 32px;
+          margin-bottom: 16px;
         }
 
         .nl-avatars {
@@ -97,7 +97,7 @@ export default function Newsletter() {
           line-height: 1.2;
           letter-spacing: -0.02em;
           text-align: center;
-          margin: 0 0 16px;
+          margin: 0 0 10px;
         }
 
         .nl-headline em {
@@ -111,7 +111,7 @@ export default function Newsletter() {
           color: rgba(255,255,255,0.70);
           text-align: center;
           line-height: 1.65;
-          margin: 0 0 36px;
+          margin: 0 0 20px;
           max-width: 520px;
           margin-left: auto;
           margin-right: auto;
@@ -122,7 +122,7 @@ export default function Newsletter() {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 12px;
-          margin-bottom: 36px;
+          margin-bottom: 20px;
         }
 
         .nl-benefit {
