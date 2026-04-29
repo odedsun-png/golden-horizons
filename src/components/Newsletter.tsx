@@ -19,356 +19,286 @@ export default function Newsletter() {
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap');
 
         .nl-section {
-          background: #3a3d41;
-          padding: 40px 24px;
+          background: #2f3236;
+          padding: 52px 24px;
           font-family: 'Inter', sans-serif;
           position: relative;
           overflow: hidden;
-        }
-
-        /* subtle texture overlay */
-        .nl-section::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(220,183,112,0.07) 0%, transparent 70%);
-          pointer-events: none;
+          border-top: 1px solid rgba(220,183,112,0.18);
         }
 
         .nl-inner {
-          max-width: 680px;
+          max-width: 980px;
           margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr 420px;
+          gap: 36px;
+          align-items: center;
           position: relative;
           z-index: 1;
         }
 
-        /* Social proof bar */
-        .nl-proof-bar {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 6px;
-          margin-bottom: 16px;
-        }
-
-        .nl-avatars {
-          display: flex;
-          margin-right: 4px;
-        }
-
-        .nl-avatar {
-          width: 28px;
-          height: 28px;
-          border-radius: 50%;
-          border: 2px solid #3a3d41;
-          background: #dcb770;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 10px;
-          font-weight: 700;
-          color: #1a1a1a;
-          margin-left: -8px;
-          flex-shrink: 0;
-        }
-
-        .nl-avatar:first-child { margin-left: 0; background: #c8a84e; }
-        .nl-avatar:nth-child(2) { background: #dcb770; }
-        .nl-avatar:nth-child(3) { background: #e8c980; }
-        .nl-avatar:nth-child(4) { background: #f0d898; color: #8a6a00; }
-
-        .nl-proof-text {
-          font-size: 13px;
-          color: rgba(255,255,255,0.70);
-          letter-spacing: 0.01em;
-        }
-
-        .nl-proof-text strong {
+        .nl-kicker {
           color: #dcb770;
-          font-weight: 600;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          margin-bottom: 12px;
         }
 
-        /* Main headline */
         .nl-headline {
           font-family: 'Playfair Display', serif;
-          font-size: 42px;
-          font-weight: 700;
-          color: #ffffff;
-          line-height: 1.2;
-          letter-spacing: -0.02em;
-          text-align: center;
-          margin: 0 0 10px;
-        }
-
-        .nl-headline em {
-          font-style: italic;
-          color: #dcb770;
+          font-size: 32px;
+          line-height: 1.18;
+          color: #fff;
+          margin: 0 0 12px;
         }
 
         .nl-subhead {
-          font-size: 17px;
-          font-weight: 300;
-          color: rgba(255,255,255,0.70);
-          text-align: center;
+          font-size: 16px;
           line-height: 1.65;
-          margin: 0 0 20px;
+          color: rgba(255,255,255,0.72);
+          margin: 0;
           max-width: 520px;
-          margin-left: auto;
-          margin-right: auto;
         }
 
-        /* Benefits */
         .nl-benefits {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
-          gap: 12px;
-          margin-bottom: 20px;
+          gap: 10px;
+          margin-top: 24px;
         }
 
         .nl-benefit {
           background: rgba(255,255,255,0.05);
-          border: 1px solid rgba(255,255,255,0.08);
-          border-radius: 10px;
-          padding: 16px 14px;
-          text-align: center;
+          border: 1px solid rgba(255,255,255,0.09);
+          border-radius: 12px;
+          padding: 14px 12px;
+          color: rgba(255,255,255,0.82);
+          font-size: 12px;
+          line-height: 1.45;
         }
 
-        .nl-benefit-icon {
-          font-size: 20px;
-          margin-bottom: 8px;
+        .nl-benefit strong {
           display: block;
-        }
-
-        .nl-benefit-title {
+          color: #fff;
           font-size: 13px;
-          font-weight: 600;
-          color: #ffffff;
-          margin-bottom: 4px;
-          display: block;
+          margin-bottom: 3px;
         }
 
-        .nl-benefit-desc {
-          font-size: 11px;
-          color: rgba(255,255,255,0.70);
-          line-height: 1.5;
+        .nl-card {
+          background: rgba(255,255,255,0.07);
+          border: 1px solid rgba(255,255,255,0.13);
+          border-radius: 18px;
+          padding: 22px;
+          box-shadow: 0 18px 50px rgba(0,0,0,0.18);
         }
 
-        /* Form */
+        .nl-form-title {
+          font-size: 18px;
+          font-weight: 700;
+          color: #fff;
+          margin: 0 0 14px;
+        }
+
         .nl-form {
           display: flex;
           flex-direction: column;
           gap: 10px;
-          margin-bottom: 14px;
+        }
+
+        .nl-name-row {
+          display: flex;
+          gap: 10px;
         }
 
         .nl-input {
           width: 100%;
-          height: 52px;
-          padding: 0 18px;
-          background: rgba(255,255,255,0.07);
+          height: 48px;
+          padding: 0 15px;
+          background: rgba(255,255,255,0.08);
           border: 1.5px solid rgba(255,255,255,0.15);
           border-radius: 8px;
-          font-family: 'Inter', sans-serif;
-          font-size: 15px;
+          font-size: 14px;
           color: #fff;
           outline: none;
-          transition: border-color 0.2s, background 0.2s;
           box-sizing: border-box;
         }
 
-        .nl-input::placeholder { color: rgba(255,255,255,0.35); }
+        .nl-input::placeholder {
+          color: rgba(255,255,255,0.38);
+        }
+
         .nl-input:focus {
           border-color: #dcb770;
-          background: rgba(220,183,112,0.06);
+          background: rgba(220,183,112,0.07);
         }
 
         .nl-btn {
-          height: 52px;
-          padding: 0 28px;
+          height: 50px;
           background: #dcb770;
           color: #1a1a1a;
           border: none;
           border-radius: 8px;
-          font-family: 'Inter', sans-serif;
           font-size: 15px;
-          font-weight: 700;
+          font-weight: 800;
           cursor: pointer;
-          white-space: nowrap;
           transition: background 0.2s, transform 0.15s;
-          flex-shrink: 0;
         }
 
-        .nl-btn:hover { background: #e8c980; transform: translateY(-1px); }
-        .nl-btn:active { transform: translateY(0); }
+        .nl-btn:hover {
+          background: #e8c980;
+          transform: translateY(-1px);
+        }
 
         .nl-trust {
           display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 16px;
           flex-wrap: wrap;
-        }
-
-        .nl-trust-item {
-          display: flex;
-          align-items: center;
-          gap: 5px;
+          gap: 10px 14px;
+          margin-top: 14px;
           font-size: 11px;
-          color: rgba(255,255,255,0.70);
-          letter-spacing: 0.02em;
+          color: rgba(255,255,255,0.66);
         }
 
-        .nl-trust-dot {
-          width: 4px;
-          height: 4px;
-          border-radius: 50%;
-          background: rgba(255,255,255,0.20);
-          flex-shrink: 0;
-        }
-
-        /* Success state */
         .nl-success {
           text-align: center;
-          padding: 48px 24px;
+          padding: 24px;
         }
 
         .nl-success-icon {
-          width: 56px;
-          height: 56px;
+          width: 52px;
+          height: 52px;
           border-radius: 50%;
           background: rgba(220,183,112,0.15);
           border: 1.5px solid rgba(220,183,112,0.40);
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 0 auto 20px;
+          margin: 0 auto 16px;
           font-size: 22px;
+          color: #dcb770;
         }
 
         .nl-success-title {
           font-family: 'Playfair Display', serif;
-          font-size: 26px;
+          font-size: 24px;
           color: #fff;
-          margin: 0 0 10px;
+          margin: 0 0 8px;
         }
 
         .nl-success-sub {
-          font-size: 15px;
-          color: rgba(255,255,255,0.50);
+          font-size: 14px;
+          color: rgba(255,255,255,0.60);
           line-height: 1.6;
+          margin: 0;
         }
 
-        @media (max-width: 600px) {
-          .nl-headline { font-size: 30px; }
-          .nl-benefits { grid-template-columns: 1fr; gap: 8px; }
-          .nl-form { flex-direction: column; }
-          .nl-btn { height: 48px; }
+        @media (max-width: 900px) {
+          .nl-inner {
+            grid-template-columns: 1fr;
+          }
+
+          .nl-benefits {
+            grid-template-columns: 1fr;
+          }
+
+          .nl-headline {
+            font-size: 28px;
+          }
+
+          .nl-name-row {
+            flex-direction: column;
+          }
         }
       `}</style>
 
       <section className="nl-section" id="subscribe">
         <div className="nl-inner">
-          {submitted ? (
-            <div className="nl-success">
-              <div className="nl-success-icon">✓</div>
-              <h2 className="nl-success-title">You're in. Welcome aboard.</h2>
-              <p className="nl-success-sub">
-                Check your inbox — your first guide is on its way.<br />
-                One short email a day. Unsubscribe anytime.
-              </p>
+          <div>
+            <div className="nl-kicker">Free Retirement Abroad Guide</div>
+
+            <h2 className="nl-headline">
+              Get the free guide before choosing where to retire.
+            </h2>
+
+            <p className="nl-subhead">
+              See where $2,000/month can go further, which countries are easier for Americans,
+              and what to check before making a move abroad.
+            </p>
+
+            <div className="nl-benefits">
+              <div className="nl-benefit">
+                <strong>💰 Real costs</strong>
+                Monthly lifestyle ranges by destination.
+              </div>
+              <div className="nl-benefit">
+                <strong>🏥 Healthcare</strong>
+                Countries with strong care for less.
+              </div>
+              <div className="nl-benefit">
+                <strong>✈️ Visa basics</strong>
+                Simple starting points before you move.
+              </div>
             </div>
-          ) : (
-            <>
-              {/* Social proof avatars */}
-              <div className="nl-proof-bar">
-                <div className="nl-avatars">
-                  <div className="nl-avatar">JM</div>
-                  <div className="nl-avatar">SR</div>
-                  <div className="nl-avatar">DK</div>
-                  <div className="nl-avatar">+</div>
-                </div>
-                <span className="nl-proof-text">
-                  <strong>📘 Free Retirement Abroad Guide</strong> — included when you join
-                </span>
+          </div>
+
+          <div className="nl-card">
+            {submitted ? (
+              <div className="nl-success">
+                <div className="nl-success-icon">✓</div>
+                <h3 className="nl-success-title">You're in.</h3>
+                <p className="nl-success-sub">
+                  Check your inbox — your free guide is on its way.
+                </p>
               </div>
+            ) : (
+              <>
+                <h3 className="nl-form-title">Send me the free guide</h3>
 
-              {/* Headline */}
-              <h2 className="nl-headline">
-                Your best years<br />
-                <em>are still ahead.</em>
-              </h2>
+                <form className="nl-form" onSubmit={handleSubmit}>
+                  <div className="nl-name-row">
+                    <input
+                      type="text"
+                      className="nl-input"
+                      placeholder="First name"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                      required
+                    />
+                    <input
+                      type="text"
+                      className="nl-input"
+                      placeholder="Last name"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                      required
+                    />
+                  </div>
 
-              <p className="nl-subhead">
-                Real destinations. Real costs. One short email a day —
-                and instant access to the Free Retirement Abroad Guide.
-              </p>
-
-              {/* 3 benefit cards */}
-              <div className="nl-benefits">
-                <div className="nl-benefit">
-                  <span className="nl-benefit-icon">💰</span>
-                  <span className="nl-benefit-title">Real cost breakdowns</span>
-                  <span className="nl-benefit-desc">$1,500–$3,000/mo destinations backed by expat data</span>
-                </div>
-                <div className="nl-benefit">
-                  <span className="nl-benefit-icon">🏥</span>
-                  <span className="nl-benefit-title">Healthcare guides</span>
-                  <span className="nl-benefit-desc">Which countries give Americans world-class care for less</span>
-                </div>
-                <div className="nl-benefit">
-                  <span className="nl-benefit-icon">✈️</span>
-                  <span className="nl-benefit-title">Visa made simple</span>
-                  <span className="nl-benefit-desc">Step-by-step for the easiest retirement visas available</span>
-                </div>
-              </div>
-
-              {/* Email form */}
-              <form className="nl-form" onSubmit={handleSubmit}>
-                <div style={{ display: "flex", gap: 10 }}>
                   <input
-                    type="text"
+                    type="email"
                     className="nl-input"
-                    placeholder="First name"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
+                    placeholder="Your email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
-                    style={{ flex: 1, minWidth: 0 }}
                   />
-                  <input
-                    type="text"
-                    className="nl-input"
-                    placeholder="Last name"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                    required
-                    style={{ flex: 1, minWidth: 0 }}
-                  />
-                </div>
-                <input
-                  type="email"
-                  className="nl-input"
-                  placeholder="Your email address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-                <button type="submit" className="nl-btn">
-                  Get the Free Guide →
-                </button>
-              </form>
 
-              {/* Trust signals */}
-              <div className="nl-trust">
-                <span className="nl-trust-item">Instant access</span>
-                <span className="nl-trust-dot" />
-                <span className="nl-trust-item">No spam, ever</span>
-                <span className="nl-trust-dot" />
-                <span className="nl-trust-item">Unsubscribe anytime</span>
-                <span className="nl-trust-dot" />
-                <span className="nl-trust-item">100% free</span>
-              </div>
-            </>
-          )}
+                  <button type="submit" className="nl-btn">
+                    Get My Free Guide →
+                  </button>
+                </form>
+
+                <div className="nl-trust">
+                  <span>Instant access</span>
+                  <span>No spam</span>
+                  <span>Unsubscribe anytime</span>
+                  <span>100% free</span>
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </section>
     </>
