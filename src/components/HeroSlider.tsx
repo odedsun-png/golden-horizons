@@ -1,36 +1,26 @@
-'use client';
+"use client";
 
-import { useEffect, useState, useCallback } from 'react';
-import Link from 'next/link';
+import { useEffect, useState, useCallback } from "react";
+import RetirementFinder from "@/components/RetirementFinder";
 
 const SLIDES = [
   {
-    slogan: 'What if your retirement could cost less… and feel like more?',
-    support: 'Get the free guide showing where $2,000/month can unlock a better lifestyle than you expect.',
-    trigger: 'Get the guide instantly + one short email a day. No noise.',
-    bg: 'https://images.pexels.com/photos/36463421/pexels-photo-36463421.jpeg?auto=compress&cs=tinysrgb&w=1800',
-    bgPos: 'center 55%',
+    slogan: "Same money. Better life. Different country.",
+    support: "There are places where your money buys freedom, not stress.",
+    trigger: "What if retirement could cost less… and feel like more?",
+    bg: "https://images.pexels.com/photos/36463421/pexels-photo-36463421.jpeg?auto=compress&cs=tinysrgb&w=1800",
   },
   {
-    slogan: 'The place you retire will shape the life you live.',
-    support: 'You may have more options than you think — and some can help your savings go further while improving your everyday life.',
-    trigger: 'A few minutes could change how you think about retirement.',
-    bg: 'https://images.pexels.com/photos/36463421/pexels-photo-36463421.jpeg?auto=compress&cs=tinysrgb&w=1800',
-    bgPos: 'center 55%',
+    slogan: "Most people don’t choose where they retire. They default.",
+    support: "There are places where your money — and life — go further.",
+    trigger: "Are you retiring where you want… or just where you’re used to?",
+    bg: "https://images.stockcake.com/public/6/c/5/6c59ecc6-8ff5-490a-981c-574d81c26c24_large/sunlit-outdoor-dining-stockcake.jpg",
   },
   {
-    slogan: "Are you retiring where you want... or just where you are used to?",
-    support: 'Many people never explore their options — even when a better lifestyle could be within reach.',
-    trigger: "It is a question worth thinking about before you decide.",
-    bg: 'https://images.stockcake.com/public/6/c/5/6c59ecc6-8ff5-490a-981c-574d81c26c24_large/sunlit-outdoor-dining-stockcake.jpg',
-    bgPos: 'center 40%',
-  },
-  {
-    slogan: 'What if your savings could last longer… and your lifestyle could improve?',
-    support: 'In some places, the same income can provide more comfort, less stress, and a better quality of life.',
-    trigger: 'The difference can be bigger than most people expect.',
-    bg: 'https://images.pexels.com/photos/12832297/pexels-photo-12832297.jpeg?auto=compress&cs=tinysrgb&w=1800',
-    bgPos: 'center 50%',
+    slogan: "You don’t need more money — you need a better plan.",
+    support: "Less stress. More freedom. Same income.",
+    trigger: "What if your savings could last longer… and your lifestyle could improve?",
+    bg: "https://images.pexels.com/photos/12832297/pexels-photo-12832297.jpeg?auto=compress&cs=tinysrgb&w=1800",
   },
 ];
 
@@ -39,10 +29,7 @@ const DELAY = 8000;
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
   const [visible, setVisible] = useState(0);
-
-  const goTo = useCallback((n: number) => {
-    setCurrent(n);
-  }, []);
+  const [finderOpen, setFinderOpen] = useState(false);
 
   const next = useCallback(() => {
     setCurrent((c) => (c + 1) % SLIDES.length);
@@ -59,347 +46,128 @@ export default function HeroSection() {
   }, [next]);
 
   return (
-    <>
+    <section className="gh-hero">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
-
         .gh-hero {
           position: relative;
           width: 100%;
-          height: 100vh;
-          min-height: 600px;
+          min-height: 80vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           overflow: hidden;
           background: #1a1d21;
-          font-family: 'Inter', sans-serif;
         }
 
         .gh-bg {
           position: absolute;
           inset: 0;
           background-size: cover;
+          background-position: center;
           opacity: 0;
           transition: opacity 1.4s ease;
-          will-change: opacity;
         }
 
-        .gh-bg.active { opacity: 1; }
+        .gh-bg.active {
+          opacity: 1;
+        }
 
         .gh-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(
-            180deg,
-            rgba(26,29,33,0.55) 0%,
-            rgba(26,29,33,0.78) 40%,
-            rgba(26,29,33,0.78) 60%,
-            rgba(26,29,33,0.55) 100%
-          );
-          z-index: 2;
-        }
-
-        .gh-nav {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 30;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 24px 56px;
-        }
-
-        .gh-logo {
-          display: flex;
-          align-items: center;
-          gap: 11px;
-          text-decoration: none;
-          color: #fff;
-        }
-
-        .gh-logo-text {
-          display: flex;
-          flex-direction: column;
-          line-height: 1;
-        }
-
-        .gh-logo-name {
-          font-family: 'Playfair Display', serif;
-          font-size: 17px;
-          font-weight: 700;
-          color: #fff;
-          letter-spacing: 0.06em;
-          text-transform: uppercase;
-        }
-
-        .gh-logo-tag {
-          font-size: 9px;
-          color: rgba(255,255,255,0.50);
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          margin-top: 3px;
-        }
-
-        .gh-nav-links {
-          display: flex;
-          gap: 36px;
-          align-items: center;
+          background: rgba(0,0,0,0.58);
         }
 
         .gh-content {
-          position: absolute;
-          inset: 0;
-          z-index: 10;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          padding: 80px 80px 200px;
-        }
-
-        .gh-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          background: rgba(255,255,255,0.08);
-          border: 1px solid rgba(255,255,255,0.16);
-          border-radius: 100px;
-          padding: 6px 18px;
-          margin-bottom: 32px;
-        }
-
-        .gh-badge-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background: #dcb770;
-          animation: gh-pulse 2.4s ease-in-out infinite;
-        }
-
-        @keyframes gh-pulse {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.4; transform: scale(0.8); }
-        }
-
-        .gh-badge-label {
-          font-size: 11px;
-          font-weight: 600;
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          color: rgba(255,255,255,0.80);
-        }
-
-        .gh-slides {
           position: relative;
+          z-index: 10;
+          text-align: center;
+          max-width: 960px;
           width: 100%;
-          height: 300px;
-        }
-
-        .gh-slide {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          opacity: 0;
-          transition: opacity 1s ease;
-          pointer-events: none;
-        }
-
-        .gh-slide.active {
-          opacity: 1;
-          pointer-events: auto;
+          padding: 90px 20px;
         }
 
         .gh-slogan {
-          font-family: 'Playfair Display', serif;
-          font-size: 58px;
+          font-family: Georgia, serif;
+          font-size: 54px;
           font-weight: 700;
-          color: #ffffff;
-          line-height: 1.15;
-          letter-spacing: -0.02em;
-          margin-bottom: 20px;
-          max-width: 900px;
+          color: #fff;
+          line-height: 1.12;
+          margin: 0 0 16px;
         }
 
         .gh-support {
           font-size: 20px;
-          font-weight: 300;
-          color: rgba(255,255,255,0.70);
-          line-height: 1.70;
-          max-width: 650px;
-          margin: 0 auto 10px;
+          color: rgba(255,255,255,0.78);
+          margin: 0 0 10px;
         }
 
         .gh-trigger {
-          font-size: 16px;
-          font-style: italic;
-          color: #dcb770;
-          margin-bottom: 32px;
-          opacity: 0.92;
-        }
-
-        .gh-cta-row {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 24px;
-          flex-wrap: wrap;
-        }
-
-        .gh-cta-btn {
-          background: #dcb770;
-          color: #1a1a1a;
-          border: none;
-          padding: 17px 38px;
-          border-radius: 6px;
-          font-family: 'Inter', sans-serif;
           font-size: 15px;
-          font-weight: 700;
-          cursor: pointer;
-          transition: background 0.2s, transform 0.15s;
-          white-space: nowrap;
-          text-decoration: none;
-          display: inline-block;
+          color: #dcb770;
+          margin: 0 0 34px;
         }
 
-        .gh-cta-btn:hover {
-          background: #e8c980;
+        .gh-btn {
+          background: linear-gradient(135deg, #dcb770, #e8c980);
+          color: #1a1a1a;
+          padding: 18px 38px;
+          border-radius: 8px;
+          font-weight: 800;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          box-shadow: 0 10px 30px rgba(220,183,112,0.3);
+        }
+
+        .gh-btn:hover {
           transform: translateY(-2px);
         }
 
-        .gh-cta-sub {
-          font-size: 13px;
-          color: rgba(255,255,255,0.55);
-          line-height: 1.5;
+        .gh-finder-wrap {
+          margin: 28px auto 0;
+          max-width: 760px;
+          width: 100%;
         }
 
-        .gh-dots {
-          position: absolute;
-          bottom: 32px;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 20;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
+        @media (max-width: 800px) {
+          .gh-slogan {
+            font-size: 36px;
+          }
 
-        .gh-dot {
-          height: 4px;
-          border-radius: 2px;
-          background: rgba(255,255,255,0.28);
-          cursor: pointer;
-          border: none;
-          padding: 0;
-          transition: background 0.3s, width 0.3s;
-          width: 28px;
-        }
-
-        .gh-dot.active {
-          background: #dcb770;
-          width: 56px;
-        }
-
-        .gh-counter {
-          position: absolute;
-          bottom: 28px;
-          right: 56px;
-          z-index: 20;
-          font-size: 12px;
-          color: rgba(255,255,255,0.35);
-          letter-spacing: 0.10em;
-          font-weight: 600;
-        }
-
-        @media (max-width: 900px) {
-          .gh-nav { padding: 16px 24px; }
-          .gh-nav-links a { display: none; }
-          .gh-content { padding: 80px 24px 80px; }
-          .gh-slogan { font-size: 32px; }
-          .gh-support { font-size: 17px; }
-          .gh-slides { height: 390px; }
-          .gh-cta-row { flex-direction: column; gap: 14px; }
-          .gh-cta-btn { width: 100%; text-align: center; box-sizing: border-box; }
-          .gh-counter { right: 24px; }
+          .gh-support {
+            font-size: 17px;
+          }
         }
       `}</style>
 
-      <section className="gh-hero" aria-label="Golden Horizons — Retirement Abroad">
-        {SLIDES.map((slide, i) => (
-          <div
-            key={i}
-            className={`gh-bg${visible === i ? ' active' : ''}`}
-            style={{
-              backgroundImage: `url('${slide.bg}')`,
-              backgroundPosition: slide.bgPos,
-            }}
-          />
-        ))}
+      {SLIDES.map((slide, i) => (
+        <div
+          key={i}
+          className={`gh-bg ${visible === i ? "active" : ""}`}
+          style={{ backgroundImage: `url(${slide.bg})` }}
+        />
+      ))}
 
-        <div className="gh-overlay" />
+      <div className="gh-overlay" />
 
-        <nav className="gh-nav" aria-label="Main navigation">
-          <Link href="/" className="gh-logo" aria-label="Golden Horizons home">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-              <circle cx="17" cy="23" r="9" stroke="#dcb770" strokeWidth="1.8" />
-              <path d="M8 23 Q17 7 26 23" fill="none" stroke="#dcb770" strokeWidth="1.8" strokeLinecap="round" />
-              <circle cx="17" cy="10" r="3.2" fill="#dcb770" />
-              <line x1="17" y1="13.5" x2="17" y2="14.5" stroke="#dcb770" strokeWidth="1.8" strokeLinecap="round" />
-            </svg>
-            <div className="gh-logo-text">
-              <span className="gh-logo-name">Golden Horizons</span>
-              <span className="gh-logo-tag">Your Guide to Retirement Abroad</span>
-            </div>
-          </Link>
-          <div className="gh-nav-links" />
-        </nav>
+      <div className="gh-content">
+        <h1 className="gh-slogan">{SLIDES[visible].slogan}</h1>
+        <p className="gh-support">{SLIDES[visible].support}</p>
+        <p className="gh-trigger">{SLIDES[visible].trigger}</p>
 
-        <div className="gh-content">
-          <div className="gh-badge">
-            <span className="gh-badge-dot" aria-hidden="true" />
-            <span className="gh-badge-label">Free Retirement Guide</span>
+        {!finderOpen && (
+          <button className="gh-btn" onClick={() => setFinderOpen(true)}>
+            🎯 Find My Retirement Destination
+          </button>
+        )}
+
+        {finderOpen && (
+          <div className="gh-finder-wrap">
+            <RetirementFinder defaultOpen={true} />
           </div>
-
-          <div className="gh-slides" aria-live="polite" aria-atomic="true">
-            {SLIDES.map((slide, i) => (
-              <div key={i} className={`gh-slide${visible === i ? ' active' : ''}`}>
-                <h1 className="gh-slogan">{slide.slogan}</h1>
-                <p className="gh-support">{slide.support}</p>
-                <p className="gh-trigger">{slide.trigger}</p>
-
-                <div className="gh-cta-row">
-                  {/* A — Finder button replaces the PDF guide button */}
-                  <a href="#finder" className="gh-cta-btn">
-                    🎯 Find My Retirement Destination →
-                  </a>
-                  <span className="gh-cta-sub">
-                    Answer 6 questions — get your top 3 matches
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="gh-dots" role="tablist" aria-label="Slide navigation">
-          {SLIDES.map((_, i) => (
-            <button
-              key={i}
-              className={`gh-dot${current === i ? ' active' : ''}`}
-              onClick={() => goTo(i)}
-              aria-label={`Slide ${i + 1}`}
-            />
-          ))}
-        </div>
-
-        <div className="gh-counter" aria-hidden="true">
-          {String(current + 1).padStart(2, '0')} / {String(SLIDES.length).padStart(2, '0')}
-        </div>
-      </section>
-    </>
+        )}
+      </div>
+    </section>
   );
 }
