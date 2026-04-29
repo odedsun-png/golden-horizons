@@ -4,6 +4,7 @@ import FeaturedStories from "@/components/FeaturedStories";
 import Newsletter from "@/components/Newsletter";
 import RecentStories from "@/components/RecentStories";
 import HeroSection from "@/components/HeroSection";
+import WorldMap from "@/components/WorldMap";
 
 export default function Home() {
   return (
@@ -12,9 +13,14 @@ export default function Home() {
 
       <main>
         <HeroSection />
-        <FeaturedStories />
+
+        <FeaturedStories /> {/* C */}
+
+        <Newsletter /> {/* A (moved up) */}
+
         <RecentStories />
-        <Newsletter />
+
+        <WorldMap /> {/* B now at bottom */}
       </main>
 
       <Footer />
