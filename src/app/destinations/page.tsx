@@ -41,14 +41,15 @@ const all26: CountryCard[] = [
   { id: "malta", flag: "🇲🇹", name: "Malta", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", description: "Only English-speaking EU country. 15% flat tax on foreign income, 300 sunny days, and EU citizenship pathway.", benefits: ["English-Speaking EU", "15% Flat Tax", "300 Sunny Days", "EU Citizenship"], scores: { costOfLiving: 3, safety: 5, healthcare: 4, lifestyle: 5 }, ilRank: "Top 10 International Living 2026", couple: "$2,500–$4,000", single: "$1,400–$2,200" },
   { id: "belize", flag: "🇧🇿", name: "Belize", image: "https://images.unsplash.com/photo-1534850336045-c6c6d287f89e?w=600&q=80", description: "Only English-speaking country in Central America. Zero tax on foreign income, USD peg, and world-class diving.", benefits: ["English Official", "Zero Foreign Tax", "USD Peg", "World-Class Diving"], scores: { costOfLiving: 4, safety: 3, healthcare: 2, lifestyle: 4 }, ilRank: "Top 15 International Living 2026", couple: "$1,500–$2,500", single: "$900–$1,500" },
   { id: "argentina", flag: "🇦🇷", name: "Argentina", image: "https://images.unsplash.com/photo-1612294037637-ec328d0e075e?w=600&q=80", description: "Paris of South America. Extraordinary USD purchasing power, world-class steak and wine, European architecture.", benefits: ["USD Purchasing Power", "World-Class Culture", "European Feel", "Great Food & Wine"], scores: { costOfLiving: 5, safety: 3, healthcare: 4, lifestyle: 4 }, ilRank: "Not in standard rankings", couple: "$1,000–$2,000", single: "$700–$1,200" },
-  { id: "bolivia", flag: "🇧🇴", name: "Bolivia", image: "https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=600&q=80", description: "South America's most affordable country. Sucre's perfect 63°F year-round climate and UNESCO Heritage city.", benefits: ["Most Affordable SA", "Perfect Sucre Climate", "USD Peg", "UNESCO Heritage"], scores: { costOfLiving: 5, safety: 4, healthcare: 3, lifestyle: 3 }, ilRank: "Budget pick", couple: "$800–$1,400", single: "$600–$900" },
-  { id: "cambodia", flag: "🇰🇭", name: "Cambodia", image: "https://images.unsplash.com/photo-1568733126608-7cd9b0a753c6?w=600&q=80", description: "Easiest visa in Asia at $290/year with no income requirement. USD economy and near-zero cost of living.", benefits: ["$290/yr Visa", "USD Economy", "No Income Req", "Angkor Wat"], scores: { costOfLiving: 5, safety: 4, healthcare: 3, lifestyle: 3 }, ilRank: "Budget pick", couple: "$1,000–$1,800", single: "$700–$1,100" },
+  // ── 3 FIXED IMAGES BELOW ──
+  { id: "bolivia", flag: "🇧🇴", name: "Bolivia", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80", description: "South America's most affordable country. Sucre's perfect 63°F year-round climate and UNESCO Heritage city.", benefits: ["Most Affordable SA", "Perfect Sucre Climate", "USD Peg", "UNESCO Heritage"], scores: { costOfLiving: 5, safety: 4, healthcare: 3, lifestyle: 3 }, ilRank: "Budget pick", couple: "$800–$1,400", single: "$600–$900" },
+  { id: "cambodia", flag: "🇰🇭", name: "Cambodia", image: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&q=80", description: "Easiest visa in Asia at $290/year with no income requirement. USD economy and near-zero cost of living.", benefits: ["$290/yr Visa", "USD Economy", "No Income Req", "Angkor Wat"], scores: { costOfLiving: 5, safety: 4, healthcare: 3, lifestyle: 3 }, ilRank: "Budget pick", couple: "$1,000–$1,800", single: "$700–$1,100" },
   { id: "northern-cyprus", flag: "🇨🇾", name: "Northern Cyprus", image: "https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?w=600&q=80", description: "Mediterranean lifestyle at budget prices. 300 sunny days, English widely spoken, low crime, and low taxes.", benefits: ["Mediterranean Budget", "English Spoken", "300 Sunny Days", "Low Tax"], scores: { costOfLiving: 4, safety: 5, healthcare: 4, lifestyle: 4 }, ilRank: "Hidden gem", couple: "$1,200–$2,200", single: "$800–$1,400" },
   { id: "philippines", flag: "🇵🇭", name: "Philippines", image: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&q=80", description: "English-speaking Asia with no tax on foreign pensions. Deposit-only SRRV visa and US tax treaty.", benefits: ["English Official", "No Foreign Tax", "US Tax Treaty", "Deposit-Only Visa"], scores: { costOfLiving: 4, safety: 3, healthcare: 4, lifestyle: 4 }, ilRank: "Top 15 International Living 2026", couple: "$1,200–$2,500", single: "$800–$1,500" },
   { id: "paraguay", flag: "🇵🇾", name: "Paraguay", image: "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=600&q=80", description: "One of South America's easiest residency programs. Territorial tax system and USD-linked economy.", benefits: ["Easiest SA Residency", "Territorial Tax", "USD-Linked", "Low Cost"], scores: { costOfLiving: 5, safety: 4, healthcare: 3, lifestyle: 3 }, ilRank: "76.0/100 Research Score", couple: "$1,200–$2,000", single: "$800–$1,300" },
   { id: "indonesia", flag: "🇮🇩", name: "Indonesia", image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80", description: "Dedicated retirement KITAS visa, Bali's world-famous lifestyle, and very affordable living across 17,000 islands.", benefits: ["Retirement KITAS Visa", "Bali Lifestyle", "Very Affordable", "Zero Foreign Tax"], scores: { costOfLiving: 5, safety: 4, healthcare: 3, lifestyle: 4 }, ilRank: "75.0/100 Research Score", couple: "$1,200–$2,200", single: "$800–$1,400" },
   { id: "albania", flag: "🇦🇱", name: "Albania", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=600&q=80", description: "Cheapest country in Europe. 1-year visa-free for Americans — longest in Europe. Albanian Riviera rivals Greece.", benefits: ["Cheapest in Europe", "1yr Visa-Free", "Riviera Beaches", "EU Candidate"], scores: { costOfLiving: 5, safety: 4, healthcare: 3, lifestyle: 3 }, ilRank: "66.0/100 Research Score", couple: "$930–$1,830", single: "$570–$1,150" },
-  { id: "montenegro", flag: "🇲🇪", name: "Montenegro", image: "https://images.unsplash.com/photo-1555990538-c01c6462f8e2?w=600&q=80", description: "9% flat tax — one of Europe's lowest. Stunning Bay of Kotor, Adriatic coastline, and EU candidate stability.", benefits: ["9% Flat Tax", "Bay of Kotor", "Euro Economy", "EU Candidate"], scores: { costOfLiving: 4, safety: 4, healthcare: 3, lifestyle: 4 }, ilRank: "65.0/100 Research Score", couple: "$1,410–$2,640", single: "$880–$1,660" },
+  { id: "montenegro", flag: "🇲🇪", name: "Montenegro", image: "https://images.unsplash.com/photo-1504150558240-0b4fd8946624?w=600&q=80", description: "9% flat tax — one of Europe's lowest. Stunning Bay of Kotor, Adriatic coastline, and EU candidate stability.", benefits: ["9% Flat Tax", "Bay of Kotor", "Euro Economy", "EU Candidate"], scores: { costOfLiving: 4, safety: 4, healthcare: 3, lifestyle: 4 }, ilRank: "65.0/100 Research Score", couple: "$1,410–$2,640", single: "$880–$1,660" },
 ];
 
 function ScoreBar({ score, max = 5 }: { score: number; max?: number }) {
@@ -94,7 +95,7 @@ export default function DestinationsPage() {
           </div>
         </section>
 
-        {/* Rankings List — all 26 */}
+        {/* Rankings List */}
         <section className="py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-10">
@@ -111,7 +112,6 @@ export default function DestinationsPage() {
                     key={country.id}
                     className="bg-white rounded-sm border border-border p-6 flex flex-col md:flex-row gap-6 hover:shadow-lg transition-shadow"
                   >
-                    {/* Rank Badge */}
                     <div className="flex-shrink-0 flex items-start">
                       <div className="w-14 h-14 rounded-full bg-primary/10 flex flex-col items-center justify-center">
                         <span className="text-sm font-bold text-primary leading-tight">#{index + 1}</span>
@@ -119,7 +119,6 @@ export default function DestinationsPage() {
                       </div>
                     </div>
 
-                    {/* Image */}
                     <div className="flex-shrink-0 w-full md:w-48 h-32 rounded overflow-hidden">
                       <img
                         src={country.image}
@@ -128,7 +127,6 @@ export default function DestinationsPage() {
                       />
                     </div>
 
-                    {/* Content */}
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2 flex-wrap">
                         <h3 className="text-xl font-bold font-serif">{country.name}</h3>
@@ -142,35 +140,19 @@ export default function DestinationsPage() {
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {country.benefits.map((benefit) => (
-                          <span
-                            key={benefit}
-                            className="px-3 py-1 bg-muted text-sm text-foreground/80 rounded-full"
-                          >
+                          <span key={benefit} className="px-3 py-1 bg-muted text-sm text-foreground/80 rounded-full">
                             {benefit}
                           </span>
                         ))}
                       </div>
                     </div>
 
-                    {/* Scores + CTA */}
                     <div className="flex-shrink-0 flex flex-col gap-3 md:w-44">
                       <div className="grid grid-cols-2 md:grid-cols-1 gap-3">
-                        <div>
-                          <span className="text-xs text-muted-foreground">Cost</span>
-                          <ScoreBar score={country.scores.costOfLiving} />
-                        </div>
-                        <div>
-                          <span className="text-xs text-muted-foreground">Safety</span>
-                          <ScoreBar score={country.scores.safety} />
-                        </div>
-                        <div>
-                          <span className="text-xs text-muted-foreground">Healthcare</span>
-                          <ScoreBar score={country.scores.healthcare} />
-                        </div>
-                        <div>
-                          <span className="text-xs text-muted-foreground">Lifestyle</span>
-                          <ScoreBar score={country.scores.lifestyle} />
-                        </div>
+                        <div><span className="text-xs text-muted-foreground">Cost</span><ScoreBar score={country.scores.costOfLiving} /></div>
+                        <div><span className="text-xs text-muted-foreground">Safety</span><ScoreBar score={country.scores.safety} /></div>
+                        <div><span className="text-xs text-muted-foreground">Healthcare</span><ScoreBar score={country.scores.healthcare} /></div>
+                        <div><span className="text-xs text-muted-foreground">Lifestyle</span><ScoreBar score={country.scores.lifestyle} /></div>
                       </div>
                       {detail && (
                         <Link
@@ -188,7 +170,6 @@ export default function DestinationsPage() {
           </div>
         </section>
 
-        {/* CTA */}
         <section className="py-12 bg-muted/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Link
