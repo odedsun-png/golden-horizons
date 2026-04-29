@@ -45,24 +45,23 @@ const all26: Country[] = [
 ];
 
 const STEPS = [
-  { id:"who",      label:"Who's retiring?",   icon:"👤" },
-  { id:"budget",   label:"Monthly budget",    icon:"💰" },
-  { id:"income",   label:"Proof of income",   icon:"📄" },
-  { id:"region",   label:"Preferred region",  icon:"🌍" },
-  { id:"lifestyle",label:"Lifestyle vibe",    icon:"🌅" },
-  { id:"extras",   label:"Must-haves",        icon:"✅" },
+  { id:"who", label:"Who's retiring?", icon:"👤" },
+  { id:"budget", label:"Monthly budget", icon:"💰" },
+  { id:"income", label:"Proof of income", icon:"📄" },
+  { id:"region", label:"Preferred region", icon:"🌍" },
+  { id:"lifestyle", label:"Lifestyle vibe", icon:"🌅" },
+  { id:"extras", label:"Must-haves", icon:"✅" },
 ];
 
 const gold = "#d4a017";
 const dark = "#1f2326";
 
 type Props = {
-  /** Skip the collapsed "Start" card — quiz renders immediately */
   defaultOpen?: boolean;
 };
 
 export default function RetirementFinder({ defaultOpen = false }: Props) {
-  const [open, setOpen] = useState(defaultOpen);
+  const [open, setOpen] = useState(true);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({
     who:"", budget:"", income:"", region:"", lifestyle:"",
@@ -73,6 +72,7 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
   function setA(key: keyof Answers, val: string | boolean) {
     setAnswers(a => ({ ...a, [key]: val }));
   }
+
   function toggle(key: keyof Answers) {
     setAnswers(a => ({ ...a, [key]: !a[key] }));
   }
@@ -80,17 +80,18 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
   function findMatches() {
     const { who, budget, income, region, lifestyle, english, taxFree, easyVisa } = answers;
     const isCouple = who === "couple";
+
     const [bMin, bMax] =
-      budget === "under1500"  ? [0, 1500]      :
-      budget === "1500_2500"  ? [1500, 2500]   :
-      budget === "2500_4000"  ? [2500, 4000]   :
-                                [4000, 99999];
+      budget === "under1500" ? [0, 1500] :
+      budget === "1500_2500" ? [1500, 2500] :
+      budget === "2500_4000" ? [2500, 4000] :
+      [4000, 99999];
 
     const pool = all26.filter(c => {
       if (region !== "any" && c.region !== region) return false;
-      if (income === "ss"      && !c.acceptsSS)      return false;
+      if (income === "ss" && !c.acceptsSS) return false;
       if (income === "savings" && !c.acceptsSavings) return false;
-      if (income === "other"   && !c.acceptsOther)   return false;
+      if (income === "other" && !c.acceptsOther) return false;
       return true;
     });
 
@@ -98,14 +99,19 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
       let score = 0;
       const cMin = isCouple ? c.coupleMin : c.singleMin;
       const cMax = isCouple ? c.coupleMax : c.singleMax;
+
       if (cMin <= bMax && cMax >= bMin) score += 3;
-      if      (lifestyle === "beach"       && c.beach)                      score += 2;
-      else if (lifestyle === "city"        && c.lifestyle.includes("city")) score += 2;
+      if (lifestyle === "beach" && c.beach) score += 2;
+      else if (lifestyle === "city" && c.lifestyle.includes("city")) score += 2;
       else if (lifestyle === "countryside" && c.lifestyle.includes("countryside")) score += 2;
-      else if (lifestyle === "any")                                          score += 1;
-      if (english  && c.english)   score += 5; else if (english)  score -= 3;
-      if (taxFree  && c.taxFree)   score += 2;
-      if (easyVisa && c.easyVisa)  score += 2;
+      else if (lifestyle === "any") score += 1;
+
+      if (english && c.english) score += 5;
+      else if (english) score -= 3;
+
+      if (taxFree && c.taxFree) score += 2;
+      if (easyVisa && c.easyVisa) score += 2;
+
       return { ...c, score };
     }).sort((a, b) => b.score - a.score);
 
@@ -116,7 +122,11 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
     if (step < STEPS.length - 1) setStep(s => s + 1);
     else findMatches();
   }
-  function back() { if (step > 0) setStep(s => s - 1); }
+
+  function back() {
+    if (step > 0) setStep(s => s - 1);
+  }
+
   function restart() {
     setAnswers({ who:"", budget:"", income:"", region:"", lifestyle:"", english:false, taxFree:false, easyVisa:false });
     setStep(0);
@@ -125,15 +135,14 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
   }
 
   const canNext =
-    (step === 0 && !!answers.who)     ||
-    (step === 1 && !!answers.budget)  ||
-    (step === 2 && !!answers.income)  ||
-    (step === 3 && !!answers.region)  ||
+    (step === 0 && !!answers.who) ||
+    (step === 1 && !!answers.budget) ||
+    (step === 2 && !!answers.income) ||
+    (step === 3 && !!answers.region) ||
     (step === 4 && !!answers.lifestyle) ||
     step === 5;
 
-  /* ─── Collapsed "Start" card (standalone use only) ─── */
-  if (!open) {
+  if (!open && !defaultOpen) {
     return (
       <div style={{ maxWidth: 760, margin: "0 auto" }}>
         <button
@@ -149,8 +158,12 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
             <span style={{ fontSize: 32 }}>🎯</span>
             <div style={{ textAlign: "left" }}>
-              <div style={{ fontSize: 18, fontWeight: 700, color: dark }}>Find My Perfect Retirement Destination</div>
-              <div style={{ fontSize: 14, color: "#888", marginTop: 3 }}>Answer 6 quick questions — we match you to the best countries</div>
+              <div style={{ fontSize: 18, fontWeight: 700, color: dark }}>
+                Find My Perfect Retirement Destination
+              </div>
+              <div style={{ fontSize: 14, color: "#888", marginTop: 3 }}>
+                Answer 6 quick questions — we match you to the best countries
+              </div>
             </div>
           </div>
           <div style={{ background: gold, color: "#fff", borderRadius: 8, padding: "10px 20px", fontSize: 15, fontWeight: 700, flexShrink: 0 }}>
@@ -161,63 +174,61 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
     );
   }
 
-  /* ─── Open quiz / results ─── */
   return (
     <div style={{ maxWidth: 760, margin: "0 auto" }}>
       <div style={{
-        background: "#fff", borderRadius: 18,
-        padding: "36px 36px",
+        background: "#fff",
+        borderRadius: 18,
+        padding: "36px",
         boxShadow: "0 8px 48px rgba(0,0,0,0.14)",
       }}>
-
-        {/* ── RESULTS ── */}
-        {results && (
+        {results ? (
           <>
             <div style={{ textAlign: "center", marginBottom: 28 }}>
               <div style={{ fontSize: 36, marginBottom: 10 }}>🎯</div>
-              <div style={{ fontSize: 24, fontWeight: 700, color: "#111", marginBottom: 6 }}>Your top retirement matches</div>
-              <div style={{ fontSize: 15, color: "#888" }}>Click any country to see its full profile</div>
+              <div style={{ fontSize: 24, fontWeight: 700, color: "#111", marginBottom: 6 }}>
+                Your top retirement matches
+              </div>
+              <div style={{ fontSize: 15, color: "#888" }}>
+                Click any country to see its full profile
+              </div>
             </div>
 
-            {results.length === 0 ? (
-              <div style={{ textAlign: "center", padding: "40px 0", color: "#888" }}>
-                <div style={{ fontSize: 36, marginBottom: 14 }}>🔍</div>
-                <div style={{ fontSize: 17, fontWeight: 600, marginBottom: 8 }}>No exact matches found</div>
-                <div style={{ fontSize: 14 }}>Try &quot;Open to anywhere&quot; or a different income type.</div>
-              </div>
-            ) : (
-              <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 28 }}>
-                {results.map((c, i) => (
-                  <Link
-                    key={c.id}
-                    href={`/destinations/${c.id}`}
-                    style={{
-                      display: "flex", background: "#f9f9f9", borderRadius: 14,
-                      overflow: "hidden", border: "1px solid #eee", textDecoration: "none",
-                    }}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={c.img} alt={c.name} style={{ width: 130, height: 110, objectFit: "cover", flexShrink: 0 }} />
-                    <div style={{ padding: "14px 18px", flex: 1 }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-                        <span style={{ background: gold, color: "#fff", borderRadius: 20, fontSize: 12, fontWeight: 700, padding: "3px 10px" }}>
-                          #{i + 1} Match
-                        </span>
-                        <span style={{ fontSize: 20 }}>{c.flag}</span>
-                        <span style={{ fontSize: 17, fontWeight: 700, color: "#111" }}>{c.name}</span>
-                      </div>
-                      <div style={{ fontSize: 13, color: "#555", lineHeight: 1.6, marginBottom: 6 }}>{c.desc}</div>
-                      <div style={{ fontSize: 12, color: "#aaa", fontStyle: "italic" }}>
-                        {answers.who === "couple"
-                          ? `$${c.coupleMin.toLocaleString()}–$${c.coupleMax.toLocaleString()}/mo couple`
-                          : `$${c.singleMin.toLocaleString()}–$${c.singleMax.toLocaleString()}/mo single`}
-                      </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 28 }}>
+              {results.map((c, i) => (
+                <Link
+                  key={c.id}
+                  href={`/destinations/${c.id}`}
+                  style={{
+                    display: "flex",
+                    background: "#f9f9f9",
+                    borderRadius: 14,
+                    overflow: "hidden",
+                    border: "1px solid #eee",
+                    textDecoration: "none",
+                  }}
+                >
+                  <img src={c.img} alt={c.name} style={{ width: 130, height: 110, objectFit: "cover", flexShrink: 0 }} />
+                  <div style={{ padding: "14px 18px", flex: 1 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+                      <span style={{ background: gold, color: "#fff", borderRadius: 20, fontSize: 12, fontWeight: 700, padding: "3px 10px" }}>
+                        #{i + 1} Match
+                      </span>
+                      <span style={{ fontSize: 20 }}>{c.flag}</span>
+                      <span style={{ fontSize: 17, fontWeight: 700, color: "#111" }}>{c.name}</span>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center", padding: "0 20px", color: gold, fontSize: 20, flexShrink: 0 }}>→</div>
-                  </Link>
-                ))}
-              </div>
-            )}
+                    <div style={{ fontSize: 13, color: "#555", lineHeight: 1.6, marginBottom: 6 }}>
+                      {c.desc}
+                    </div>
+                    <div style={{ fontSize: 12, color: "#aaa", fontStyle: "italic" }}>
+                      {answers.who === "couple"
+                        ? `$${c.coupleMin.toLocaleString()}–$${c.coupleMax.toLocaleString()}/mo couple`
+                        : `$${c.singleMin.toLocaleString()}–$${c.singleMax.toLocaleString()}/mo single`}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
 
             <div style={{ display: "flex", gap: 12 }}>
               <button
@@ -226,43 +237,40 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
               >
                 ← Start Over
               </button>
+
               <Link
                 href="/destinations"
-                style={{ flex: 1, padding: "13px", background: dark, color: "#fff", borderRadius: 10, fontSize: 15, fontWeight: 600, textAlign: "center", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center" }}
+                style={{ flex: 1, padding: "13px", background: dark, color: "#fff", borderRadius: 10, fontSize: 15, fontWeight: 600, textAlign: "center", textDecoration: "none" }}
               >
                 See All 26 Countries →
               </Link>
             </div>
           </>
-        )}
-
-        {/* ── QUIZ ── */}
-        {!results && (
+        ) : (
           <>
-            {/* Progress bar */}
             <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
               {STEPS.map((s, i) => (
-                <div key={s.id} style={{ flex: 1, height: 5, borderRadius: 4, background: i <= step ? gold : "#eee", transition: "background 0.3s" }} />
+                <div key={s.id} style={{ flex: 1, height: 5, borderRadius: 4, background: i <= step ? gold : "#eee" }} />
               ))}
             </div>
 
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 26 }}>
-              <span style={{ fontSize: 13, color: "#bbb" }}>Step {step + 1} of {STEPS.length}</span>
-              {!defaultOpen && (
-                <button onClick={restart} style={{ background: "none", border: "none", color: "#bbb", fontSize: 20, cursor: "pointer", lineHeight: 1 }}>✕</button>
-              )}
+              <span style={{ fontSize: 13, color: "#bbb" }}>
+                Step {step + 1} of {STEPS.length}
+              </span>
             </div>
 
             <div style={{ textAlign: "center", marginBottom: 26 }}>
               <div style={{ fontSize: 36, marginBottom: 8 }}>{STEPS[step].icon}</div>
-              <div style={{ fontSize: 22, fontWeight: 700, color: "#111" }}>{STEPS[step].label}</div>
+              <div style={{ fontSize: 22, fontWeight: 700, color: "#111" }}>
+                {STEPS[step].label}
+              </div>
             </div>
 
-            {/* Step 0 — Who */}
             {step === 0 && (
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 {([["single","Solo retiree","👤"],["couple","Retiring as a couple","👫"]] as const).map(([v, label, icon]) => (
-                  <button key={v} onClick={() => setA("who", v)} style={{ padding: "28px 16px", borderRadius: 14, border: `2px solid ${answers.who === v ? gold : "#e5e5e5"}`, background: answers.who === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "center", transition: "all 0.15s" }}>
+                  <button key={v} onClick={() => setA("who", v)} style={{ padding: "28px 16px", borderRadius: 14, border: `2px solid ${answers.who === v ? gold : "#e5e5e5"}`, background: answers.who === v ? "#fffbf0" : "#fff", cursor: "pointer" }}>
                     <div style={{ fontSize: 36, marginBottom: 10 }}>{icon}</div>
                     <div style={{ fontSize: 15, fontWeight: 600, color: "#222" }}>{label}</div>
                   </button>
@@ -270,11 +278,10 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
               </div>
             )}
 
-            {/* Step 1 — Budget */}
             {step === 1 && (
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 {([["under1500","Under $1,500","🟢 Very budget"],["1500_2500","$1,500–$2,500","🟡 Comfortable"],["2500_4000","$2,500–$4,000","🟠 Premium"],["4000plus","$4,000+","🔵 Luxury"]] as const).map(([v, label, sub]) => (
-                  <button key={v} onClick={() => setA("budget", v)} style={{ padding: "22px 16px", borderRadius: 14, border: `2px solid ${answers.budget === v ? gold : "#e5e5e5"}`, background: answers.budget === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "center", transition: "all 0.15s" }}>
+                  <button key={v} onClick={() => setA("budget", v)} style={{ padding: "22px 16px", borderRadius: 14, border: `2px solid ${answers.budget === v ? gold : "#e5e5e5"}`, background: answers.budget === v ? "#fffbf0" : "#fff", cursor: "pointer" }}>
                     <div style={{ fontSize: 15, fontWeight: 700, color: "#222", marginBottom: 5 }}>{label}</div>
                     <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
                   </button>
@@ -282,43 +289,35 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
               </div>
             )}
 
-            {/* Step 2 — Income */}
             {step === 2 && (
               <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                 {([
-                  ["ss",      "🏛️ Social Security",         "Monthly SS check — accepted by most retirement visas"],
-                  ["savings", "🏦 Savings / Investments",   "Bank statements or investment portfolio"],
-                  ["other",   "💼 Pension / Rental / Business", "Private pension, rental income, annuity, or business income"],
+                  ["ss", "🏛️ Social Security", "Monthly SS check — accepted by most retirement visas"],
+                  ["savings", "🏦 Savings / Investments", "Bank statements or investment portfolio"],
+                  ["other", "💼 Pension / Rental / Business", "Private pension, rental income, annuity, or business income"],
                 ] as const).map(([v, label, desc]) => (
-                  <button key={v} onClick={() => setA("income", v)} style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: "18px", borderRadius: 14, border: `2px solid ${answers.income === v ? gold : "#e5e5e5"}`, background: answers.income === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "left", transition: "all 0.15s" }}>
-                    <div style={{ width: 26, height: 26, borderRadius: 7, background: answers.income === v ? gold : "#e5e5e5", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2 }}>
-                      {answers.income === v && <span style={{ color: "#fff", fontSize: 14, fontWeight: 700 }}>✓</span>}
-                    </div>
-                    <div>
-                      <div style={{ fontSize: 16, fontWeight: 700, color: "#222", marginBottom: 4 }}>{label}</div>
-                      <div style={{ fontSize: 13, color: "#777", lineHeight: 1.5 }}>{desc}</div>
-                    </div>
+                  <button key={v} onClick={() => setA("income", v)} style={{ padding: "18px", borderRadius: 14, border: `2px solid ${answers.income === v ? gold : "#e5e5e5"}`, background: answers.income === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "left" }}>
+                    <div style={{ fontSize: 16, fontWeight: 700, color: "#222", marginBottom: 4 }}>{label}</div>
+                    <div style={{ fontSize: 13, color: "#777" }}>{desc}</div>
                   </button>
                 ))}
               </div>
             )}
 
-            {/* Step 3 — Region */}
             {step === 3 && (
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 {([["europe","🇪🇺 Europe"],["americas","🌎 The Americas"],["asia","🌏 Asia"],["any","🌍 Open to anywhere"]] as const).map(([v, label]) => (
-                  <button key={v} onClick={() => setA("region", v)} style={{ padding: "24px 16px", borderRadius: 14, border: `2px solid ${answers.region === v ? gold : "#e5e5e5"}`, background: answers.region === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "center", fontSize: 16, fontWeight: 600, color: "#222", transition: "all 0.15s" }}>
+                  <button key={v} onClick={() => setA("region", v)} style={{ padding: "24px 16px", borderRadius: 14, border: `2px solid ${answers.region === v ? gold : "#e5e5e5"}`, background: answers.region === v ? "#fffbf0" : "#fff", cursor: "pointer", fontSize: 16, fontWeight: 600, color: "#222" }}>
                     {label}
                   </button>
                 ))}
               </div>
             )}
 
-            {/* Step 4 — Lifestyle */}
             {step === 4 && (
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 {([["beach","🏖️ Beach & coast","Sun, sand, diving"],["city","🏙️ City life","Culture, dining, walkable"],["countryside","🌿 Countryside","Nature, quiet, mountains"],["any","✨ Surprise me","Best overall match"]] as const).map(([v, icon, sub]) => (
-                  <button key={v} onClick={() => setA("lifestyle", v)} style={{ padding: "22px 16px", borderRadius: 14, border: `2px solid ${answers.lifestyle === v ? gold : "#e5e5e5"}`, background: answers.lifestyle === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "center", transition: "all 0.15s" }}>
+                  <button key={v} onClick={() => setA("lifestyle", v)} style={{ padding: "22px 16px", borderRadius: 14, border: `2px solid ${answers.lifestyle === v ? gold : "#e5e5e5"}`, background: answers.lifestyle === v ? "#fffbf0" : "#fff", cursor: "pointer" }}>
                     <div style={{ fontSize: 15, fontWeight: 700, color: "#222", marginBottom: 5 }}>{icon}</div>
                     <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
                   </button>
@@ -326,39 +325,32 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
               </div>
             )}
 
-            {/* Step 5 — Extras */}
             {step === 5 && (
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                <div style={{ fontSize: 14, color: "#999", textAlign: "center", marginBottom: 4 }}>Select any that matter — or skip and find matches</div>
                 {([
-                  ["english",  "🗣️ English widely spoken", "No language barrier — official or near-official English"],
-                  ["taxFree",  "💵 Tax-free foreign income","Keep more of your SS & pension abroad"],
-                  ["easyVisa", "✅ Easy visa / residency",  "Straightforward, fast approval process"],
+                  ["english", "🗣️ English widely spoken", "No language barrier"],
+                  ["taxFree", "💵 Tax-free foreign income", "Keep more of your income"],
+                  ["easyVisa", "✅ Easy visa / residency", "Simple approval process"],
                 ] as const).map(([key, label, sub]) => (
-                  <button key={key} onClick={() => toggle(key)} style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 18px", borderRadius: 14, border: `2px solid ${answers[key] ? gold : "#e5e5e5"}`, background: answers[key] ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "left", transition: "all 0.15s" }}>
-                    <div style={{ width: 24, height: 24, borderRadius: 7, background: answers[key] ? gold : "#e5e5e5", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      {answers[key] && <span style={{ color: "#fff", fontSize: 14, fontWeight: 700 }}>✓</span>}
-                    </div>
-                    <div>
-                      <div style={{ fontSize: 15, fontWeight: 600, color: "#222" }}>{label}</div>
-                      <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
-                    </div>
+                  <button key={key} onClick={() => toggle(key)} style={{ padding: "16px 18px", borderRadius: 14, border: `2px solid ${answers[key] ? gold : "#e5e5e5"}`, background: answers[key] ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "left" }}>
+                    <div style={{ fontSize: 15, fontWeight: 600, color: "#222" }}>{label}</div>
+                    <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
                   </button>
                 ))}
               </div>
             )}
 
-            {/* Nav buttons */}
             <div style={{ display: "flex", gap: 12, marginTop: 28 }}>
               {step > 0 && (
                 <button onClick={back} style={{ padding: "14px 24px", background: "#f3f3f3", border: "none", borderRadius: 10, fontSize: 15, fontWeight: 600, cursor: "pointer", color: "#444" }}>
                   ← Back
                 </button>
               )}
+
               <button
                 onClick={next}
                 disabled={!canNext}
-                style={{ flex: 1, padding: "15px", background: canNext ? dark : "#ccc", color: "#fff", border: "none", borderRadius: 10, fontSize: 16, fontWeight: 700, cursor: canNext ? "pointer" : "not-allowed", transition: "background 0.2s" }}
+                style={{ flex: 1, padding: "15px", background: canNext ? dark : "#ccc", color: "#fff", border: "none", borderRadius: 10, fontSize: 16, fontWeight: 700, cursor: canNext ? "pointer" : "not-allowed" }}
               >
                 {step === STEPS.length - 1 ? "Find My Matches 🎯" : "Next →"}
               </button>
