@@ -1,211 +1,376 @@
 "use client";
-
 import { useState } from "react";
 
 export default function Newsletter() {
-  const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email) return;
-
-    setStatus("loading");
-
-    try {
-      const response = await fetch("/.netlify/functions/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, firstName, lastName }),
-      });
-
-      if (response.ok) {
-        setStatus("success");
-        setEmail("");
-        setFirstName("");
-        setLastName("");
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
-  };
+    setSubmitted(true);
+  }
 
   return (
-    <section id="subscribe" className="bg-[#2c3235] py-16 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-10 items-stretch">
+    <>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-          {/* Phone Mockup — fills full height of right column */}
-          <div className="relative flex justify-center md:justify-start">
-            <div className="relative w-full max-w-sm flex flex-col">
-              <div className="relative bg-white rounded-[2rem] p-4 shadow-2xl flex-1 flex flex-col">
-                <div className="bg-gray-100 rounded-[1.5rem] overflow-hidden flex-1 flex flex-col">
-                  <div className="p-4 flex flex-col flex-1">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-sm font-bold text-gray-800">golden</span>
-                      <span className="text-sm font-light text-gray-500">horizons</span>
-                    </div>
-                    <div className="text-xs text-gray-500 mb-2">Latest Article</div>
-                    <div className="rounded-lg overflow-hidden mb-3 flex-1">
-                      <img
-                        src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=400&q=80"
-                        alt="Featured destination"
-                        className="w-full h-full object-cover"
-                        style={{ minHeight: "200px" }}
-                      />
-                    </div>
-                    <h4 className="font-bold text-gray-800 text-sm mb-1">
-                      Portugal's Hidden Coastal Gems
-                    </h4>
-                    <p className="text-xs text-gray-500 leading-relaxed">
-                      Discover charming towns beyond Lisbon where retirees are finding their perfect slice of paradise...
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl" />
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-accent/20 rounded-full blur-lg" />
+        .nl-section {
+          background: #3a3d41;
+          padding: 80px 24px;
+          font-family: 'Inter', sans-serif;
+          position: relative;
+          overflow: hidden;
+        }
+
+        /* subtle texture overlay */
+        .nl-section::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(220,183,112,0.07) 0%, transparent 70%);
+          pointer-events: none;
+        }
+
+        .nl-inner {
+          max-width: 680px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 1;
+        }
+
+        /* Social proof bar */
+        .nl-proof-bar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          margin-bottom: 32px;
+        }
+
+        .nl-avatars {
+          display: flex;
+          margin-right: 4px;
+        }
+
+        .nl-avatar {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          border: 2px solid #3a3d41;
+          background: #dcb770;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          font-weight: 700;
+          color: #1a1a1a;
+          margin-left: -8px;
+          flex-shrink: 0;
+        }
+
+        .nl-avatar:first-child { margin-left: 0; background: #c8a84e; }
+        .nl-avatar:nth-child(2) { background: #dcb770; }
+        .nl-avatar:nth-child(3) { background: #e8c980; }
+        .nl-avatar:nth-child(4) { background: #f0d898; color: #8a6a00; }
+
+        .nl-proof-text {
+          font-size: 13px;
+          color: rgba(255,255,255,0.55);
+          letter-spacing: 0.01em;
+        }
+
+        .nl-proof-text strong {
+          color: #dcb770;
+          font-weight: 600;
+        }
+
+        /* Main headline */
+        .nl-headline {
+          font-family: 'Playfair Display', serif;
+          font-size: 42px;
+          font-weight: 700;
+          color: #ffffff;
+          line-height: 1.2;
+          letter-spacing: -0.02em;
+          text-align: center;
+          margin: 0 0 16px;
+        }
+
+        .nl-headline em {
+          font-style: normal;
+          color: #dcb770;
+        }
+
+        .nl-subhead {
+          font-size: 17px;
+          font-weight: 300;
+          color: rgba(255,255,255,0.60);
+          text-align: center;
+          line-height: 1.65;
+          margin: 0 0 36px;
+          max-width: 520px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        /* Benefits */
+        .nl-benefits {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 12px;
+          margin-bottom: 36px;
+        }
+
+        .nl-benefit {
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 10px;
+          padding: 16px 14px;
+          text-align: center;
+        }
+
+        .nl-benefit-icon {
+          font-size: 20px;
+          margin-bottom: 8px;
+          display: block;
+        }
+
+        .nl-benefit-title {
+          font-size: 13px;
+          font-weight: 600;
+          color: #fff;
+          margin-bottom: 4px;
+          display: block;
+        }
+
+        .nl-benefit-desc {
+          font-size: 11px;
+          color: rgba(255,255,255,0.45);
+          line-height: 1.5;
+        }
+
+        /* Form */
+        .nl-form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 14px;
+        }
+
+        .nl-input {
+          width: 100%;
+          height: 52px;
+          padding: 0 18px;
+          background: rgba(255,255,255,0.07);
+          border: 1.5px solid rgba(255,255,255,0.15);
+          border-radius: 8px;
+          font-family: 'Inter', sans-serif;
+          font-size: 15px;
+          color: #fff;
+          outline: none;
+          transition: border-color 0.2s, background 0.2s;
+          box-sizing: border-box;
+        }
+
+        .nl-input::placeholder { color: rgba(255,255,255,0.35); }
+        .nl-input:focus {
+          border-color: #dcb770;
+          background: rgba(220,183,112,0.06);
+        }
+
+        .nl-btn {
+          height: 52px;
+          padding: 0 28px;
+          background: #dcb770;
+          color: #1a1a1a;
+          border: none;
+          border-radius: 8px;
+          font-family: 'Inter', sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          cursor: pointer;
+          white-space: nowrap;
+          transition: background 0.2s, transform 0.15s;
+          flex-shrink: 0;
+        }
+
+        .nl-btn:hover { background: #e8c980; transform: translateY(-1px); }
+        .nl-btn:active { transform: translateY(0); }
+
+        .nl-trust {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+
+        .nl-trust-item {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-size: 11px;
+          color: rgba(255,255,255,0.35);
+          letter-spacing: 0.02em;
+        }
+
+        .nl-trust-dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.20);
+          flex-shrink: 0;
+        }
+
+        /* Success state */
+        .nl-success {
+          text-align: center;
+          padding: 48px 24px;
+        }
+
+        .nl-success-icon {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background: rgba(220,183,112,0.15);
+          border: 1.5px solid rgba(220,183,112,0.40);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 20px;
+          font-size: 22px;
+        }
+
+        .nl-success-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 26px;
+          color: #fff;
+          margin: 0 0 10px;
+        }
+
+        .nl-success-sub {
+          font-size: 15px;
+          color: rgba(255,255,255,0.50);
+          line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+          .nl-headline { font-size: 30px; }
+          .nl-benefits { grid-template-columns: 1fr; gap: 8px; }
+          .nl-form { flex-direction: column; }
+          .nl-btn { height: 48px; }
+        }
+      `}</style>
+
+      <section className="nl-section">
+        <div className="nl-inner">
+          {submitted ? (
+            <div className="nl-success">
+              <div className="nl-success-icon">✓</div>
+              <h2 className="nl-success-title">You're in. Welcome aboard.</h2>
+              <p className="nl-success-sub">
+                Check your inbox — your first guide is on its way.<br />
+                One short email a day. Unsubscribe anytime.
+              </p>
             </div>
-          </div>
-
-          {/* Content — fully centered */}
-          <div className="text-white text-center flex flex-col justify-center">
-
-            {status === "success" ? (
-              <div style={{
-                background: "linear-gradient(135deg, #1a3a2a 0%, #0f2419 100%)",
-                border: "2px solid #c8a84e",
-                borderRadius: "12px",
-                padding: "40px 36px",
-                textAlign: "center",
-              }}>
-                <div style={{
-                  width: "64px",
-                  height: "64px",
-                  background: "#c8a84e",
-                  borderRadius: "50%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  margin: "0 auto 20px",
-                }}>
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <path d="M7 16.5L13 22.5L25 10" stroke="#1a1a1a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+          ) : (
+            <>
+              {/* Social proof avatars */}
+              <div className="nl-proof-bar">
+                <div className="nl-avatars">
+                  <div className="nl-avatar">JM</div>
+                  <div className="nl-avatar">SR</div>
+                  <div className="nl-avatar">DK</div>
+                  <div className="nl-avatar">+</div>
                 </div>
-                <div style={{
-                  fontFamily: "'Source Sans 3', sans-serif",
-                  fontSize: "0.65rem",
-                  letterSpacing: "2.5px",
-                  textTransform: "uppercase",
-                  color: "#c8a84e",
-                  fontWeight: 700,
-                  marginBottom: "10px",
-                }}>You're subscribed</div>
-                <h3 style={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
-                  fontSize: "1.6rem",
-                  fontWeight: 700,
-                  color: "#ffffff",
-                  lineHeight: 1.3,
-                  marginBottom: "12px",
-                }}>Welcome to Golden Horizons!</h3>
-                <p style={{
-                  fontSize: "1rem",
-                  color: "rgba(255,255,255,0.65)",
-                  lineHeight: 1.7,
-                  marginBottom: "20px",
-                }}>
-                  Your first issue is on its way. Check your inbox — and your spam folder just in case.
-                </p>
-                <div style={{
-                  display: "inline-block",
-                  background: "rgba(200,168,78,0.15)",
-                  border: "1px solid rgba(200,168,78,0.3)",
-                  borderRadius: "8px",
-                  padding: "10px 20px",
-                  fontSize: "0.85rem",
-                  color: "#c8a84e",
-                  fontWeight: 600,
-                }}>
-                  Next step: Add newsletter@golden-horizons.org to your contacts
+                <span className="nl-proof-text">
+                  <strong>📘 Free Retirement Abroad Guide</strong> — included when you join
+                </span>
+              </div>
+
+              {/* Headline */}
+              <h2 className="nl-headline">
+                Your best years<br />
+                <em>are still ahead.</em>
+              </h2>
+
+              <p className="nl-subhead">
+                Real destinations. Real costs. One short email a day —
+                and instant access to the Free Retirement Abroad Guide.
+              </p>
+
+              {/* 3 benefit cards */}
+              <div className="nl-benefits">
+                <div className="nl-benefit">
+                  <span className="nl-benefit-icon">💰</span>
+                  <span className="nl-benefit-title">Real cost breakdowns</span>
+                  <span className="nl-benefit-desc">$1,500–$3,000/mo destinations backed by expat data</span>
+                </div>
+                <div className="nl-benefit">
+                  <span className="nl-benefit-icon">🏥</span>
+                  <span className="nl-benefit-title">Healthcare guides</span>
+                  <span className="nl-benefit-desc">Which countries give Americans world-class care for less</span>
+                </div>
+                <div className="nl-benefit">
+                  <span className="nl-benefit-icon">✈️</span>
+                  <span className="nl-benefit-title">Visa made simple</span>
+                  <span className="nl-benefit-desc">Step-by-step for the easiest retirement visas available</span>
                 </div>
               </div>
-            ) : (
-              <>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4 leading-tight">
-                  What if your best years are still ahead?
-                </h2>
-                <p className="text-white/70 mb-8 leading-relaxed" style={{ fontSize: "18px" }}>
-                  Get simple ideas each day about places where your retirement could feel easier, more affordable, and more enjoyable.
-                </p>
 
-                <form onSubmit={handleSubmit} className="w-full">
+              {/* Email form */}
+              <form className="nl-form" onSubmit={handleSubmit}>
+                <div style={{ display: "flex", gap: 10 }}>
+                  <input
+                    type="text"
+                    className="nl-input"
+                    placeholder="First name"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    required
+                    style={{ flex: 1, minWidth: 0 }}
+                  />
+                  <input
+                    type="text"
+                    className="nl-input"
+                    placeholder="Last name"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    required
+                    style={{ flex: 1, minWidth: 0 }}
+                  />
+                </div>
+                <input
+                  type="email"
+                  className="nl-input"
+                  placeholder="Your email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button type="submit" className="nl-btn">
+                  Get the Free Guide →
+                </button>
+              </form>
 
-                  {/* ── NAME FIELDS ── */}
-                  <div className="flex flex-col gap-3 mb-3">
-                    <input
-                      type="text"
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
-                      placeholder="First Name"
-                      className="w-full px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
-                      style={{ fontSize: "15px", paddingTop: "12px", paddingBottom: "12px" }}
-                      disabled={status === "loading"}
-                    />
-                    <input
-                      type="text"
-                      value={lastName}
-                      onChange={(e) => setLastName(e.target.value)}
-                      placeholder="Last Name"
-                      className="w-full px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
-                      style={{ fontSize: "15px", paddingTop: "12px", paddingBottom: "12px" }}
-                      disabled={status === "loading"}
-                    />
-                  </div>
-
-                  {/* ── EMAIL + SUBMIT ── */}
-                  <div className="flex flex-col gap-3">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Your Email Address"
-                      className="w-full px-5 bg-white/10 border border-white/20 rounded text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
-                      style={{ fontSize: "17px", paddingTop: "14px", paddingBottom: "14px" }}
-                      required
-                      disabled={status === "loading"}
-                    />
-                    <button
-                      type="submit"
-                      disabled={status === "loading"}
-                      className="w-full px-8 bg-white text-foreground font-semibold tracking-wide rounded hover:bg-white/90 transition-colors disabled:opacity-70"
-                      style={{ fontSize: "15px", paddingTop: "14px", paddingBottom: "14px" }}
-                    >
-                      {status === "loading" ? "Subscribing..." : "Send me new ideas →"}
-                    </button>
-                  </div>
-
-                  {status === "error" && (
-                    <p className="text-red-400 mt-3" style={{ fontSize: "16px" }}>
-                      Something went wrong. Please try again.
-                    </p>
-                  )}
-                  <p className="text-white/40 mt-4" style={{ fontSize: "15px" }}>
-                    One short email. No pressure. Just ideas worth considering.
-                  </p>
-                </form>
-              </>
-            )}
-
-          </div>
-
+              {/* Trust signals */}
+              <div className="nl-trust">
+                <span className="nl-trust-item">Instant access</span>
+                <span className="nl-trust-dot" />
+                <span className="nl-trust-item">No spam, ever</span>
+                <span className="nl-trust-dot" />
+                <span className="nl-trust-item">Unsubscribe anytime</span>
+                <span className="nl-trust-dot" />
+                <span className="nl-trust-item">100% free</span>
+              </div>
+            </>
+          )}
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
