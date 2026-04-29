@@ -266,7 +266,7 @@ export default function Newsletter() {
         }
       `}</style>
 
-      <section className="nl-section">
+      <section className="nl-section" id="subscribe">
         <div className="nl-inner">
           {submitted ? (
             <div className="nl-success">
