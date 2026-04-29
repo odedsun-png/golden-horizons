@@ -18,7 +18,7 @@ export default function Footer() {
             <Link href="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
             <span className="text-white/30">|</span>
             <a
-              href="https://app.brevo.com/contact/unsubscribe?email={{ contact.EMAIL }}"
+              href="https://app.brevo.com/contact/unsubscribe"
               className="hover:text-white/80 transition-colors"
             >
               Unsubscribe
@@ -42,7 +42,6 @@ export default function Footer() {
               <text x="49" y="37" fontFamily="Georgia, 'Times New Roman', serif" fontSize="6.5" letterSpacing="2" fill="#8B7355" textAnchor="start">YOUR GUIDE TO RETIREMENT ABROAD</text>
             </svg>
           </Link>
-          <p className="text-[11px] sm:text-xs text-white/40">Fair Lawn, NJ 07410, USA</p>
           <p className="text-[11px] sm:text-xs text-white/40">© 2026 Golden Horizons — All rights reserved</p>
         </div>
       </div>
