@@ -6,11 +6,35 @@ export default function Newsletter() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email) return;
-    setSubmitted(true);
+
+    setLoading(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, firstName, lastName }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setError(data.error || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Connection error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -147,9 +171,24 @@ export default function Newsletter() {
           transition: background 0.2s, transform 0.15s;
         }
 
-        .nl-btn:hover {
+        .nl-btn:hover:not(:disabled) {
           background: #e8c980;
           transform: translateY(-1px);
+        }
+
+        .nl-btn:disabled {
+          opacity: 0.7;
+          cursor: not-allowed;
+        }
+
+        .nl-error {
+          font-size: 13px;
+          color: #ff7b7b;
+          margin: 0;
+          padding: 8px 12px;
+          background: rgba(255,80,80,0.1);
+          border-radius: 6px;
+          border: 1px solid rgba(255,80,80,0.2);
         }
 
         .nl-trust {
@@ -247,7 +286,7 @@ export default function Newsletter() {
             {submitted ? (
               <div className="nl-success">
                 <div className="nl-success-icon">✓</div>
-                <h3 className="nl-success-title">You're in.</h3>
+                <h3 className="nl-success-title">You&apos;re in.</h3>
                 <p className="nl-success-sub">
                   Check your inbox — your free guide is on its way.
                 </p>
@@ -285,8 +324,14 @@ export default function Newsletter() {
                     required
                   />
 
-                  <button type="submit" className="nl-btn">
-                    Get My Free Guide →
+                  {error && <p className="nl-error">{error}</p>}
+
+                  <button
+                    type="submit"
+                    className="nl-btn"
+                    disabled={loading}
+                  >
+                    {loading ? "Subscribing…" : "Get My Free Guide →"}
                   </button>
                 </form>
 
