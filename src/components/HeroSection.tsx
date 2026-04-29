@@ -56,7 +56,7 @@ export default function HeroSection() {
         .gh-hero {
           position: relative;
           width: 100%;
-          min-height: 100vh;
+          min-height: 70vh;
           background: #1a1d21;
           font-family: 'Inter', sans-serif;
           display: flex;
@@ -113,7 +113,7 @@ export default function HeroSection() {
           flex-direction: column;
           align-items: center;
           text-align: center;
-          padding: 40px 80px 60px;
+          padding: 28px 80px 40px;
           flex: 1;
         }
 
@@ -142,9 +142,9 @@ export default function HeroSection() {
         .gh-slides-text {
           position: relative;
           width: 100%;
-          height: 340px;   /* tall enough for slogan + support + trigger */
+          height: 220px;
           flex-shrink: 0;
-          margin-bottom: 32px;
+          margin-bottom: 24px;
         }
         .gh-slide-text {
           position: absolute;
@@ -160,16 +160,16 @@ export default function HeroSection() {
 
         .gh-slogan {
           font-family: 'Playfair Display', serif;
-          font-size: 58px; font-weight: 700; color: #fff;
+          font-size: 44px; font-weight: 700; color: #fff;
           line-height: 1.15; letter-spacing: -0.02em;
-          margin: 0 0 20px; max-width: 900px;
+          margin: 0 0 14px; max-width: 900px;
         }
         .gh-support {
-          font-size: 20px; font-weight: 300; color: rgba(255,255,255,0.70);
-          line-height: 1.70; max-width: 650px; margin: 0 auto 10px;
+          font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.70);
+          line-height: 1.60; max-width: 620px; margin: 0 auto 8px;
         }
         .gh-trigger {
-          font-size: 16px; font-style: italic;
+          font-size: 14px; font-style: italic;
           color: #dcb770; margin: 0; opacity: 0.92;
         }
 
