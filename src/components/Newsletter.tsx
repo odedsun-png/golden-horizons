@@ -79,7 +79,7 @@ export default function Newsletter() {
 
         .nl-proof-text {
           font-size: 13px;
-          color: rgba(255,255,255,0.60);
+          color: rgba(255,255,255,0.70);
           letter-spacing: 0.01em;
         }
 
@@ -108,7 +108,7 @@ export default function Newsletter() {
         .nl-subhead {
           font-size: 17px;
           font-weight: 300;
-          color: rgba(255,255,255,0.65);
+          color: rgba(255,255,255,0.70);
           text-align: center;
           line-height: 1.65;
           margin: 0 0 36px;
@@ -149,7 +149,7 @@ export default function Newsletter() {
 
         .nl-benefit-desc {
           font-size: 11px;
-          color: rgba(255,255,255,0.55);
+          color: rgba(255,255,255,0.70);
           line-height: 1.5;
         }
 
@@ -214,7 +214,7 @@ export default function Newsletter() {
           align-items: center;
           gap: 5px;
           font-size: 11px;
-          color: rgba(255,255,255,0.35);
+          color: rgba(255,255,255,0.70);
           letter-spacing: 0.02em;
         }
 
