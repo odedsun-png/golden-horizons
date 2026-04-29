@@ -13,13 +13,12 @@ function shuffleArray<T>(array: T[]): T[] {
 export default async function FeaturedStories() {
   const all = getArticleCards(100);
   if (all.length === 0) return null;
-
   const articles = shuffleArray(all).slice(0, 4);
   const mainArticle = articles[0];
   const sideArticles = articles.slice(1, 4);
 
   return (
-    <section className="py-16 md:py-20">
+    <section className="pt-16 md:pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-foreground/70 mb-3">
