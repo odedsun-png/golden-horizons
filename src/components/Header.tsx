@@ -23,67 +23,53 @@ export default function Header() {
           alignItems: "center",
         }}
       >
-        {/* LEFT SIDE: Logo + CTA */}
-        <div
+        {/* ✅ ORIGINAL LOGO (unchanged) */}
+        <Link
+          href="/"
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "18px",
+            gap: "10px",
+            textDecoration: "none",
+            color: "#fff",
           }}
         >
-          {/* Logo */}
-          <Link
-            href="/"
+          <div
             style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-              textDecoration: "none",
-              color: "#fff",
+              width: "32px",
+              height: "32px",
+              borderRadius: "50%",
+              border: "2px solid #dcb770",
             }}
-          >
+          />
+
+          <div style={{ lineHeight: 1 }}>
             <div
               style={{
-                width: "32px",
-                height: "32px",
-                borderRadius: "50%",
-                border: "2px solid #dcb770",
+                fontSize: "14px",
+                fontWeight: 700,
+                letterSpacing: "0.06em",
               }}
-            />
-
-            <div style={{ lineHeight: 1 }}>
-              <div
-                style={{
-                  fontSize: "14px",
-                  fontWeight: 700,
-                  letterSpacing: "0.06em",
-                }}
-              >
-                GOLDEN HORIZONS
-              </div>
-
-              <div
-                style={{
-                  fontSize: "10px",
-                  color: "rgba(255,255,255,0.5)",
-                }}
-              >
-                Retirement Abroad
-              </div>
+            >
+              GOLDEN HORIZONS
             </div>
-          </Link>
 
-          {/* 👉 D moved here (D1) */}
-          <a href="#subscribe" style={ctaStyle}>
-            Get Free Guide
-          </a>
-        </div>
+            <div
+              style={{
+                fontSize: "10px",
+                color: "rgba(255,255,255,0.5)",
+              }}
+            >
+              Retirement Abroad
+            </div>
+          </div>
+        </Link>
 
-        {/* RIGHT SIDE: Navigation ONLY */}
+        {/* ✅ RIGHT SIDE NAV */}
         <nav
           style={{
             display: "flex",
-            gap: "24px",
+            gap: "20px",
             alignItems: "center",
           }}
         >
@@ -94,6 +80,11 @@ export default function Header() {
           <Link href="/destinations" style={linkStyle}>
             Destinations
           </Link>
+
+          {/* ✅ CTA (correct position + correct behavior) */}
+          <a href="#subscribe" style={ctaStyle}>
+            Get Free Guide
+          </a>
         </nav>
       </div>
     </header>
