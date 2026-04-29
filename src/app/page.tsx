@@ -15,8 +15,10 @@ export default function Home() {
         <HeroSection />
         <FeaturedStories />
         <RecentStories />
-        <WorldMap />
+
         <Newsletter />
+
+        <WorldMap />
       </main>
 
       <Footer />
