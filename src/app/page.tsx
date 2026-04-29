@@ -10,13 +10,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+
       <main>
         <HeroSection />
         <FeaturedStories />
-        <Newsletter />
         <RecentStories />
         <WorldMap />
+        <Newsletter />
       </main>
+
       <Footer />
     </div>
   );
