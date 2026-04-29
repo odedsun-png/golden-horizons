@@ -34,7 +34,7 @@ export async function generateMetadata({
       : dataArticle?.category) ??
     "Retirement Abroad";
   const date = mdArticle?.date ?? new Date().toISOString().split("T")[0];
-  const canonical = `${SITE_URL}/article/${slug}`;
+  const canonical = `${SITE_URL}/articles/${slug}`;  // ✅ FIXED: /article/ → /articles/
 
   return {
     title,                          // template in layout.tsx appends "| Golden Horizons"
@@ -83,7 +83,7 @@ function ArticleSchema({
     "@type": "Article",
     headline: title,
     description,
-    url: `${SITE_URL}/article/${slug}`,
+    url: `${SITE_URL}/articles/${slug}`,  // ✅ FIXED: /article/ → /articles/
     image: heroImage,
     datePublished: date,
     dateModified: date,
@@ -102,7 +102,7 @@ function ArticleSchema({
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/article/${slug}`,
+      "@id": `${SITE_URL}/articles/${slug}`,  // ✅ FIXED: /article/ → /articles/
     },
   };
   return (
@@ -113,7 +113,7 @@ function ArticleSchema({
   );
 }
 
-// ─── Everything below is UNCHANGED from your original ────────────────────────
+// ─── Everything below is UNCHANGED ────────────────────────────────────────────
 
 export function generateStaticParams() {
   const mdSlugs = getAllMarkdownSlugs().map((slug) => ({ slug }));
