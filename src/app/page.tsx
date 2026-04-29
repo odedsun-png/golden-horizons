@@ -4,6 +4,7 @@ import FeaturedStories from "@/components/FeaturedStories";
 import Newsletter from "@/components/Newsletter";
 import RecentStories from "@/components/RecentStories";
 import HeroSection from "@/components/HeroSection";
+import WorldMap from "@/components/WorldMap";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <FeaturedStories />
         <Newsletter />
         <RecentStories />
+        <WorldMap />
       </main>
       <Footer />
     </div>
