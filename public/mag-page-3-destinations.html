@@ -7,131 +7,684 @@
 <meta name="description" content="The 2026 Destination Report — the best places in the world for American retirees. Real costs, real life, ranked by our editors.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
 *{box-sizing:border-box;margin:0;padding:0;}
-body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;font-size:20px;line-height:1.8;-webkit-font-smoothing:antialiased;}
-.site{max-width:980px;margin:0 auto;background:#faf5e9;border:1px solid #d4b896;}
+
+body{
+  background:#e8e0d0;
+  font-family:'EB Garamond',Georgia,serif;
+  color:#1a0f00;
+  font-size:20px;
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+
+.site{
+  max-width:980px;
+  margin:0 auto;
+  background:#faf5e9;
+  border:1px solid #d4b896;
+}
 
 /* ── CHROME ── */
-.topbar{background:#1e1408;padding:7px 36px;display:flex;justify-content:space-between;align-items:center;}
-.topbar span{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#c9a84c;font-family:'EB Garamond',serif;}
-.masthead{padding:24px 36px 18px;text-align:center;border-bottom:3px double #1e1408;background:#faf5e9;}
-.dateline{display:flex;justify-content:space-between;font-size:11px;color:#8b6914;border-bottom:1px solid #c9a84c;padding-bottom:10px;margin-bottom:13px;font-family:'EB Garamond',serif;}
-.mastname{font-family:'Playfair Display',serif;font-size:66px;font-weight:900;color:#1e1408;line-height:1;letter-spacing:-2.5px;text-decoration:none;display:block;}
-.issue-line{display:flex;justify-content:center;gap:28px;margin-top:10px;flex-wrap:wrap;}
-.issue-tag{font-size:12px;font-style:italic;color:#8b6914;font-family:'EB Garamond',serif;}
-.issue-tag strong{font-style:normal;color:#1e1408;font-weight:500;}
-.nav{display:flex;justify-content:center;border-bottom:2px solid #1e1408;background:#faf5e9;overflow-x:auto;}
-.nav a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1e1408;text-decoration:none;padding:10px 26px;border-right:1px solid #c9a84c;white-space:nowrap;flex-shrink:0;transition:background .15s;font-family:'EB Garamond',serif;}
+.topbar{
+  background:#1e1408;
+  padding:7px 36px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.topbar span{
+  font-size:10px;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  color:#c9a84c;
+  font-family:'EB Garamond',serif;
+}
+
+.masthead{
+  padding:24px 36px 18px;
+  text-align:center;
+  border-bottom:3px double #1e1408;
+  background:#faf5e9;
+}
+
+.dateline{
+  display:flex;
+  justify-content:space-between;
+  font-size:11px;
+  color:#8b6914;
+  border-bottom:1px solid #c9a84c;
+  padding-bottom:10px;
+  margin-bottom:13px;
+  font-family:'EB Garamond',serif;
+}
+
+.mastname{
+  font-family:'Playfair Display',serif;
+  font-size:66px;
+  font-weight:900;
+  color:#1e1408;
+  line-height:1;
+  letter-spacing:-2.5px;
+  text-decoration:none;
+  display:block;
+}
+
+.issue-line{
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  margin-top:10px;
+  flex-wrap:wrap;
+}
+
+.issue-tag{
+  font-size:12px;
+  font-style:italic;
+  color:#8b6914;
+  font-family:'EB Garamond',serif;
+}
+
+.issue-tag strong{
+  font-style:normal;
+  color:#1e1408;
+  font-weight:500;
+}
+
+.nav{
+  display:flex;
+  justify-content:center;
+  border-bottom:2px solid #1e1408;
+  background:#faf5e9;
+  overflow-x:auto;
+}
+
+.nav a{
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#1e1408;
+  text-decoration:none;
+  padding:10px 26px;
+  border-right:1px solid #c9a84c;
+  white-space:nowrap;
+  flex-shrink:0;
+  transition:background .15s;
+  font-family:'EB Garamond',serif;
+}
+
 .nav a:last-child{border-right:none;}
 .nav a:hover{background:#f0e8d5;}
 .nav a.active{background:#1e1408;color:#c9a84c;}
-.section-banner{background:#1e1408;padding:6px 36px;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#c9a84c;font-family:'EB Garamond',serif;}
-.ornament{text-align:center;font-size:14px;color:#c9a84c;letter-spacing:8px;padding:16px 0;border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;margin:0 36px;}
-.footer{background:#1e1408;padding:28px 36px;text-align:center;border-top:3px double #c9a84c;}
-.footer-name{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#faf5e9;margin-bottom:8px;}
-.footer p{font-size:13px;color:#c9a84c;margin-bottom:8px;font-family:'EB Garamond',serif;}
-.footer-links{font-size:13px;color:#c9a84c;font-family:'EB Garamond',serif;}
-.footer-links a{color:#c9a84c;text-decoration:none;}
+
+.section-banner{
+  background:#1e1408;
+  padding:6px 36px;
+  font-size:9px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#c9a84c;
+  font-family:'EB Garamond',serif;
+}
+
+.ornament{
+  text-align:center;
+  font-size:14px;
+  color:#c9a84c;
+  letter-spacing:8px;
+  padding:16px 0;
+  border-top:1px solid #c9a84c;
+  border-bottom:1px solid #c9a84c;
+  margin:0 36px;
+}
+
+.footer{
+  background:#1e1408;
+  padding:28px 36px;
+  text-align:center;
+  border-top:3px double #c9a84c;
+}
+
+.footer-name{
+  font-family:'Playfair Display',serif;
+  font-size:28px;
+  font-weight:700;
+  color:#faf5e9;
+  margin-bottom:8px;
+}
+
+.footer p{
+  font-size:13px;
+  color:#c9a84c;
+  margin-bottom:8px;
+  font-family:'EB Garamond',serif;
+}
+
+.footer-links{
+  font-size:13px;
+  color:#c9a84c;
+  font-family:'EB Garamond',serif;
+}
+
+.footer-links a{
+  color:#c9a84c;
+  text-decoration:none;
+}
+
 .footer-links a:hover{text-decoration:underline;}
 .footer-links span{opacity:.35;margin:0 8px;}
 
 /* ── CINEMATIC HERO ── */
-.cine-hero{position:relative;height:420px;overflow:hidden;background:#1e1408;line-height:0;}
-.cine-img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;filter:contrast(1.08) saturate(1.15) brightness(.58) sepia(.14);}
-.cine-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(30,20,8,.04) 0%,rgba(30,20,8,.22) 40%,rgba(30,20,8,.9) 100%);}
-.cine-content{position:absolute;bottom:0;left:0;right:0;padding:0 44px 38px;}
-.cine-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#c9a84c;margin-bottom:13px;font-family:'EB Garamond',serif;}
-.cine-headline{font-family:'Playfair Display',serif;font-size:50px;font-weight:900;line-height:1.08;color:#faf5e9;letter-spacing:-1px;margin-bottom:12px;max-width:660px;}
-.cine-headline em{font-style:italic;color:#c9a84c;}
-.cine-sub{font-size:19px;font-style:italic;color:#d4c4a0;max-width:500px;line-height:1.5;font-family:'EB Garamond',serif;}
-.hero-caption{background:#1e1408;padding:9px 36px;}
-.hero-caption p{font-size:12px;font-style:italic;color:#c9a84c;line-height:1.55;margin:0;font-family:'EB Garamond',serif;}
+.cine-hero{
+  position:relative;
+  height:420px;
+  overflow:hidden;
+  background:#1e1408;
+  line-height:0;
+}
+
+.cine-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 40%;
+  display:block;
+  filter:contrast(1.08) saturate(1.15) brightness(.58) sepia(.14);
+}
+
+.cine-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom,rgba(30,20,8,.04) 0%,rgba(30,20,8,.22) 40%,rgba(30,20,8,.9) 100%);
+}
+
+.cine-content{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:0 44px 38px;
+}
+
+.cine-eyebrow{
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#c9a84c;
+  margin-bottom:13px;
+  font-family:'EB Garamond',serif;
+}
+
+.cine-headline{
+  font-family:'Playfair Display',serif;
+  font-size:50px;
+  font-weight:900;
+  line-height:1.08;
+  color:#faf5e9;
+  letter-spacing:-1px;
+  margin-bottom:12px;
+  max-width:660px;
+}
+
+.cine-headline em{
+  font-style:italic;
+  color:#c9a84c;
+}
+
+.cine-sub{
+  font-size:19px;
+  font-style:italic;
+  color:#d4c4a0;
+  max-width:500px;
+  line-height:1.5;
+  font-family:'EB Garamond',serif;
+}
+
+.hero-caption{
+  background:#1e1408;
+  padding:9px 36px;
+}
+
+.hero-caption p{
+  font-size:12px;
+  font-style:italic;
+  color:#c9a84c;
+  line-height:1.55;
+  margin:0;
+  font-family:'EB Garamond',serif;
+}
 
 /* ── INTRO ── */
-.intro{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding:38px 36px 34px;border-bottom:2px solid #1e1408;}
-.intro-kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#8b6914;margin-bottom:14px;font-family:'EB Garamond',serif;}
-.intro-quote{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;font-style:italic;color:#1e1408;line-height:1.45;border-left:3px solid #c9a84c;padding-left:20px;}
-.intro-body{font-size:19px;line-height:1.85;color:#2b1a00;font-family:'EB Garamond',serif;}
-.intro-body strong{color:#1e1408;font-weight:500;}
+.intro{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:44px;
+  padding:38px 36px 34px;
+  border-bottom:2px solid #1e1408;
+}
+
+.intro-kicker{
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#8b6914;
+  margin-bottom:14px;
+  font-family:'EB Garamond',serif;
+}
+
+.intro-quote{
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  font-weight:400;
+  font-style:italic;
+  color:#1e1408;
+  line-height:1.45;
+  border-left:3px solid #c9a84c;
+  padding-left:20px;
+}
+
+.intro-body{
+  font-size:19px;
+  line-height:1.85;
+  color:#2b1a00;
+  font-family:'EB Garamond',serif;
+}
+
+.intro-body strong{
+  color:#1e1408;
+  font-weight:500;
+}
 
 /* ── SECTION LABEL ── */
-.section-label{padding:26px 36px 6px;background:#faf5e9;border-top:1px solid #c9a84c;}
-.sl-kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#8b6914;margin-bottom:6px;font-family:'EB Garamond',serif;}
-.sl-title{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:#1e1408;letter-spacing:-.5px;}
+.section-label{
+  padding:26px 36px 6px;
+  background:#faf5e9;
+  border-top:1px solid #c9a84c;
+}
 
-/* ── DESTINATION CARDS ── */
-.dest-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2px;padding:16px 36px 38px;background-color:#c9a84c;}
-.dest-card{position:relative;overflow:hidden;cursor:pointer;background:#1e1408;text-decoration:none;display:block;}
-.dest-card.tall{grid-row:span 2;}
-.dc-img{width:100%;height:100%;min-height:220px;object-fit:cover;display:block;filter:contrast(1.08) saturate(1.1) brightness(.5) sepia(.1);transition:filter .5s ease,transform .5s ease;}
-.dest-card.tall .dc-img{min-height:460px;}
-.dest-card:hover .dc-img{filter:contrast(1.08) saturate(1.25) brightness(.72) sepia(.06);transform:scale(1.03);}
-.dc-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(30,20,8,.96) 0%,rgba(30,20,8,.45) 45%,rgba(30,20,8,.05) 100%);transition:background .4s;}
-.dest-card:hover .dc-overlay{background:linear-gradient(to top,rgba(30,20,8,.88) 0%,rgba(30,20,8,.25) 55%,rgba(30,20,8,0) 100%);}
-.dc-body{position:absolute;bottom:0;left:0;right:0;padding:18px 20px;}
-.dc-rank{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#c9a84c;margin-bottom:4px;font-family:'EB Garamond',serif;}
-.dc-name{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#faf5e9;line-height:1.1;margin-bottom:3px;}
-.dest-card:not(.tall) .dc-name{font-size:18px;}
-.dc-feeling{font-size:14px;font-style:italic;color:#c9a84c;line-height:1.4;margin-bottom:6px;max-width:340px;font-family:'EB Garamond',serif;}
-.dest-card:not(.tall) .dc-feeling{font-size:12px;}
-.dc-cost{font-size:13px;color:#d4c4a0;margin-bottom:8px;font-family:'EB Garamond',serif;}
-.dc-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px;opacity:0;transform:translateY(4px);transition:opacity .3s,transform .3s;}
-.dest-card:hover .dc-tags{opacity:1;transform:translateY(0);}
-.dc-tag{font-size:10px;padding:2px 8px;border:1px solid rgba(201,168,76,.5);color:#c9a84c;font-family:'EB Garamond',serif;}
-.dc-cta{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a84c;border-bottom:1px solid rgba(201,168,76,.5);display:inline-block;padding-bottom:2px;opacity:0;transition:opacity .3s;font-family:'EB Garamond',serif;text-decoration:none;}
-.dest-card:hover .dc-cta{opacity:1;}
+.sl-kicker{
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#8b6914;
+  margin-bottom:6px;
+  font-family:'EB Garamond',serif;
+}
+
+.sl-title{
+  font-family:'Playfair Display',serif;
+  font-size:30px;
+  font-weight:700;
+  color:#1e1408;
+  letter-spacing:-.5px;
+}
+
+/* ── FIXED DESTINATION CARDS ── */
+.dest-grid{
+  display:grid;
+  grid-template-columns:1.45fr 1fr 1fr;
+  gap:2px;
+  padding:16px 36px 38px;
+  background:#c9a84c;
+  max-width:100%;
+  overflow:hidden;
+}
+
+.dest-card{
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+  background:#1e1408;
+  text-decoration:none;
+  display:block;
+  min-height:230px;
+  color:inherit;
+}
+
+.dest-card.tall{
+  grid-row:span 2;
+  min-height:462px;
+}
+
+.dc-img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:contrast(1.08) saturate(1.1) brightness(.5) sepia(.1);
+  transition:filter .5s ease,transform .5s ease;
+}
+
+.dest-card:hover .dc-img{
+  filter:contrast(1.08) saturate(1.25) brightness(.72) sepia(.06);
+  transform:scale(1.03);
+}
+
+.dc-overlay{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(to top,rgba(30,20,8,.96) 0%,rgba(30,20,8,.55) 48%,rgba(30,20,8,.08) 100%);
+  transition:background .4s;
+}
+
+.dest-card:hover .dc-overlay{
+  background:linear-gradient(to top,rgba(30,20,8,.9) 0%,rgba(30,20,8,.35) 55%,rgba(30,20,8,0) 100%);
+}
+
+.dc-body{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:2;
+  padding:18px 20px 20px;
+}
+
+.dc-rank{
+  font-size:10px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#c9a84c;
+  margin-bottom:5px;
+  font-family:'EB Garamond',serif;
+}
+
+.dc-name{
+  font-family:'Playfair Display',serif;
+  font-size:24px;
+  font-weight:700;
+  color:#faf5e9;
+  line-height:1.08;
+  margin-bottom:5px;
+}
+
+.dest-card:not(.tall) .dc-name{
+  font-size:18px;
+}
+
+.dc-feeling{
+  font-size:14px;
+  font-style:italic;
+  color:#c9a84c;
+  line-height:1.35;
+  margin-bottom:7px;
+  max-width:340px;
+  font-family:'EB Garamond',serif;
+}
+
+.dest-card:not(.tall) .dc-feeling{
+  font-size:12px;
+}
+
+.dc-cost{
+  font-size:13px;
+  color:#d4c4a0;
+  margin-bottom:9px;
+  font-family:'EB Garamond',serif;
+}
+
+.dc-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px;
+  margin-bottom:10px;
+  opacity:0;
+  transform:translateY(4px);
+  transition:opacity .3s,transform .3s;
+}
+
+.dest-card:hover .dc-tags{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.dc-tag{
+  font-size:10px;
+  padding:2px 8px;
+  border:1px solid rgba(201,168,76,.5);
+  color:#c9a84c;
+  font-family:'EB Garamond',serif;
+}
+
+.dc-cta{
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#c9a84c;
+  border-bottom:1px solid rgba(201,168,76,.5);
+  display:inline-block;
+  padding-bottom:2px;
+  opacity:0;
+  transition:opacity .3s;
+  font-family:'EB Garamond',serif;
+}
+
+.dest-card:hover .dc-cta{
+  opacity:1;
+}
 
 /* ── PULL QUOTE ── */
-.pullquote{background:#f0e8d5;border-top:3px double #1e1408;border-bottom:3px double #1e1408;padding:44px 40px;text-align:center;}
-.pq-ornament{font-size:14px;color:#c9a84c;letter-spacing:8px;margin-bottom:24px;display:block;}
-.pq-text{font-family:'Playfair Display',serif;font-size:32px;font-weight:400;font-style:italic;color:#1e1408;line-height:1.45;max-width:680px;margin:0 auto 18px;}
+.pullquote{
+  background:#f0e8d5;
+  border-top:3px double #1e1408;
+  border-bottom:3px double #1e1408;
+  padding:44px 40px;
+  text-align:center;
+}
+
+.pq-ornament{
+  font-size:14px;
+  color:#c9a84c;
+  letter-spacing:8px;
+  margin-bottom:24px;
+  display:block;
+}
+
+.pq-text{
+  font-family:'Playfair Display',serif;
+  font-size:32px;
+  font-weight:400;
+  font-style:italic;
+  color:#1e1408;
+  line-height:1.45;
+  max-width:680px;
+  margin:0 auto 18px;
+}
+
 .pq-text em{color:#8b6914;}
-.pq-attr{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8b6914;font-family:'EB Garamond',serif;}
+
+.pq-attr{
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#8b6914;
+  font-family:'EB Garamond',serif;
+}
 
 /* ── MORE DESTINATIONS ── */
-.more-section{padding:32px 36px 38px;}
-.more-kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#8b6914;margin-bottom:16px;font-family:'EB Garamond',serif;}
-.more-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#c9a84c;border:1px solid #c9a84c;}
-.more-card{background:#faf5e9;padding:18px 16px;text-decoration:none;display:block;transition:background .2s;}
+.more-section{
+  padding:32px 36px 38px;
+}
+
+.more-kicker{
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#8b6914;
+  margin-bottom:16px;
+  font-family:'EB Garamond',serif;
+}
+
+.more-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:#c9a84c;
+  border:1px solid #c9a84c;
+}
+
+.more-card{
+  background:#faf5e9;
+  padding:18px 16px;
+  text-decoration:none;
+  display:block;
+  transition:background .2s;
+}
+
 .more-card:hover{background:#f0e8d5;}
-.mc-flag{font-size:22px;display:block;margin-bottom:6px;}
-.mc-name{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#1a0f00;margin-bottom:3px;}
-.mc-tagline{font-size:13px;font-style:italic;color:#7a5c1e;line-height:1.4;margin-bottom:6px;font-family:'EB Garamond',serif;}
-.mc-cost{font-size:13px;color:#8b6914;font-family:'EB Garamond',serif;}
+
+.mc-flag{
+  font-size:22px;
+  display:block;
+  margin-bottom:6px;
+}
+
+.mc-name{
+  font-family:'Playfair Display',serif;
+  font-size:17px;
+  font-weight:700;
+  color:#1a0f00;
+  margin-bottom:3px;
+}
+
+.mc-tagline{
+  font-size:13px;
+  font-style:italic;
+  color:#7a5c1e;
+  line-height:1.4;
+  margin-bottom:6px;
+  font-family:'EB Garamond',serif;
+}
+
+.mc-cost{
+  font-size:13px;
+  color:#8b6914;
+  font-family:'EB Garamond',serif;
+}
 
 /* ── SUBSCRIBE CTA ── */
-.sub-section{background:#1e1408;padding:54px 36px;text-align:center;border-top:3px double #c9a84c;}
-.sub-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#c9a84c;margin-bottom:14px;font-family:'EB Garamond',serif;}
-.sub-headline{font-family:'Playfair Display',serif;font-size:38px;font-weight:700;color:#faf5e9;line-height:1.2;margin-bottom:12px;}
-.sub-body{font-size:18px;font-style:italic;color:#b8a880;max-width:500px;margin:0 auto 28px;line-height:1.75;font-family:'EB Garamond',serif;}
-.sub-btn{display:block;max-width:400px;margin:0 auto 14px;background:#8b6914;color:#faf5e9;padding:18px 40px;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;border:2px solid #c9a84c;text-decoration:none;text-align:center;transition:background .15s;}
-.sub-btn:hover{background:#c9a84c;color:#1e1408;}
-.sub-trust{font-size:13px;color:#5a4010;font-style:italic;font-family:'EB Garamond',serif;}
+.sub-section{
+  background:#1e1408;
+  padding:54px 36px;
+  text-align:center;
+  border-top:3px double #c9a84c;
+}
 
+.sub-eyebrow{
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#c9a84c;
+  margin-bottom:14px;
+  font-family:'EB Garamond',serif;
+}
+
+.sub-headline{
+  font-family:'Playfair Display',serif;
+  font-size:38px;
+  font-weight:700;
+  color:#faf5e9;
+  line-height:1.2;
+  margin-bottom:12px;
+}
+
+.sub-body{
+  font-size:18px;
+  font-style:italic;
+  color:#b8a880;
+  max-width:500px;
+  margin:0 auto 28px;
+  line-height:1.75;
+  font-family:'EB Garamond',serif;
+}
+
+.sub-btn{
+  display:block;
+  max-width:400px;
+  margin:0 auto 14px;
+  background:#8b6914;
+  color:#faf5e9;
+  padding:18px 40px;
+  font-family:'Playfair Display',serif;
+  font-size:17px;
+  font-weight:700;
+  border:2px solid #c9a84c;
+  text-decoration:none;
+  text-align:center;
+  transition:background .15s;
+}
+
+.sub-btn:hover{
+  background:#c9a84c;
+  color:#1e1408;
+}
+
+.sub-trust{
+  font-size:13px;
+  color:#5a4010;
+  font-style:italic;
+  font-family:'EB Garamond',serif;
+}
+
+/* ── MOBILE ── */
 @media(max-width:768px){
   .topbar{padding:6px 16px;}
   .topbar .hide-mob,.dateline .hide-mob{display:none;}
+
   .masthead{padding:16px 16px 14px;}
   .mastname{font-size:38px;letter-spacing:-1px;}
+
   .nav{justify-content:flex-start;}
   .nav a{padding:8px 14px;font-size:10px;}
+
   .cine-hero{height:320px;}
   .cine-content{padding:0 20px 26px;}
   .cine-headline{font-size:30px;}
-  .intro{grid-template-columns:1fr;gap:22px;padding:24px 16px;}
+
+  .intro{
+    grid-template-columns:1fr;
+    gap:22px;
+    padding:24px 16px;
+  }
+
   .section-label{padding:20px 16px 4px;}
-  .dest-grid{grid-template-columns:1fr;padding:12px 16px 28px;gap:2px;}
-  .dest-card.tall{grid-row:span 1;}
-  .dest-card.tall .dc-img{min-height:260px;}
-  .dc-img{min-height:200px!important;}
-  .dc-tags{opacity:1;transform:translateY(0);}
-  .dc-cta{opacity:1;}
+
+  .dest-grid{
+    grid-template-columns:1fr;
+    padding:12px 16px 28px;
+    gap:2px;
+  }
+
+  .dest-card,
+  .dest-card.tall{
+    min-height:260px;
+    grid-row:auto;
+  }
+
+  .dc-tags{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  .dc-cta{
+    opacity:1;
+  }
+
   .pullquote{padding:28px 16px;}
   .pq-text{font-size:22px;}
+
   .more-section{padding:22px 16px 28px;}
   .more-grid{grid-template-columns:repeat(2,1fr);}
+
   .sub-section{padding:36px 16px;}
   .sub-headline{font-size:26px;}
+
   .ornament{margin:0 16px;}
   .section-banner{padding:5px 16px;}
   .footer{padding:20px 16px;}
@@ -139,6 +692,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
 }
 </style>
 </head>
+
 <body>
 <div class="site">
 
@@ -156,7 +710,9 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
     <span class="hide-mob">For Americans Who Are Ready for What&rsquo;s Next</span>
     <span>April 2026 &nbsp;·&nbsp; Issue 1</span>
   </div>
+
   <a href="https://golden-horizons.org/" class="mastname">Golden Horizons</a>
+
   <div class="issue-line">
     <span class="issue-tag"><strong>This Issue:</strong> Where $2,000/month buys a life worth living</span>
     <span class="issue-tag"><strong>Inside:</strong> The Money Page &nbsp;·&nbsp; The Destination Report &nbsp;·&nbsp; The Health File</span>
@@ -183,6 +739,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
     <p class="cine-sub">Every morning we find them. Every morning we bring them to you.</p>
   </div>
 </div>
+
 <div class="hero-caption">
   <p>Algarve coast, Portugal — where couples retire well on $2,500/month. Warm winters. English spoken. Healthcare included.</p>
 </div>
@@ -195,6 +752,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
       &ldquo;You worked for this. Every single day. Now &mdash; finally &mdash; it&rsquo;s your turn.&rdquo;
     </div>
   </div>
+
   <div class="intro-body">
     These are the places where Americans like you are discovering something unexpected: that <strong>the life they always wanted costs less than the life they settled for.</strong><br><br>
     We rank them honestly. We do the math so you don&rsquo;t have to. Every destination below was chosen because real retirees &mdash; people just like you &mdash; are living there right now, spending less and feeling more alive.
@@ -212,7 +770,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
   <a href="https://golden-horizons.org/articles?category=Best+Cities" class="dest-card tall">
     <img class="dc-img"
       src="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=700"
-      alt="Portugal" style="min-height:463px;">
+      alt="Portugal">
     <div class="dc-overlay"></div>
     <div class="dc-body">
       <div class="dc-rank">#1 Ranked &nbsp;·&nbsp; Editor&rsquo;s Choice &nbsp;·&nbsp; 2026</div>
@@ -225,67 +783,79 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
         <span class="dc-tag">300+ sunny days</span>
         <span class="dc-tag">World-class healthcare</span>
       </div>
-      <a class="dc-cta" href="https://golden-horizons.org/articles?category=Best+Cities">Read Full Profile &rarr;</a>
+      <span class="dc-cta">Read Full Profile &rarr;</span>
     </div>
   </a>
 
   <a href="https://golden-horizons.org/articles?category=Cost" class="dest-card">
     <img class="dc-img"
       src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=500"
-      alt="Mexico" style="min-height:230px;">
+      alt="Mexico">
     <div class="dc-overlay"></div>
     <div class="dc-body">
       <div class="dc-rank">#2 &nbsp;·&nbsp; Mexico</div>
       <div class="dc-name">Mexico</div>
       <div class="dc-feeling">Close enough to visit. Far enough to finally live differently.</div>
       <div class="dc-cost">from $1,160/mo</div>
-      <div class="dc-tags"><span class="dc-tag">Near US</span><span class="dc-tag">Large expat scene</span></div>
-      <a class="dc-cta" href="https://golden-horizons.org/articles?category=Cost">View Profile &rarr;</a>
+      <div class="dc-tags">
+        <span class="dc-tag">Near US</span>
+        <span class="dc-tag">Large expat scene</span>
+      </div>
+      <span class="dc-cta">View Profile &rarr;</span>
     </div>
   </a>
 
   <a href="https://golden-horizons.org/articles?category=Beach" class="dest-card">
     <img class="dc-img"
       src="https://images.pexels.com/photos/32133654/pexels-photo-32133654.jpeg?auto=compress&cs=tinysrgb&w=500"
-      alt="Costa Rica" style="min-height:230px;">
+      alt="Costa Rica">
     <div class="dc-overlay"></div>
     <div class="dc-body">
       <div class="dc-rank">#3 &nbsp;·&nbsp; Costa Rica</div>
       <div class="dc-name">Costa Rica</div>
       <div class="dc-feeling">Pura Vida isn&rsquo;t a slogan. It&rsquo;s the actual pace of life here.</div>
       <div class="dc-cost">from $1,610/mo</div>
-      <div class="dc-tags"><span class="dc-tag">Stable democracy</span><span class="dc-tag">No army</span></div>
-      <a class="dc-cta" href="https://golden-horizons.org/articles?category=Beach">View Profile &rarr;</a>
+      <div class="dc-tags">
+        <span class="dc-tag">Stable democracy</span>
+        <span class="dc-tag">No army</span>
+      </div>
+      <span class="dc-cta">View Profile &rarr;</span>
     </div>
   </a>
 
   <a href="https://golden-horizons.org/articles/panama-healthcare-quality-in-panama-for-expats" class="dest-card">
     <img class="dc-img"
       src="https://images.pexels.com/photos/14840759/pexels-photo-14840759.jpeg?auto=compress&cs=tinysrgb&w=500"
-      alt="Panama" style="min-height:230px;">
+      alt="Panama">
     <div class="dc-overlay"></div>
     <div class="dc-body">
       <div class="dc-rank">#4 &nbsp;·&nbsp; Panama</div>
       <div class="dc-name">Panama</div>
       <div class="dc-feeling">US dollar. Modern hospitals. Ocean on both sides.</div>
       <div class="dc-cost">from $1,340/mo</div>
-      <div class="dc-tags"><span class="dc-tag">Uses US dollar</span><span class="dc-tag">Pensionado discounts</span></div>
-      <a class="dc-cta" href="https://golden-horizons.org/articles/panama-healthcare-quality-in-panama-for-expats">View Profile &rarr;</a>
+      <div class="dc-tags">
+        <span class="dc-tag">Uses US dollar</span>
+        <span class="dc-tag">Pensionado discounts</span>
+      </div>
+      <span class="dc-cta">View Profile &rarr;</span>
     </div>
   </a>
 
   <a href="https://golden-horizons.org/articles?category=Beach" class="dest-card">
     <img class="dc-img"
       src="https://images.pexels.com/photos/984877/pexels-photo-984877.jpeg?auto=compress&cs=tinysrgb&w=500"
-      alt="Greece" style="min-height:230px;">
+      alt="Greece">
     <div class="dc-overlay"></div>
     <div class="dc-body">
       <div class="dc-rank">#5 &nbsp;·&nbsp; Greece</div>
       <div class="dc-name">Greece</div>
       <div class="dc-feeling">The Mediterranean diet is the way they actually eat every day.</div>
       <div class="dc-cost">from $1,340/mo</div>
-      <div class="dc-tags"><span class="dc-tag">Island lifestyle</span><span class="dc-tag">EU member</span></div>
-      <a class="dc-cta" href="https://golden-horizons.org/articles?category=Beach">View Profile &rarr;</a>
+      <div class="dc-tags">
+        <span class="dc-tag">Island lifestyle</span>
+        <span class="dc-tag">EU member</span>
+      </div>
+      <span class="dc-cta">View Profile &rarr;</span>
     </div>
   </a>
 
@@ -305,6 +875,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
 <!-- MORE DESTINATIONS -->
 <div class="more-section">
   <div class="more-kicker">More Destinations &nbsp;·&nbsp; Explore All</div>
+
   <div class="more-grid">
     <a class="more-card" href="https://golden-horizons.org/articles?category=Cost">
       <span class="mc-flag">&#x1F1FB;&#x1F1F3;</span>
@@ -312,42 +883,49 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
       <div class="mc-tagline">SE Asia&rsquo;s best value for the budget-conscious retiree</div>
       <div class="mc-cost">from $1,000/mo</div>
     </a>
+
     <a class="more-card" href="https://golden-horizons.org/articles?category=Best+Cities">
       <span class="mc-flag">&#x1F1EE;&#x1F1F9;</span>
       <div class="mc-name">Italy</div>
       <div class="mc-tagline">&euro;100k flat tax, free healthcare, world&rsquo;s best food culture</div>
       <div class="mc-cost">from $2,500/mo</div>
     </a>
+
     <a class="more-card" href="https://golden-horizons.org/articles?category=Beach">
       <span class="mc-flag">&#x1F1E7;&#x1F1FF;</span>
       <div class="mc-name">Belize</div>
       <div class="mc-tagline">English-speaking Caribbean. No tax on foreign income.</div>
       <div class="mc-cost">from $1,500/mo</div>
     </a>
+
     <a class="more-card" href="https://golden-horizons.org/articles?category=Hidden+Gems">
       <span class="mc-flag">&#x1F1E6;&#x1F1F7;</span>
       <div class="mc-name">Argentina</div>
       <div class="mc-tagline">The Paris of South America. Extraordinary USD buying power.</div>
       <div class="mc-cost">from $1,000/mo</div>
     </a>
+
     <a class="more-card" href="https://golden-horizons.org/articles?category=Cost">
       <span class="mc-flag">&#x1F1F2;&#x1F1FE;</span>
       <div class="mc-name">Malaysia</div>
       <div class="mc-tagline">English spoken. Modern cities. MM2H visa program.</div>
       <div class="mc-cost">from $960/mo</div>
     </a>
+
     <a class="more-card" href="https://golden-horizons.org/articles/ecuador-what-2000-a-month-gets-you-in-cuenca">
       <span class="mc-flag">&#x1F1EA;&#x1F1E8;</span>
       <div class="mc-name">Ecuador</div>
       <div class="mc-tagline">Uses US dollar. Easy residency. Diverse geography.</div>
       <div class="mc-cost">from $1,010/mo</div>
     </a>
+
     <a class="more-card" href="https://golden-horizons.org/articles?category=Culture">
       <span class="mc-flag">&#x1F1F5;&#x1F1ED;</span>
       <div class="mc-name">Philippines</div>
       <div class="mc-tagline">English-speaking Asia. No tax on foreign pensions.</div>
       <div class="mc-cost">from $1,200/mo</div>
     </a>
+
     <a class="more-card" href="https://golden-horizons.org/articles?category=Best+Cities">
       <span class="mc-flag">&#x1F1F2;&#x1F1F9;</span>
       <div class="mc-name">Malta</div>
@@ -372,6 +950,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
 <footer class="footer">
   <div class="footer-name">Golden Horizons</div>
   <p>The retirement abroad magazine for Americans who aren&rsquo;t done yet.</p>
+
   <div class="footer-links">
     <a href="https://golden-horizons.org">Website</a><span>|</span>
     <a href="https://golden-horizons.org/articles">All Stories</a><span>|</span>
@@ -381,6 +960,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
     <a href="https://golden-horizons.org/contact">Contact</a><span>|</span>
     <a href="https://golden-horizons.org/terms-of-use">Terms</a>
   </div>
+
   <p style="margin-top:12px;font-size:11px;opacity:.5;">&copy; 2026 Golden Horizons &mdash; All rights reserved</p>
 </footer>
 
