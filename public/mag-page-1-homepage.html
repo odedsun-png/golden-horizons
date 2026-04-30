@@ -26,11 +26,34 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
 .nav a:hover{background:#f0e8d5;}
 .nav a.active{background:#1e1408;color:#c9a84c;}
 
-/* ── COVER STORY HERO ── */
-.hero-wrap{position:relative;line-height:0;font-size:0;}
-.hero-img{width:100%;display:block;max-height:460px;object-fit:cover;object-position:center 40%;filter:contrast(1.08) saturate(1.15) brightness(.84) sepia(.1);}
+/* ── 3-SLIDE MOTION HERO ── */
+.hero-wrap{position:relative;height:460px;overflow:hidden;background:#1e1408;border-bottom:0;}
+.hero-slide{position:absolute;inset:0;opacity:0;animation:heroFade 21s infinite;}
+.hero-slide:nth-child(1){animation-delay:0s;}
+.hero-slide:nth-child(2){animation-delay:7s;}
+.hero-slide:nth-child(3){animation-delay:14s;}
+.hero-slide img{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.08) saturate(1.08) brightness(.76) sepia(.08);transform:scale(1.03);animation:heroKenBurns 21s infinite ease-in-out;}
+.hero-slide:nth-child(2) img{object-position:center 45%;animation-name:heroKenBurnsAlt;}
+.hero-slide:nth-child(3) img{object-position:center 42%;animation-name:heroKenBurnsThird;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,20,8,.74) 0%,rgba(30,20,8,.42) 42%,rgba(30,20,8,.16) 100%),linear-gradient(0deg,rgba(30,20,8,.62) 0%,rgba(30,20,8,.08) 55%);z-index:2;}
+.hero-text{position:absolute;z-index:3;left:36px;bottom:38px;max-width:660px;color:#faf5e9;text-shadow:0 2px 14px rgba(0,0,0,.38);}
+.hero-kicker{font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:#c9a84c;margin-bottom:10px;font-family:'EB Garamond',serif;opacity:0;animation:heroTextUp 21s infinite;}
+.hero-title{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;line-height:1.04;letter-spacing:-1px;margin-bottom:12px;color:#fff7e8;opacity:0;animation:heroTextUp 21s infinite .25s;}
+.hero-sub{font-family:'EB Garamond',serif;font-size:20px;line-height:1.45;color:#f2dfb0;max-width:560px;opacity:0;animation:heroTextUp 21s infinite .5s;}
 .hero-caption{background:#1e1408;padding:9px 36px;}
 .hero-caption p{font-size:12px;font-style:italic;color:#c9a84c;line-height:1.55;margin:0;font-family:'EB Garamond',serif;}
+.hero-slide:nth-child(2) .hero-kicker,.hero-slide:nth-child(2) .hero-title,.hero-slide:nth-child(2) .hero-sub{animation-delay:7s;}
+.hero-slide:nth-child(2) .hero-title{animation-delay:7.25s;}
+.hero-slide:nth-child(2) .hero-sub{animation-delay:7.5s;}
+.hero-slide:nth-child(3) .hero-kicker{animation-delay:14s;}
+.hero-slide:nth-child(3) .hero-title{animation-delay:14.25s;}
+.hero-slide:nth-child(3) .hero-sub{animation-delay:14.5s;}
+@keyframes heroFade{0%{opacity:0;}4%{opacity:1;}29%{opacity:1;}33.33%{opacity:0;}100%{opacity:0;}}
+@keyframes heroKenBurns{0%{transform:scale(1.03) translateX(0);}33.33%{transform:scale(1.12) translateX(-18px);}100%{transform:scale(1.12) translateX(-18px);}}
+@keyframes heroKenBurnsAlt{0%{transform:scale(1.04) translateX(-12px);}33.33%{transform:scale(1.13) translateX(16px);}100%{transform:scale(1.13) translateX(16px);}}
+@keyframes heroKenBurnsThird{0%{transform:scale(1.04) translateY(0);}33.33%{transform:scale(1.12) translateY(-12px);}100%{transform:scale(1.12) translateY(-12px);}}
+@keyframes heroTextUp{0%{opacity:0;transform:translateY(14px);}5%{opacity:1;transform:translateY(0);}26%{opacity:1;transform:translateY(0);}31%{opacity:0;transform:translateY(-8px);}100%{opacity:0;transform:translateY(-8px);}}
+@media (prefers-reduced-motion: reduce){.hero-slide,.hero-slide img,.hero-kicker,.hero-title,.hero-sub{animation:none!important;}.hero-slide:first-child{opacity:1;}.hero-kicker,.hero-title,.hero-sub{opacity:1;transform:none;}}
 
 /* ── COVER STORY BODY ── */
 .cover-story{padding:32px 36px 0;border-bottom:2px solid #1e1408;}
@@ -102,6 +125,11 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
   .issue-line{gap:10px;}
   .nav{justify-content:flex-start;}
   .nav a{padding:8px 14px;font-size:10px;}
+  .hero-wrap{height:430px;}
+  .hero-text{left:18px;right:18px;bottom:28px;max-width:none;}
+  .hero-title{font-size:32px;line-height:1.08;}
+  .hero-sub{font-size:18px;line-height:1.42;}
+  .hero-caption{padding:9px 16px;}
   .cover-story{padding:22px 16px 0;}
   .cover-headline{font-size:28px;}
   .body-text{font-size:18px;}
@@ -151,14 +179,40 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
   <a href="https://golden-horizons.org/#subscribe">Subscribe Free</a>
 </nav>
 
-<!-- COVER STORY HERO -->
-<div class="hero-wrap">
-  <img class="hero-img"
-    src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1200"
-    alt="Algarve coast Portugal — golden hour retirement destination">
+<!-- 3-SLIDE MOTION HERO -->
+<div class="hero-wrap" aria-label="Golden Horizons cover story slideshow">
+  <div class="hero-slide">
+    <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Golden hour coastline in Portugal">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <div class="hero-kicker">Cover Story · The Destination Report</div>
+      <h1 class="hero-title">Where $2,000 a month can still buy a beautiful life</h1>
+      <p class="hero-sub">Warm evenings, walkable towns, better healthcare access, and a slower rhythm — the retirement dream is moving overseas.</p>
+    </div>
+  </div>
+
+  <div class="hero-slide">
+    <img src="https://images.pexels.com/photos/7742867/pexels-photo-7742867.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Retired couple walking through a historic European street">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <div class="hero-kicker">The Expat File</div>
+      <h1 class="hero-title">A second chapter with more freedom, more time, and less pressure</h1>
+      <p class="hero-sub">Golden Horizons follows the Americans building softer, smarter, more affordable lives abroad after 55.</p>
+    </div>
+  </div>
+
+  <div class="hero-slide">
+    <img src="https://images.pexels.com/photos/3014019/pexels-photo-3014019.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Quiet café table overlooking a Mediterranean town at sunset">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <div class="hero-kicker">The Money Page</div>
+      <h1 class="hero-title">Your savings may stretch further than you think</h1>
+      <p class="hero-sub">Every issue compares real costs, healthcare, visas, housing, and quality of life — without the fantasy math.</p>
+    </div>
+  </div>
 </div>
 <div class="hero-caption">
-  <p>Maria and Tom, both 64, pay $1,900/month for this view — rent, food, and healthcare included. Algarve, Portugal.</p>
+  <p>Three windows into the Golden Horizons promise: lower costs, richer days, and a retirement lifestyle that still feels possible.</p>
 </div>
 
 <!-- COVER STORY -->
