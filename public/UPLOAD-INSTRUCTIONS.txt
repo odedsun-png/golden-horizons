@@ -1,0 +1,9 @@
+Upload all 6 files to GitHub > public folder.
+
+Preview URLs after Netlify deploy:
+https://golden-horizons.org/mag-home.html
+https://golden-horizons.org/mag-articles.html
+https://golden-horizons.org/mag-destinations.html
+https://golden-horizons.org/mag-article-detail.html
+
+Do NOT replace src/app/page.tsx yet. These are safe preview files.
