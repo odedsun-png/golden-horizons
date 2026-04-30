@@ -37,7 +37,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
 
 /* ── CINEMATIC HERO ── */
 .cine-hero{position:relative;height:420px;overflow:hidden;background:#1e1408;line-height:0;}
-.cine-img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;filter:contrast(1.08) saturate(1.15) brightness(.58) sepia(.14);}
+.cine-img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;filter:contrast(1.08) saturate(1.15) brightness(.58) sepia(.14);}
 .cine-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(30,20,8,.04) 0%,rgba(30,20,8,.22) 40%,rgba(30,20,8,.9) 100%);}
 .cine-content{position:absolute;bottom:0;left:0;right:0;padding:0 44px 38px;}
 .cine-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#c9a84c;margin-bottom:13px;font-family:'EB Garamond',serif;}
@@ -88,89 +88,16 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
 .pq-text em{color:#8b6914;}
 .pq-attr{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8b6914;font-family:'EB Garamond',serif;}
 
-/* ── MORE DESTINATIONS IMAGE CARDS ── */
+/* ── MORE DESTINATIONS ── */
 .more-section{padding:32px 36px 38px;}
 .more-kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#8b6914;margin-bottom:16px;font-family:'EB Garamond',serif;}
-.more-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:2px;
-  background:#c9a84c;
-}
-.more-card{
-  position:relative;
-  min-height:260px;
-  display:block;
-  overflow:hidden;
-  text-decoration:none;
-  background:#1e1408;
-}
-.mc-img{
-  width:100%;
-  height:100%;
-  position:absolute;
-  inset:0;
-  object-fit:cover;
-  filter:contrast(1.06) saturate(1.1) brightness(.56) sepia(.08);
-  transition:transform .5s ease, filter .5s ease;
-}
-.more-card:hover .mc-img{
-  transform:scale(1.04);
-  filter:contrast(1.08) saturate(1.2) brightness(.72) sepia(.04);
-}
-.mc-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(to top, rgba(30,20,8,.95) 0%, rgba(30,20,8,.42) 48%, rgba(30,20,8,.08) 100%);
-}
-.mc-body{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  padding:16px 16px 18px;
-}
-.mc-region{
-  font-size:10px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:#c9a84c;
-  margin-bottom:4px;
-  font-family:'EB Garamond',serif;
-}
-.mc-name{
-  font-family:'Playfair Display',serif;
-  font-size:20px;
-  font-weight:700;
-  color:#faf5e9;
-  margin-bottom:4px;
-  line-height:1.1;
-}
-.mc-tagline{
-  font-size:13px;
-  font-style:italic;
-  color:#d8c69c;
-  line-height:1.4;
-  margin-bottom:6px;
-  font-family:'EB Garamond',serif;
-}
-.mc-cost{
-  font-size:13px;
-  color:#c9a84c;
-  font-family:'EB Garamond',serif;
-}
-.mc-view{
-  display:inline-block;
-  margin-top:8px;
-  font-size:10px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:#c9a84c;
-  border-bottom:1px solid rgba(201,168,76,.45);
-  padding-bottom:2px;
-  opacity:.92;
-  font-family:'EB Garamond',serif;
-}
+.more-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#c9a84c;border:1px solid #c9a84c;}
+.more-card{background:#faf5e9;padding:18px 16px;text-decoration:none;display:block;transition:background .2s;}
+.more-card:hover{background:#f0e8d5;}
+.mc-flag{font-size:22px;display:block;margin-bottom:6px;}
+.mc-name{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#1a0f00;margin-bottom:3px;}
+.mc-tagline{font-size:13px;font-style:italic;color:#7a5c1e;line-height:1.4;margin-bottom:6px;font-family:'EB Garamond',serif;}
+.mc-cost{font-size:13px;color:#8b6914;font-family:'EB Garamond',serif;}
 
 /* ── SUBSCRIBE CTA ── */
 .sub-section{background:#1e1408;padding:54px 36px;text-align:center;border-top:3px double #c9a84c;}
@@ -202,8 +129,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
   .pullquote{padding:28px 16px;}
   .pq-text{font-size:22px;}
   .more-section{padding:22px 16px 28px;}
-  .more-grid{grid-template-columns:1fr 1fr;}
-  .more-card{min-height:220px;}
+  .more-grid{grid-template-columns:repeat(2,1fr);}
   .sub-section{padding:36px 16px;}
   .sub-headline{font-size:26px;}
   .ornament{margin:0 16px;}
@@ -248,8 +174,8 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
 <!-- CINEMATIC HERO -->
 <div class="cine-hero">
   <img class="cine-img"
-    src="https://images.pexels.com/photos/161901/santorini-oia-greece-water-161901.jpeg?auto=compress&cs=tinysrgb&w=1400"
-    alt="Mediterranean coastal town for retirement abroad">
+    src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    alt="Algarve coast Portugal — golden hour retirement">
   <div class="cine-overlay"></div>
   <div class="cine-content">
     <div class="cine-eyebrow">The Destination Report &nbsp;·&nbsp; 2026 World Rankings</div>
@@ -258,7 +184,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
   </div>
 </div>
 <div class="hero-caption">
-  <p>Mediterranean coast — the kind of place where daily life feels lighter, slower, and still surprisingly affordable.</p>
+  <p>Algarve coast, Portugal — where couples retire well on $2,500/month. Warm winters. English spoken. Healthcare included.</p>
 </div>
 
 <!-- INTRO -->
@@ -299,7 +225,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
         <span class="dc-tag">300+ sunny days</span>
         <span class="dc-tag">World-class healthcare</span>
       </div>
-      <span class="dc-cta">Read Full Profile &rarr;</span>
+      <a class="dc-cta" href="https://golden-horizons.org/articles?category=Best+Cities">Read Full Profile &rarr;</a>
     </div>
   </a>
 
@@ -314,7 +240,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
       <div class="dc-feeling">Close enough to visit. Far enough to finally live differently.</div>
       <div class="dc-cost">from $1,160/mo</div>
       <div class="dc-tags"><span class="dc-tag">Near US</span><span class="dc-tag">Large expat scene</span></div>
-      <span class="dc-cta">View Profile &rarr;</span>
+      <a class="dc-cta" href="https://golden-horizons.org/articles?category=Cost">View Profile &rarr;</a>
     </div>
   </a>
 
@@ -329,7 +255,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
       <div class="dc-feeling">Pura Vida isn&rsquo;t a slogan. It&rsquo;s the actual pace of life here.</div>
       <div class="dc-cost">from $1,610/mo</div>
       <div class="dc-tags"><span class="dc-tag">Stable democracy</span><span class="dc-tag">No army</span></div>
-      <span class="dc-cta">View Profile &rarr;</span>
+      <a class="dc-cta" href="https://golden-horizons.org/articles?category=Beach">View Profile &rarr;</a>
     </div>
   </a>
 
@@ -344,7 +270,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
       <div class="dc-feeling">US dollar. Modern hospitals. Ocean on both sides.</div>
       <div class="dc-cost">from $1,340/mo</div>
       <div class="dc-tags"><span class="dc-tag">Uses US dollar</span><span class="dc-tag">Pensionado discounts</span></div>
-      <span class="dc-cta">View Profile &rarr;</span>
+      <a class="dc-cta" href="https://golden-horizons.org/articles/panama-healthcare-quality-in-panama-for-expats">View Profile &rarr;</a>
     </div>
   </a>
 
@@ -359,7 +285,7 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
       <div class="dc-feeling">The Mediterranean diet is the way they actually eat every day.</div>
       <div class="dc-cost">from $1,340/mo</div>
       <div class="dc-tags"><span class="dc-tag">Island lifestyle</span><span class="dc-tag">EU member</span></div>
-      <span class="dc-cta">View Profile &rarr;</span>
+      <a class="dc-cta" href="https://golden-horizons.org/articles?category=Beach">View Profile &rarr;</a>
     </div>
   </a>
 
@@ -380,103 +306,54 @@ body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;fo
 <div class="more-section">
   <div class="more-kicker">More Destinations &nbsp;·&nbsp; Explore All</div>
   <div class="more-grid">
-
     <a class="more-card" href="https://golden-horizons.org/articles?category=Cost">
-      <img class="mc-img" src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Vietnam">
-      <div class="mc-overlay"></div>
-      <div class="mc-body">
-        <div class="mc-region">SE Asia &nbsp;·&nbsp; Emerging destination</div>
-        <div class="mc-name">Vietnam</div>
-        <div class="mc-tagline">Southeast Asia&rsquo;s best value for budget-conscious retirees.</div>
-        <div class="mc-cost">from $1,000/mo</div>
-        <span class="mc-view">View Profile →</span>
-      </div>
+      <span class="mc-flag">&#x1F1FB;&#x1F1F3;</span>
+      <div class="mc-name">Vietnam</div>
+      <div class="mc-tagline">SE Asia&rsquo;s best value for the budget-conscious retiree</div>
+      <div class="mc-cost">from $1,000/mo</div>
     </a>
-
     <a class="more-card" href="https://golden-horizons.org/articles?category=Best+Cities">
-      <img class="mc-img" src="https://images.pexels.com/photos/532263/pexels-photo-532263.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Italy">
-      <div class="mc-overlay"></div>
-      <div class="mc-body">
-        <div class="mc-region">Europe &nbsp;·&nbsp; Top 15 International Living 2026</div>
-        <div class="mc-name">Italy</div>
-        <div class="mc-tagline">Free healthcare, serious food culture, and timeless beauty.</div>
-        <div class="mc-cost">from $2,500/mo</div>
-        <span class="mc-view">View Profile →</span>
-      </div>
+      <span class="mc-flag">&#x1F1EE;&#x1F1F9;</span>
+      <div class="mc-name">Italy</div>
+      <div class="mc-tagline">&euro;100k flat tax, free healthcare, world&rsquo;s best food culture</div>
+      <div class="mc-cost">from $2,500/mo</div>
     </a>
-
     <a class="more-card" href="https://golden-horizons.org/articles?category=Beach">
-      <img class="mc-img" src="https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Belize">
-      <div class="mc-overlay"></div>
-      <div class="mc-body">
-        <div class="mc-region">Central America &nbsp;·&nbsp; English-speaking</div>
-        <div class="mc-name">Belize</div>
-        <div class="mc-tagline">Caribbean pace, English-speaking life, and no tax on foreign income.</div>
-        <div class="mc-cost">from $1,500/mo</div>
-        <span class="mc-view">View Profile →</span>
-      </div>
+      <span class="mc-flag">&#x1F1E7;&#x1F1FF;</span>
+      <div class="mc-name">Belize</div>
+      <div class="mc-tagline">English-speaking Caribbean. No tax on foreign income.</div>
+      <div class="mc-cost">from $1,500/mo</div>
     </a>
-
     <a class="more-card" href="https://golden-horizons.org/articles?category=Hidden+Gems">
-      <img class="mc-img" src="https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Argentina">
-      <div class="mc-overlay"></div>
-      <div class="mc-body">
-        <div class="mc-region">South America &nbsp;·&nbsp; Big value</div>
-        <div class="mc-name">Argentina</div>
-        <div class="mc-tagline">European feel, strong USD buying power, and a vibrant daily life.</div>
-        <div class="mc-cost">from $1,000/mo</div>
-        <span class="mc-view">View Profile →</span>
-      </div>
+      <span class="mc-flag">&#x1F1E6;&#x1F1F7;</span>
+      <div class="mc-name">Argentina</div>
+      <div class="mc-tagline">The Paris of South America. Extraordinary USD buying power.</div>
+      <div class="mc-cost">from $1,000/mo</div>
     </a>
-
     <a class="more-card" href="https://golden-horizons.org/articles?category=Cost">
-      <img class="mc-img" src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Malaysia">
-      <div class="mc-overlay"></div>
-      <div class="mc-body">
-        <div class="mc-region">Asia &nbsp;·&nbsp; Modern value</div>
-        <div class="mc-name">Malaysia</div>
-        <div class="mc-tagline">Modern cities, strong healthcare, and English widely spoken.</div>
-        <div class="mc-cost">from $960/mo</div>
-        <span class="mc-view">View Profile →</span>
-      </div>
+      <span class="mc-flag">&#x1F1F2;&#x1F1FE;</span>
+      <div class="mc-name">Malaysia</div>
+      <div class="mc-tagline">English spoken. Modern cities. MM2H visa program.</div>
+      <div class="mc-cost">from $960/mo</div>
     </a>
-
     <a class="more-card" href="https://golden-horizons.org/articles/ecuador-what-2000-a-month-gets-you-in-cuenca">
-      <img class="mc-img" src="https://images.pexels.com/photos/11434417/pexels-photo-11434417.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Ecuador">
-      <div class="mc-overlay"></div>
-      <div class="mc-body">
-        <div class="mc-region">South America &nbsp;·&nbsp; Dollar economy</div>
-        <div class="mc-name">Ecuador</div>
-        <div class="mc-tagline">Easy residency, lower costs, and cool-weather living in Cuenca.</div>
-        <div class="mc-cost">from $1,010/mo</div>
-        <span class="mc-view">View Profile →</span>
-      </div>
+      <span class="mc-flag">&#x1F1EA;&#x1F1E8;</span>
+      <div class="mc-name">Ecuador</div>
+      <div class="mc-tagline">Uses US dollar. Easy residency. Diverse geography.</div>
+      <div class="mc-cost">from $1,010/mo</div>
     </a>
-
     <a class="more-card" href="https://golden-horizons.org/articles?category=Culture">
-      <img class="mc-img" src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Philippines">
-      <div class="mc-overlay"></div>
-      <div class="mc-body">
-        <div class="mc-region">SE Asia &nbsp;·&nbsp; English-speaking</div>
-        <div class="mc-name">Philippines</div>
-        <div class="mc-tagline">English-speaking Asia with island life and strong retirement appeal.</div>
-        <div class="mc-cost">from $1,200/mo</div>
-        <span class="mc-view">View Profile →</span>
-      </div>
+      <span class="mc-flag">&#x1F1F5;&#x1F1ED;</span>
+      <div class="mc-name">Philippines</div>
+      <div class="mc-tagline">English-speaking Asia. No tax on foreign pensions.</div>
+      <div class="mc-cost">from $1,200/mo</div>
     </a>
-
     <a class="more-card" href="https://golden-horizons.org/articles?category=Best+Cities">
-      <img class="mc-img" src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Malta">
-      <div class="mc-overlay"></div>
-      <div class="mc-body">
-        <div class="mc-region">Europe &nbsp;·&nbsp; English-speaking EU</div>
-        <div class="mc-name">Malta</div>
-        <div class="mc-tagline">Only English-speaking EU country with sun, sea, and simplicity.</div>
-        <div class="mc-cost">from $2,500/mo</div>
-        <span class="mc-view">View Profile →</span>
-      </div>
+      <span class="mc-flag">&#x1F1F2;&#x1F1F9;</span>
+      <div class="mc-name">Malta</div>
+      <div class="mc-tagline">Only English-speaking EU country. 300 sunny days.</div>
+      <div class="mc-cost">from $2,500/mo</div>
     </a>
-
   </div>
 </div>
 
