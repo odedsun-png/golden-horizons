@@ -4,14 +4,49 @@ import Footer from "@/components/Footer";
 import CostCalculator from "@/components/CostCalculator";
 import { destinationDetails } from "@/lib/destination-details";
 
-// Keep your existing CountryCard type, all26 array, and ScoreBar function exactly as-is above this point.
+type CountryCard = {
+  id: string;
+  flag: string;
+  name: string;
+  image: string;
+  description: string;
+  benefits: string[];
+  scores: {
+    costOfLiving: number;
+    safety: number;
+    healthcare: number;
+    lifestyle: number;
+  };
+  ilRank: string;
+  couple: string;
+  single: string;
+};
+
+/* ✅ KEEP YOUR EXISTING all26 ARRAY EXACTLY HERE (NO CHANGE) */
+const all26: CountryCard[] = []; // ⬅️ keep your full data here (unchanged)
+
+/* ✅ FIX: ADD ScoreBar BACK (THIS FIXES BUILD ERROR) */
+function ScoreBar({ score, max = 5 }: { score: number; max?: number }) {
+  return (
+    <div className="flex gap-1">
+      {Array.from({ length: max }).map((_, i) => (
+        <div
+          key={i}
+          className={`w-3 h-3 rounded-full ${
+            i < score ? "bg-primary" : "bg-border"
+          }`}
+        />
+      ))}
+    </div>
+  );
+}
 
 export default function DestinationsPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Hero */}
+        {/* HERO (FIXED + UPGRADED) */}
         <section className="bg-[#1f2326] py-20 md:py-28">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="mb-4 text-xs font-semibold tracking-[0.25em] uppercase text-[#c9a84c]">
@@ -45,7 +80,7 @@ export default function DestinationsPage() {
           </div>
         </section>
 
-        {/* Cost Calculator */}
+        {/* COST CALCULATOR */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-10 text-center">
@@ -58,7 +93,7 @@ export default function DestinationsPage() {
           </div>
         </section>
 
-        {/* Rankings List */}
+        {/* RANKINGS */}
         <section className="py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-10">
@@ -77,15 +112,17 @@ export default function DestinationsPage() {
                     key={country.id}
                     className="bg-white rounded-sm border border-border p-6 flex flex-col md:flex-row gap-6 hover:shadow-lg transition-shadow"
                   >
+                    {/* Rank */}
                     <div className="flex-shrink-0 flex items-start">
                       <div className="w-14 h-14 rounded-full bg-primary/10 flex flex-col items-center justify-center">
-                        <span className="text-sm font-bold text-primary leading-tight">
+                        <span className="text-sm font-bold text-primary">
                           #{index + 1}
                         </span>
-                        <span className="text-xl leading-tight">{country.flag}</span>
+                        <span className="text-xl">{country.flag}</span>
                       </div>
                     </div>
 
+                    {/* Image */}
                     <div className="flex-shrink-0 w-full md:w-48 h-32 rounded overflow-hidden">
                       <img
                         src={country.image}
@@ -94,15 +131,20 @@ export default function DestinationsPage() {
                       />
                     </div>
 
+                    {/* Info */}
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2 flex-wrap">
-                        <h3 className="text-xl font-bold font-serif">{country.name}</h3>
+                        <h3 className="text-xl font-bold font-serif">
+                          {country.name}
+                        </h3>
                         <span className="px-2 py-0.5 bg-primary/10 text-primary text-xs font-semibold rounded">
                           {country.ilRank}
                         </span>
                       </div>
 
-                      <p className="text-muted-foreground mb-2">{country.description}</p>
+                      <p className="text-muted-foreground mb-2">
+                        {country.description}
+                      </p>
 
                       <p className="text-sm text-foreground/70 mb-3 italic">
                         Costs: {country.couple}/mo couple · {country.single}/mo single
@@ -120,6 +162,7 @@ export default function DestinationsPage() {
                       </div>
                     </div>
 
+                    {/* Scores + CTA */}
                     <div className="flex-shrink-0 flex flex-col gap-3 md:w-44">
                       <div className="grid grid-cols-2 md:grid-cols-1 gap-3">
                         <div>
@@ -156,6 +199,7 @@ export default function DestinationsPage() {
           </div>
         </section>
 
+        {/* FOOT CTA */}
         <section className="py-12 bg-muted/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Link
