@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Horizons — Retire Abroad on $2,000–$5,000/Month</title>
+<meta name="description" content="Golden Horizons — The retirement abroad magazine for Americans. Discover where your money goes further after 55.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;font-size:20px;line-height:1.8;-webkit-font-smoothing:antialiased;}
+.site{max-width:980px;margin:0 auto;background:#faf5e9;border:1px solid #d4b896;}
+
+/* ── CHROME ── */
+.topbar{background:#1e1408;padding:7px 36px;display:flex;justify-content:space-between;align-items:center;}
+.topbar span{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#c9a84c;font-family:'EB Garamond',serif;}
+.masthead{padding:24px 36px 18px;text-align:center;border-bottom:3px double #1e1408;background:#faf5e9;}
+.dateline{display:flex;justify-content:space-between;font-size:11px;color:#8b6914;border-bottom:1px solid #c9a84c;padding-bottom:10px;margin-bottom:13px;font-family:'EB Garamond',serif;}
+.mastname{font-family:'Playfair Display',serif;font-size:66px;font-weight:900;color:#1e1408;line-height:1;letter-spacing:-2.5px;text-decoration:none;display:block;}
+.issue-line{display:flex;justify-content:center;gap:28px;margin-top:10px;flex-wrap:wrap;}
+.issue-tag{font-size:12px;font-style:italic;color:#8b6914;font-family:'EB Garamond',serif;}
+.issue-tag strong{font-style:normal;color:#1e1408;font-weight:500;}
+.nav{display:flex;justify-content:center;border-bottom:2px solid #1e1408;background:#faf5e9;overflow-x:auto;}
+.nav a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1e1408;text-decoration:none;padding:10px 26px;border-right:1px solid #c9a84c;white-space:nowrap;flex-shrink:0;transition:background .15s;font-family:'EB Garamond',serif;}
+.nav a:last-child{border-right:none;}
+.nav a:hover{background:#f0e8d5;}
+.nav a.active{background:#1e1408;color:#c9a84c;}
+
+/* ── COVER STORY HERO ── */
+.hero-wrap{position:relative;line-height:0;font-size:0;}
+.hero-img{width:100%;display:block;max-height:460px;object-fit:cover;object-position:center 40%;filter:contrast(1.08) saturate(1.15) brightness(.84) sepia(.1);}
+.hero-caption{background:#1e1408;padding:9px 36px;}
+.hero-caption p{font-size:12px;font-style:italic;color:#c9a84c;line-height:1.55;margin:0;font-family:'EB Garamond',serif;}
+
+/* ── COVER STORY BODY ── */
+.cover-story{padding:32px 36px 0;border-bottom:2px solid #1e1408;}
+.mag-label{font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:#8b6914;margin-bottom:12px;font-family:'EB Garamond',serif;}
+.cover-headline{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;line-height:1.1;color:#1a0f00;letter-spacing:-.8px;margin-bottom:14px;}
+.byline{font-size:12px;color:#8b6914;border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:8px 0;margin-bottom:20px;font-family:'EB Garamond',serif;letter-spacing:.3px;}
+.body-text{font-size:20px;line-height:1.82;color:#2b1a00;margin-bottom:16px;font-family:'EB Garamond',serif;}
+.read-more{font-size:14px;font-style:italic;color:#8b6914;text-decoration:underline;display:inline-block;margin-bottom:28px;font-family:'EB Garamond',serif;}
+
+/* ── PULL QUOTE ── */
+.pullquote{border-top:2px solid #1e1408;border-bottom:2px solid #1e1408;background:#f0e8d5;padding:28px 36px;text-align:center;margin:0 0 28px;}
+.pullquote p{font-family:'Playfair Display',serif;font-size:24px;font-style:italic;color:#1a0f00;line-height:1.5;margin-bottom:12px;}
+.pullquote cite{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b6914;font-style:normal;}
+
+/* ── THE MONEY PAGE / VISAS GRID ── */
+.section-banner{background:#1e1408;padding:6px 36px;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#c9a84c;font-family:'EB Garamond',serif;}
+.below-fold{display:grid;grid-template-columns:1fr 1fr 300px;border-bottom:2px solid #1e1408;}
+.bf-col{padding:26px 24px;border-right:1px solid #c9a84c;}
+.bf-col:last-child{border-right:none;}
+.mag-section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#faf5e9;background:#1e1408;padding:5px 11px;display:inline-block;margin-bottom:18px;font-family:'EB Garamond',serif;}
+.story-item{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid #e0cc99;}
+.story-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.story-img{width:100%;height:115px;object-fit:cover;display:block;margin-bottom:9px;filter:contrast(1.05) saturate(1.12) brightness(.88) sepia(.06);}
+.story-cat{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#8b6914;margin-bottom:5px;font-family:'EB Garamond',serif;}
+.story-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;line-height:1.3;color:#1a0f00;}
+.story-read{font-size:12px;font-style:italic;color:#8b6914;margin-top:5px;display:block;font-family:'EB Garamond',serif;}
+
+/* ── SIDEBAR ── */
+.sb-pull{border-top:2px solid #1e1408;border-bottom:2px solid #1e1408;background:#f0e8d5;padding:18px 16px;text-align:center;margin-bottom:22px;}
+.sb-pull p{font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:#1a0f00;line-height:1.5;margin-bottom:8px;}
+.sb-pull cite{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#8b6914;font-style:normal;}
+.mag-sub{border:1px solid #c9a84c;background:#f5edd8;padding:22px 18px;text-align:center;}
+.mag-sub-eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8b6914;margin-bottom:10px;font-family:'EB Garamond',serif;}
+.mag-sub-headline{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:#1a0f00;line-height:1.3;margin-bottom:8px;}
+.mag-sub-body{font-size:15px;color:#2b1a00;line-height:1.65;margin-bottom:16px;font-style:italic;font-family:'EB Garamond',serif;}
+.mag-btn{display:block;background:#8b6914;color:#faf5e9;padding:15px 18px;font-size:15px;font-weight:bold;border:2px solid #6b4f0f;font-family:'Playfair Display',serif;text-decoration:none;text-align:center;margin-bottom:10px;transition:background .15s;}
+.mag-btn:hover{background:#6b4f0f;}
+.mag-trust{font-size:12px;color:#7a5c1e;font-style:italic;font-family:'EB Garamond',serif;}
+
+/* ── DESTINATIONS STRIP ── */
+.dest-strip{padding:22px 36px 26px;border-bottom:1px solid #c9a84c;background:#faf5e9;}
+.dest-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8b6914;margin-bottom:14px;font-family:'EB Garamond',serif;}
+.dest-row{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;}
+.dest-card{border:1px solid #c9a84c;background:#f5edd8;padding:11px 9px;text-align:center;text-decoration:none;display:block;transition:background .15s;}
+.dest-card:hover{background:#ede0c0;}
+.dest-name{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:#1a0f00;}
+.dest-cost{font-size:11px;font-style:italic;color:#8b6914;margin-top:3px;font-family:'EB Garamond',serif;}
+.dest-tag{font-size:10px;color:#5a4010;margin-top:3px;font-family:'EB Garamond',serif;}
+
+/* ── ORNAMENT ── */
+.ornament{text-align:center;font-size:14px;color:#c9a84c;letter-spacing:8px;padding:16px 0;border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;margin:0 36px;}
+
+/* ── FOOTER ── */
+.footer{background:#1e1408;padding:28px 36px;text-align:center;border-top:3px double #c9a84c;}
+.footer-name{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#faf5e9;margin-bottom:8px;}
+.footer p{font-size:13px;color:#c9a84c;margin-bottom:8px;font-family:'EB Garamond',serif;}
+.footer-links{font-size:13px;color:#c9a84c;font-family:'EB Garamond',serif;}
+.footer-links a{color:#c9a84c;text-decoration:none;}
+.footer-links a:hover{text-decoration:underline;}
+.footer-links span{opacity:.35;margin:0 8px;}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  .topbar{padding:6px 16px;}
+  .topbar .hide-mob,.dateline .hide-mob{display:none;}
+  .masthead{padding:16px 16px 14px;}
+  .mastname{font-size:38px;letter-spacing:-1px;}
+  .dateline{font-size:9px;}
+  .issue-line{gap:10px;}
+  .nav{justify-content:flex-start;}
+  .nav a{padding:8px 14px;font-size:10px;}
+  .cover-story{padding:22px 16px 0;}
+  .cover-headline{font-size:28px;}
+  .body-text{font-size:18px;}
+  .pullquote{padding:20px 16px;}
+  .pullquote p{font-size:19px;}
+  .below-fold{grid-template-columns:1fr;}
+  .bf-col{border-right:none;border-bottom:1px solid #c9a84c;padding:20px 16px;}
+  .bf-col:last-child{border-bottom:none;}
+  .dest-strip{padding:18px 16px;}
+  .dest-row{grid-template-columns:repeat(3,1fr);}
+  .ornament{margin:0 16px;}
+  .section-banner{padding:5px 16px;}
+  .footer{padding:20px 16px;}
+  .footer-links{line-height:2.2;}
+}
+</style>
+</head>
+<body>
+<div class="site">
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>Vol. I, No. 1</span>
+  <span class="hide-mob">golden-horizons.org &nbsp;·&nbsp; The Retirement Abroad Magazine</span>
+  <span>April 2026</span>
+</div>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="dateline">
+    <span>The Retirement Abroad Magazine</span>
+    <span class="hide-mob">For Americans Who Are Ready for What&rsquo;s Next</span>
+    <span>April 2026 &nbsp;·&nbsp; Issue 1</span>
+  </div>
+  <a href="https://golden-horizons.org/" class="mastname">Golden Horizons</a>
+  <div class="issue-line">
+    <span class="issue-tag"><strong>This Issue:</strong> Where $2,000/month buys a life worth living</span>
+    <span class="issue-tag"><strong>Inside:</strong> The Money Page &nbsp;·&nbsp; The Destination Report &nbsp;·&nbsp; The Health File</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="https://golden-horizons.org/" class="active">Cover</a>
+  <a href="https://golden-horizons.org/articles">All Stories</a>
+  <a href="https://golden-horizons.org/destinations">Destinations</a>
+  <a href="https://golden-horizons.org/#subscribe">Subscribe Free</a>
+</nav>
+
+<!-- COVER STORY HERO -->
+<div class="hero-wrap">
+  <img class="hero-img"
+    src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    alt="Algarve coast Portugal — golden hour retirement destination">
+</div>
+<div class="hero-caption">
+  <p>Maria and Tom, both 64, pay $1,900/month for this view — rent, food, and healthcare included. Algarve, Portugal.</p>
+</div>
+
+<!-- COVER STORY -->
+<div class="cover-story">
+  <div class="mag-label">Cover Story &nbsp;·&nbsp; The Destination Report</div>
+  <h1 class="cover-headline">The places where your money sets you free — and why more Americans are finding them every day</h1>
+  <div class="byline">By the Editors of Golden Horizons &nbsp;&middot;&nbsp; Cover Story &nbsp;&middot;&nbsp; April 2026</div>
+  <p class="body-text">There are places in the world where $2,000 a month buys the kind of life most Americans spend their entire career chasing. A terrace overlooking the sea. Fresh food every morning. A doctor you can actually afford to see. These places are not secrets — they are simply overlooked.</p>
+  <p class="body-text">Golden Horizons exists to change that. Every morning we find one of these places, dig into the real numbers, and bring it straight to you. No hype. No sales pitch. Just the truth about what is possible — and what it actually costs.</p>
+  <a href="https://golden-horizons.org/articles" class="read-more">Read all stories in this issue &rarr;</a>
+</div>
+
+<!-- PULL QUOTE -->
+<div class="pullquote">
+  <p>&ldquo;Most people plan carefully for retirement. Almost none plan <em>where</em> to live it. That decision changes everything.&rdquo;</p>
+  <cite>— The Golden Horizons Editors</cite>
+</div>
+
+<!-- THE MONEY PAGE + THE VISA FILE -->
+<div class="section-banner">Inside This Issue</div>
+<div class="below-fold">
+
+  <div class="bf-col">
+    <div class="mag-section-label">The Money Page</div>
+    <div class="story-item">
+      <img class="story-img" src="https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Albania">
+      <div class="story-cat">Cost of Living &nbsp;·&nbsp; Albania</div>
+      <a href="https://golden-horizons.org/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2" style="text-decoration:none;">
+        <div class="story-title">What $1,000 a Month Gets You in Gjirokastër</div>
+      </a>
+      <a href="https://golden-horizons.org/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2" class="story-read">Read this story &rarr;</a>
+    </div>
+    <div class="story-item">
+      <img class="story-img" src="https://images.pexels.com/photos/15894001/pexels-photo-15894001.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cambodia">
+      <div class="story-cat">Cost of Living &nbsp;·&nbsp; Cambodia</div>
+      <a href="https://golden-horizons.org/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2" style="text-decoration:none;">
+        <div class="story-title">What $1,000 a Month Gets You in Siem Reap</div>
+      </a>
+      <a href="https://golden-horizons.org/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2" class="story-read">Read this story &rarr;</a>
+    </div>
+  </div>
+
+  <div class="bf-col">
+    <div class="mag-section-label">The Visa File</div>
+    <div class="story-item">
+      <img class="story-img" src="https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ireland">
+      <div class="story-cat">Visas &amp; Residency &nbsp;·&nbsp; Ireland</div>
+      <a href="https://golden-horizons.org/articles/ireland-residency-options-for-american-retirees-v2" style="text-decoration:none;">
+        <div class="story-title">Residency Options for American Retirees in Ireland</div>
+      </a>
+      <a href="https://golden-horizons.org/articles/ireland-residency-options-for-american-retirees-v2" class="story-read">Read this story &rarr;</a>
+    </div>
+    <div class="story-item">
+      <img class="story-img" src="https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Georgia">
+      <div class="story-cat">Visas &amp; Residency &nbsp;·&nbsp; Georgia</div>
+      <a href="https://golden-horizons.org/articles/georgia-residency-options-for-us-retirees" style="text-decoration:none;">
+        <div class="story-title">Residency Options for U.S. Retirees in Georgia</div>
+      </a>
+      <a href="https://golden-horizons.org/articles/georgia-residency-options-for-us-retirees" class="story-read">Read this story &rarr;</a>
+    </div>
+  </div>
+
+  <div class="bf-col">
+    <div class="sb-pull">
+      <p>&ldquo;I kept waiting for the right time. Then I realized — this <em>is</em> the right time.&rdquo;</p>
+      <cite>— Barbara, 63 &nbsp;·&nbsp; Lisbon, $1,900/mo</cite>
+    </div>
+    <div class="mag-sub" id="subscribe">
+      <div class="mag-sub-eyebrow">Free Subscription</div>
+      <div class="mag-sub-headline">Start reading Golden Horizons every morning</div>
+      <div class="mag-sub-body">Real costs. Real places. One story every morning — free, forever.</div>
+      <a href="https://golden-horizons.org/golden_horizons_final.pdf" target="_blank" class="mag-btn">Start My Free Subscription &rarr;</a>
+      <div class="mag-trust">◆ Join 5,000+ readers planning their next chapter ◆</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- DESTINATIONS AT A GLANCE -->
+<div class="section-banner">The Destination Report &nbsp;·&nbsp; At a Glance</div>
+<div class="dest-strip">
+  <div class="dest-label">Best value destinations for Americans retiring abroad</div>
+  <div class="dest-row">
+    <a href="https://golden-horizons.org/destinations" class="dest-card">
+      <div class="dest-name">Portugal</div><div class="dest-cost">from $1,800/mo</div><div class="dest-tag">Top Ranked</div>
+    </a>
+    <a href="https://golden-horizons.org/destinations" class="dest-card">
+      <div class="dest-name">Panama</div><div class="dest-cost">from $1,600/mo</div><div class="dest-tag">Best Healthcare</div>
+    </a>
+    <a href="https://golden-horizons.org/destinations" class="dest-card">
+      <div class="dest-name">Mexico</div><div class="dest-cost">from $1,400/mo</div><div class="dest-tag">Most Popular</div>
+    </a>
+    <a href="https://golden-horizons.org/destinations" class="dest-card">
+      <div class="dest-name">Vietnam</div><div class="dest-cost">from $1,200/mo</div><div class="dest-tag">Best Value</div>
+    </a>
+    <a href="https://golden-horizons.org/destinations" class="dest-card">
+      <div class="dest-name">Belize</div><div class="dest-cost">from $1,700/mo</div><div class="dest-tag">English Only</div>
+    </a>
+    <a href="https://golden-horizons.org/destinations" class="dest-card">
+      <div class="dest-name">Ecuador</div><div class="dest-cost">from $1,300/mo</div><div class="dest-tag">Hidden Gem</div>
+    </a>
+  </div>
+</div>
+
+<div class="ornament">— ✦ —</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-name">Golden Horizons</div>
+  <p>The retirement abroad magazine for Americans who aren&rsquo;t done yet.</p>
+  <div class="footer-links">
+    <a href="https://golden-horizons.org">Website</a><span>|</span>
+    <a href="https://golden-horizons.org/articles">All Stories</a><span>|</span>
+    <a href="https://golden-horizons.org/destinations">Destinations</a><span>|</span>
+    <a href="https://golden-horizons.org/about">About</a><span>|</span>
+    <a href="https://golden-horizons.org/privacy-policy">Privacy</a><span>|</span>
+    <a href="https://golden-horizons.org/contact">Contact</a><span>|</span>
+    <a href="https://golden-horizons.org/terms-of-use">Terms</a>
+  </div>
+  <p style="margin-top:12px;font-size:11px;opacity:.5;">&copy; 2026 Golden Horizons &mdash; All rights reserved</p>
+</footer>
+
+</div>
+</body>
+</html>

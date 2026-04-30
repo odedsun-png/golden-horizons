@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthcare Quality in Panama for Expats — Golden Horizons Magazine</title>
+<meta name="description" content="Panama's private hospitals rival US facilities at a fraction of the cost. Here's what American retirees actually pay.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#e8e0d0;font-family:'EB Garamond',Georgia,serif;color:#1a0f00;font-size:20px;line-height:1.8;-webkit-font-smoothing:antialiased;}
+.site{max-width:980px;margin:0 auto;background:#faf5e9;border:1px solid #d4b896;}
+
+/* ── CHROME ── */
+.topbar{background:#1e1408;padding:7px 36px;display:flex;justify-content:space-between;align-items:center;}
+.topbar span{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#c9a84c;font-family:'EB Garamond',serif;}
+.masthead{padding:24px 36px 18px;text-align:center;border-bottom:3px double #1e1408;background:#faf5e9;}
+.dateline{display:flex;justify-content:space-between;font-size:11px;color:#8b6914;border-bottom:1px solid #c9a84c;padding-bottom:10px;margin-bottom:13px;font-family:'EB Garamond',serif;}
+.mastname{font-family:'Playfair Display',serif;font-size:66px;font-weight:900;color:#1e1408;line-height:1;letter-spacing:-2.5px;text-decoration:none;display:block;}
+.issue-line{display:flex;justify-content:center;gap:28px;margin-top:10px;flex-wrap:wrap;}
+.issue-tag{font-size:12px;font-style:italic;color:#8b6914;font-family:'EB Garamond',serif;}
+.issue-tag strong{font-style:normal;color:#1e1408;font-weight:500;}
+.nav{display:flex;justify-content:center;border-bottom:2px solid #1e1408;background:#faf5e9;overflow-x:auto;}
+.nav a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1e1408;text-decoration:none;padding:10px 26px;border-right:1px solid #c9a84c;white-space:nowrap;flex-shrink:0;transition:background .15s;font-family:'EB Garamond',serif;}
+.nav a:last-child{border-right:none;}
+.nav a:hover{background:#f0e8d5;}
+.nav a.active{background:#1e1408;color:#c9a84c;}
+.section-banner{background:#1e1408;padding:6px 36px;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#c9a84c;font-family:'EB Garamond',serif;}
+.ornament{text-align:center;font-size:14px;color:#c9a84c;letter-spacing:8px;padding:16px 0;border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;margin:22px 0;}
+.footer{background:#1e1408;padding:28px 36px;text-align:center;border-top:3px double #c9a84c;}
+.footer-name{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#faf5e9;margin-bottom:8px;}
+.footer p{font-size:13px;color:#c9a84c;margin-bottom:8px;font-family:'EB Garamond',serif;}
+.footer-links{font-size:13px;color:#c9a84c;font-family:'EB Garamond',serif;}
+.footer-links a{color:#c9a84c;text-decoration:none;}
+.footer-links a:hover{text-decoration:underline;}
+.footer-links span{opacity:.35;margin:0 8px;}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{padding:9px 36px;border-bottom:1px solid #c9a84c;font-size:12px;color:#8b6914;font-style:italic;background:#faf5e9;font-family:'EB Garamond',serif;}
+.breadcrumb a{color:#8b6914;text-decoration:underline;}
+
+/* ── ARTICLE LAYOUT ── */
+.article-layout{display:grid;grid-template-columns:1fr 300px;border-bottom:2px solid #1e1408;}
+.article-main{border-right:1px solid #c9a84c;padding:28px 32px;}
+
+/* ── ARTICLE TYPOGRAPHY ── */
+.art-kicker{font-size:11px;letter-spacing:3.5px;text-transform:uppercase;color:#8b6914;margin-bottom:12px;font-family:'EB Garamond',serif;}
+.art-headline{font-family:'Playfair Display',serif;font-size:38px;font-weight:700;line-height:1.14;color:#1a0f00;margin-bottom:16px;letter-spacing:-.5px;}
+.art-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-size:12px;color:#8b6914;border-top:1px solid #c9a84c;border-bottom:1px solid #c9a84c;padding:9px 0;margin-bottom:20px;font-family:'EB Garamond',serif;}
+.hero-img-wrap{line-height:0;font-size:0;margin-bottom:0;}
+.hero-img{width:100%;display:block;height:290px;object-fit:cover;filter:contrast(1.08) saturate(1.15) brightness(.84) sepia(.1);}
+.img-caption{background:#1e1408;padding:8px 0 8px 4px;font-size:12px;font-style:italic;color:#c9a84c;margin-bottom:22px;line-height:1.5;font-family:'EB Garamond',serif;}
+
+/* Lead paragraph */
+.art-intro{font-size:21px;line-height:1.78;color:#1a0f00;font-weight:500;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #c9a84c;font-family:'EB Garamond',serif;}
+
+/* Body copy — magazine standard */
+.art-body{font-size:20px;line-height:1.88;color:#2b1a00;margin-bottom:18px;font-family:'EB Garamond',serif;}
+
+/* DYK — Magazine fact box */
+.dyk{background:#f5edd8;border-top:2px solid #1e1408;border-bottom:2px solid #1e1408;padding:16px 20px;margin:24px 0;display:flex;gap:16px;align-items:flex-start;}
+.dyk-icon{color:#c9a84c;font-size:18px;flex-shrink:0;margin-top:3px;}
+.dyk-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#8b6914;margin-bottom:5px;font-family:'EB Garamond',serif;}
+.dyk-text{font-size:16px;font-style:italic;color:#1a0f00;line-height:1.6;font-family:'EB Garamond',serif;}
+
+/* Section headers — magazine style */
+.section-hdr{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#faf5e9;background:#1e1408;padding:6px 12px;display:inline-block;margin:26px 0 16px;font-family:'EB Garamond',serif;}
+
+/* In-article images */
+.mid-img{width:100%;display:block;height:190px;object-fit:cover;margin:20px 0 5px;filter:contrast(1.05) saturate(1.12) brightness(.88) sepia(.06);}
+.mid-caption{font-size:12px;font-style:italic;color:#8b6914;margin-bottom:18px;font-family:'EB Garamond',serif;}
+
+/* Disclaimer */
+.disclaimer{background:#f0e8d5;border:1px solid #c9a84c;padding:16px 20px;font-size:14px;font-style:italic;color:#5a4010;line-height:1.7;margin-top:24px;font-family:'EB Garamond',serif;}
+.back-link{display:inline-block;margin-top:20px;font-size:14px;color:#8b6914;text-decoration:underline;font-style:italic;font-family:'EB Garamond',serif;}
+
+/* ── SIDEBAR ── */
+.sidebar{padding:22px 18px;}
+.sb-pull{border-top:2px solid #1e1408;border-bottom:2px solid #1e1408;background:#f0e8d5;padding:18px 16px;text-align:center;margin-bottom:22px;}
+.sb-pull p{font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:#1a0f00;line-height:1.5;margin-bottom:8px;}
+.sb-pull cite{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#8b6914;font-style:normal;font-family:'EB Garamond',serif;}
+
+/* Subscribe box */
+.mag-sub{border:1px solid #c9a84c;background:#f5edd8;padding:20px 16px;text-align:center;margin-bottom:22px;}
+.mag-sub-eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8b6914;margin-bottom:10px;font-family:'EB Garamond',serif;}
+.mag-sub-headline{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#1a0f00;line-height:1.3;margin-bottom:8px;}
+.mag-sub-body{font-size:15px;color:#2b1a00;line-height:1.65;margin-bottom:16px;font-style:italic;font-family:'EB Garamond',serif;}
+.mag-btn{display:block;background:#8b6914;color:#faf5e9;padding:14px 16px;font-size:15px;font-weight:bold;border:2px solid #6b4f0f;font-family:'Playfair Display',serif;text-decoration:none;text-align:center;margin-bottom:10px;transition:background .15s;}
+.mag-btn:hover{background:#6b4f0f;}
+.mag-trust{font-size:12px;color:#7a5c1e;font-style:italic;font-family:'EB Garamond',serif;}
+
+/* Related stories */
+.related-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#faf5e9;background:#1e1408;padding:5px 11px;display:inline-block;margin-bottom:16px;font-family:'EB Garamond',serif;}
+.rel-item{display:grid;grid-template-columns:74px 1fr;gap:10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e0cc99;align-items:start;text-decoration:none;}
+.rel-item:last-child{border-bottom:none;margin-bottom:0;}
+.rel-thumb{width:74px;height:56px;object-fit:cover;display:block;filter:contrast(1.05) saturate(1.1) brightness(.88) sepia(.06);}
+.rel-cat{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#8b6914;margin-bottom:3px;font-family:'EB Garamond',serif;}
+.rel-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;line-height:1.3;color:#1a0f00;}
+.rel-read{font-size:11px;font-style:italic;color:#8b6914;margin-top:3px;display:block;font-family:'EB Garamond',serif;}
+
+@media(max-width:768px){
+  .topbar{padding:6px 16px;}
+  .topbar .hide-mob,.dateline .hide-mob{display:none;}
+  .masthead{padding:16px 16px 14px;}
+  .mastname{font-size:38px;letter-spacing:-1px;}
+  .nav{justify-content:flex-start;}
+  .nav a{padding:8px 14px;font-size:10px;}
+  .breadcrumb{padding:8px 16px;}
+  .article-layout{grid-template-columns:1fr;}
+  .article-main{border-right:none;padding:20px 16px;}
+  .art-headline{font-size:26px;}
+  .art-intro{font-size:18px;}
+  .art-body{font-size:18px;}
+  .art-meta{flex-direction:column;gap:3px;}
+  .hero-img{height:210px;}
+  .ornament{margin:18px 0;}
+  .sidebar{padding:20px 16px;border-top:2px solid #1e1408;}
+  .section-banner{padding:5px 16px;}
+  .footer{padding:20px 16px;}
+  .footer-links{line-height:2.2;}
+}
+</style>
+</head>
+<body>
+<div class="site">
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>Vol. I, No. 1</span>
+  <span class="hide-mob">golden-horizons.org &nbsp;·&nbsp; The Retirement Abroad Magazine</span>
+  <span>April 2026</span>
+</div>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="dateline">
+    <span>The Retirement Abroad Magazine</span>
+    <span class="hide-mob">For Americans Who Are Ready for What&rsquo;s Next</span>
+    <span>April 2026 &nbsp;·&nbsp; Issue 1</span>
+  </div>
+  <a href="https://golden-horizons.org/" class="mastname">Golden Horizons</a>
+  <div class="issue-line">
+    <span class="issue-tag"><strong>This Issue:</strong> Where $2,000/month buys a life worth living</span>
+    <span class="issue-tag"><strong>Inside:</strong> The Money Page &nbsp;·&nbsp; The Destination Report &nbsp;·&nbsp; The Health File</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="https://golden-horizons.org/">Cover</a>
+  <a href="https://golden-horizons.org/articles" class="active">All Stories</a>
+  <a href="https://golden-horizons.org/destinations">Destinations</a>
+  <a href="https://golden-horizons.org/#subscribe">Subscribe Free</a>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="https://golden-horizons.org/">Cover</a> &nbsp;&rsaquo;&nbsp;
+  <a href="https://golden-horizons.org/articles">All Stories</a> &nbsp;&rsaquo;&nbsp;
+  <a href="https://golden-horizons.org/articles?category=Healthcare">The Health File</a> &nbsp;&rsaquo;&nbsp;
+  Panama
+</div>
+
+<!-- ARTICLE LAYOUT -->
+<div class="article-layout">
+
+  <div class="article-main">
+
+    <div class="art-kicker">The Health File &nbsp;·&nbsp; Panama</div>
+
+    <h1 class="art-headline">Healthcare Quality in Panama for Expats &mdash; What Retirees Need to Know</h1>
+
+    <div class="art-meta">
+      <span>By the Golden Horizons Editorial Team</span>
+      <span>Reviewed by Golden Horizons Editors</span>
+      <span>Updated: April 26, 2026 &nbsp;&middot;&nbsp; 3 min read</span>
+    </div>
+
+    <div class="hero-img-wrap">
+      <img class="hero-img"
+        src="https://images.pexels.com/photos/14840759/pexels-photo-14840759.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Panama City healthcare district for expats">
+    </div>
+    <div class="img-caption">Panama City&rsquo;s private hospital district &mdash; where many expats receive care rivaling U.S. standards at a fraction of the cost.</div>
+
+    <p class="art-intro">When considering retirement in Panama, one of the key factors is healthcare quality. With a budget of $2,000 to $5,000 a month, many find Panama&rsquo;s healthcare system both affordable and surprisingly comprehensive.</p>
+
+    <div class="dyk">
+      <div class="dyk-icon">◆</div>
+      <div>
+        <div class="dyk-label">From the Money Page</div>
+        <div class="dyk-text">The average American can live comfortably in Portugal for $2,200/month &mdash; including rent, food, and healthcare.</div>
+      </div>
+    </div>
+
+    <div class="section-hdr">Why Retire Here</div>
+
+    <p class="art-body">Panama offers a mix of modern amenities and a lower cost of living, making it a popular destination for retirees. Cities like Panama City and David boast state-of-the-art hospitals and clinics, often with English-speaking staff. Many doctors have trained in the U.S. or Europe &mdash; a reassurance for those concerned about maintaining their health standards.</p>
+
+    <p class="art-body">The country&rsquo;s tropical climate and vibrant culture are additional draws. Retirees often appreciate the slower pace of life, coupled with activities ranging from beach outings to cultural festivals. The warmth of the local community helps smooth the transition, though patience and a willingness to adapt are essential.</p>
+
+    <div class="ornament">— ✦ —</div>
+
+    <div class="section-hdr">Practical Tips</div>
+
+    <img class="mid-img"
+      src="https://images.pexels.com/photos/2666249/pexels-photo-2666249.jpeg?auto=compress&cs=tinysrgb&w=700"
+      alt="Panama practical tips for retirees">
+    <div class="mid-caption">Many expats choose to live near Panama City to stay close to top-tier private medical facilities.</div>
+
+    <p class="art-body">Understanding the healthcare system is crucial before relocating. Panama has both public and private options, but expats generally prefer private facilities for shorter wait times and higher perceived quality. Research hospitals and clinics in your area of interest before settling down.</p>
+
+    <div class="dyk">
+      <div class="dyk-icon">◆</div>
+      <div>
+        <div class="dyk-label">From the Visa File</div>
+        <div class="dyk-text">Panama&rsquo;s Pensionado visa gives retirees discounts on everything from flights to restaurant bills.</div>
+      </div>
+    </div>
+
+    <p class="art-body">International health insurance is popular among expats, offering coverage in Panama and abroad. Compare different plans and providers carefully &mdash; premiums and coverage vary significantly. Language can be a barrier, but learning basic Spanish healthcare phrases goes a long way. Local expat communities are invaluable for recommendations.</p>
+
+    <div class="ornament">— ✦ —</div>
+
+    <div class="section-hdr">Cost &amp; Healthcare</div>
+
+    <img class="mid-img"
+      src="https://images.pexels.com/photos/18027952/pexels-photo-18027952.jpeg?auto=compress&cs=tinysrgb&w=700"
+      alt="Panama cost of healthcare for retirees">
+    <div class="mid-caption">Routine specialist visits in Panama City run $50&ndash;$100. Hospital stays average $100&ndash;$200/day.</div>
+
+    <p class="art-body">Healthcare costs in Panama are significantly lower than in the U.S. Routine doctor visits cost as little as $20 to $60. Specialist consultations range from $50 to $100. Hospital stays run approximately $100&ndash;$200 per day &mdash; a fraction of U.S. rates.</p>
+
+    <p class="art-body">Monthly insurance premiums range from $100 to $300 depending on coverage and health factors. Review each plan carefully, including restrictions and waiting periods for pre-existing conditions. Access to care is generally excellent in urban areas, though rural residents may need to travel to larger cities for specialist care.</p>
+
+    <div class="dyk">
+      <div class="dyk-icon">◆</div>
+      <div>
+        <div class="dyk-label">From the Health File</div>
+        <div class="dyk-text">Croatia offers EU-quality healthcare at a fraction of U.S. costs, with many expats paying under $200/month.</div>
+      </div>
+    </div>
+
+    <div class="ornament">— ✦ —</div>
+
+    <div class="disclaimer">
+      The information in this article is for general informational purposes only. Costs, visa requirements, healthcare policies, and local conditions change frequently. Always verify current details with official government sources and consult a licensed advisor before making relocation decisions. Golden Horizons does not provide legal, financial, or medical advice.
+    </div>
+
+    <a href="https://golden-horizons.org/articles" class="back-link">&larr; Back to all stories</a>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sb-pull">
+      <p>&ldquo;Most people plan carefully for retirement. Almost none plan where to live it.&rdquo;</p>
+      <cite>— The Golden Horizons Editors</cite>
+    </div>
+
+    <div class="mag-sub" id="subscribe">
+      <div class="mag-sub-eyebrow">Free Subscription</div>
+      <div class="mag-sub-headline">Start reading Golden Horizons every morning</div>
+      <div class="mag-sub-body">Real costs. Real places. One story, every morning.</div>
+      <a href="https://golden-horizons.org/golden_horizons_final.pdf" target="_blank" class="mag-btn">Start My Free Subscription &rarr;</a>
+      <div class="mag-trust">◆ Join 5,000+ readers ◆</div>
+    </div>
+
+    <div class="related-label">More from The Health File</div>
+
+    <a href="https://golden-horizons.org/articles/comparison-portugal-vs-spain-which-is-the-better-retirement-destination-v2" class="rel-item">
+      <img class="rel-thumb" src="https://images.pexels.com/photos/37304579/pexels-photo-37304579.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Portugal vs Spain">
+      <div>
+        <div class="rel-cat">Destination Report &nbsp;·&nbsp; Europe</div>
+        <div class="rel-title">Portugal vs Spain: Which Is Better for Retirement?</div>
+        <span class="rel-read">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a href="https://golden-horizons.org/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2" class="rel-item">
+      <img class="rel-thumb" src="https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Albania">
+      <div>
+        <div class="rel-cat">The Money Page &nbsp;·&nbsp; Albania</div>
+        <div class="rel-title">What $1,000 a Month Gets You in Gjirokastër</div>
+        <span class="rel-read">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a href="https://golden-horizons.org/articles/greece-oceanfront-living-in-crete-on-a-retirement-budget" class="rel-item">
+      <img class="rel-thumb" src="https://images.pexels.com/photos/984877/pexels-photo-984877.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Greece">
+      <div>
+        <div class="rel-cat">The Beach Report &nbsp;·&nbsp; Greece</div>
+        <div class="rel-title">Oceanfront Living in Crete on a Retirement Budget</div>
+        <span class="rel-read">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a href="https://golden-horizons.org/articles/ecuador-what-2000-a-month-gets-you-in-cuenca" class="rel-item">
+      <img class="rel-thumb" src="https://images.pexels.com/photos/29817339/pexels-photo-29817339.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Ecuador">
+      <div>
+        <div class="rel-cat">The Money Page &nbsp;·&nbsp; Ecuador</div>
+        <div class="rel-title">What $2,000 a Month Gets You in Cuenca</div>
+        <span class="rel-read">Read &rarr;</span>
+      </div>
+    </a>
+
+    <a href="https://golden-horizons.org/articles/ireland-residency-options-for-american-retirees-v2" class="rel-item">
+      <img class="rel-thumb" src="https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Ireland">
+      <div>
+        <div class="rel-cat">The Visa File &nbsp;·&nbsp; Ireland</div>
+        <div class="rel-title">Residency Options for American Retirees in Ireland</div>
+        <span class="rel-read">Read &rarr;</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-name">Golden Horizons</div>
+  <p>The retirement abroad magazine for Americans who aren&rsquo;t done yet.</p>
+  <div class="footer-links">
+    <a href="https://golden-horizons.org">Website</a><span>|</span>
+    <a href="https://golden-horizons.org/articles">All Stories</a><span>|</span>
+    <a href="https://golden-horizons.org/destinations">Destinations</a><span>|</span>
+    <a href="https://golden-horizons.org/about">About</a><span>|</span>
+    <a href="https://golden-horizons.org/privacy-policy">Privacy</a><span>|</span>
+    <a href="https://golden-horizons.org/contact">Contact</a><span>|</span>
+    <a href="https://golden-horizons.org/terms-of-use">Terms</a>
+  </div>
+  <p style="margin-top:12px;font-size:11px;opacity:.5;">&copy; 2026 Golden Horizons &mdash; All rights reserved</p>
+</footer>
+
+</div>
+</body>
+</html>
