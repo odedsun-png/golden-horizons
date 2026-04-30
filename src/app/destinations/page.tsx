@@ -1,7 +1,6 @@
 {/* HERO (CLEAN FINAL VERSION) */}
 <section className="bg-[#1f2326] py-20 md:py-28">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
     <div className="mb-4 text-xs font-semibold tracking-[0.25em] uppercase text-[#c9a84c]">
       2026 Retirement Abroad Rankings
     </div>
@@ -21,11 +20,10 @@
     <div className="mt-10 flex justify-center">
       <a
         href="/free-guide"
-        className="px-10 py-4 bg-[#8b6914] text-white text-sm font-semibold tracking-wider uppercase border border-[#6b4f0f] hover:bg-[#7a5c1e] transition-colors"
+        className="inline-block px-10 py-4 bg-[#8b6914] text-white text-sm font-semibold tracking-wider uppercase border border-[#6b4f0f] hover:bg-[#7a5c1e] transition-colors"
       >
         See Where Your Money Goes Further →
       </a>
     </div>
-
   </div>
 </section>
