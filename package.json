@@ -10,16 +10,19 @@
     "format": "bunx biome format --write"
   },
   "dependencies": {
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.475.0",
-    "next": "15.3.7",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-grab": "latest",
-    "same-runtime": "^0.0.1",
-    "tailwind-merge": "^3.3.0",
-    "tailwindcss-animate": "^1.0.7"
+  "class-variance-authority": "^0.7.1",
+  "clsx": "^2.1.1",
+  "gray-matter": "^4.0.3",
+  "lucide-react": "^0.475.0",
+  "next": "15.3.7",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-grab": "latest",
+  "remark": "^15.0.1",
+  "remark-html": "^16.0.1",
+  "same-runtime": "^0.0.1",
+  "tailwind-merge": "^3.3.0",
+  "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
