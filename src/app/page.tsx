@@ -88,11 +88,10 @@ export default async function ArticlesPage() {
           All Stories · {validArticles.length} Articles
         </div>
 
-        <section
+        <div
           style={{
             padding: '32px 36px',
             borderBottom: '2px solid #1e1408',
-            background: '#faf5e9',
           }}
         >
           <div className="gh-section-stamp">The Complete Archive</div>
@@ -103,23 +102,15 @@ export default async function ArticlesPage() {
 
           <p
             className="gh-body-text"
-            style={{
-              maxWidth: '720px',
-              marginBottom: 0,
-            }}
+            style={{ maxWidth: '720px', marginBottom: 0 }}
           >
             Every guide, destination deep-dive, and cost breakdown — organized by
             department. Real budgets, real visa processes, real healthcare experiences
             from Americans already living abroad.
           </p>
-        </section>
+        </div>
 
-        <main
-          style={{
-            padding: '32px 36px',
-            background: '#faf5e9',
-          }}
-        >
+        <div style={{ padding: '32px 36px', background: '#faf5e9' }}>
           {categories.map((category) => (
             <section key={category} style={{ marginBottom: '48px' }}>
               <div className="gh-mag-section-label">{category}</div>
@@ -161,12 +152,12 @@ export default async function ArticlesPage() {
                             {article.category || 'Article'}
                           </div>
 
-                          <h2
+                          <h3
                             className="gh-story-title"
                             style={{ marginBottom: '6px' }}
                           >
                             {article.title}
-                          </h2>
+                          </h3>
 
                           {article.excerpt && (
                             <p
@@ -199,7 +190,7 @@ export default async function ArticlesPage() {
               </div>
             </section>
           ))}
-        </main>
+        </div>
 
         <section
           id="free-guide"
@@ -249,7 +240,7 @@ export default async function ArticlesPage() {
               countries before you decide.
             </p>
 
-            <a
+            <Link
               href="/#free-guide"
               style={{
                 display: 'inline-block',
@@ -262,10 +253,11 @@ export default async function ArticlesPage() {
                 fontFamily: 'Playfair Display, serif',
                 textDecoration: 'none',
                 border: '2px solid #c9a84c',
+                transition: 'all 0.15s',
               }}
             >
               Get the Free Guide →
-            </a>
+            </Link>
 
             <p
               style={{
