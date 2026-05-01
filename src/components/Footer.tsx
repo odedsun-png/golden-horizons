@@ -1,49 +1,45 @@
 "use client";
+
 import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="bg-[#1f2326] py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center text-center space-y-4">
-          {/* Legal Links */}
-          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] sm:text-xs text-white/50">
-            <Link href="/about" className="hover:text-white/80 transition-colors">About Us</Link>
-            <span className="text-white/30">|</span>
-            <Link href="/privacy-policy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
-            <span className="text-white/30">|</span>
-            <Link href="/terms-of-use" className="hover:text-white/80 transition-colors">Terms of Use</Link>
-            <span className="text-white/30">|</span>
-            <Link href="/disclaimer" className="hover:text-white/80 transition-colors">Disclaimer</Link>
-            <span className="text-white/30">|</span>
-            <Link href="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
-            <span className="text-white/30">|</span>
-            <a
-              href="https://app.brevo.com/contact/unsubscribe"
-              className="hover:text-white/80 transition-colors"
-            >
-              Unsubscribe
-            </a>
-          </div>
-          {/* Logo — gold version for dark background */}
-          <Link href="/" className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52" width="160" height="52">
-              <g transform="translate(24, 26)">
-                <line x1="0" y1="-16" x2="0" y2="-12" stroke="#D4A84B" strokeWidth="1.5" strokeLinecap="round"/>
-                <line x1="7.5" y1="-14" x2="5.7" y2="-10.8" stroke="#D4A84B" strokeWidth="1.5" strokeLinecap="round"/>
-                <line x1="14" y1="-7.5" x2="10.8" y2="-5.7" stroke="#D4A84B" strokeWidth="1.5" strokeLinecap="round"/>
-                <line x1="-7.5" y1="-14" x2="-5.7" y2="-10.8" stroke="#D4A84B" strokeWidth="1.5" strokeLinecap="round"/>
-                <line x1="-14" y1="-7.5" x2="-10.8" y2="-5.7" stroke="#D4A84B" strokeWidth="1.5" strokeLinecap="round"/>
-                <line x1="16" y1="0" x2="12" y2="0" stroke="#D4A84B" strokeWidth="1.5" strokeLinecap="round"/>
-                <line x1="-16" y1="0" x2="-12" y2="0" stroke="#D4A84B" strokeWidth="1.5" strokeLinecap="round"/>
-                <line x1="-16" y1="4" x2="16" y2="4" stroke="#D4A84B" strokeWidth="1.2"/>
-                <path d="M -9 4 A 9 9 0 0 1 9 4" fill="#D4A84B" stroke="#C8923A" strokeWidth="0.8"/>
-              </g>
-              <text x="48" y="24" fontFamily="Georgia, 'Times New Roman', serif" fontSize="15" fontWeight="bold" letterSpacing="2.5" fill="#D4A84B" textAnchor="start">GOLDEN HORIZONS</text>
-              <text x="49" y="37" fontFamily="Georgia, 'Times New Roman', serif" fontSize="6.5" letterSpacing="2" fill="#8B7355" textAnchor="start">YOUR GUIDE TO RETIREMENT ABROAD</text>
-            </svg>
-          </Link>
-          <p className="text-[11px] sm:text-xs text-white/40">© 2026 Golden Horizons — All rights reserved</p>
+    <footer style={{ background: '#1e1408', padding: '40px 36px', borderTop: '3px double #c9a84c' }}>
+      <div style={{ maxWidth: '980px', margin: '0 auto', textAlign: 'center' }}>
+        
+        <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '32px', fontWeight: 700, color: '#faf5e9', marginBottom: '8px', letterSpacing: '-1px' }}>
+          Golden Horizons
         </div>
+        
+        <p style={{ fontSize: '14px', color: '#c9a84c', marginBottom: '20px', fontFamily: 'EB Garamond, serif', maxWidth: '600px', margin: '0 auto 20px', lineHeight: 1.6 }}>
+          The retirement abroad magazine for Americans who aren&rsquo;t done yet.
+        </p>
+
+        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '8px 16px', fontSize: '13px', color: '#c9a84c', fontFamily: 'EB Garamond, serif', marginBottom: '20px' }}>
+          <Link href="/about" style={{ color: '#c9a84c', textDecoration: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}>
+            About
+          </Link>
+          <span style={{ opacity: 0.35 }}>|</span>
+          <Link href="/privacy-policy" style={{ color: '#c9a84c', textDecoration: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}>
+            Privacy Policy
+          </Link>
+          <span style={{ opacity: 0.35 }}>|</span>
+          <Link href="/terms-of-use" style={{ color: '#c9a84c', textDecoration: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}>
+            Terms of Use
+          </Link>
+          <span style={{ opacity: 0.35 }}>|</span>
+          <Link href="/disclaimer" style={{ color: '#c9a84c', textDecoration: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}>
+            Disclaimer
+          </Link>
+          <span style={{ opacity: 0.35 }}>|</span>
+          <Link href="/contact" style={{ color: '#c9a84c', textDecoration: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}>
+            Contact
+          </Link>
+        </div>
+
+        <p style={{ fontSize: '11px', color: '#8b6914', fontFamily: 'EB Garamond, serif', opacity: 0.7 }}>
+          © 2026 Golden Horizons — All rights reserved
+        </p>
       </div>
     </footer>
   );
