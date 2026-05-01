@@ -566,7 +566,7 @@ export default function DestinationsPage() {
       </footer>
 
       {/* Styles */}
-      <style jsx>{`
+      <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
 
         .topbar {
