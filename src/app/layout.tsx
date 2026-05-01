@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ClientBody from "./ClientBody";
 
 // ─── Site-wide default metadata ───────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -97,7 +96,7 @@ export default function RootLayout({
         <SiteSchemas />
       </head>
       <body suppressHydrationWarning>
-        <ClientBody>{children}</ClientBody>
+        {children}
       </body>
     </html>
   );
