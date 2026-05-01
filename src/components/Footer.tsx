@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#1e1408', padding: '40px 36px', borderTop: '3px double #c9a84c' }}>
-      <div style={{ maxWidth: '980px', margin: '0 auto', textAlign: 'center' }}>
+    <footer style={{ width: '100%', background: '#1e1408', padding: '42px 36px', borderTop: '4px solid #c9a84c', textAlign: 'center' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         
         <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '32px', fontWeight: 700, color: '#faf5e9', marginBottom: '8px', letterSpacing: '-1px' }}>
           Golden Horizons
