@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getArticleCards } from "@/lib/markdown";
-import ArticlesClient from "./ArticlesClient";
+import ArticlesClient from "@/components/ArticlesClient";
 
 export const metadata = {
   title: "Articles — Golden Horizons",
@@ -17,7 +17,9 @@ export default function ArticlesPage() {
         {/* Topbar */}
         <div className="topbar">
           <span>Vol. I, No. 1</span>
-          <span className="hide-mob">golden-horizons.org · The Retirement Abroad Magazine</span>
+          <span className="hide-mob">
+            golden-horizons.org · The Retirement Abroad Magazine
+          </span>
           <span>2026 Edition</span>
         </div>
 
@@ -25,7 +27,9 @@ export default function ArticlesPage() {
         <header className="masthead">
           <div className="dateline">
             <span>The Retirement Abroad Magazine</span>
-            <span className="hide-mob">For Americans Who Are Ready for What’s Next</span>
+            <span className="hide-mob">
+              For Americans Who Are Ready for What&apos;s Next
+            </span>
             <span>Articles Archive</span>
           </div>
 
@@ -56,7 +60,9 @@ export default function ArticlesPage() {
         </div>
 
         {/* Section Banner */}
-        <div className="section-banner">The Complete Golden Horizons Article Archive</div>
+        <div className="section-banner">
+          The Complete Golden Horizons Article Archive
+        </div>
 
         {/* Page Intro */}
         <section className="archive-hero">
@@ -66,8 +72,8 @@ export default function ArticlesPage() {
 
           <p className="archive-lede">
             Practical retirement-abroad guides for Americans comparing cost of living,
-            healthcare, visas, housing, taxes, safety, and lifestyle across the world’s
-            most popular retirement destinations.
+            healthcare, visas, housing, taxes, safety, and lifestyle across the
+            world&apos;s most popular retirement destinations.
           </p>
         </section>
 
@@ -92,7 +98,7 @@ export default function ArticlesPage() {
         {/* Footer */}
         <footer className="mag-footer">
           <div className="footer-name">Golden Horizons</div>
-          <p>The retirement abroad magazine for Americans who aren’t done yet.</p>
+          <p>The retirement abroad magazine for Americans who aren&apos;t done yet.</p>
 
           <div className="footer-links">
             <Link href="/">Cover</Link>
@@ -108,7 +114,9 @@ export default function ArticlesPage() {
             <Link href="/contact">Contact</Link>
           </div>
 
-          <p className="copyright">© 2026 Golden Horizons — All rights reserved</p>
+          <p className="copyright">
+            © 2026 Golden Horizons — All rights reserved
+          </p>
         </footer>
       </div>
     </main>
