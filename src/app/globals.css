@@ -121,3 +121,484 @@ html {
 .img-zoom:hover {
   transform: scale(1.05);
 }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== GOLDEN HORIZONS MAGAZINE DESIGN SYSTEM ===== */
+
+:root {
+  --gh-paper: #faf5e9;
+  --gh-ink: #1e1408;
+  --gh-gold: #c9a84c;
+  --gh-dark-gold: #8b6914;
+  --gh-warm-brown: #6f5620;
+  --gh-text: #1a0f00;
+  --gh-light-border: #d8c28a;
+  --gh-cream: #fff8e8;
+}
+
+body {
+  background: var(--gh-paper);
+  color: var(--gh-text);
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== TOPBAR ===== */
+.gh-topbar {
+  background: var(--gh-ink);
+  padding: 7px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gh-topbar span {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gh-gold);
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== MASTHEAD ===== */
+.gh-masthead {
+  padding: 20px 36px 15px;
+  text-align: center;
+  border-bottom: 3px double var(--gh-ink);
+  background: var(--gh-paper);
+}
+
+.gh-dateline {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--gh-dark-gold);
+  border-bottom: 1px solid var(--gh-gold);
+  padding-bottom: 9px;
+  margin-bottom: 11px;
+  font-family: 'EB Garamond', serif;
+}
+
+.gh-mastname {
+  font-family: 'Playfair Display', serif;
+  font-size: 58px;
+  font-weight: 900;
+  color: var(--gh-ink);
+  line-height: 1;
+  letter-spacing: -2px;
+  text-decoration: none;
+  display: block;
+}
+
+.gh-issue-line {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--gh-dark-gold);
+  margin-top: 7px;
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== NAV ===== */
+.gh-nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid var(--gh-ink);
+  background: var(--gh-paper);
+  overflow-x: auto;
+}
+
+.gh-nav a {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gh-ink);
+  text-decoration: none;
+  padding: 10px 24px;
+  border-right: 1px solid var(--gh-gold);
+  white-space: nowrap;
+  font-family: 'EB Garamond', serif;
+  transition: background 0.15s;
+}
+
+.gh-nav a:last-child {
+  border-right: none;
+}
+
+.gh-nav a:hover {
+  background: #f0e8d5;
+}
+
+.gh-nav a.active {
+  background: var(--gh-ink);
+  color: var(--gh-gold);
+}
+
+/* ===== BREADCRUMB ===== */
+.gh-breadcrumb {
+  background: var(--gh-paper);
+  border-bottom: 1px solid var(--gh-gold);
+  padding: 9px 36px;
+  font-size: 12px;
+  color: var(--gh-dark-gold);
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+
+.gh-breadcrumb a {
+  color: var(--gh-dark-gold);
+  text-decoration: underline;
+}
+
+/* ===== SECTION BANNER ===== */
+.gh-section-banner {
+  background: var(--gh-ink);
+  padding: 6px 36px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gh-gold);
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== SECTION STAMP ===== */
+.gh-section-stamp {
+  display: inline-block;
+  background: var(--gh-ink);
+  color: var(--gh-gold);
+  padding: 4px 12px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif;
+  margin-bottom: 12px;
+}
+
+/* ===== ORNAMENTAL DIVIDER ===== */
+.gh-ornamental {
+  text-align: center;
+  color: var(--gh-gold);
+  font-size: 14px;
+  margin: 32px 0;
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== TYPOGRAPHY ===== */
+.gh-heading-1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: var(--gh-ink);
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.gh-heading-2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gh-ink);
+  border-bottom: 2px solid var(--gh-ink);
+  padding-bottom: 8px;
+}
+
+.gh-heading-3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gh-ink);
+}
+
+.gh-body-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  line-height: 1.88;
+  color: var(--gh-text);
+}
+
+.gh-intro-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 24px;
+  line-height: 1.68;
+  font-weight: 500;
+  color: #2b1a00;
+}
+
+/* ===== ARTICLE BODY ===== */
+.gh-article-body {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  line-height: 1.88;
+  color: var(--gh-text);
+}
+
+.gh-article-body h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gh-ink);
+  margin-top: 48px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid var(--gh-ink);
+  padding-bottom: 8px;
+}
+
+.gh-article-body p {
+  margin-bottom: 24px;
+}
+
+.gh-article-body a {
+  color: var(--gh-dark-gold);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.gh-article-body a:hover {
+  color: var(--gh-ink);
+}
+
+/* ===== VINTAGE IMAGE FILTER ===== */
+.gh-vintage-img {
+  filter: contrast(1.06) saturate(0.82) brightness(0.86) sepia(0.18);
+}
+
+/* ===== CARDS ===== */
+.gh-card {
+  background: white;
+  border: 1px solid var(--gh-light-border);
+  border-radius: 4px;
+  padding: 20px;
+  transition: box-shadow 0.2s;
+}
+
+.gh-card:hover {
+  box-shadow: 0 4px 12px rgba(30, 20, 8, 0.15);
+}
+
+.gh-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gh-ink);
+  margin-bottom: 8px;
+}
+
+.gh-card-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 15px;
+  color: var(--gh-warm-brown);
+  line-height: 1.6;
+}
+
+/* ===== DESTINATION CARDS ===== */
+.gh-dest-card {
+  background: var(--gh-paper);
+  border: 1px solid var(--gh-light-border);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.gh-dest-card:hover {
+  border-color: var(--gh-dark-gold);
+  box-shadow: 0 6px 16px rgba(30, 20, 8, 0.12);
+}
+
+/* ===== CTA BOXES ===== */
+.gh-cta-primary {
+  background: var(--gh-ink);
+  border: 2px solid var(--gh-gold);
+  border-radius: 4px;
+  padding: 24px;
+  text-align: center;
+}
+
+.gh-cta-secondary {
+  background: var(--gh-cream);
+  border: 2px solid var(--gh-light-border);
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.gh-cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gh-paper);
+  margin-bottom: 12px;
+}
+
+.gh-cta-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  color: #d4c4a0;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.gh-cta-button {
+  display: inline-block;
+  background: var(--gh-gold);
+  color: var(--gh-ink);
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  transition: background 0.15s;
+}
+
+.gh-cta-button:hover {
+  background: #e0c46c;
+}
+
+/* ===== DISCLAIMER BOX ===== */
+.gh-disclaimer {
+  background: var(--gh-cream);
+  border: 2px solid var(--gh-light-border);
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 48px;
+}
+
+.gh-disclaimer h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gh-ink);
+  margin-bottom: 12px;
+}
+
+.gh-disclaimer p {
+  font-family: 'EB Garamond', serif;
+  font-size: 15px;
+  color: #2b1a00;
+  line-height: 1.7;
+}
+
+/* ===== FOOTER ===== */
+.gh-footer {
+  background: var(--gh-ink);
+  padding: 32px 36px;
+  text-align: center;
+  border-top: 3px double var(--gh-gold);
+}
+
+.gh-footer-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gh-paper);
+  margin-bottom: 8px;
+}
+
+.gh-footer-text {
+  font-size: 14px;
+  color: var(--gh-gold);
+  margin-bottom: 12px;
+  font-family: 'EB Garamond', serif;
+}
+
+.gh-footer-links {
+  font-size: 13px;
+  color: var(--gh-gold);
+  font-family: 'EB Garamond', serif;
+}
+
+.gh-footer-links a {
+  color: var(--gh-gold);
+  text-decoration: none;
+}
+
+.gh-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.gh-footer-links span {
+  opacity: 0.35;
+  margin: 0 8px;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.hide-mob {
+  display: block;
+}
+
+.gh-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+.gh-narrow-container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .gh-topbar {
+    padding: 6px 16px;
+  }
+
+  .gh-mastname {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .gh-breadcrumb,
+  .gh-section-banner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gh-heading-1 {
+    font-size: 32px;
+  }
+
+  .gh-heading-2 {
+    font-size: 26px;
+  }
+
+  .gh-body-text,
+  .gh-article-body {
+    font-size: 18px;
+    line-height: 1.78;
+  }
+
+  .gh-intro-text {
+    font-size: 20px;
+  }
+
+  .gh-container,
+  .gh-narrow-container {
+    padding: 0 16px;
+  }
+
+  .hide-mob {
+    display: none;
+  }
+
+  .gh-nav a {
+    padding: 8px 14px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gh-masthead {
+    padding: 14px 16px 12px;
+  }
+
+  .gh-footer {
+    padding: 24px 16px;
+  }
+
+  .gh-footer-links {
+    line-height: 2.2;
+  }
+}
