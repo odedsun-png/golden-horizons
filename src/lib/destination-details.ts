@@ -3,7 +3,7 @@ import path from 'path';
 
 const destinationsFile = path.join(process.cwd(), 'src/data/destinations.json');
 
-const destinationsData: any = {
+const destinationsData: Record<string, any> = {
   'portugal': {
     id: 'portugal',
     rank: 1,
