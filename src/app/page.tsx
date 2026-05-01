@@ -3,8 +3,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export default function HomePage() {
   const heroSlides = useMemo(
@@ -56,6 +54,8 @@ export default function HomePage() {
 
             body {
               background: #e8e0d0;
+              margin: 0;
+              padding: 0;
             }
 
             .site {
@@ -67,7 +67,7 @@ export default function HomePage() {
               color: #1a0f00;
             }
 
-            .gh-topbar {
+            .topbar {
               background: #1e1408;
               padding: 7px 36px;
               display: flex;
@@ -76,7 +76,7 @@ export default function HomePage() {
               gap: 16px;
             }
 
-            .gh-topbar span {
+            .topbar span {
               font-size: 10px;
               letter-spacing: 2.5px;
               text-transform: uppercase;
@@ -85,14 +85,14 @@ export default function HomePage() {
               white-space: nowrap;
             }
 
-            .gh-masthead {
+            .masthead {
               padding: 20px 36px 15px;
               text-align: center;
               border-bottom: 3px double #1e1408;
               background: #faf5e9;
             }
 
-            .gh-dateline {
+            .dateline {
               display: flex;
               justify-content: space-between;
               gap: 20px;
@@ -104,7 +104,7 @@ export default function HomePage() {
               font-family: 'EB Garamond', serif;
             }
 
-            .gh-mastname {
+            .mastname {
               font-family: 'Playfair Display', serif;
               font-size: 66px;
               font-weight: 900;
@@ -115,7 +115,7 @@ export default function HomePage() {
               display: block;
             }
 
-            .gh-issue-line {
+            .issue-line {
               display: flex;
               justify-content: center;
               gap: 28px;
@@ -123,20 +123,20 @@ export default function HomePage() {
               margin-top: 10px;
             }
 
-            .gh-issue-tag {
+            .issue-tag {
               font-size: 12px;
               font-style: italic;
               color: #8b6914;
               font-family: 'EB Garamond', serif;
             }
 
-            .gh-issue-tag strong {
+            .issue-tag strong {
               font-style: normal;
               color: #1e1408;
               font-weight: 500;
             }
 
-            .gh-nav {
+            .nav {
               display: flex;
               justify-content: center;
               border-bottom: 2px solid #1e1408;
@@ -144,7 +144,7 @@ export default function HomePage() {
               overflow-x: auto;
             }
 
-            .gh-nav a {
+            .nav a {
               font-size: 11px;
               letter-spacing: 2px;
               text-transform: uppercase;
@@ -156,12 +156,12 @@ export default function HomePage() {
               font-family: 'EB Garamond', serif;
             }
 
-            .gh-nav a:last-child {
+            .nav a:last-child {
               border-right: none;
             }
 
-            .gh-nav a:hover,
-            .gh-nav a.active {
+            .nav a:hover,
+            .nav a.active {
               background: #1e1408;
               color: #c9a84c;
             }
@@ -240,13 +240,8 @@ export default function HomePage() {
             }
 
             @keyframes kenBurns {
-              0% {
-                transform: scale(1.03) translateX(0);
-              }
-
-              100% {
-                transform: scale(1.12) translateX(-18px);
-              }
+              0% { transform: scale(1.03) translateX(0); }
+              100% { transform: scale(1.12) translateX(-18px); }
             }
 
             .cover-story {
@@ -297,7 +292,7 @@ export default function HomePage() {
               background: #f0e8d5;
               padding: 28px 36px;
               text-align: center;
-              margin: 0 0 28px;
+              margin: 0;
             }
 
             .pullquote p {
@@ -318,18 +313,28 @@ export default function HomePage() {
               font-family: 'EB Garamond', serif;
             }
 
-            .below-fold {
+            .section-bar {
+              background: #1e1408;
+              color: #c9a84c;
+              padding: 8px 36px;
+              font-size: 10px;
+              letter-spacing: 3.5px;
+              text-transform: uppercase;
+              font-family: 'EB Garamond', serif;
+            }
+
+            .inside-grid {
               display: grid;
               grid-template-columns: 1fr 1fr 300px;
               border-bottom: 2px solid #1e1408;
             }
 
-            .bf-col {
+            .inside-col {
               padding: 26px 24px;
               border-right: 1px solid #c9a84c;
             }
 
-            .bf-col:last-child {
+            .inside-col:last-child {
               border-right: none;
             }
 
@@ -345,109 +350,340 @@ export default function HomePage() {
               font-family: 'EB Garamond', serif;
             }
 
-            .small-story-text {
-              font-size: 18px;
-              margin-bottom: 14px;
+            .story-item {
+              margin-bottom: 18px;
+              padding-bottom: 18px;
+              border-bottom: 1px solid #e0cc99;
             }
 
-            .mag-text-link {
-              font-size: 14px;
+            .story-item:last-child {
+              margin-bottom: 0;
+              padding-bottom: 0;
+              border-bottom: none;
+            }
+
+            .story-item img {
+              width: 100%;
+              height: 115px;
+              object-fit: cover;
+              margin-bottom: 10px;
+              filter: contrast(1.08) saturate(1.15) brightness(0.84) sepia(0.1);
+            }
+
+            .story-kicker {
+              font-size: 9px;
+              letter-spacing: 2.2px;
+              text-transform: uppercase;
+              color: #8b6914;
+              margin-bottom: 6px;
+              font-family: 'EB Garamond', serif;
+            }
+
+            .story-title {
+              font-family: 'Playfair Display', serif;
+              font-size: 17px;
+              font-weight: 700;
+              line-height: 1.22;
+              color: #1a0f00;
+              margin: 0 0 7px;
+            }
+
+            .story-link {
+              font-size: 13px;
               font-style: italic;
               color: #8b6914;
               text-decoration: underline;
               font-family: 'EB Garamond', serif;
             }
 
-            .dest-item {
+            .side-quote {
+              border-top: 2px solid #1e1408;
+              border-bottom: 2px solid #1e1408;
+              padding: 20px 16px;
               margin-bottom: 18px;
-              padding-bottom: 18px;
-              border-bottom: 1px solid #e0cc99;
-            }
-
-            .dest-item:last-child {
-              border-bottom: none;
-              margin-bottom: 0;
-              padding-bottom: 0;
-            }
-
-            .dest-flag {
-              font-size: 24px;
-              margin-bottom: 8px;
-            }
-
-            .dest-name {
-              font-family: 'Playfair Display', serif;
-              font-size: 17px;
-              font-weight: 700;
-              color: #1a0f00;
-              margin-bottom: 4px;
-            }
-
-            .dest-cost {
-              font-size: 14px;
-              color: #8b6914;
-              font-family: 'EB Garamond', serif;
-            }
-
-            .mag-sub {
-              border: 1px solid #c9a84c;
-              background: #f5edd8;
-              padding: 22px 18px;
               text-align: center;
+              background: #f5edd8;
             }
 
-            .mag-sub-eyebrow {
-              font-size: 10px;
-              letter-spacing: 3px;
-              text-transform: uppercase;
-              color: #8b6914;
-              margin-bottom: 10px;
-              font-family: 'EB Garamond', serif;
-            }
-
-            .mag-sub-headline {
+            .side-quote p {
               font-family: 'Playfair Display', serif;
               font-size: 19px;
-              font-weight: 700;
+              font-style: italic;
+              line-height: 1.4;
               color: #1a0f00;
-              line-height: 1.3;
-              margin: 0 0 8px;
+              margin: 0 0 12px;
             }
 
-            .mag-sub-body {
-              font-size: 15px;
-              color: #2b1a00;
-              line-height: 1.65;
-              margin: 0 0 16px;
-              font-style: italic;
+            .side-quote cite {
+              font-size: 10px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: #8b6914;
+              font-style: normal;
               font-family: 'EB Garamond', serif;
             }
 
-            .mag-btn {
+            .small-sub-box {
+              border: 1px solid #c9a84c;
+              background: #f5edd8;
+              text-align: center;
+              padding: 20px 16px;
+            }
+
+            .small-sub-box h3 {
+              font-family: 'Playfair Display', serif;
+              font-size: 19px;
+              line-height: 1.25;
+              margin: 0 0 10px;
+              color: #1a0f00;
+            }
+
+            .small-sub-box p {
+              font-family: 'EB Garamond', serif;
+              font-size: 14px;
+              line-height: 1.55;
+              font-style: italic;
+              color: #2b1a00;
+              margin: 0 0 14px;
+            }
+
+            .small-sub-btn {
               display: block;
               background: #8b6914;
               color: #faf5e9;
-              padding: 15px 18px;
-              font-size: 15px;
-              font-weight: bold;
-              border: 2px solid #6b4f0f;
-              font-family: 'Playfair Display', serif;
+              padding: 13px 14px;
               text-decoration: none;
-              text-align: center;
-              margin-bottom: 10px;
-              transition: background 0.15s;
+              font-family: 'Playfair Display', serif;
+              font-size: 14px;
+              font-weight: 700;
             }
 
-            .mag-btn:hover {
-              background: #6b4f0f;
+            .destination-glance {
+              border-bottom: 1px solid #c9a84c;
             }
 
-            .mag-trust {
-              font-size: 12px;
-              color: #7a5c1e;
-              font-style: italic;
+            .glance-inner {
+              padding: 24px 30px;
+            }
+
+            .glance-title {
+              font-size: 10px;
+              letter-spacing: 3.5px;
+              text-transform: uppercase;
+              color: #8b6914;
+              margin-bottom: 16px;
               font-family: 'EB Garamond', serif;
+            }
+
+            .glance-grid {
+              display: grid;
+              grid-template-columns: repeat(6, 1fr);
+              gap: 8px;
+            }
+
+            .glance-card {
+              border: 1px solid #c9a84c;
+              text-align: center;
+              padding: 12px 8px;
+              background: #fbf3df;
+            }
+
+            .glance-card strong {
+              display: block;
+              font-family: 'Playfair Display', serif;
+              font-size: 14px;
+              margin-bottom: 5px;
+              color: #1a0f00;
+            }
+
+            .glance-card span {
+              display: block;
+              font-family: 'EB Garamond', serif;
+              font-size: 12px;
+              color: #8b6914;
+              font-style: italic;
+            }
+
+            .ornament {
+              text-align: center;
+              padding: 18px 0;
+              border-bottom: 3px solid #c9a84c;
+              color: #c9a84c;
+              letter-spacing: 14px;
+            }
+
+            .guide-split {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              border-bottom: 3px solid #c9a84c;
+            }
+
+            .guide-copy {
+              padding: 36px;
+              background: #faf5e9;
+            }
+
+            .guide-eyebrow {
+              font-size: 10px;
+              letter-spacing: 4px;
+              color: #8b6914;
+              text-transform: uppercase;
+              font-family: 'EB Garamond', serif;
+              margin-bottom: 14px;
+            }
+
+            .guide-copy h2 {
+              font-family: 'Playfair Display', serif;
+              font-size: 34px;
+              line-height: 1.05;
+              margin: 0 0 14px;
+              color: #1a0f00;
+            }
+
+            .guide-copy p {
+              font-family: 'EB Garamond', serif;
+              font-size: 18px;
+              line-height: 1.55;
+              font-style: italic;
+              margin: 0 0 16px;
+              color: #2b1a00;
+            }
+
+            .guide-list {
+              list-style: none;
+              padding: 0;
               margin: 0;
+              font-family: 'EB Garamond', serif;
+              font-size: 16px;
+              line-height: 1.9;
+              color: #2b1a00;
+            }
+
+            .guide-list li::before {
+              content: "✓";
+              color: #8b6914;
+              font-weight: bold;
+              margin-right: 8px;
+            }
+
+            .guide-form {
+              background: #2a1d0e;
+              padding: 36px;
+              color: #faf5e9;
+              position: relative;
+            }
+
+            .reader-offer {
+              position: absolute;
+              top: 16px;
+              right: 16px;
+              background: #faf5e9;
+              color: #8b6914;
+              padding: 5px 10px;
+              font-size: 10px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              font-family: 'EB Garamond', serif;
+              transform: rotate(2deg);
+            }
+
+            .guide-form h3 {
+              font-family: 'Playfair Display', serif;
+              font-size: 27px;
+              margin: 0 0 18px;
+              color: #faf5e9;
+            }
+
+            .form-row {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 8px;
+              margin-bottom: 8px;
+            }
+
+            .guide-form input {
+              width: 100%;
+              box-sizing: border-box;
+              padding: 14px;
+              border: 1px solid #6b4f2a;
+              background: #3a2a17;
+              color: #faf5e9;
+              font-family: 'EB Garamond', serif;
+              font-size: 15px;
+            }
+
+            .guide-form input::placeholder {
+              color: #b59a62;
+            }
+
+            .guide-form .email-input {
+              margin-bottom: 10px;
+            }
+
+            .guide-form button {
+              width: 100%;
+              border: none;
+              background: #c9a84c;
+              color: #1e1408;
+              padding: 15px;
+              font-family: 'Playfair Display', serif;
+              font-weight: 700;
+              font-size: 16px;
+              cursor: pointer;
+            }
+
+            .guide-form button:hover {
+              background: #d8bb66;
+            }
+
+            .trust-line {
+              text-align: center;
+              font-family: 'EB Garamond', serif;
+              font-size: 12px;
+              color: #c9a84c;
+              margin-top: 14px;
+            }
+
+            .footer {
+              background: #1e1408;
+              padding: 34px 36px;
+              text-align: center;
+            }
+
+            .footer-name {
+              font-family: 'Playfair Display', serif;
+              font-size: 28px;
+              font-weight: 700;
+              color: #faf5e9;
+              margin-bottom: 10px;
+            }
+
+            .footer p {
+              font-family: 'EB Garamond', serif;
+              color: #c9a84c;
+              font-size: 13px;
+              margin: 0 0 14px;
+            }
+
+            .footer-links {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 12px;
+              font-family: 'EB Garamond', serif;
+              font-size: 13px;
+              color: #c9a84c;
+            }
+
+            .footer-links a {
+              color: #c9a84c;
+              text-decoration: none;
+            }
+
+            .copyright {
+              margin-top: 18px !important;
+              font-size: 11px !important;
+              opacity: 0.55;
             }
 
             @media (max-width: 768px) {
@@ -460,32 +696,32 @@ export default function HomePage() {
                 display: none;
               }
 
-              .gh-topbar {
+              .topbar {
                 padding: 6px 16px;
               }
 
-              .gh-masthead {
+              .masthead {
                 padding: 14px 16px 12px;
               }
 
-              .gh-dateline {
+              .dateline {
                 font-size: 10px;
               }
 
-              .gh-mastname {
+              .mastname {
                 font-size: 38px;
                 letter-spacing: -1px;
               }
 
-              .gh-issue-line {
+              .issue-line {
                 gap: 8px;
               }
 
-              .gh-nav {
+              .nav {
                 justify-content: flex-start;
               }
 
-              .gh-nav a {
+              .nav a {
                 padding: 8px 14px;
                 font-size: 10px;
               }
@@ -528,27 +764,42 @@ export default function HomePage() {
                 font-size: 21px;
               }
 
-              .below-fold {
+              .inside-grid {
                 grid-template-columns: 1fr;
               }
 
-              .bf-col {
+              .inside-col {
                 border-right: none;
                 border-bottom: 1px solid #c9a84c;
               }
 
-              .bf-col:last-child {
-                border-bottom: none;
+              .glance-grid {
+                grid-template-columns: 1fr 1fr;
+              }
+
+              .guide-split {
+                grid-template-columns: 1fr;
+              }
+
+              .guide-copy,
+              .guide-form {
+                padding: 26px 18px;
+              }
+
+              .guide-copy h2 {
+                font-size: 28px;
+              }
+
+              .form-row {
+                grid-template-columns: 1fr;
               }
             }
           `,
         }}
       />
 
-      <Header />
-
       <main className="site">
-        <div className="gh-topbar">
+        <div className="topbar">
           <span>Vol. I, No. 1</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
@@ -556,8 +807,8 @@ export default function HomePage() {
           <span>April 2026</span>
         </div>
 
-        <div className="gh-masthead">
-          <div className="gh-dateline">
+        <div className="masthead">
+          <div className="dateline">
             <span>The Retirement Abroad Magazine</span>
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
@@ -565,23 +816,23 @@ export default function HomePage() {
             <span>April 2026 · Issue 1</span>
           </div>
 
-          <Link href="/" className="gh-mastname">
+          <Link href="/" className="mastname">
             Golden Horizons
           </Link>
 
-          <div className="gh-issue-line">
-            <span className="gh-issue-tag">
+          <div className="issue-line">
+            <span className="issue-tag">
               <strong>This Issue:</strong> Where $2,000/month buys a life worth
               living
             </span>
-            <span className="gh-issue-tag">
+            <span className="issue-tag">
               <strong>Inside:</strong> The Money Page · The Destination Report ·
               The Health File
             </span>
           </div>
         </div>
 
-        <nav className="gh-nav">
+        <nav className="nav">
           <Link href="/" className="active">
             Cover
           </Link>
@@ -608,7 +859,7 @@ export default function HomePage() {
         </section>
 
         <section className="cover-story">
-          <div className="mag-label">Cover Story</div>
+          <div className="mag-label">Cover Story · Destination Report</div>
 
           <h2 className="cover-headline">
             The places where your money sets you free — and why more Americans
@@ -616,96 +867,237 @@ export default function HomePage() {
           </h2>
 
           <div className="byline">
-            By the Golden Horizons Editorial Team · April 2026
+            By the Golden Horizons Editorial Team · Cover Story · April 2026
           </div>
 
           <p className="body-text">
-            You spent decades building a life. Now the question is not whether
-            you can retire — it is where your retirement becomes bigger, warmer,
-            lighter, and more yours.
+            There are places in the world where $2,000 a month buys the kind of
+            life most Americans spend their entire careers chasing. A terrace
+            overlooking the sea. Fresh food every morning. A doctor you can
+            actually afford to see. Those places are not secrets — they are
+            simply overlooked.
           </p>
 
           <p className="body-text">
-            The old retirement model assumed you would stay put. But tens of
-            thousands of Americans are discovering that $2,000 goes further in
-            Portugal than Pennsylvania, that healthcare in Costa Rica beats what
-            they left behind, and that the pace of life in a Greek island town
-            feels like what retirement was supposed to be all along.
+            Golden Horizons exists to change that. Every morning we find one of
+            these places, dig into the real numbers, and bring it straight to
+            you. No hype. No sales pitch. Just the truth about what is possible —
+            and where it actually costs less.
           </p>
         </section>
 
         <section className="pullquote">
           <p>
-            &ldquo;I kept waiting for the right time. Then I realized — this is the
-            right time. I was already there.&rdquo;
+            &ldquo;Most people plan carefully for retirement. Almost none plan where
+            to live it. That decision changes everything.&rdquo;
           </p>
-          <cite>— Barbara, 63 · Now living in Lisbon on $1,900/month</cite>
+          <cite>— The Golden Horizons Editors</cite>
         </section>
 
-        <section className="below-fold">
-          <div className="bf-col">
+        <div className="section-bar">Inside This Issue</div>
+
+        <section className="inside-grid">
+          <div className="inside-col">
             <div className="mag-section-label">The Money Page</div>
 
-            <p className="body-text small-story-text">
-              What $2,000 actually gets you in 26 countries. Real rents. Real
-              grocery bills. Real monthly budgets from Americans already living
-              there.
-            </p>
-
-            <Link href="/destinations" className="mag-text-link">
-              Compare all 26 destinations →
-            </Link>
-          </div>
-
-          <div className="bf-col">
-            <div className="mag-section-label">The Destination Report</div>
-
-            <div className="dest-item">
-              <div className="dest-flag">🇵🇹</div>
-              <div className="dest-name">Portugal</div>
-              <div className="dest-cost">from $2,500/month couple</div>
-            </div>
-
-            <div className="dest-item">
-              <div className="dest-flag">🇲🇽</div>
-              <div className="dest-name">Mexico</div>
-              <div className="dest-cost">from $1,500/month couple</div>
-            </div>
-
-            <div className="dest-item">
-              <div className="dest-flag">🇨🇷</div>
-              <div className="dest-name">Costa Rica</div>
-              <div className="dest-cost">from $2,000/month couple</div>
-            </div>
-          </div>
-
-          <aside className="bf-col" id="free-guide">
-            <div className="mag-sub">
-              <div className="mag-sub-eyebrow">Free Retirement Abroad Guide</div>
-
-              <h3 className="mag-sub-headline">
-                Get the free guide before choosing where to retire.
+            <article className="story-item">
+              <img
+                src="https://images.pexels.com/photos/2175952/pexels-photo-2175952.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Green mountain landscape"
+              />
+              <div className="story-kicker">Cost of Living · Albania</div>
+              <h3 className="story-title">
+                What $1,000 a Month Gets You in Gjirokastër
               </h3>
+              <Link href="/articles" className="story-link">
+                Read this story →
+              </Link>
+            </article>
 
-              <p className="mag-sub-body">
-                See where $2,000/month can go further, which countries are
-                easier for Americans, and what to check before making a move
-                abroad.
+            <article className="story-item">
+              <img
+                src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Historic temple scene"
+              />
+              <div className="story-kicker">Cost of Living · Cambodia</div>
+              <h3 className="story-title">
+                What $1,000 a Month Gets You in Siem Reap
+              </h3>
+              <Link href="/articles" className="story-link">
+                Read this story →
+              </Link>
+            </article>
+          </div>
+
+          <div className="inside-col">
+            <div className="mag-section-label">The Visa Desk</div>
+
+            <article className="story-item">
+              <img
+                src="https://images.pexels.com/photos/1433052/pexels-photo-1433052.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Coastal cliffs"
+              />
+              <div className="story-kicker">Visas & Residency · Ireland</div>
+              <h3 className="story-title">
+                Residency Options for American Retirees in Ireland
+              </h3>
+              <Link href="/articles" className="story-link">
+                Read this story →
+              </Link>
+            </article>
+
+            <article className="story-item">
+              <img
+                src="https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Retiree sitting near cafe"
+              />
+              <div className="story-kicker">Visas & Residency · Georgia</div>
+              <h3 className="story-title">
+                Residency Options for U.S. Retirees in Georgia
+              </h3>
+              <Link href="/articles" className="story-link">
+                Read this story →
+              </Link>
+            </article>
+          </div>
+
+          <aside className="inside-col">
+            <div className="side-quote">
+              <p>
+                &ldquo;I kept waiting for the right time. Then I realized — this is
+                the right time.&rdquo;
               </p>
+              <cite>— Barbara, 63 · Lisbon</cite>
+            </div>
 
-              <Link href="/#free-guide" className="mag-btn">
+            <div className="small-sub-box">
+              <div className="mag-label">Free Reader Guide</div>
+              <h3>Get the Free Retirement Abroad Guide</h3>
+              <p>
+                A practical checklist for Americans 55+ — costs, healthcare,
+                visas and lifestyle across 12 countries.
+              </p>
+              <Link href="#free-guide" className="small-sub-btn">
                 Get My Free Guide →
               </Link>
-
-              <p className="mag-trust">
-                Free by email · No spam · Unsubscribe anytime
-              </p>
             </div>
           </aside>
         </section>
-      </main>
 
-      <Footer />
+        <section className="destination-glance">
+          <div className="section-bar">The Destination Report · At a Glance</div>
+
+          <div className="glance-inner">
+            <div className="glance-title">
+              Best Value Destinations for Americans Retiring Abroad
+            </div>
+
+            <div className="glance-grid">
+              <Link href="/destinations/portugal" className="glance-card">
+                <strong>Portugal</strong>
+                <span>from $1,800/mo</span>
+              </Link>
+
+              <Link href="/destinations/panama" className="glance-card">
+                <strong>Panama</strong>
+                <span>from $1,600/mo</span>
+              </Link>
+
+              <Link href="/destinations/mexico" className="glance-card">
+                <strong>Mexico</strong>
+                <span>from $1,400/mo</span>
+              </Link>
+
+              <Link href="/destinations/vietnam" className="glance-card">
+                <strong>Vietnam</strong>
+                <span>from $1,200/mo</span>
+              </Link>
+
+              <Link href="/destinations/belize" className="glance-card">
+                <strong>Belize</strong>
+                <span>from $1,700/mo</span>
+              </Link>
+
+              <Link href="/destinations/ecuador" className="glance-card">
+                <strong>Ecuador</strong>
+                <span>from $1,300/mo</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <div className="ornament">— ✦ —</div>
+
+        <section className="guide-split" id="free-guide">
+          <div className="guide-copy">
+            <div className="guide-eyebrow">Free Retirement Abroad Guide</div>
+
+            <h2>Get the free guide before choosing where to retire.</h2>
+
+            <p>
+              For Americans 55+ comparing cost, healthcare, visas and lifestyle
+              abroad.
+            </p>
+
+            <ul className="guide-list">
+              <li>Where $2,000/month goes furthest — 12 countries</li>
+              <li>Healthcare quality and real monthly costs</li>
+              <li>Visa and residency options explained simply</li>
+              <li>Safety scores and expat community ratings</li>
+              <li>What to check before making a move abroad</li>
+            </ul>
+          </div>
+
+          <div className="guide-form">
+            <div className="reader-offer">Reader Offer</div>
+
+            <h3>Send me the free guide</h3>
+
+            <form action="/api/subscribe" method="POST">
+              <div className="form-row">
+                <input name="firstName" type="text" placeholder="First name" />
+                <input name="lastName" type="text" placeholder="Last name" />
+              </div>
+
+              <input
+                className="email-input"
+                name="email"
+                type="email"
+                placeholder="Your email address"
+                required
+              />
+
+              <button type="submit">Get My Free Guide →</button>
+            </form>
+
+            <div className="trust-line">
+              Instant access · No spam · Unsubscribe anytime · 100% free
+            </div>
+          </div>
+        </section>
+
+        <footer className="footer">
+          <div className="footer-name">Golden Horizons</div>
+
+          <p>
+            The retirement abroad magazine for Americans who aren&rsquo;t done yet.
+          </p>
+
+          <div className="footer-links">
+            <Link href="/">Website</Link>
+            <Link href="/articles">All Stories</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/about">About</Link>
+            <Link href="/privacy-policy">Privacy</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/terms-of-use">Terms</Link>
+          </div>
+
+          <p className="copyright">
+            © 2026 Golden Horizons — All rights reserved
+          </p>
+        </footer>
+      </main>
     </>
   );
 }
