@@ -1,353 +1,307 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
-import { parseMarkdownArticle, getAllMarkdownSlugs } from "@/lib/markdown";
-import { getArticleBySlug, getAllArticles } from "@/lib/data";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { getArticleBySlug, getAllArticleSlugs } from '@/lib/articles';
 
-// ─── Constants ────────────────────────────────────────────────────────────────
-const SITE_URL = "https://golden-horizons.org";
-const DEFAULT_OG = `${SITE_URL}/og-default.jpg`;
+type PageParams = Promise<{ slug: string }>;
 
-// ─── Dynamic metadata per article ────────────────────────────────────────────
+type RelatedArticle = {
+  slug: string;
+  title: string;
+  excerpt?: string;
+};
+
+function isRelatedArticle(item: unknown): item is RelatedArticle {
+  if (!item || typeof item !== 'object') return false;
+
+  const value = item as {
+    slug?: unknown;
+    title?: unknown;
+    excerpt?: unknown;
+  };
+
+  return typeof value.slug === 'string' && typeof value.title === 'string';
+}
+
+export async function generateStaticParams() {
+  const slugs = await getAllArticleSlugs();
+
+  return slugs.map((slug: string) => ({
+    slug,
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: PageParams;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const mdArticle = parseMarkdownArticle(slug);
-  const dataArticle = mdArticle ? null : getArticleBySlug(slug);
+  const article = await getArticleBySlug(slug);
 
-  const title = mdArticle?.title ?? dataArticle?.title ?? "Article";
-  const description =
-    mdArticle?.intro?.slice(0, 155) ??
-    dataArticle?.intro?.slice(0, 155) ??
-    "Retirement abroad guide from Golden Horizons.";
-  const heroImage = mdArticle?.image ?? dataArticle?.image ?? DEFAULT_OG;
-  const category =
-    mdArticle?.category ??
-    (typeof dataArticle?.category === "object"
-      ? dataArticle?.category?.name
-      : dataArticle?.category) ??
-    "Retirement Abroad";
-  const date = mdArticle?.date ?? new Date().toISOString().split("T")[0];
-  const canonical = `${SITE_URL}/articles/${slug}`;  // ✅ FIXED: /article/ → /articles/
+  if (!article) {
+    return {
+      title: 'Article Not Found | Golden Horizons',
+      description: 'This Golden Horizons article could not be found.',
+    };
+  }
 
   return {
-    title,                          // template in layout.tsx appends "| Golden Horizons"
-    description,
-    alternates: { canonical },
+    title: `${article.title} | Golden Horizons`,
+    description:
+      article.description ||
+      article.excerpt ||
+      'Retirement abroad guidance from Golden Horizons.',
     openGraph: {
-      title: `${title} | Golden Horizons`,
-      description,
-      url: canonical,
-      siteName: "Golden Horizons",
-      type: "article",
-      locale: "en_US",
-      publishedTime: date,
-      section: category,
-      tags: ["retirement abroad", "expat", "affordable living", category],
-      images: [{ url: heroImage, width: 1200, height: 630, alt: title }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      site: "@goldenhorizons2026",
-      title: `${title} | Golden Horizons`,
-      description,
-      images: [heroImage],
+      title: `${article.title} | Golden Horizons`,
+      description:
+        article.description ||
+        article.excerpt ||
+        'Retirement abroad guidance from Golden Horizons.',
+      type: 'article',
+      images: article.heroImage || article.image ? [article.heroImage || article.image] : [],
     },
   };
 }
 
-// ─── Article JSON-LD ──────────────────────────────────────────────────────────
-function ArticleSchema({
-  title,
-  description,
-  slug,
-  heroImage,
-  date,
-  category,
+export default async function ArticlePage({
+  params,
 }: {
-  title: string;
-  description: string;
-  slug: string;
-  heroImage: string;
-  date: string;
-  category: string;
+  params: PageParams;
 }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: title,
-    description,
-    url: `${SITE_URL}/articles/${slug}`,  // ✅ FIXED: /article/ → /articles/
-    image: heroImage,
-    datePublished: date,
-    dateModified: date,
-    articleSection: category,
-    keywords: `retire abroad, expat, ${category}, affordable retirement`,
+  const { slug } = await params;
+  const article = await getArticleBySlug(slug);
+
+  if (!article) notFound();
+
+  const heroImage = article.heroImage || article.image || '';
+  const relatedArticles: RelatedArticle[] = Array.isArray(article.relatedArticles)
+    ? article.relatedArticles.filter(isRelatedArticle)
+    : [];
+
+  const articleDescription =
+    article.description ||
+    article.excerpt ||
+    'Retirement abroad guidance from Golden Horizons.';
+
+  const articleDate = article.datePublished || article.date || '2026';
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: articleDescription,
+    image: heroImage || undefined,
     author: {
-      "@type": "Organization",
-      name: "Golden Horizons",
-      url: SITE_URL,
+      '@type': 'Organization',
+      name: article.author || 'Golden Horizons Editorial Team',
     },
     publisher: {
-      "@type": "Organization",
-      name: "Golden Horizons",
-      url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+      '@type': 'Organization',
+      name: 'Golden Horizons',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://golden-horizons.org/logo.png',
+      },
     },
+    datePublished: articleDate,
+    dateModified: article.dateModified || articleDate,
     mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${SITE_URL}/articles/${slug}`,  // ✅ FIXED: /article/ → /articles/
+      '@type': 'WebPage',
+      '@id': `https://golden-horizons.org/articles/${slug}`,
     },
   };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
-}
-
-// ─── Everything below is UNCHANGED ────────────────────────────────────────────
-
-export function generateStaticParams() {
-  const mdSlugs = getAllMarkdownSlugs().map((slug) => ({ slug }));
-  const dataSlugs = getAllArticles().map((a) => ({ slug: a.slug }));
-  const seen = new Set(mdSlugs.map((s) => s.slug));
-  const combined = [...mdSlugs, ...dataSlugs.filter((s) => !seen.has(s.slug))];
-  return combined;
-}
-
-const FACTS = [
-  "The average American can live comfortably in Portugal for $2,200/month — including rent, food, and healthcare.",
-  "In Mexico's Lake Chapala region, a couple can live well on $2,500/month — with year-round spring-like weather.",
-  "Croatia offers EU-quality healthcare at a fraction of U.S. costs, with many expats paying under $200/month.",
-  "Panama's Pensionado visa gives retirees discounts on everything from flights to restaurant bills.",
-  "In Malaysia, a modern 2-bedroom apartment in Penang rents for as little as $600/month.",
-  "Over 700,000 Americans currently receive their Social Security checks abroad every month.",
-  "Colombia's Medellín was named one of the world's most innovative cities — and a 2BR apartment costs ~$800/month.",
-  "Vietnam offers some of the world's best street food, a low cost of living, and a growing expat community.",
-];
-
-function NewsletterSlot() {
-  return (
-    <div style={{
-      background: "linear-gradient(135deg, #1a3a2a 0%, #0f2419 100%)",
-      borderRadius: "8px",
-      padding: "32px 36px",
-      margin: "40px 0",
-      textAlign: "center",
-    }}>
-      <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.62rem", letterSpacing: "2.5px", textTransform: "uppercase", color: "#c8a84e", marginBottom: "12px", fontWeight: 700 }}>Free Weekly Newsletter</div>
-      <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.45rem", fontWeight: 700, color: "#ffffff", lineHeight: 1.3, marginBottom: "12px" }}>Your next chapter is waiting.</h3>
-      <p style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.70)", lineHeight: 1.65, marginBottom: "24px", maxWidth: "420px", margin: "0 auto 24px" }}>
-        Every week we share the best retirement destinations, cost breakdowns, and expat tips — straight to your inbox.
-      </p>
-      <a href="https://golden-horizons.org/#subscribe" style={{ display: "inline-block", background: "#c8a84e", color: "#1a1a1a", fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", textDecoration: "none", padding: "13px 32px", borderRadius: "4px" }}>
-        Subscribe Free →
-      </a>
-      <p style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.35)", marginTop: "12px" }}>No spam. Unsubscribe anytime.</p>
-    </div>
-  );
-}
-
-function FactSlot({ slot }: { slot: number }) {
-  const fact = FACTS[(slot - 1) % FACTS.length];
-  return (
-    <div style={{ background: "#faf8f2", border: "1px solid #e8dfc8", borderLeft: "4px solid #c8a84e", borderRadius: "4px", padding: "24px 28px", margin: "40px 0", display: "flex", gap: "16px", alignItems: "flex-start" }}>
-      <div style={{ fontSize: "1.4rem", lineHeight: 1, flexShrink: 0, marginTop: "2px" }}>💡</div>
-      <div>
-        <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.62rem", letterSpacing: "2px", textTransform: "uppercase", color: "#c8a84e", fontWeight: 700, marginBottom: "8px" }}>Did You Know?</div>
-        <p style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1rem", lineHeight: 1.7, color: "#2a2a2a", margin: 0 }}>{fact}</p>
-      </div>
-    </div>
-  );
-}
-
-function AdSlot({ slot }: { slot: number }) {
-  return <FactSlot slot={slot} />;
-}
-
-function IntroText({ text }: { text: string }) {
-  const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
-  const chunks: string[] = [];
-  for (let i = 0; i < sentences.length; i += 2) {
-    chunks.push(sentences.slice(i, i + 2).join(" ").trim());
-  }
-  return (
-    <div style={{ marginBottom: "40px" }}>
-      {chunks.map((chunk, i) => (
-        <p key={i} style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1.15rem", fontWeight: 400, lineHeight: 1.85, color: "#333", marginBottom: "20px", letterSpacing: "normal" }}>{chunk}</p>
-      ))}
-    </div>
-  );
-}
-
-export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const mdArticle = parseMarkdownArticle(slug);
-
-  if (mdArticle) {
-    return (
-      <>
-        {/* ── Article JSON-LD injected into <head> by Next.js ── */}
-        <ArticleSchema
-          title={mdArticle.title}
-          description={mdArticle.intro?.slice(0, 155) ?? ""}
-          slug={slug}
-          heroImage={mdArticle.image ?? DEFAULT_OG}
-          date={mdArticle.date ?? new Date().toISOString().split("T")[0]}
-          category={mdArticle.category ?? "Retirement Abroad"}
-        />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <div style={{ minHeight: "100vh", background: "#ffffff", color: "#1a1a1a" }}>
-          <Header />
-          <main style={{ maxWidth: "720px", margin: "0 auto", padding: "0 24px 80px" }}>
-            <div style={{ padding: "48px 0 0" }}>
-              <div style={{ marginBottom: "16px" }}>
-                <span style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "2.5px", textTransform: "uppercase", color: "#c8a84e" }}>{mdArticle.category}</span>
-              </div>
-              <h1 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontSize: "clamp(1.8rem, 4vw, 2.4rem)", fontWeight: 900, lineHeight: 1.12, color: "#1a1a1a", marginBottom: "20px", letterSpacing: "-0.5px" }}>{mdArticle.title}</h1>
-              <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.82rem", color: "#888", display: "flex", flexWrap: "wrap", gap: "4px 12px", alignItems: "center", marginBottom: "32px" }}>
-                <span>By <strong style={{ color: "#1a1a1a", fontWeight: 600 }}>Golden Horizons Editorial Team</strong></span>
-                <span style={{ color: "#ddd" }}>&#8226;</span>
-                <span>Reviewed by <strong style={{ color: "#1a1a1a", fontWeight: 600 }}>Golden Horizons Editors</strong></span>
-                <span style={{ color: "#ddd" }}>&#8226;</span>
-                <span>Last Updated: <strong style={{ color: "#1a1a1a", fontWeight: 600 }}>{mdArticle.date}</strong></span>
-                <span style={{ color: "#ddd" }}>&#8226;</span>
-                <span>Read time: 2-3 minutes</span>
-              </div>
-            </div>
-
-            {mdArticle.image && (
-              <div style={{ margin: "0 -24px 40px" }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={mdArticle.image} alt={mdArticle.title} style={{ width: "100%", height: "480px", objectFit: "cover", display: "block" }} />
-              </div>
-            )}
-
-            {mdArticle.intro && <IntroText text={mdArticle.intro} />}
-
-            {mdArticle.items.map((item, idx) => (
-              <div key={idx} style={{ marginBottom: "48px" }}>
-                <h2 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontSize: "1.85rem", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.3, marginBottom: "20px", paddingBottom: "12px", borderBottom: "2px solid #c8a84e" }}>{item.heading}</h2>
-                {item.image && idx > 0 && (
-                  <div style={{ margin: "0 -24px 24px" }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={item.image} alt={item.imageAlt} loading="lazy" style={{ width: "100%", height: "440px", objectFit: "cover", display: "block" }} />
-                  </div>
-                )}
-                <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1.15rem", lineHeight: 1.9, color: "#333" }}>
-                  {item.paragraph.split(". ").reduce((acc: string[][], sentence, i, arr) => {
-                    const lastGroup = acc[acc.length - 1];
-                    if (!lastGroup || lastGroup.length >= 3) { acc.push([sentence + (i < arr.length - 1 ? "." : "")]); }
-                    else { lastGroup.push(sentence + (i < arr.length - 1 ? "." : "")); }
-                    return acc;
-                  }, []).map((group, gIdx) => (
-                    <p key={gIdx} style={{ marginBottom: "22px" }}>{group.join(" ")}</p>
-                  ))}
-                </div>
-                <AdSlot slot={idx + 1} />
-              </div>
-            ))}
-
-            {mdArticle.closing && (
-              <div style={{ background: "#1a3a2a", color: "#fff", borderRadius: "4px", padding: "32px 36px", margin: "48px 0" }}>
-                <div style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.65rem", letterSpacing: "2.5px", textTransform: "uppercase", color: "#c8a84e", marginBottom: "12px" }}>Golden Horizons</div>
-                <p style={{ fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#e0ddd5" }}>{mdArticle.closing}</p>
-              </div>
-            )}
-
-            <div style={{ borderTop: "1px solid #e8e0d0", marginTop: "48px", paddingTop: "24px", fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontSize: "0.82rem", lineHeight: 1.7, color: "#888" }}>
-              <em>The information in this article is intended for general informational purposes only. Costs, visa requirements, healthcare policies, and local conditions change frequently. Always verify current details with official government sources, consult a licensed financial advisor, and speak with a qualified immigration attorney before making any relocation or retirement decisions. Golden Horizons does not provide legal, financial, or medical advice.</em>
-            </div>
-
-            <div style={{ marginTop: "24px", paddingTop: "24px", borderTop: "1px solid #e8e0d0" }}>
-              <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#1a3a2a", textDecoration: "none", fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", fontWeight: 600, fontSize: "0.88rem" }}>
-                <ArrowLeft style={{ width: "16px", height: "16px" }} />
-                Back to all stories
-              </Link>
-            </div>
-          </main>
-          <Footer />
-        </div>
-      </>
-    );
-  }
-
-  const article = getArticleBySlug(slug);
-  if (!article) { notFound(); }
-
-  const categoryName =
-    typeof article.category === "object" ? article.category.name : article.category;
 
   return (
     <>
-      {/* ── Article JSON-LD for data-sourced articles ── */}
-      <ArticleSchema
-        title={article.title}
-        description={article.intro?.slice(0, 155) ?? ""}
-        slug={slug}
-        heroImage={article.image ?? DEFAULT_OG}
-        date={new Date().toISOString().split("T")[0]}
-        category={categoryName ?? "Retirement Abroad"}
-      />
-      <div className="min-h-screen bg-background">
-        <Header />
-        <main>
-          <div className="relative h-[50vh] min-h-[400px] max-h-[600px]">
-            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${article.image})` }} />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-          </div>
-          <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 -mt-32 relative z-10">
-            <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              <span className="text-sm font-medium">Back to Home</span>
+      <Header />
+
+      <div className="bg-[#faf5e9] border-b border-[#d8c28a]">
+        <div className="max-w-5xl mx-auto px-4 py-3">
+          <nav className="text-sm text-[#7a5a18]">
+            <Link href="/" className="hover:text-[#1e1408]">
+              Home
             </Link>
-            <div className="bg-white rounded-sm shadow-lg p-8 md:p-12">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: article.category.color }} />
-                <span className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">{article.category.name}</span>
-              </div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif leading-tight mb-6">{article.title}</h1>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-8 font-light">{article.intro}</p>
-              <div className="w-16 h-1 bg-primary mb-8" />
-              <div className="prose prose-lg max-w-none">
-                {article.content.split("\n\n").map((paragraph, index) => {
-                  if (paragraph.startsWith("**") && paragraph.includes("**")) {
-                    const headingMatch = paragraph.match(/^\*\*(.+?)\*\*/);
-                    if (headingMatch) {
-                      const heading = headingMatch[1];
-                      const rest = paragraph.replace(/^\*\*.+?\*\*\n?/, "");
-                      return (<div key={index} className="mb-6"><h3 className="text-xl font-bold font-serif mb-2">{heading}</h3>{rest && <p className="text-foreground/80 leading-relaxed">{rest}</p>}</div>);
-                    }
-                  }
-                  if (paragraph.includes("\n- ")) {
-                    const lines = paragraph.split("\n");
-                    const items = lines.filter((line) => line.startsWith("- "));
-                    const nonItems = lines.filter((line) => !line.startsWith("- ")).join(" ");
-                    return (<div key={index} className="mb-6">{nonItems && <p className="text-foreground/80 leading-relaxed mb-2">{nonItems}</p>}<ul className="list-disc list-inside space-y-1">{items.map((item, i) => <li key={i} className="text-foreground/80">{item.replace("- ", "")}</li>)}</ul></div>);
-                  }
-                  return <p key={index} className="text-foreground/80 leading-relaxed mb-6">{paragraph}</p>;
-                })}
-              </div>
-              <div className="mt-12 pt-8 border-t border-border">
-                <Link href="/" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
-                  <ArrowLeft className="w-4 h-4" />
-                  <span className="font-semibold">Back to all stories</span>
+            <span className="mx-2">›</span>
+            <Link href="/articles" className="hover:text-[#1e1408]">
+              Articles
+            </Link>
+            <span className="mx-2">›</span>
+            <span className="text-[#1e1408]">
+              {article.category || 'Golden Horizons'}
+            </span>
+          </nav>
+        </div>
+      </div>
+
+      <article className="bg-[#faf5e9] text-[#1a0f00]">
+        <div className="max-w-5xl mx-auto px-4 py-8 md:py-12">
+          <div className="mb-8">
+            <div className="text-xs uppercase tracking-[0.22em] text-[#8b6914] font-bold mb-3">
+              {article.category || 'Article'}
+            </div>
+
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#1e1408] mb-4 leading-tight">
+              {article.title}
+            </h1>
+
+            <div className="flex flex-wrap items-center gap-3 text-sm text-[#6f5620] border-t border-b border-[#d8c28a] py-3">
+              <span>By {article.author || 'Golden Horizons Editorial Team'}</span>
+              <span>•</span>
+              <span>{articleDate}</span>
+              <span>•</span>
+              <span>{article.readTime || '3 min read'}</span>
+            </div>
+          </div>
+
+          {heroImage && (
+            <div className="mb-8">
+              <img
+                src={heroImage}
+                alt={article.heroAlt || article.title}
+                className="w-full h-[260px] md:h-[420px] object-cover rounded-md"
+              />
+
+              {article.heroCaption && (
+                <p className="text-sm text-[#6f5620] italic mt-2">
+                  {article.heroCaption}
+                </p>
+              )}
+            </div>
+          )}
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="lg:col-span-2">
+              {article.intro && (
+                <p className="text-xl md:text-2xl text-[#2b1a00] leading-relaxed mb-8 font-medium border-b border-[#d8c28a] pb-6">
+                  {article.intro}
+                </p>
+              )}
+
+              <div
+                className="prose prose-lg max-w-none prose-headings:font-serif prose-h2:text-3xl prose-h2:text-[#1e1408] prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b-2 prose-h2:border-[#1e1408] prose-h2:pb-2 prose-p:text-[#2b1a00] prose-p:leading-relaxed prose-a:text-[#8b6914] prose-a:font-semibold hover:prose-a:text-[#1e1408]"
+                dangerouslySetInnerHTML={{ __html: article.content || '' }}
+              />
+
+              {article.disclaimer !== false && (
+                <div className="mt-12 bg-[#fff8e8] border border-[#d8c28a] rounded-lg p-6">
+                  <h2 className="text-xl font-serif font-bold text-[#1e1408] mb-2">
+                    Important Disclaimer
+                  </h2>
+                  <p className="text-sm text-[#2b1a00] leading-relaxed">
+                    The information in this article is for general informational
+                    purposes only. Costs, visa requirements, healthcare policies,
+                    and local conditions change frequently. Always verify current
+                    details with official government sources and consult a licensed
+                    advisor before making relocation decisions. Golden Horizons does
+                    not provide legal, financial, or medical advice.
+                  </p>
+                </div>
+              )}
+
+              {relatedArticles.length > 0 && (
+                <div className="mt-12 border-t border-[#d8c28a] pt-8">
+                  <h2 className="text-2xl font-serif font-bold text-[#1e1408] mb-5">
+                    Related Articles
+                  </h2>
+
+                  <div className="space-y-4">
+                    {relatedArticles.slice(0, 5).map((related) => (
+                      <Link
+                        key={related.slug}
+                        href={`/articles/${related.slug}`}
+                        className="block p-4 bg-white border border-[#d8c28a] rounded-lg hover:shadow-md transition-all"
+                      >
+                        <h3 className="font-serif font-bold text-[#1e1408] mb-1">
+                          {related.title}
+                        </h3>
+                        {related.excerpt && (
+                          <p className="text-sm text-[#6f5620]">
+                            {related.excerpt}
+                          </p>
+                        )}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="mt-8">
+                <Link
+                  href="/articles"
+                  className="text-[#8b6914] hover:text-[#1e1408] font-bold"
+                >
+                  ← Back to all articles
                 </Link>
               </div>
             </div>
-          </article>
-          <div className="h-20" />
-        </main>
-        <Footer />
-      </div>
+
+            <aside className="lg:col-span-1">
+              <div className="sticky top-24 space-y-6">
+                <div className="bg-[#1e1408] border-2 border-[#c9a84c] rounded-lg p-6 text-center">
+                  <div className="text-xs uppercase tracking-[0.2em] text-[#c9a84c] font-bold mb-2">
+                    Free Reader Guide
+                  </div>
+
+                  <h2 className="text-xl font-serif font-bold text-[#faf5e9] mb-3">
+                    Get the Free Retirement Abroad Guide
+                  </h2>
+
+                  <p className="text-sm text-[#d4c4a0] mb-5 leading-relaxed">
+                    Compare costs, healthcare, visas, and lifestyle across top
+                    retirement countries before you decide.
+                  </p>
+
+                  <Link
+                    href="/#free-guide"
+                    className="block w-full text-center bg-[#c9a84c] text-[#1e1408] px-4 py-3 rounded-md font-bold hover:bg-[#e0c46c] transition-colors"
+                  >
+                    Get the Free Guide →
+                  </Link>
+
+                  <p className="text-xs text-[#d4c4a0] text-center mt-3">
+                    Free by email · No spam · Unsubscribe anytime
+                  </p>
+                </div>
+
+                {relatedArticles.length > 0 && (
+                  <div className="bg-white border border-[#d8c28a] rounded-lg p-6">
+                    <h2 className="text-sm uppercase tracking-[0.18em] text-[#8b6914] font-bold mb-4">
+                      More Articles
+                    </h2>
+
+                    <div className="space-y-4">
+                      {relatedArticles.slice(0, 3).map((related) => (
+                        <Link
+                          key={related.slug}
+                          href={`/articles/${related.slug}`}
+                          className="block group"
+                        >
+                          <h3 className="font-serif font-bold text-[#1e1408] text-sm mb-1 group-hover:text-[#8b6914]">
+                            {related.title}
+                          </h3>
+                          <p className="text-xs text-[#8b6914]">Read →</p>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </aside>
+          </div>
+        </div>
+      </article>
+
+      <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
     </>
   );
 }
