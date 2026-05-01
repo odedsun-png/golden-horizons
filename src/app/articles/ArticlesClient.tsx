@@ -2,10 +2,17 @@
 
 import Link from "next/link";
 
+type ArticleCategory =
+  | string
+  | {
+      name?: string;
+      color?: string;
+    };
+
 type ArticleCard = {
   slug: string;
   title: string;
-  category?: string;
+  category?: ArticleCategory;
   excerpt?: string;
   description?: string;
   image?: string;
@@ -21,16 +28,22 @@ type ArticlesClientProps = {
 const fallbackImage =
   "https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=800";
 
-function getArticleImage(article: ArticleCard) {
+function getArticleImage(article: ArticleCard): string {
   return article.image || article.heroImage || fallbackImage;
 }
 
-function getArticleExcerpt(article: ArticleCard) {
+function getArticleExcerpt(article: ArticleCard): string {
   return (
     article.excerpt ||
     article.description ||
     "A practical Golden Horizons guide for Americans exploring retirement abroad."
   );
+}
+
+function getCategoryName(category?: ArticleCategory): string {
+  if (!category) return "Retirement Abroad";
+  if (typeof category === "string") return category;
+  return category.name || "Retirement Abroad";
 }
 
 export default function ArticlesClient({ articles }: ArticlesClientProps) {
@@ -57,7 +70,7 @@ export default function ArticlesClient({ articles }: ArticlesClientProps) {
 
           <div className="article-row-content">
             <div className="article-category">
-              {article.category || "Retirement Abroad"}
+              {getCategoryName(article.category)}
             </div>
 
             <h2 className="article-row-title">
