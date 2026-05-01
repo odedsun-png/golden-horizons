@@ -29,9 +29,9 @@ export default function Header() {
             <Link href="/destinations" style={{ color: '#faf5e9', fontSize: '13px', textDecoration: 'none', fontFamily: 'EB Garamond, serif', letterSpacing: '1px', transition: 'color 0.15s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#c9a84c'} onMouseLeave={(e) => e.currentTarget.style.color = '#faf5e9'}>
               Destinations
             </Link>
-            <a href="/#free-guide" style={{ background: '#c9a84c', color: '#1e1408', padding: '10px 18px', borderRadius: '4px', fontWeight: 700, fontSize: '13px', textDecoration: 'none', fontFamily: 'Playfair Display, serif', transition: 'background 0.15s' }} onMouseEnter={(e) => e.currentTarget.style.background = '#e0c46c'} onMouseLeave={(e) => e.currentTarget.style.background = '#c9a84c'}>
+            <Link href="/#free-guide" style={{ background: '#c9a84c', color: '#1e1408', padding: '10px 18px', borderRadius: '4px', fontWeight: 700, fontSize: '13px', textDecoration: 'none', fontFamily: 'Playfair Display, serif', transition: 'background 0.15s' }} onMouseEnter={(e) => e.currentTarget.style.background = '#e0c46c'} onMouseLeave={(e) => e.currentTarget.style.background = '#c9a84c'}>
               Get Free Guide
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
