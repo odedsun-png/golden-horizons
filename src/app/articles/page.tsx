@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { getAllArticleSlugs, getArticleBySlug } from '@/lib/articles';
 
 export const metadata: Metadata = {
@@ -31,34 +29,31 @@ export default async function ArticlesPage() {
   });
 
   const categories = Object.keys(categoryGroups).sort();
-
   const editorPick = validArticles[0];
 
   return (
-    <>
-      <Header />
-
+    <main className="mag-page">
       <div className="site">
-        <div className="gh-topbar">
+        <div className="topbar">
           <span>Vol. I, No. 1</span>
           <span className="hide-mob">golden-horizons.org · The Retirement Abroad Magazine</span>
           <span>April 2026</span>
         </div>
 
-        <div className="gh-masthead">
-          <div className="gh-dateline">
+        <div className="masthead">
+          <div className="dateline">
             <span>The Retirement Abroad Magazine</span>
             <span className="hide-mob">For Americans Who Are Ready for What&rsquo;s Next</span>
             <span>April 2026 · Issue 1</span>
           </div>
-          <Link href="/" className="gh-mastname">Golden Horizons</Link>
-          <div className="gh-issue-line">
-            <span className="gh-issue-tag"><strong>This Issue:</strong> Where $2,000/month buys a life worth living</span>
-            <span className="gh-issue-tag"><strong>Inside:</strong> The Money Page · The Destination Report · The Health File</span>
+          <Link href="/" className="mastname">Golden Horizons</Link>
+          <div className="issue-line">
+            <span className="issue-tag"><strong>This Issue:</strong> Where $2,000/month buys a life worth living</span>
+            <span className="issue-tag"><strong>Inside:</strong> The Money Page · The Destination Report · The Health File</span>
           </div>
         </div>
 
-        <nav className="gh-nav">
+        <nav className="nav">
           <Link href="/">Cover</Link>
           <Link href="/articles" className="active">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
@@ -71,7 +66,7 @@ export default async function ArticlesPage() {
           <span className="ph-count">{validArticles.length} articles · Updated daily</span>
         </div>
 
-        <div className="gh-section-banner">Browse by Section</div>
+        <div className="section-banner">Browse by Section</div>
         <div className="cat-index">
           <Link href="/articles" className="cat-cell active">
             <div className="cat-name">All Stories</div>
@@ -89,7 +84,7 @@ export default async function ArticlesPage() {
 
         {editorPick && (
           <>
-            <div className="gh-section-banner">Editor&rsquo;s Pick · This Week&rsquo;s Must-Read</div>
+            <div className="section-banner">Editor&rsquo;s Pick · This Week&rsquo;s Must-Read</div>
             <div className="editor-pick">
               <div className="ep-img-wrap">
                 <img 
@@ -115,7 +110,7 @@ export default async function ArticlesPage() {
           </>
         )}
 
-        <div className="gh-section-banner">Latest Stories</div>
+        <div className="section-banner">Latest Stories</div>
         <div className="articles-grid">
           {validArticles.slice(1, 19).map((article) => (
             <Link key={article.slug} href={`/articles/${article.slug}`} className="art-card">
@@ -139,9 +134,33 @@ export default async function ArticlesPage() {
         )}
 
         <div className="ornament">— ✦ —</div>
-      </div>
 
-      <Footer />
-    </>
+        <section className="mag-cta" id="free-guide">
+          <p className="kicker">Free Retirement Abroad Guide</p>
+          <h2>Get the free guide before choosing where to retire.</h2>
+          <p>Compare costs, healthcare, visas, and lifestyle across top retirement countries before you decide.</p>
+          <Link href="/#free-guide" className="mag-button">Get the Free Guide →</Link>
+        </section>
+
+        <footer className="mag-footer">
+          <div className="footer-name">Golden Horizons</div>
+          <p>The retirement abroad magazine for Americans who aren&rsquo;t done yet.</p>
+          <div className="footer-links">
+            <Link href="/">Cover</Link>
+            <span>|</span>
+            <Link href="/articles">Articles</Link>
+            <span>|</span>
+            <Link href="/destinations">Destinations</Link>
+            <span>|</span>
+            <Link href="/about">About</Link>
+            <span>|</span>
+            <Link href="/privacy-policy">Privacy</Link>
+            <span>|</span>
+            <Link href="/contact">Contact</Link>
+          </div>
+          <p>© 2026 Golden Horizons — All rights reserved</p>
+        </footer>
+      </div>
+    </main>
   );
 }
