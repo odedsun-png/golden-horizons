@@ -1,115 +1,109 @@
-"use client";
-
-/* eslint-disable @next/next/no-img-element */
-
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { getArticleCards } from "@/lib/markdown";
+import ArticlesClient from "./ArticlesClient";
 
-type ArticleCategory =
-  | string
-  | {
-      name?: string;
-      color?: string;
-    };
-
-type Article = {
-  id?: string;
-  slug: string;
-  title: string;
-  excerpt?: string;
-  description?: string;
-  image?: string;
-  heroImage?: string;
-  category?: ArticleCategory;
-  date?: string;
+export const metadata = {
+  title: "Articles — Golden Horizons",
+  description:
+    "Retirement destination guides, cost breakdowns, healthcare tips, and expat stories for Americans planning life abroad.",
 };
 
-type ArticlesClientProps = {
-  articles: Article[];
-};
-
-const PAGE_SIZE = 12;
-
-function getCategoryName(category: ArticleCategory | undefined): string {
-  if (!category) return "Story";
-  if (typeof category === "string") return category;
-  return category.name || "Story";
-}
-
-function getImage(article: Article): string {
-  return (
-    article.image ||
-    article.heroImage ||
-    "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=900"
-  );
-}
-
-function getExcerpt(article: Article): string {
-  return (
-    article.excerpt ||
-    article.description ||
-    "A Golden Horizons retirement-abroad guide for Americans comparing real costs, lifestyle, healthcare, and practical next steps."
-  );
-}
-
-export default function ArticlesClient({ articles }: ArticlesClientProps) {
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-
-  const visibleArticles = useMemo(() => {
-    return articles.slice(0, visibleCount);
-  }, [articles, visibleCount]);
-
-  const hasMore = visibleCount < articles.length;
+export default function ArticlesPage() {
+  const articles = getArticleCards();
 
   return (
-    <>
-      <div className="articles-mag-grid">
-        {visibleArticles.map((article, index) => {
-          const category = getCategoryName(article.category);
-
-          return (
-            <Link
-              key={article.id || article.slug}
-              href={`/articles/${article.slug}`}
-              className={index === 0 ? "article-mag-card featured" : "article-mag-card"}
-            >
-              <div className="article-mag-image-wrap">
-                <img
-                  src={getImage(article)}
-                  alt={article.title}
-                  className="article-mag-image"
-                />
-              </div>
-
-              <div className="article-mag-body">
-                <div className="article-mag-kicker">{category}</div>
-
-                <h2>{article.title}</h2>
-
-                <p>{getExcerpt(article)}</p>
-
-                <span className="article-mag-read">Read this story →</span>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
-
-      {hasMore && (
-        <div className="load-more-wrap">
-          <button
-            type="button"
-            onClick={() => setVisibleCount((current) => current + PAGE_SIZE)}
-            className="load-more-btn"
-          >
-            Load More Articles
-          </button>
-
-          <p className="load-more-text">
-            {articles.length - visibleCount} more articles remaining
-          </p>
+    <main className="mag-page">
+      <div className="site">
+        <div className="topbar">
+          <span>Vol. I, No. 1</span>
+          <span className="hide-mob">
+            golden-horizons.org · The Retirement Abroad Magazine
+          </span>
+          <span>2026 Edition</span>
         </div>
-      )}
-    </>
+
+        <header className="masthead">
+          <div className="dateline">
+            <span>The Retirement Abroad Magazine</span>
+            <span className="hide-mob">
+              For Americans Who Are Ready for What&rsquo;s Next
+            </span>
+            <span>Articles Archive</span>
+          </div>
+
+          <Link href="/" className="mastname">
+            Golden Horizons
+          </Link>
+
+          <div className="issue-line">
+            <span className="issue-tag">
+              <strong>Money</strong> · Healthcare · Visas · Lifestyle · Real Stories
+            </span>
+          </div>
+        </header>
+
+        <nav className="nav">
+          <Link href="/">Cover</Link>
+          <Link href="/articles" className="active">
+            All Stories
+          </Link>
+          <Link href="/destinations">Destinations</Link>
+          <Link href="/#free-guide">Get Free Guide</Link>
+        </nav>
+
+        <div className="breadcrumb">
+          <Link href="/">Cover</Link> &nbsp;›&nbsp; All Articles
+        </div>
+
+        <div className="section-banner">The Complete Golden Horizons Article Archive</div>
+
+        <section className="archive-hero">
+          <p className="kicker">Retirement Abroad Intelligence</p>
+          <h1>All Golden Horizons Stories</h1>
+          <p className="archive-lede">
+            Every guide, destination deep-dive, and cost breakdown — organized by
+            department. Real budgets, real tax processes, real healthcare experiences
+            from Americans already living abroad.
+          </p>
+        </section>
+
+        <section className="archive-content">
+          <ArticlesClient articles={articles} />
+        </section>
+
+        <section className="mag-cta" id="free-guide">
+          <p className="kicker">Free Retirement Abroad Guide</p>
+          <h2>Get the free guide before choosing where to retire.</h2>
+          <p>
+            Compare costs, healthcare, visas, and lifestyle across top retirement
+            countries before you decide.
+          </p>
+          <Link href="/#free-guide" className="mag-button">
+            Get the Free Guide →
+          </Link>
+        </section>
+
+        <footer className="mag-footer">
+          <div className="footer-name">Golden Horizons</div>
+          <p>The retirement abroad magazine for Americans who aren&rsquo;t done yet.</p>
+
+          <div className="footer-links">
+            <Link href="/">Cover</Link>
+            <span>|</span>
+            <Link href="/articles">Articles</Link>
+            <span>|</span>
+            <Link href="/destinations">Destinations</Link>
+            <span>|</span>
+            <Link href="/about">About</Link>
+            <span>|</span>
+            <Link href="/privacy-policy">Privacy</Link>
+            <span>|</span>
+            <Link href="/contact">Contact</Link>
+          </div>
+
+          <p className="copyright">© 2026 Golden Horizons — All rights reserved</p>
+        </footer>
+      </div>
+    </main>
   );
 }
