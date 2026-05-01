@@ -1,300 +1,305 @@
-import { notFound } from "next/navigation";
-import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { getDestinationById, getAllDestinationIds } from "@/lib/destination-details";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { getDestinationBySlug, getAllDestinationSlugs } from '@/lib/destination-details';
 
 export async function generateStaticParams() {
-  return getAllDestinationIds().map((id) => ({ slug: id }));
+  const slugs = await getAllDestinationSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const d = getDestinationById(slug);
-  if (!d) return { title: "Not Found" };
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const dest = await getDestinationBySlug(params.slug);
+  if (!dest) return { title: 'Destination Not Found' };
+  
   return {
-    title: `${d.name} Retirement Guide 2026 — Golden Horizons`,
-    description: d.overview.slice(0, 155),
+    title: `Retire in ${dest.name} 2026 — Cost, Healthcare, Visas & Lifestyle | Golden Horizons`,
+    description: `The complete 2026 guide to retiring in ${dest.name} — real monthly costs, visa requirements, healthcare quality, and lifestyle ratings for American retirees.`,
   };
 }
 
-function QolBar({ label, score, icon }: { label: string; score: number; icon: string }) {
+export default async function DestinationPage({ params }: { params: { slug: string } }) {
+  const dest = await getDestinationBySlug(params.slug);
+  if (!dest) notFound();
+
   return (
-    <div className="flex items-center gap-3 py-2">
-      <span className="text-lg w-6 shrink-0">{icon}</span>
-      <div className="flex-1 min-w-0">
-        <div className="flex justify-between items-center mb-1">
-          <span className="text-xs text-foreground/70 font-medium">{label}</span>
-          <span className="text-xs font-bold text-primary">{score}/10</span>
-        </div>
-        <div className="h-1.5 bg-border rounded-full overflow-hidden">
-          <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${score * 10}%` }} />
+    <>
+      <Header />
+
+      <div className="bg-gray-50 border-b border-gray-200">
+        <div className="max-w-5xl mx-auto px-4 py-3">
+          <nav className="text-sm text-gray-600">
+            <Link href="/" className="hover:text-gray-900">Home</Link>
+            <span className="mx-2">›</span>
+            <Link href="/destinations" className="hover:text-gray-900">Destinations</Link>
+            <span className="mx-2">›</span>
+            <span className="text-gray-900">{dest.flag} {dest.name}</span>
+          </nav>
         </div>
       </div>
-    </div>
-  );
-}
 
-function KeyTakeaway({ text }: { text: string }) {
-  return (
-    <div className="mt-4 p-4 bg-amber-50 border-l-2 border-primary rounded-r-sm">
-      <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-1">Key Takeaway</p>
-      <p className="text-sm text-foreground/80 leading-relaxed">{text}</p>
-    </div>
-  );
-}
+      <div className="relative h-96 bg-gray-900">
+        <img
+          src={dest.heroImage}
+          alt={`${dest.name} retirement destination`}
+          className="w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 p-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-sm text-blue-300 uppercase tracking-wide mb-2">
+              #{dest.rank} Ranked · {dest.ilRank}
+            </div>
+            <h1 className="text-5xl font-bold text-white mb-2">
+              {dest.flag} {dest.name}
+            </h1>
+            <p className="text-xl text-gray-200">{dest.tagline}</p>
+          </div>
+        </div>
+      </div>
 
-function SectionHeading({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="mb-5">
-      <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-foreground/50 mb-2">{children}</h2>
-      <div className="w-8 h-px bg-primary" />
-    </div>
-  );
-}
-
-const qolIcons: Record<string, string> = {
-  healthcareQuality: "🏥", safety: "🛡️", englishProficiency: "🗣️",
-  infrastructure: "🏗️", expatCommunity: "👥", climate: "☀️",
-};
-
-const qolLabels: Record<string, string> = {
-  healthcareQuality: "Healthcare Quality", safety: "Safety",
-  englishProficiency: "English Proficiency", infrastructure: "Infrastructure",
-  expatCommunity: "Expat Community", climate: "Climate",
-};
-
-type CostKey = "rent1br" | "rent2br" | "groceries" | "dining" | "utilities" | "transportation" | "healthcare" | "entertainment";
-
-const costLabels: Array<{ key: CostKey; label: string }> = [
-  { key: "rent1br", label: "1BR Rent" }, { key: "rent2br", label: "2BR Rent" },
-  { key: "groceries", label: "Groceries" }, { key: "dining", label: "Dining Out" },
-  { key: "utilities", label: "Utilities" }, { key: "transportation", label: "Transport" },
-  { key: "healthcare", label: "Healthcare" }, { key: "entertainment", label: "Entertainment" },
-];
-
-export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const d = getDestinationById(slug);
-  if (!d) notFound();
-
-  const avgQol = Math.round(
-    Object.values(d.qol).reduce((a, b) => a + b, 0) / Object.keys(d.qol).length
-  );
-
-  return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main>
-        {/* Hero */}
-        <section className="relative h-[420px] md:h-[520px] overflow-hidden">
-          <img src={d.heroImage} alt={d.name} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
-          <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-            <div className="max-w-5xl mx-auto">
-              <Link href="/destinations" className="inline-flex items-center gap-2 text-white/60 text-sm hover:text-white transition-colors mb-5">
-                ← All Rankings
-              </Link>
-              <div className="flex items-center gap-4 mb-3">
-                <span className="text-5xl drop-shadow">{d.flag}</span>
-                <div>
-                  <h1 className="text-3xl md:text-5xl font-bold font-serif text-white leading-tight">{d.name}</h1>
-                  <p className="text-white/60 text-sm mt-1">{d.region}</p>
-                </div>
-              </div>
-              <p className="text-white/85 text-lg max-w-2xl font-light leading-relaxed">{d.tagline}</p>
+      <div className="bg-blue-50 border-b border-blue-200">
+        <div className="max-w-5xl mx-auto px-4 py-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+            <div>
+              <div className="text-xs text-gray-600 uppercase tracking-wide mb-1">IL Rank</div>
+              <div className="text-2xl font-bold text-gray-900">{dest.ilRankShort || '#1'}</div>
+            </div>
+            <div>
+              <div className="text-xs text-gray-600 uppercase tracking-wide mb-1">Budget</div>
+              <div className="text-2xl font-bold text-gray-900">{dest.budgetShort}</div>
+            </div>
+            <div>
+              <div className="text-xs text-gray-600 uppercase tracking-wide mb-1">Best Cities</div>
+              <div className="text-lg font-bold text-gray-900">{dest.bestCity}</div>
+            </div>
+            <div>
+              <div className="text-xs text-gray-600 uppercase tracking-wide mb-1">Tax Rate</div>
+              <div className="text-2xl font-bold text-gray-900">{dest.taxRate || 'Varies'}</div>
+            </div>
+            <div>
+              <div className="text-xs text-gray-600 uppercase tracking-wide mb-1">QoL Score</div>
+              <div className="text-2xl font-bold text-gray-900">{dest.qolScore || '9/10'}</div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
 
-        {/* Stats Bar */}
-        <section className="bg-[#1f2326] border-b border-white/10">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center md:text-left">
-              <div>
-                <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">IL Rank</p>
-                <p className="text-white font-semibold text-sm">{d.ilRank}</p>
-              </div>
-              <div>
-                <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Budget</p>
-                <p className="text-white font-semibold text-sm">{d.budgetTier}</p>
-              </div>
-              <div>
-                <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Best Cities</p>
-                <p className="text-white font-semibold text-sm">{d.bestCities.slice(0, 2).join(", ")}</p>
-              </div>
-              <div>
-                <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Currency</p>
-                <p className="text-white font-semibold text-sm">{d.lifestyle.currency.split("(")[0].trim()}</p>
-              </div>
-              <div>
-                <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Avg QoL Score</p>
-                <p className="text-primary font-bold text-lg">{avgQol}<span className="text-white/40 text-sm font-normal">/10</span></p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Body */}
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-
-            {/* Main Column */}
-            <div className="lg:col-span-2 space-y-12">
+      <div className="bg-white py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-10">
+              
               <section>
-                <SectionHeading>Overview</SectionHeading>
-                <p className="text-foreground/80 leading-relaxed">{d.overview}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {d.bestCities.map((city) => (
-                    <span key={city} className="px-3 py-1 bg-muted text-xs text-foreground/70 rounded-full border border-border">
-                      📍 {city}
-                    </span>
-                  ))}
-                </div>
-              </section>
-
-              <section>
-                <SectionHeading>Pros & Cons</SectionHeading>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    {d.pros.map((pro, i) => (
-                      <div key={i} className="flex gap-3 p-3 bg-emerald-50 border border-emerald-100 rounded-sm">
-                        <span className="text-emerald-500 text-sm mt-0.5 shrink-0">✓</span>
-                        <p className="text-sm text-foreground/80 leading-snug">{pro}</p>
-                      </div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-gray-900 pb-2">
+                  Overview
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">{dest.overview}</p>
+                {dest.cities && dest.cities.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {dest.cities.map((city: string, i: number) => (
+                      <span key={i} className="bg-gray-100 px-3 py-1 rounded text-sm text-gray-700">
+                        📍 {city}
+                      </span>
                     ))}
                   </div>
-                  <div className="space-y-2">
-                    {d.cons.map((con, i) => (
-                      <div key={i} className="flex gap-3 p-3 bg-red-50 border border-red-100 rounded-sm">
-                        <span className="text-red-400 text-sm mt-0.5 shrink-0">✕</span>
-                        <p className="text-sm text-foreground/80 leading-snug">{con}</p>
-                      </div>
+                )}
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-gray-900 pb-2">
+                  Pros & Cons
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-green-50 border-l-4 border-green-500 p-4">
+                    <h3 className="font-bold text-green-900 mb-3">Advantages</h3>
+                    <ul className="space-y-2">
+                      {dest.pros && dest.pros.map((pro: string, i: number) => (
+                        <li key={i} className="text-sm text-gray-700 flex items-start gap-2">
+                          <span className="text-green-600 font-bold">✓</span>
+                          <span>{pro}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="bg-orange-50 border-l-4 border-orange-500 p-4">
+                    <h3 className="font-bold text-orange-900 mb-3">Watch For</h3>
+                    <ul className="space-y-2">
+                      {dest.cons && dest.cons.map((con: string, i: number) => (
+                        <li key={i} className="text-sm text-gray-700 flex items-start gap-2">
+                          <span className="text-orange-600 font-bold">✕</span>
+                          <span>{con}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-gray-900 pb-2">
+                  Monthly Cost Breakdown
+                </h2>
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-gray-900 text-white">
+                      <th className="text-left p-3 text-sm">Expense</th>
+                      <th className="text-left p-3 text-sm">Budget Range / Month</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {dest.costs && dest.costs.map((cost: any, i: number) => (
+                      <tr key={i} className="border-b border-gray-200 hover:bg-gray-50">
+                        <td className="p-3 text-gray-900">{cost.item}</td>
+                        <td className="p-3 text-gray-700">{cost.range}</td>
+                      </tr>
                     ))}
-                  </div>
-                </div>
+                    <tr className="bg-blue-50 font-bold">
+                      <td className="p-3 text-gray-900">Couple Total / Month</td>
+                      <td className="p-3 text-gray-900">{dest.costCouple}</td>
+                    </tr>
+                    <tr className="bg-blue-50 font-bold">
+                      <td className="p-3 text-gray-900">Single Total / Month</td>
+                      <td className="p-3 text-gray-900">{dest.costSingle}</td>
+                    </tr>
+                  </tbody>
+                </table>
               </section>
 
+              {dest.healthcare && (
+                <section>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-gray-900 pb-2">
+                    Healthcare
+                  </h2>
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <p className="text-gray-700 mb-4">{dest.healthcare.description}</p>
+                    <div className="bg-gray-900 text-blue-200 p-4 rounded">
+                      <strong>Key Takeaway:</strong> {dest.healthcare.keyTakeaway}
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {dest.visa && (
+                <section>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-gray-900 pb-2">
+                    Visa & Residency
+                  </h2>
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{dest.visa.name}</h3>
+                    <p className="text-sm text-gray-600 italic mb-4">{dest.visa.requirements}</p>
+                    <p className="text-gray-700 mb-4">{dest.visa.description}</p>
+                    <div className="bg-gray-900 text-blue-200 p-4 rounded">
+                      <strong>Key Takeaway:</strong> {dest.visa.keyTakeaway}
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {dest.tax && (
+                <section>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-gray-900 pb-2">
+                    Tax Benefits
+                  </h2>
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <p className="text-gray-700 mb-4">{dest.tax.description}</p>
+                    <div className="bg-gray-900 text-blue-200 p-4 rounded">
+                      <strong>Key Takeaway:</strong> {dest.tax.keyTakeaway}
+                    </div>
+                  </div>
+                </section>
+              )}
+
               <section>
-                <SectionHeading>Monthly Cost Breakdown</SectionHeading>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                  {costLabels.map(({ key, label }) => (
-                    <div key={key} className="bg-white border border-border p-4 rounded-sm">
-                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground mb-1">{label}</p>
-                      <p className="font-semibold text-foreground text-sm">{d.costs[key]}</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-gray-900 pb-2">
+                  Quality of Life
+                </h2>
+                <div className="grid grid-cols-2 gap-4 mb-4">
+                  {dest.scores && Object.entries(dest.scores).map(([key, value]: [string, any]) => (
+                    <div key={key} className="bg-blue-50 p-4 rounded">
+                      <div className="text-sm text-gray-600 mb-2 capitalize">{key}</div>
+                      <div className="h-2 bg-gray-200 rounded mb-1">
+                        <div className="h-2 bg-blue-600 rounded" style={{ width: `${value}%` }} />
+                      </div>
+                      <div className="text-lg font-bold text-gray-900">{value} / 100</div>
                     </div>
                   ))}
                 </div>
-                <div className="mt-4 grid grid-cols-2 gap-4">
-                  <div className="p-4 bg-primary/5 border border-primary/20 rounded-sm">
-                    <p className="text-[10px] uppercase tracking-wide text-primary/70 mb-1">Couple (Total/mo)</p>
-                    <p className="text-xl font-bold text-primary">{d.costs.totalCouple}</p>
-                  </div>
-                  <div className="p-4 bg-muted border border-border rounded-sm">
-                    <p className="text-[10px] uppercase tracking-wide text-muted-foreground mb-1">Single (Total/mo)</p>
-                    <p className="text-xl font-bold text-foreground">{d.costs.totalSingle}</p>
-                  </div>
-                </div>
               </section>
 
-              <section>
-                <SectionHeading>Healthcare</SectionHeading>
-                <div className="bg-white border border-border p-6 rounded-sm">
-                  <div className="flex justify-between items-start mb-3 flex-wrap gap-2">
-                    <h3 className="font-semibold font-serif">Medical Access</h3>
-                    <span className="text-xs bg-muted px-2 py-1 rounded text-muted-foreground">
-                      Private: {d.healthcare.privateInsurance}
-                    </span>
-                  </div>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{d.healthcare.summary}</p>
-                </div>
-                <KeyTakeaway text={d.healthcare.keyTakeaway} />
-              </section>
-
-              <section>
-                <SectionHeading>Visa & Residency</SectionHeading>
-                <div className="bg-white border border-border p-6 rounded-sm">
-                  <div className="flex flex-wrap gap-3 mb-4">
-                    <span className="text-xs font-semibold bg-primary text-white px-3 py-1 rounded-full">{d.visa.type}</span>
-                    <span className="text-xs bg-muted px-3 py-1 rounded-full text-foreground/70">Min income: {d.visa.minIncome}</span>
-                    {d.visa.ssSaccepted && (
-                      <span className="text-xs bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">✓ Social Security accepted</span>
-                    )}
-                  </div>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{d.visa.summary}</p>
-                </div>
-                <KeyTakeaway text={d.visa.keyTakeaway} />
-              </section>
-
-              <section>
-                <SectionHeading>Taxes</SectionHeading>
-                <div className="bg-white border border-border p-6 rounded-sm">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {d.taxes.usTaxTreaty && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ US Tax Treaty</span>}
-                    {d.taxes.totalizationAgreement && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ Totalization Agreement</span>}
-                    {!d.taxes.hostTaxesSS && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">✓ SS Not Taxed Locally</span>}
-                  </div>
-                  <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wide">Foreign Income Tax</p>
-                  <p className="text-sm font-semibold text-foreground mb-3">{d.taxes.foreignIncomeTax}</p>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{d.taxes.summary}</p>
-                </div>
-                <KeyTakeaway text={d.taxes.keyTakeaway} />
-              </section>
-
-              <section>
-                <SectionHeading>Lifestyle & Culture</SectionHeading>
-                <div className="bg-white border border-border p-6 rounded-sm space-y-4">
-                  <p className="text-sm text-foreground/80 leading-relaxed">{d.lifestyle.summary}</p>
-                  <div className="pt-4 border-t border-border grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground mb-1">Currency</p>
-                      <p className="text-sm font-medium">{d.lifestyle.currency}</p>
-                    </div>
-                    <div>
-                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground mb-1">Climate</p>
-                      <p className="text-sm font-medium">{d.lifestyle.climate}</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            {/* Sidebar */}
-            <aside className="space-y-6">
-              <div className="bg-white border border-border p-6 rounded-sm sticky top-24">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-primary text-lg">★</span>
-                  <h3 className="font-semibold font-serif text-sm">Quality of Life</h3>
-                </div>
-                <div className="w-8 h-px bg-primary mb-4" />
-                <div className="space-y-1">
-                  {(Object.keys(d.qol) as Array<keyof typeof d.qol>).map((key) => (
-                    <QolBar key={key} label={qolLabels[key]} score={d.qol[key]} icon={qolIcons[key]} />
-                  ))}
-                </div>
-                <div className="mt-5 pt-5 border-t border-border flex justify-between items-center">
-                  <span className="text-xs text-muted-foreground uppercase tracking-wide">Overall Avg</span>
-                  <span className="text-2xl font-bold text-primary">{avgQol}<span className="text-xs text-muted-foreground font-normal">/10</span></span>
-                </div>
-                <Link href="/destinations" className="mt-5 block w-full text-center px-4 py-3 bg-foreground text-background text-xs font-semibold tracking-widest uppercase rounded-sm hover:bg-foreground/90 transition-colors">
-                  Compare All Countries
+              <div className="border-t border-gray-200 pt-6">
+                <Link href="/destinations" className="text-blue-600 hover:text-blue-700 font-medium">
+                  ← Back to all destinations
                 </Link>
               </div>
+            </div>
 
-              <div className="bg-[#1f2326] p-6 rounded-sm">
-                <h3 className="font-serif text-white font-semibold mb-2">Planning a move?</h3>
-                <p className="text-white/60 text-xs leading-relaxed mb-4">
-                  Get weekly visa updates, expat guides, and insider tips for {d.name} delivered free.
-                </p>
-                <Link href="/#subscribe" className="block w-full text-center px-4 py-3 bg-primary text-white text-xs font-semibold tracking-widest uppercase rounded-sm hover:bg-primary/90 transition-colors">
-                  Subscribe Free →
-                </Link>
+            <aside className="lg:col-span-1">
+              <div className="sticky top-8 space-y-6">
+                <div className="bg-blue-600 text-white rounded-lg p-6">
+                  <h3 className="text-xl font-bold mb-3">Ready to Compare?</h3>
+                  <p className="text-sm mb-4 text-blue-100">
+                    Get our free guide comparing {dest.name} to 11 other top retirement destinations.
+                  </p>
+                  <Link
+                    href="/#free-guide"
+                    className="block w-full text-center bg-white text-blue-600 px-4 py-3 rounded-md font-bold hover:bg-blue-50 transition-colors"
+                  >
+                    Get the Free Guide →
+                  </Link>
+                  <p className="text-xs text-blue-200 text-center mt-3">
+                    Free by email · No spam
+                  </p>
+                </div>
+
+                {dest.relatedDestinations && dest.relatedDestinations.length > 0 && (
+                  <div className="bg-gray-50 rounded-lg p-6">
+                    <h3 className="text-sm uppercase tracking-wide text-gray-600 font-bold mb-4">
+                      Other Destinations
+                    </h3>
+                    <div className="space-y-4">
+                      {dest.relatedDestinations.map((related: any, i: number) => (
+                        <Link
+                          key={i}
+                          href={`/destinations/${related.slug}`}
+                          className="block group"
+                        >
+                          <h4 className="font-bold text-gray-900 text-sm mb-1 group-hover:text-blue-600">
+                            {related.flag} {related.name}
+                          </h4>
+                          <p className="text-xs text-gray-600">from {related.budgetShort}</p>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </aside>
           </div>
         </div>
-      </main>
+      </div>
+
       <Footer />
-    </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: `Retire in ${dest.name} 2026 — The Complete Guide`,
+            description: `Real monthly costs, visa, healthcare and lifestyle for American retirees in ${dest.name}.`,
+            author: { '@type': 'Organization', name: 'Golden Horizons' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Golden Horizons',
+              logo: { '@type': 'ImageObject', url: 'https://golden-horizons.org/logo.png' },
+            },
+          }),
+        }}
+      />
+    </>
   );
 }
