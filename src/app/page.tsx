@@ -15,22 +15,22 @@ export default function HomePage() {
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1400',
       kicker: 'Cover Story · The Destination Report',
       title: 'Where $2,000 a month can still buy a beautiful life',
-      sub: 'Warm evenings, walkable towns, better healthcare — the retirement dream is moving overseas.',
+      sub: 'Warm evenings, walkable towns, better healthcare access, and a slower rhythm — the retirement dream is moving overseas.',
     },
     {
-      image: 'https://images.pexels.com/photos/761297/pexels-photo-761297.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      kicker: 'The Money Page · Cost of Living Report',
-      title: 'What your Social Security check actually buys abroad',
-      sub: '$1,800/month goes further in Portugal than Pennsylvania. Here\'s the real math.',
+      image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      kicker: 'The Expat File',
+      title: 'The old-town life people dream about — cafés, shade, and slow golden evenings',
+      sub: 'A real European street, real cafés, real texture — the kind of daily life retirement should make possible.',
     },
     {
-      image: 'https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      kicker: 'The Health File · Healthcare Overseas',
-      title: 'Better care for less than you\'re paying now',
-      sub: 'How expats get world-class healthcare in Spain, Costa Rica, and Malaysia.',
+      image: 'https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=1400',
+      kicker: 'The Money Page',
+      title: 'Seaside towns where every morning feels like a postcard',
+      sub: 'Historic streets, sea views, walkable neighborhoods, and a softer rhythm — with the numbers checked before the dream begins.',
     },
   ];
 
@@ -61,123 +61,149 @@ export default function HomePage() {
           <Link href="/" className="active">Cover</Link>
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
-          <Link href="#free-guide">Subscribe Free</Link>
+          <Link href="#subscribe">Subscribe Free</Link>
         </nav>
 
         {/* ── HERO ── */}
-        <div style={{ position: 'relative', height: '460px', overflow: 'hidden', background: '#1e1408' }}>
+        <div className="hero-wrap">
           {slides.map((slide, i) => (
             <div
               key={i}
-              style={{
-                position: 'absolute', inset: 0,
-                opacity: currentSlide === i ? 1 : 0,
-                transition: 'opacity 1.2s ease-in-out',
-              }}
+              className="hero-slide"
+              style={{ opacity: currentSlide === i ? 1 : 0, transition: 'opacity 1.2s ease-in-out' }}
             >
-              <img
-                src={slide.image}
-                alt=""
-                style={{
-                  width: '100%', height: '100%', objectFit: 'cover',
-                  filter: 'contrast(1.05) saturate(1.04) brightness(0.92) sepia(0.05)',
-                }}
-              />
-              <div style={{
-                position: 'absolute', inset: 0,
-                background: 'linear-gradient(90deg,rgba(30,20,8,.56) 0%,rgba(30,20,8,.06) 100%),linear-gradient(0deg,rgba(30,20,8,.34) 0%,rgba(30,20,8,.04) 58%)',
-              }} />
-              <div style={{ position: 'absolute', zIndex: 3, left: 36, bottom: 38, maxWidth: 660, color: '#faf5e9' }}>
-                <div style={{ fontSize: 10, letterSpacing: '3.5px', textTransform: 'uppercase', color: '#c9a84c', marginBottom: 10, fontFamily: 'EB Garamond, serif' }}>
-                  {slide.kicker}
-                </div>
-                <div style={{ fontFamily: 'Playfair Display, serif', fontSize: 44, fontWeight: 900, lineHeight: 1.04, letterSpacing: -1, marginBottom: 12, color: '#fff7e8' }}>
-                  {slide.title}
-                </div>
-                <div style={{ fontFamily: 'EB Garamond, serif', fontSize: 20, lineHeight: 1.45, color: '#f2dfb0', maxWidth: 560 }}>
-                  {slide.sub}
-                </div>
+              <img src={slide.image} alt="" className="hero-img" />
+              <div className="hero-overlay" />
+              <div className="hero-text">
+                <div className="hero-kicker">{slide.kicker}</div>
+                <h1 className="hero-title">{slide.title}</h1>
+                <p className="hero-sub">{slide.sub}</p>
               </div>
             </div>
           ))}
         </div>
+        <div className="hero-caption">
+          <p>Three windows into the Golden Horizons promise: old-world charm, sea air, richer days, and a retirement lifestyle that still feels possible.</p>
+        </div>
 
         {/* ── COVER STORY ── */}
-        <div style={{ padding: '32px 36px 28px', borderBottom: '2px solid #1e1408' }}>
-          <div className="section-banner" style={{ display: 'inline-block', marginBottom: 16, padding: '5px 12px' }}>Cover Story</div>
-          <h2 style={{ fontFamily: 'Playfair Display, serif', fontSize: 42, fontWeight: 700, lineHeight: 1.1, color: '#1a0f00', letterSpacing: -0.8, marginBottom: 14 }}>
-            The places where your money sets you free — and why more Americans are finding them every day
-          </h2>
-          <div style={{ fontSize: 12, color: '#8b6914', borderTop: '1px solid #c9a84c', borderBottom: '1px solid #c9a84c', padding: '8px 0', marginBottom: 20, fontFamily: 'EB Garamond, serif' }}>
-            By the Golden Horizons Editorial Team · April 2026
-          </div>
-          <p style={{ fontSize: 20, lineHeight: 1.82, color: '#2b1a00', marginBottom: 16, fontFamily: 'EB Garamond, serif' }}>
-            You spent decades building a life. Now the question is not whether you can retire — it is where. Tens of thousands of Americans are discovering that $2,000 goes further in Portugal than Pennsylvania, that healthcare in Costa Rica beats what they left behind, and that the pace of life abroad feels like what retirement was supposed to be all along.
+        <div className="cover-story">
+          <div className="mag-label">Cover Story · The Destination Report</div>
+          <h2 className="cover-headline">The places where your money sets you free — and why more Americans are finding them every day</h2>
+          <div className="byline">By the Editors of Golden Horizons · Cover Story · April 2026</div>
+          <p className="body-text">
+            There are places in the world where $2,000 a month buys the kind of life most Americans spend their entire career chasing. A terrace overlooking the sea. Fresh food every morning. A doctor you can actually afford to see. These places are not secrets — they are simply overlooked.
           </p>
-          <Link href="/articles" style={{ fontSize: 14, fontStyle: 'italic', color: '#8b6914', textDecoration: 'underline', fontFamily: 'EB Garamond, serif' }}>
-            Browse all stories →
-          </Link>
+          <p className="body-text">
+            Golden Horizons exists to change that. Every morning we find one of these places, dig into the real numbers, and bring it straight to you. No hype. No sales pitch. Just the truth about what is possible — and what it actually costs.
+          </p>
+          <Link href="/articles" className="read-more">Read all stories in this issue →</Link>
         </div>
 
         {/* ── PULL QUOTE ── */}
         <div className="pullquote">
-          <p>&ldquo;I kept waiting for the right time. Then I realized — this is the right time. I was already there.&rdquo;</p>
-          <cite>— Barbara, 63 · Now living in Lisbon on $1,900/month</cite>
+          <p>&ldquo;Most people plan carefully for retirement. Almost none plan <em>where</em> to live it. That decision changes everything.&rdquo;</p>
+          <cite>— The Golden Horizons Editors</cite>
         </div>
 
         {/* ── BELOW FOLD ── */}
-        <div className="section-banner">This Issue</div>
+        <div className="section-banner">Inside This Issue</div>
         <div className="below-fold">
+
           <div className="bf-col">
             <div className="mag-section-label">The Money Page</div>
-            <p style={{ fontSize: 18, lineHeight: 1.75, color: '#2b1a00', marginBottom: 14, fontFamily: 'EB Garamond, serif' }}>
-              What $2,000 actually gets you in 26 countries. Real rents, real grocery bills, real monthly budgets from Americans already living there.
-            </p>
-            <Link href="/destinations" style={{ fontSize: 14, fontStyle: 'italic', color: '#8b6914', textDecoration: 'underline', fontFamily: 'EB Garamond, serif' }}>
-              Compare all 26 destinations →
-            </Link>
+            <div className="story-item">
+              <img className="story-img" src="https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Albania" />
+              <div className="story-cat">Cost of Living · Albania</div>
+              <Link href="/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2" style={{ textDecoration: 'none' }}>
+                <div className="story-title">What $1,000 a Month Gets You in Gjirokastër</div>
+              </Link>
+              <Link href="/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2" className="story-read">Read this story →</Link>
+            </div>
+            <div className="story-item">
+              <img className="story-img" src="https://images.pexels.com/photos/15894001/pexels-photo-15894001.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cambodia" />
+              <div className="story-cat">Cost of Living · Cambodia</div>
+              <Link href="/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2" style={{ textDecoration: 'none' }}>
+                <div className="story-title">What $1,000 a Month Gets You in Siem Reap</div>
+              </Link>
+              <Link href="/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2" className="story-read">Read this story →</Link>
+            </div>
           </div>
+
           <div className="bf-col">
-            <div className="mag-section-label">The Destination Report</div>
+            <div className="mag-section-label">The Visa File</div>
+            <div className="story-item">
+              <img className="story-img" src="https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ireland" />
+              <div className="story-cat">Visas &amp; Residency · Ireland</div>
+              <Link href="/articles/ireland-residency-options-for-american-retirees-v2" style={{ textDecoration: 'none' }}>
+                <div className="story-title">Residency Options for American Retirees in Ireland</div>
+              </Link>
+              <Link href="/articles/ireland-residency-options-for-american-retirees-v2" className="story-read">Read this story →</Link>
+            </div>
+            <div className="story-item">
+              <img className="story-img" src="https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Georgia" />
+              <div className="story-cat">Visas &amp; Residency · Georgia</div>
+              <Link href="/articles/georgia-residency-options-for-us-retirees" style={{ textDecoration: 'none' }}>
+                <div className="story-title">Residency Options for U.S. Retirees in Georgia</div>
+              </Link>
+              <Link href="/articles/georgia-residency-options-for-us-retirees" className="story-read">Read this story →</Link>
+            </div>
+          </div>
+
+          <div className="bf-col">
+            <div className="sb-pull">
+              <p>&ldquo;I kept waiting for the right time. Then I realized — this <em>is</em> the right time.&rdquo;</p>
+              <cite>— Barbara, 63 · Lisbon, $1,900/mo</cite>
+            </div>
+            <div className="mag-sub" id="subscribe">
+              <div className="mag-sub-eyebrow">Free Subscription</div>
+              <div className="mag-sub-headline">Start reading Golden Horizons every morning</div>
+              <div className="mag-sub-body">Real costs. Real places. One story every morning — free, forever.</div>
+              <Link href="/golden_horizons_final.pdf" className="mag-btn">Start My Free Subscription →</Link>
+              <div className="mag-trust">◆ Join 5,000+ readers planning their next chapter ◆</div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* ── DESTINATIONS STRIP ── */}
+        <div className="section-banner">The Destination Report · At a Glance</div>
+        <div className="dest-strip">
+          <div className="dest-label">Best value destinations for Americans retiring abroad</div>
+          <div className="dest-row">
             {[
-              { flag: '🇵🇹', name: 'Portugal', cost: 'from $2,500/month couple', slug: 'portugal' },
-              { flag: '🇲🇽', name: 'Mexico', cost: 'from $1,500/month couple', slug: 'mexico' },
-              { flag: '🇨🇷', name: 'Costa Rica', cost: 'from $2,000/month couple', slug: 'costa-rica' },
-              { flag: '🇹🇭', name: 'Thailand', cost: 'from $1,400/month couple', slug: 'thailand' },
+              { name: 'Portugal', cost: 'from $1,800/mo', tag: 'Top Ranked' },
+              { name: 'Panama', cost: 'from $1,600/mo', tag: 'Best Healthcare' },
+              { name: 'Mexico', cost: 'from $1,400/mo', tag: 'Most Popular' },
+              { name: 'Vietnam', cost: 'from $1,200/mo', tag: 'Best Value' },
+              { name: 'Belize', cost: 'from $1,700/mo', tag: 'English Only' },
+              { name: 'Ecuador', cost: 'from $1,300/mo', tag: 'Hidden Gem' },
             ].map((d) => (
-              <Link key={d.slug} href={`/destinations/${d.slug}`} style={{ textDecoration: 'none' }}>
-                <div className="story-item">
-                  <div style={{ fontSize: 22, marginBottom: 4 }}>{d.flag}</div>
-                  <div style={{ fontFamily: 'Playfair Display, serif', fontSize: 15, fontWeight: 700, color: '#1a0f00' }}>{d.name}</div>
-                  <div style={{ fontSize: 13, color: '#8b6914', fontFamily: 'EB Garamond, serif' }}>{d.cost}</div>
-                </div>
+              <Link key={d.name} href="/destinations" className="dest-card">
+                <div className="dest-name">{d.name}</div>
+                <div className="dest-cost">{d.cost}</div>
+                <div className="dest-tag">{d.tag}</div>
               </Link>
             ))}
           </div>
-          <div className="bf-col">
-            <div id="free-guide" className="mag-sub">
-              <div className="mag-sub-eyebrow">Free Retirement Abroad Guide</div>
-              <h3 className="mag-sub-headline">Get the free guide before choosing where to retire.</h3>
-              <p className="mag-sub-body">See where $2,000/month goes further, which countries are easiest for Americans, and what to check before you move.</p>
-              <Link href="#free-guide" className="mag-btn">Get My Free Guide →</Link>
-              <p className="mag-trust">Free by email · No spam · Unsubscribe anytime</p>
-            </div>
-          </div>
         </div>
+
+        <div className="ornament">— ✦ —</div>
 
         {/* ── FOOTER ── */}
         <footer className="mag-footer">
           <div className="footer-name">Golden Horizons</div>
           <p>The retirement abroad magazine for Americans who aren&rsquo;t done yet.</p>
           <div className="footer-links">
-            <Link href="/">Cover</Link><span>|</span>
-            <Link href="/articles">Articles</Link><span>|</span>
+            <Link href="/">Website</Link><span>|</span>
+            <Link href="/articles">All Stories</Link><span>|</span>
             <Link href="/destinations">Destinations</Link><span>|</span>
             <Link href="/about">About</Link><span>|</span>
             <Link href="/privacy-policy">Privacy</Link><span>|</span>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">Contact</Link><span>|</span>
+            <Link href="/terms-of-use">Terms</Link>
           </div>
-          <p>© 2026 Golden Horizons — All rights reserved</p>
+          <p style={{ marginTop: 12, fontSize: 11, opacity: 0.5 }}>© 2026 Golden Horizons — All rights reserved</p>
         </footer>
 
       </div>
