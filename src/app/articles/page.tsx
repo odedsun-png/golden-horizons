@@ -1,26 +1,67 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { getAllArticleSlugs, getArticleBySlug } from '@/lib/articles';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'All Stories — Golden Horizons Magazine',
-  description: 'Browse all retirement abroad articles — real costs, visa guides, healthcare reports, and destination deep-dives.',
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+
+type Article = {
+  slug: string;
+  title: string;
+  category: string;
+  heroImage: string;
+  image: string;
+  date: string;
+  readTime: string;
+  excerpt: string;
+  description: string;
 };
 
-export default async function ArticlesPage() {
-  const slugs = await getAllArticleSlugs();
-  const articles = await Promise.all(slugs.map((slug) => getArticleBySlug(slug)));
-  const validArticles = articles.filter((a) => a !== null);
+const ARTICLES_PER_PAGE = 18;
 
-  const categoryGroups: Record<string, typeof validArticles> = {};
-  validArticles.forEach((article) => {
+export default function ArticlesPage() {
+  const [articles, setArticles] = useState<Article[]>([]);
+  const [visibleCount, setVisibleCount] = useState(ARTICLES_PER_PAGE);
+  const [activeCategory, setActiveCategory] = useState('All Stories');
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/articles')
+      .then((r) => r.json())
+      .then((data) => {
+        setArticles(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  const categoryGroups: Record<string, Article[]> = {};
+  articles.forEach((article) => {
     const cat = article.category || 'Uncategorized';
     if (!categoryGroups[cat]) categoryGroups[cat] = [];
     categoryGroups[cat].push(article);
   });
 
   const categories = Object.keys(categoryGroups).sort();
-  const editorPick = validArticles[0];
+
+  const filteredArticles =
+    activeCategory === 'All Stories'
+      ? articles
+      : (categoryGroups[activeCategory] || []);
+
+  const editorPick = filteredArticles[0];
+  const gridArticles = filteredArticles.slice(1, visibleCount + 1);
+  const hasMore = visibleCount + 1 < filteredArticles.length;
+
+  if (loading) {
+    return (
+      <main className="mag-page">
+        <div className="site">
+          <div style={{ padding: '60px 36px', textAlign: 'center', fontFamily: 'EB Garamond, serif', color: '#8b6914' }}>
+            Loading stories…
+          </div>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="mag-page">
@@ -49,31 +90,40 @@ export default async function ArticlesPage() {
           <Link href="/">Cover</Link>
           <Link href="/articles" className="active">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
-          <Link href="/#free-guide">Subscribe Free</Link>
+          <Link href="/#subscribe">Subscribe Free</Link>
         </nav>
 
         <div className="page-header">
           <span className="ph-kicker">The Archive</span>
           <h1 className="ph-title">All Stories</h1>
-          <span className="ph-count">{validArticles.length} articles · Updated daily</span>
+          <span className="ph-count">{articles.length} articles · Updated daily</span>
         </div>
 
+        {/* ── BROWSE BY SECTION ── */}
         <div className="section-banner">Browse by Section</div>
         <div className="cat-index">
-          <Link href="/articles" className="cat-cell active">
+          <button
+            className={`cat-cell${activeCategory === 'All Stories' ? ' active' : ''}`}
+            onClick={() => { setActiveCategory('All Stories'); setVisibleCount(ARTICLES_PER_PAGE); }}
+          >
             <div className="cat-name">All Stories</div>
-            <div className="cat-count">{validArticles.length} articles</div>
+            <div className="cat-count">{articles.length} articles</div>
             <div className="cat-desc">Every destination we&rsquo;ve covered</div>
-          </Link>
+          </button>
           {categories.map((cat) => (
-            <Link key={cat} href={`/articles?category=${encodeURIComponent(cat)}`} className="cat-cell">
+            <button
+              key={cat}
+              className={`cat-cell${activeCategory === cat ? ' active' : ''}`}
+              onClick={() => { setActiveCategory(cat); setVisibleCount(ARTICLES_PER_PAGE); }}
+            >
               <div className="cat-name">{cat}</div>
               <div className="cat-count">{categoryGroups[cat].length} articles</div>
               <div className="cat-desc">Browse {cat.toLowerCase()} stories</div>
-            </Link>
+            </button>
           ))}
         </div>
 
+        {/* ── EDITOR'S PICK ── */}
         {editorPick && (
           <>
             <div className="section-banner">Editor&rsquo;s Pick · This Week&rsquo;s Must-Read</div>
@@ -96,10 +146,17 @@ export default async function ArticlesPage() {
           </>
         )}
 
-        <div className="section-banner">Latest Stories</div>
+        {/* ── ARTICLES GRID ── */}
+        <div className="section-banner">
+          {activeCategory === 'All Stories' ? 'Latest Stories' : activeCategory}
+        </div>
         <div className="articles-grid">
-          {validArticles.slice(1, 19).map((article) => (
-            <Link key={article.slug} href={`/articles/${article.slug}`} className="art-card">
+          {gridArticles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/articles/${article.slug}`}
+              className="art-card"
+            >
               <img
                 className="art-thumb"
                 src={article.heroImage || article.image || 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=400'}
@@ -112,10 +169,18 @@ export default async function ArticlesPage() {
           ))}
         </div>
 
-        {validArticles.length > 19 && (
+        {/* ── LOAD MORE ── */}
+        {hasMore && (
           <div className="load-more">
-            <Link href="/articles" className="load-btn">Load More Stories</Link>
-            <p className="load-count">Showing 18 of {validArticles.length} articles</p>
+            <button
+              className="load-btn"
+              onClick={() => setVisibleCount((prev) => prev + ARTICLES_PER_PAGE)}
+            >
+              Load More Stories
+            </button>
+            <p className="load-count">
+              Showing {Math.min(visibleCount + 1, filteredArticles.length)} of {filteredArticles.length} articles
+            </p>
           </div>
         )}
 
@@ -139,7 +204,7 @@ export default async function ArticlesPage() {
             <Link href="/privacy-policy">Privacy</Link><span>|</span>
             <Link href="/contact">Contact</Link>
           </div>
-          <p>© 2026 Golden Horizons — All rights reserved</p>
+          <p style={{ fontSize: 11, opacity: 0.5, marginTop: 8 }}>© 2026 Golden Horizons — All rights reserved</p>
         </footer>
 
       </div>
