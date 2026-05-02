@@ -1,489 +1,231 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import CostCalculator from '@/components/CostCalculator';
 
 export const metadata: Metadata = {
   title: 'Best Places to Retire Abroad in 2026 | Golden Horizons',
   description: 'Compare the best places for Americans to retire abroad in 2026. Real monthly costs, healthcare quality, visa options, and lifestyle ratings — ranked by the Golden Horizons editors.',
 };
 
-interface Country {
-  id: string;
-  rank: number;
-  flag: string;
-  name: string;
-  ilRank: string;
-  image: string;
-  description: string;
-  costCouple: string;
-  costSingle: string;
-  benefits: string[];
-  scores: {
-    cost: number;
-    safety: number;
-    healthcare: number;
-    lifestyle: number;
-  };
-}
-
-const countries: Country[] = [
+const featuredDestinations = [
   {
-    id: 'portugal',
-    rank: 1,
-    flag: '🇵🇹',
+    rank: '#1 Ranked · Editor\'s Choice · 2026',
     name: 'Portugal',
-    ilRank: '#1 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&q=80',
-    description: 'Stunning coastlines, rich history, and one of Europe\'s most affordable countries with excellent healthcare.',
-    costCouple: '$2,500–$4,000/mo couple',
-    costSingle: '$1,500–$2,500/mo single',
-    benefits: ['EU residency path', 'English widely spoken', '300+ days of sunshine', 'World-class healthcare'],
-    scores: { cost: 85, safety: 95, healthcare: 95, lifestyle: 90 },
+    feeling: '"The moment the plane landed, I knew. This is where I was supposed to be."',
+    cost: '$1,500–$2,500/mo single · $2,500–$4,000/mo couple',
+    tags: ['EU residency path', 'English widely spoken', '300+ sunny days', 'World-class healthcare'],
+    image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=700',
+    href: '/articles?category=Best+Cities',
+    tall: true,
   },
   {
-    id: 'mexico',
-    rank: 2,
-    flag: '🇲🇽',
+    rank: '#2 · Mexico',
     name: 'Mexico',
-    ilRank: '#5 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=600&q=80',
-    description: 'Close to the US, vibrant culture, established expat communities, and very affordable living.',
-    costCouple: '$1,500–$3,000/mo couple',
-    costSingle: '$1,000–$1,800/mo single',
-    benefits: ['Close to US/Canada', 'Large expat community', 'Low cost of living', 'Rich culture'],
-    scores: { cost: 95, safety: 70, healthcare: 80, lifestyle: 85 },
+    feeling: 'Close enough to visit. Far enough to finally live differently.',
+    cost: 'from $1,160/mo',
+    tags: ['Near US', 'Large expat scene'],
+    image: 'https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=500',
+    href: '/articles?category=Cost',
+    tall: false,
   },
   {
-    id: 'costa-rica',
-    rank: 3,
-    flag: '🇨🇷',
+    rank: '#3 · Costa Rica',
     name: 'Costa Rica',
-    ilRank: 'Top 3 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&q=80',
-    description: 'Pura Vida lifestyle, excellent healthcare, stable democracy, and stunning natural beauty.',
-    costCouple: '$2,000–$3,500/mo couple',
-    costSingle: '$1,200–$2,000/mo single',
-    benefits: ['Stable democracy', 'Excellent healthcare', 'No army', 'Biodiversity hotspot'],
-    scores: { cost: 80, safety: 85, healthcare: 90, lifestyle: 95 },
+    feeling: 'Pura Vida isn\'t a slogan. It\'s the actual pace of life here.',
+    cost: 'from $1,610/mo',
+    tags: ['Stable democracy', 'No army'],
+    image: 'https://images.pexels.com/photos/32133654/pexels-photo-32133654.jpeg?auto=compress&cs=tinysrgb&w=500',
+    href: '/articles?category=Beach',
+    tall: false,
   },
   {
-    id: 'spain',
-    rank: 4,
-    flag: '🇪🇸',
-    name: 'Spain',
-    ilRank: 'Top 15 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=600&q=80',
-    description: 'Mediterranean lifestyle, world-renowned cuisine, excellent public healthcare, and rich cultural heritage.',
-    costCouple: '$2,500–$4,500/mo couple',
-    costSingle: '$1,500–$2,500/mo single',
-    benefits: ['Mediterranean climate', 'Top-rated healthcare', 'Rich culture', 'EU membership'],
-    scores: { cost: 75, safety: 90, healthcare: 95, lifestyle: 95 },
-  },
-  {
-    id: 'panama',
-    rank: 5,
-    flag: '🇵🇦',
+    rank: '#4 · Panama',
     name: 'Panama',
-    ilRank: 'Top 5 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80',
-    description: 'Uses US dollar, generous pensionado discounts, modern infrastructure, and tropical climate.',
-    costCouple: '$2,500–$4,500/mo couple',
-    costSingle: '$1,500–$2,500/mo single',
-    benefits: ['Uses US dollar', 'Pensionado discounts', 'Modern healthcare', 'Tax benefits'],
-    scores: { cost: 80, safety: 75, healthcare: 85, lifestyle: 85 },
+    feeling: 'US dollar. Modern hospitals. Ocean on both sides.',
+    cost: 'from $1,340/mo',
+    tags: ['Uses US dollar', 'Pensionado discounts'],
+    image: 'https://images.pexels.com/photos/14840759/pexels-photo-14840759.jpeg?auto=compress&cs=tinysrgb&w=500',
+    href: '/articles/panama-healthcare-quality-in-panama-for-expats',
+    tall: false,
   },
   {
-    id: 'thailand',
-    rank: 6,
-    flag: '🇹🇭',
-    name: 'Thailand',
-    ilRank: 'Top 10 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=600&q=80',
-    description: 'Extremely affordable, world-class medical tourism, beautiful beaches, and welcoming culture.',
-    costCouple: '$1,500–$3,000/mo couple',
-    costSingle: '$900–$1,800/mo single',
-    benefits: ['Very affordable', 'Medical tourism hub', 'Tropical beaches', 'Friendly locals'],
-    scores: { cost: 95, safety: 80, healthcare: 90, lifestyle: 90 },
-  },
-  {
-    id: 'ecuador',
-    rank: 7,
-    flag: '🇪🇨',
-    name: 'Ecuador',
-    ilRank: 'Top 10 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=600&q=80',
-    description: 'Uses US dollar, diverse climates, affordable healthcare, and welcoming retirement visa program.',
-    costCouple: '$1,500–$2,500/mo couple',
-    costSingle: '$900–$1,400/mo single',
-    benefits: ['Uses US dollar', 'Low cost of living', 'Diverse geography', 'Easy residency'],
-    scores: { cost: 95, safety: 70, healthcare: 75, lifestyle: 80 },
-  },
-  {
-    id: 'malaysia',
-    rank: 8,
-    flag: '🇲🇾',
-    name: 'Malaysia',
-    ilRank: 'Top 5 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80',
-    description: 'Modern infrastructure, English widely spoken, excellent healthcare, and multicultural society.',
-    costCouple: '$1,500–$2,800/mo couple',
-    costSingle: '$900–$1,600/mo single',
-    benefits: ['English spoken', 'Modern cities', 'MM2H visa', 'Great food scene'],
-    scores: { cost: 90, safety: 85, healthcare: 85, lifestyle: 85 },
-  },
-  {
-    id: 'greece',
-    rank: 9,
-    flag: '🇬🇷',
+    rank: '#5 · Greece',
     name: 'Greece',
-    ilRank: 'Top 10 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&q=80',
-    description: 'Island lifestyle, Mediterranean diet, ancient history, and affordable European living.',
-    costCouple: '$2,000–$3,500/mo couple',
-    costSingle: '$1,200–$2,000/mo single',
-    benefits: ['Island living', 'Mediterranean diet', 'EU membership', 'Rich history'],
-    scores: { cost: 80, safety: 85, healthcare: 85, lifestyle: 90 },
+    feeling: 'The Mediterranean diet is the way they actually eat every day.',
+    cost: 'from $1,340/mo',
+    tags: ['Island lifestyle', 'EU member'],
+    image: 'https://images.pexels.com/photos/984877/pexels-photo-984877.jpeg?auto=compress&cs=tinysrgb&w=500',
+    href: '/articles?category=Beach',
+    tall: false,
   },
-  {
-    id: 'colombia',
-    rank: 10,
-    flag: '🇨🇴',
-    name: 'Colombia',
-    ilRank: 'Top 10 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1518638150340-f706e86654de?w=600&q=80',
-    description: 'Eternal spring climate in Medellin, modern cities, affordable living, and improving safety.',
-    costCouple: '$1,500–$2,800/mo couple',
-    costSingle: '$900–$1,600/mo single',
-    benefits: ['Year-round spring climate', 'Modern healthcare', 'Affordable', 'Growing expat scene'],
-    scores: { cost: 90, safety: 70, healthcare: 80, lifestyle: 85 },
-  },
-  {
-    id: 'vietnam',
-    rank: 11,
-    flag: '🇻🇳',
-    name: 'Vietnam',
-    ilRank: 'Emerging destination',
-    image: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80',
-    description: 'Southeast Asia\'s best value — extraordinary food culture, beautiful coastline, and warm welcoming people.',
-    costCouple: '$1,000–$1,800/mo couple',
-    costSingle: '$700–$1,200/mo single',
-    benefits: ['Cheapest in Asia', 'World-Class Food', 'Very Safe', 'Zero Foreign Tax'],
-    scores: { cost: 100, safety: 90, healthcare: 75, lifestyle: 85 },
-  },
-  {
-    id: 'italy',
-    rank: 12,
-    flag: '🇮🇹',
-    name: 'Italy',
-    ilRank: 'Top 15 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80',
-    description: '€100k flat tax option, free SSN healthcare for legal residents, and the world\'s greatest food and wine culture.',
-    costCouple: '$2,500–$5,000/mo couple',
-    costSingle: '$1,400–$2,800/mo single',
-    benefits: ['7% Southern Tax', 'Free SSN Healthcare', 'EU Access', 'US Tax Treaty'],
-    scores: { cost: 70, safety: 90, healthcare: 95, lifestyle: 100 },
-  },
-  {
-    id: 'france',
-    rank: 13,
-    flag: '🇫🇷',
-    name: 'France',
-    ilRank: 'Top 20 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80',
-    description: 'WHO-ranked #1 healthcare globally, free via Sécurité Sociale. Unmatched quality of life across every region.',
-    costCouple: '$3,000–$6,000/mo couple',
-    costSingle: '$1,800–$3,500/mo single',
-    benefits: ['#1 Healthcare WHO', 'Sécurité Sociale', 'EU Access', 'US Tax Treaty'],
-    scores: { cost: 60, safety: 90, healthcare: 100, lifestyle: 95 },
-  },
-  {
-    id: 'new-zealand',
-    rank: 14,
-    flag: '🇳🇿',
-    name: 'New Zealand',
-    ilRank: 'Special mention',
-    image: 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80',
-    description: '#2 Safest country on Earth. English-speaking, spectacular natural beauty, world-class infrastructure.',
-    costCouple: '$3,500–$6,000/mo couple',
-    costSingle: '$2,000–$3,500/mo single',
-    benefits: ['#2 Global Peace Index', 'English Speaking', 'No Language Barrier', 'US Tax Treaty'],
-    scores: { cost: 55, safety: 100, healthcare: 90, lifestyle: 90 },
-  },
-  {
-    id: 'portugal-azores',
-    rank: 15,
-    flag: '🇵🇹',
-    name: 'Portugal — Azores',
-    ilRank: 'Hidden gem',
-    image: 'https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?w=600&q=80',
-    description: '30–40% cheaper than mainland Portugal with identical D7 visa, NHR 2.0 tax benefits, and EU citizenship path.',
-    costCouple: '$1,800–$2,800/mo couple',
-    costSingle: '$1,100–$1,700/mo single',
-    benefits: ['30% Cheaper than Lisbon', 'Same D7 Visa', 'NHR 2.0 Tax', 'EU Citizenship'],
-    scores: { cost: 90, safety: 95, healthcare: 90, lifestyle: 85 },
-  },
-  {
-    id: 'malta',
-    rank: 16,
-    flag: '🇲🇹',
-    name: 'Malta',
-    ilRank: 'Top 10 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
-    description: 'Only English-speaking EU country. 15% flat tax on foreign income, 300 sunny days, and EU citizenship pathway.',
-    costCouple: '$2,500–$4,000/mo couple',
-    costSingle: '$1,400–$2,200/mo single',
-    benefits: ['English-Speaking EU', '15% Flat Tax', '300 Sunny Days', 'EU Citizenship'],
-    scores: { cost: 75, safety: 90, healthcare: 90, lifestyle: 85 },
-  },
-  {
-    id: 'belize',
-    rank: 17,
-    flag: '🇧🇿',
-    name: 'Belize',
-    ilRank: 'Top 15 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80',
-    description: 'English-speaking Caribbean, QRP retirement visa, barrier reef, and welcoming expat community.',
-    costCouple: '$2,000–$3,500/mo couple',
-    costSingle: '$1,200–$2,000/mo single',
-    benefits: ['English Official', 'QRP Retirement Visa', 'Caribbean Living', 'Tax Incentives'],
-    scores: { cost: 80, safety: 75, healthcare: 70, lifestyle: 85 },
-  },
-  {
-    id: 'argentina',
-    rank: 18,
-    flag: '🇦🇷',
-    name: 'Argentina',
-    ilRank: 'Top 20 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=600&q=80',
-    description: 'European culture in South America, world-class wine, and surprisingly affordable with favorable exchange rates.',
-    costCouple: '$1,800–$3,200/mo couple',
-    costSingle: '$1,000–$1,800/mo single',
-    benefits: ['European Culture', 'World-Class Wine', 'Favorable Exchange', 'Easy Residency'],
-    scores: { cost: 85, safety: 70, healthcare: 80, lifestyle: 85 },
-  },
-  {
-    id: 'bolivia',
-    rank: 19,
-    flag: '🇧🇴',
-    name: 'Bolivia',
-    ilRank: 'Budget choice',
-    image: 'https://images.unsplash.com/photo-1579033461380-adb47c3eb938?w=600&q=80',
-    description: 'South America\'s most affordable, diverse landscapes from Andes to Amazon, and growing expat scene.',
-    costCouple: '$1,200–$2,000/mo couple',
-    costSingle: '$700–$1,200/mo single',
-    benefits: ['Most Affordable', 'Diverse Geography', 'Low Property Costs', 'Easy Rentista Visa'],
-    scores: { cost: 100, safety: 65, healthcare: 65, lifestyle: 70 },
-  },
-  {
-    id: 'cambodia',
-    rank: 20,
-    flag: '🇰🇭',
-    name: 'Cambodia',
-    ilRank: 'Emerging choice',
-    image: 'https://images.unsplash.com/photo-1557401622-e6c0f129a27e?w=600&q=80',
-    description: 'Ultra-affordable, uses US dollar, stunning temples, tropical beaches, and easy retirement visa.',
-    costCouple: '$1,200–$2,200/mo couple',
-    costSingle: '$700–$1,300/mo single',
-    benefits: ['Uses US Dollar', 'Ultra Affordable', 'Easy ER Visa', 'Tropical Beaches'],
-    scores: { cost: 95, safety: 70, healthcare: 70, lifestyle: 75 },
-  },
-  {
-    id: 'northern-cyprus',
-    rank: 21,
-    flag: '🇨🇾',
-    name: 'Northern Cyprus',
-    ilRank: 'Hidden gem',
-    image: 'https://images.unsplash.com/photo-1580837119756-563d608dd119?w=600&q=80',
-    description: 'Mediterranean climate, English widely spoken, affordable EU-quality healthcare, and welcoming residency.',
-    costCouple: '$1,800–$3,000/mo couple',
-    costSingle: '$1,000–$1,700/mo single',
-    benefits: ['Mediterranean Climate', 'English Spoken', 'Affordable Healthcare', 'Easy Residency'],
-    scores: { cost: 85, safety: 85, healthcare: 80, lifestyle: 80 },
-  },
-  {
-    id: 'philippines',
-    rank: 22,
-    flag: '🇵🇭',
-    name: 'Philippines',
-    ilRank: 'Top 15 International Living 2026',
-    image: 'https://images.unsplash.com/photo-1573790387438-4da905039392?w=600&q=80',
-    description: 'English-speaking, tropical islands, extremely affordable, and SRRV retirement visa with low deposit.',
-    costCouple: '$1,500–$2,500/mo couple',
-    costSingle: '$900–$1,500/mo single',
-    benefits: ['English Official', 'SRRV Retirement Visa', 'Tropical Islands', 'Very Affordable'],
-    scores: { cost: 90, safety: 70, healthcare: 75, lifestyle: 85 },
-  },
-  {
-    id: 'paraguay',
-    rank: 23,
-    flag: '🇵🇾',
-    name: 'Paraguay',
-    ilRank: 'Budget choice',
-    image: 'https://images.unsplash.com/photo-1548963670-aaaa8f73a5e3?w=600&q=80',
-    description: 'Easiest permanent residency in South America, zero foreign tax, and very low cost of living.',
-    costCouple: '$1,500–$2,500/mo couple',
-    costSingle: '$900–$1,400/mo single',
-    benefits: ['Easiest PR Visa', 'Zero Foreign Tax', 'Low Living Costs', 'Stable Economy'],
-    scores: { cost: 95, safety: 75, healthcare: 70, lifestyle: 70 },
-  },
-  {
-    id: 'indonesia',
-    rank: 24,
-    flag: '🇮🇩',
-    name: 'Indonesia',
-    ilRank: 'Emerging destination',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80',
-    description: 'Bali lifestyle, tropical paradise, ultra-affordable, and new retirement visa options.',
-    costCouple: '$1,500–$2,500/mo couple',
-    costSingle: '$900–$1,500/mo single',
-    benefits: ['Bali Lifestyle', 'Ultra Affordable', 'Tropical Paradise', 'New Retirement Visa'],
-    scores: { cost: 95, safety: 75, healthcare: 75, lifestyle: 90 },
-  },
-  {
-    id: 'albania',
-    rank: 25,
-    flag: '🇦🇱',
-    name: 'Albania',
-    ilRank: 'Hidden gem',
-    image: 'https://images.unsplash.com/photo-1594750461822-e97910f155b0?w=600&q=80',
-    description: 'Europe\'s last undiscovered coastline, incredibly affordable, and EU candidate country.',
-    costCouple: '$1,500–$2,500/mo couple',
-    costSingle: '$900–$1,400/mo single',
-    benefits: ['Most Affordable EU Region', 'Stunning Coast', 'EU Candidate', 'Easy 1-Year Visa'],
-    scores: { cost: 95, safety: 80, healthcare: 70, lifestyle: 75 },
-  },
-  {
-    id: 'montenegro',
-    rank: 26,
-    flag: '🇲🇪',
-    name: 'Montenegro',
-    ilRank: 'Hidden gem',
-    image: 'https://images.unsplash.com/photo-1593506765083-d2c3f7704194?w=600&q=80',
-    description: 'Adriatic coast, EU candidate, affordable Mediterranean living, and easy temporary residency.',
-    costCouple: '$2,000–$3,200/mo couple',
-    costSingle: '$1,200–$1,800/mo single',
-    benefits: ['Adriatic Coast', 'EU Candidate', 'Affordable Med', 'Easy Temp Residency'],
-    scores: { cost: 85, safety: 85, healthcare: 75, lifestyle: 80 },
-  },
+];
+
+const moreDestinations = [
+  { flag: '🇻🇳', name: 'Vietnam', tagline: "SE Asia's best value for the budget-conscious retiree", cost: 'from $1,000/mo', href: '/articles?category=Cost' },
+  { flag: '🇮🇹', name: 'Italy', tagline: '€100k flat tax, free healthcare, world\'s best food culture', cost: 'from $2,500/mo', href: '/articles?category=Best+Cities' },
+  { flag: '🇧🇿', name: 'Belize', tagline: 'English-speaking Caribbean. No tax on foreign income.', cost: 'from $1,500/mo', href: '/articles?category=Beach' },
+  { flag: '🇦🇷', name: 'Argentina', tagline: 'The Paris of South America. Extraordinary USD buying power.', cost: 'from $1,000/mo', href: '/articles?category=Hidden+Gems' },
+  { flag: '🇲🇾', name: 'Malaysia', tagline: 'English spoken. Modern cities. MM2H visa program.', cost: 'from $960/mo', href: '/articles?category=Cost' },
+  { flag: '🇪🇨', name: 'Ecuador', tagline: 'Uses US dollar. Easy residency. Diverse geography.', cost: 'from $1,010/mo', href: '/articles/ecuador-what-2000-a-month-gets-you-in-cuenca' },
+  { flag: '🇵🇭', name: 'Philippines', tagline: 'English-speaking Asia. No tax on foreign pensions.', cost: 'from $1,200/mo', href: '/articles?category=Culture' },
+  { flag: '🇲🇹', name: 'Malta', tagline: 'Only English-speaking EU country. 300 sunny days.', cost: 'from $2,500/mo', href: '/articles?category=Best+Cities' },
 ];
 
 export default function DestinationsPage() {
   return (
-    <>
-      <Header />
+    <main className="mag-page">
+      <div className="site">
 
-      <div className="bg-gray-50 py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
-            Retire Abroad for Less — Compare the Best Countries in 2026
-          </h1>
-          <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
-            Our 2026 ranking of the best places in the world for retirees, based on cost of living, safety, healthcare, and lifestyle.
-          </p>
-
-          <CostCalculator />
+        <div className="topbar">
+          <span>Vol. I, No. 1</span>
+          <span className="hide-mob">golden-horizons.org · The Retirement Abroad Magazine</span>
+          <span>April 2026</span>
         </div>
-      </div>
 
-      <div className="bg-white py-16">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">2026 Rankings</h2>
+        <div className="masthead">
+          <div className="dateline">
+            <span>The Retirement Abroad Magazine</span>
+            <span className="hide-mob">For Americans Who Are Ready for What&rsquo;s Next</span>
+            <span>April 2026 · Issue 1</span>
+          </div>
+          <Link href="/" className="mastname">Golden Horizons</Link>
+          <div className="issue-line">
+            <span className="issue-tag"><strong>This Issue:</strong> Where $2,000/month buys a life worth living</span>
+            <span className="issue-tag"><strong>Inside:</strong> The Money Page · The Destination Report · The Health File</span>
+          </div>
+        </div>
 
-          <div className="space-y-8">
-            {countries.map((country) => (
-              <article
-                key={country.id}
-                className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                <div className="relative">
-                  <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-md font-bold text-sm z-10">
-                    #{country.rank}
-                  </div>
-                  <div className="absolute top-4 right-4 text-4xl z-10">{country.flag}</div>
-                  <img
-                    src={country.image}
-                    alt={country.name}
-                    className="w-full h-56 object-cover"
-                  />
+        <nav className="nav">
+          <Link href="/">Cover</Link>
+          <Link href="/articles">All Stories</Link>
+          <Link href="/destinations" className="active">Destinations</Link>
+          <Link href="/#subscribe">Subscribe Free</Link>
+        </nav>
+
+        {/* ── CINEMATIC HERO ── */}
+        <div className="cine-hero">
+          <img
+            className="cine-img"
+            src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Algarve coast Portugal — golden hour retirement"
+          />
+          <div className="cine-overlay" />
+          <div className="cine-content">
+            <div className="cine-eyebrow">The Destination Report · 2026 World Rankings</div>
+            <h1 className="cine-headline">The places where <em>your money</em> sets you free.</h1>
+            <p className="cine-sub">Every morning we find them. Every morning we bring them to you.</p>
+          </div>
+        </div>
+        <div className="hero-caption">
+          <p>Algarve coast, Portugal — where couples retire well on $2,500/month. Warm winters. English spoken. Healthcare included.</p>
+        </div>
+
+        {/* ── INTRO ── */}
+        <div className="dest-intro">
+          <div>
+            <div className="intro-kicker">A note from our editors</div>
+            <div className="intro-quote">
+              &ldquo;You worked for this. Every single day. Now — finally — it&rsquo;s your turn.&rdquo;
+            </div>
+          </div>
+          <div className="intro-body">
+            These are the places where Americans like you are discovering something unexpected: that <strong>the life they always wanted costs less than the life they settled for.</strong>
+            <br /><br />
+            We rank them honestly. We do the math so you don&rsquo;t have to. Every destination below was chosen because real retirees — people just like you — are living there right now, spending less and feeling more alive.
+          </div>
+        </div>
+
+        {/* ── DESTINATION CARDS ── */}
+        <div className="dest-section-label">
+          <div className="sl-kicker">The Destination Report · 2026 Rankings</div>
+          <div className="sl-title">The World&rsquo;s Best Places to Retire Abroad</div>
+        </div>
+
+        <div className="dest-grid">
+          {featuredDestinations.map((dest) => (
+            <Link
+              key={dest.name}
+              href={dest.href}
+              className={`dest-card${dest.tall ? ' tall' : ''}`}
+            >
+              <img
+                className="dc-img"
+                src={dest.image}
+                alt={dest.name}
+                style={{ minHeight: dest.tall ? '463px' : '230px' }}
+              />
+              <div className="dc-overlay" />
+              <div className="dc-body">
+                <div className="dc-rank">{dest.rank}</div>
+                <div className="dc-name">{dest.name}</div>
+                <div className="dc-feeling">{dest.feeling}</div>
+                <div className="dc-cost">{dest.cost}</div>
+                <div className="dc-tags">
+                  {dest.tags.map((tag) => (
+                    <span key={tag} className="dc-tag">{tag}</span>
+                  ))}
                 </div>
+                <span className="dc-cta">
+                  {dest.tall ? 'Read Full Profile' : 'View Profile'} →
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
 
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-1">{country.name}</h3>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide mb-3">
-                    {country.ilRank}
-                  </p>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{country.description}</p>
+        {/* ── PULL QUOTE ── */}
+        <div className="dest-pullquote">
+          <span className="pq-ornament">— ✦ —</span>
+          <div className="pq-text">
+            &ldquo;I kept waiting for the right time.<br />
+            Then I realized — <em>this is the right time.</em><br />
+            I was already there.&rdquo;
+          </div>
+          <div className="pq-attr">— Barbara, 63 · Now living in Lisbon on $1,900/month</div>
+        </div>
 
-                  <div className="mb-4 text-sm text-gray-700">
-                    <strong>Costs:</strong> {country.costCouple} · {country.costSingle}
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-2 mb-4">
-                    {country.benefits.map((benefit, idx) => (
-                      <div
-                        key={idx}
-                        className="bg-blue-50 text-blue-700 px-3 py-1.5 rounded text-xs"
-                      >
-                        {benefit}
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-3 mb-4">
-                    <div>
-                      <div className="text-xs text-gray-600 mb-1">Cost</div>
-                      <div className="h-2 bg-gray-200 rounded overflow-hidden">
-                        <div
-                          className="h-full bg-green-500"
-                          style={{ width: `${country.scores.cost}%` }}
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <div className="text-xs text-gray-600 mb-1">Safety</div>
-                      <div className="h-2 bg-gray-200 rounded overflow-hidden">
-                        <div
-                          className="h-full bg-blue-500"
-                          style={{ width: `${country.scores.safety}%` }}
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <div className="text-xs text-gray-600 mb-1">Healthcare</div>
-                      <div className="h-2 bg-gray-200 rounded overflow-hidden">
-                        <div
-                          className="h-full bg-purple-500"
-                          style={{ width: `${country.scores.healthcare}%` }}
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <div className="text-xs text-gray-600 mb-1">Lifestyle</div>
-                      <div className="h-2 bg-gray-200 rounded overflow-hidden">
-                        <div
-                          className="h-full bg-orange-500"
-                          style={{ width: `${country.scores.lifestyle}%` }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <Link
-                    href={`/destinations/${country.id}`}
-                    className="inline-block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    View Full Profile →
-                  </Link>
-                </div>
-              </article>
+        {/* ── MORE DESTINATIONS ── */}
+        <div className="more-section">
+          <div className="more-kicker">More Destinations · Explore All</div>
+          <div className="more-grid">
+            {moreDestinations.map((dest) => (
+              <Link key={dest.name} href={dest.href} className="more-card">
+                <span className="mc-flag">{dest.flag}</span>
+                <div className="mc-name">{dest.name}</div>
+                <div className="mc-tagline">{dest.tagline}</div>
+                <div className="mc-cost">{dest.cost}</div>
+              </Link>
             ))}
           </div>
         </div>
-      </div>
 
-      <Footer />
-    </>
+        {/* ── SUBSCRIBE CTA ── */}
+        <div className="sub-section" id="subscribe">
+          <div className="sub-eyebrow">Every morning. In your inbox. Free.</div>
+          <h2 className="sub-headline">We find the place.<br />You live the life.</h2>
+          <p className="sub-body">Each morning we send one story — a real place, real costs, real people who made the move. No fluff. Just the truth about what&rsquo;s possible.</p>
+          <Link href="/golden_horizons_final.pdf" className="sub-btn">Start My Free Subscription →</Link>
+          <div className="sub-trust">◆ &nbsp; Join 5,000+ readers planning their next chapter &nbsp; ◆</div>
+        </div>
+
+        <div className="ornament">— ✦ —</div>
+
+        {/* ── FOOTER ── */}
+        <footer className="mag-footer">
+          <div className="footer-name">Golden Horizons</div>
+          <p>The retirement abroad magazine for Americans who aren&rsquo;t done yet.</p>
+          <div className="footer-links">
+            <Link href="/">Website</Link><span>|</span>
+            <Link href="/articles">All Stories</Link><span>|</span>
+            <Link href="/destinations">Destinations</Link><span>|</span>
+            <Link href="/about">About</Link><span>|</span>
+            <Link href="/privacy-policy">Privacy</Link><span>|</span>
+            <Link href="/contact">Contact</Link><span>|</span>
+            <Link href="/terms-of-use">Terms</Link>
+          </div>
+          <p style={{ marginTop: 12, fontSize: 11, opacity: 0.5 }}>© 2026 Golden Horizons — All rights reserved</p>
+        </footer>
+
+      </div>
+    </main>
   );
 }
