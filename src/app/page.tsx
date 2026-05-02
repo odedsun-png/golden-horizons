@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import SubscribeBox from '@/components/SubscribeBox';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -106,6 +107,9 @@ export default function HomePage() {
           <cite>— The Golden Horizons Editors</cite>
         </div>
 
+        {/* ── INLINE SUBSCRIBE BOX ── */}
+        <SubscribeBox variant="inline" />
+
         {/* ── BELOW FOLD ── */}
         <div className="section-banner">Inside This Issue</div>
         <div className="below-fold">
@@ -155,13 +159,8 @@ export default function HomePage() {
               <p>&ldquo;I kept waiting for the right time. Then I realized — this <em>is</em> the right time.&rdquo;</p>
               <cite>— Barbara, 63 · Lisbon, $1,900/mo</cite>
             </div>
-            <div className="mag-sub" id="subscribe">
-              <div className="mag-sub-eyebrow">Free Subscription</div>
-              <div className="mag-sub-headline">Start reading Golden Horizons every morning</div>
-              <div className="mag-sub-body">Real costs. Real places. One story every morning — free, forever.</div>
-              <Link href="/golden_horizons_final.pdf" className="mag-btn">Start My Free Subscription →</Link>
-              <div className="mag-trust">◆ Join 5,000+ readers planning their next chapter ◆</div>
-            </div>
+            {/* ── SIDEBAR SUBSCRIBE BOX ── */}
+            <SubscribeBox variant="sidebar" />
           </div>
 
         </div>
