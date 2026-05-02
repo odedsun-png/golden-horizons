@@ -898,4 +898,40 @@ html {
   border-top: 1px solid rgba(201,168,76,0.4);
   padding-top: 5px;
   font-family: 'EB Garamond', serif;
+   /* All Stories page only */
+.articles-page .cat-cell {
+  transition: all 0.15s ease;
+}
+
+.articles-page .cat-cell:hover {
+  background: #f4ead7;
+  border-color: #8b6914;
+}
+
+.articles-page .cat-cell.active {
+  background: #2d2416;
+  border-color: #2d2416;
+}
+
+.articles-page .cat-cell.active .cat-name,
+.articles-page .cat-cell.active .cat-count,
+.articles-page .cat-cell.active .cat-desc {
+  color: #faf5e9;
+}
+
+.articles-page button.cat-cell {
+  width: 100%;
+  font: inherit;
+  padding: 0;
+  border: 1px solid #2d2416;
+  background: #faf5e9;
+}
+
+.articles-page button.load-btn {
+  background: transparent;
+  border: none;
+  font: inherit;
+  padding: 0;
+  width: auto;
+}
 }
