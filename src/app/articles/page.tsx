@@ -4,28 +4,19 @@ import { getAllArticleSlugs, getArticleBySlug } from '@/lib/articles';
 
 export const metadata: Metadata = {
   title: 'All Stories — Golden Horizons Magazine',
-  description: 'Browse all retirement abroad articles from Golden Horizons — real costs, visa guides, healthcare reports, and destination deep-dives.',
+  description: 'Browse all retirement abroad articles — real costs, visa guides, healthcare reports, and destination deep-dives.',
 };
 
 export default async function ArticlesPage() {
   const slugs = await getAllArticleSlugs();
-  
-  const articles = await Promise.all(
-    slugs.map(async (slug) => {
-      const article = await getArticleBySlug(slug);
-      return article;
-    })
-  );
-
-  const validArticles = articles.filter((article) => article !== null);
+  const articles = await Promise.all(slugs.map((slug) => getArticleBySlug(slug)));
+  const validArticles = articles.filter((a) => a !== null);
 
   const categoryGroups: Record<string, typeof validArticles> = {};
   validArticles.forEach((article) => {
-    const category = article.category || 'Uncategorized';
-    if (!categoryGroups[category]) {
-      categoryGroups[category] = [];
-    }
-    categoryGroups[category].push(article);
+    const cat = article.category || 'Uncategorized';
+    if (!categoryGroups[cat]) categoryGroups[cat] = [];
+    categoryGroups[cat].push(article);
   });
 
   const categories = Object.keys(categoryGroups).sort();
@@ -34,6 +25,7 @@ export default async function ArticlesPage() {
   return (
     <main className="mag-page">
       <div className="site">
+
         <div className="topbar">
           <span>Vol. I, No. 1</span>
           <span className="hide-mob">golden-horizons.org · The Retirement Abroad Magazine</span>
@@ -73,11 +65,11 @@ export default async function ArticlesPage() {
             <div className="cat-count">{validArticles.length} articles</div>
             <div className="cat-desc">Every destination we&rsquo;ve covered</div>
           </Link>
-          {categories.map((category) => (
-            <Link key={category} href={`/articles?category=${encodeURIComponent(category)}`} className="cat-cell">
-              <div className="cat-name">{category}</div>
-              <div className="cat-count">{categoryGroups[category].length} articles</div>
-              <div className="cat-desc">Browse {category.toLowerCase()} stories</div>
+          {categories.map((cat) => (
+            <Link key={cat} href={`/articles?category=${encodeURIComponent(cat)}`} className="cat-cell">
+              <div className="cat-name">{cat}</div>
+              <div className="cat-count">{categoryGroups[cat].length} articles</div>
+              <div className="cat-desc">Browse {cat.toLowerCase()} stories</div>
             </Link>
           ))}
         </div>
@@ -87,24 +79,18 @@ export default async function ArticlesPage() {
             <div className="section-banner">Editor&rsquo;s Pick · This Week&rsquo;s Must-Read</div>
             <div className="editor-pick">
               <div className="ep-img-wrap">
-                <img 
-                  className="ep-img" 
-                  src={editorPick.heroImage || editorPick.image || 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=700'} 
-                  alt={editorPick.title} 
+                <img
+                  className="ep-img"
+                  src={editorPick.heroImage || editorPick.image || 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=700'}
+                  alt={editorPick.title}
                 />
-                <div className="ep-caption">
-                  <p>{editorPick.excerpt || editorPick.description}</p>
-                </div>
+                <div className="ep-caption"><p>{editorPick.excerpt || editorPick.description}</p></div>
               </div>
               <div className="ep-content">
                 <div className="ep-kicker">{editorPick.category || 'Featured'}</div>
-                <Link href={`/articles/${editorPick.slug}`} className="ep-headline">
-                  {editorPick.title}
-                </Link>
+                <Link href={`/articles/${editorPick.slug}`} className="ep-headline">{editorPick.title}</Link>
                 <p className="ep-body">{editorPick.description || editorPick.excerpt}</p>
-                <Link href={`/articles/${editorPick.slug}`} className="ep-read">
-                  Read the full story →
-                </Link>
+                <Link href={`/articles/${editorPick.slug}`} className="ep-read">Read the full story →</Link>
               </div>
             </div>
           </>
@@ -114,10 +100,10 @@ export default async function ArticlesPage() {
         <div className="articles-grid">
           {validArticles.slice(1, 19).map((article) => (
             <Link key={article.slug} href={`/articles/${article.slug}`} className="art-card">
-              <img 
-                className="art-thumb" 
-                src={article.heroImage || article.image || 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=400'} 
-                alt={article.title} 
+              <img
+                className="art-thumb"
+                src={article.heroImage || article.image || 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=400'}
+                alt={article.title}
               />
               <div className="art-cat">{article.category || 'Article'}</div>
               <div className="art-title">{article.title}</div>
@@ -138,7 +124,7 @@ export default async function ArticlesPage() {
         <section className="mag-cta" id="free-guide">
           <p className="kicker">Free Retirement Abroad Guide</p>
           <h2>Get the free guide before choosing where to retire.</h2>
-          <p>Compare costs, healthcare, visas, and lifestyle across top retirement countries before you decide.</p>
+          <p>Compare costs, healthcare, visas, and lifestyle across top retirement countries.</p>
           <Link href="/#free-guide" className="mag-button">Get the Free Guide →</Link>
         </section>
 
@@ -146,20 +132,16 @@ export default async function ArticlesPage() {
           <div className="footer-name">Golden Horizons</div>
           <p>The retirement abroad magazine for Americans who aren&rsquo;t done yet.</p>
           <div className="footer-links">
-            <Link href="/">Cover</Link>
-            <span>|</span>
-            <Link href="/articles">Articles</Link>
-            <span>|</span>
-            <Link href="/destinations">Destinations</Link>
-            <span>|</span>
-            <Link href="/about">About</Link>
-            <span>|</span>
-            <Link href="/privacy-policy">Privacy</Link>
-            <span>|</span>
+            <Link href="/">Cover</Link><span>|</span>
+            <Link href="/articles">Articles</Link><span>|</span>
+            <Link href="/destinations">Destinations</Link><span>|</span>
+            <Link href="/about">About</Link><span>|</span>
+            <Link href="/privacy-policy">Privacy</Link><span>|</span>
             <Link href="/contact">Contact</Link>
           </div>
           <p>© 2026 Golden Horizons — All rights reserved</p>
         </footer>
+
       </div>
     </main>
   );
