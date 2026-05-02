@@ -1,8 +1,3 @@
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Destination mini cards - editorial style */
 .dest-card {
   background: #faf5e9;
