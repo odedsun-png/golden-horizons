@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-// ─── Site-wide default metadata ───────────────────────────────────────────────
 export const metadata: Metadata = {
   metadataBase: new URL("https://golden-horizons.org"),
   title: {
@@ -12,9 +11,7 @@ export const metadata: Metadata = {
     "Discover the world's best affordable retirement destinations. Real costs, visa guides, healthcare, and expat communities for Americans planning to retire abroad.",
   keywords:
     "retirement abroad, expat retirement, best places to retire, affordable retirement, retire overseas, expat communities, retire on social security",
-  alternates: {
-    canonical: "https://golden-horizons.org",
-  },
+  alternates: { canonical: "https://golden-horizons.org" },
   robots: {
     index: true,
     follow: true,
@@ -54,7 +51,6 @@ export const metadata: Metadata = {
   },
 };
 
-// ─── Organization + WebSite JSON-LD ──────────────────────────────────────────
 function SiteSchemas() {
   const org = {
     "@context": "https://schema.org",
