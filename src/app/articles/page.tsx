@@ -10,7 +10,10 @@ export const metadata: Metadata = {
 
 export default async function ArticlesPage() {
   const slugs = await getAllArticleSlugs();
-  const articles = await Promise.all(slugs.map((slug) => getArticleBySlug(slug)));
+  const articles = await Promise.all(
+    slugs.map((slug) => getArticleBySlug(slug))
+  );
+
   const validArticles = articles.filter((article) => article !== null);
 
   const categoryGroups: Record<string, typeof validArticles> = {};
@@ -29,7 +32,7 @@ export default async function ArticlesPage() {
   const editorPick = validArticles[0];
 
   return (
-    <main className="mag-page">
+    <main className="mag-page articles-page">
       <div className="site">
         <div className="topbar">
           <span>Vol. I, No. 1</span>
