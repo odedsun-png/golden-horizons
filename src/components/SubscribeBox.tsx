@@ -1,221 +1,246 @@
 // src/components/SubscribeBox.tsx
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 interface SubscribeBoxProps {
-  variant?: 'sidebar' | 'inline';
+  variant?: "sidebar" | "inline";
 }
 
-export default function SubscribeBox({ variant = 'sidebar' }: SubscribeBoxProps) {
-  const [email, setEmail] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [message, setMessage] = useState('');
+export default function SubscribeBox({
+  variant = "sidebar",
+}: SubscribeBoxProps) {
+  const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const [message, setMessage] = useState("");
   const [showThankYou, setShowThankYou] = useState(false);
+
+  const isSidebar = variant === "sidebar";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
+    setStatus("loading");
+    setMessage("");
 
     try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          email, 
-          firstName: firstName || undefined, 
-          lastName: lastName || undefined 
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          firstName: firstName || "",
+          lastName: lastName || "",
         }),
       });
 
       const data = await res.json();
 
       if (res.ok) {
-        setStatus('success');
-        setMessage('Welcome! Check your inbox to confirm.');
-        setEmail('');
-        setFirstName('');
-        setLastName('');
+        setStatus("success");
+        setMessage("Welcome! Check your inbox to confirm.");
+        setEmail("");
+        setFirstName("");
+        setLastName("");
         setShowThankYou(true);
       } else {
-        setStatus('error');
-        setMessage(data.error || 'Something went wrong. Please try again.');
+        setStatus("error");
+        setMessage(data.error || "Something went wrong. Please try again.");
       }
-    } catch (err) {
-      setStatus('error');
-      setMessage('Network error. Please try again.');
+    } catch {
+      setStatus("error");
+      setMessage("Network error. Please try again.");
     }
   };
 
-  const isSidebar = variant === 'sidebar';
-
   return (
     <>
-      <div
-        className={`bg-[#faf5e9] border-2 border-[#2d2416] overflow-hidden ${
-          isSidebar ? '' : ''
-        }`}
-        style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=1400)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+      <section
+        className={[
+          "overflow-hidden border-2 border-[#2d2416] bg-[#faf5e9]",
+          isSidebar ? "" : "my-0",
+        ].join(" ")}
       >
-        <div className={`grid ${isSidebar ? 'grid-cols-1' : 'md:grid-cols-2'} gap-0`}>
-          
-          {/* Box A - Form Section */}
-          <div 
-            className={`bg-[#faf5e9]/95 backdrop-blur-sm ${
-              isSidebar ? 'p-6' : 'p-8 md:p-10'
-            }`}
+        <div
+          className={[
+            "grid gap-0",
+            isSidebar ? "grid-cols-1" : "grid-cols-1 md:grid-cols-[1.25fr_0.75fr]",
+          ].join(" ")}
+        >
+          {/* Form side */}
+          <div
+            className={[
+              "bg-[#faf5e9]",
+              isSidebar ? "p-5" : "p-5 md:p-6",
+            ].join(" ")}
           >
-            {/* Top accent line */}
-            <div className="w-16 h-[2px] bg-[#a68d5c] mx-auto mb-4"></div>
+            <div className="mx-auto mb-3 h-[2px] w-14 bg-[#a68d5c]" />
 
-            {/* Eyebrow */}
-            <p 
-              className={`text-[#6b5d47] text-center uppercase tracking-[0.15em] ${
-                isSidebar ? 'text-[9px] mb-2' : 'text-[10px] mb-3'
-              }`}
-              style={{ fontFamily: 'var(--font-garamond)' }}
+            <p
+              className={[
+                "text-center uppercase tracking-[0.16em] text-[#6b5d47]",
+                isSidebar ? "mb-2 text-[9px]" : "mb-2 text-[10px]",
+              ].join(" ")}
+              style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
               Every morning. In your inbox. Free.
             </p>
 
-            {/* Headline */}
             <h3
-              className={`text-[#1e1408] text-center leading-tight ${
-                isSidebar ? 'text-xl mb-3' : 'text-3xl md:text-4xl mb-5'
-              }`}
-              style={{ fontFamily: 'var(--font-playfair)' }}
+              className={[
+                "text-center leading-tight text-[#1e1408]",
+                isSidebar ? "mb-3 text-xl" : "mb-3 text-2xl md:text-3xl",
+              ].join(" ")}
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
               We find the place.
               <br />
               You live the life.
             </h3>
 
-            {/* Body */}
             <p
-              className={`text-[#4a3f2f] text-center leading-relaxed ${
-                isSidebar ? 'text-sm mb-5' : 'text-base mb-6'
-              }`}
-              style={{ fontFamily: 'var(--font-garamond)' }}
+              className={[
+                "mx-auto text-center leading-relaxed text-[#4a3f2f]",
+                isSidebar ? "mb-4 text-sm" : "mb-4 max-w-xl text-sm md:text-[15px]",
+              ].join(" ")}
+              style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
-              Each morning we send one story — a real place, real costs, real people who made the move.
+              Get one real retirement-abroad story with real costs, practical
+              tips, and places worth knowing.
             </p>
 
-            {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-3">
-              <input
-                type="text"
-                placeholder="First Name (optional)"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                className={`w-full bg-white text-[#1e1408] placeholder-[#9b8c6f] border border-[#c9b896] ${
-                  isSidebar ? 'px-3 py-2 text-sm' : 'px-4 py-3'
-                } focus:outline-none focus:border-[#a68d5c]`}
-                style={{ fontFamily: 'var(--font-garamond)' }}
-              />
-              <input
-                type="text"
-                placeholder="Last Name (optional)"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-                className={`w-full bg-white text-[#1e1408] placeholder-[#9b8c6f] border border-[#c9b896] ${
-                  isSidebar ? 'px-3 py-2 text-sm' : 'px-4 py-3'
-                } focus:outline-none focus:border-[#a68d5c]`}
-                style={{ fontFamily: 'var(--font-garamond)' }}
-              />
-              <input
-                type="email"
-                placeholder="Email Address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className={`w-full bg-white text-[#1e1408] placeholder-[#9b8c6f] border border-[#c9b896] ${
-                  isSidebar ? 'px-3 py-2 text-sm' : 'px-4 py-3'
-                } focus:outline-none focus:border-[#a68d5c]`}
-                style={{ fontFamily: 'var(--font-garamond)' }}
-              />
+            <form
+              onSubmit={handleSubmit}
+              className={isSidebar ? "space-y-2.5" : "space-y-3"}
+            >
+              <div
+                className={
+                  isSidebar
+                    ? "space-y-2.5"
+                    : "grid grid-cols-1 gap-3 md:grid-cols-3"
+                }
+              >
+                <input
+                  type="text"
+                  placeholder="First Name (optional)"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  className={[
+                    "w-full border border-[#c9b896] bg-[#fffaf0] text-[#1e1408] placeholder-[#9b8c6f] focus:border-[#a68d5c] focus:outline-none",
+                    isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
+                  ].join(" ")}
+                  style={{
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                  }}
+                />
+
+                <input
+                  type="text"
+                  placeholder="Last Name (optional)"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  className={[
+                    "w-full border border-[#c9b896] bg-[#fffaf0] text-[#1e1408] placeholder-[#9b8c6f] focus:border-[#a68d5c] focus:outline-none",
+                    isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
+                  ].join(" ")}
+                  style={{
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                  }}
+                />
+
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className={[
+                    "w-full border border-[#c9b896] bg-[#fffaf0] text-[#1e1408] placeholder-[#9b8c6f] focus:border-[#a68d5c] focus:outline-none",
+                    isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
+                  ].join(" ")}
+                  style={{
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                  }}
+                />
+              </div>
 
               <button
                 type="submit"
-                disabled={status === 'loading'}
-                className={`w-full bg-[#2d2416] text-[#faf5e9] uppercase tracking-[0.1em] border-2 border-[#2d2416] transition-colors ${
-                  isSidebar ? 'px-4 py-2.5 text-xs' : 'px-6 py-3.5 text-sm'
-                } hover:bg-[#1e1408] hover:border-[#1e1408] disabled:opacity-50 disabled:cursor-not-allowed`}
-                style={{ fontFamily: 'var(--font-playfair)' }}
+                disabled={status === "loading"}
+                className={[
+                  "w-full border-2 border-[#2d2416] bg-[#2d2416] uppercase tracking-[0.1em] text-[#faf5e9] transition-colors hover:bg-[#1e1408] hover:border-[#1e1408] disabled:cursor-not-allowed disabled:opacity-50",
+                  isSidebar ? "px-4 py-2.5 text-xs" : "px-5 py-3 text-xs md:text-sm",
+                ].join(" ")}
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
-                {status === 'loading' ? 'Subscribing...' : 'Start My Free Subscription →'}
+                {status === "loading"
+                  ? "Subscribing..."
+                  : "Start My Free Subscription →"}
               </button>
             </form>
 
-            {/* Status message */}
-            {message && status === 'error' && (
+            {message && status === "error" && (
               <p
-                className={`text-center mt-3 text-[#8b4a3d] ${isSidebar ? 'text-xs' : 'text-sm'}`}
-                style={{ fontFamily: 'var(--font-garamond)' }}
+                className={[
+                  "mt-3 text-center text-[#8b4a3d]",
+                  isSidebar ? "text-xs" : "text-sm",
+                ].join(" ")}
+                style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
               >
                 {message}
               </p>
             )}
 
-            {/* Bottom accent line */}
-            <div className="w-16 h-[2px] bg-[#a68d5c] mx-auto mt-5 mb-3"></div>
-
-            {/* Trust line */}
             <p
-              className={`text-[#6b5d47] text-center ${isSidebar ? 'text-[9px]' : 'text-[10px]'}`}
-              style={{ fontFamily: 'var(--font-garamond)' }}
+              className={[
+                "mt-3 text-center text-[#6b5d47]",
+                isSidebar ? "text-[9px]" : "text-[10px]",
+              ].join(" ")}
+              style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
               ◆ Join 5,000+ readers planning their next chapter ◆
             </p>
           </div>
 
-          {/* Box B - PDF Offer Section */}
+          {/* Compact PDF value side */}
           {!isSidebar && (
-            <div 
-              className="bg-[#2d2416]/90 backdrop-blur-sm p-8 md:p-10 flex flex-col justify-center"
-            >
-              <div className="text-center">
-                {/* Icon/Accent */}
-                <div className="w-20 h-20 mx-auto mb-6 bg-[#a68d5c]/20 rounded-full flex items-center justify-center">
-                  <svg className="w-10 h-10 text-[#a68d5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-
-                {/* Headline */}
-                <h4
-                  className="text-[#faf5e9] text-2xl md:text-3xl mb-4 leading-tight"
-                  style={{ fontFamily: 'var(--font-playfair)' }}
-                >
-                  Get Your Free Retirement Checklist
-                </h4>
-
-                {/* Body */}
+            <aside className="flex items-center border-t-2 border-[#2d2416] bg-[#2d2416] p-5 md:border-l-2 md:border-t-0 md:p-6">
+              <div className="w-full">
                 <p
-                  className="text-[#c9b896] text-base leading-relaxed mb-6"
-                  style={{ fontFamily: 'var(--font-garamond)' }}
+                  className="mb-2 text-center text-[10px] uppercase tracking-[0.16em] text-[#a68d5c]"
+                  style={{
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                  }}
                 >
-                  New subscribers receive our complete retirement abroad checklist — covering visas, healthcare, banking, taxes, and everything else you need before making the move.
+                  Free Reader Bonus
                 </p>
 
-                {/* Benefits list */}
-                <div className="text-left max-w-sm mx-auto space-y-3 mb-6">
+                <h4
+                  className="mb-3 text-center text-xl leading-tight text-[#faf5e9] md:text-2xl"
+                  style={{
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                  }}
+                >
+                  Retirement Abroad Checklist
+                </h4>
+
+                <div className="space-y-2">
                   {[
-                    'Visa requirements for 12 top countries',
-                    'Healthcare coverage & costs breakdown',
-                    'Banking & money transfer strategies',
-                    'Tax obligations & treaties explained',
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 bg-[#a68d5c] rounded-full mt-2 flex-shrink-0"></div>
-                      <p 
-                        className="text-[#c9b896] text-sm"
-                        style={{ fontFamily: 'var(--font-garamond)' }}
+                    "Visa basics",
+                    "Healthcare questions",
+                    "Monthly cost checklist",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-2">
+                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#a68d5c]" />
+                      <p
+                        className="text-sm leading-snug text-[#c9b896]"
+                        style={{
+                          fontFamily:
+                            "var(--font-garamond), Georgia, serif",
+                        }}
                       >
                         {item}
                       </p>
@@ -223,123 +248,120 @@ export default function SubscribeBox({ variant = 'sidebar' }: SubscribeBoxProps)
                   ))}
                 </div>
 
-                {/* CTA */}
                 <p
-                  className="text-[#a68d5c] text-sm uppercase tracking-wider"
-                  style={{ fontFamily: 'var(--font-playfair)' }}
+                  className="mt-4 text-center text-[11px] uppercase tracking-[0.12em] text-[#a68d5c]"
+                  style={{
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                  }}
                 >
-                  ← Subscribe to download instantly
+                  Subscribe to receive it
                 </p>
               </div>
-            </div>
+            </aside>
           )}
-
         </div>
-      </div>
+      </section>
 
       {/* Thank You Popup */}
       {showThankYou && (
-        <div 
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
           onClick={() => setShowThankYou(false)}
         >
-          <div 
-            className="bg-[#faf5e9] border-2 border-[#2d2416] max-w-md w-full p-8 md:p-10 relative"
+          <div
+            className="relative w-full max-w-md border-2 border-[#2d2416] bg-[#faf5e9] p-7 md:p-8"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close button */}
             <button
               onClick={() => setShowThankYou(false)}
-              className="absolute top-4 right-4 text-[#6b5d47] hover:text-[#2d2416] transition-colors"
+              className="absolute right-4 top-4 text-[#6b5d47] transition-colors hover:text-[#2d2416]"
               aria-label="Close"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
 
-            {/* Top accent line */}
-            <div className="w-16 h-[2px] bg-[#a68d5c] mx-auto mb-6"></div>
+            <div className="mx-auto mb-5 h-[2px] w-14 bg-[#a68d5c]" />
 
-            {/* Checkmark icon */}
-            <div className="w-16 h-16 mx-auto mb-6 bg-[#5a7a4d]/10 rounded-full flex items-center justify-center">
-              <svg className="w-8 h-8 text-[#5a7a4d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#5a7a4d]/10">
+              <svg
+                className="h-8 w-8 text-[#5a7a4d]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
               </svg>
             </div>
 
-            {/* Headline */}
             <h3
-              className="text-[#1e1408] text-center text-3xl md:text-4xl mb-4 leading-tight"
-              style={{ fontFamily: 'var(--font-playfair)' }}
+              className="mb-3 text-center text-3xl leading-tight text-[#1e1408]"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
               Welcome to Golden Horizons
             </h3>
 
-            {/* Appreciation */}
             <p
-              className="text-[#4a3f2f] text-center text-base leading-relaxed mb-6"
-              style={{ fontFamily: 'var(--font-garamond)' }}
+              className="mb-5 text-center text-base leading-relaxed text-[#4a3f2f]"
+              style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
-              Thank you for joining us. We're grateful you're here, and we're committed to helping you find the place where your next chapter begins.
+              Thank you for joining us. Check your inbox for the next step and
+              your retirement-abroad checklist.
             </p>
 
-            {/* What to expect */}
-            <div className="bg-[#f5ede0] border border-[#c9b896] p-6 mb-6">
+            <div className="mb-5 border border-[#c9b896] bg-[#f5ede0] p-5">
               <h4
-                className="text-[#2d2416] text-sm uppercase tracking-wider mb-4 text-center"
-                style={{ fontFamily: 'var(--font-playfair)' }}
+                className="mb-3 text-center text-sm uppercase tracking-wider text-[#2d2416]"
+                style={{
+                  fontFamily: "var(--font-playfair), Georgia, serif",
+                }}
               >
                 What Happens Next
               </h4>
+
               <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-[#a68d5c] text-[#faf5e9] rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold">1</div>
-                  <p 
-                    className="text-[#4a3f2f] text-sm leading-relaxed"
-                    style={{ fontFamily: 'var(--font-garamond)' }}
-                  >
-                    <strong>Check your inbox</strong> — you'll receive a confirmation email within the next few minutes
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-[#a68d5c] text-[#faf5e9] rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold">2</div>
-                  <p 
-                    className="text-[#4a3f2f] text-sm leading-relaxed"
-                    style={{ fontFamily: 'var(--font-garamond)' }}
-                  >
-                    <strong>Confirm your subscription</strong> — click the link to activate your account
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-[#a68d5c] text-[#faf5e9] rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold">3</div>
-                  <p 
-                    className="text-[#4a3f2f] text-sm leading-relaxed"
-                    style={{ fontFamily: 'var(--font-garamond)' }}
-                  >
-                    <strong>Get your free checklist</strong> — instant download once confirmed
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-[#a68d5c] text-[#faf5e9] rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold">4</div>
-                  <p 
-                    className="text-[#4a3f2f] text-sm leading-relaxed"
-                    style={{ fontFamily: 'var(--font-garamond)' }}
-                  >
-                    <strong>Tomorrow morning</strong> — your first story arrives at 7 AM
-                  </p>
-                </div>
+                {[
+                  "Check your inbox for confirmation.",
+                  "Confirm your subscription.",
+                  "Receive your free checklist.",
+                ].map((item, index) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#a68d5c] text-xs font-bold text-[#faf5e9]">
+                      {index + 1}
+                    </div>
+                    <p
+                      className="text-sm leading-relaxed text-[#4a3f2f]"
+                      style={{
+                        fontFamily: "var(--font-garamond), Georgia, serif",
+                      }}
+                    >
+                      {item}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Bottom accent line */}
-            <div className="w-16 h-[2px] bg-[#a68d5c] mx-auto mb-4"></div>
-
-            {/* Close button */}
             <button
               onClick={() => setShowThankYou(false)}
-              className="w-full bg-[#2d2416] text-[#faf5e9] uppercase tracking-[0.1em] border-2 border-[#2d2416] px-6 py-3 text-sm hover:bg-[#1e1408] transition-colors"
-              style={{ fontFamily: 'var(--font-playfair)' }}
+              className="w-full border-2 border-[#2d2416] bg-[#2d2416] px-6 py-3 text-sm uppercase tracking-[0.1em] text-[#faf5e9] transition-colors hover:bg-[#1e1408]"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
               Continue Reading
             </button>
