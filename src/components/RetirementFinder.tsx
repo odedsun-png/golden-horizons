@@ -53,15 +53,12 @@ const STEPS = [
   { id:"extras", label:"Must-haves", icon:"✅" },
 ];
 
-const gold = "#d4a017";
-const dark = "#1f2326";
-
 type Props = {
   defaultOpen?: boolean;
 };
 
 export default function RetirementFinder({ defaultOpen = false }: Props) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(defaultOpen);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({
     who:"", budget:"", income:"", region:"", lifestyle:"",
@@ -144,220 +141,215 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
 
   if (!open && !defaultOpen) {
     return (
-      <div style={{ maxWidth: 760, margin: "0 auto" }}>
-        <button
-          onClick={() => setOpen(true)}
-          style={{
-            width: "100%", padding: "22px 32px",
-            background: "#fff", border: `2px solid ${gold}`,
-            borderRadius: 14, cursor: "pointer",
-            display: "flex", alignItems: "center", justifyContent: "space-between",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <span style={{ fontSize: 32 }}>🎯</span>
-            <div style={{ textAlign: "left" }}>
-              <div style={{ fontSize: 18, fontWeight: 700, color: dark }}>
-                Find My Perfect Retirement Destination
-              </div>
-              <div style={{ fontSize: 14, color: "#888", marginTop: 3 }}>
-                Answer 6 quick questions — we match you to the best countries
-              </div>
+      <button
+        onClick={() => setOpen(true)}
+        style={{
+          width: "100%", padding: "20px 24px",
+          background: "#faf5e9", border: "2px solid #2d2416",
+          cursor: "pointer",
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          fontFamily: "'EB Garamond', Georgia, serif",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <span style={{ fontSize: 28 }}>🎯</span>
+          <div style={{ textAlign: "left" }}>
+            <div style={{ fontSize: 18, fontWeight: 700, color: "#1a0f00", fontFamily: "'Playfair Display', serif" }}>
+              Find My Perfect Retirement Destination
+            </div>
+            <div style={{ fontSize: 13, color: "#6b5d47", marginTop: 3 }}>
+              Answer 6 quick questions — we match you to the best countries
             </div>
           </div>
-          <div style={{ background: gold, color: "#fff", borderRadius: 8, padding: "10px 20px", fontSize: 15, fontWeight: 700, flexShrink: 0 }}>
-            Start →
-          </div>
-        </button>
-      </div>
+        </div>
+        <div style={{ background: "#8b6914", color: "#faf5e9", padding: "9px 18px", fontSize: 14, fontWeight: 700, fontFamily: "'Playfair Display', serif" }}>
+          Start →
+        </div>
+      </button>
     );
   }
 
   return (
-    <div style={{ maxWidth: 760, margin: "0 auto" }}>
-      <div style={{
-        background: "#fff",
-        borderRadius: 18,
-        padding: "36px",
-        boxShadow: "0 8px 48px rgba(0,0,0,0.14)",
-      }}>
-        {results ? (
-          <>
-            <div style={{ textAlign: "center", marginBottom: 28 }}>
-              <div style={{ fontSize: 36, marginBottom: 10 }}>🎯</div>
-              <div style={{ fontSize: 24, fontWeight: 700, color: "#111", marginBottom: 6 }}>
-                Your top retirement matches
-              </div>
-              <div style={{ fontSize: 15, color: "#888" }}>
-                Click any country to see its full profile
-              </div>
+    <div style={{
+      background: "#faf5e9",
+      border: "2px solid #2d2416",
+      padding: "28px 24px",
+      fontFamily: "'EB Garamond', Georgia, serif",
+    }}>
+      {results ? (
+        <>
+          <div style={{ textAlign: "center", marginBottom: 24, borderBottom: "1px solid #c9a84c", paddingBottom: 18 }}>
+            <div style={{ fontSize: 32, marginBottom: 8 }}>🎯</div>
+            <div style={{ fontSize: 22, fontWeight: 700, color: "#1a0f00", fontFamily: "'Playfair Display', serif", marginBottom: 5 }}>
+              Your top retirement matches
             </div>
-
-            <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 28 }}>
-              {results.map((c, i) => (
-                <Link
-                  key={c.id}
-                  href={`/destinations/${c.id}`}
-                  style={{
-                    display: "flex",
-                    background: "#f9f9f9",
-                    borderRadius: 14,
-                    overflow: "hidden",
-                    border: "1px solid #eee",
-                    textDecoration: "none",
-                  }}
-                >
-                  <img src={c.img} alt={c.name} style={{ width: 130, height: 110, objectFit: "cover", flexShrink: 0 }} />
-                  <div style={{ padding: "14px 18px", flex: 1 }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-                      <span style={{ background: gold, color: "#fff", borderRadius: 20, fontSize: 12, fontWeight: 700, padding: "3px 10px" }}>
-                        #{i + 1} Match
-                      </span>
-                      <span style={{ fontSize: 20 }}>{c.flag}</span>
-                      <span style={{ fontSize: 17, fontWeight: 700, color: "#111" }}>{c.name}</span>
-                    </div>
-                    <div style={{ fontSize: 13, color: "#555", lineHeight: 1.6, marginBottom: 6 }}>
-                      {c.desc}
-                    </div>
-                    <div style={{ fontSize: 12, color: "#aaa", fontStyle: "italic" }}>
-                      {answers.who === "couple"
-                        ? `$${c.coupleMin.toLocaleString()}–$${c.coupleMax.toLocaleString()}/mo couple`
-                        : `$${c.singleMin.toLocaleString()}–$${c.singleMax.toLocaleString()}/mo single`}
-                    </div>
-                  </div>
-                </Link>
-              ))}
+            <div style={{ fontSize: 14, color: "#6b5d47", fontStyle: "italic" }}>
+              Click any country to see its full profile
             </div>
+          </div>
 
-            <div style={{ display: "flex", gap: 12 }}>
-              <button
-                onClick={restart}
-                style={{ flex: 1, padding: "13px", background: "#f3f3f3", border: "none", borderRadius: 10, fontSize: 15, fontWeight: 600, cursor: "pointer", color: "#444" }}
-              >
-                ← Start Over
-              </button>
-
+          <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 24 }}>
+            {results.map((c, i) => (
               <Link
-                href="/destinations"
-                style={{ flex: 1, padding: "13px", background: dark, color: "#fff", borderRadius: 10, fontSize: 15, fontWeight: 600, textAlign: "center", textDecoration: "none" }}
+                key={c.id}
+                href={`/destinations/${c.id}`}
+                style={{
+                  display: "flex",
+                  background: "#f4ead7",
+                  border: "1px solid #c9a84c",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                }}
               >
-                See All 26 Countries →
+                <img src={c.img} alt={c.name} style={{ width: 120, height: 100, objectFit: "cover", flexShrink: 0 }} />
+                <div style={{ padding: "12px 16px", flex: 1 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 5 }}>
+                    <span style={{ background: "#8b6914", color: "#faf5e9", fontSize: 11, fontWeight: 700, padding: "2px 8px", fontFamily: "'Playfair Display', serif" }}>
+                      #{i + 1} Match
+                    </span>
+                    <span style={{ fontSize: 18 }}>{c.flag}</span>
+                    <span style={{ fontSize: 16, fontWeight: 700, color: "#1a0f00", fontFamily: "'Playfair Display', serif" }}>{c.name}</span>
+                  </div>
+                  <div style={{ fontSize: 13, color: "#2b1a00", lineHeight: 1.5, marginBottom: 5 }}>
+                    {c.desc}
+                  </div>
+                  <div style={{ fontSize: 12, color: "#8b6914", fontStyle: "italic" }}>
+                    {answers.who === "couple"
+                      ? `$${c.coupleMin.toLocaleString()}–$${c.coupleMax.toLocaleString()}/mo couple`
+                      : `$${c.singleMin.toLocaleString()}–$${c.singleMax.toLocaleString()}/mo single`}
+                  </div>
+                </div>
               </Link>
+            ))}
+          </div>
+
+          <div style={{ display: "flex", gap: 10 }}>
+            <button
+              onClick={restart}
+              style={{ flex: 1, padding: "12px", background: "#f4ead7", border: "1px solid #c9a84c", fontSize: 14, fontWeight: 600, cursor: "pointer", color: "#2d2416", fontFamily: "'Playfair Display', serif" }}
+            >
+              ← Start Over
+            </button>
+
+            <Link
+              href="/destinations"
+              style={{ flex: 1, padding: "12px", background: "#2d2416", color: "#faf5e9", fontSize: 14, fontWeight: 600, textAlign: "center", textDecoration: "none", fontFamily: "'Playfair Display', serif", border: "1px solid #2d2416" }}
+            >
+              See All 26 Countries →
+            </Link>
+          </div>
+        </>
+      ) : (
+        <>
+          <div style={{ display: "flex", gap: 4, marginBottom: 8 }}>
+            {STEPS.map((s, i) => (
+              <div key={s.id} style={{ flex: 1, height: 4, background: i <= step ? "#8b6914" : "#e0cc99" }} />
+            ))}
+          </div>
+
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
+            <span style={{ fontSize: 12, color: "#6b5d47", fontStyle: "italic" }}>
+              Step {step + 1} of {STEPS.length}
+            </span>
+          </div>
+
+          <div style={{ textAlign: "center", marginBottom: 22, borderBottom: "1px solid #c9a84c", paddingBottom: 16 }}>
+            <div style={{ fontSize: 32, marginBottom: 6 }}>{STEPS[step].icon}</div>
+            <div style={{ fontSize: 20, fontWeight: 700, color: "#1a0f00", fontFamily: "'Playfair Display', serif" }}>
+              {STEPS[step].label}
             </div>
-          </>
-        ) : (
-          <>
-            <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
-              {STEPS.map((s, i) => (
-                <div key={s.id} style={{ flex: 1, height: 5, borderRadius: 4, background: i <= step ? gold : "#eee" }} />
+          </div>
+
+          {step === 0 && (
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+              {([["single","Solo retiree","👤"],["couple","Retiring as a couple","👫"]] as const).map(([v, label, icon]) => (
+                <button key={v} onClick={() => setA("who", v)} style={{ padding: "22px 14px", border: `2px solid ${answers.who === v ? "#8b6914" : "#c9a84c"}`, background: answers.who === v ? "#f4ead7" : "#faf5e9", cursor: "pointer" }}>
+                  <div style={{ fontSize: 32, marginBottom: 8 }}>{icon}</div>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: "#1a0f00" }}>{label}</div>
+                </button>
               ))}
             </div>
+          )}
 
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 26 }}>
-              <span style={{ fontSize: 13, color: "#bbb" }}>
-                Step {step + 1} of {STEPS.length}
-              </span>
-            </div>
-
-            <div style={{ textAlign: "center", marginBottom: 26 }}>
-              <div style={{ fontSize: 36, marginBottom: 8 }}>{STEPS[step].icon}</div>
-              <div style={{ fontSize: 22, fontWeight: 700, color: "#111" }}>
-                {STEPS[step].label}
-              </div>
-            </div>
-
-            {step === 0 && (
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-                {([["single","Solo retiree","👤"],["couple","Retiring as a couple","👫"]] as const).map(([v, label, icon]) => (
-                  <button key={v} onClick={() => setA("who", v)} style={{ padding: "28px 16px", borderRadius: 14, border: `2px solid ${answers.who === v ? gold : "#e5e5e5"}`, background: answers.who === v ? "#fffbf0" : "#fff", cursor: "pointer" }}>
-                    <div style={{ fontSize: 36, marginBottom: 10 }}>{icon}</div>
-                    <div style={{ fontSize: 15, fontWeight: 600, color: "#222" }}>{label}</div>
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {step === 1 && (
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-                {([["under1500","Under $1,500","🟢 Very budget"],["1500_2500","$1,500–$2,500","🟡 Comfortable"],["2500_4000","$2,500–$4,000","🟠 Premium"],["4000plus","$4,000+","🔵 Luxury"]] as const).map(([v, label, sub]) => (
-                  <button key={v} onClick={() => setA("budget", v)} style={{ padding: "22px 16px", borderRadius: 14, border: `2px solid ${answers.budget === v ? gold : "#e5e5e5"}`, background: answers.budget === v ? "#fffbf0" : "#fff", cursor: "pointer" }}>
-                    <div style={{ fontSize: 15, fontWeight: 700, color: "#222", marginBottom: 5 }}>{label}</div>
-                    <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {step === 2 && (
-              <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-                {([
-                  ["ss", "🏛️ Social Security", "Monthly SS check — accepted by most retirement visas"],
-                  ["savings", "🏦 Savings / Investments", "Bank statements or investment portfolio"],
-                  ["other", "💼 Pension / Rental / Business", "Private pension, rental income, annuity, or business income"],
-                ] as const).map(([v, label, desc]) => (
-                  <button key={v} onClick={() => setA("income", v)} style={{ padding: "18px", borderRadius: 14, border: `2px solid ${answers.income === v ? gold : "#e5e5e5"}`, background: answers.income === v ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "left" }}>
-                    <div style={{ fontSize: 16, fontWeight: 700, color: "#222", marginBottom: 4 }}>{label}</div>
-                    <div style={{ fontSize: 13, color: "#777" }}>{desc}</div>
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {step === 3 && (
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-                {([["europe","🇪🇺 Europe"],["americas","🌎 The Americas"],["asia","🌏 Asia"],["any","🌍 Open to anywhere"]] as const).map(([v, label]) => (
-                  <button key={v} onClick={() => setA("region", v)} style={{ padding: "24px 16px", borderRadius: 14, border: `2px solid ${answers.region === v ? gold : "#e5e5e5"}`, background: answers.region === v ? "#fffbf0" : "#fff", cursor: "pointer", fontSize: 16, fontWeight: 600, color: "#222" }}>
-                    {label}
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {step === 4 && (
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-                {([["beach","🏖️ Beach & coast","Sun, sand, diving"],["city","🏙️ City life","Culture, dining, walkable"],["countryside","🌿 Countryside","Nature, quiet, mountains"],["any","✨ Surprise me","Best overall match"]] as const).map(([v, icon, sub]) => (
-                  <button key={v} onClick={() => setA("lifestyle", v)} style={{ padding: "22px 16px", borderRadius: 14, border: `2px solid ${answers.lifestyle === v ? gold : "#e5e5e5"}`, background: answers.lifestyle === v ? "#fffbf0" : "#fff", cursor: "pointer" }}>
-                    <div style={{ fontSize: 15, fontWeight: 700, color: "#222", marginBottom: 5 }}>{icon}</div>
-                    <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {step === 5 && (
-              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                {([
-                  ["english", "🗣️ English widely spoken", "No language barrier"],
-                  ["taxFree", "💵 Tax-free foreign income", "Keep more of your income"],
-                  ["easyVisa", "✅ Easy visa / residency", "Simple approval process"],
-                ] as const).map(([key, label, sub]) => (
-                  <button key={key} onClick={() => toggle(key)} style={{ padding: "16px 18px", borderRadius: 14, border: `2px solid ${answers[key] ? gold : "#e5e5e5"}`, background: answers[key] ? "#fffbf0" : "#fff", cursor: "pointer", textAlign: "left" }}>
-                    <div style={{ fontSize: 15, fontWeight: 600, color: "#222" }}>{label}</div>
-                    <div style={{ fontSize: 13, color: "#888" }}>{sub}</div>
-                  </button>
-                ))}
-              </div>
-            )}
-
-            <div style={{ display: "flex", gap: 12, marginTop: 28 }}>
-              {step > 0 && (
-                <button onClick={back} style={{ padding: "14px 24px", background: "#f3f3f3", border: "none", borderRadius: 10, fontSize: 15, fontWeight: 600, cursor: "pointer", color: "#444" }}>
-                  ← Back
+          {step === 1 && (
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+              {([["under1500","Under $1,500","Very budget"],["1500_2500","$1,500–$2,500","Comfortable"],["2500_4000","$2,500–$4,000","Premium"],["4000plus","$4,000+","Luxury"]] as const).map(([v, label, sub]) => (
+                <button key={v} onClick={() => setA("budget", v)} style={{ padding: "18px 14px", border: `2px solid ${answers.budget === v ? "#8b6914" : "#c9a84c"}`, background: answers.budget === v ? "#f4ead7" : "#faf5e9", cursor: "pointer" }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: "#1a0f00", marginBottom: 4 }}>{label}</div>
+                  <div style={{ fontSize: 12, color: "#6b5d47" }}>{sub}</div>
                 </button>
-              )}
-
-              <button
-                onClick={next}
-                disabled={!canNext}
-                style={{ flex: 1, padding: "15px", background: canNext ? dark : "#ccc", color: "#fff", border: "none", borderRadius: 10, fontSize: 16, fontWeight: 700, cursor: canNext ? "pointer" : "not-allowed" }}
-              >
-                {step === STEPS.length - 1 ? "Find My Matches 🎯" : "Next →"}
-              </button>
+              ))}
             </div>
-          </>
-        )}
-      </div>
+          )}
+
+          {step === 2 && (
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {([
+                ["ss", "🏛️ Social Security", "Monthly SS check — accepted by most visas"],
+                ["savings", "🏦 Savings / Investments", "Bank statements or investment portfolio"],
+                ["other", "💼 Pension / Rental / Business", "Private pension, rental, or business income"],
+              ] as const).map(([v, label, desc]) => (
+                <button key={v} onClick={() => setA("income", v)} style={{ padding: "14px 16px", border: `2px solid ${answers.income === v ? "#8b6914" : "#c9a84c"}`, background: answers.income === v ? "#f4ead7" : "#faf5e9", cursor: "pointer", textAlign: "left" }}>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: "#1a0f00", marginBottom: 3 }}>{label}</div>
+                  <div style={{ fontSize: 12, color: "#6b5d47" }}>{desc}</div>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {step === 3 && (
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+              {([["europe","🇪🇺 Europe"],["americas","🌎 The Americas"],["asia","🌏 Asia"],["any","🌍 Open to anywhere"]] as const).map(([v, label]) => (
+                <button key={v} onClick={() => setA("region", v)} style={{ padding: "20px 14px", border: `2px solid ${answers.region === v ? "#8b6914" : "#c9a84c"}`, background: answers.region === v ? "#f4ead7" : "#faf5e9", cursor: "pointer", fontSize: 15, fontWeight: 600, color: "#1a0f00" }}>
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {step === 4 && (
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+              {([["beach","🏖️ Beach & coast","Sun, sand, diving"],["city","🏙️ City life","Culture, dining, walkable"],["countryside","🌿 Countryside","Nature, quiet, mountains"],["any","✨ Surprise me","Best overall match"]] as const).map(([v, icon, sub]) => (
+                <button key={v} onClick={() => setA("lifestyle", v)} style={{ padding: "18px 14px", border: `2px solid ${answers.lifestyle === v ? "#8b6914" : "#c9a84c"}`, background: answers.lifestyle === v ? "#f4ead7" : "#faf5e9", cursor: "pointer" }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: "#1a0f00", marginBottom: 4 }}>{icon}</div>
+                  <div style={{ fontSize: 12, color: "#6b5d47" }}>{sub}</div>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {step === 5 && (
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {([
+                ["english", "🗣️ English widely spoken", "No language barrier"],
+                ["taxFree", "💵 Tax-free foreign income", "Keep more of your income"],
+                ["easyVisa", "✅ Easy visa / residency", "Simple approval process"],
+              ] as const).map(([key, label, sub]) => (
+                <button key={key} onClick={() => toggle(key)} style={{ padding: "14px 16px", border: `2px solid ${answers[key] ? "#8b6914" : "#c9a84c"}`, background: answers[key] ? "#f4ead7" : "#faf5e9", cursor: "pointer", textAlign: "left" }}>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: "#1a0f00" }}>{label}</div>
+                  <div style={{ fontSize: 12, color: "#6b5d47" }}>{sub}</div>
+                </button>
+              ))}
+            </div>
+          )}
+
+          <div style={{ display: "flex", gap: 10, marginTop: 24 }}>
+            {step > 0 && (
+              <button onClick={back} style={{ padding: "12px 20px", background: "#f4ead7", border: "1px solid #c9a84c", fontSize: 14, fontWeight: 600, cursor: "pointer", color: "#2d2416", fontFamily: "'Playfair Display', serif" }}>
+                ← Back
+              </button>
+            )}
+
+            <button
+              onClick={next}
+              disabled={!canNext}
+              style={{ flex: 1, padding: "13px", background: canNext ? "#2d2416" : "#c9b896", color: "#faf5e9", border: "none", fontSize: 15, fontWeight: 700, cursor: canNext ? "pointer" : "not-allowed", fontFamily: "'Playfair Display', serif" }}
+            >
+              {step === STEPS.length - 1 ? "Find My Matches 🎯" : "Next →"}
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 }
