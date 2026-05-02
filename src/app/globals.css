@@ -1,4 +1,420 @@
-/* ===== ARTICLES PAGE LAYOUT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================================
+   GOLDEN HORIZONS — COMPLETE MAGAZINE DESIGN SYSTEM
+   =================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e6ddca;
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #1a0f00;
+  font-size: 20px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mag-page {
+  min-height: 100vh;
+}
+
+/* ===== SITE WRAPPER ===== */
+
+.site {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #faf5e9;
+  border-left: 1px solid #d4b896;
+  border-right: 1px solid #d4b896;
+}
+
+/* ===== TOPBAR ===== */
+
+.topbar {
+  background: #1e1408;
+  padding: 7px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar span {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== MASTHEAD ===== */
+
+.masthead {
+  padding: 24px 36px 18px;
+  text-align: center;
+  border-bottom: 3px double #1e1408;
+  background: #faf5e9;
+}
+
+.dateline {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #8b6914;
+  border-bottom: 1px solid #c9a84c;
+  padding-bottom: 10px;
+  margin-bottom: 13px;
+  font-family: 'EB Garamond', serif;
+}
+
+.mastname {
+  font-family: 'Playfair Display', serif;
+  font-size: 66px;
+  font-weight: 900;
+  color: #1e1408;
+  line-height: 1;
+  letter-spacing: -2.5px;
+  text-decoration: none;
+  display: block;
+}
+
+.issue-line {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.issue-tag {
+  font-size: 12px;
+  font-style: italic;
+  color: #8b6914;
+  font-family: 'EB Garamond', serif;
+}
+
+.issue-tag strong {
+  font-style: normal;
+  color: #1e1408;
+  font-weight: 500;
+}
+
+/* ===== NAV ===== */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #1e1408;
+  background: #faf5e9;
+  overflow-x: auto;
+}
+
+.nav a {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1e1408;
+  text-decoration: none;
+  padding: 10px 26px;
+  border-right: 1px solid #c9a84c;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.15s;
+  font-family: 'EB Garamond', serif;
+}
+
+.nav a:last-child {
+  border-right: none;
+}
+
+.nav a:hover {
+  background: #f0e8d5;
+}
+
+.nav a.active {
+  background: #1e1408;
+  color: #c9a84c;
+}
+
+/* ===== BREADCRUMB ===== */
+
+.breadcrumb {
+  background: #faf5e9;
+  border-bottom: 1px solid #c9a84c;
+  padding: 9px 36px;
+  font-size: 12px;
+  color: #8b6914;
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+
+.breadcrumb a {
+  color: #8b6914;
+  text-decoration: underline;
+}
+
+/* ===== SECTION BANNER ===== */
+
+.section-banner {
+  background: #1e1408;
+  padding: 6px 36px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== ORNAMENT ===== */
+
+.ornament {
+  text-align: center;
+  font-size: 14px;
+  color: #c9a84c;
+  letter-spacing: 8px;
+  padding: 16px 0;
+  border-top: 1px solid #c9a84c;
+  border-bottom: 1px solid #c9a84c;
+  margin: 0 36px;
+}
+
+/* ===== HOMEPAGE: PULL QUOTE ===== */
+
+.pullquote {
+  border-top: 2px solid #1e1408;
+  border-bottom: 2px solid #1e1408;
+  background: #f0e8d5;
+  padding: 28px 36px;
+  text-align: center;
+}
+
+.pullquote p {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #1a0f00;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.pullquote cite {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8b6914;
+  font-style: normal;
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== HOMEPAGE: BELOW FOLD GRID ===== */
+
+.below-fold {
+  display: grid;
+  grid-template-columns: 1fr 1fr 300px;
+  border-bottom: 2px solid #1e1408;
+}
+
+.bf-col {
+  padding: 26px 24px;
+  border-right: 1px solid #c9a84c;
+}
+
+.bf-col:last-child {
+  border-right: none;
+}
+
+.mag-section-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #faf5e9;
+  background: #1e1408;
+  padding: 5px 11px;
+  display: inline-block;
+  margin-bottom: 18px;
+  font-family: 'EB Garamond', serif;
+}
+
+.story-item {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e0cc99;
+}
+
+.story-item:last-child {
+  border-bottom: none;
+}
+
+/* ===== HOMEPAGE: SUBSCRIBE BOX ===== */
+
+.mag-sub {
+  border: 1px solid #c9a84c;
+  background: #f5edd8;
+  padding: 22px 18px;
+  text-align: center;
+}
+
+.mag-sub-eyebrow {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8b6914;
+  margin-bottom: 10px;
+  font-family: 'EB Garamond', serif;
+}
+
+.mag-sub-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a0f00;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.mag-sub-body {
+  font-size: 15px;
+  color: #2b1a00;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+
+.mag-btn {
+  display: block;
+  background: #8b6914;
+  color: #faf5e9;
+  padding: 15px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid #6b4f0f;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: background 0.15s;
+}
+
+.mag-btn:hover {
+  background: #6b4f0f;
+}
+
+.mag-trust {
+  font-size: 12px;
+  color: #7a5c1e;
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+
+/* ===== CTA SECTION ===== */
+
+.mag-cta {
+  background: #1e1408;
+  padding: 40px 36px;
+  text-align: center;
+}
+
+.mag-cta .kicker {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 12px;
+  font-family: 'EB Garamond', serif;
+}
+
+.mag-cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #faf5e9;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.mag-cta p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #d4c4a0;
+  margin-bottom: 20px;
+  font-family: 'EB Garamond', serif;
+}
+
+.mag-button {
+  display: inline-block;
+  background: #c9a84c;
+  color: #1e1408;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  border: 2px solid #c9a84c;
+  transition: all 0.15s;
+}
+
+.mag-button:hover {
+  background: #e0c46c;
+  border-color: #e0c46c;
+}
+
+/* ===== FOOTER ===== */
+
+.mag-footer {
+  background: #1e1408;
+  padding: 28px 36px;
+  text-align: center;
+  border-top: 3px double #c9a84c;
+}
+
+.footer-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #faf5e9;
+  margin-bottom: 8px;
+}
+
+.mag-footer p {
+  font-size: 13px;
+  color: #c9a84c;
+  margin-bottom: 8px;
+  font-family: 'EB Garamond', serif;
+}
+
+.footer-links {
+  font-size: 13px;
+  color: #c9a84c;
+  font-family: 'EB Garamond', serif;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #c9a84c;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links span {
+  opacity: 0.35;
+  margin: 0 4px;
+}
+
+/* ===== ARTICLES INDEX: PAGE HEADER ===== */
+
 .page-header {
   padding: 22px 36px 16px;
   border-bottom: 2px solid #1e1408;
@@ -32,7 +448,8 @@
   font-family: 'EB Garamond', serif;
 }
 
-/* ===== CATEGORY INDEX GRID ===== */
+/* ===== ARTICLES INDEX: CATEGORY GRID ===== */
+
 .cat-index {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -92,7 +509,8 @@
   font-family: 'EB Garamond', serif;
 }
 
-/* ===== EDITOR'S PICK ===== */
+/* ===== ARTICLES INDEX: EDITOR'S PICK ===== */
+
 .editor-pick {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -171,7 +589,8 @@
   font-family: 'EB Garamond', serif;
 }
 
-/* ===== ARTICLES GRID ===== */
+/* ===== ARTICLES INDEX: CARD GRID ===== */
+
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -228,7 +647,8 @@
   font-family: 'EB Garamond', serif;
 }
 
-/* ===== LOAD MORE ===== */
+/* ===== ARTICLES INDEX: LOAD MORE ===== */
+
 .load-more {
   padding: 18px 36px 22px;
   text-align: center;
@@ -260,8 +680,55 @@
   font-family: 'EB Garamond', serif;
 }
 
+/* ===== UTILITY ===== */
+
+.hide-mob {
+  display: block;
+}
+
 /* ===== MOBILE RESPONSIVE ===== */
+
 @media (max-width: 768px) {
+  .topbar {
+    padding: 6px 16px;
+  }
+
+  .topbar .hide-mob,
+  .dateline .hide-mob {
+    display: none;
+  }
+
+  .masthead {
+    padding: 16px 16px 14px;
+  }
+
+  .mastname {
+    font-size: 38px;
+    letter-spacing: -1px;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .nav a {
+    padding: 8px 14px;
+    font-size: 10px;
+  }
+
+  .below-fold {
+    grid-template-columns: 1fr;
+  }
+
+  .bf-col {
+    border-right: none;
+    border-bottom: 1px solid #c9a84c;
+  }
+
+  .bf-col:last-child {
+    border-bottom: none;
+  }
+
   .page-header {
     padding: 16px;
   }
@@ -288,7 +755,23 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .ornament {
+    margin: 0 16px;
+  }
+
+  .section-banner {
+    padding: 5px 16px;
+  }
+
   .load-more {
     padding: 16px;
+  }
+
+  .mag-footer {
+    padding: 20px 16px;
+  }
+
+  .footer-links {
+    line-height: 2.2;
   }
 }
