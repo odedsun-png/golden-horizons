@@ -1,16 +1,76 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { countries } from '@/lib/countries';
 
 export const metadata: Metadata = {
   title: 'Best Places to Retire Abroad in 2026 | Golden Horizons',
   description: 'Compare the best places for Americans to retire abroad in 2026. Real monthly costs, healthcare quality, visa options, and lifestyle ratings.',
 };
 
-export default function DestinationsPage() {
-  const featured = countries.slice(0, 5);
-  const more = countries.slice(5);
+const featuredDestinations = [
+  {
+    rank: "#1 Ranked · Editor's Choice · 2026",
+    name: 'Portugal',
+    feeling: '"The moment the plane landed, I knew. This is where I was supposed to be."',
+    cost: '$1,500–$2,500/mo single · $2,500–$4,000/mo couple',
+    tags: ['EU residency path', 'English widely spoken', '300+ sunny days', 'World-class healthcare'],
+    image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=700',
+    href: '/articles?category=Best+Cities',
+    tall: true,
+  },
+  {
+    rank: '#2 · Mexico',
+    name: 'Mexico',
+    feeling: 'Close enough to visit. Far enough to finally live differently.',
+    cost: 'from $1,160/mo',
+    tags: ['Near US', 'Large expat scene'],
+    image: 'https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=500',
+    href: '/articles?category=Cost',
+    tall: false,
+  },
+  {
+    rank: '#3 · Costa Rica',
+    name: 'Costa Rica',
+    feeling: "Pura Vida isn't a slogan. It's the actual pace of life here.",
+    cost: 'from $1,610/mo',
+    tags: ['Stable democracy', 'No army'],
+    image: 'https://images.pexels.com/photos/32133654/pexels-photo-32133654.jpeg?auto=compress&cs=tinysrgb&w=500',
+    href: '/articles?category=Beach',
+    tall: false,
+  },
+  {
+    rank: '#4 · Panama',
+    name: 'Panama',
+    feeling: 'US dollar. Modern hospitals. Ocean on both sides.',
+    cost: 'from $1,340/mo',
+    tags: ['Uses US dollar', 'Pensionado discounts'],
+    image: 'https://images.pexels.com/photos/14840759/pexels-photo-14840759.jpeg?auto=compress&cs=tinysrgb&w=500',
+    href: '/articles/panama-healthcare-quality-in-panama-for-expats',
+    tall: false,
+  },
+  {
+    rank: '#5 · Greece',
+    name: 'Greece',
+    feeling: 'The Mediterranean diet is the way they actually eat every day.',
+    cost: 'from $1,340/mo',
+    tags: ['Island lifestyle', 'EU member'],
+    image: 'https://images.pexels.com/photos/984877/pexels-photo-984877.jpeg?auto=compress&cs=tinysrgb&w=500',
+    href: '/articles?category=Beach',
+    tall: false,
+  },
+];
 
+const moreDestinations = [
+  { flag: '🇻🇳', name: 'Vietnam',     tagline: "SE Asia's best value for the budget-conscious retiree", cost: 'from $1,000/mo', href: '/articles?category=Cost' },
+  { flag: '🇮🇹', name: 'Italy',       tagline: '€100k flat tax, free healthcare, world\'s best food culture', cost: 'from $2,500/mo', href: '/articles?category=Best+Cities' },
+  { flag: '🇧🇿', name: 'Belize',      tagline: 'English-speaking Caribbean. No tax on foreign income.', cost: 'from $1,500/mo', href: '/articles?category=Beach' },
+  { flag: '🇦🇷', name: 'Argentina',   tagline: 'The Paris of South America. Extraordinary USD buying power.', cost: 'from $1,000/mo', href: '/articles?category=Cost' },
+  { flag: '🇲🇾', name: 'Malaysia',    tagline: 'English spoken. Modern cities. MM2H visa program.', cost: 'from $960/mo', href: '/articles?category=Cost' },
+  { flag: '🇪🇨', name: 'Ecuador',     tagline: 'Uses US dollar. Easy residency. Diverse geography.', cost: 'from $1,010/mo', href: '/articles/ecuador-what-2000-a-month-gets-you-in-cuenca' },
+  { flag: '🇵🇭', name: 'Philippines', tagline: 'English-speaking Asia. No tax on foreign pensions.', cost: 'from $1,200/mo', href: '/articles?category=Culture' },
+  { flag: '🇲🇹', name: 'Malta',       tagline: 'Only English-speaking EU country. 300 sunny days.', cost: 'from $2,500/mo', href: '/articles?category=Best+Cities' },
+];
+
+export default function DestinationsPage() {
   return (
     <main className="mag-page">
       <div className="site">
@@ -79,38 +139,35 @@ export default function DestinationsPage() {
         </div>
 
         <div className="dest-grid">
-          {featured.map((dest, index) => {
-            const monthlyCost = Object.values(dest.costOfLiving).reduce((a, b) => a + b, 0);
-            return (
-              <Link
-                key={dest.id}
-                href={`/destinations/${dest.id}`}
-                className={`dest-card${index === 0 ? ' tall' : ''}`}
-              >
-                <img
-                  className="dc-img"
-                  src={dest.image}
-                  alt={dest.name}
-                  style={{ minHeight: index === 0 ? '463px' : '230px' }}
-                />
-                <div className="dc-overlay" />
-                <div className="dc-body">
-                  <div className="dc-rank">#{dest.rank} Ranked · 2026</div>
-                  <div className="dc-name">{dest.flag} {dest.name}</div>
-                  <div className="dc-feeling">{dest.description}</div>
-                  <div className="dc-cost">from ${monthlyCost.toLocaleString()}/mo estimated</div>
-                  <div className="dc-tags">
-                    {dest.benefits.map((b) => (
-                      <span key={b} className="dc-tag">{b}</span>
-                    ))}
-                  </div>
-                  <span className="dc-cta">
-                    {index === 0 ? 'Read Full Profile' : 'View Profile'} →
-                  </span>
+          {featuredDestinations.map((dest) => (
+            <Link
+              key={dest.name}
+              href={dest.href}
+              className={`dest-card${dest.tall ? ' tall' : ''}`}
+            >
+              <img
+                className="dc-img"
+                src={dest.image}
+                alt={dest.name}
+                style={{ minHeight: dest.tall ? '463px' : '230px' }}
+              />
+              <div className="dc-overlay" />
+              <div className="dc-body">
+                <div className="dc-rank">{dest.rank}</div>
+                <div className="dc-name">{dest.name}</div>
+                <div className="dc-feeling">{dest.feeling}</div>
+                <div className="dc-cost">{dest.cost}</div>
+                <div className="dc-tags">
+                  {dest.tags.map((tag) => (
+                    <span key={tag} className="dc-tag">{tag}</span>
+                  ))}
                 </div>
-              </Link>
-            );
-          })}
+                <span className="dc-cta">
+                  {dest.tall ? 'Read Full Profile' : 'View Profile'} →
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
 
         <div className="dest-pullquote">
@@ -124,19 +181,16 @@ export default function DestinationsPage() {
         </div>
 
         <div className="more-section">
-          <div className="more-kicker">More Destinations · All 26 Ranked</div>
+          <div className="more-kicker">More Destinations · Explore All</div>
           <div className="more-grid">
-            {more.map((dest) => {
-              const monthlyCost = Object.values(dest.costOfLiving).reduce((a, b) => a + b, 0);
-              return (
-                <Link key={dest.id} href={`/destinations/${dest.id}`} className="more-card">
-                  <span className="mc-flag">{dest.flag}</span>
-                  <div className="mc-name">{dest.name}</div>
-                  <div className="mc-tagline">{dest.description.slice(0, 60)}...</div>
-                  <div className="mc-cost">from ${monthlyCost.toLocaleString()}/mo</div>
-                </Link>
-              );
-            })}
+            {moreDestinations.map((dest) => (
+              <Link key={dest.name} href={dest.href} className="more-card">
+                <span className="mc-flag">{dest.flag}</span>
+                <div className="mc-name">{dest.name}</div>
+                <div className="mc-tagline">{dest.tagline}</div>
+                <div className="mc-cost">{dest.cost}</div>
+              </Link>
+            ))}
           </div>
         </div>
 
