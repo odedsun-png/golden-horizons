@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import SubscribeBox from "@/components/SubscribeBox";
-import RetirementFinder from "@/components/RetirementFinder";
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -337,20 +336,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-
-        {/* ── RETIREMENT FINDER — MOVED HERE, DESTINATION REPORT REMOVED ── */}
-        <div className="section-banner">Find Your Retirement Match</div>
-
-        <section
-          style={{
-            padding: "28px 36px",
-            border: "1px solid #2d2416",
-            background: "rgba(250, 245, 233, 0.45)",
-            marginBottom: "36px",
-          }}
-        >
-          <RetirementFinder defaultOpen={false} />
-        </section>
 
         <div className="ornament">— ✦ —</div>
 
