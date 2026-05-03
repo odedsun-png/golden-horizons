@@ -57,7 +57,7 @@ export default function DestinationsPage() {
           <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
         </nav>
 
-        {/* BRIGHT EDITORIAL HERO */}
+        {/* BRIGHT EDITORIAL HERO - NO TEXT BOX */}
         <section
           style={{
             position: "relative",
@@ -68,36 +68,46 @@ export default function DestinationsPage() {
         >
           <img
             src="/European%20caffee.jpg"
-            alt="Older adults enjoying a warm European café street, a realistic retirement abroad lifestyle scene"
+            alt="Mediterranean café street with outdoor chairs, a warm retirement abroad lifestyle scene"
             style={{
               display: "block",
               width: "100%",
-              height: 460,
+              height: 500,
               objectFit: "cover",
               objectPosition: "center",
+            }}
+          />
+
+          {/* soft readability layer, not a box */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background:
+                "linear-gradient(90deg, rgba(250,245,233,0.82) 0%, rgba(250,245,233,0.54) 38%, rgba(250,245,233,0.08) 72%, rgba(250,245,233,0.02) 100%)",
+              pointerEvents: "none",
             }}
           />
 
           <div
             style={{
               position: "absolute",
-              left: 42,
-              bottom: 34,
-              maxWidth: 620,
-              background: "rgba(250, 245, 233, 0.94)",
-              border: "1px solid #c9a84c",
-              padding: "28px 32px",
-              boxShadow: "0 14px 38px rgba(45, 36, 22, 0.18)",
+              left: 52,
+              bottom: 58,
+              maxWidth: 660,
+              zIndex: 2,
             }}
           >
             <div
               style={{
-                fontSize: 12,
-                letterSpacing: "0.26em",
+                fontSize: 13,
+                letterSpacing: "0.28em",
                 textTransform: "uppercase",
                 color: "#8b6914",
-                marginBottom: 12,
+                marginBottom: 14,
+                fontWeight: 700,
                 fontFamily: "var(--font-playfair), Georgia, serif",
+                textShadow: "0 1px 1px rgba(250,245,233,0.7)",
               }}
             >
               The Destination Report · 2026 World Rankings
@@ -105,12 +115,13 @@ export default function DestinationsPage() {
 
             <h1
               style={{
-                margin: "0 0 14px",
+                margin: "0 0 16px",
                 color: "#1a0f00",
-                fontSize: "clamp(40px, 5vw, 64px)",
+                fontSize: "clamp(46px, 5.7vw, 76px)",
                 lineHeight: 0.95,
                 fontWeight: 500,
                 fontFamily: "var(--font-playfair), Georgia, serif",
+                textShadow: "0 2px 12px rgba(250,245,233,0.65)",
               }}
             >
               The places where <em>your money</em> sets you free.
@@ -119,21 +130,24 @@ export default function DestinationsPage() {
             <p
               style={{
                 margin: 0,
-                color: "#2d2416",
-                fontSize: 21,
-                lineHeight: 1.4,
+                color: "#1a0f00",
+                fontSize: 24,
+                lineHeight: 1.35,
+                maxWidth: 620,
                 fontFamily: "var(--font-garamond), Georgia, serif",
+                textShadow: "0 2px 10px rgba(250,245,233,0.8)",
               }}
             >
-              Every morning we find them. Every morning we bring them to you.
+              Every morning, we find the places where retirement feels possible
+              again.
             </p>
           </div>
         </section>
 
         <div className="hero-caption">
           <p>
-            Mediterranean café life — the slower, warmer rhythm many Americans
-            are finding abroad.
+            Mediterranean café life — where retirement starts to feel lighter,
+            slower, and more affordable.
           </p>
         </div>
 
