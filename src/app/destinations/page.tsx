@@ -118,7 +118,108 @@ export default function DestinationsPage() {
         </div>
 
         <div className="dest-grid">
-          {featured.map((dest, index) => {
+          return (
+  <Link
+    key={dest.id}
+    href={`/destinations/${dest.id}`}
+    className={`dest-card${index === 0 ? " tall" : ""}`}
+    style={{ position: "relative", overflow: "hidden" }}
+  >
+    <img
+      className="dc-img"
+      src={dest.image}
+      alt={dest.name}
+      style={{ minHeight: index === 0 ? "463px" : "230px" }}
+    />
+
+    <div className="dc-overlay" />
+
+    <div
+      className="dc-body"
+      style={{
+        position: "absolute",
+        inset: 0,
+        zIndex: 2,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: index === 0 ? "flex-start" : "flex-end",
+        alignItems: index === 0 ? "flex-start" : "center",
+        textAlign: index === 0 ? "left" : "center",
+        padding: index === 0 ? "26px 24px" : "18px 16px",
+      }}
+    >
+      <div
+        className="dc-rank"
+        style={{
+          marginBottom: "8px",
+          width: index === 0 ? "100%" : "auto",
+        }}
+      >
+        #{dest.rank} Ranked · 2026
+      </div>
+
+      <div
+        className="dc-name"
+        style={{
+          marginBottom: "8px",
+          lineHeight: 1.05,
+          width: index === 0 ? "100%" : "auto",
+        }}
+      >
+        {dest.flag} {dest.name}
+      </div>
+
+      <div
+        className="dc-feeling"
+        style={{
+          maxWidth: index === 0 ? "72%" : "88%",
+          margin: index === 0 ? "0 0 10px 0" : "0 auto 8px",
+          lineHeight: 1.35,
+          minHeight: index === 0 ? "auto" : "54px",
+          display: "flex",
+          alignItems: index === 0 ? "flex-start" : "center",
+          justifyContent: "center",
+        }}
+      >
+        {dest.description}
+      </div>
+
+      <div
+        className="dc-cost"
+        style={{
+          marginTop: "2px",
+          marginBottom: "10px",
+          width: index === 0 ? "100%" : "auto",
+        }}
+      >
+        from ${monthlyCost.toLocaleString()}/mo estimated
+      </div>
+
+      {index === 0 && (
+        <div className="dc-tags" style={{ marginBottom: "12px" }}>
+          {dest.benefits.map((b) => (
+            <span key={b} className="dc-tag">
+              {b}
+            </span>
+          ))}
+        </div>
+      )}
+
+      <span
+        className="dc-cta"
+        style={{
+          display: "inline-block",
+          marginTop: "2px",
+          fontSize: "12px",
+          letterSpacing: "0.12em",
+          textTransform: "uppercase",
+        }}
+      >
+        View Profile →
+      </span>
+    </div>
+  </Link>
+);
             const monthlyCost = Object.values(dest.costOfLiving).reduce(
               (a, b) => a + b,
               0
