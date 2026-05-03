@@ -58,7 +58,7 @@ type Props = {
 };
 
 export default function RetirementFinder({ defaultOpen = false }: Props) {
-  const [open, setOpen] = useState(defaultOpen);
+  void defaultOpen;
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({
     who:"", budget:"", income:"", region:"", lifestyle:"",
@@ -128,7 +128,6 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
     setAnswers({ who:"", budget:"", income:"", region:"", lifestyle:"", english:false, taxFree:false, easyVisa:false });
     setStep(0);
     setResults(null);
-    if (!defaultOpen) setOpen(false);
   }
 
   const canNext =
@@ -139,41 +138,13 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
     (step === 4 && !!answers.lifestyle) ||
     step === 5;
 
-  if (!open && !defaultOpen) {
-    return (
-      <button
-        onClick={() => setOpen(true)}
-        style={{
-          width: "100%", padding: "20px 24px",
-          background: "#faf5e9", border: "2px solid #2d2416",
-          cursor: "pointer",
-          display: "flex", alignItems: "center", justifyContent: "space-between",
-          fontFamily: "'EB Garamond', Georgia, serif",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 28 }}>🎯</span>
-          <div style={{ textAlign: "left" }}>
-            <div style={{ fontSize: 18, fontWeight: 700, color: "#1a0f00", fontFamily: "'Playfair Display', serif" }}>
-              Find My Perfect Retirement Destination
-            </div>
-            <div style={{ fontSize: 13, color: "#6b5d47", marginTop: 3 }}>
-              Answer 6 quick questions — we match you to the best countries
-            </div>
-          </div>
-        </div>
-        <div style={{ background: "#8b6914", color: "#faf5e9", padding: "9px 18px", fontSize: 14, fontWeight: 700, fontFamily: "'Playfair Display', serif" }}>
-          Start →
-        </div>
-      </button>
-    );
-  }
+
 
   return (
     <div style={{
       background: "#faf5e9",
       border: "2px solid #2d2416",
-      padding: "28px 24px",
+      padding: "22px 20px",
       fontFamily: "'EB Garamond', Georgia, serif",
     }}>
       {results ? (
