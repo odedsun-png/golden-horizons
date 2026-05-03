@@ -141,12 +141,12 @@ export default function RetirementFinder({ defaultOpen = false }: Props) {
 
 
   return (
-    <div style={{
-      background: "#faf5e9",
-      border: "2px solid #2d2416",
-      padding: "22px 20px",
-      fontFamily: "'EB Garamond', Georgia, serif",
-    }}>
+    <div
+      style={{
+        width: "100%",
+        fontFamily: "'EB Garamond', Georgia, serif",
+      }}
+    >
       {results ? (
         <>
           <div style={{ textAlign: "center", marginBottom: 24, borderBottom: "1px solid #c9a84c", paddingBottom: 18 }}>
