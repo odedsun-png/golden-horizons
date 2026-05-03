@@ -5,6 +5,14 @@ import { countries, getCountryById } from "@/lib/countries";
 
 type PageParams = Promise<{ slug: string }>;
 
+const siteUrl = "https://golden-horizons.org";
+
+function truncate(value: string, maxLength = 155) {
+  if (!value) return "";
+  if (value.length <= maxLength) return value;
+  return `${value.slice(0, maxLength - 1).trim()}…`;
+}
+
 export async function generateStaticParams() {
   return countries.map((c) => ({ slug: c.id }));
 }
@@ -18,12 +26,59 @@ export async function generateMetadata({
   const country = getCountryById(slug);
 
   if (!country) {
-    return { title: "Destination Not Found | Golden Horizons" };
+    return {
+      title: "Destination Not Found | Golden Horizons",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
   }
 
+  const canonicalUrl = `${siteUrl}/destinations/${country.id}`;
+  const title = `Retire in ${country.name} in 2026 — Cost, Healthcare, Visa & Lifestyle`;
+  const description = truncate(
+    `${country.description} Compare cost of living, healthcare, safety, lifestyle, and retirement fit for Americans considering ${country.name} in 2026.`
+  );
+
   return {
-    title: `Retire in ${country.name} 2026 — Costs, Visa & Lifestyle | Golden Horizons`,
-    description: country.description,
+    title: `${title} | Golden Horizons`,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      type: "article",
+      url: canonicalUrl,
+      siteName: "Golden Horizons",
+      title,
+      description,
+      images: [
+        {
+          url: country.image,
+          width: 1200,
+          height: 630,
+          alt: `Retire in ${country.name}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [country.image],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
   };
 }
 
@@ -36,6 +91,8 @@ export default async function DestinationDetailPage({
   const country = getCountryById(slug);
 
   if (!country) notFound();
+
+  const canonicalUrl = `${siteUrl}/destinations/${country.id}`;
 
   const totalMonthly = Object.values(country.costOfLiving).reduce(
     (a, b) => a + b,
@@ -53,8 +110,74 @@ export default async function DestinationDetailPage({
     return "Fair";
   };
 
+  const destinationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${canonicalUrl}#article`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    headline: `Retire in ${country.name} in 2026 — Cost, Healthcare, Visa & Lifestyle`,
+    description: truncate(
+      `${country.description} Compare cost of living, healthcare, safety, lifestyle, and retirement fit for Americans considering ${country.name} in 2026.`
+    ),
+    image: [country.image],
+    author: {
+      "@type": "Organization",
+      name: "Golden Horizons Editorial Team",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Golden Horizons",
+      url: siteUrl,
+    },
+    articleSection: "Destinations",
+    inLanguage: "en-US",
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Golden Horizons",
+        item: siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Destinations",
+        item: `${siteUrl}/destinations`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: country.name,
+        item: canonicalUrl,
+      },
+    ],
+  };
+
   return (
     <main className="mag-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(destinationSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
       <div className="site">
         <div className="topbar">
           <span>Vol. I, No. 1</span>
@@ -105,7 +228,11 @@ export default async function DestinationDetailPage({
 
         {/* ── CINEMATIC HERO ── */}
         <div className="cine-hero">
-          <img className="cine-img" src={country.image} alt={country.name} />
+          <img
+            className="cine-img"
+            src={country.image}
+            alt={`Retire in ${country.name} — retirement abroad destination profile`}
+          />
           <div className="cine-overlay" />
 
           <div className="cine-content">
