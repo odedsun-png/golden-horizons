@@ -434,6 +434,7 @@ export default async function DestinationDetailPage({
                     textDecoration: "none",
                     background: "#1a0f00",
                     border: "1px solid #c9a84c",
+                    padding: 0,
                   }}
                 >
                   <div
