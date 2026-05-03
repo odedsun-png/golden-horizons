@@ -3,17 +3,107 @@ import Link from "next/link";
 import RetirementFinder from "@/components/RetirementFinder";
 import { countries } from "@/lib/countries";
 
+const siteUrl = "https://golden-horizons.org";
+
 export const metadata: Metadata = {
   title: "Best Places to Retire Abroad in 2026 | Golden Horizons",
   description:
-    "Compare the best places for Americans to retire abroad in 2026. Real monthly costs, healthcare quality, visa options, and lifestyle ratings.",
+    "Compare the best places for Americans to retire abroad in 2026, including monthly cost, healthcare, visas, safety, climate, and lifestyle.",
+  alternates: {
+    canonical: `${siteUrl}/destinations`,
+  },
+  openGraph: {
+    type: "website",
+    url: `${siteUrl}/destinations`,
+    siteName: "Golden Horizons",
+    title: "Best Places to Retire Abroad in 2026 | Golden Horizons",
+    description:
+      "Explore 26 ranked retirement-abroad destinations for Americans, with real monthly costs, healthcare notes, visa considerations, safety, and lifestyle fit.",
+    images: [
+      {
+        url: `${siteUrl}/European%20caffee.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Mediterranean café life and retirement abroad lifestyle",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Places to Retire Abroad in 2026 | Golden Horizons",
+    description:
+      "Compare 26 ranked retirement-abroad destinations by cost, healthcare, visas, safety, climate, and lifestyle.",
+    images: [`${siteUrl}/European%20caffee.jpg`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function DestinationsPage() {
   const more = countries;
 
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${siteUrl}/destinations#itemlist`,
+    name: "Best Places to Retire Abroad in 2026",
+    description:
+      "A ranked list of retirement-abroad destinations for Americans comparing cost of living, healthcare, visas, safety, climate, and lifestyle.",
+    url: `${siteUrl}/destinations`,
+    numberOfItems: countries.length,
+    itemListElement: countries.map((country, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: country.name,
+      url: `${siteUrl}/destinations/${country.id}`,
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${siteUrl}/destinations#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Golden Horizons",
+        item: siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Destinations",
+        item: `${siteUrl}/destinations`,
+      },
+    ],
+  };
+
   return (
     <main className="mag-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(itemListSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
       <div className="site">
         <div className="topbar">
           <span>Vol. I, No. 1</span>
