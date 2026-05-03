@@ -452,37 +452,48 @@ export default function HomePage() {
 
         <section
           style={{
-            padding: "30px 36px",
+            position: "relative",
+            overflow: "hidden",
+            padding: "34px 36px",
             borderTop: "1px solid #2d2416",
             borderBottom: "1px solid #2d2416",
-            background:
-              "linear-gradient(135deg, rgba(250,245,233,0.96), rgba(245,237,216,0.92))",
+            background: "#faf5e9",
             marginBottom: "36px",
           }}
         >
           <div
             style={{
+              position: "absolute",
+              inset: 0,
+              backgroundImage:
+                "linear-gradient(90deg, rgba(250,245,233,0.96) 0%, rgba(250,245,233,0.9) 48%, rgba(250,245,233,0.72) 100%), url('/images/retirement-match-beach.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              zIndex: 0,
+            }}
+          />
+
+          <div
+            style={{
+              position: "relative",
+              zIndex: 1,
               border: "2px solid #2d2416",
-              background: "#faf5e9",
-              padding: "26px 30px",
+              background: "rgba(250,245,233,0.9)",
+              padding: "30px 34px",
             }}
           >
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "auto 1fr",
-                gap: "22px",
+                gridTemplateColumns: "52px 1fr",
+                gap: "24px",
                 alignItems: "center",
               }}
             >
               <div
                 style={{
                   fontSize: 34,
-                  width: 48,
-                  height: 48,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
+                  lineHeight: 1,
                 }}
               >
                 🎯
@@ -491,12 +502,12 @@ export default function HomePage() {
               <div>
                 <div
                   style={{
-                    fontSize: 11,
-                    letterSpacing: "0.18em",
+                    fontSize: 13,
+                    letterSpacing: "0.22em",
                     textTransform: "uppercase",
-                    color: "#8b6914",
-                    marginBottom: 7,
-                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    color: "#a47a12",
+                    marginBottom: 8,
+                    fontFamily: "var(--font-garamond), Georgia, serif",
                   }}
                 >
                   Personal Retirement Match
@@ -504,35 +515,36 @@ export default function HomePage() {
 
                 <h3
                   style={{
-                    margin: 0,
+                    margin: "0 0 12px",
                     color: "#1a0f00",
-                    fontSize: 30,
-                    lineHeight: 1.1,
+                    fontSize: "clamp(30px, 4vw, 44px)",
+                    lineHeight: 0.98,
+                    fontWeight: 500,
                     fontFamily: "var(--font-playfair), Georgia, serif",
                   }}
                 >
-                  Not sure where to retire abroad?
+                  Find the retirement country
                   <br />
-                  Start with your lifestyle.
+                  that fits your life.
                 </h3>
 
                 <p
                   style={{
-                    margin: "10px 0 0",
-                    color: "#4a3f2f",
-                    fontSize: 16,
+                    margin: 0,
+                    color: "#2d2416",
+                    fontSize: 21,
                     lineHeight: 1.45,
+                    maxWidth: 780,
                     fontFamily: "var(--font-garamond), Georgia, serif",
                   }}
                 >
-                  Answer 6 quick questions and see which countries fit your
-                  budget, healthcare needs, climate, safety comfort, and
-                  retirement pace.
+                  Answer 6 simple questions. See countries that match your
+                  budget, healthcare needs, climate, and lifestyle.
                 </p>
               </div>
             </div>
 
-            <div style={{ marginTop: 18 }}>
+            <div style={{ marginTop: 24 }}>
               <RetirementFinder defaultOpen={false} />
             </div>
           </div>
