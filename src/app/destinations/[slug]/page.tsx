@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { countries, getCountryById } from "@/lib/countries";
+import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
 
 type PageParams = Promise<{ slug: string }>;
 
@@ -11,6 +12,14 @@ function truncate(value: string, maxLength = 155) {
   if (!value) return "";
   if (value.length <= maxLength) return value;
   return `${value.slice(0, maxLength - 1).trim()}…`;
+}
+
+function cleanText(value: string | undefined | null) {
+  if (!value) return "";
+  return value
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 export async function generateStaticParams() {
@@ -101,7 +110,49 @@ export default async function DestinationDetailPage({
 
   const relatedCountries = countries
     .filter((c) => c.id !== country.id)
+    .slice(0, 4);
+
+  const allArticleSlugs = await getAllArticleSlugs();
+  const allArticlesRaw = await Promise.all(
+    allArticleSlugs.map((articleSlug) => getArticleBySlug(articleSlug))
+  );
+
+  const allArticles = allArticlesRaw.filter((article) => article !== null);
+
+  const countryNameLower = country.name.toLowerCase();
+  const countryIdLower = country.id.toLowerCase();
+
+  const relatedArticles = allArticles
+    .filter((article) => {
+      const searchableText = `${article.title || ""} ${article.slug || ""} ${
+        article.category || ""
+      } ${article.excerpt || ""} ${cleanText(article.description)}`.toLowerCase();
+
+      return (
+        searchableText.includes(countryNameLower) ||
+        searchableText.includes(countryIdLower)
+      );
+    })
     .slice(0, 5);
+
+  const fallbackArticles = allArticles
+    .filter((article) => {
+      const searchableText = `${article.title || ""} ${article.slug || ""} ${
+        article.category || ""
+      }`.toLowerCase();
+
+      return (
+        searchableText.includes("cost") ||
+        searchableText.includes("visa") ||
+        searchableText.includes("healthcare") ||
+        searchableText.includes("safety") ||
+        searchableText.includes("retirement")
+      );
+    })
+    .slice(0, 5);
+
+  const sidebarArticles =
+    relatedArticles.length > 0 ? relatedArticles : fallbackArticles;
 
   const scoreLabel = (score: number) => {
     if (score >= 5) return "Excellent";
@@ -226,7 +277,6 @@ export default async function DestinationDetailPage({
           </span>
         </div>
 
-        {/* ── CINEMATIC HERO ── */}
         <div className="cine-hero">
           <img
             className="cine-img"
@@ -255,7 +305,6 @@ export default async function DestinationDetailPage({
 
         <div className="article-layout">
           <div className="article-main">
-            {/* ── WHY RETIRE HERE ── */}
             <div className="art-kicker">
               The Destination Report · #{country.rank} Ranked
             </div>
@@ -294,7 +343,6 @@ export default async function DestinationDetailPage({
               </div>
             </div>
 
-            {/* ── KEY BENEFITS ── */}
             <div className="section-hdr">Practical Tips</div>
 
             <div
@@ -330,7 +378,6 @@ export default async function DestinationDetailPage({
               familiar with {country.name}&rsquo;s requirements.
             </p>
 
-            {/* ── COST BREAKDOWN ── */}
             <div className="section-hdr">Cost &amp; Healthcare</div>
 
             <div className="dyk">
@@ -441,7 +488,6 @@ export default async function DestinationDetailPage({
               </tbody>
             </table>
 
-            {/* ── LIFESTYLE SCORES ── */}
             <div
               style={{
                 display: "grid",
@@ -497,6 +543,67 @@ export default async function DestinationDetailPage({
               ))}
             </div>
 
+            <div className="section-hdr">Related {country.name} Guides</div>
+
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "12px",
+                marginBottom: "24px",
+              }}
+            >
+              {sidebarArticles.slice(0, 4).map((article) => (
+                <Link
+                  key={article.slug}
+                  href={`/articles/${article.slug}`}
+                  style={{
+                    display: "block",
+                    background: "#faf5e9",
+                    border: "1px solid #c9a84c",
+                    padding: "14px",
+                    textDecoration: "none",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: 10,
+                      letterSpacing: "0.16em",
+                      textTransform: "uppercase",
+                      color: "#8b6914",
+                      marginBottom: 7,
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                    }}
+                  >
+                    {article.category || "Retirement Abroad"}
+                  </div>
+
+                  <div
+                    style={{
+                      color: "#1a0f00",
+                      fontSize: 18,
+                      lineHeight: 1.15,
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                    }}
+                  >
+                    {article.title}
+                  </div>
+
+                  <div
+                    style={{
+                      color: "#8b6914",
+                      fontSize: 13,
+                      marginTop: 8,
+                      fontStyle: "italic",
+                      fontFamily: "var(--font-garamond), Georgia, serif",
+                    }}
+                  >
+                    Read guide →
+                  </div>
+                </Link>
+              ))}
+            </div>
+
             <div className="disclaimer">
               The information in this article is for general informational
               purposes only. Costs, visa requirements, healthcare policies, and
@@ -511,7 +618,6 @@ export default async function DestinationDetailPage({
             </Link>
           </div>
 
-          {/* ── SIDEBAR ── */}
           <div className="sidebar">
             <div className="sb-pull">
               <p>
@@ -539,7 +645,39 @@ export default async function DestinationDetailPage({
               <div className="mag-trust">◆ Join 5,000+ readers ◆</div>
             </div>
 
-            <div className="related-label">More Destinations</div>
+            <div className="related-label">Related {country.name} Guides</div>
+
+            {sidebarArticles.slice(0, 4).map((article) => {
+              const articleImage =
+                article.heroImage ||
+                article.image ||
+                "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=150";
+
+              return (
+                <Link
+                  key={article.slug}
+                  href={`/articles/${article.slug}`}
+                  className="rel-item"
+                >
+                  <img
+                    className="rel-thumb"
+                    src={articleImage}
+                    alt={article.title}
+                  />
+                  <div>
+                    <div className="rel-cat">
+                      {article.category || "Retirement Abroad"}
+                    </div>
+                    <div className="rel-title">{article.title}</div>
+                    <span className="rel-read">Read →</span>
+                  </div>
+                </Link>
+              );
+            })}
+
+            <div className="related-label" style={{ marginTop: 22 }}>
+              More Destinations
+            </div>
 
             <div
               style={{
