@@ -8,15 +8,17 @@ import RetirementFinder from "@/components/RetirementFinder";
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const scrollToSubscribe = () => {
+  const forceScrollToSubscribe = () => {
     const subscribeBox = document.getElementById("subscribe");
 
-    if (subscribeBox) {
-      subscribeBox.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
+    if (!subscribeBox) return;
+
+    const y = subscribeBox.getBoundingClientRect().top + window.scrollY - 90;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
   };
 
   const slides = [
@@ -65,9 +67,30 @@ export default function HomePage() {
 
     if (!shouldScroll) return;
 
-    window.setTimeout(scrollToSubscribe, 300);
-    window.setTimeout(scrollToSubscribe, 900);
-    window.setTimeout(scrollToSubscribe, 1500);
+    let attempts = 0;
+
+    const scrollWithRetry = () => {
+      const subscribeBox = document.getElementById("subscribe");
+
+      if (!subscribeBox) return;
+
+      const y = subscribeBox.getBoundingClientRect().top + window.scrollY - 90;
+
+      window.scrollTo({
+        top: y,
+        behavior: attempts === 0 ? "auto" : "smooth",
+      });
+
+      attempts += 1;
+
+      if (attempts < 8) {
+        window.setTimeout(scrollWithRetry, 400);
+      } else {
+        window.history.replaceState({}, "", "/");
+      }
+    };
+
+    window.setTimeout(scrollWithRetry, 250);
   }, []);
 
   return (
@@ -116,7 +139,7 @@ export default function HomePage() {
             href="/?scrollTo=subscribe"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSubscribe();
+              forceScrollToSubscribe();
             }}
           >
             Subscribe Free
