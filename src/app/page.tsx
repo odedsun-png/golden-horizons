@@ -6,8 +6,91 @@ import SubscribeBox from "@/components/SubscribeBox";
 import RetirementFinder from "@/components/RetirementFinder";
 import { countries } from "@/lib/countries";
 
+const FEATURED_ARTICLES = [
+  {
+    category: "Cost of Living · Albania",
+    title: "What $1,000 a Month Gets You in Gjirokastër",
+    href: "/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2",
+    image:
+      "https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=400",
+    alt: "Albania retirement cost of living",
+  },
+  {
+    category: "Cost of Living · Cambodia",
+    title: "What $1,000 a Month Gets You in Siem Reap",
+    href: "/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2",
+    image:
+      "https://images.pexels.com/photos/15894001/pexels-photo-15894001.jpeg?auto=compress&cs=tinysrgb&w=400",
+    alt: "Cambodia retirement cost of living",
+  },
+  {
+    category: "Visas & Residency · Ireland",
+    title: "Residency Options for American Retirees in Ireland",
+    href: "/articles/ireland-residency-options-for-american-retirees-v2",
+    image:
+      "https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=400",
+    alt: "Ireland residency options",
+  },
+  {
+    category: "Visas & Residency · Georgia",
+    title: "Residency Options for U.S. Retirees in Georgia",
+    href: "/articles/georgia-residency-options-for-us-retirees",
+    image:
+      "https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400",
+    alt: "Georgia residency options",
+  },
+  {
+    category: "Cost of Living · Malaysia",
+    title: "What $2,000 a Month Gets You in Kuala Lumpur",
+    href: "/articles/malaysia-what-2000-a-month-gets-you-in-kuala-lumpur",
+    image:
+      "https://images.pexels.com/photos/2882105/pexels-photo-2882105.jpeg?auto=compress&cs=tinysrgb&w=400",
+    alt: "Kuala Lumpur Malaysia retirement",
+  },
+  {
+    category: "Cost of Living · Malaysia",
+    title: "What $1,800 a Month Gets You in Ipoh",
+    href: "/articles/malaysia-what-1800-a-month-gets-you-in-ipoh",
+    image:
+      "https://images.pexels.com/photos/2882105/pexels-photo-2882105.jpeg?auto=compress&cs=tinysrgb&w=400",
+    alt: "Ipoh Malaysia retirement",
+  },
+  {
+    category: "Strategy · Georgia",
+    title: "The Honest Downsides of Retiring in Georgia Nobody Talks About",
+    href: "/articles/georgia-the-honest-downsides-of-retiring-in-georgia-nobody-talks-about",
+    image:
+      "https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400",
+    alt: "Georgia retirement lifestyle",
+  },
+  {
+    category: "Solo Retirement",
+    title: "Safety Tips for Single Americans Retiring Abroad Alone",
+    href: "/articles/solo-safety-tips-for-single-americans-retiring-abroad-alone",
+    image:
+      "https://images.pexels.com/photos/3768163/pexels-photo-3768163.jpeg?auto=compress&cs=tinysrgb&w=400",
+    alt: "Solo retirement abroad",
+  },
+];
+
+function getDailyFeaturedArticles() {
+  const today = new Date();
+
+  const daySeed = Math.floor(
+    Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()) /
+      86_400_000
+  );
+
+  const startIndex = (daySeed * 4) % FEATURED_ARTICLES.length;
+
+  return Array.from({ length: 4 }, (_, index) => {
+    return FEATURED_ARTICLES[(startIndex + index) % FEATURED_ARTICLES.length];
+  });
+}
+
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const dailyArticles = getDailyFeaturedArticles();
 
   const forceScrollToSubscribe = () => {
     const subscribeBox = document.getElementById("subscribe");
@@ -281,111 +364,51 @@ export default function HomePage() {
 
         <div className="below-fold">
           <div className="bf-col">
-            <div className="mag-section-label">The Money Page</div>
+            <div className="mag-section-label">Today&apos;s Picks</div>
 
-            <div className="story-item">
-              <img
-                className="story-img"
-                src="https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Albania"
-              />
-              <div className="story-cat">Cost of Living · Albania</div>
+            {dailyArticles.slice(0, 2).map((article) => (
+              <div className="story-item" key={article.href}>
+                <img
+                  className="story-img"
+                  src={article.image}
+                  alt={article.alt}
+                />
 
-              <Link
-                href="/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="story-title">
-                  What $1,000 a Month Gets You in Gjirokastër
-                </div>
-              </Link>
+                <div className="story-cat">{article.category}</div>
 
-              <Link
-                href="/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2"
-                className="story-read"
-              >
-                Read this story →
-              </Link>
-            </div>
+                <Link href={article.href} style={{ textDecoration: "none" }}>
+                  <div className="story-title">{article.title}</div>
+                </Link>
 
-            <div className="story-item">
-              <img
-                className="story-img"
-                src="https://images.pexels.com/photos/15894001/pexels-photo-15894001.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Cambodia"
-              />
-              <div className="story-cat">Cost of Living · Cambodia</div>
-
-              <Link
-                href="/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="story-title">
-                  What $1,000 a Month Gets You in Siem Reap
-                </div>
-              </Link>
-
-              <Link
-                href="/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2"
-                className="story-read"
-              >
-                Read this story →
-              </Link>
-            </div>
+                <Link href={article.href} className="story-read">
+                  Read this story →
+                </Link>
+              </div>
+            ))}
           </div>
 
           <div className="bf-col">
-            <div className="mag-section-label">The Visa File</div>
+            <div className="mag-section-label">Fresh From the Archive</div>
 
-            <div className="story-item">
-              <img
-                className="story-img"
-                src="https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Ireland"
-              />
-              <div className="story-cat">Visas &amp; Residency · Ireland</div>
+            {dailyArticles.slice(2, 4).map((article) => (
+              <div className="story-item" key={article.href}>
+                <img
+                  className="story-img"
+                  src={article.image}
+                  alt={article.alt}
+                />
 
-              <Link
-                href="/articles/ireland-residency-options-for-american-retirees-v2"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="story-title">
-                  Residency Options for American Retirees in Ireland
-                </div>
-              </Link>
+                <div className="story-cat">{article.category}</div>
 
-              <Link
-                href="/articles/ireland-residency-options-for-american-retirees-v2"
-                className="story-read"
-              >
-                Read this story →
-              </Link>
-            </div>
+                <Link href={article.href} style={{ textDecoration: "none" }}>
+                  <div className="story-title">{article.title}</div>
+                </Link>
 
-            <div className="story-item">
-              <img
-                className="story-img"
-                src="https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Georgia"
-              />
-              <div className="story-cat">Visas &amp; Residency · Georgia</div>
-
-              <Link
-                href="/articles/georgia-residency-options-for-us-retirees"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="story-title">
-                  Residency Options for U.S. Retirees in Georgia
-                </div>
-              </Link>
-
-              <Link
-                href="/articles/georgia-residency-options-for-us-retirees"
-                className="story-read"
-              >
-                Read this story →
-              </Link>
-            </div>
+                <Link href={article.href} className="story-read">
+                  Read this story →
+                </Link>
+              </div>
+            ))}
           </div>
 
           <div className="bf-col">
