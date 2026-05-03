@@ -22,45 +22,68 @@ type Props = {
 
 const CATEGORY_IMAGES: Record<string, string> = {
   "All Stories":
-    "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=500&q=80",
+    "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=600",
   Beach:
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80",
-  Healthcare:
-    "https://images.unsplash.com/photo-1551076805-e1869033e561?w=500&q=80",
-  Cost:
-    "https://images.unsplash.com/photo-1554224311-beee4119872e?w=500&q=80",
-  Finance:
-    "https://images.unsplash.com/photo-1554224311-beee4119872e?w=500&q=80",
-  Tax:
-    "https://images.unsplash.com/photo-1554224311-beee4119872e?w=500&q=80",
-  Visa:
-    "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500&q=80",
-  "Real Estate":
-    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&q=80",
-  Safety:
-    "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=500&q=80",
-  Solo:
-    "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&q=80",
-  Culture:
-    "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&q=80",
+    "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=600",
   "Best Cities":
-    "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&q=80",
+    "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Climate:
+    "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Comparison:
+    "https://images.pexels.com/photos/7412069/pexels-photo-7412069.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Cost:
+    "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Finance:
+    "https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Tax:
+    "https://images.pexels.com/photos/6863250/pexels-photo-6863250.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Visa:
+    "https://images.pexels.com/photos/7235894/pexels-photo-7235894.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "Real Estate":
+    "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Safety:
+    "https://images.pexels.com/photos/2346216/pexels-photo-2346216.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Solo:
+    "https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Culture:
+    "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Expat:
+    "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Healthcare:
+    "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "Hidden Gems":
+    "https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=600",
+  LGBTQ:
+    "https://images.pexels.com/photos/3810832/pexels-photo-3810832.jpeg?auto=compress&cs=tinysrgb&w=600",
+  Logistics:
+    "https://images.pexels.com/photos/736830/pexels-photo-736830.jpeg?auto=compress&cs=tinysrgb&w=600",
   Explore:
-    "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&q=80",
+    "https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=600",
   Countries:
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80",
+    "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=600",
   Lifestyle:
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500&q=80",
+    "https://images.pexels.com/photos/3768894/pexels-photo-3768894.jpeg?auto=compress&cs=tinysrgb&w=600",
   Strategy:
-    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&q=80",
+    "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600",
   Uncategorized:
-    "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=500&q=80",
+    "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=600",
   LEGIT:
-    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&q=80",
+    "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=600",
 };
 
 const DEFAULT_IMAGE =
-  "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=500";
+  "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=600";
+
+const FEATURED_CATEGORIES = [
+  "Cost",
+  "Healthcare",
+  "Visa",
+  "Best Cities",
+  "Beach",
+  "Safety",
+  "Real Estate",
+  "Expat",
+];
 
 function normalizeCategory(category?: string) {
   return category?.trim() || "Uncategorized";
@@ -77,6 +100,19 @@ function getArticleImage(article: Article) {
   return getCategoryImage(article.category);
 }
 
+function getSearchText(article: Article) {
+  return [
+    article.title,
+    article.description,
+    article.excerpt,
+    article.category,
+    article.slug,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
 export default function ArticlesClient({
   articles,
   categoryGroups,
@@ -84,25 +120,34 @@ export default function ArticlesClient({
   editorPick,
 }: Props) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(18);
 
   const filteredArticles = useMemo(() => {
-    if (!selectedCategory) {
-      return articles;
+    const query = searchQuery.trim().toLowerCase();
+
+    let baseArticles = selectedCategory
+      ? categoryGroups[selectedCategory] || []
+      : articles;
+
+    if (query) {
+      baseArticles = baseArticles.filter((article) =>
+        getSearchText(article).includes(query)
+      );
     }
 
-    return categoryGroups[selectedCategory] || [];
-  }, [articles, categoryGroups, selectedCategory]);
+    return baseArticles;
+  }, [articles, categoryGroups, selectedCategory, searchQuery]);
 
   const articlesForGrid = useMemo(() => {
-    if (!selectedCategory && editorPick) {
+    if (!selectedCategory && !searchQuery.trim() && editorPick) {
       return filteredArticles.filter(
         (article) => article.slug !== editorPick.slug
       );
     }
 
     return filteredArticles;
-  }, [filteredArticles, selectedCategory, editorPick]);
+  }, [filteredArticles, selectedCategory, searchQuery, editorPick]);
 
   const displayedArticles = articlesForGrid.slice(0, visibleCount);
   const hasMore = displayedArticles.length < articlesForGrid.length;
@@ -112,8 +157,157 @@ export default function ArticlesClient({
     setVisibleCount(18);
   }
 
+  function handleSearch(value: string) {
+    setSearchQuery(value);
+    setVisibleCount(18);
+  }
+
+  function clearFilters() {
+    setSelectedCategory(null);
+    setSearchQuery("");
+    setVisibleCount(18);
+  }
+
   return (
     <>
+      <div
+        style={{
+          padding: "30px 36px 24px",
+          borderTop: "1px solid #c9a84c",
+          borderBottom: "1px solid #c9a84c",
+          background: "#faf5e9",
+        }}
+      >
+        <div
+          style={{
+            fontSize: 11,
+            letterSpacing: "4px",
+            textTransform: "uppercase",
+            color: "#8b6914",
+            marginBottom: 10,
+          }}
+        >
+          Search the Archive
+        </div>
+
+        <h2
+          style={{
+            margin: "0 0 10px",
+            fontFamily: "var(--font-playfair), Georgia, serif",
+            fontSize: 30,
+            lineHeight: 1.1,
+            color: "#1a0f00",
+          }}
+        >
+          Find retirement abroad stories by country, cost, visa, healthcare, or
+          lifestyle.
+        </h2>
+
+        <p
+          style={{
+            maxWidth: 760,
+            margin: "0 0 20px",
+            fontSize: 17,
+            lineHeight: 1.55,
+            color: "#4c3922",
+          }}
+        >
+          Browse practical guides for Americans comparing where to retire abroad
+          — including real costs, safety, housing, healthcare, visas, and daily
+          life.
+        </p>
+
+        <input
+          type="search"
+          value={searchQuery}
+          onChange={(e) => handleSearch(e.target.value)}
+          placeholder="Search articles, countries, healthcare, visas, cost of living..."
+          aria-label="Search Golden Horizons articles"
+          style={{
+            width: "100%",
+            border: "2px solid #2d2416",
+            background: "#fffaf0",
+            color: "#1a0f00",
+            padding: "15px 18px",
+            fontSize: 17,
+            fontFamily: "var(--font-garamond), Georgia, serif",
+            outline: "none",
+            marginBottom: 14,
+          }}
+        />
+
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 8,
+            alignItems: "center",
+          }}
+        >
+          <button
+            type="button"
+            onClick={() => selectCategory(null)}
+            style={{
+              cursor: "pointer",
+              border: "1px solid #8b6914",
+              background: !selectedCategory ? "#2d2416" : "#faf5e9",
+              color: !selectedCategory ? "#f5d06f" : "#2d2416",
+              padding: "8px 12px",
+              fontSize: 12,
+              letterSpacing: "1.5px",
+              textTransform: "uppercase",
+              fontFamily: "var(--font-garamond), Georgia, serif",
+            }}
+          >
+            All
+          </button>
+
+          {FEATURED_CATEGORIES.filter((cat) => categories.includes(cat)).map(
+            (category) => (
+              <button
+                key={category}
+                type="button"
+                onClick={() => selectCategory(category)}
+                style={{
+                  cursor: "pointer",
+                  border: "1px solid #8b6914",
+                  background:
+                    selectedCategory === category ? "#2d2416" : "#faf5e9",
+                  color:
+                    selectedCategory === category ? "#f5d06f" : "#2d2416",
+                  padding: "8px 12px",
+                  fontSize: 12,
+                  letterSpacing: "1.5px",
+                  textTransform: "uppercase",
+                  fontFamily: "var(--font-garamond), Georgia, serif",
+                }}
+              >
+                {category}
+              </button>
+            )
+          )}
+
+          {(selectedCategory || searchQuery) && (
+            <button
+              type="button"
+              onClick={clearFilters}
+              style={{
+                cursor: "pointer",
+                border: "none",
+                background: "transparent",
+                color: "#8b6914",
+                padding: "8px 4px",
+                fontSize: 13,
+                textDecoration: "underline",
+                fontFamily: "var(--font-garamond), Georgia, serif",
+              }}
+            >
+              Clear filters
+            </button>
+          )}
+        </div>
+      </div>
+
       <div className="section-banner">Browse by Section</div>
 
       <div className="cat-index">
@@ -130,12 +324,15 @@ export default function ArticlesClient({
           <img
             src={getCategoryImage("All Stories")}
             alt="All Stories"
+            onError={(e) => {
+              e.currentTarget.src = DEFAULT_IMAGE;
+            }}
             style={{
               width: "100%",
-              height: 82,
+              height: 68,
               objectFit: "cover",
               borderBottom: "1px solid #c9b896",
-              marginBottom: 12,
+              marginBottom: 10,
               display: "block",
             }}
           />
@@ -161,12 +358,15 @@ export default function ArticlesClient({
             <img
               src={getCategoryImage(category)}
               alt={category}
+              onError={(e) => {
+                e.currentTarget.src = DEFAULT_IMAGE;
+              }}
               style={{
                 width: "100%",
-                height: 82,
+                height: 68,
                 objectFit: "cover",
                 borderBottom: "1px solid #c9b896",
-                marginBottom: 12,
+                marginBottom: 10,
                 display: "block",
               }}
             />
@@ -182,7 +382,7 @@ export default function ArticlesClient({
         ))}
       </div>
 
-      {editorPick && !selectedCategory && (
+      {editorPick && !selectedCategory && !searchQuery.trim() && (
         <>
           <div className="section-banner">
             Editor&rsquo;s Pick · This Week&rsquo;s Must-Read
@@ -194,6 +394,9 @@ export default function ArticlesClient({
                 className="ep-img"
                 src={getArticleImage(editorPick)}
                 alt={editorPick.title}
+                onError={(e) => {
+                  e.currentTarget.src = DEFAULT_IMAGE;
+                }}
               />
               <div className="ep-caption">
                 <p>{editorPick.excerpt || editorPick.description}</p>
@@ -225,7 +428,11 @@ export default function ArticlesClient({
       )}
 
       <div className="section-banner">
-        {selectedCategory ? `${selectedCategory} Stories` : "Latest Stories"}
+        {searchQuery.trim()
+          ? `Search Results · ${articlesForGrid.length} Found`
+          : selectedCategory
+          ? `${selectedCategory} Stories`
+          : "Latest Stories"}
       </div>
 
       {displayedArticles.length > 0 ? (
@@ -240,6 +447,9 @@ export default function ArticlesClient({
                 className="art-thumb"
                 src={getArticleImage(article)}
                 alt={article.title}
+                onError={(e) => {
+                  e.currentTarget.src = getCategoryImage(article.category);
+                }}
               />
               <div className="art-cat">{article.category || "Article"}</div>
               <div className="art-title">{article.title}</div>
@@ -252,13 +462,13 @@ export default function ArticlesClient({
           style={{
             border: "1px solid #2d2416",
             background: "#faf5e9",
-            padding: "28px",
+            padding: "34px 28px",
             textAlign: "center",
             color: "#6b5d47",
             fontStyle: "italic",
           }}
         >
-          No stories found in this section yet.
+          No stories found. Try a different keyword or section.
         </div>
       )}
 
