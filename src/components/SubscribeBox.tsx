@@ -77,14 +77,14 @@ export default function SubscribeBox({
             "grid gap-0",
             isSidebar
               ? "grid-cols-1"
-              : "grid-cols-1 md:grid-cols-[1.2fr_0.8fr]",
+              : "grid-cols-1 md:grid-cols-[1.18fr_0.82fr]",
           ].join(" ")}
         >
-          {/* Form side */}
+          {/* LEFT SIDE */}
           <div
             className={[
               "bg-[#faf5e9]",
-              isSidebar ? "p-5" : "p-5 md:p-7",
+              isSidebar ? "p-5" : "px-5 py-6 md:px-7 md:py-7",
             ].join(" ")}
           >
             <div className="mx-auto mb-3 h-[2px] w-14 bg-[#a68d5c]" />
@@ -102,7 +102,7 @@ export default function SubscribeBox({
             <h3
               className={[
                 "text-center leading-tight text-[#1e1408]",
-                isSidebar ? "mb-3 text-xl" : "mb-3 text-2xl md:text-3xl",
+                isSidebar ? "mb-3 text-xl" : "mb-3 text-[34px]",
               ].join(" ")}
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
@@ -116,11 +116,11 @@ export default function SubscribeBox({
                 "mx-auto text-center leading-relaxed text-[#4a3f2f]",
                 isSidebar
                   ? "mb-4 text-sm"
-                  : "mb-5 max-w-xl text-sm md:text-[15px]",
+                  : "mb-4 max-w-[640px] text-sm md:text-[15px]",
               ].join(" ")}
               style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
-              Get one real retirement-abroad story every morning — plus the free
+              Get one real retirement-abroad story every morning — plus a free
               starter kit to compare costs, visas, healthcare, housing, and
               lifestyle before you move.
             </p>
@@ -143,7 +143,7 @@ export default function SubscribeBox({
                   onChange={(e) => setFirstName(e.target.value)}
                   className={[
                     "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
-                    isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
+                    isSidebar ? "px-3 py-2 text-sm" : "px-4 py-2.5 text-sm",
                   ].join(" ")}
                   style={{
                     fontFamily: "var(--font-garamond), Georgia, serif",
@@ -157,7 +157,7 @@ export default function SubscribeBox({
                   onChange={(e) => setLastName(e.target.value)}
                   className={[
                     "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
-                    isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
+                    isSidebar ? "px-3 py-2 text-sm" : "px-4 py-2.5 text-sm",
                   ].join(" ")}
                   style={{
                     fontFamily: "var(--font-garamond), Georgia, serif",
@@ -172,7 +172,7 @@ export default function SubscribeBox({
                   required
                   className={[
                     "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
-                    isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
+                    isSidebar ? "px-3 py-2 text-sm" : "px-4 py-2.5 text-sm",
                   ].join(" ")}
                   style={{
                     fontFamily: "var(--font-garamond), Georgia, serif",
@@ -212,98 +212,78 @@ export default function SubscribeBox({
             <p
               className={[
                 "mt-3 text-center text-[#6b5d47]",
-                isSidebar ? "text-[9px]" : "text-[10px]",
+                isSidebar ? "text-[10px]" : "text-[11px]",
               ].join(" ")}
               style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
-              ◆ Join 5,000+ readers planning their next chapter ◆
+              ◆ Trusted by 5,000+ readers planning their next chapter ◆
             </p>
           </div>
 
-          {/* Bonus side */}
+          {/* RIGHT SIDE */}
           {!isSidebar && (
-            <aside className="flex items-center border-t-2 border-[#2d2416] bg-[#2d2416] p-5 md:border-l-2 md:border-t-0 md:p-7">
-              <div className="w-full">
-                <p
-                  className="mb-2 text-center text-[10px] uppercase tracking-[0.18em] text-[#c9a84c]"
-                  style={{
-                    fontFamily: "var(--font-playfair), Georgia, serif",
-                  }}
-                >
-                  Free Reader Bonus
-                </p>
+            <aside className="relative overflow-hidden border-t-2 border-[#2d2416] md:border-l-2 md:border-t-0">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                  backgroundImage:
+                    "url('https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1200')",
+                }}
+              />
+              <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(10,40,56,0.58),rgba(6,32,46,0.78),rgba(4,22,34,0.88))]" />
 
-                <div className="mx-auto mb-5 max-w-[210px] border border-[#c9a84c] bg-[#faf5e9] px-4 py-5 text-center shadow-sm">
-                  <div
-                    className="mb-2 text-[10px] uppercase tracking-[0.18em] text-[#8b6914]"
+              <div className="relative z-10 flex h-full items-center p-5 md:p-7">
+                <div className="w-full">
+                  <p
+                    className="mb-3 text-center text-[10px] uppercase tracking-[0.18em] text-[#f3dfab]"
                     style={{
                       fontFamily: "var(--font-playfair), Georgia, serif",
                     }}
                   >
-                    Golden Horizons
-                  </div>
+                    Free Reader Bonus
+                  </p>
 
-                  <div
-                    className="text-xl leading-tight text-[#1e1408]"
+                  <h4
+                    className="mb-4 text-center text-[20px] leading-tight text-white md:text-[22px]"
                     style={{
                       fontFamily: "var(--font-playfair), Georgia, serif",
                     }}
                   >
-                    Retirement Abroad
-                    <br />
-                    Starter Kit
+                    Retirement Abroad Starter Kit
+                  </h4>
+
+                  <div className="space-y-2.5">
+                    {bonusItems.map((item) => (
+                      <div key={item} className="flex items-start gap-2.5">
+                        <span className="mt-[8px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#f3dfab]" />
+                        <p
+                          className="text-[15px] leading-snug text-white"
+                          style={{
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          {item}
+                        </p>
+                      </div>
+                    ))}
                   </div>
 
-                  <div
-                    className="mt-3 text-[11px] uppercase tracking-[0.14em] text-[#8b6914]"
+                  <p
+                    className="mt-5 text-center text-[11px] uppercase tracking-[0.12em] text-[#f3dfab]"
                     style={{
-                      fontFamily: "var(--font-garamond), Georgia, serif",
+                      fontFamily: "var(--font-playfair), Georgia, serif",
                     }}
                   >
-                    2026 Edition
-                  </div>
+                    Delivered instantly when you subscribe
+                  </p>
                 </div>
-
-                <h4
-                  className="mb-3 text-center text-xl leading-tight text-[#faf5e9] md:text-2xl"
-                  style={{
-                    fontFamily: "var(--font-playfair), Georgia, serif",
-                  }}
-                >
-                  Retirement Abroad Starter Kit
-                </h4>
-
-                <div className="space-y-2">
-                  {bonusItems.map((item) => (
-                    <div key={item} className="flex items-start gap-2">
-                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#c9a84c]" />
-                      <p
-                        className="text-sm leading-snug text-[#d9c8a6]"
-                        style={{
-                          fontFamily: "var(--font-garamond), Georgia, serif",
-                        }}
-                      >
-                        {item}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-
-                <p
-                  className="mt-4 text-center text-[11px] uppercase tracking-[0.12em] text-[#c9a84c]"
-                  style={{
-                    fontFamily: "var(--font-playfair), Georgia, serif",
-                  }}
-                >
-                  Delivered instantly when you subscribe
-                </p>
               </div>
             </aside>
           )}
         </div>
       </section>
 
-      {/* Thank You Popup */}
+      {/* THANK YOU POPUP */}
       {showThankYou && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
