@@ -3,9 +3,49 @@ import Link from "next/link";
 import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
 import ArticlesClient from "./ArticlesClient";
 
+const siteUrl = "https://golden-horizons.org";
+
 export const metadata: Metadata = {
-  title: "All Stories — Golden Horizons Magazine",
-  description: "Browse all retirement abroad articles from Golden Horizons.",
+  title: "Retirement Abroad Articles, Guides & Cost Breakdowns | Golden Horizons",
+  description:
+    "Browse Golden Horizons retirement abroad articles covering cost of living, healthcare, visas, safety, housing, lifestyle, and the best places for Americans to retire overseas.",
+  alternates: {
+    canonical: `${siteUrl}/articles`,
+  },
+  openGraph: {
+    type: "website",
+    url: `${siteUrl}/articles`,
+    siteName: "Golden Horizons",
+    title: "Retirement Abroad Articles, Guides & Cost Breakdowns",
+    description:
+      "Explore retirement abroad guides for Americans comparing cost of living, healthcare, visas, safety, housing, lifestyle, and destination options overseas.",
+    images: [
+      {
+        url: `${siteUrl}/European%20caffee.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Golden Horizons retirement abroad magazine articles",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Retirement Abroad Articles, Guides & Cost Breakdowns",
+    description:
+      "Retirement abroad guides covering cost of living, healthcare, visas, safety, housing, lifestyle, and destination choices for Americans.",
+    images: [`${siteUrl}/European%20caffee.jpg`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default async function ArticlesPage() {
@@ -31,8 +71,59 @@ export default async function ArticlesPage() {
   const categories = Object.keys(categoryGroups).sort();
   const editorPick = validArticles[0];
 
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${siteUrl}/articles#itemlist`,
+    name: "Retirement Abroad Articles and Guides",
+    description:
+      "A library of Golden Horizons retirement abroad articles covering cost of living, healthcare, visas, safety, housing, lifestyle, and destinations.",
+    url: `${siteUrl}/articles`,
+    numberOfItems: validArticles.length,
+    itemListElement: validArticles.map((article, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: article.title,
+      url: `${siteUrl}/articles/${article.slug}`,
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${siteUrl}/articles#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Golden Horizons",
+        item: siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "All Stories",
+        item: `${siteUrl}/articles`,
+      },
+    ],
+  };
+
   return (
     <main className="mag-page articles-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(itemListSchema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
       <div className="site">
         <div className="topbar">
           <span>Vol. I, No. 1</span>
@@ -78,7 +169,9 @@ export default async function ArticlesPage() {
 
         <div className="page-header">
           <span className="ph-kicker">The Archive</span>
-          <h1 className="ph-title">All Stories</h1>
+          <h1 className="ph-title">
+            Retirement Abroad Articles, Guides &amp; Cost Breakdowns
+          </h1>
           <span className="ph-count">
             {validArticles.length} articles · Updated daily
           </span>
