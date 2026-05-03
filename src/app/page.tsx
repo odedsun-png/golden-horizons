@@ -466,7 +466,7 @@ export default function HomePage() {
               position: "absolute",
               inset: 0,
               backgroundImage:
-                "linear-gradient(90deg, rgba(250,245,233,0.96) 0%, rgba(250,245,233,0.9) 48%, rgba(250,245,233,0.72) 100%), url('/images/retirement-match-beach.jpg')",
+                "linear-gradient(90deg, rgba(250,245,233,0.88) 0%, rgba(250,245,233,0.78) 48%, rgba(250,245,233,0.52) 100%), url('/pexels-asadphoto-29346151.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               zIndex: 0,
