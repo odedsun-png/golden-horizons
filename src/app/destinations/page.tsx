@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function DestinationsPage() {
   const featured = countries.slice(0, 5);
-  const more = countries.slice(5);
+  const more = countries;
 
   return (
     <main className="mag-page">
@@ -180,7 +180,7 @@ export default function DestinationsPage() {
         </div>
 
         <div className="more-section">
-          <div className="more-kicker">More Destinations · All 26 Ranked</div>
+          <div className="more-kicker">All Destinations · 26 Ranked</div>
 
           <div
             className="more-grid"
