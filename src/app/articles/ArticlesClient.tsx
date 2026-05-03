@@ -100,19 +100,6 @@ function getArticleImage(article: Article) {
   return getCategoryImage(article.category);
 }
 
-function getSearchText(article: Article) {
-  return [
-    article.title,
-    article.description,
-    article.excerpt,
-    article.category,
-    article.slug,
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-}
-
 export default function ArticlesClient({
   articles,
   categoryGroups,
@@ -120,34 +107,21 @@ export default function ArticlesClient({
   editorPick,
 }: Props) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(18);
 
   const filteredArticles = useMemo(() => {
-    const query = searchQuery.trim().toLowerCase();
-
-    let baseArticles = selectedCategory
-      ? categoryGroups[selectedCategory] || []
-      : articles;
-
-    if (query) {
-      baseArticles = baseArticles.filter((article) =>
-        getSearchText(article).includes(query)
-      );
-    }
-
-    return baseArticles;
-  }, [articles, categoryGroups, selectedCategory, searchQuery]);
+    return selectedCategory ? categoryGroups[selectedCategory] || [] : articles;
+  }, [articles, categoryGroups, selectedCategory]);
 
   const articlesForGrid = useMemo(() => {
-    if (!selectedCategory && !searchQuery.trim() && editorPick) {
+    if (!selectedCategory && editorPick) {
       return filteredArticles.filter(
         (article) => article.slug !== editorPick.slug
       );
     }
 
     return filteredArticles;
-  }, [filteredArticles, selectedCategory, searchQuery, editorPick]);
+  }, [filteredArticles, selectedCategory, editorPick]);
 
   const displayedArticles = articlesForGrid.slice(0, visibleCount);
   const hasMore = displayedArticles.length < articlesForGrid.length;
@@ -157,15 +131,8 @@ export default function ArticlesClient({
     setVisibleCount(18);
   }
 
-  function handleSearch(value: string) {
-  setSearchQuery(value);
-  setSelectedCategory(null);
-  setVisibleCount(18);
-}
-
   function clearFilters() {
     setSelectedCategory(null);
-    setSearchQuery("");
     setVisibleCount(18);
   }
 
@@ -188,7 +155,7 @@ export default function ArticlesClient({
             marginBottom: 10,
           }}
         >
-          Search the Archive
+          Explore the Archive
         </div>
 
         <h2
@@ -200,8 +167,7 @@ export default function ArticlesClient({
             color: "#1a0f00",
           }}
         >
-          Find retirement abroad stories by country, cost, visa, healthcare, or
-          lifestyle.
+          Browse retirement abroad stories by topic.
         </h2>
 
         <p
@@ -213,29 +179,10 @@ export default function ArticlesClient({
             color: "#4c3922",
           }}
         >
-          Browse practical guides for Americans comparing where to retire abroad
-          — including real costs, safety, housing, healthcare, visas, and daily
-          life.
+          Use the topic buttons below to explore practical guides for Americans
+          comparing where to retire abroad — including real costs, safety,
+          housing, healthcare, visas, and daily life.
         </p>
-
-        <input
-          type="search"
-          value={searchQuery}
-          onChange={(e) => handleSearch(e.target.value)}
-          placeholder="Search articles, countries, healthcare, visas, cost of living..."
-          aria-label="Search Golden Horizons articles"
-          style={{
-            width: "100%",
-            border: "2px solid #2d2416",
-            background: "#fffaf0",
-            color: "#1a0f00",
-            padding: "15px 18px",
-            fontSize: 17,
-            fontFamily: "var(--font-garamond), Georgia, serif",
-            outline: "none",
-            marginBottom: 14,
-          }}
-        />
 
         <div
           style={{
@@ -288,7 +235,7 @@ export default function ArticlesClient({
             )
           )}
 
-          {(selectedCategory || searchQuery) && (
+          {selectedCategory && (
             <button
               type="button"
               onClick={clearFilters}
@@ -337,6 +284,7 @@ export default function ArticlesClient({
               display: "block",
             }}
           />
+
           <div className="cat-name">All Stories</div>
           <div className="cat-count">{articles.length} articles</div>
           <div className="cat-desc">Every destination we&rsquo;ve covered</div>
@@ -383,7 +331,7 @@ export default function ArticlesClient({
         ))}
       </div>
 
-      {editorPick && !selectedCategory && !searchQuery.trim() && (
+      {editorPick && !selectedCategory && (
         <>
           <div className="section-banner">
             Editor&rsquo;s Pick · This Week&rsquo;s Must-Read
@@ -399,6 +347,7 @@ export default function ArticlesClient({
                   e.currentTarget.src = DEFAULT_IMAGE;
                 }}
               />
+
               <div className="ep-caption">
                 <p>{editorPick.excerpt || editorPick.description}</p>
               </div>
@@ -429,11 +378,7 @@ export default function ArticlesClient({
       )}
 
       <div className="section-banner">
-        {searchQuery.trim()
-          ? `Search Results · ${articlesForGrid.length} Found`
-          : selectedCategory
-          ? `${selectedCategory} Stories`
-          : "Latest Stories"}
+        {selectedCategory ? `${selectedCategory} Stories` : "Latest Stories"}
       </div>
 
       {displayedArticles.length > 0 ? (
@@ -452,6 +397,7 @@ export default function ArticlesClient({
                   e.currentTarget.src = getCategoryImage(article.category);
                 }}
               />
+
               <div className="art-cat">{article.category || "Article"}</div>
               <div className="art-title">{article.title}</div>
               <span className="art-read">Read →</span>
@@ -469,7 +415,7 @@ export default function ArticlesClient({
             fontStyle: "italic",
           }}
         >
-          No stories found. Try a different keyword or section.
+          No stories found in this section yet.
         </div>
       )}
 
