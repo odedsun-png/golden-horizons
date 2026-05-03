@@ -187,17 +187,25 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(30,20,8,0.56) 0%, rgba(30,20,8,0.06) 100%),
-              linear-gradient(0deg, rgba(30,20,8,0.34) 0%, rgba(30,20,8,0.04) 58%);
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 20, 8, 0.04) 0%,
+    rgba(30, 20, 8, 0.08) 55%,
+    rgba(30, 20, 8, 0.16) 100%
+  );
+  z-index: 1;
 }
 
 .hero-text {
   position: absolute;
   z-index: 3;
   left: 36px;
-  bottom: 38px;
-  max-width: 660px;
+  right: 36px;
+  bottom: 42px;
+  max-width: 760px;
   color: #faf5e9;
+  background: transparent;
+  padding: 0;
 }
 
 .hero-kicker {
@@ -225,6 +233,12 @@ body {
   line-height: 1.45;
   color: #f2dfb0;
   max-width: 560px;
+}
+
+.hero-kicker,
+.hero-title,
+.hero-sub {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 .hero-caption {
@@ -855,27 +869,30 @@ body {
 
 /* ===================================================
    HOMEPAGE DESTINATION CARDS - ADDED
+   Scoped only to the homepage destination strip
    =================================================== */
 
 html {
   scroll-behavior: smooth;
 }
 
-.dest-card {
+.dest-row .dest-card {
   border: 1px solid #c9a84c;
   background: #f5edd8;
   padding: 11px 9px;
   text-align: center;
   text-decoration: none;
   display: block;
-  transition: background 0.15s;
+  transition: background 0.15s, transform 0.15s, border-color 0.15s;
 }
 
-.dest-card:hover {
+.dest-row .dest-card:hover {
   background: #f0e8d5;
+  border-color: #8b6914;
+  transform: translateY(-2px);
 }
 
-.dest-name {
+.dest-row .dest-name {
   font-family: 'Playfair Display', serif;
   font-size: 13px;
   font-weight: 700;
@@ -883,22 +900,27 @@ html {
   margin-bottom: 3px;
 }
 
-.dest-cost {
+.dest-row .dest-cost {
   font-size: 11px;
   color: #2b1a00;
   margin-bottom: 5px;
   font-family: 'EB Garamond', serif;
 }
 
-.dest-tag {
+.dest-row .dest-tag {
   font-size: 9px;
   color: #8b6914;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-top: 1px solid rgba(201,168,76,0.4);
+  border-top: 1px solid rgba(201, 168, 76, 0.4);
   padding-top: 5px;
   font-family: 'EB Garamond', serif;
-   /* All Stories page only */
+}
+
+/* ===================================================
+   ALL STORIES PAGE ONLY
+   =================================================== */
+
 .articles-page .cat-cell {
   transition: all 0.15s ease;
 }
@@ -925,6 +947,7 @@ html {
   padding: 0;
   border: 1px solid #2d2416;
   background: #faf5e9;
+  cursor: pointer;
 }
 
 .articles-page button.load-btn {
@@ -933,5 +956,5 @@ html {
   font: inherit;
   padding: 0;
   width: auto;
-}
+  cursor: pointer;
 }
