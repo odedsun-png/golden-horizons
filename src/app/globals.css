@@ -976,3 +976,42 @@ html {
 .hero-wrap {
   background: #1e1408;
 }
+/* ===================================================
+   MASTHEAD READABILITY FIX — 60+ AUDIENCE
+   Makes small header wording easier to read
+   =================================================== */
+
+.dateline {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #2d2416;
+  font-weight: 500;
+}
+
+.issue-line {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #24170a;
+  font-weight: 500;
+}
+
+.issue-tag strong {
+  font-weight: 700;
+  color: #1a0f00;
+}
+
+.mastname {
+  color: #1a0f00;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .dateline {
+    font-size: 12px;
+  }
+
+  .issue-line {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+}
