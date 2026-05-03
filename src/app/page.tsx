@@ -8,6 +8,17 @@ import RetirementFinder from "@/components/RetirementFinder";
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const scrollToSubscribe = () => {
+    const subscribeBox = document.getElementById("subscribe");
+
+    if (subscribeBox) {
+      subscribeBox.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   const slides = [
     {
       image:
@@ -47,21 +58,16 @@ export default function HomePage() {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    if (window.location.hash === "#subscribe") {
-      const scrollToSubscribe = () => {
-        const subscribeBox = document.getElementById("subscribe");
+    const params = new URLSearchParams(window.location.search);
+    const shouldScroll =
+      params.get("scrollTo") === "subscribe" ||
+      window.location.hash === "#subscribe";
 
-        if (subscribeBox) {
-          subscribeBox.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }
-      };
+    if (!shouldScroll) return;
 
-      window.setTimeout(scrollToSubscribe, 300);
-      window.setTimeout(scrollToSubscribe, 900);
-    }
+    window.setTimeout(scrollToSubscribe, 300);
+    window.setTimeout(scrollToSubscribe, 900);
+    window.setTimeout(scrollToSubscribe, 1500);
   }, []);
 
   return (
@@ -106,7 +112,15 @@ export default function HomePage() {
           </Link>
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
-          <Link href="#subscribe">Subscribe Free</Link>
+          <Link
+            href="/?scrollTo=subscribe"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSubscribe();
+            }}
+          >
+            Subscribe Free
+          </Link>
         </nav>
 
         {/* ── HERO ── */}
