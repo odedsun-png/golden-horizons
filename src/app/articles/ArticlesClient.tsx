@@ -22,57 +22,57 @@ type Props = {
 
 const CATEGORY_IMAGES: Record<string, string> = {
   "All Stories":
-    "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=800",
   Beach:
-    "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=800",
   "Best Cities":
-    "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=800",
   Climate:
-    "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
   Comparison:
-    "https://images.pexels.com/photos/7412069/pexels-photo-7412069.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/7412069/pexels-photo-7412069.jpeg?auto=compress&cs=tinysrgb&w=800",
   Cost:
-    "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=800",
   Finance:
-    "https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=800",
   Tax:
-    "https://images.pexels.com/photos/6863250/pexels-photo-6863250.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/6863250/pexels-photo-6863250.jpeg?auto=compress&cs=tinysrgb&w=800",
   Visa:
-    "https://images.pexels.com/photos/7235894/pexels-photo-7235894.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/7235894/pexels-photo-7235894.jpeg?auto=compress&cs=tinysrgb&w=800",
   "Real Estate":
-    "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800",
   Safety:
-    "https://images.pexels.com/photos/2346216/pexels-photo-2346216.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/2346216/pexels-photo-2346216.jpeg?auto=compress&cs=tinysrgb&w=800",
   Solo:
-    "https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=800",
   Culture:
-    "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=800",
   Expat:
-    "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=800",
   Healthcare:
-    "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=800",
   "Hidden Gems":
-    "https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=800",
   LGBTQ:
-    "https://images.pexels.com/photos/3810832/pexels-photo-3810832.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/3810832/pexels-photo-3810832.jpeg?auto=compress&cs=tinysrgb&w=800",
   Logistics:
-    "https://images.pexels.com/photos/736830/pexels-photo-736830.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/736830/pexels-photo-736830.jpeg?auto=compress&cs=tinysrgb&w=800",
   Explore:
-    "https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=800",
   Countries:
-    "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800",
   Lifestyle:
-    "https://images.pexels.com/photos/3768894/pexels-photo-3768894.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/3768894/pexels-photo-3768894.jpeg?auto=compress&cs=tinysrgb&w=800",
   Strategy:
-    "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800",
   Uncategorized:
-    "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=800",
   LEGIT:
-    "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=800",
 };
 
 const DEFAULT_IMAGE =
-  "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=600";
+  "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800";
 
 const FEATURED_CATEGORIES = [
   "Cost",
@@ -126,6 +126,23 @@ export default function ArticlesClient({
   const displayedArticles = articlesForGrid.slice(0, visibleCount);
   const hasMore = displayedArticles.length < articlesForGrid.length;
 
+  const categoryCards = [
+    {
+      label: "All Stories",
+      count: articles.length,
+      desc: "Every destination we’ve covered",
+      category: null as string | null,
+      image: getCategoryImage("All Stories"),
+    },
+    ...categories.map((category) => ({
+      label: category,
+      count: categoryGroups[category]?.length || 0,
+      desc: `Browse ${category.toLowerCase()} stories`,
+      category,
+      image: getCategoryImage(category),
+    })),
+  ];
+
   function selectCategory(category: string | null) {
     setSelectedCategory(category);
     setVisibleCount(18);
@@ -160,7 +177,7 @@ export default function ArticlesClient({
 
         <h2
           style={{
-            margin: "0 0 10px",
+            margin: "0 0 18px",
             fontFamily: "var(--font-playfair), Georgia, serif",
             fontSize: 30,
             lineHeight: 1.1,
@@ -169,20 +186,6 @@ export default function ArticlesClient({
         >
           Browse retirement abroad stories by topic.
         </h2>
-
-        <p
-          style={{
-            maxWidth: 760,
-            margin: "0 0 20px",
-            fontSize: 17,
-            lineHeight: 1.55,
-            color: "#4c3922",
-          }}
-        >
-          Use the topic buttons below to explore practical guides for Americans
-          comparing where to retire abroad — including real costs, safety,
-          housing, healthcare, visas, and daily life.
-        </p>
 
         <div
           style={{
@@ -258,77 +261,116 @@ export default function ArticlesClient({
 
       <div className="section-banner">Browse by Section</div>
 
-      <div className="cat-index">
-        <button
-          type="button"
-          onClick={() => selectCategory(null)}
-          className={`cat-cell ${!selectedCategory ? "active" : ""}`}
-          style={{
-            cursor: "pointer",
-            textAlign: "left",
-            overflow: "hidden",
-          }}
-        >
-          <img
-            src={getCategoryImage("All Stories")}
-            alt="All Stories"
-            onError={(e) => {
-              e.currentTarget.src = DEFAULT_IMAGE;
-            }}
-            style={{
-              width: "100%",
-              height: 68,
-              objectFit: "cover",
-              borderBottom: "1px solid #c9b896",
-              marginBottom: 10,
-              display: "block",
-            }}
-          />
+      <div
+        className="cat-index"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+          gap: 0,
+          borderLeft: "1px solid #c9a84c",
+          borderTop: "1px solid #c9a84c",
+        }}
+      >
+        {categoryCards.map((item) => {
+          const isActive =
+            item.category === null
+              ? !selectedCategory
+              : selectedCategory === item.category;
 
-          <div className="cat-name">All Stories</div>
-          <div className="cat-count">{articles.length} articles</div>
-          <div className="cat-desc">Every destination we&rsquo;ve covered</div>
-        </button>
-
-        {categories.map((category) => (
-          <button
-            type="button"
-            key={category}
-            onClick={() => selectCategory(category)}
-            className={`cat-cell ${
-              selectedCategory === category ? "active" : ""
-            }`}
-            style={{
-              cursor: "pointer",
-              textAlign: "left",
-              overflow: "hidden",
-            }}
-          >
-            <img
-              src={getCategoryImage(category)}
-              alt={category}
-              onError={(e) => {
-                e.currentTarget.src = DEFAULT_IMAGE;
-              }}
+          return (
+            <button
+              key={item.label}
+              type="button"
+              onClick={() => selectCategory(item.category)}
+              className={`cat-cell ${isActive ? "active" : ""}`}
               style={{
-                width: "100%",
-                height: 68,
-                objectFit: "cover",
-                borderBottom: "1px solid #c9b896",
-                marginBottom: 10,
-                display: "block",
+                cursor: "pointer",
+                textAlign: "left",
+                padding: 0,
+                border: "none",
+                borderRight: "1px solid #c9a84c",
+                borderBottom: "1px solid #c9a84c",
+                background: "#1a0f00",
+                overflow: "hidden",
+                minHeight: 210,
+                position: "relative",
               }}
-            />
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  backgroundImage: `url(${item.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  transform: isActive ? "scale(1.04)" : "scale(1)",
+                  transition: "transform 0.25s ease",
+                }}
+              />
 
-            <div className="cat-name">{category}</div>
-            <div className="cat-count">
-              {categoryGroups[category]?.length || 0} articles
-            </div>
-            <div className="cat-desc">
-              Browse {category.toLowerCase()} stories
-            </div>
-          </button>
-        ))}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background: isActive
+                    ? "linear-gradient(to top, rgba(17,10,2,0.94), rgba(17,10,2,0.64), rgba(17,10,2,0.22))"
+                    : "linear-gradient(to top, rgba(25,15,3,0.88), rgba(25,15,3,0.55), rgba(25,15,3,0.18))",
+                  boxShadow: isActive ? "inset 0 0 0 3px #c9a84c" : "none",
+                }}
+              />
+
+              <div
+                style={{
+                  position: "relative",
+                  zIndex: 2,
+                  minHeight: 210,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "flex-end",
+                  padding: "16px 14px 14px",
+                }}
+              >
+                <div
+                  className="cat-name"
+                  style={{
+                    color: "#fff8e8",
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    fontSize: 28,
+                    lineHeight: 1.05,
+                    marginBottom: 8,
+                  }}
+                >
+                  {item.label}
+                </div>
+
+                <div
+                  className="cat-count"
+                  style={{
+                    color: "#f5d06f",
+                    fontSize: 13,
+                    fontStyle: "italic",
+                    marginBottom: 6,
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                  }}
+                >
+                  {item.count} articles
+                </div>
+
+                <div
+                  className="cat-desc"
+                  style={{
+                    color: "#f6ead0",
+                    fontSize: 13,
+                    lineHeight: 1.35,
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                  }}
+                >
+                  {item.desc}
+                </div>
+              </div>
+            </button>
+          );
+        })}
       </div>
 
       {editorPick && !selectedCategory && (
