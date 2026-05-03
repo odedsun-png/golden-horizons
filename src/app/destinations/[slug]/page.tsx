@@ -204,7 +204,9 @@ export default async function DestinationDetailPage({ params }: { params: PagePa
               <div className="mag-sub-eyebrow">Free Subscription</div>
               <div className="mag-sub-headline">Start reading Golden Horizons every morning</div>
               <div className="mag-sub-body">Real costs. Real places. One story, every morning.</div>
-              <Link href="/golden_horizons_final.pdf" className="mag-btn">Start My Free Subscription →</Link>
+              <Link href="/golden_horizons_final.pdf" className="mag-btn">
+  Start My Free Subscription →
+</Link>
               <div className="mag-trust">◆ Join 5,000+ readers ◆</div>
             </div>
 
