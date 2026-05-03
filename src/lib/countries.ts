@@ -257,7 +257,7 @@ export const countries: Country[] = [
     rank: 20,
     name: "Cambodia",
     flag: "🇰🇭",
-    image: "https://images.unsplash.com/photo-1568733126608-7cd9b0a753c6?w=600&q=80",
+    image: "https://images.pexels.com/photos/1694621/pexels-photo-1694621.jpeg?auto=compress&cs=tinysrgb&w=900",
     description: "Easiest visa in Asia at $290/year with no income requirement, USD economy, and near-zero costs.",
     benefits: ["Easiest visa in Asia", "USD economy", "No income requirement", "Very affordable"],
     scores: { costOfLiving: 5, safety: 3, healthcare: 2, lifestyle: 3 },
