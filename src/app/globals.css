@@ -766,7 +766,7 @@ body {
 .art-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; font-size: 12px; color: #8b6914; border-top: 1px solid #c9a84c; border-bottom: 1px solid #c9a84c; padding: 9px 0; margin-bottom: 20px; font-family: 'EB Garamond', serif; }
 
 .hero-img-wrap { line-height: 0; font-size: 0; margin-bottom: 0; }
-.hero-img { width: 100%; display: block; height: 290px; object-fit: cover; filter: contrast(1.08) saturate(1.15) brightness(0.84) sepia(0.1); }
+.article-main .hero-img { width: 100%; display: block; height: 290px; object-fit: cover; filter: contrast(1.08) saturate(1.15) brightness(0.84) sepia(0.1); }
 .img-caption { background: #1e1408; padding: 8px 0 8px 4px; font-size: 12px; font-style: italic; color: #c9a84c; margin-bottom: 22px; line-height: 1.5; font-family: 'EB Garamond', serif; }
 
 .art-intro { font-size: 21px; line-height: 1.78; color: #1a0f00; font-weight: 500; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #c9a84c; font-family: 'EB Garamond', serif; }
@@ -863,7 +863,7 @@ body {
   .art-intro { font-size: 18px; }
   .art-article-body { font-size: 18px; }
   .art-meta { flex-direction: column; gap: 3px; }
-  .hero-img { height: 210px; }
+  .article-main .hero-img { height: 210px; }
   .sidebar { padding: 20px 16px; border-top: 2px solid #1e1408; }
 }
 
@@ -957,4 +957,22 @@ html {
   padding: 0;
   width: auto;
   cursor: pointer;
+}
+
+/* ===================================================
+   FIX: HOMEPAGE HERO IMAGE FULL HEIGHT
+   This keeps the top rotating homepage hero image filling the whole hero area.
+   It prevents the article-detail .hero-img sizing from creating a dark/brown block.
+   =================================================== */
+.hero-wrap .hero-slide .hero-img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero-wrap {
+  background: #1e1408;
 }
