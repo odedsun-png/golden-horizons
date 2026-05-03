@@ -414,32 +414,110 @@ export default async function DestinationDetailPage({
 
             <div className="related-label">More Destinations</div>
 
-            {relatedCountries.map((rel) => (
-              <Link
-                key={rel.id}
-                href={`/destinations/${rel.id}`}
-                className="rel-item"
-              >
-                <div
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: "10px",
+              }}
+            >
+              {relatedCountries.map((rel) => (
+                <Link
+                  key={rel.id}
+                  href={`/destinations/${rel.id}`}
+                  className="rel-item"
                   style={{
-                    width: 74,
-                    height: 56,
+                    position: "relative",
+                    display: "block",
+                    minHeight: 150,
                     overflow: "hidden",
-                    flexShrink: 0,
+                    textDecoration: "none",
+                    background: "#1a0f00",
+                    border: "1px solid #c9a84c",
                   }}
                 >
-                  <img className="rel-thumb" src={rel.image} alt={rel.name} />
-                </div>
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      backgroundImage: `url(${rel.image})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      transform: "scale(1.03)",
+                    }}
+                  />
 
-                <div>
-                  <div className="rel-cat">
-                    #{rel.rank} Ranked · {rel.flag}
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      background:
+                        "linear-gradient(to top, rgba(17,10,2,0.92) 0%, rgba(17,10,2,0.66) 48%, rgba(17,10,2,0.25) 100%)",
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      position: "relative",
+                      zIndex: 2,
+                      minHeight: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "flex-end",
+                      padding: "14px 13px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "#f3dfab",
+                        fontSize: 10,
+                        letterSpacing: "0.16em",
+                        textTransform: "uppercase",
+                        marginBottom: 6,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                      }}
+                    >
+                      #{rel.rank} Ranked · {rel.flag}
+                    </div>
+
+                    <div
+                      style={{
+                        color: "#ffffff",
+                        fontSize: 24,
+                        lineHeight: 1.02,
+                        marginBottom: 6,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                      }}
+                    >
+                      {rel.name}
+                    </div>
+
+                    <div
+                      style={{
+                        color: "#f6ead0",
+                        fontSize: 13,
+                        lineHeight: 1.35,
+                        marginBottom: 8,
+                        fontFamily: "var(--font-garamond), Georgia, serif",
+                      }}
+                    >
+                      {rel.description}
+                    </div>
+
+                    <span
+                      style={{
+                        color: "#f3dfab",
+                        fontSize: 12,
+                        fontStyle: "italic",
+                        fontFamily: "var(--font-garamond), Georgia, serif",
+                      }}
+                    >
+                      View Profile →
+                    </span>
                   </div>
-                  <div className="rel-title">{rel.name}</div>
-                  <span className="rel-read">View Profile →</span>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
