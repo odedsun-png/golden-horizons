@@ -140,6 +140,31 @@ export default async function ArticleDetailPage({
     )
   );
 
+  const allSlugs = await getAllArticleSlugs();
+  const allArticlesRaw = await Promise.all(
+    allSlugs.map((articleSlug) => getArticleBySlug(articleSlug))
+  );
+
+  const allArticles = allArticlesRaw.filter((item) => item !== null);
+
+  const sameCategoryArticles = allArticles
+    .filter((item) => {
+      const itemCategory = item.category || "Article";
+      return (
+        item.slug !== slug &&
+        item.slug !== canonicalSlug &&
+        itemCategory === category
+      );
+    })
+    .slice(0, 5);
+
+  const fallbackArticles = allArticles
+    .filter((item) => item.slug !== slug && item.slug !== canonicalSlug)
+    .slice(0, 5);
+
+  const relatedArticles =
+    sameCategoryArticles.length >= 3 ? sameCategoryArticles : fallbackArticles;
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -197,44 +222,6 @@ export default async function ArticleDetailPage({
       },
     ],
   };
-
-  const relatedArticles = [
-    {
-      href: "/articles/comparison-portugal-vs-spain-which-is-the-better-retirement-destination-v2",
-      thumb:
-        "https://images.pexels.com/photos/37304579/pexels-photo-37304579.jpeg?auto=compress&cs=tinysrgb&w=150",
-      cat: "Destination Report · Europe",
-      title: "Portugal vs Spain: Which Is Better for Retirement?",
-    },
-    {
-      href: "/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2",
-      thumb:
-        "https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=150",
-      cat: "The Money Page · Albania",
-      title: "What $1,000 a Month Gets You in Gjirokastër",
-    },
-    {
-      href: "/articles/greece-oceanfront-living-in-crete-on-a-retirement-budget",
-      thumb:
-        "https://images.pexels.com/photos/984877/pexels-photo-984877.jpeg?auto=compress&cs=tinysrgb&w=150",
-      cat: "The Beach Report · Greece",
-      title: "Oceanfront Living in Crete on a Retirement Budget",
-    },
-    {
-      href: "/articles/ecuador-what-2000-a-month-gets-you-in-cuenca",
-      thumb:
-        "https://images.pexels.com/photos/29817339/pexels-photo-29817339.jpeg?auto=compress&cs=tinysrgb&w=150",
-      cat: "The Money Page · Ecuador",
-      title: "What $2,000 a Month Gets You in Cuenca",
-    },
-    {
-      href: "/articles/ireland-residency-options-for-american-retirees-v2",
-      thumb:
-        "https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=150",
-      cat: "The Visa File · Ireland",
-      title: "Residency Options for American Retirees in Ireland",
-    },
-  ];
 
   return (
     <main className="mag-page">
@@ -390,16 +377,29 @@ export default async function ArticleDetailPage({
 
             <div className="related-label">More from {category}</div>
 
-            {relatedArticles.map((rel) => (
-              <Link key={rel.href} href={rel.href} className="rel-item">
-                <img className="rel-thumb" src={rel.thumb} alt={rel.title} />
-                <div>
-                  <div className="rel-cat">{rel.cat}</div>
-                  <div className="rel-title">{rel.title}</div>
-                  <span className="rel-read">Read →</span>
-                </div>
-              </Link>
-            ))}
+            {relatedArticles.map((rel) => {
+              const relImage =
+                rel.heroImage ||
+                rel.image ||
+                "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=150";
+
+              const relCategory = rel.category || "Retirement Abroad";
+
+              return (
+                <Link
+                  key={rel.slug}
+                  href={`/articles/${rel.slug}`}
+                  className="rel-item"
+                >
+                  <img className="rel-thumb" src={relImage} alt={rel.title} />
+                  <div>
+                    <div className="rel-cat">{relCategory}</div>
+                    <div className="rel-title">{rel.title}</div>
+                    <span className="rel-read">Read →</span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
 
