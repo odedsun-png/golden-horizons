@@ -4,106 +4,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import SubscribeBox from "@/components/SubscribeBox";
 import RetirementFinder from "@/components/RetirementFinder";
-import { countries } from "@/lib/countries";
-
-const FEATURED_ARTICLES = [
-  {
-    category: "Cost of Living · Albania",
-    title: "What $1,000 a Month Gets You in Gjirokastër",
-    href: "/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2",
-    image:
-      "https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=400",
-    alt: "Albania retirement cost of living",
-  },
-  {
-    category: "Cost of Living · Cambodia",
-    title: "What $1,000 a Month Gets You in Siem Reap",
-    href: "/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2",
-    image:
-      "https://images.pexels.com/photos/15894001/pexels-photo-15894001.jpeg?auto=compress&cs=tinysrgb&w=400",
-    alt: "Cambodia retirement cost of living",
-  },
-  {
-    category: "Visas & Residency · Ireland",
-    title: "Residency Options for American Retirees in Ireland",
-    href: "/articles/ireland-residency-options-for-american-retirees-v2",
-    image:
-      "https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=400",
-    alt: "Ireland residency options",
-  },
-  {
-    category: "Visas & Residency · Georgia",
-    title: "Residency Options for U.S. Retirees in Georgia",
-    href: "/articles/georgia-residency-options-for-us-retirees",
-    image:
-      "https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400",
-    alt: "Georgia residency options",
-  },
-  {
-    category: "Cost of Living · Malaysia",
-    title: "What $2,000 a Month Gets You in Kuala Lumpur",
-    href: "/articles/malaysia-what-2000-a-month-gets-you-in-kuala-lumpur",
-    image:
-      "https://images.pexels.com/photos/2882105/pexels-photo-2882105.jpeg?auto=compress&cs=tinysrgb&w=400",
-    alt: "Kuala Lumpur Malaysia retirement",
-  },
-  {
-    category: "Cost of Living · Malaysia",
-    title: "What $1,800 a Month Gets You in Ipoh",
-    href: "/articles/malaysia-what-1800-a-month-gets-you-in-ipoh",
-    image:
-      "https://images.pexels.com/photos/2882105/pexels-photo-2882105.jpeg?auto=compress&cs=tinysrgb&w=400",
-    alt: "Ipoh Malaysia retirement",
-  },
-  {
-    category: "Strategy · Georgia",
-    title: "The Honest Downsides of Retiring in Georgia Nobody Talks About",
-    href: "/articles/georgia-the-honest-downsides-of-retiring-in-georgia-nobody-talks-about",
-    image:
-      "https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400",
-    alt: "Georgia retirement lifestyle",
-  },
-  {
-    category: "Solo Retirement",
-    title: "Safety Tips for Single Americans Retiring Abroad Alone",
-    href: "/articles/solo-safety-tips-for-single-americans-retiring-abroad-alone",
-    image:
-      "https://images.pexels.com/photos/3768163/pexels-photo-3768163.jpeg?auto=compress&cs=tinysrgb&w=400",
-    alt: "Solo retirement abroad",
-  },
-];
-
-function getDailyFeaturedArticles() {
-  const today = new Date();
-
-  const daySeed = Math.floor(
-    Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()) /
-      86_400_000
-  );
-
-  const startIndex = (daySeed * 4) % FEATURED_ARTICLES.length;
-
-  return Array.from({ length: 4 }, (_, index) => {
-    return FEATURED_ARTICLES[(startIndex + index) % FEATURED_ARTICLES.length];
-  });
-}
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const dailyArticles = getDailyFeaturedArticles();
-
-  const forceScrollToSubscribe = () => {
-    const subscribeBox = document.getElementById("subscribe");
-
-    if (!subscribeBox) return;
-
-    const y = subscribeBox.getBoundingClientRect().top + window.scrollY - 90;
-
-    window.scrollTo({
-      top: y,
-      behavior: "smooth",
-    });
-  };
 
   const slides = [
     {
@@ -133,57 +36,6 @@ export default function HomePage() {
     },
   ];
 
-  const destinationCards = [
-    {
-      id: "portugal",
-      name: "Portugal",
-      cost: "from $1,800/mo",
-      tag: "Top Ranked",
-    },
-    {
-      id: "panama",
-      name: "Panama",
-      cost: "from $1,600/mo",
-      tag: "Best Healthcare",
-    },
-    {
-      id: "mexico",
-      name: "Mexico",
-      cost: "from $1,400/mo",
-      tag: "Most Popular",
-    },
-    {
-      id: "vietnam",
-      name: "Vietnam",
-      cost: "from $1,200/mo",
-      tag: "Best Value",
-    },
-    {
-      id: "belize",
-      name: "Belize",
-      cost: "from $1,700/mo",
-      tag: "English Only",
-    },
-    {
-      id: "ecuador",
-      name: "Ecuador",
-      cost: "from $1,300/mo",
-      tag: "Hidden Gem",
-    },
-  ].map((item) => {
-    const country = countries.find((c) => c.id === item.id);
-
-    return {
-      ...item,
-      image:
-        country?.image ||
-        "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=900",
-      flag: country?.flag || "",
-      rank: country?.rank,
-      description: country?.description || item.tag,
-    };
-  });
-
   useEffect(() => {
     const interval = window.setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -191,42 +43,6 @@ export default function HomePage() {
 
     return () => window.clearInterval(interval);
   }, [slides.length]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const params = new URLSearchParams(window.location.search);
-    const shouldScroll =
-      params.get("scrollTo") === "subscribe" ||
-      window.location.hash === "#subscribe";
-
-    if (!shouldScroll) return;
-
-    let attempts = 0;
-
-    const scrollWithRetry = () => {
-      const subscribeBox = document.getElementById("subscribe");
-
-      if (!subscribeBox) return;
-
-      const y = subscribeBox.getBoundingClientRect().top + window.scrollY - 90;
-
-      window.scrollTo({
-        top: y,
-        behavior: attempts === 0 ? "auto" : "smooth",
-      });
-
-      attempts += 1;
-
-      if (attempts < 8) {
-        window.setTimeout(scrollWithRetry, 400);
-      } else {
-        window.history.replaceState({}, "", "/");
-      }
-    };
-
-    window.setTimeout(scrollWithRetry, 250);
-  }, []);
 
   return (
     <main className="mag-page">
@@ -270,15 +86,7 @@ export default function HomePage() {
           </Link>
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
-          <Link
-            href="/?scrollTo=subscribe"
-            onClick={(e) => {
-              e.preventDefault();
-              forceScrollToSubscribe();
-            }}
-          >
-            Subscribe Free
-          </Link>
+          <Link href="#subscribe">Subscribe Free</Link>
         </nav>
 
         {/* ── HERO ── */}
@@ -355,7 +163,7 @@ export default function HomePage() {
         </div>
 
         {/* ── INLINE SUBSCRIBE BOX ── */}
-        <div id="subscribe" style={{ scrollMarginTop: "110px" }}>
+        <div id="subscribe">
           <SubscribeBox variant="inline" />
         </div>
 
@@ -364,51 +172,111 @@ export default function HomePage() {
 
         <div className="below-fold">
           <div className="bf-col">
-            <div className="mag-section-label">Today&apos;s Picks</div>
+            <div className="mag-section-label">The Money Page</div>
 
-            {dailyArticles.slice(0, 2).map((article) => (
-              <div className="story-item" key={article.href}>
-                <img
-                  className="story-img"
-                  src={article.image}
-                  alt={article.alt}
-                />
+            <div className="story-item">
+              <img
+                className="story-img"
+                src="https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Albania"
+              />
+              <div className="story-cat">Cost of Living · Albania</div>
 
-                <div className="story-cat">{article.category}</div>
+              <Link
+                href="/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="story-title">
+                  What $1,000 a Month Gets You in Gjirokastër
+                </div>
+              </Link>
 
-                <Link href={article.href} style={{ textDecoration: "none" }}>
-                  <div className="story-title">{article.title}</div>
-                </Link>
+              <Link
+                href="/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2"
+                className="story-read"
+              >
+                Read this story →
+              </Link>
+            </div>
 
-                <Link href={article.href} className="story-read">
-                  Read this story →
-                </Link>
-              </div>
-            ))}
+            <div className="story-item">
+              <img
+                className="story-img"
+                src="https://images.pexels.com/photos/15894001/pexels-photo-15894001.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Cambodia"
+              />
+              <div className="story-cat">Cost of Living · Cambodia</div>
+
+              <Link
+                href="/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="story-title">
+                  What $1,000 a Month Gets You in Siem Reap
+                </div>
+              </Link>
+
+              <Link
+                href="/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2"
+                className="story-read"
+              >
+                Read this story →
+              </Link>
+            </div>
           </div>
 
           <div className="bf-col">
-            <div className="mag-section-label">Fresh From the Archive</div>
+            <div className="mag-section-label">The Visa File</div>
 
-            {dailyArticles.slice(2, 4).map((article) => (
-              <div className="story-item" key={article.href}>
-                <img
-                  className="story-img"
-                  src={article.image}
-                  alt={article.alt}
-                />
+            <div className="story-item">
+              <img
+                className="story-img"
+                src="https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Ireland"
+              />
+              <div className="story-cat">Visas &amp; Residency · Ireland</div>
 
-                <div className="story-cat">{article.category}</div>
+              <Link
+                href="/articles/ireland-residency-options-for-american-retirees-v2"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="story-title">
+                  Residency Options for American Retirees in Ireland
+                </div>
+              </Link>
 
-                <Link href={article.href} style={{ textDecoration: "none" }}>
-                  <div className="story-title">{article.title}</div>
-                </Link>
+              <Link
+                href="/articles/ireland-residency-options-for-american-retirees-v2"
+                className="story-read"
+              >
+                Read this story →
+              </Link>
+            </div>
 
-                <Link href={article.href} className="story-read">
-                  Read this story →
-                </Link>
-              </div>
-            ))}
+            <div className="story-item">
+              <img
+                className="story-img"
+                src="https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Georgia"
+              />
+              <div className="story-cat">Visas &amp; Residency · Georgia</div>
+
+              <Link
+                href="/articles/georgia-residency-options-for-us-retirees"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="story-title">
+                  Residency Options for U.S. Retirees in Georgia
+                </div>
+              </Link>
+
+              <Link
+                href="/articles/georgia-residency-options-for-us-retirees"
+                className="story-read"
+              >
+                Read this story →
+              </Link>
+            </div>
           </div>
 
           <div className="bf-col">
@@ -470,211 +338,19 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* ── RETIREMENT FINDER ── */}
+        {/* ── RETIREMENT FINDER — MOVED HERE, DESTINATION REPORT REMOVED ── */}
         <div className="section-banner">Find Your Retirement Match</div>
 
         <section
           style={{
-            position: "relative",
-            overflow: "hidden",
-            padding: "20px 36px",
-            borderTop: "1px solid #2d2416",
-            borderBottom: "1px solid #2d2416",
-            background: "#faf5e9",
+            padding: "28px 36px",
+            border: "1px solid #2d2416",
+            background: "rgba(250, 245, 233, 0.45)",
             marginBottom: "36px",
           }}
         >
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              backgroundImage:
-                "linear-gradient(90deg, rgba(250,245,233,0.9) 0%, rgba(250,245,233,0.82) 48%, rgba(250,245,233,0.6) 100%), url('/pexels-asadphoto-29346151.jpg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              zIndex: 0,
-            }}
-          />
-
-          <div
-            style={{
-              position: "relative",
-              zIndex: 1,
-              border: "2px solid #2d2416",
-              background: "rgba(250,245,233,0.88)",
-              padding: "22px 28px",
-            }}
-          >
-            <div>
-              <div
-                style={{
-                  fontSize: 13,
-                  letterSpacing: "0.22em",
-                  textTransform: "uppercase",
-                  color: "#a47a12",
-                  marginBottom: 8,
-                  fontFamily: "var(--font-garamond), Georgia, serif",
-                }}
-              >
-                Personal Retirement Match
-              </div>
-
-              <h3
-                style={{
-                  margin: "0 0 10px",
-                  color: "#1a0f00",
-                  fontSize: "clamp(28px, 3.5vw, 42px)",
-                  lineHeight: 1,
-                  fontWeight: 500,
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                }}
-              >
-                Find the retirement country
-                <br />
-                that fits your life.
-              </h3>
-
-              <p
-                style={{
-                  margin: 0,
-                  color: "#2d2416",
-                  fontSize: 19,
-                  lineHeight: 1.4,
-                  maxWidth: 760,
-                  fontFamily: "var(--font-garamond), Georgia, serif",
-                }}
-              >
-                Answer 6 simple questions. See countries that match your
-                budget, healthcare needs, climate, and lifestyle.
-              </p>
-            </div>
-
-            <div style={{ marginTop: 18 }}>
-              <RetirementFinder defaultOpen={false} />
-            </div>
-          </div>
+          <RetirementFinder defaultOpen={false} />
         </section>
-
-        {/* ── DESTINATIONS STRIP ── */}
-        <div className="section-banner">
-          The Destination Report · At a Glance
-        </div>
-
-        <div className="dest-strip">
-          <div className="dest-label">
-            Best value destinations for Americans retiring abroad
-          </div>
-
-          <div
-            className="dest-row"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(6, minmax(0, 1fr))",
-              gap: "8px",
-            }}
-          >
-            {destinationCards.map((destination) => (
-              <Link
-                key={destination.id}
-                href={`/destinations/${destination.id}`}
-                className="dest-card"
-                style={{
-                  position: "relative",
-                  minHeight: 140,
-                  overflow: "hidden",
-                  display: "block",
-                  padding: 0,
-                  textDecoration: "none",
-                  background: "#1a0f00",
-                  border: "1px solid #c9a84c",
-                }}
-              >
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    backgroundImage: `url(${destination.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    transform: "scale(1.04)",
-                  }}
-                />
-
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    background:
-                      "linear-gradient(to top, rgba(17,10,2,0.92) 0%, rgba(17,10,2,0.62) 50%, rgba(17,10,2,0.2) 100%)",
-                  }}
-                />
-
-                <div
-                  style={{
-                    position: "relative",
-                    zIndex: 2,
-                    minHeight: 140,
-                    padding: "12px 10px",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "flex-end",
-                    textAlign: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      color: "#f3dfab",
-                      fontSize: 10,
-                      letterSpacing: "0.14em",
-                      textTransform: "uppercase",
-                      marginBottom: 5,
-                      fontFamily: "var(--font-playfair), Georgia, serif",
-                    }}
-                  >
-                    {destination.flag}{" "}
-                    {destination.rank ? `#${destination.rank}` : "Featured"}
-                  </div>
-
-                  <div
-                    style={{
-                      color: "#ffffff",
-                      fontSize: 21,
-                      lineHeight: 1.05,
-                      marginBottom: 5,
-                      fontFamily: "var(--font-playfair), Georgia, serif",
-                    }}
-                  >
-                    {destination.name}
-                  </div>
-
-                  <div
-                    style={{
-                      color: "#f6ead0",
-                      fontSize: 13,
-                      fontStyle: "italic",
-                      marginBottom: 5,
-                      fontFamily: "var(--font-garamond), Georgia, serif",
-                    }}
-                  >
-                    {destination.cost}
-                  </div>
-
-                  <div
-                    style={{
-                      color: "#f3dfab",
-                      fontSize: 10,
-                      letterSpacing: "0.12em",
-                      textTransform: "uppercase",
-                      fontFamily: "var(--font-playfair), Georgia, serif",
-                    }}
-                  >
-                    {destination.tag}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
 
         <div className="ornament">— ✦ —</div>
 
