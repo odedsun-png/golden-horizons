@@ -21,6 +21,14 @@ export default function SubscribeBox({
 
   const isSidebar = variant === "sidebar";
 
+  const bonusItems = [
+    "Monthly budget checklist",
+    "Visa questions to ask first",
+    "Healthcare comparison guide",
+    "Housing and rental red flags",
+    "Country shortlist worksheet",
+  ];
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
@@ -67,26 +75,28 @@ export default function SubscribeBox({
         <div
           className={[
             "grid gap-0",
-            isSidebar ? "grid-cols-1" : "grid-cols-1 md:grid-cols-[1.25fr_0.75fr]",
+            isSidebar
+              ? "grid-cols-1"
+              : "grid-cols-1 md:grid-cols-[1.2fr_0.8fr]",
           ].join(" ")}
         >
           {/* Form side */}
           <div
             className={[
               "bg-[#faf5e9]",
-              isSidebar ? "p-5" : "p-5 md:p-6",
+              isSidebar ? "p-5" : "p-5 md:p-7",
             ].join(" ")}
           >
             <div className="mx-auto mb-3 h-[2px] w-14 bg-[#a68d5c]" />
 
             <p
               className={[
-                "text-center uppercase tracking-[0.16em] text-[#6b5d47]",
+                "text-center uppercase tracking-[0.18em] text-[#8b6914]",
                 isSidebar ? "mb-2 text-[9px]" : "mb-2 text-[10px]",
               ].join(" ")}
               style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
-              Every morning. In your inbox. Free.
+              Free Guide + Daily Story
             </p>
 
             <h3
@@ -96,20 +106,23 @@ export default function SubscribeBox({
               ].join(" ")}
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              We find the place.
+              Find your next chapter
               <br />
-              You live the life.
+              before you choose a country.
             </h3>
 
             <p
               className={[
                 "mx-auto text-center leading-relaxed text-[#4a3f2f]",
-                isSidebar ? "mb-4 text-sm" : "mb-4 max-w-xl text-sm md:text-[15px]",
+                isSidebar
+                  ? "mb-4 text-sm"
+                  : "mb-5 max-w-xl text-sm md:text-[15px]",
               ].join(" ")}
               style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
-              Get one real retirement-abroad story with real costs, practical
-              tips, and places worth knowing.
+              Get one real retirement-abroad story every morning — plus the free
+              starter kit to compare costs, visas, healthcare, housing, and
+              lifestyle before you move.
             </p>
 
             <form
@@ -129,7 +142,7 @@ export default function SubscribeBox({
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                   className={[
-                    "w-full border border-[#c9b896] bg-[#fffaf0] text-[#1e1408] placeholder-[#9b8c6f] focus:border-[#a68d5c] focus:outline-none",
+                    "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
                     isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
                   ].join(" ")}
                   style={{
@@ -143,7 +156,7 @@ export default function SubscribeBox({
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                   className={[
-                    "w-full border border-[#c9b896] bg-[#fffaf0] text-[#1e1408] placeholder-[#9b8c6f] focus:border-[#a68d5c] focus:outline-none",
+                    "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
                     isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
                   ].join(" ")}
                   style={{
@@ -158,7 +171,7 @@ export default function SubscribeBox({
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   className={[
-                    "w-full border border-[#c9b896] bg-[#fffaf0] text-[#1e1408] placeholder-[#9b8c6f] focus:border-[#a68d5c] focus:outline-none",
+                    "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
                     isSidebar ? "px-3 py-2 text-sm" : "px-3 py-2.5 text-sm",
                   ].join(" ")}
                   style={{
@@ -171,14 +184,16 @@ export default function SubscribeBox({
                 type="submit"
                 disabled={status === "loading"}
                 className={[
-                  "w-full border-2 border-[#2d2416] bg-[#2d2416] uppercase tracking-[0.1em] text-[#faf5e9] transition-colors hover:bg-[#1e1408] hover:border-[#1e1408] disabled:cursor-not-allowed disabled:opacity-50",
-                  isSidebar ? "px-4 py-2.5 text-xs" : "px-5 py-3 text-xs md:text-sm",
+                  "w-full border-2 border-[#2d2416] bg-[#2d2416] uppercase tracking-[0.1em] text-[#faf5e9] transition-colors hover:border-[#1e1408] hover:bg-[#1e1408] disabled:cursor-not-allowed disabled:opacity-50",
+                  isSidebar
+                    ? "px-4 py-2.5 text-xs"
+                    : "px-5 py-3 text-xs md:text-sm",
                 ].join(" ")}
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
                 {status === "loading"
-                  ? "Subscribing..."
-                  : "Start My Free Subscription →"}
+                  ? "Sending..."
+                  : "Get the Free Starter Kit →"}
               </button>
             </form>
 
@@ -205,12 +220,12 @@ export default function SubscribeBox({
             </p>
           </div>
 
-          {/* Compact PDF value side */}
+          {/* Bonus side */}
           {!isSidebar && (
-            <aside className="flex items-center border-t-2 border-[#2d2416] bg-[#2d2416] p-5 md:border-l-2 md:border-t-0 md:p-6">
+            <aside className="flex items-center border-t-2 border-[#2d2416] bg-[#2d2416] p-5 md:border-l-2 md:border-t-0 md:p-7">
               <div className="w-full">
                 <p
-                  className="mb-2 text-center text-[10px] uppercase tracking-[0.16em] text-[#a68d5c]"
+                  className="mb-2 text-center text-[10px] uppercase tracking-[0.18em] text-[#c9a84c]"
                   style={{
                     fontFamily: "var(--font-playfair), Georgia, serif",
                   }}
@@ -218,28 +233,54 @@ export default function SubscribeBox({
                   Free Reader Bonus
                 </p>
 
+                <div className="mx-auto mb-5 max-w-[210px] border border-[#c9a84c] bg-[#faf5e9] px-4 py-5 text-center shadow-sm">
+                  <div
+                    className="mb-2 text-[10px] uppercase tracking-[0.18em] text-[#8b6914]"
+                    style={{
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                    }}
+                  >
+                    Golden Horizons
+                  </div>
+
+                  <div
+                    className="text-xl leading-tight text-[#1e1408]"
+                    style={{
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                    }}
+                  >
+                    Retirement Abroad
+                    <br />
+                    Starter Kit
+                  </div>
+
+                  <div
+                    className="mt-3 text-[11px] uppercase tracking-[0.14em] text-[#8b6914]"
+                    style={{
+                      fontFamily: "var(--font-garamond), Georgia, serif",
+                    }}
+                  >
+                    2026 Edition
+                  </div>
+                </div>
+
                 <h4
                   className="mb-3 text-center text-xl leading-tight text-[#faf5e9] md:text-2xl"
                   style={{
                     fontFamily: "var(--font-playfair), Georgia, serif",
                   }}
                 >
-                  Retirement Abroad Checklist
+                  Retirement Abroad Starter Kit
                 </h4>
 
                 <div className="space-y-2">
-                  {[
-                    "Visa basics",
-                    "Healthcare questions",
-                    "Monthly cost checklist",
-                  ].map((item) => (
+                  {bonusItems.map((item) => (
                     <div key={item} className="flex items-start gap-2">
-                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#a68d5c]" />
+                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#c9a84c]" />
                       <p
-                        className="text-sm leading-snug text-[#c9b896]"
+                        className="text-sm leading-snug text-[#d9c8a6]"
                         style={{
-                          fontFamily:
-                            "var(--font-garamond), Georgia, serif",
+                          fontFamily: "var(--font-garamond), Georgia, serif",
                         }}
                       >
                         {item}
@@ -249,12 +290,12 @@ export default function SubscribeBox({
                 </div>
 
                 <p
-                  className="mt-4 text-center text-[11px] uppercase tracking-[0.12em] text-[#a68d5c]"
+                  className="mt-4 text-center text-[11px] uppercase tracking-[0.12em] text-[#c9a84c]"
                   style={{
                     fontFamily: "var(--font-playfair), Georgia, serif",
                   }}
                 >
-                  Subscribe to receive it
+                  Delivered instantly when you subscribe
                 </p>
               </div>
             </aside>
@@ -321,8 +362,8 @@ export default function SubscribeBox({
               className="mb-5 text-center text-base leading-relaxed text-[#4a3f2f]"
               style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
-              Thank you for joining us. Check your inbox for the next step and
-              your retirement-abroad checklist.
+              Thank you for joining us. Check your inbox for your next step and
+              the free Retirement Abroad Starter Kit.
             </p>
 
             <div className="mb-5 border border-[#c9b896] bg-[#f5ede0] p-5">
@@ -339,7 +380,7 @@ export default function SubscribeBox({
                 {[
                   "Check your inbox for confirmation.",
                   "Confirm your subscription.",
-                  "Receive your free checklist.",
+                  "Receive your free starter kit.",
                 ].map((item, index) => (
                   <div key={item} className="flex items-start gap-3">
                     <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#a68d5c] text-xs font-bold text-[#faf5e9]">
