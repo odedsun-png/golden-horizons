@@ -57,31 +57,83 @@ export default function DestinationsPage() {
           <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
         </nav>
 
-        <div className="cine-hero">
+        {/* BRIGHT EDITORIAL HERO */}
+        <section
+          style={{
+            position: "relative",
+            background: "#faf5e9",
+            borderBottom: "1px solid #2d2416",
+            overflow: "hidden",
+          }}
+        >
           <img
-            className="cine-img"
-            src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Algarve coast Portugal retirement"
+            src="/European%20caffee.jpg"
+            alt="Older adults enjoying a warm European café street, a realistic retirement abroad lifestyle scene"
+            style={{
+              display: "block",
+              width: "100%",
+              height: 460,
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
           />
-          <div className="cine-overlay" />
 
-          <div className="cine-content">
-            <div className="cine-eyebrow">
+          <div
+            style={{
+              position: "absolute",
+              left: 42,
+              bottom: 34,
+              maxWidth: 620,
+              background: "rgba(250, 245, 233, 0.94)",
+              border: "1px solid #c9a84c",
+              padding: "28px 32px",
+              boxShadow: "0 14px 38px rgba(45, 36, 22, 0.18)",
+            }}
+          >
+            <div
+              style={{
+                fontSize: 12,
+                letterSpacing: "0.26em",
+                textTransform: "uppercase",
+                color: "#8b6914",
+                marginBottom: 12,
+                fontFamily: "var(--font-playfair), Georgia, serif",
+              }}
+            >
               The Destination Report · 2026 World Rankings
             </div>
-            <h1 className="cine-headline">
+
+            <h1
+              style={{
+                margin: "0 0 14px",
+                color: "#1a0f00",
+                fontSize: "clamp(40px, 5vw, 64px)",
+                lineHeight: 0.95,
+                fontWeight: 500,
+                fontFamily: "var(--font-playfair), Georgia, serif",
+              }}
+            >
               The places where <em>your money</em> sets you free.
             </h1>
-            <p className="cine-sub">
+
+            <p
+              style={{
+                margin: 0,
+                color: "#2d2416",
+                fontSize: 21,
+                lineHeight: 1.4,
+                fontFamily: "var(--font-garamond), Georgia, serif",
+              }}
+            >
               Every morning we find them. Every morning we bring them to you.
             </p>
           </div>
-        </div>
+        </section>
 
         <div className="hero-caption">
           <p>
-            Algarve coast, Portugal — where couples retire well on $2,500/month.
-            Warm winters. English spoken. Healthcare included.
+            Mediterranean café life — the slower, warmer rhythm many Americans
+            are finding abroad.
           </p>
         </div>
 
