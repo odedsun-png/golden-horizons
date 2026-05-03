@@ -73,7 +73,7 @@ export default async function ArticlesPage() {
             All Stories
           </Link>
           <Link href="/destinations">Destinations</Link>
-          <Link href="/#subscribe">Subscribe Free</Link>
+          <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
         </nav>
 
         <div className="page-header">
@@ -100,7 +100,7 @@ export default async function ArticlesPage() {
             Compare costs, healthcare, visas, and lifestyle across top
             retirement countries.
           </p>
-          <Link href="/#free-guide" className="mag-button">
+          <Link href="/?scrollTo=subscribe" className="mag-button">
             Get the Free Guide →
           </Link>
         </section>
