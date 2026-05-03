@@ -454,7 +454,7 @@ export default function HomePage() {
           style={{
             position: "relative",
             overflow: "hidden",
-            padding: "34px 36px",
+            padding: "20px 36px",
             borderTop: "1px solid #2d2416",
             borderBottom: "1px solid #2d2416",
             background: "#faf5e9",
@@ -466,7 +466,7 @@ export default function HomePage() {
               position: "absolute",
               inset: 0,
               backgroundImage:
-                "linear-gradient(90deg, rgba(250,245,233,0.88) 0%, rgba(250,245,233,0.78) 48%, rgba(250,245,233,0.52) 100%), url('/pexels-asadphoto-29346151.jpg')",
+                "linear-gradient(90deg, rgba(250,245,233,0.9) 0%, rgba(250,245,233,0.82) 48%, rgba(250,245,233,0.6) 100%), url('/pexels-asadphoto-29346151.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               zIndex: 0,
@@ -478,73 +478,55 @@ export default function HomePage() {
               position: "relative",
               zIndex: 1,
               border: "2px solid #2d2416",
-              background: "rgba(250,245,233,0.9)",
-              padding: "30px 34px",
+              background: "rgba(250,245,233,0.88)",
+              padding: "22px 28px",
             }}
           >
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "52px 1fr",
-                gap: "24px",
-                alignItems: "center",
-              }}
-            >
+            <div>
               <div
                 style={{
-                  fontSize: 34,
-                  lineHeight: 1,
+                  fontSize: 13,
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  color: "#a47a12",
+                  marginBottom: 8,
+                  fontFamily: "var(--font-garamond), Georgia, serif",
                 }}
               >
-                🎯
+                Personal Retirement Match
               </div>
 
-              <div>
-                <div
-                  style={{
-                    fontSize: 13,
-                    letterSpacing: "0.22em",
-                    textTransform: "uppercase",
-                    color: "#a47a12",
-                    marginBottom: 8,
-                    fontFamily: "var(--font-garamond), Georgia, serif",
-                  }}
-                >
-                  Personal Retirement Match
-                </div>
+              <h3
+                style={{
+                  margin: "0 0 10px",
+                  color: "#1a0f00",
+                  fontSize: "clamp(28px, 3.5vw, 42px)",
+                  lineHeight: 1,
+                  fontWeight: 500,
+                  fontFamily: "var(--font-playfair), Georgia, serif",
+                }}
+              >
+                Find the retirement country
+                <br />
+                that fits your life.
+              </h3>
 
-                <h3
-                  style={{
-                    margin: "0 0 12px",
-                    color: "#1a0f00",
-                    fontSize: "clamp(30px, 4vw, 44px)",
-                    lineHeight: 0.98,
-                    fontWeight: 500,
-                    fontFamily: "var(--font-playfair), Georgia, serif",
-                  }}
-                >
-                  Find the retirement country
-                  <br />
-                  that fits your life.
-                </h3>
-
-                <p
-                  style={{
-                    margin: 0,
-                    color: "#2d2416",
-                    fontSize: 21,
-                    lineHeight: 1.45,
-                    maxWidth: 780,
-                    fontFamily: "var(--font-garamond), Georgia, serif",
-                  }}
-                >
-                  Answer 6 simple questions. See countries that match your
-                  budget, healthcare needs, climate, and lifestyle.
-                </p>
-              </div>
+              <p
+                style={{
+                  margin: 0,
+                  color: "#2d2416",
+                  fontSize: 19,
+                  lineHeight: 1.4,
+                  maxWidth: 760,
+                  fontFamily: "var(--font-garamond), Georgia, serif",
+                }}
+              >
+                Answer 6 simple questions. See countries that match your
+                budget, healthcare needs, climate, and lifestyle.
+              </p>
             </div>
 
-            <div style={{ marginTop: 24 }}>
+            <div style={{ marginTop: 18 }}>
               <RetirementFinder defaultOpen={false} />
             </div>
           </div>
