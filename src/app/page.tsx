@@ -86,7 +86,9 @@ export default function HomePage() {
           </Link>
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
-          <a href="#subscribe">Subscribe Free</a>
+          <Link href="#subscribe" scroll={false}>
+            Subscribe Free
+          </Link>
         </nav>
 
         {/* ── HERO ── */}
@@ -164,8 +166,8 @@ export default function HomePage() {
 
         {/* ── INLINE SUBSCRIBE BOX ── */}
         <div id="subscribe" style={{ scrollMarginTop: "110px" }}>
-  <SubscribeBox variant="inline" />
-</div>
+          <SubscribeBox variant="inline" />
+        </div>
 
         {/* ── BELOW FOLD ── */}
         <div className="section-banner">Inside This Issue</div>
