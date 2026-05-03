@@ -470,7 +470,7 @@ export default function HomePage() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "auto 1fr auto",
+                gridTemplateColumns: "auto 1fr",
                 gap: "22px",
                 alignItems: "center",
               }}
@@ -506,41 +506,29 @@ export default function HomePage() {
                   style={{
                     margin: 0,
                     color: "#1a0f00",
-                    fontSize: 28,
+                    fontSize: 30,
                     lineHeight: 1.1,
                     fontFamily: "var(--font-playfair), Georgia, serif",
                   }}
                 >
-                  Find the country that actually fits your life.
+                  Not sure where to retire abroad?
+                  <br />
+                  Start with your lifestyle.
                 </h3>
 
                 <p
                   style={{
-                    margin: "8px 0 0",
+                    margin: "10px 0 0",
                     color: "#4a3f2f",
                     fontSize: 16,
                     lineHeight: 1.45,
                     fontFamily: "var(--font-garamond), Georgia, serif",
                   }}
                 >
-                  Answer 6 quick questions and discover destinations that match
-                  your budget, healthcare needs, lifestyle, climate, and dream
+                  Answer 6 quick questions and see which countries fit your
+                  budget, healthcare needs, climate, safety comfort, and
                   retirement pace.
                 </p>
-              </div>
-
-              <div
-                style={{
-                  background: "#9b7818",
-                  color: "#fff8e6",
-                  padding: "14px 20px",
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                  fontWeight: 700,
-                  fontSize: 15,
-                  whiteSpace: "nowrap",
-                }}
-              >
-                Start My Match →
               </div>
             </div>
 
