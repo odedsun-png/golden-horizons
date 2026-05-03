@@ -44,6 +44,26 @@ export default function HomePage() {
     return () => window.clearInterval(interval);
   }, [slides.length]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if (window.location.hash === "#subscribe") {
+      const scrollToSubscribe = () => {
+        const subscribeBox = document.getElementById("subscribe");
+
+        if (subscribeBox) {
+          subscribeBox.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      };
+
+      window.setTimeout(scrollToSubscribe, 300);
+      window.setTimeout(scrollToSubscribe, 900);
+    }
+  }, []);
+
   return (
     <main className="mag-page">
       <div className="site">
@@ -86,9 +106,7 @@ export default function HomePage() {
           </Link>
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
-          <Link href="#subscribe" scroll={false}>
-            Subscribe Free
-          </Link>
+          <Link href="#subscribe">Subscribe Free</Link>
         </nav>
 
         {/* ── HERO ── */}
