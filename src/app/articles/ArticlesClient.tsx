@@ -158,9 +158,10 @@ export default function ArticlesClient({
   }
 
   function handleSearch(value: string) {
-    setSearchQuery(value);
-    setVisibleCount(18);
-  }
+  setSearchQuery(value);
+  setSelectedCategory(null);
+  setVisibleCount(18);
+}
 
   function clearFilters() {
     setSelectedCategory(null);
