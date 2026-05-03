@@ -982,21 +982,21 @@ html {
    =================================================== */
 
 .dateline {
-  font-size: 13px;
-  line-height: 1.4;
-  color: #2d2416;
-  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #24170a;
+  font-weight: 600;
 }
 
 .issue-line {
-  font-size: 14px;
-  line-height: 1.45;
-  color: #24170a;
-  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f1408;
+  font-weight: 600;
 }
 
 .issue-tag strong {
-  font-weight: 700;
+  font-weight: 800;
   color: #1a0f00;
 }
 
@@ -1007,11 +1007,11 @@ html {
 
 @media (max-width: 768px) {
   .dateline {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .issue-line {
-    font-size: 12px;
-    line-height: 1.35;
+    font-size: 13px;
+    line-height: 1.4;
   }
 }
