@@ -182,7 +182,16 @@ export default function DestinationsPage() {
         <div className="more-section">
           <div className="more-kicker">More Destinations · All 26 Ranked</div>
 
-          <div className="more-grid">
+          <div
+            className="more-grid"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+              borderLeft: "1px solid #c9a84c",
+              borderTop: "1px solid #c9a84c",
+              gap: 0,
+            }}
+          >
             {more.map((dest) => {
               const monthlyCost = Object.values(dest.costOfLiving).reduce(
                 (a, b) => a + b,
@@ -194,14 +203,109 @@ export default function DestinationsPage() {
                   key={dest.id}
                   href={`/destinations/${dest.id}`}
                   className="more-card"
+                  style={{
+                    position: "relative",
+                    display: "block",
+                    minHeight: 230,
+                    overflow: "hidden",
+                    textDecoration: "none",
+                    background: "#1a0f00",
+                    borderRight: "1px solid #c9a84c",
+                    borderBottom: "1px solid #c9a84c",
+                    padding: 0,
+                  }}
                 >
-                  <span className="mc-flag">{dest.flag}</span>
-                  <div className="mc-name">{dest.name}</div>
-                  <div className="mc-tagline">
-                    {dest.description.slice(0, 60)}...
-                  </div>
-                  <div className="mc-cost">
-                    from ${monthlyCost.toLocaleString()}/mo
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      backgroundImage: `url(${dest.image})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      transform: "scale(1.03)",
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      background:
+                        "linear-gradient(to top, rgba(17,10,2,0.94) 0%, rgba(17,10,2,0.66) 48%, rgba(17,10,2,0.22) 100%)",
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      position: "relative",
+                      zIndex: 2,
+                      minHeight: 230,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "flex-end",
+                      padding: "16px 14px 14px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "#f3dfab",
+                        fontSize: 11,
+                        letterSpacing: "0.16em",
+                        textTransform: "uppercase",
+                        marginBottom: 8,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                      }}
+                    >
+                      #{dest.rank} Ranked · {dest.flag}
+                    </div>
+
+                    <div
+                      style={{
+                        color: "#ffffff",
+                        fontSize: 25,
+                        lineHeight: 1.04,
+                        marginBottom: 8,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                      }}
+                    >
+                      {dest.name}
+                    </div>
+
+                    <div
+                      style={{
+                        color: "#f6ead0",
+                        fontSize: 13,
+                        lineHeight: 1.35,
+                        marginBottom: 8,
+                        fontFamily: "var(--font-garamond), Georgia, serif",
+                      }}
+                    >
+                      {dest.description.slice(0, 82)}...
+                    </div>
+
+                    <div
+                      style={{
+                        color: "#f3dfab",
+                        fontSize: 13,
+                        fontStyle: "italic",
+                        marginBottom: 8,
+                        fontFamily: "var(--font-garamond), Georgia, serif",
+                      }}
+                    >
+                      from ${monthlyCost.toLocaleString()}/mo
+                    </div>
+
+                    <span
+                      style={{
+                        color: "#ffffff",
+                        fontSize: 12,
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                      }}
+                    >
+                      View Profile →
+                    </span>
                   </div>
                 </Link>
               );
