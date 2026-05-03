@@ -143,14 +143,31 @@ export default function ArticlesClient({
     })),
   ];
 
+  function scrollToResults() {
+    window.setTimeout(() => {
+      const resultsSection = document.getElementById("article-results");
+
+      if (!resultsSection) return;
+
+      const y = resultsSection.getBoundingClientRect().top + window.scrollY - 90;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }, 150);
+  }
+
   function selectCategory(category: string | null) {
     setSelectedCategory(category);
     setVisibleCount(18);
+    scrollToResults();
   }
 
   function clearFilters() {
     setSelectedCategory(null);
     setVisibleCount(18);
+    scrollToResults();
   }
 
   return (
@@ -419,7 +436,7 @@ export default function ArticlesClient({
         </>
       )}
 
-      <div className="section-banner">
+      <div id="article-results" className="section-banner">
         {selectedCategory ? `${selectedCategory} Stories` : "Latest Stories"}
       </div>
 
