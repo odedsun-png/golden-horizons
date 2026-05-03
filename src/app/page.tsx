@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import SubscribeBox from "@/components/SubscribeBox";
 import RetirementFinder from "@/components/RetirementFinder";
+import { countries } from "@/lib/countries";
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -48,6 +49,57 @@ export default function HomePage() {
         "Historic streets, sea views, walkable neighborhoods, and a softer rhythm — with the numbers checked before the dream begins.",
     },
   ];
+
+  const destinationCards = [
+    {
+      id: "portugal",
+      name: "Portugal",
+      cost: "from $1,800/mo",
+      tag: "Top Ranked",
+    },
+    {
+      id: "panama",
+      name: "Panama",
+      cost: "from $1,600/mo",
+      tag: "Best Healthcare",
+    },
+    {
+      id: "mexico",
+      name: "Mexico",
+      cost: "from $1,400/mo",
+      tag: "Most Popular",
+    },
+    {
+      id: "vietnam",
+      name: "Vietnam",
+      cost: "from $1,200/mo",
+      tag: "Best Value",
+    },
+    {
+      id: "belize",
+      name: "Belize",
+      cost: "from $1,700/mo",
+      tag: "English Only",
+    },
+    {
+      id: "ecuador",
+      name: "Ecuador",
+      cost: "from $1,300/mo",
+      tag: "Hidden Gem",
+    },
+  ].map((item) => {
+    const country = countries.find((c) => c.id === item.id);
+
+    return {
+      ...item,
+      image:
+        country?.image ||
+        "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=900",
+      flag: country?.flag || "",
+      rank: country?.rank,
+      description: country?.description || item.tag,
+    };
+  });
 
   useEffect(() => {
     const interval = window.setInterval(() => {
@@ -400,13 +452,102 @@ export default function HomePage() {
 
         <section
           style={{
-            padding: "28px 36px",
-            border: "1px solid #2d2416",
-            background: "rgba(250, 245, 233, 0.45)",
+            padding: "30px 36px",
+            borderTop: "1px solid #2d2416",
+            borderBottom: "1px solid #2d2416",
+            background:
+              "linear-gradient(135deg, rgba(250,245,233,0.96), rgba(245,237,216,0.92))",
             marginBottom: "36px",
           }}
         >
-          <RetirementFinder defaultOpen={false} />
+          <div
+            style={{
+              border: "2px solid #2d2416",
+              background: "#faf5e9",
+              padding: "26px 30px",
+            }}
+          >
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "auto 1fr auto",
+                gap: "22px",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: 34,
+                  width: 48,
+                  height: 48,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                🎯
+              </div>
+
+              <div>
+                <div
+                  style={{
+                    fontSize: 11,
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    color: "#8b6914",
+                    marginBottom: 7,
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                  }}
+                >
+                  Personal Retirement Match
+                </div>
+
+                <h3
+                  style={{
+                    margin: 0,
+                    color: "#1a0f00",
+                    fontSize: 28,
+                    lineHeight: 1.1,
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                  }}
+                >
+                  Find the country that actually fits your life.
+                </h3>
+
+                <p
+                  style={{
+                    margin: "8px 0 0",
+                    color: "#4a3f2f",
+                    fontSize: 16,
+                    lineHeight: 1.45,
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                  }}
+                >
+                  Answer 6 quick questions and discover destinations that match
+                  your budget, healthcare needs, lifestyle, climate, and dream
+                  retirement pace.
+                </p>
+              </div>
+
+              <div
+                style={{
+                  background: "#9b7818",
+                  color: "#fff8e6",
+                  padding: "14px 20px",
+                  fontFamily: "var(--font-playfair), Georgia, serif",
+                  fontWeight: 700,
+                  fontSize: 15,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                Start My Match →
+              </div>
+            </div>
+
+            <div style={{ marginTop: 18 }}>
+              <RetirementFinder defaultOpen={false} />
+            </div>
+          </div>
         </section>
 
         {/* ── DESTINATIONS STRIP ── */}
@@ -419,47 +560,112 @@ export default function HomePage() {
             Best value destinations for Americans retiring abroad
           </div>
 
-          <div className="dest-row">
-            {[
-              {
-                name: "Portugal",
-                cost: "from $1,800/mo",
-                tag: "Top Ranked",
-              },
-              {
-                name: "Panama",
-                cost: "from $1,600/mo",
-                tag: "Best Healthcare",
-              },
-              {
-                name: "Mexico",
-                cost: "from $1,400/mo",
-                tag: "Most Popular",
-              },
-              {
-                name: "Vietnam",
-                cost: "from $1,200/mo",
-                tag: "Best Value",
-              },
-              {
-                name: "Belize",
-                cost: "from $1,700/mo",
-                tag: "English Only",
-              },
-              {
-                name: "Ecuador",
-                cost: "from $1,300/mo",
-                tag: "Hidden Gem",
-              },
-            ].map((destination) => (
+          <div
+            className="dest-row"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(6, minmax(0, 1fr))",
+              gap: "8px",
+            }}
+          >
+            {destinationCards.map((destination) => (
               <Link
-                key={destination.name}
-                href="/destinations"
+                key={destination.id}
+                href={`/destinations/${destination.id}`}
                 className="dest-card"
+                style={{
+                  position: "relative",
+                  minHeight: 140,
+                  overflow: "hidden",
+                  display: "block",
+                  padding: 0,
+                  textDecoration: "none",
+                  background: "#1a0f00",
+                  border: "1px solid #c9a84c",
+                }}
               >
-                <div className="dest-name">{destination.name}</div>
-                <div className="dest-cost">{destination.cost}</div>
-                <div className="dest-tag">{destination.tag}</div>
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    backgroundImage: `url(${destination.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    transform: "scale(1.04)",
+                  }}
+                />
+
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    background:
+                      "linear-gradient(to top, rgba(17,10,2,0.92) 0%, rgba(17,10,2,0.62) 50%, rgba(17,10,2,0.2) 100%)",
+                  }}
+                />
+
+                <div
+                  style={{
+                    position: "relative",
+                    zIndex: 2,
+                    minHeight: 140,
+                    padding: "12px 10px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-end",
+                    textAlign: "center",
+                  }}
+                >
+                  <div
+                    style={{
+                      color: "#f3dfab",
+                      fontSize: 10,
+                      letterSpacing: "0.14em",
+                      textTransform: "uppercase",
+                      marginBottom: 5,
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                    }}
+                  >
+                    {destination.flag}{" "}
+                    {destination.rank ? `#${destination.rank}` : "Featured"}
+                  </div>
+
+                  <div
+                    style={{
+                      color: "#ffffff",
+                      fontSize: 21,
+                      lineHeight: 1.05,
+                      marginBottom: 5,
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                    }}
+                  >
+                    {destination.name}
+                  </div>
+
+                  <div
+                    style={{
+                      color: "#f6ead0",
+                      fontSize: 13,
+                      fontStyle: "italic",
+                      marginBottom: 5,
+                      fontFamily: "var(--font-garamond), Georgia, serif",
+                    }}
+                  >
+                    {destination.cost}
+                  </div>
+
+                  <div
+                    style={{
+                      color: "#f3dfab",
+                      fontSize: 10,
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                    }}
+                  >
+                    {destination.tag}
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
