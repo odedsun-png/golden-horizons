@@ -46,7 +46,8 @@ export default function Footer() {
           The retirement abroad magazine for Americans who aren&rsquo;t done yet.
         </p>
 
-        <div
+        <nav
+          aria-label="Footer navigation"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -58,26 +59,55 @@ export default function Footer() {
             marginBottom: "20px",
           }}
         >
-          <Link href="/" style={linkStyle}>Website</Link>
+          <Link href="/" style={linkStyle}>
+            Website
+          </Link>
           <span style={separatorStyle}>|</span>
 
-          <Link href="/articles" style={linkStyle}>All Stories</Link>
+          <Link href="/articles" style={linkStyle}>
+            Articles
+          </Link>
           <span style={separatorStyle}>|</span>
 
-          <Link href="/destinations" style={linkStyle}>Destinations</Link>
+          <Link href="/destinations" style={linkStyle}>
+            Destinations
+          </Link>
           <span style={separatorStyle}>|</span>
 
-          <Link href="/about" style={linkStyle}>About</Link>
+          <Link href="/about" style={linkStyle}>
+            About
+          </Link>
           <span style={separatorStyle}>|</span>
 
-          <Link href="/privacy-policy" style={linkStyle}>Privacy</Link>
+          <Link href="/contact" style={linkStyle}>
+            Contact
+          </Link>
           <span style={separatorStyle}>|</span>
 
-          <Link href="/contact" style={linkStyle}>Contact</Link>
+          <Link href="/privacy-policy" style={linkStyle}>
+            Privacy Policy
+          </Link>
           <span style={separatorStyle}>|</span>
 
-          <Link href="/terms-of-use" style={linkStyle}>Terms</Link>
-        </div>
+          <Link href="/terms-of-use" style={linkStyle}>
+            Terms of Use
+          </Link>
+          <span style={separatorStyle}>|</span>
+
+          <Link href="/disclaimer" style={linkStyle}>
+            Disclaimer
+          </Link>
+          <span style={separatorStyle}>|</span>
+
+          <Link href="/affiliate-disclosure" style={linkStyle}>
+            Affiliate Disclosure
+          </Link>
+          <span style={separatorStyle}>|</span>
+
+          <Link href="/editorial-policy" style={linkStyle}>
+            Editorial Policy
+          </Link>
+        </nav>
 
         <p
           style={{
