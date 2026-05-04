@@ -17,6 +17,9 @@ const garamond = EB_Garamond({
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
+  verification: {
+  google: "h5_IRMvaBEQ-kmjeoPnofkbISPpSXpSBVC3QgGK0VP8",
+},
   metadataBase: new URL(siteUrl),
 
   title: {
