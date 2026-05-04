@@ -55,6 +55,7 @@ export async function generateMetadata({
 
   const canonicalSlug = await getCanonicalSlug(slug);
   const canonicalUrl = `${siteUrl}/articles/${canonicalSlug}`;
+
   const heroImage =
     article.heroImage ||
     article.image ||
@@ -412,19 +413,17 @@ export default async function ArticleDetailPage({
           </p>
 
           <div className="footer-links">
-            <Link href="/">Website</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
-            <Link href="/articles">All Stories</Link>
+            <Link href="/terms-of-use">Terms of Use</Link>
             <span>|</span>
-            <Link href="/destinations">Destinations</Link>
+            <Link href="/disclaimer">Disclaimer</Link>
             <span>|</span>
-            <Link href="/about">About</Link>
+            <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
             <span>|</span>
-            <Link href="/privacy-policy">Privacy</Link>
+            <Link href="/editorial-policy">Editorial Policy</Link>
             <span>|</span>
             <Link href="/contact">Contact</Link>
-            <span>|</span>
-            <Link href="/terms-of-use">Terms</Link>
           </div>
 
           <p style={{ marginTop: 12, fontSize: 11, opacity: 0.5 }}>
