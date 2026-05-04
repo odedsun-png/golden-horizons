@@ -1,5 +1,5 @@
 ---
-title: "Albania - What $1,000 a Month Gets You in GjirokastÃ«r — A Local's Perspective"
+title: "Albania - What $1,000 a Month Gets You in Gjirokastër — A Local's Perspective"
 category: Cost
 slug: albania-what-1000-a-month-gets-you-in-gjirokastr--v2
 date: 2026-04-29
