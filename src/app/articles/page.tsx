@@ -50,15 +50,25 @@ export const metadata: Metadata = {
 
 export default async function ArticlesPage() {
   const slugs = await getAllArticleSlugs();
+
   const articles = await Promise.all(
     slugs.map((slug) => getArticleBySlug(slug))
   );
 
-  const validArticles = articles.filter((article) => article !== null);
+  const validArticles = articles.filter(
+    (article): article is NonNullable<typeof article> => article !== null
+  );
 
-  const categoryGroups: Record<string, typeof validArticles> = {};
+  const editorPick = validArticles[0] || null;
 
-  validArticles.forEach((article) => {
+  // Keep the visible archive count consistent with the article grid count.
+  // The editor pick is shown separately, so it should not be counted again
+  // inside the archive list.
+  const archiveArticles = editorPick ? validArticles.slice(1) : validArticles;
+
+  const categoryGroups: Record<string, typeof archiveArticles> = {};
+
+  archiveArticles.forEach((article) => {
     const category = article.category || "Uncategorized";
 
     if (!categoryGroups[category]) {
@@ -69,7 +79,6 @@ export default async function ArticlesPage() {
   });
 
   const categories = Object.keys(categoryGroups).sort();
-  const editorPick = validArticles[0];
 
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -79,8 +88,8 @@ export default async function ArticlesPage() {
     description:
       "A library of Golden Horizons retirement abroad articles covering cost of living, healthcare, visas, safety, housing, lifestyle, and destinations.",
     url: `${siteUrl}/articles`,
-    numberOfItems: validArticles.length,
-    itemListElement: validArticles.map((article, index) => ({
+    numberOfItems: archiveArticles.length,
+    itemListElement: archiveArticles.map((article, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: article.title,
@@ -173,12 +182,12 @@ export default async function ArticlesPage() {
             Retirement Abroad Articles, Guides &amp; Cost Breakdowns
           </h1>
           <span className="ph-count">
-            {validArticles.length} articles · Updated daily
+            {archiveArticles.length} articles · Updated daily
           </span>
         </div>
 
         <ArticlesClient
-          articles={validArticles}
+          articles={archiveArticles}
           categoryGroups={categoryGroups}
           categories={categories}
           editorPick={editorPick}
