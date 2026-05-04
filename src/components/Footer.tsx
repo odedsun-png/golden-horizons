@@ -47,7 +47,7 @@ export default function Footer() {
         </p>
 
         <nav
-          aria-label="Footer navigation"
+          aria-label="Footer legal navigation"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -59,31 +59,6 @@ export default function Footer() {
             marginBottom: "20px",
           }}
         >
-          <Link href="/" style={linkStyle}>
-            Website
-          </Link>
-          <span style={separatorStyle}>|</span>
-
-          <Link href="/articles" style={linkStyle}>
-            Articles
-          </Link>
-          <span style={separatorStyle}>|</span>
-
-          <Link href="/destinations" style={linkStyle}>
-            Destinations
-          </Link>
-          <span style={separatorStyle}>|</span>
-
-          <Link href="/about" style={linkStyle}>
-            About
-          </Link>
-          <span style={separatorStyle}>|</span>
-
-          <Link href="/contact" style={linkStyle}>
-            Contact
-          </Link>
-          <span style={separatorStyle}>|</span>
-
           <Link href="/privacy-policy" style={linkStyle}>
             Privacy Policy
           </Link>
@@ -106,6 +81,11 @@ export default function Footer() {
 
           <Link href="/editorial-policy" style={linkStyle}>
             Editorial Policy
+          </Link>
+          <span style={separatorStyle}>|</span>
+
+          <Link href="/contact" style={linkStyle}>
+            Contact
           </Link>
         </nav>
 
