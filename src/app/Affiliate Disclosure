@@ -1,0 +1,117 @@
+import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Affiliate Disclosure | Golden Horizons",
+  description:
+    "Golden Horizons affiliate and advertising disclosure explaining how we may earn revenue from affiliate links, sponsorships, partnerships, and advertisements.",
+  alternates: {
+    canonical: "https://golden-horizons.org/affiliate-disclosure",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function AffiliateDisclosurePage() {
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+
+      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <p className="text-sm uppercase tracking-[0.22em] text-muted-foreground mb-3">
+          Legal Notice
+        </p>
+
+        <h1 className="text-3xl md:text-4xl font-bold font-serif mb-6">
+          Affiliate Disclosure
+        </h1>
+
+        <p className="text-muted-foreground mb-10">Last updated: May 2026</p>
+
+        <div className="prose prose-lg max-w-none space-y-8">
+          <section>
+            <h2 className="text-xl font-bold font-serif mb-4">
+              How Golden Horizons May Earn Money
+            </h2>
+            <p className="text-foreground/80 leading-relaxed">
+              Golden Horizons may earn revenue from advertising, sponsorships,
+              affiliate links, partnerships, lead generation, or other commercial
+              relationships. If you click certain links or purchase products or
+              services through links on our website or in our emails, we may
+              receive compensation at no additional cost to you.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold font-serif mb-4">
+              Affiliate Links
+            </h2>
+            <p className="text-foreground/80 leading-relaxed">
+              Some links on Golden Horizons may be affiliate links. This means we
+              may earn a commission if you click a link and make a purchase,
+              sign up for a service, or complete another qualifying action. This
+              does not increase the price you pay.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold font-serif mb-4">
+              Sponsored Content and Partner Features
+            </h2>
+            <p className="text-foreground/80 leading-relaxed">
+              From time to time, Golden Horizons may publish sponsored content,
+              partner features, advertisements, or promotional placements. When
+              content is sponsored or paid for, we aim to identify it clearly so
+              readers understand the relationship.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold font-serif mb-4">
+              Editorial Independence
+            </h2>
+            <p className="text-foreground/80 leading-relaxed">
+              Our goal is to provide useful editorial content for readers
+              researching retirement abroad. Commercial relationships may support
+              the website, but they do not guarantee a favorable review,
+              recommendation, ranking, or mention.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold font-serif mb-4">
+              Reader Responsibility
+            </h2>
+            <p className="text-foreground/80 leading-relaxed">
+              You should always do your own research before purchasing any
+              product, service, travel package, financial product, insurance
+              product, relocation service, or professional service mentioned on
+              Golden Horizons. Our content is for general informational purposes
+              only and is not legal, financial, tax, medical, immigration, or
+              investment advice.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold font-serif mb-4">Contact</h2>
+            <p className="text-foreground/80 leading-relaxed">
+              If you have questions about this disclosure, contact us at{" "}
+              <a
+                href="mailto:hello@golden-horizons.org"
+                className="text-primary hover:underline"
+              >
+                hello@golden-horizons.org
+              </a>
+              .
+            </p>
+          </section>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+}
