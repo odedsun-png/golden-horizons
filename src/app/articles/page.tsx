@@ -200,22 +200,28 @@ export default async function ArticlesPage() {
 
         <footer className="mag-footer">
           <div className="footer-name">Golden Horizons</div>
+
           <p>
             The retirement abroad magazine for Americans who aren&rsquo;t done
             yet.
           </p>
 
           <div className="footer-links">
-            <Link href="/">Cover</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
-            <Link href="/articles">Articles</Link>
+
+            <Link href="/terms">Terms of Use</Link>
             <span>|</span>
-            <Link href="/destinations">Destinations</Link>
+
+            <Link href="/disclaimer">Disclaimer</Link>
             <span>|</span>
-            <Link href="/about">About</Link>
+
+            <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
             <span>|</span>
-            <Link href="/privacy-policy">Privacy</Link>
+
+            <Link href="/editorial-policy">Editorial Policy</Link>
             <span>|</span>
+
             <Link href="/contact">Contact</Link>
           </div>
 
