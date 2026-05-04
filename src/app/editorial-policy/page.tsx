@@ -278,11 +278,9 @@ export default function EditorialPolicyPage() {
             </p>
             <p>
               Material connections should be disclosed in a way readers can
-              notice and understand. The FTC&rsquo;s endorsement guidance
-              emphasizes disclosure of material connections when those
-              connections may not be obvious to the audience. Please review our{" "}
+              notice and understand. Please review our{" "}
               <Link href="/affiliate-disclosure">Affiliate Disclosure</Link> for
-              more information. :contentReference[oaicite:1]{index=1}
+              more information.
             </p>
           </section>
 
@@ -297,11 +295,9 @@ export default function EditorialPolicyPage() {
             </p>
             <p>
               We aim to avoid confusing readers about whether content is
-              editorial or commercial. FTC native advertising guidance says
-              disclosures should be clear and prominent enough for consumers to
-              recognize advertising as advertising, and journalism ethics
-              standards also emphasize distinguishing news/editorial content from
-              advertising. :contentReference[oaicite:2]{index=2}
+              editorial or commercial. Promotional content should be clearly
+              labeled so readers can distinguish editorial content from paid,
+              sponsored, affiliate, or partner content.
             </p>
           </section>
 
