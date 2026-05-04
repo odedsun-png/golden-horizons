@@ -346,7 +346,7 @@ export default function HomeClient() {
             <Link href="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
 
-            <Link href="/terms-of-use">Terms of Use</Link>
+            <Link href="/terms">Terms of Use</Link>
             <span>|</span>
 
             <Link href="/disclaimer">Disclaimer</Link>
