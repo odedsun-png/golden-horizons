@@ -64,7 +64,7 @@ export default function Footer() {
           </Link>
           <span style={separatorStyle}>|</span>
 
-          <Link href="/terms-of-use" style={linkStyle}>
+          <Link href="/terms" style={linkStyle}>
             Terms of Use
           </Link>
           <span style={separatorStyle}>|</span>
