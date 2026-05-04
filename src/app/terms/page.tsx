@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const siteUrl = "https://golden-horizons.org";
+const contactEmail = "newsletter@golden-horizons.org";
 
 export const metadata: Metadata = {
   title: "Terms of Use | Golden Horizons",
@@ -376,8 +377,8 @@ export default function TermsPage() {
               <strong>Golden Horizons</strong>
               <br />
               Email:{" "}
-              <a href="mailto:hello@golden-horizons.org">
-                hello@golden-horizons.org
+              <a href={`mailto:${contactEmail}`}>
+                {contactEmail}
               </a>
               <br />
               Website:{" "}
