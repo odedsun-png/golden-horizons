@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Link from "next/link";
+
+const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
   title: "Affiliate Disclosure | Golden Horizons",
   description:
-    "Golden Horizons affiliate and advertising disclosure explaining how we may earn revenue from affiliate links, sponsorships, partnerships, and advertisements.",
+    "Affiliate, advertising, sponsorship, partner, and compensation disclosure for Golden Horizons.",
   alternates: {
-    canonical: "https://golden-horizons.org/affiliate-disclosure",
+    canonical: `${siteUrl}/affiliate-disclosure`,
   },
   robots: {
     index: true,
@@ -17,101 +18,378 @@ export const metadata: Metadata = {
 
 export default function AffiliateDisclosurePage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <main className="mag-page legal-page">
+      <div className="site">
+        <div className="topbar">
+          <span>Golden Horizons</span>
+          <span className="hide-mob">Affiliate Disclosure</span>
+          <span>Updated May 4, 2026</span>
+        </div>
 
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <p className="text-sm uppercase tracking-[0.22em] text-muted-foreground mb-3">
-          Legal Notice
-        </p>
+        <div className="masthead">
+          <div className="dateline">
+            <span>The Retirement Abroad Magazine</span>
+            <span className="hide-mob">
+              For Americans Who Are Ready for What&rsquo;s Next
+            </span>
+            <span>Affiliate &amp; Sponsor Notice</span>
+          </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold font-serif mb-6">
-          Affiliate Disclosure
-        </h1>
+          <Link href="/" className="mastname">
+            Golden Horizons
+          </Link>
 
-        <p className="text-muted-foreground mb-10">Last updated: May 2026</p>
+          <div className="issue-line">
+            <span className="issue-tag">
+              <strong>Disclosure:</strong> Some links may earn compensation
+            </span>
+            <span className="issue-tag">
+              <strong>Important:</strong> Editorial information only — no
+              personalized advice
+            </span>
+          </div>
+        </div>
 
-        <div className="prose prose-lg max-w-none space-y-8">
+        <nav className="nav">
+          <Link href="/">Cover</Link>
+          <Link href="/articles">All Stories</Link>
+          <Link href="/destinations">Destinations</Link>
+          <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
+        </nav>
+
+        <article
+          className="legal-article"
+          style={{
+            maxWidth: "860px",
+            margin: "0 auto",
+            padding: "44px 24px 70px",
+            background: "#f8f1df",
+            borderLeft: "1px solid rgba(80, 57, 19, 0.18)",
+            borderRight: "1px solid rgba(80, 57, 19, 0.18)",
+          }}
+        >
+          <p className="kicker">Affiliate Disclosure</p>
+
+          <h1
+            style={{
+              fontFamily: "Georgia, serif",
+              fontSize: "clamp(38px, 6vw, 68px)",
+              lineHeight: "0.95",
+              letterSpacing: "-0.04em",
+              marginBottom: 16,
+            }}
+          >
+            Affiliate Disclosure
+          </h1>
+
+          <p style={{ fontSize: 16, opacity: 0.75, marginBottom: 28 }}>
+            Last updated: May 4, 2026 · Effective date: May 4, 2026
+          </p>
+
+          <div
+            style={{
+              border: "1px solid rgba(120, 82, 24, 0.35)",
+              background: "#fff8e6",
+              padding: "18px 20px",
+              marginBottom: 34,
+              fontSize: 18,
+              lineHeight: 1.6,
+            }}
+          >
+            <strong>Important:</strong> Golden Horizons may earn compensation
+            from certain affiliate links, sponsored placements, advertisements,
+            lead-generation relationships, referral arrangements, or partner
+            links. This may happen at no additional cost to you. Our content is
+            general editorial information only and is not legal, financial, tax,
+            medical, immigration, real estate, insurance, investment, or
+            retirement advice.
+          </div>
+
           <section>
-            <h2 className="text-xl font-bold font-serif mb-4">
-              How Golden Horizons May Earn Money
-            </h2>
-            <p className="text-foreground/80 leading-relaxed">
-              Golden Horizons may earn revenue from advertising, sponsorships,
-              affiliate links, partnerships, lead generation, or other commercial
-              relationships. If you click certain links or purchase products or
-              services through links on our website or in our emails, we may
-              receive compensation at no additional cost to you.
+            <h2>1. Purpose of This Disclosure</h2>
+            <p>
+              This Affiliate Disclosure explains how Golden Horizons may earn
+              revenue from affiliate links, sponsorships, advertisements,
+              partner relationships, lead-generation arrangements, referral
+              links, native advertising, paid placements, and other commercial
+              relationships.
+            </p>
+            <p>
+              We provide this disclosure so readers understand when Golden
+              Horizons may have a financial relationship connected to a product,
+              service, destination resource, travel provider, insurance provider,
+              relocation service, financial service, real estate resource,
+              newsletter sponsor, or other third party mentioned on our Website
+              or in our emails.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold font-serif mb-4">
-              Affiliate Links
-            </h2>
-            <p className="text-foreground/80 leading-relaxed">
-              Some links on Golden Horizons may be affiliate links. This means we
-              may earn a commission if you click a link and make a purchase,
-              sign up for a service, or complete another qualifying action. This
-              does not increase the price you pay.
+            <h2>2. Affiliate Links and Partner Links</h2>
+            <p>
+              Some links on golden-horizons.org or in the Golden Horizons
+              newsletter may be affiliate links or partner links. If you click
+              one of these links and purchase a product, request information,
+              submit a form, sign up for a service, book a service, or complete
+              another qualifying action, Golden Horizons may receive a
+              commission, referral fee, lead fee, sponsorship fee, or other
+              compensation.
+            </p>
+            <p>
+              This compensation may be paid by third-party companies and usually
+              comes at no additional cost to you. The amount of compensation may
+              vary based on the partner, product, service, campaign, or action
+              taken.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold font-serif mb-4">
-              Sponsored Content and Partner Features
-            </h2>
-            <p className="text-foreground/80 leading-relaxed">
-              From time to time, Golden Horizons may publish sponsored content,
-              partner features, advertisements, or promotional placements. When
-              content is sponsored or paid for, we aim to identify it clearly so
-              readers understand the relationship.
+            <h2>3. Sponsored Content, Advertisements, and Native Ads</h2>
+            <p>
+              Golden Horizons may display sponsored content, native
+              advertisements, paid placements, partner messages, banner ads,
+              newsletter ads, sponsored recommendation boxes, or other
+              promotional content.
+            </p>
+            <p>
+              Where appropriate, sponsored or paid content should be labeled
+              using wording such as “Sponsored,” “Advertisement,” “Partner
+              Message,” “Paid Placement,” “Affiliate Disclosure,” or similar
+              language. We aim to make commercial relationships clear so readers
+              can distinguish editorial content from paid or sponsored content.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold font-serif mb-4">
-              Editorial Independence
-            </h2>
-            <p className="text-foreground/80 leading-relaxed">
-              Our goal is to provide useful editorial content for readers
-              researching retirement abroad. Commercial relationships may support
-              the website, but they do not guarantee a favorable review,
-              recommendation, ranking, or mention.
+            <h2>4. Editorial Independence</h2>
+            <p>
+              Compensation may be received from certain partners, but sponsored
+              relationships do not determine our editorial conclusions. We aim to
+              provide useful editorial content for readers researching retirement
+              abroad, relocation, cost of living, healthcare access, visas,
+              housing, lifestyle, safety, and destination planning.
+            </p>
+            <p>
+              However, commercial relationships may influence which products,
+              services, companies, destinations, links, offers, or resources are
+              mentioned, displayed, prioritized, or made available on the Website
+              or in the newsletter.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold font-serif mb-4">
-              Reader Responsibility
-            </h2>
-            <p className="text-foreground/80 leading-relaxed">
-              You should always do your own research before purchasing any
-              product, service, travel package, financial product, insurance
-              product, relocation service, or professional service mentioned on
-              Golden Horizons. Our content is for general informational purposes
-              only and is not legal, financial, tax, medical, immigration, or
-              investment advice.
+            <h2>5. No Personalized Recommendation</h2>
+            <p>
+              Mentions of any product, service, company, destination, insurance
+              provider, relocation provider, travel provider, financial service,
+              real estate service, visa resource, healthcare provider, or other
+              third party are for general informational purposes only.
+            </p>
+            <p>
+              Nothing on Golden Horizons should be interpreted as a personalized
+              recommendation, endorsement, instruction, guarantee, or professional
+              advice. You are responsible for independently evaluating whether
+              any product, service, company, destination, or offer is suitable
+              for your personal circumstances.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold font-serif mb-4">Contact</h2>
-            <p className="text-foreground/80 leading-relaxed">
-              If you have questions about this disclosure, contact us at{" "}
-              <a
-                href="mailto:hello@golden-horizons.org"
-                className="text-primary hover:underline"
-              >
+            <h2>6. Your Responsibility to Verify</h2>
+            <p>
+              Before purchasing a product, using a service, hiring a provider,
+              submitting personal information, booking travel, applying for a
+              visa, buying insurance, making a housing decision, making a
+              healthcare decision, or making any financial decision, you should
+              independently verify all details with the relevant provider,
+              official sources, and qualified professionals.
+            </p>
+            <p>
+              Prices, availability, terms, eligibility, refund policies,
+              guarantees, insurance coverage, visa rules, healthcare access,
+              housing conditions, travel rules, tax rules, and local laws can
+              change frequently and without notice.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. Third-Party Products and Services</h2>
+            <p>
+              Golden Horizons does not control third-party websites, companies,
+              advertisers, sponsors, affiliate partners, products, services,
+              offers, claims, pricing, refund policies, privacy practices,
+              customer service, availability, or performance.
+            </p>
+            <p>
+              Your interactions with third parties are solely between you and
+              the third party. Golden Horizons is not responsible for any loss,
+              damage, dispute, claim, dissatisfaction, financial outcome,
+              relocation outcome, healthcare outcome, immigration outcome,
+              insurance outcome, housing issue, or other problem arising from
+              your interactions with third parties.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Newsletter Affiliate and Sponsor Links</h2>
+            <p>
+              The Golden Horizons newsletter may include affiliate links,
+              sponsor messages, partner links, advertisements, native ads, paid
+              placements, lead-generation links, promotional offers, or other
+              commercial content.
+            </p>
+            <p>
+              Newsletter advertisements or sponsor messages should be labeled
+              where appropriate. You may unsubscribe from Golden Horizons emails
+              at any time using the unsubscribe link included in our emails.
+            </p>
+          </section>
+
+          <section>
+            <h2>9. Free Guides, Downloads, and Lead Generation</h2>
+            <p>
+              Golden Horizons may offer free guides, checklists, reports,
+              downloads, calculators, comparison tools, quizzes, or forms. Some
+              of these may be supported by advertising, sponsorships, affiliate
+              relationships, lead-generation arrangements, or partner offers.
+            </p>
+            <p>
+              If you submit information through a form connected to a partner,
+              sponsor, advertiser, or third-party service, that information may
+              be subject to the third party&rsquo;s own terms and privacy policy.
+              Please review all third-party terms before submitting personal
+              information.
+            </p>
+          </section>
+
+          <section>
+            <h2>10. Amazon and Retail Affiliate Programs</h2>
+            <p>
+              Golden Horizons may participate in retail affiliate programs,
+              including programs that allow websites to earn advertising fees by
+              linking to products or services. If Golden Horizons participates
+              in the Amazon Services LLC Associates Program or similar programs,
+              qualifying purchases may generate commissions.
+            </p>
+            <p>
+              Product prices, availability, shipping, refund policies, warranty
+              terms, and product claims are controlled by the third-party seller
+              or platform, not Golden Horizons.
+            </p>
+          </section>
+
+          <section>
+            <h2>11. No Guarantee of Savings, Results, or Outcomes</h2>
+            <p>
+              Golden Horizons does not guarantee that any product, service,
+              destination, insurance plan, visa resource, relocation provider,
+              healthcare option, financial service, housing option, travel
+              provider, or partner offer will save you money, improve your
+              outcome, meet your expectations, or be suitable for your needs.
+            </p>
+            <p>
+              You assume all risk associated with clicking affiliate links,
+              engaging with sponsors, purchasing products, using services,
+              submitting forms, contacting providers, or acting on information
+              found through Golden Horizons.
+            </p>
+          </section>
+
+          <section>
+            <h2>12. AI-Assisted Content and Affiliate Mentions</h2>
+            <p>
+              Golden Horizons may use artificial intelligence tools to assist
+              with research organization, drafting, editing, formatting,
+              summaries, headline development, image selection, newsletter
+              production, and other editorial workflows.
+            </p>
+            <p>
+              AI-assisted content may include references to products, services,
+              companies, destinations, or resources. Such references may contain
+              errors, omissions, outdated information, or incomplete context.
+              Always independently verify important information before making
+              decisions.
+            </p>
+          </section>
+
+          <section>
+            <h2>13. Updates to This Disclosure</h2>
+            <p>
+              Golden Horizons may update this Affiliate Disclosure at any time
+              to reflect changes in our business, advertising relationships,
+              affiliate partnerships, sponsorships, newsletter practices, or
+              legal requirements.
+            </p>
+            <p>
+              The “Last updated” date at the top of this page will reflect the
+              most recent version.
+            </p>
+          </section>
+
+          <section>
+            <h2>14. Related Policies</h2>
+            <p>
+              Please also review our{" "}
+              <Link href="/terms">Terms of Use</Link>,{" "}
+              <Link href="/privacy-policy">Privacy Policy</Link>,{" "}
+              <Link href="/disclaimer">Disclaimer</Link>, and{" "}
+              <Link href="/editorial-policy">Editorial Policy</Link>.
+            </p>
+          </section>
+
+          <section>
+            <h2>15. Contact</h2>
+            <p>
+              Questions about this Affiliate Disclosure may be sent to:
+            </p>
+            <p>
+              <strong>Golden Horizons</strong>
+              <br />
+              Email:{" "}
+              <a href="mailto:hello@golden-horizons.org">
                 hello@golden-horizons.org
               </a>
-              .
+              <br />
+              Website:{" "}
+              <a href="https://golden-horizons.org/">
+                https://golden-horizons.org/
+              </a>
             </p>
           </section>
-        </div>
-      </main>
+        </article>
 
-      <Footer />
-    </div>
+        <footer className="mag-footer">
+          <div className="footer-name">Golden Horizons</div>
+
+          <p>
+            The retirement abroad magazine for Americans who aren&rsquo;t done
+            yet.
+          </p>
+
+          <div className="footer-links">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <span>|</span>
+
+            <Link href="/terms">Terms of Use</Link>
+            <span>|</span>
+
+            <Link href="/disclaimer">Disclaimer</Link>
+            <span>|</span>
+
+            <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
+            <span>|</span>
+
+            <Link href="/editorial-policy">Editorial Policy</Link>
+            <span>|</span>
+
+            <Link href="/contact">Contact</Link>
+          </div>
+
+          <p style={{ fontSize: 11, opacity: 0.5, marginTop: 8 }}>
+            © 2026 Golden Horizons — All rights reserved
+          </p>
+        </footer>
+      </div>
+    </main>
   );
 }
