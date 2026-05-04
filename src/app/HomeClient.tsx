@@ -47,7 +47,7 @@ export default function HomeClient() {
     <main className="mag-page">
       <div className="site">
         <div className="topbar">
-          <span>Vol. I, No. 1</span>
+          <span>Vol. 58, No. 1</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
           </span>
@@ -60,7 +60,7 @@ export default function HomeClient() {
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
             </span>
-            <span>April 2026 · Issue 1</span>
+            <span>April 2026 · Issue 58</span>
           </div>
 
           <Link href="/" className="mastname">
