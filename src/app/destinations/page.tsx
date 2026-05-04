@@ -168,7 +168,6 @@ export default function DestinationsPage() {
             }}
           />
 
-          {/* soft readability layer, not a box */}
           <div
             style={{
               position: "absolute",
@@ -467,19 +466,17 @@ export default function DestinationsPage() {
           </p>
 
           <div className="footer-links">
-            <Link href="/">Website</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
-            <Link href="/articles">All Stories</Link>
+            <Link href="/terms-of-use">Terms of Use</Link>
             <span>|</span>
-            <Link href="/destinations">Destinations</Link>
+            <Link href="/disclaimer">Disclaimer</Link>
             <span>|</span>
-            <Link href="/about">About</Link>
+            <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
             <span>|</span>
-            <Link href="/privacy-policy">Privacy</Link>
+            <Link href="/editorial-policy">Editorial Policy</Link>
             <span>|</span>
             <Link href="/contact">Contact</Link>
-            <span>|</span>
-            <Link href="/terms-of-use">Terms</Link>
           </div>
 
           <p style={{ marginTop: 12, fontSize: 11, opacity: 0.5 }}>
