@@ -21,6 +21,21 @@ function truncate(value: string, maxLength = 155) {
   return `${value.slice(0, maxLength - 1).trim()}…`;
 }
 
+function removeEmbeddedDisclaimer(content: string) {
+  if (!content) return "";
+
+  return content
+    .replace(
+      /<p[^>]*>\s*(?:<em[^>]*>)?\s*The information in this article[\s\S]*?Golden Horizons does not provide legal,\s*financial,\s*or medical advice\.\s*(?:<\/em>)?\s*<\/p>/gi,
+      ""
+    )
+    .replace(
+      /<div[^>]*class=["'][^"']*disclaimer[^"']*["'][^>]*>[\s\S]*?<\/div>/gi,
+      ""
+    )
+    .trim();
+}
+
 async function getCanonicalSlug(slug: string) {
   if (!slug.endsWith("-v2")) return slug;
 
@@ -141,12 +156,16 @@ export default async function ArticleDetailPage({
     )
   );
 
+  const cleanedArticleContent = removeEmbeddedDisclaimer(article.content);
+
   const allSlugs = await getAllArticleSlugs();
   const allArticlesRaw = await Promise.all(
     allSlugs.map((articleSlug) => getArticleBySlug(articleSlug))
   );
 
-  const allArticles = allArticlesRaw.filter((item) => item !== null);
+  const allArticles = allArticlesRaw.filter(
+    (item): item is NonNullable<typeof item> => item !== null
+  );
 
   const sameCategoryArticles = allArticles
     .filter((item) => {
@@ -334,7 +353,7 @@ export default async function ArticleDetailPage({
 
             <div
               className="art-article-body"
-              dangerouslySetInnerHTML={{ __html: article.content }}
+              dangerouslySetInnerHTML={{ __html: cleanedArticleContent }}
             />
 
             <div className="ornament">— ✦ —</div>
@@ -415,7 +434,7 @@ export default async function ArticleDetailPage({
           <div className="footer-links">
             <Link href="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
-            <Link href="/terms-of-use">Terms of Use</Link>
+            <Link href="/terms">Terms of Use</Link>
             <span>|</span>
             <Link href="/disclaimer">Disclaimer</Link>
             <span>|</span>
