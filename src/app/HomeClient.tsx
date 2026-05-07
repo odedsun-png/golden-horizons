@@ -162,6 +162,137 @@ export default function HomeClient() {
           <SubscribeBox variant="inline" />
         </div>
 
+        {/* ===== PLANNING GUIDES HUB ===== */}
+        <div id="planning-guides" className="section-banner">Start Here: Retirement Abroad Planning Guides</div>
+
+        <div
+          style={{
+            padding: "28px 36px 32px",
+            background: "#faf5e9",
+            borderBottom: "2px solid #1e1408",
+          }}
+        >
+          <p
+            style={{
+              fontFamily: "var(--font-garamond), Georgia, serif",
+              fontSize: 18,
+              color: "#5a4010",
+              fontStyle: "italic",
+              marginBottom: 22,
+              lineHeight: 1.6,
+            }}
+          >
+            Six essential guides for Americans planning retirement abroad — covering budget, healthcare, visas, taxes, safety, and the full planning checklist.
+          </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: 12,
+            }}
+          >
+            {[
+              {
+                href: "/best-countries-to-retire-abroad-on-a-budget",
+                label: "Best Countries to Retire Abroad on a Budget",
+                kicker: "The Money Page",
+                desc: "Monthly cost breakdowns for the most affordable destinations — from ~$750 to ~$1,750/month.",
+              },
+              {
+                href: "/healthcare-abroad-for-american-retirees",
+                label: "Healthcare Abroad for American Retirees",
+                kicker: "The Health File",
+                desc: "Medicare overseas, insurance options, and countries with the strongest healthcare for retirees.",
+              },
+              {
+                href: "/retiring-abroad-checklist-for-americans",
+                label: "Retiring Abroad Checklist for Americans",
+                kicker: "The Strategy Page",
+                desc: "Everything to do 12 months out, 6 months out, and in your first 90 days abroad.",
+              },
+              {
+                href: "/visa-rules-for-americans-retiring-abroad",
+                label: "Visa Rules for Americans Retiring Abroad",
+                kicker: "The Visa File",
+                desc: "Pensionado programs, income-based visas, and what to verify before you apply.",
+              },
+              {
+                href: "/taxes-for-americans-retiring-overseas",
+                label: "Taxes for Americans Retiring Overseas",
+                kicker: "The Money Page",
+                desc: "FBAR, FATCA, the Foreign Tax Credit, Social Security taxes, and what never stops.",
+              },
+              {
+                href: "/safest-countries-to-retire-abroad",
+                label: "Safest Countries to Retire Abroad",
+                kicker: "The Destination Report",
+                desc: "Safety scores, what they mean day-to-day, and how to verify current conditions.",
+              },
+            ].map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                style={{
+                  display: "block",
+                  background: "#f5edd8",
+                  border: "1px solid #c9a84c",
+                  borderTop: "3px solid #1e1408",
+                  padding: "16px 18px",
+                  textDecoration: "none",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: 10,
+                    letterSpacing: "2.5px",
+                    textTransform: "uppercase",
+                    color: "#8b6914",
+                    marginBottom: 8,
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                  }}
+                >
+                  {guide.kicker}
+                </div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    fontSize: 16,
+                    fontWeight: 700,
+                    color: "#1a0f00",
+                    lineHeight: 1.3,
+                    marginBottom: 8,
+                  }}
+                >
+                  {guide.label}
+                </div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                    fontSize: 14,
+                    color: "#5a4010",
+                    lineHeight: 1.5,
+                    fontStyle: "italic",
+                  }}
+                >
+                  {guide.desc}
+                </div>
+                <div
+                  style={{
+                    marginTop: 10,
+                    fontSize: 13,
+                    color: "#8b6914",
+                    fontStyle: "italic",
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                  }}
+                >
+                  Read the guide →
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <div className="section-banner">Inside This Issue</div>
 
         <div className="below-fold">

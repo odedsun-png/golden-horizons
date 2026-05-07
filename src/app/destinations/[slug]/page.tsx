@@ -604,6 +604,97 @@ export default async function DestinationDetailPage({
               ))}
             </div>
 
+            <div className="section-hdr">Related Retirement Planning Guides</div>
+
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "10px",
+                marginBottom: "24px",
+              }}
+            >
+              {[
+                {
+                  href: "/best-countries-to-retire-abroad-on-a-budget",
+                  label: "Best Countries to Retire Abroad on a Budget",
+                  kicker: "The Money Page",
+                },
+                {
+                  href: "/healthcare-abroad-for-american-retirees",
+                  label: "Healthcare Abroad for American Retirees",
+                  kicker: "The Health File",
+                },
+                {
+                  href: "/visa-rules-for-americans-retiring-abroad",
+                  label: "Visa Rules for Americans Retiring Abroad",
+                  kicker: "The Visa File",
+                },
+                {
+                  href: "/taxes-for-americans-retiring-overseas",
+                  label: "Taxes for Americans Retiring Overseas",
+                  kicker: "The Money Page",
+                },
+                {
+                  href: "/retiring-abroad-checklist-for-americans",
+                  label: "Retiring Abroad Checklist for Americans",
+                  kicker: "The Strategy Page",
+                },
+                {
+                  href: "/safest-countries-to-retire-abroad",
+                  label: "Safest Countries to Retire Abroad",
+                  kicker: "The Destination Report",
+                },
+              ].map((guide) => (
+                <Link
+                  key={guide.href}
+                  href={guide.href}
+                  style={{
+                    display: "block",
+                    background: "#faf5e9",
+                    border: "1px solid #c9a84c",
+                    padding: "12px 14px",
+                    textDecoration: "none",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: 10,
+                      letterSpacing: "0.14em",
+                      textTransform: "uppercase",
+                      color: "#8b6914",
+                      marginBottom: 5,
+                      fontFamily: "var(--font-garamond), Georgia, serif",
+                    }}
+                  >
+                    {guide.kicker}
+                  </div>
+                  <div
+                    style={{
+                      color: "#1a0f00",
+                      fontSize: 16,
+                      lineHeight: 1.25,
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                      fontWeight: 700,
+                      marginBottom: 5,
+                    }}
+                  >
+                    {guide.label}
+                  </div>
+                  <div
+                    style={{
+                      color: "#8b6914",
+                      fontSize: 13,
+                      fontStyle: "italic",
+                      fontFamily: "var(--font-garamond), Georgia, serif",
+                    }}
+                  >
+                    Read guide →
+                  </div>
+                </Link>
+              ))}
+            </div>
+
             <div className="disclaimer">
               The information in this article is for general informational
               purposes only. Costs, visa requirements, healthcare policies, and

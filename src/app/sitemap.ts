@@ -26,6 +26,43 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    // Pillar pages
+    {
+      url: `${siteUrl}/best-countries-to-retire-abroad-on-a-budget`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.92,
+    },
+    {
+      url: `${siteUrl}/healthcare-abroad-for-american-retirees`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.92,
+    },
+    {
+      url: `${siteUrl}/retiring-abroad-checklist-for-americans`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.92,
+    },
+    {
+      url: `${siteUrl}/visa-rules-for-americans-retiring-abroad`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.92,
+    },
+    {
+      url: `${siteUrl}/taxes-for-americans-retiring-overseas`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.92,
+    },
+    {
+      url: `${siteUrl}/safest-countries-to-retire-abroad`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.92,
+    },
     {
       url: `${siteUrl}/about`,
       lastModified: new Date(),
