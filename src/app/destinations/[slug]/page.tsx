@@ -107,17 +107,21 @@ export default async function DestinationDetailPage({
 
   const baselineExpenseRows = baselineCost
     ? [
-        ["Rent", baselineCost.rent],
-        ["Food", baselineCost.food],
-        ["Utilities", baselineCost.utilities],
-        ["Transport", baselineCost.transportation],
-        ["Healthcare", baselineCost.healthcare],
-        ["Lifestyle", baselineCost.lifestyle],
+        ["Rent — modest 1BR apartment", baselineCost.rent],
+        ["Groceries — at-home meals", baselineCost.food],
+        ["Utilities — electric, water, internet", baselineCost.utilities],
+        ["Transportation — local transit/taxis", baselineCost.transportation],
+        ["Healthcare — routine/basic estimate", baselineCost.healthcare],
+        ["Lifestyle — cafes, dining, activities", baselineCost.lifestyle],
       ]
-    : Object.entries(country.costOfLiving).map(([key, value]) => [
-        key.replace(/([A-Z])/g, " $1"),
-        value,
-      ] as [string, number]);
+    : [
+        ["Rent — modest 1BR apartment", country.costOfLiving.rent],
+        ["Groceries — at-home meals", country.costOfLiving.food],
+        ["Utilities — electric, water, internet", country.costOfLiving.utilities],
+        ["Transportation — local transit/taxis", country.costOfLiving.transportation],
+        ["Healthcare — routine/basic estimate", country.costOfLiving.healthcare],
+        ["Lifestyle — cafes, dining, activities", country.costOfLiving.entertainment],
+      ];
 
   const totalMonthly = baselineCost
     ? baselineCost.total
@@ -990,7 +994,6 @@ export default async function DestinationDetailPage({
                       style={{
                         padding: "10px 12px",
                         fontSize: "16px",
-                        textTransform: "capitalize",
                         color: "#2b1a00",
                       }}
                     >
@@ -1020,7 +1023,7 @@ export default async function DestinationDetailPage({
                       fontWeight: "bold",
                     }}
                   >
-                    Baseline Monthly Cost Estimate
+                    Total / Month
                   </td>
                   <td
                     style={{
