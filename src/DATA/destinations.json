@@ -1,0 +1,573 @@
+import fs from 'fs';
+import path from 'path';
+
+const destinationsFile = path.join(process.cwd(), 'src/data/destinations.json');
+
+type CostItem = {
+  item: string;
+  range: string;
+};
+
+type SourceLink = {
+  label: string;
+  url: string;
+  type?: 'government' | 'official' | 'healthcare' | 'tax' | 'embassy' | 'source';
+};
+
+type TextBlock = {
+  name?: string;
+  label?: string;
+  description: string;
+  keyTakeaway: string;
+  requirements?: string;
+  officialLinks?: SourceLink[];
+};
+
+type RelatedDestination = {
+  slug: string;
+  flag: string;
+  name: string;
+  budgetShort: string;
+};
+
+type Scores = Record<string, number>;
+
+export type DestinationDetail = {
+  id: string;
+  rank: number;
+  flag: string;
+  name: string;
+  ilRank: string;
+  ilRankShort: string;
+  tagline: string;
+  budgetShort: string;
+  bestCity: string;
+  taxRate: string;
+  qolScore: string;
+  heroImage: string;
+  overview: string;
+  cities: string[];
+  costCouple: string;
+  costSingle: string;
+  pros: string[];
+  cons: string[];
+  costs: CostItem[];
+  healthcare: TextBlock;
+  visa: TextBlock;
+  tax: TextBlock;
+  scores: Scores;
+  relatedDestinations: RelatedDestination[];
+
+  // New fields for the 26-card SEO/AI destination cards
+  bestFor?: string;
+  headline?: string;
+  healthQuality?: string;
+  privateInsurance?: string;
+  internationalInsurance?: string;
+  englishSpeakingDoctors?: string;
+  publicHealthcareAccess?: string;
+  emergencyCare?: string;
+  bestHealthcareCities?: string[];
+  socialSecurityFit?: string;
+  socialSecurityDirectDeposit?: string;
+  safetySummary?: string;
+  lifestyleSummary?: string;
+  verificationStatus?: string;
+  officialSources?: SourceLink[];
+};
+
+type RawDestinationCard = {
+  rank?: number;
+  country?: string;
+  flag?: string | null;
+  slug?: string | null;
+  headline?: string | null;
+  bestFor?: string | null;
+  monthlyBudgetUSD?: string | null;
+  visaCard?: {
+    route?: string | null;
+    label?: string | null;
+    minimumIncomeRequirement?: string | null;
+    incomeAccepted?: string | null;
+    proofNotes?: string | null;
+    officialLinks?: SourceLink[] | string[];
+  };
+  healthcareCard?: {
+    snapshot?: string | null;
+    quality?: string | null;
+    publicAccess?: string | null;
+    privateCare?: string | null;
+    insuranceRequirement?: string | null;
+    englishSpeakingCare?: string | null;
+    emergencyCare?: string | null;
+    bestCitiesForHealthcare?: string[];
+    officialLinks?: SourceLink[] | string[];
+  };
+  socialSecurityCard?: {
+    fit?: string | null;
+    directDeposit?: string | null;
+    paymentNotes?: string | null;
+    taxOrReportingNotes?: string | null;
+    officialLinks?: SourceLink[] | string[];
+  };
+  retirementSnapshot?: {
+    costAndLifestyle?: string | null;
+    safety?: string | null;
+    tax?: string | null;
+    scores?: Scores;
+  };
+  verification?: string | null;
+  officialSources?: SourceLink[] | string[];
+};
+
+const defaultCosts: CostItem[] = [
+  { item: '1BR Apartment Rent', range: '$700–$1,800' },
+  { item: '2BR Apartment Rent', range: '$1,000–$2,500' },
+  { item: 'Groceries & Food', range: '$300–$500' },
+  { item: 'Dining Out', range: '$150–$400' },
+  { item: 'Utilities', range: '$100–$220' },
+  { item: 'Transportation', range: '$60–$180' },
+  { item: 'Healthcare / Insurance', range: '$100–$300' },
+  { item: 'Entertainment', range: '$150–$350' },
+];
+
+const flagBySlug: Record<string, string> = {
+  portugal: '🇵🇹',
+  mexico: '🇲🇽',
+  'costa-rica': '🇨🇷',
+  spain: '🇪🇸',
+  panama: '🇵🇦',
+  thailand: '🇹🇭',
+  ecuador: '🇪🇨',
+  malaysia: '🇲🇾',
+  greece: '🇬🇷',
+  colombia: '🇨🇴',
+  vietnam: '🇻🇳',
+  italy: '🇮🇹',
+  france: '🇫🇷',
+  'new-zealand': '🇳🇿',
+  'portugal-azores': '🇵🇹',
+  malta: '🇲🇹',
+  belize: '🇧🇿',
+  argentina: '🇦🇷',
+  bolivia: '🇧🇴',
+  cambodia: '🇰🇭',
+  'northern-cyprus': '🇨🇾',
+  philippines: '🇵🇭',
+  paraguay: '🇵🇾',
+  indonesia: '🇮🇩',
+  albania: '🇦🇱',
+  montenegro: '🇲🇪',
+};
+
+const heroImageBySlug: Record<string, string> = {
+  portugal:
+    'https://images.pexels.com/photos/1210642/pexels-photo-1210642.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  mexico:
+    'https://images.pexels.com/photos/604661/pexels-photo-604661.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  'costa-rica':
+    'https://images.pexels.com/photos/188029/pexels-photo-188029.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  spain:
+    'https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  panama:
+    'https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  thailand:
+    'https://images.pexels.com/photos/1031659/pexels-photo-1031659.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  ecuador:
+    'https://images.pexels.com/photos/3889855/pexels-photo-3889855.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  malaysia:
+    'https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  greece:
+    'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  colombia:
+    'https://images.pexels.com/photos/2754556/pexels-photo-2754556.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  vietnam:
+    'https://images.pexels.com/photos/2161467/pexels-photo-2161467.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  italy:
+    'https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  france:
+    'https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  'new-zealand':
+    'https://images.pexels.com/photos/724949/pexels-photo-724949.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  'portugal-azores':
+    'https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  malta:
+    'https://images.pexels.com/photos/2609954/pexels-photo-2609954.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  belize:
+    'https://images.pexels.com/photos/1450340/pexels-photo-1450340.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  argentina:
+    'https://images.pexels.com/photos/3757144/pexels-photo-3757144.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  bolivia:
+    'https://images.pexels.com/photos/3392154/pexels-photo-3392154.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  cambodia:
+    'https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  'northern-cyprus':
+    'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  philippines:
+    'https://images.pexels.com/photos/2087387/pexels-photo-2087387.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  paraguay:
+    'https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  indonesia:
+    'https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  albania:
+    'https://images.pexels.com/photos/1486577/pexels-photo-1486577.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  montenegro:
+    'https://images.pexels.com/photos/188029/pexels-photo-188029.jpeg?auto=compress&cs=tinysrgb&w=1200',
+};
+
+const baseDestinations = [
+  { slug: 'portugal', rank: 1, flag: '🇵🇹', name: 'Portugal', budget: '$2,500', city: 'Algarve' },
+  { slug: 'mexico', rank: 2, flag: '🇲🇽', name: 'Mexico', budget: '$1,500', city: 'San Miguel de Allende' },
+  { slug: 'costa-rica', rank: 3, flag: '🇨🇷', name: 'Costa Rica', budget: '$2,000', city: 'Central Valley' },
+  { slug: 'spain', rank: 4, flag: '🇪🇸', name: 'Spain', budget: '$2,500', city: 'Valencia' },
+  { slug: 'panama', rank: 5, flag: '🇵🇦', name: 'Panama', budget: '$2,500', city: 'Boquete' },
+  { slug: 'thailand', rank: 6, flag: '🇹🇭', name: 'Thailand', budget: '$1,500', city: 'Chiang Mai' },
+  { slug: 'ecuador', rank: 7, flag: '🇪🇨', name: 'Ecuador', budget: '$1,500', city: 'Cuenca' },
+  { slug: 'malaysia', rank: 8, flag: '🇲🇾', name: 'Malaysia', budget: '$1,500', city: 'Penang' },
+  { slug: 'greece', rank: 9, flag: '🇬🇷', name: 'Greece', budget: '$2,000', city: 'Crete' },
+  { slug: 'colombia', rank: 10, flag: '🇨🇴', name: 'Colombia', budget: '$1,500', city: 'Medellín' },
+  { slug: 'vietnam', rank: 11, flag: '🇻🇳', name: 'Vietnam', budget: '$1,000', city: 'Da Nang' },
+  { slug: 'italy', rank: 12, flag: '🇮🇹', name: 'Italy', budget: '$2,500', city: 'Puglia' },
+  { slug: 'france', rank: 13, flag: '🇫🇷', name: 'France', budget: '$3,000', city: 'Occitanie' },
+  { slug: 'new-zealand', rank: 14, flag: '🇳🇿', name: 'New Zealand', budget: '$3,500', city: 'Tauranga' },
+  { slug: 'portugal-azores', rank: 15, flag: '🇵🇹', name: 'Portugal — Azores', budget: '$1,800', city: 'São Miguel' },
+  { slug: 'malta', rank: 16, flag: '🇲🇹', name: 'Malta', budget: '$2,500', city: 'Sliema' },
+  { slug: 'belize', rank: 17, flag: '🇧🇿', name: 'Belize', budget: '$2,000', city: 'Ambergris Caye' },
+  { slug: 'argentina', rank: 18, flag: '🇦🇷', name: 'Argentina', budget: '$1,800', city: 'Mendoza' },
+  { slug: 'bolivia', rank: 19, flag: '🇧🇴', name: 'Bolivia', budget: '$1,200', city: 'Sucre' },
+  { slug: 'cambodia', rank: 20, flag: '🇰🇭', name: 'Cambodia', budget: '$1,200', city: 'Siem Reap' },
+  { slug: 'northern-cyprus', rank: 21, flag: '🇨🇾', name: 'Northern Cyprus', budget: '$1,800', city: 'Kyrenia' },
+  { slug: 'philippines', rank: 22, flag: '🇵🇭', name: 'Philippines', budget: '$1,500', city: 'Cebu' },
+  { slug: 'paraguay', rank: 23, flag: '🇵🇾', name: 'Paraguay', budget: '$1,500', city: 'Asunción' },
+  { slug: 'indonesia', rank: 24, flag: '🇮🇩', name: 'Indonesia', budget: '$1,500', city: 'Bali' },
+  { slug: 'albania', rank: 25, flag: '🇦🇱', name: 'Albania', budget: '$1,500', city: 'Sarandë' },
+  { slug: 'montenegro', rank: 26, flag: '🇲🇪', name: 'Montenegro', budget: '$2,000', city: 'Kotor' },
+];
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/—/g, '-')
+    .replace(/–/g, '-')
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function normalizeLinks(links?: SourceLink[] | string[] | null): SourceLink[] {
+  if (!Array.isArray(links)) return [];
+
+  return links
+    .map((link) => {
+      if (typeof link === 'string') {
+        return {
+          label: 'Official source',
+          url: link,
+          type: 'source' as const,
+        };
+      }
+
+      return {
+        label: link.label || 'Official source',
+        url: link.url,
+        type: link.type || 'source',
+      };
+    })
+    .filter((link) => Boolean(link.url));
+}
+
+function makeRelatedDestinations(currentSlug: string): RelatedDestination[] {
+  return baseDestinations
+    .filter((item) => item.slug !== currentSlug)
+    .slice(0, 3)
+    .map((item) => ({
+      slug: item.slug,
+      flag: item.flag,
+      name: item.name,
+      budgetShort: item.budget,
+    }));
+}
+
+function makeDestination(
+  slug: string,
+  rank: number,
+  flag: string,
+  name: string,
+  budgetShort: string,
+  bestCity: string
+): DestinationDetail {
+  return {
+    id: slug,
+    rank,
+    flag,
+    name,
+    ilRank: rank <= 10 ? `Top ${rank} Golden Horizons 2026` : 'Golden Horizons 2026 pick',
+    ilRankShort: `#${rank}`,
+    tagline: `${name} retirement guide · real costs · healthcare · visa basics · lifestyle fit`,
+    budgetShort,
+    bestCity,
+    taxRate: 'Varies',
+    qolScore: rank <= 10 ? '9/10' : '8/10',
+    heroImage:
+      heroImageBySlug[slug] ||
+      'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    overview: `${name} is one of the retirement destinations Golden Horizons is tracking for Americans age 60–75 looking abroad in 2026. This guide gives a practical overview of monthly costs, healthcare quality, private insurance, international insurance, English-speaking doctors, visa considerations, Social Security fit, and lifestyle tradeoffs.`,
+    cities: [bestCity],
+    costCouple: `${budgetShort}+/mo`,
+    costSingle: 'Varies by city and lifestyle',
+    pros: [
+      'Potentially lower cost of living than many US retirement markets',
+      'Attractive lifestyle for retirees seeking a slower pace',
+      'Useful option for Americans comparing overseas retirement choices',
+      'Can work well for retirees who research healthcare, visas, insurance, and taxes carefully',
+    ],
+    cons: [
+      'Costs vary heavily by city, neighborhood, and lifestyle',
+      'Visa and residency rules should be verified before moving',
+      'Healthcare access can differ between major cities and smaller towns',
+      'Tax planning should be reviewed with a cross-border tax professional',
+    ],
+    costs: defaultCosts,
+    healthcare: {
+      description: `Healthcare quality in ${name} depends on the city, hospital network, and whether you use public or private care. Retirees should compare private insurance, international insurance, local clinics, specialist access, English-speaking doctors, and emergency care before choosing a location.`,
+      keyTakeaway: `Use ${bestCity} as a starting point, then verify hospital access, English-speaking doctors, and insurance options before committing.`,
+      officialLinks: [],
+    },
+    visa: {
+      name: 'Retirement / Long-Stay Visa',
+      requirements: 'Requirements vary by country and applicant profile.',
+      description: `${name} may offer retirement, income-based, investor, or long-stay residency options depending on the applicant. Rules change often, so retirees should verify income requirements, paperwork, renewals, and path-to-residency details before applying.`,
+      keyTakeaway: 'Confirm visa requirements directly with official government or consulate sources before making financial plans.',
+      officialLinks: [],
+    },
+    tax: {
+      description: `Tax treatment in ${name} depends on residency status, income type, tax treaties, and how long you stay in the country each year. US citizens may still have US filing obligations even while living abroad.`,
+      keyTakeaway: 'Before moving, speak with a tax professional who understands US expats and local residency rules.',
+      officialLinks: [],
+    },
+    scores: {
+      cost: 3,
+      healthcare: 4,
+      safety: 4,
+      lifestyle: 4,
+      visaEase: 3,
+      englishEase: 3,
+      infrastructure: 4,
+      expat: 4,
+      climate: 4,
+    },
+    relatedDestinations: makeRelatedDestinations(slug),
+  };
+}
+
+const generatedDestinations: Record<string, DestinationDetail> = Object.fromEntries(
+  baseDestinations.map((item) => [
+    item.slug,
+    makeDestination(item.slug, item.rank, item.flag, item.name, item.budget, item.city),
+  ])
+);
+
+function destinationFromRawCard(card: RawDestinationCard): DestinationDetail | null {
+  const name = card.country?.trim();
+  if (!name) return null;
+
+  const slug = card.slug?.trim() || slugify(name);
+  const base =
+    generatedDestinations[slug] ||
+    makeDestination(
+      slug,
+      card.rank || 999,
+      card.flag || flagBySlug[slug] || '🌍',
+      name,
+      card.monthlyBudgetUSD || 'Varies',
+      card.healthcareCard?.bestCitiesForHealthcare?.[0] || 'Main expat city'
+    );
+
+  const visaLinks = normalizeLinks(card.visaCard?.officialLinks);
+  const healthcareLinks = normalizeLinks(card.healthcareCard?.officialLinks);
+  const socialSecurityLinks = normalizeLinks(card.socialSecurityCard?.officialLinks);
+  const officialSources = normalizeLinks(card.officialSources);
+
+  const allOfficialSources = [
+    ...officialSources,
+    ...visaLinks,
+    ...healthcareLinks,
+    ...socialSecurityLinks,
+  ];
+
+  const monthlyBudget = card.monthlyBudgetUSD || base.budgetShort;
+  const bestHealthcareCity = card.healthcareCard?.bestCitiesForHealthcare?.[0] || base.bestCity;
+
+  return {
+    ...base,
+    id: slug,
+    rank: card.rank || base.rank,
+    flag: card.flag || base.flag || flagBySlug[slug] || '🌍',
+    name,
+    ilRank: card.rank ? `#${card.rank} Golden Horizons 2026` : base.ilRank,
+    ilRankShort: card.rank ? `#${card.rank}` : base.ilRankShort,
+    headline: card.headline || base.headline,
+    bestFor: card.bestFor || base.bestFor,
+    tagline:
+      card.headline ||
+      `${name} retirement guide · healthcare · visa · Social Security · cost of living`,
+    budgetShort: monthlyBudget,
+    bestCity: bestHealthcareCity,
+    heroImage: heroImageBySlug[slug] || base.heroImage,
+
+    overview:
+      card.headline ||
+      `${name} is a Golden Horizons retirement-abroad destination for Americans age 60–75. This card compares the real monthly budget, healthcare quality, private insurance, international insurance, English-speaking doctors, visa fit, Social Security practicality, safety, and lifestyle fit.`,
+
+    cities: card.healthcareCard?.bestCitiesForHealthcare?.length
+      ? card.healthcareCard.bestCitiesForHealthcare
+      : base.cities,
+
+    costCouple: monthlyBudget,
+    costSingle: monthlyBudget,
+
+    pros: [
+      card.bestFor ? `Best for: ${card.bestFor}` : 'Strong retirement-abroad option for Americans comparing lifestyle and cost',
+      card.healthcareCard?.snapshot || card.healthcareCard?.quality || 'Healthcare options should be compared by city',
+      card.socialSecurityCard?.fit || 'Social Security fit should be confirmed before relocating',
+      card.retirementSnapshot?.costAndLifestyle || 'Lifestyle may offer strong value depending on city and budget',
+    ].filter(Boolean),
+
+    cons: [
+      'Official visa, healthcare, and tax rules must be verified before making financial decisions',
+      'Healthcare access may be stronger in major cities than smaller towns',
+      'Private or international insurance may be needed depending on visa status and residency stage',
+      'Costs can change quickly in popular expat areas',
+    ],
+
+    costs: [
+      { item: 'Estimated Monthly Budget', range: monthlyBudget },
+      { item: 'Healthcare / Insurance', range: card.healthcareCard?.insuranceRequirement || 'Varies' },
+      { item: 'Private Care', range: card.healthcareCard?.privateCare || 'Varies' },
+      { item: 'Public Healthcare Access', range: card.healthcareCard?.publicAccess || 'Varies' },
+      { item: 'English-Speaking Doctors', range: card.healthcareCard?.englishSpeakingCare || 'Varies' },
+      { item: 'Emergency Care', range: card.healthcareCard?.emergencyCare || 'Varies' },
+      { item: 'Visa Income Requirement', range: card.visaCard?.minimumIncomeRequirement || 'Verify officially' },
+      { item: 'Social Security Fit', range: card.socialSecurityCard?.fit || 'Verify officially' },
+    ],
+
+    healthcare: {
+      name: 'Healthcare Quality, Insurance & Doctors',
+      description:
+        card.healthcareCard?.quality ||
+        card.healthcareCard?.snapshot ||
+        base.healthcare.description,
+      keyTakeaway:
+        card.healthcareCard?.englishSpeakingCare ||
+        `Before choosing ${name}, verify private insurance, international insurance, English-speaking doctors, specialist access, and emergency care in ${bestHealthcareCity}.`,
+      officialLinks: healthcareLinks,
+    },
+
+    visa: {
+      name: card.visaCard?.route || base.visa.name || 'Retirement / Long-Stay Visa',
+      label: card.visaCard?.label || undefined,
+      requirements:
+        card.visaCard?.minimumIncomeRequirement ||
+        card.visaCard?.requirements ||
+        'Verify income, insurance, documents, renewals, and residency timeline with official sources.',
+      description:
+        card.visaCard?.proofNotes ||
+        card.visaCard?.incomeAccepted ||
+        base.visa.description,
+      keyTakeaway:
+        card.visaCard?.label ||
+        'Confirm visa requirements directly with official government, immigration, or consulate websites before making plans.',
+      officialLinks: visaLinks,
+    },
+
+    tax: {
+      name: 'Tax & Reporting',
+      description:
+        card.retirementSnapshot?.tax ||
+        card.socialSecurityCard?.taxOrReportingNotes ||
+        base.tax.description,
+      keyTakeaway:
+        'US citizens may still have US tax filing duties abroad. Confirm local tax residency, treaty rules, and retirement-income treatment with a qualified cross-border tax professional.',
+      officialLinks: socialSecurityLinks,
+    },
+
+    scores: {
+      ...base.scores,
+      ...(card.retirementSnapshot?.scores || {}),
+    },
+
+    relatedDestinations: makeRelatedDestinations(slug),
+
+    healthQuality: card.healthcareCard?.quality || card.healthcareCard?.snapshot || undefined,
+    privateInsurance: card.healthcareCard?.insuranceRequirement || undefined,
+    internationalInsurance: card.healthcareCard?.insuranceRequirement || undefined,
+    englishSpeakingDoctors: card.healthcareCard?.englishSpeakingCare || undefined,
+    publicHealthcareAccess: card.healthcareCard?.publicAccess || undefined,
+    emergencyCare: card.healthcareCard?.emergencyCare || undefined,
+    bestHealthcareCities: card.healthcareCard?.bestCitiesForHealthcare || undefined,
+    socialSecurityFit: card.socialSecurityCard?.fit || undefined,
+    socialSecurityDirectDeposit: card.socialSecurityCard?.directDeposit || undefined,
+    safetySummary: card.retirementSnapshot?.safety || undefined,
+    lifestyleSummary: card.retirementSnapshot?.costAndLifestyle || undefined,
+    verificationStatus: card.verification || undefined,
+    officialSources: allOfficialSources,
+  };
+}
+
+function readDestinationJson(): Record<string, DestinationDetail> {
+  if (!fs.existsSync(destinationsFile)) return {};
+
+  try {
+    const fileContents = fs.readFileSync(destinationsFile, 'utf8');
+    const parsed = JSON.parse(fileContents);
+
+    if (Array.isArray(parsed)) {
+      return Object.fromEntries(
+        parsed
+          .map((card: RawDestinationCard) => destinationFromRawCard(card))
+          .filter(Boolean)
+          .map((destination: DestinationDetail) => [destination.id, destination])
+      );
+    }
+
+    if (parsed && typeof parsed === 'object') {
+      return parsed as Record<string, DestinationDetail>;
+    }
+
+    return {};
+  } catch (error) {
+    console.error('Failed to read src/data/destinations.json:', error);
+    return {};
+  }
+}
+
+export async function getAllDestinationSlugs(): Promise<string[]> {
+  const fileData = readDestinationJson();
+
+  return Array.from(
+    new Set([...Object.keys(generatedDestinations), ...Object.keys(fileData)])
+  ).sort((a, b) => {
+    const aRank = fileData[a]?.rank ?? generatedDestinations[a]?.rank ?? 999;
+    const bRank = fileData[b]?.rank ?? generatedDestinations[b]?.rank ?? 999;
+    return aRank - bRank;
+  });
+}
+
+export async function getAllDestinations(): Promise<DestinationDetail[]> {
+  const fileData = readDestinationJson();
+  const merged = {
+    ...generatedDestinations,
+    ...fileData,
+  };
+
+  return Object.values(merged).sort((a, b) => a.rank - b.rank);
+}
+
+export async function getDestinationBySlug(
+  slug: string
+): Promise<DestinationDetail | null> {
+  const fileData = readDestinationJson();
+
+  return fileData[slug] ?? generatedDestinations[slug] ?? null;
+}
