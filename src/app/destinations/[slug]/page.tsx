@@ -103,10 +103,28 @@ export default async function DestinationDetailPage({
 
   const canonicalUrl = `${siteUrl}/destinations/${country.id}`;
 
-  const totalMonthly = Object.values(country.costOfLiving).reduce(
-    (a, b) => a + b,
-    0
-  );
+  const baselineCost = country.baselineMonthlyCost;
+
+  const baselineExpenseRows = baselineCost
+    ? [
+        ["Rent", baselineCost.rent],
+        ["Food", baselineCost.food],
+        ["Utilities", baselineCost.utilities],
+        ["Transport", baselineCost.transportation],
+        ["Healthcare", baselineCost.healthcare],
+        ["Lifestyle", baselineCost.lifestyle],
+      ]
+    : Object.entries(country.costOfLiving).map(([key, value]) => [
+        key.replace(/([A-Z])/g, " $1"),
+        value,
+      ] as [string, number]);
+
+  const totalMonthly = baselineCost
+    ? baselineCost.total
+    : Object.values(country.costOfLiving).reduce((a, b) => a + b, 0);
+
+  const recommendedMonthlyBudget =
+    country.cardData?.monthlyBudget || `$${totalMonthly.toLocaleString()}`;
 
   const relatedCountries = countries
     .filter((c) => c.id !== country.id)
@@ -429,7 +447,7 @@ export default async function DestinationDetailPage({
                         value: country.cardData.visaRoute,
                       },
                       {
-                        label: "Monthly Budget",
+                        label: "Recommended Monthly Budget",
                         value: country.cardData.monthlyBudget,
                       },
                       {
@@ -706,10 +724,10 @@ export default async function DestinationDetailPage({
 
             <p className="art-article-body" style={{ marginBottom: 20 }}>
               {country.name} offers American retirees a compelling combination
-              of affordability, lifestyle, and accessibility. With an estimated
-              monthly budget of around ${totalMonthly.toLocaleString()}, it
-              &rsquo;s one of the most attractive retirement destinations for
-              Americans living on Social Security or a fixed income.
+              of affordability, lifestyle, and accessibility. With a recommended monthly budget of {recommendedMonthlyBudget},
+              and a baseline local cost estimate of ${totalMonthly.toLocaleString()},
+              it can be an attractive destination for Americans living on Social
+              Security, pension income, or a fixed retirement budget.
             </p>
 
             <div className="dyk">
@@ -717,9 +735,9 @@ export default async function DestinationDetailPage({
               <div>
                 <div className="dyk-label">From the Money Page</div>
                 <div className="dyk-text">
-                  Estimated monthly cost in {country.name}: $
-                  {totalMonthly.toLocaleString()} — including rent, food,
-                  utilities, transport, healthcare, and entertainment.
+                  Baseline Monthly Cost Estimate in {country.name}: $
+                  {totalMonthly.toLocaleString()} — covering a modest local lifestyle
+                  across rent, food, utilities, transport, healthcare, and lifestyle spending.
                 </div>
               </div>
             </div>
@@ -960,9 +978,9 @@ export default async function DestinationDetailPage({
               </thead>
 
               <tbody>
-                {Object.entries(country.costOfLiving).map(([key, value], i) => (
+                {baselineExpenseRows.map(([label, value], i) => (
                   <tr
-                    key={key}
+                    key={String(label)}
                     style={{
                       background: i % 2 === 0 ? "#faf5e9" : "#f5edd8",
                       borderBottom: "1px solid #e0cc99",
@@ -976,7 +994,7 @@ export default async function DestinationDetailPage({
                         color: "#2b1a00",
                       }}
                     >
-                      {key.replace(/([A-Z])/g, " $1")}
+                      {label}
                     </td>
                     <td
                       style={{
@@ -1002,7 +1020,7 @@ export default async function DestinationDetailPage({
                       fontWeight: "bold",
                     }}
                   >
-                    Total / Month
+                    Baseline Monthly Cost Estimate
                   </td>
                   <td
                     style={{
@@ -1019,6 +1037,30 @@ export default async function DestinationDetailPage({
                 </tr>
               </tbody>
             </table>
+
+            {baselineCost && (
+              <div
+                style={{
+                  background: "#fff8e6",
+                  borderLeft: "4px solid #c9a84c",
+                  padding: "14px 18px",
+                  marginTop: "-8px",
+                  marginBottom: "24px",
+                  fontFamily: "var(--font-garamond), Georgia, serif",
+                  color: "#1e1408",
+                  fontSize: 15,
+                  lineHeight: 1.55,
+                }}
+              >
+                <strong>This baseline estimate covers a modest local lifestyle only.</strong>{" "}
+                The recommended monthly budget above includes extra room for private
+                healthcare, travel back to the U.S., visa/legal paperwork, emergencies,
+                better housing choices, currency swings, and lifestyle flexibility.
+                <div style={{ marginTop: 8, fontSize: 13, color: "#5a3e0a" }}>
+                  Basis: {baselineCost.basis} · Confidence: {baselineCost.confidence}
+                </div>
+              </div>
+            )}
 
             <div
               style={{
