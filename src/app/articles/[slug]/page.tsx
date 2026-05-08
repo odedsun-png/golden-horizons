@@ -36,6 +36,53 @@ function removeEmbeddedDisclaimer(content: string) {
     .trim();
 }
 
+function extractFaqsFromContent(
+  content: string
+): { question: string; answer: string }[] {
+  if (!content) return [];
+
+  function decodeEntities(str: string): string {
+    return str
+      .replace(/&amp;/g, "&")
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&rsquo;/g, "'")
+      .replace(/&ldquo;/g, '"')
+      .replace(/&rdquo;/g, '"')
+      .replace(/&nbsp;/g, " ");
+  }
+
+  function clean(str: string): string {
+    return decodeEntities(str.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim());
+  }
+
+  // Normalize markdown headings to HTML tags for uniform processing
+  const normalized = content
+    .replace(/^###\s+(.+)$/gm, "<h3>$1</h3>")
+    .replace(/^##\s+(.+)$/gm, "<h2>$1</h2>");
+
+  const faqSectionMatch = normalized.match(
+    /<h2[^>]*>[^<]*Frequently Asked Questions[^<]*<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/i
+  );
+
+  if (!faqSectionMatch) return [];
+
+  const faqSection = faqSectionMatch[1];
+  const h3Regex =
+    /<h3[^>]*>([\s\S]*?)<\/h3>([\s\S]*?)(?=<h3[^>]*>|<h2[^>]*>|$)/gi;
+  const faqs: { question: string; answer: string }[] = [];
+
+  let match: RegExpExecArray | null;
+  while ((match = h3Regex.exec(faqSection)) !== null) {
+    const question = clean(match[1]);
+    const answer = clean(match[2]);
+    if (question && answer) faqs.push({ question, answer });
+    if (faqs.length >= 5) break;
+  }
+
+  return faqs;
+}
+
 async function getCanonicalSlug(slug: string) {
   if (!slug.endsWith("-v2")) return slug;
 
@@ -158,6 +205,24 @@ export default async function ArticleDetailPage({
 
   const cleanedArticleContent = removeEmbeddedDisclaimer(article.content);
 
+  const faqs = extractFaqsFromContent(cleanedArticleContent);
+
+  const faqSchema =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
+
   const allSlugs = await getAllArticleSlugs();
   const allArticlesRaw = await Promise.all(
     allSlugs.map((articleSlug) => getArticleBySlug(articleSlug))
@@ -258,6 +323,15 @@ export default async function ArticleDetailPage({
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
+
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
+      )}
 
       <div className="site">
         <div className="topbar">
