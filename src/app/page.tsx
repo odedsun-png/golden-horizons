@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HomeClient from "./HomeClient";
+import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
 
 const siteUrl = "https://golden-horizons.org";
 
@@ -48,7 +49,25 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+  const slugs = await getAllArticleSlugs();
+  const rawArticles = await Promise.all(slugs.map((s) => getArticleBySlug(s)));
+
+  const allArticles = rawArticles
+    .filter((a): a is NonNullable<typeof a> => a !== null)
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      category: a.category === "Uncategorized" ? "Retirement Abroad" : a.category,
+      image:
+        a.heroImage ||
+        a.image ||
+        "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=400",
+      description: a.description || a.excerpt || `Read about ${a.title}.`,
+      date: a.date,
+    }));
+
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -78,7 +97,7 @@ export default function HomePage() {
           __html: JSON.stringify(webPageSchema),
         }}
       />
-      <HomeClient />
+      <HomeClient allArticles={allArticles} />
     </>
   );
 }

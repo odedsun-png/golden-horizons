@@ -4,8 +4,25 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import SubscribeBox from "@/components/SubscribeBox";
 
-export default function HomeClient() {
+type ArticleCard = {
+  slug: string;
+  title: string;
+  category: string;
+  image: string;
+  description: string;
+  date: string;
+};
+
+function getSectionLabel(category: string): string {
+  return category.split("·")[0].trim() || "Retirement Abroad";
+}
+
+export default function HomeClient({ allArticles }: { allArticles: ArticleCard[] }) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [pickedArticles, setPickedArticles] = useState<ArticleCard[]>([]);
+  const [articleGroupIndex, setArticleGroupIndex] = useState(0);
+  const [articleGroupVisible, setArticleGroupVisible] = useState(true);
+  const [articleGroups, setArticleGroups] = useState<ArticleCard[][]>([]);
 
   const slides = [
     {
@@ -42,6 +59,37 @@ export default function HomeClient() {
 
     return () => window.clearInterval(interval);
   }, [slides.length]);
+
+  useEffect(() => {
+    if (allArticles.length === 0) return;
+    const shuffled = [...allArticles].sort(() => Math.random() - 0.5);
+    const groups: ArticleCard[][] = [];
+    for (let g = 0; g < 4; g++) {
+      const group: ArticleCard[] = [];
+      for (let i = 0; i < 4; i++) {
+        group.push(shuffled[(g * 4 + i) % shuffled.length]);
+      }
+      groups.push(group);
+    }
+    setArticleGroups(groups);
+    setPickedArticles(groups[0]);
+  }, [allArticles]);
+
+  useEffect(() => {
+    if (articleGroups.length === 0) return;
+    const interval = window.setInterval(() => {
+      setArticleGroupVisible(false);
+      setTimeout(() => {
+        setArticleGroupIndex((prev) => {
+          const next = (prev + 1) % 4;
+          setPickedArticles(articleGroups[next]);
+          return next;
+        });
+        setArticleGroupVisible(true);
+      }, 500);
+    }, 9000);
+    return () => window.clearInterval(interval);
+  }, [articleGroups]);
 
   return (
     <main className="mag-page">
@@ -293,115 +341,94 @@ export default function HomeClient() {
           </div>
         </div>
 
-        <div className="section-banner">Inside This Issue</div>
+        <div className="section-banner" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingRight: 24 }}>
+          <span>Inside This Issue</span>
+          <span style={{ display: "flex", gap: 7 }}>
+            {[0, 1, 2, 3].map((i) => (
+              <span
+                key={i}
+                style={{
+                  width: 8,
+                  height: 8,
+                  borderRadius: "50%",
+                  background: i === articleGroupIndex ? "#c9a84c" : "rgba(201,168,76,0.3)",
+                  display: "inline-block",
+                  transition: "background 0.4s",
+                }}
+              />
+            ))}
+          </span>
+        </div>
 
-        <div className="below-fold">
+        <div
+          className="below-fold"
+          style={{
+            opacity: articleGroupVisible ? 1 : 0,
+            transition: "opacity 0.5s ease-in-out",
+          }}
+        >
           <div className="bf-col">
-            <div className="mag-section-label">The Money Page</div>
-
-            <div className="story-item">
-              <img
-                className="story-img"
-                src="https://images.pexels.com/photos/32754142/pexels-photo-32754142.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Gjirokastër Albania old town retirement cost of living"
-              />
-              <div className="story-cat">Cost of Living · Albania</div>
-
-              <Link
-                href="/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="story-title">
-                  What $1,000 a Month Gets You in Gjirokastër
+            {pickedArticles.length >= 1 && (
+              <>
+                <div className="mag-section-label">
+                  {getSectionLabel(pickedArticles[0].category)}
                 </div>
-              </Link>
-
-              <Link
-                href="/articles/albania-what-1000-a-month-gets-you-in-gjirokastr-v2"
-                className="story-read"
-              >
-                Read this story →
-              </Link>
-            </div>
-
-            <div className="story-item">
-              <img
-                className="story-img"
-                src="https://images.pexels.com/photos/15894001/pexels-photo-15894001.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Siem Reap Cambodia retirement cost of living"
-              />
-              <div className="story-cat">Cost of Living · Cambodia</div>
-
-              <Link
-                href="/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="story-title">
-                  What $1,000 a Month Gets You in Siem Reap
-                </div>
-              </Link>
-
-              <Link
-                href="/articles/cambodia-what-1000-a-month-gets-you-in-siem-reap-v2"
-                className="story-read"
-              >
-                Read this story →
-              </Link>
-            </div>
+                {pickedArticles.slice(0, 2).map((article) => (
+                  <div key={article.slug} className="story-item">
+                    <img
+                      className="story-img"
+                      src={article.image}
+                      alt={article.title}
+                    />
+                    <div className="story-cat">{article.category}</div>
+                    <Link
+                      href={`/articles/${article.slug}`}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div className="story-title">{article.title}</div>
+                    </Link>
+                    <Link
+                      href={`/articles/${article.slug}`}
+                      className="story-read"
+                    >
+                      Read this story →
+                    </Link>
+                  </div>
+                ))}
+              </>
+            )}
           </div>
 
           <div className="bf-col">
-            <div className="mag-section-label">The Visa File</div>
-
-            <div className="story-item">
-              <img
-                className="story-img"
-                src="https://images.pexels.com/photos/154241/pexels-photo-154241.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Ireland countryside and residency options for American retirees"
-              />
-              <div className="story-cat">Visas &amp; Residency · Ireland</div>
-
-              <Link
-                href="/articles/ireland-residency-options-for-american-retirees-v2"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="story-title">
-                  Residency Options for American Retirees in Ireland
+            {pickedArticles.length >= 3 && (
+              <>
+                <div className="mag-section-label">
+                  {getSectionLabel(pickedArticles[2].category)}
                 </div>
-              </Link>
-
-              <Link
-                href="/articles/ireland-residency-options-for-american-retirees-v2"
-                className="story-read"
-              >
-                Read this story →
-              </Link>
-            </div>
-
-            <div className="story-item">
-              <img
-                className="story-img"
-                src="https://images.pexels.com/photos/20813456/pexels-photo-20813456.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Georgia retirement residency options for U.S. retirees"
-              />
-              <div className="story-cat">Visas &amp; Residency · Georgia</div>
-
-              <Link
-                href="/articles/georgia-residency-options-for-us-retirees"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="story-title">
-                  Residency Options for U.S. Retirees in Georgia
-                </div>
-              </Link>
-
-              <Link
-                href="/articles/georgia-residency-options-for-us-retirees"
-                className="story-read"
-              >
-                Read this story →
-              </Link>
-            </div>
+                {pickedArticles.slice(2, 4).map((article) => (
+                  <div key={article.slug} className="story-item">
+                    <img
+                      className="story-img"
+                      src={article.image}
+                      alt={article.title}
+                    />
+                    <div className="story-cat">{article.category}</div>
+                    <Link
+                      href={`/articles/${article.slug}`}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div className="story-title">{article.title}</div>
+                    </Link>
+                    <Link
+                      href={`/articles/${article.slug}`}
+                      className="story-read"
+                    >
+                      Read this story →
+                    </Link>
+                  </div>
+                ))}
+              </>
+            )}
           </div>
 
           <div className="bf-col">

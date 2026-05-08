@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
+import { getDisplayCategory } from "@/lib/categories";
 import ArticlesClient from "./ArticlesClient";
 
 const siteUrl = "https://golden-horizons.org";
@@ -59,26 +60,40 @@ export default async function ArticlesPage() {
     (article): article is NonNullable<typeof article> => article !== null
   );
 
-  const editorPick = validArticles[0] || null;
+  const rawEditorPick = validArticles[0] || null;
+  const rawArchive = rawEditorPick ? validArticles.slice(1) : validArticles;
 
-  // Keep the visible archive count consistent with the article grid count.
-  // The editor pick is shown separately, so it should not be counted again
-  // inside the archive list.
-  const archiveArticles = editorPick ? validArticles.slice(1) : validArticles;
+  // Slim each article: drop heavy `content` HTML, pre-compute displayCategory
+  // so A / B / C all use the exact same value with no client re-computation.
+  const slim = (a: (typeof rawArchive)[number]) => ({
+    slug: a.slug,
+    title: a.title,
+    description: a.description,
+    excerpt: a.excerpt,
+    category: a.category,
+    heroImage: a.heroImage,
+    image: a.image,
+    date: a.date,
+    displayCategory: getDisplayCategory(a),
+  });
+
+  const editorPick = rawEditorPick ? slim(rawEditorPick) : null;
+  const archiveArticles = rawArchive.map(slim);
 
   const categoryGroups: Record<string, typeof archiveArticles> = {};
 
   archiveArticles.forEach((article) => {
-    const category = article.category || "Uncategorized";
-
-    if (!categoryGroups[category]) {
-      categoryGroups[category] = [];
-    }
-
-    categoryGroups[category].push(article);
+    const dc = article.displayCategory;
+    if (!categoryGroups[dc]) categoryGroups[dc] = [];
+    categoryGroups[dc].push(article);
   });
 
   const categories = Object.keys(categoryGroups).sort();
+
+  // Build-time audit — every key must have ≥ 1 article
+  categories.forEach((cat) =>
+    console.log(`[articles-audit] ${cat}: ${categoryGroups[cat].length}`)
+  );
 
   const itemListSchema = {
     "@context": "https://schema.org",

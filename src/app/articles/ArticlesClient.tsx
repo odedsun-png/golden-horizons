@@ -11,6 +11,8 @@ type Article = {
   category?: string;
   heroImage?: string;
   image?: string;
+  date?: string;
+  displayCategory: string;
 };
 
 type Props = {
@@ -69,21 +71,60 @@ const CATEGORY_IMAGES: Record<string, string> = {
     "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=800",
   LEGIT:
     "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Food Culture":
+    "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "Expat Life":
+    "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=800",
 };
 
 const DEFAULT_IMAGE =
   "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800";
 
-const FEATURED_CATEGORIES = [
-  "Cost",
-  "Healthcare",
-  "Visa",
-  "Best Cities",
-  "Beach",
-  "Safety",
-  "Real Estate",
-  "Expat",
-];
+const MAX_ARTICLES = 9; // 3 columns × 3 rows
+
+function slugHash(slug: string): number {
+  let h = 5381;
+  for (let i = 0; i < slug.length; i++) {
+    h = ((h << 5) + h) ^ slug.charCodeAt(i);
+  }
+  return Math.abs(h);
+}
+
+function buildMixedArticles(
+  allArticles: Article[],
+  groups: Record<string, Article[]>,
+  maxCount: number
+): Article[] {
+  const cats = Object.keys(groups).sort();
+  if (cats.length === 0) {
+    return [...allArticles]
+      .sort((a, b) => slugHash(a.slug) - slugHash(b.slug))
+      .slice(0, maxCount);
+  }
+  const sortedGroups: Record<string, Article[]> = {};
+  for (const cat of cats) {
+    sortedGroups[cat] = [...groups[cat]].sort(
+      (a, b) => slugHash(a.slug) - slugHash(b.slug)
+    );
+  }
+  const indices: Record<string, number> = {};
+  for (const cat of cats) indices[cat] = 0;
+  const result: Article[] = [];
+  while (result.length < maxCount) {
+    let added = false;
+    for (const cat of cats) {
+      if (result.length >= maxCount) break;
+      const idx = indices[cat];
+      if (idx < sortedGroups[cat].length) {
+        result.push(sortedGroups[cat][idx]);
+        indices[cat]++;
+        added = true;
+      }
+    }
+    if (!added) break;
+  }
+  return result;
+}
 
 function normalizeCategory(category?: string) {
   return category?.trim() || "Uncategorized";
@@ -92,6 +133,20 @@ function normalizeCategory(category?: string) {
 function getCategoryImage(category?: string) {
   const normalized = normalizeCategory(category);
   return CATEGORY_IMAGES[normalized] || DEFAULT_IMAGE;
+}
+
+function getNewestArticleImage(categoryArticles: Article[]): string {
+  const sorted = [...categoryArticles].sort((a, b) =>
+    (b.date || "").localeCompare(a.date || "")
+  );
+  const newest = sorted[0];
+  if (!newest) return DEFAULT_IMAGE;
+  return (
+    newest.heroImage?.trim() ||
+    newest.image?.trim() ||
+    CATEGORY_IMAGES[newest.displayCategory] ||
+    DEFAULT_IMAGE
+  );
 }
 
 function getArticleImage(article: Article) {
@@ -107,24 +162,15 @@ export default function ArticlesClient({
   editorPick,
 }: Props) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [visibleCount, setVisibleCount] = useState(18);
-
-  const filteredArticles = useMemo(() => {
-    return selectedCategory ? categoryGroups[selectedCategory] || [] : articles;
-  }, [articles, categoryGroups, selectedCategory]);
 
   const articlesForGrid = useMemo(() => {
-    if (!selectedCategory && editorPick) {
-      return filteredArticles.filter(
-        (article) => article.slug !== editorPick.slug
-      );
+    if (selectedCategory) {
+      return [...(categoryGroups[selectedCategory] || [])]
+        .sort((a, b) => slugHash(a.slug) - slugHash(b.slug))
+        .slice(0, MAX_ARTICLES);
     }
-
-    return filteredArticles;
-  }, [filteredArticles, selectedCategory, editorPick]);
-
-  const displayedArticles = articlesForGrid.slice(0, visibleCount);
-  const hasMore = displayedArticles.length < articlesForGrid.length;
+    return buildMixedArticles(articles, categoryGroups, MAX_ARTICLES);
+  }, [articles, categoryGroups, selectedCategory]);
 
   const categoryCards = [
     {
@@ -139,7 +185,7 @@ export default function ArticlesClient({
       count: categoryGroups[category]?.length || 0,
       desc: `Browse ${category.toLowerCase()} stories`,
       category,
-      image: getCategoryImage(category),
+      image: getNewestArticleImage(categoryGroups[category] || []),
     })),
   ];
 
@@ -160,13 +206,11 @@ export default function ArticlesClient({
 
   function selectCategory(category: string | null) {
     setSelectedCategory(category);
-    setVisibleCount(18);
     scrollToResults();
   }
 
   function clearFilters() {
     setSelectedCategory(null);
-    setVisibleCount(18);
     scrollToResults();
   }
 
@@ -230,8 +274,7 @@ export default function ArticlesClient({
             All
           </button>
 
-          {FEATURED_CATEGORIES.filter((cat) => categories.includes(cat)).map(
-            (category) => (
+          {categories.map((category) => (
               <button
                 key={category}
                 type="button"
@@ -252,8 +295,7 @@ export default function ArticlesClient({
               >
                 {category}
               </button>
-            )
-          )}
+            ))}
 
           {selectedCategory && (
             <button
@@ -414,7 +456,7 @@ export default function ArticlesClient({
 
             <div className="ep-content">
               <div className="ep-kicker">
-                {editorPick.category || "Featured"}
+                {editorPick.displayCategory || "Featured"}
               </div>
 
               <Link
@@ -440,9 +482,9 @@ export default function ArticlesClient({
         {selectedCategory ? `${selectedCategory} Stories` : "Latest Stories"}
       </div>
 
-      {displayedArticles.length > 0 ? (
+      {articlesForGrid.length > 0 ? (
         <div className="articles-grid">
-          {displayedArticles.map((article) => (
+          {articlesForGrid.map((article) => (
             <Link
               key={article.slug}
               href={`/articles/${article.slug}`}
@@ -453,11 +495,11 @@ export default function ArticlesClient({
                 src={getArticleImage(article)}
                 alt={article.title}
                 onError={(e) => {
-                  e.currentTarget.src = getCategoryImage(article.category);
+                  e.currentTarget.src = getCategoryImage(article.displayCategory);
                 }}
               />
 
-              <div className="art-cat">{article.category || "Article"}</div>
+              <div className="art-cat">{article.displayCategory}</div>
               <div className="art-title">{article.title}</div>
               <span className="art-read">Read →</span>
             </Link>
@@ -479,25 +521,8 @@ export default function ArticlesClient({
       )}
 
       <div className="load-more">
-        {hasMore ? (
-          <button
-            type="button"
-            onClick={() => setVisibleCount((count) => count + 9)}
-            className="load-btn"
-            style={{ cursor: "pointer" }}
-          >
-            Load More Stories
-          </button>
-        ) : (
-          articlesForGrid.length > 0 && (
-            <span className="load-btn" style={{ cursor: "default" }}>
-              All Stories Loaded
-            </span>
-          )
-        )}
-
         <p className="load-count">
-          Showing {displayedArticles.length} of {articlesForGrid.length}{" "}
+          Showing {articlesForGrid.length}{" "}
           {selectedCategory ? `${selectedCategory} stories` : "stories"}
         </p>
       </div>
