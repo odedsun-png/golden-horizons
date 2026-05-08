@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getCountryById } from "@/lib/countries";
 
 const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/best-countries-to-retire-abroad-on-a-budget`;
@@ -383,19 +384,23 @@ export default function BudgetRetirementPage() {
             <div className="related-label" style={{ marginTop: 22 }}>Top Budget Destinations</div>
 
             {[
-              { href: "/destinations/vietnam", flag: "🇻🇳", name: "Vietnam", note: "From ~$805/mo" },
-              { href: "/destinations/thailand", flag: "🇹🇭", name: "Thailand", note: "From ~$940/mo" },
-              { href: "/destinations/malaysia", flag: "🇲🇾", name: "Malaysia", note: "From ~$960/mo" },
-              { href: "/destinations/ecuador", flag: "🇪🇨", name: "Ecuador", note: "From ~$1,010/mo" },
-              { href: "/destinations/colombia", flag: "🇨🇴", name: "Colombia", note: "From ~$1,070/mo" },
-            ].map((dest) => (
-              <Link key={dest.href} href={dest.href} style={{ display: "block", padding: "10px 0", borderBottom: "1px solid #e0cc99", textDecoration: "none" }}>
-                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 16, fontWeight: 700, color: "#1a0f00" }}>
-                  {dest.flag} {dest.name}
-                </div>
-                <div style={{ fontFamily: "EB Garamond, serif", fontSize: 14, color: "#8b6914", fontStyle: "italic" }}>{dest.note}</div>
-              </Link>
-            ))}
+              { href: "/destinations/vietnam", slug: "vietnam", flag: "🇻🇳", name: "Vietnam", note: "From ~$805/mo" },
+              { href: "/destinations/thailand", slug: "thailand", flag: "🇹🇭", name: "Thailand", note: "From ~$940/mo" },
+              { href: "/destinations/malaysia", slug: "malaysia", flag: "🇲🇾", name: "Malaysia", note: "From ~$960/mo" },
+              { href: "/destinations/ecuador", slug: "ecuador", flag: "🇪🇨", name: "Ecuador", note: "From ~$1,010/mo" },
+              { href: "/destinations/colombia", slug: "colombia", flag: "🇨🇴", name: "Colombia", note: "From ~$1,070/mo" },
+            ].map((dest) => {
+              const img = getCountryById(dest.slug)?.image;
+              return (
+                <Link key={dest.href} href={dest.href} style={{ display: "flex", gap: 10, padding: "10px 0", borderBottom: "1px solid #e0cc99", textDecoration: "none", alignItems: "center" }}>
+                  {img && <img src={img} alt={dest.name} style={{ width: 64, height: 48, objectFit: "cover", flexShrink: 0, borderRadius: 2, border: "1px solid #d4b896" }} />}
+                  <div>
+                    <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#1a0f00", lineHeight: 1.25 }}>{dest.flag} {dest.name}</div>
+                    <div style={{ fontFamily: "EB Garamond, serif", fontSize: 13, color: "#8b6914", fontStyle: "italic" }}>{dest.note}</div>
+                  </div>
+                </Link>
+              );
+            })}
 
             <div className="related-label" style={{ marginTop: 22 }}>Other Planning Guides</div>
 

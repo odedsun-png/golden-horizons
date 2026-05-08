@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getCountryById } from "@/lib/countries";
 
 const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/safest-countries-to-retire-abroad`;
@@ -348,17 +349,23 @@ export default function SafetyPage() {
             <div className="related-label" style={{ marginTop: 22 }}>Highest Safety Score Countries</div>
 
             {[
-              { href: "/destinations/portugal", flag: "🇵🇹", name: "Portugal", note: "Safety 5/5 · Rank #1" },
-              { href: "/destinations/spain", flag: "🇪🇸", name: "Spain", note: "Safety 5/5 · Rank #4" },
-              { href: "/destinations/malta", flag: "🇲🇹", name: "Malta", note: "Safety 5/5 · English-speaking EU" },
-              { href: "/destinations/new-zealand", flag: "🇳🇿", name: "New Zealand", note: "Safety 5/5 · #2 globally" },
-              { href: "/destinations/costa-rica", flag: "🇨🇷", name: "Costa Rica", note: "Safety 4/5 · Stable democracy" },
-            ].map((dest) => (
-              <Link key={dest.href} href={dest.href} style={{ display: "block", padding: "10px 0", borderBottom: "1px solid #e0cc99", textDecoration: "none" }}>
-                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 16, fontWeight: 700, color: "#1a0f00" }}>{dest.flag} {dest.name}</div>
-                <div style={{ fontFamily: "EB Garamond, serif", fontSize: 14, color: "#8b6914", fontStyle: "italic" }}>{dest.note}</div>
-              </Link>
-            ))}
+              { href: "/destinations/portugal", slug: "portugal", flag: "🇵🇹", name: "Portugal", note: "Safety 5/5 · Rank #1" },
+              { href: "/destinations/spain", slug: "spain", flag: "🇪🇸", name: "Spain", note: "Safety 5/5 · Rank #4" },
+              { href: "/destinations/malta", slug: "malta", flag: "🇲🇹", name: "Malta", note: "Safety 5/5 · English-speaking EU" },
+              { href: "/destinations/new-zealand", slug: "new-zealand", flag: "🇳🇿", name: "New Zealand", note: "Safety 5/5 · #2 globally" },
+              { href: "/destinations/costa-rica", slug: "costa-rica", flag: "🇨🇷", name: "Costa Rica", note: "Safety 4/5 · Stable democracy" },
+            ].map((dest) => {
+              const img = getCountryById(dest.slug)?.image;
+              return (
+                <Link key={dest.href} href={dest.href} style={{ display: "flex", gap: 10, padding: "10px 0", borderBottom: "1px solid #e0cc99", textDecoration: "none", alignItems: "center" }}>
+                  {img && <img src={img} alt={dest.name} style={{ width: 64, height: 48, objectFit: "cover", flexShrink: 0, borderRadius: 2, border: "1px solid #d4b896" }} />}
+                  <div>
+                    <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#1a0f00", lineHeight: 1.25 }}>{dest.flag} {dest.name}</div>
+                    <div style={{ fontFamily: "EB Garamond, serif", fontSize: 13, color: "#8b6914", fontStyle: "italic" }}>{dest.note}</div>
+                  </div>
+                </Link>
+              );
+            })}
 
             <div className="related-label" style={{ marginTop: 22 }}>Other Planning Guides</div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getCountryById } from "@/lib/countries";
 
 const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/retiring-abroad-checklist-for-americans`;
@@ -341,17 +342,23 @@ export default function ChecklistPage() {
             <div className="related-label" style={{ marginTop: 22 }}>Top Destinations to Research</div>
 
             {[
-              { href: "/destinations/portugal", flag: "🇵🇹", name: "Portugal", note: "Ranked #1 · D7 Visa" },
-              { href: "/destinations/mexico", flag: "🇲🇽", name: "Mexico", note: "Ranked #2 · Easy residency" },
-              { href: "/destinations/costa-rica", flag: "🇨🇷", name: "Costa Rica", note: "Ranked #3 · Pensionado visa" },
-              { href: "/destinations/panama", flag: "🇵🇦", name: "Panama", note: "Ranked #5 · Pensionado program" },
-              { href: "/destinations/thailand", flag: "🇹🇭", name: "Thailand", note: "Ranked #6 · OA retirement visa" },
-            ].map((dest) => (
-              <Link key={dest.href} href={dest.href} style={{ display: "block", padding: "10px 0", borderBottom: "1px solid #e0cc99", textDecoration: "none" }}>
-                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 16, fontWeight: 700, color: "#1a0f00" }}>{dest.flag} {dest.name}</div>
-                <div style={{ fontFamily: "EB Garamond, serif", fontSize: 14, color: "#8b6914", fontStyle: "italic" }}>{dest.note}</div>
-              </Link>
-            ))}
+              { href: "/destinations/portugal", slug: "portugal", flag: "🇵🇹", name: "Portugal", note: "Ranked #1 · D7 Visa" },
+              { href: "/destinations/mexico", slug: "mexico", flag: "🇲🇽", name: "Mexico", note: "Ranked #2 · Easy residency" },
+              { href: "/destinations/costa-rica", slug: "costa-rica", flag: "🇨🇷", name: "Costa Rica", note: "Ranked #3 · Pensionado visa" },
+              { href: "/destinations/panama", slug: "panama", flag: "🇵🇦", name: "Panama", note: "Ranked #5 · Pensionado program" },
+              { href: "/destinations/thailand", slug: "thailand", flag: "🇹🇭", name: "Thailand", note: "Ranked #6 · OA retirement visa" },
+            ].map((dest) => {
+              const img = getCountryById(dest.slug)?.image;
+              return (
+                <Link key={dest.href} href={dest.href} style={{ display: "flex", gap: 10, padding: "10px 0", borderBottom: "1px solid #e0cc99", textDecoration: "none", alignItems: "center" }}>
+                  {img && <img src={img} alt={dest.name} style={{ width: 64, height: 48, objectFit: "cover", flexShrink: 0, borderRadius: 2, border: "1px solid #d4b896" }} />}
+                  <div>
+                    <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#1a0f00", lineHeight: 1.25 }}>{dest.flag} {dest.name}</div>
+                    <div style={{ fontFamily: "EB Garamond, serif", fontSize: 13, color: "#8b6914", fontStyle: "italic" }}>{dest.note}</div>
+                  </div>
+                </Link>
+              );
+            })}
 
             <div className="related-label" style={{ marginTop: 22 }}>Other Planning Guides</div>
 
