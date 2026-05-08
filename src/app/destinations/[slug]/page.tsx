@@ -1008,7 +1008,7 @@ export default async function DestinationDetailPage({
                         fontWeight: "bold",
                       }}
                     >
-                      ${value}
+                      ${Number(value).toLocaleString()}
                     </td>
                   </tr>
                 ))}
@@ -1056,9 +1056,9 @@ export default async function DestinationDetailPage({
                 }}
               >
                 <strong>This baseline estimate covers a modest local lifestyle only.</strong>{" "}
-                The recommended monthly budget above includes extra room for private
-                healthcare, travel back to the U.S., visa/legal paperwork, emergencies,
-                better housing choices, currency swings, and lifestyle flexibility.
+                The recommended monthly budget above includes extra room for private insurance,
+                visa fees, flights, emergencies, better neighborhoods, exchange-rate changes,
+                and lifestyle flexibility.
                 <div style={{ marginTop: 8, fontSize: 13, color: "#5a3e0a" }}>
                   Basis: {baselineCost.basis} · Confidence: {baselineCost.confidence}
                 </div>
