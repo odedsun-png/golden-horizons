@@ -23,6 +23,7 @@ export type Country = {
   currency: string;
   mainVisaRoute?: string;
   cardData?: {
+    snapshotSummary?: string;
     visaRoute: string;
     visaLabel: string;
     monthlyBudget: string;
@@ -78,6 +79,7 @@ export const countries: Country[] = [
     currency: "EUR",
     mainVisaRoute: "D7 Passive Income Visa",
     cardData: {
+      snapshotSummary: "Portugal is a strong retirement destination for Americans because Social Security income may support the D7/residency visa route, healthcare access is strong, and safety scores are high.",
       visaRoute: "D7 Passive Income Visa",
       visaLabel: "Passive income visa — pensions, SS, investments accepted",
       monthlyBudget: "$1,800–$2,500",
@@ -88,12 +90,12 @@ export const countries: Country[] = [
       scores: { cost: 3, healthcare: 5, safety: 5, lifestyle: 5, visaEase: 4, englishEase: 4 },
     },
     officialSources: {
-      visa: "https://vistos.mne.gov.pt/en/national-visas/required-documentation/passive-income",
+      visa: "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       immigration: "https://aima.gov.pt/",
-      healthcare: "https://www.sns.gov.pt/",
-      tax: "https://www.portaldasfinancas.gov.pt/",
-      safety: "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Portugal.html",
-      socialSecurity: "https://www.ssa.gov/international/Agreement_Pamphlets/portugal.html",
+      healthcare: "https://www.sns24.gov.pt/",
+      tax: "https://info.portaldasfinancas.gov.pt/",
+      safety: "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/portugal-travel-advisory.html",
+      socialSecurity: "https://www.ssa.gov/international/payments.html",
       banking: "https://www.bportugal.pt/",
     },
     verificationStatus: {
@@ -103,7 +105,7 @@ export const countries: Country[] = [
       safetyVerifiedFromOfficialSource: true,
       lastReviewed: "May 2026",
       confidenceScore: 97,
-      notes: "All visa and source data verified from official Portuguese government and U.S. State Department sources. Tax note reflects end of NHR program. Healthcare access confirmed via SNS.",
+      notes: "All visa and source data verified from official Portuguese government and U.S. State Department sources. Visa link updated to necessary-documentation/residency. Healthcare updated to SNS24. Tax updated to info.portaldasfinancas.gov.pt. Safety updated to travel advisory URL. SSA updated to international/payments. Tax note reflects end of NHR program.",
     },
     pros: [
       "EU residency pathway — live and travel freely across the Schengen zone",

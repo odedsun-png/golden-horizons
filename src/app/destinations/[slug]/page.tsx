@@ -188,6 +188,50 @@ export default async function DestinationDetailPage({
     inLanguage: "en-US",
   };
 
+  const retirementSnapshotSchema = country.cardData
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        name: `${country.name} Retirement Destination Snapshot for Americans`,
+        description:
+          country.cardData.snapshotSummary ||
+          `Retirement destination profile for ${country.name}: visa route, monthly budget, healthcare, safety, and tax information for American retirees.`,
+        url: canonicalUrl,
+        creator: {
+          "@type": "Organization",
+          name: "Golden Horizons",
+          url: siteUrl,
+        },
+        about: {
+          "@type": "Country",
+          name: country.name,
+        },
+        ...(country.verificationStatus?.lastReviewed
+          ? { dateModified: country.verificationStatus.lastReviewed }
+          : {}),
+        variableMeasured: [
+          { "@type": "PropertyValue", name: "destinationName", value: country.name },
+          { "@type": "PropertyValue", name: "visaRoute", value: country.cardData.visaRoute },
+          { "@type": "PropertyValue", name: "monthlyBudgetRange", value: country.cardData.monthlyBudget },
+          { "@type": "PropertyValue", name: "socialSecurityFit", value: country.cardData.socialSecurityFit },
+          { "@type": "PropertyValue", name: "healthcareNote", value: country.cardData.healthcareSnapshot },
+          { "@type": "PropertyValue", name: "safetyNote", value: country.cardData.safetySnapshot },
+          { "@type": "PropertyValue", name: "taxNote", value: country.cardData.taxSnapshot },
+          ...(country.verificationStatus?.lastReviewed
+            ? [{ "@type": "PropertyValue", name: "lastReviewed", value: country.verificationStatus.lastReviewed }]
+            : []),
+          ...(country.verificationStatus?.confidenceScore !== undefined
+            ? [{ "@type": "PropertyValue", name: "confidenceScore", value: String(country.verificationStatus.confidenceScore) }]
+            : []),
+        ],
+        ...(country.officialSources
+          ? {
+              sameAs: Object.values(country.officialSources).filter(Boolean),
+            }
+          : {}),
+      }
+    : null;
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -228,6 +272,15 @@ export default async function DestinationDetailPage({
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
+
+      {retirementSnapshotSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(retirementSnapshotSchema),
+          }}
+        />
+      )}
 
       <div className="site">
         <div className="topbar">
@@ -334,14 +387,32 @@ export default async function DestinationDetailPage({
                     fontSize: 11,
                     letterSpacing: "0.22em",
                     textTransform: "uppercase",
-                    color: "#8b6914",
-                    marginBottom: 14,
+                    color: "#5a3e0a",
+                    marginBottom: 10,
                     fontFamily: "var(--font-playfair), Georgia, serif",
                     fontWeight: 700,
                   }}
                 >
                   Retiree Decision Snapshot
                 </div>
+
+                {country.cardData.snapshotSummary && (
+                  <p
+                    style={{
+                      fontSize: 16,
+                      color: "#1f1408",
+                      lineHeight: 1.55,
+                      fontFamily: "var(--font-garamond), Georgia, serif",
+                      fontStyle: "italic",
+                      marginBottom: 14,
+                      marginTop: 0,
+                      borderBottom: "1px solid #d4b96a",
+                      paddingBottom: 12,
+                    }}
+                  >
+                    {country.cardData.snapshotSummary}
+                  </p>
+                )}
 
                 <div
                   style={{
@@ -382,11 +453,11 @@ export default async function DestinationDetailPage({
                     <div key={label}>
                       <div
                         style={{
-                          fontSize: 9,
+                          fontSize: 10,
                           letterSpacing: "0.14em",
                           textTransform: "uppercase",
-                          color: "#8b6914",
-                          marginBottom: 3,
+                          color: "#5a3e0a",
+                          marginBottom: 4,
                           fontFamily: "var(--font-playfair), Georgia, serif",
                           fontWeight: 700,
                         }}
@@ -395,9 +466,9 @@ export default async function DestinationDetailPage({
                       </div>
                       <div
                         style={{
-                          fontSize: 15,
-                          color: "#1e1408",
-                          lineHeight: 1.4,
+                          fontSize: 16,
+                          color: "#1f1408",
+                          lineHeight: 1.55,
                           fontFamily: "var(--font-garamond), Georgia, serif",
                         }}
                       >
@@ -470,10 +541,10 @@ export default async function DestinationDetailPage({
                   <div style={{ marginBottom: "14px" }}>
                     <div
                       style={{
-                        fontSize: 9,
+                        fontSize: 10,
                         letterSpacing: "0.16em",
                         textTransform: "uppercase",
-                        color: "#8b6914",
+                        color: "#5a3e0a",
                         marginBottom: 8,
                         fontFamily: "var(--font-playfair), Georgia, serif",
                         fontWeight: 700,
@@ -487,11 +558,13 @@ export default async function DestinationDetailPage({
                           href={country.officialSources.visa}
                           target="_blank"
                           rel="noopener noreferrer"
+                          title={`Official ${country.name} residency visa documentation`}
+                          aria-label={`Official ${country.name} residency visa documentation (opens in new tab)`}
                           style={{
-                            fontSize: 12,
-                            padding: "4px 10px",
+                            fontSize: 13,
+                            padding: "5px 11px",
                             border: "1px solid #c9a84c",
-                            color: "#8b6914",
+                            color: "#3d2100",
                             textDecoration: "none",
                             fontFamily: "var(--font-garamond), Georgia, serif",
                           }}
@@ -504,11 +577,13 @@ export default async function DestinationDetailPage({
                           href={country.officialSources.immigration}
                           target="_blank"
                           rel="noopener noreferrer"
+                          title={`Official ${country.name} immigration authority`}
+                          aria-label={`Official ${country.name} immigration authority (opens in new tab)`}
                           style={{
-                            fontSize: 12,
-                            padding: "4px 10px",
+                            fontSize: 13,
+                            padding: "5px 11px",
                             border: "1px solid #c9a84c",
-                            color: "#8b6914",
+                            color: "#3d2100",
                             textDecoration: "none",
                             fontFamily: "var(--font-garamond), Georgia, serif",
                           }}
@@ -521,11 +596,13 @@ export default async function DestinationDetailPage({
                           href={country.officialSources.healthcare}
                           target="_blank"
                           rel="noopener noreferrer"
+                          title={`Official ${country.name} healthcare information`}
+                          aria-label={`Official ${country.name} healthcare information (opens in new tab)`}
                           style={{
-                            fontSize: 12,
-                            padding: "4px 10px",
+                            fontSize: 13,
+                            padding: "5px 11px",
                             border: "1px solid #c9a84c",
-                            color: "#8b6914",
+                            color: "#3d2100",
                             textDecoration: "none",
                             fontFamily: "var(--font-garamond), Georgia, serif",
                           }}
@@ -538,11 +615,13 @@ export default async function DestinationDetailPage({
                           href={country.officialSources.tax}
                           target="_blank"
                           rel="noopener noreferrer"
+                          title={`Official ${country.name} tax authority`}
+                          aria-label={`Official ${country.name} tax authority (opens in new tab)`}
                           style={{
-                            fontSize: 12,
-                            padding: "4px 10px",
+                            fontSize: 13,
+                            padding: "5px 11px",
                             border: "1px solid #c9a84c",
-                            color: "#8b6914",
+                            color: "#3d2100",
                             textDecoration: "none",
                             fontFamily: "var(--font-garamond), Georgia, serif",
                           }}
@@ -555,11 +634,13 @@ export default async function DestinationDetailPage({
                           href={country.officialSources.safety}
                           target="_blank"
                           rel="noopener noreferrer"
+                          title={`U.S. State Department travel advisory for ${country.name}`}
+                          aria-label={`U.S. State Department travel advisory for ${country.name} (opens in new tab)`}
                           style={{
-                            fontSize: 12,
-                            padding: "4px 10px",
+                            fontSize: 13,
+                            padding: "5px 11px",
                             border: "1px solid #c9a84c",
-                            color: "#8b6914",
+                            color: "#3d2100",
                             textDecoration: "none",
                             fontFamily: "var(--font-garamond), Georgia, serif",
                           }}
@@ -572,11 +653,13 @@ export default async function DestinationDetailPage({
                           href={country.officialSources.socialSecurity}
                           target="_blank"
                           rel="noopener noreferrer"
+                          title="Social Security payments abroad — official SSA information"
+                          aria-label="Social Security payments abroad — official SSA information (opens in new tab)"
                           style={{
-                            fontSize: 12,
-                            padding: "4px 10px",
+                            fontSize: 13,
+                            padding: "5px 11px",
                             border: "1px solid #c9a84c",
-                            color: "#8b6914",
+                            color: "#3d2100",
                             textDecoration: "none",
                             fontFamily: "var(--font-garamond), Georgia, serif",
                           }}
@@ -591,8 +674,8 @@ export default async function DestinationDetailPage({
                 {country.verificationStatus && (
                   <div
                     style={{
-                      fontSize: 12,
-                      color: "#8b6914",
+                      fontSize: 13,
+                      color: "#2a1a0a",
                       fontStyle: "italic",
                       marginBottom: 10,
                       fontFamily: "var(--font-garamond), Georgia, serif",
@@ -605,10 +688,9 @@ export default async function DestinationDetailPage({
 
                 <div
                   style={{
-                    fontSize: 11,
-                    color: "#8b6914",
+                    fontSize: 13,
+                    color: "#2a1a0a",
                     fontFamily: "var(--font-garamond), Georgia, serif",
-                    opacity: 0.8,
                   }}
                 >
                   This snapshot is for general informational purposes only.
