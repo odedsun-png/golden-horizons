@@ -18,8 +18,11 @@ const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
   verification: {
-  google: "h5_IRMvaBEQ-kmjeoPnofkbISPpSXpSBVC3QgGK0VP8",
-},
+    google: "h5_IRMvaBEQ-kmjeoPnofkbISPpSXpSBVC3QgGK0VP8",
+  },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+  },
   metadataBase: new URL(siteUrl),
 
   title: {
@@ -89,29 +92,15 @@ export const viewport: Viewport = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
-      name: "Golden Horizons",
-      url: siteUrl,
-      description:
-        "Golden Horizons is a retirement-abroad magazine and newsletter helping Americans compare cost of living, healthcare, visas, safety, housing, and lifestyle overseas.",
-      publishingPrinciples: `${siteUrl}/about`,
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${siteUrl}/#website`,
-      url: siteUrl,
-      name: "Golden Horizons",
-      description:
-        "A premium retirement-abroad magazine for Americans comparing where to retire overseas.",
-      publisher: {
-        "@id": `${siteUrl}/#organization`,
-      },
-      inLanguage: "en-US",
-    },
-  ],
+  "@type": "WebSite",
+  name: "Golden Horizons",
+  url: siteUrl,
+  description: "Retirement abroad magazine for Americans.",
+  publisher: {
+    "@type": "Organization",
+    name: "Golden Horizons",
+    url: siteUrl,
+  },
 };
 
 export default function RootLayout({

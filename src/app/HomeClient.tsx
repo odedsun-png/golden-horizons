@@ -151,7 +151,9 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
 
               <div className="hero-text">
                 <div className="hero-kicker">{slide.kicker}</div>
-                <h1 className="hero-title">{slide.title}</h1>
+                {i === 0
+                  ? <h1 className="hero-title">{slide.title}</h1>
+                  : <h2 className="hero-title">{slide.title}</h2>}
                 <p className="hero-sub">{slide.sub}</p>
               </div>
             </div>

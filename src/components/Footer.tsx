@@ -87,6 +87,16 @@ export default function Footer() {
           <Link href="/contact" style={linkStyle}>
             Contact
           </Link>
+          <span style={separatorStyle}>|</span>
+
+          <a
+            href="https://www.instagram.com/goldenhorizons2026/"
+            target="_blank"
+            rel="noopener"
+            style={linkStyle}
+          >
+            Instagram
+          </a>
         </nav>
 
         <p
