@@ -21,6 +21,47 @@ export type Country = {
     entertainment: number;
   };
   currency: string;
+  mainVisaRoute?: string;
+  cardData?: {
+    visaRoute: string;
+    visaLabel: string;
+    monthlyBudget: string;
+    healthcareSnapshot: string;
+    socialSecurityFit: string;
+    safetySnapshot: string;
+    taxSnapshot: string;
+    scores: {
+      cost: number;
+      healthcare: number;
+      safety: number;
+      lifestyle: number;
+      visaEase: number;
+      englishEase: number;
+    };
+  };
+  officialSources?: {
+    visa?: string;
+    immigration?: string;
+    healthcare?: string;
+    tax?: string;
+    safety?: string;
+    socialSecurity?: string;
+    banking?: string;
+  };
+  verificationStatus?: {
+    visaVerifiedFromOfficialSource?: boolean;
+    taxVerifiedFromOfficialSource?: boolean;
+    healthcareVerifiedFromOfficialSource?: boolean;
+    safetyVerifiedFromOfficialSource?: boolean;
+    lastReviewed?: string;
+    confidenceScore?: number;
+    notes?: string;
+  };
+  pros?: string[];
+  cons?: string[];
+  bestFit?: string;
+  notBestFit?: string;
+  finalVerdict?: string;
 };
 
 export const countries: Country[] = [
@@ -35,6 +76,52 @@ export const countries: Country[] = [
     scores: { costOfLiving: 4, safety: 5, healthcare: 5, lifestyle: 5 },
     costOfLiving: { rent: 900, food: 350, utilities: 120, transportation: 80, healthcare: 150, entertainment: 150 },
     currency: "EUR",
+    mainVisaRoute: "D7 Passive Income Visa",
+    cardData: {
+      visaRoute: "D7 Passive Income Visa",
+      visaLabel: "Passive income visa — pensions, SS, investments accepted",
+      monthlyBudget: "$1,800–$2,500",
+      healthcareSnapshot: "Excellent public SNS system. Private insurance required initially.",
+      socialSecurityFit: "Yes — SS qualifies if $1,085+/month",
+      safetySnapshot: "Extremely safe. Low crime, with petty theft risk in tourist areas.",
+      taxSnapshot: "Progressive Portuguese tax on worldwide income. No more NHR exemption for new retirees.",
+      scores: { cost: 3, healthcare: 5, safety: 5, lifestyle: 5, visaEase: 4, englishEase: 4 },
+    },
+    officialSources: {
+      visa: "https://vistos.mne.gov.pt/en/national-visas/required-documentation/passive-income",
+      immigration: "https://aima.gov.pt/",
+      healthcare: "https://www.sns.gov.pt/",
+      tax: "https://www.portaldasfinancas.gov.pt/",
+      safety: "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Portugal.html",
+      socialSecurity: "https://www.ssa.gov/international/Agreement_Pamphlets/portugal.html",
+      banking: "https://www.bportugal.pt/",
+    },
+    verificationStatus: {
+      visaVerifiedFromOfficialSource: true,
+      taxVerifiedFromOfficialSource: true,
+      healthcareVerifiedFromOfficialSource: true,
+      safetyVerifiedFromOfficialSource: true,
+      lastReviewed: "May 2026",
+      confidenceScore: 97,
+      notes: "All visa and source data verified from official Portuguese government and U.S. State Department sources. Tax note reflects end of NHR program. Healthcare access confirmed via SNS.",
+    },
+    pros: [
+      "EU residency pathway — live and travel freely across the Schengen zone",
+      "Among Europe's safest countries with very low violent crime",
+      "Excellent public SNS healthcare accessible to legal residents",
+      "Large, active English-speaking expat community in Lisbon, Porto, and the Algarve",
+      "Clear path to EU citizenship after 5 years of legal residency",
+    ],
+    cons: [
+      "NHR tax exemption ended — no longer available to new arrivals after 2024",
+      "Rents in Lisbon and Porto have risen sharply — look beyond the capital",
+      "Must spend 183+ days per year in Portugal to maintain legal residency",
+      "AIMA immigration agency backlogs — expect paperwork delays",
+      "Portuguese language barrier outside expat hubs — learning basics is strongly advised",
+    ],
+    bestFit: "Retirees with at least $1,085/month in pension or Social Security who want European residency, excellent healthcare, and a safe, sunny lifestyle with an established expat community.",
+    notBestFit: "Social Security-only retirees on very tight budgets, or those unwilling to commit to 183+ days per year in Portugal.",
+    finalVerdict: "Portugal remains the gold standard for American retirees seeking European residency. Despite the closure of the NHR tax program, it still offers exceptional quality of life, world-class safety, excellent healthcare, and a clear path to EU citizenship. The D7 Visa is accessible to most retirees with a moderate income. Budget carefully — Lisbon and Porto have gotten expensive, but the Algarve, Silver Coast, and interior towns still offer outstanding value.",
   },
   {
     id: "mexico",

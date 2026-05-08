@@ -319,7 +319,306 @@ export default async function DestinationDetailPage({
               <span>2026 Rankings</span>
             </div>
 
-            <p className="art-intro">{country.description}</p>
+            {country.cardData && (
+              <div
+                style={{
+                  background: "#f0e8d5",
+                  border: "1px solid #c9a84c",
+                  borderLeft: "4px solid #c9a84c",
+                  padding: "20px 24px",
+                  marginBottom: "24px",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: 11,
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                    color: "#8b6914",
+                    marginBottom: 14,
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    fontWeight: 700,
+                  }}
+                >
+                  Retiree Decision Snapshot
+                </div>
+
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr",
+                    gap: "10px 28px",
+                    marginBottom: "16px",
+                  }}
+                >
+                  {(
+                    [
+                      {
+                        label: "Visa Route",
+                        value: country.cardData.visaRoute,
+                      },
+                      {
+                        label: "Monthly Budget",
+                        value: country.cardData.monthlyBudget,
+                      },
+                      {
+                        label: "Social Security Fit",
+                        value: country.cardData.socialSecurityFit,
+                      },
+                      {
+                        label: "Healthcare",
+                        value: country.cardData.healthcareSnapshot,
+                      },
+                      {
+                        label: "Safety",
+                        value: country.cardData.safetySnapshot,
+                      },
+                      {
+                        label: "Tax Note",
+                        value: country.cardData.taxSnapshot,
+                      },
+                    ] as { label: string; value: string }[]
+                  ).map(({ label, value }) => (
+                    <div key={label}>
+                      <div
+                        style={{
+                          fontSize: 9,
+                          letterSpacing: "0.14em",
+                          textTransform: "uppercase",
+                          color: "#8b6914",
+                          marginBottom: 3,
+                          fontFamily: "var(--font-playfair), Georgia, serif",
+                          fontWeight: 700,
+                        }}
+                      >
+                        {label}
+                      </div>
+                      <div
+                        style={{
+                          fontSize: 15,
+                          color: "#1e1408",
+                          lineHeight: 1.4,
+                          fontFamily: "var(--font-garamond), Georgia, serif",
+                        }}
+                      >
+                        {value}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div
+                  style={{
+                    display: "flex",
+                    gap: 8,
+                    marginBottom: "16px",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  {(
+                    Object.entries(country.cardData.scores) as [
+                      string,
+                      number,
+                    ][]
+                  ).map(([key, val]) => {
+                    const labels: Record<string, string> = {
+                      cost: "Cost",
+                      healthcare: "Healthcare",
+                      safety: "Safety",
+                      lifestyle: "Lifestyle",
+                      visaEase: "Visa Ease",
+                      englishEase: "English",
+                    };
+                    return (
+                      <div
+                        key={key}
+                        style={{
+                          background: "#1e1408",
+                          padding: "6px 12px",
+                          textAlign: "center",
+                          minWidth: 64,
+                        }}
+                      >
+                        <div
+                          style={{
+                            fontSize: 9,
+                            letterSpacing: "0.12em",
+                            textTransform: "uppercase",
+                            color: "#c9a84c",
+                            marginBottom: 2,
+                            fontFamily: "var(--font-playfair), Georgia, serif",
+                          }}
+                        >
+                          {labels[key] || key}
+                        </div>
+                        <div
+                          style={{
+                            fontSize: 18,
+                            fontWeight: 700,
+                            color: "#faf5e9",
+                            fontFamily: "var(--font-playfair), Georgia, serif",
+                          }}
+                        >
+                          {val}/5
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {country.officialSources && (
+                  <div style={{ marginBottom: "14px" }}>
+                    <div
+                      style={{
+                        fontSize: 9,
+                        letterSpacing: "0.16em",
+                        textTransform: "uppercase",
+                        color: "#8b6914",
+                        marginBottom: 8,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      Official Sources
+                    </div>
+                    <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                      {country.officialSources.visa && (
+                        <a
+                          href={country.officialSources.visa}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: 12,
+                            padding: "4px 10px",
+                            border: "1px solid #c9a84c",
+                            color: "#8b6914",
+                            textDecoration: "none",
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          Visa ↗
+                        </a>
+                      )}
+                      {country.officialSources.immigration && (
+                        <a
+                          href={country.officialSources.immigration}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: 12,
+                            padding: "4px 10px",
+                            border: "1px solid #c9a84c",
+                            color: "#8b6914",
+                            textDecoration: "none",
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          Immigration ↗
+                        </a>
+                      )}
+                      {country.officialSources.healthcare && (
+                        <a
+                          href={country.officialSources.healthcare}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: 12,
+                            padding: "4px 10px",
+                            border: "1px solid #c9a84c",
+                            color: "#8b6914",
+                            textDecoration: "none",
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          Healthcare ↗
+                        </a>
+                      )}
+                      {country.officialSources.tax && (
+                        <a
+                          href={country.officialSources.tax}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: 12,
+                            padding: "4px 10px",
+                            border: "1px solid #c9a84c",
+                            color: "#8b6914",
+                            textDecoration: "none",
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          Tax Authority ↗
+                        </a>
+                      )}
+                      {country.officialSources.safety && (
+                        <a
+                          href={country.officialSources.safety}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: 12,
+                            padding: "4px 10px",
+                            border: "1px solid #c9a84c",
+                            color: "#8b6914",
+                            textDecoration: "none",
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          Safety Info ↗
+                        </a>
+                      )}
+                      {country.officialSources.socialSecurity && (
+                        <a
+                          href={country.officialSources.socialSecurity}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: 12,
+                            padding: "4px 10px",
+                            border: "1px solid #c9a84c",
+                            color: "#8b6914",
+                            textDecoration: "none",
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          SSA ↗
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {country.verificationStatus && (
+                  <div
+                    style={{
+                      fontSize: 12,
+                      color: "#8b6914",
+                      fontStyle: "italic",
+                      marginBottom: 10,
+                      fontFamily: "var(--font-garamond), Georgia, serif",
+                    }}
+                  >
+                    Last Reviewed: {country.verificationStatus.lastReviewed} ·
+                    Confidence: {country.verificationStatus.confidenceScore}/100
+                  </div>
+                )}
+
+                <div
+                  style={{
+                    fontSize: 11,
+                    color: "#8b6914",
+                    fontFamily: "var(--font-garamond), Georgia, serif",
+                    opacity: 0.8,
+                  }}
+                >
+                  This snapshot is for general informational purposes only.
+                  Verify all details with official government sources before
+                  making relocation decisions.
+                </div>
+              </div>
+            )}
+
+            <p className="art-intro">{country.finalVerdict || country.description}</p>
 
             <div className="section-hdr">Why Retire Here</div>
 
@@ -377,6 +676,157 @@ export default async function DestinationDetailPage({
               team recommends consulting with a licensed immigration attorney
               familiar with {country.name}&rsquo;s requirements.
             </p>
+
+            {country.pros && country.cons && (
+              <>
+                <div className="section-hdr">Pros &amp; Cons</div>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr",
+                    gap: "16px",
+                    marginBottom: "24px",
+                  }}
+                >
+                  <div>
+                    <div
+                      style={{
+                        fontSize: 11,
+                        letterSpacing: "0.16em",
+                        textTransform: "uppercase",
+                        color: "#2d6a4f",
+                        marginBottom: 10,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      What Works
+                    </div>
+                    {country.pros.map((pro, i) => (
+                      <div
+                        key={i}
+                        style={{
+                          borderLeft: "3px solid #52b788",
+                          paddingLeft: 12,
+                          marginBottom: 10,
+                          fontSize: 15,
+                          color: "#1e1408",
+                          fontFamily: "var(--font-garamond), Georgia, serif",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {pro}
+                      </div>
+                    ))}
+                  </div>
+                  <div>
+                    <div
+                      style={{
+                        fontSize: 11,
+                        letterSpacing: "0.16em",
+                        textTransform: "uppercase",
+                        color: "#8b3a1a",
+                        marginBottom: 10,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      What to Consider
+                    </div>
+                    {country.cons.map((con, i) => (
+                      <div
+                        key={i}
+                        style={{
+                          borderLeft: "3px solid #c77537",
+                          paddingLeft: 12,
+                          marginBottom: 10,
+                          fontSize: 15,
+                          color: "#1e1408",
+                          fontFamily: "var(--font-garamond), Georgia, serif",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {con}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {(country.bestFit || country.notBestFit) && (
+              <>
+                <div className="section-hdr">Who Is This For?</div>
+                {country.bestFit && (
+                  <div
+                    style={{
+                      background: "#edf6f0",
+                      borderLeft: "4px solid #52b788",
+                      padding: "14px 18px",
+                      marginBottom: 12,
+                    }}
+                  >
+                    <div
+                      style={{
+                        fontSize: 10,
+                        letterSpacing: "0.16em",
+                        textTransform: "uppercase",
+                        color: "#2d6a4f",
+                        marginBottom: 6,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      Best Fit
+                    </div>
+                    <div
+                      style={{
+                        fontSize: 16,
+                        color: "#1e1408",
+                        lineHeight: 1.5,
+                        fontFamily: "var(--font-garamond), Georgia, serif",
+                      }}
+                    >
+                      {country.bestFit}
+                    </div>
+                  </div>
+                )}
+                {country.notBestFit && (
+                  <div
+                    style={{
+                      background: "#fdf3ec",
+                      borderLeft: "4px solid #c77537",
+                      padding: "14px 18px",
+                      marginBottom: 24,
+                    }}
+                  >
+                    <div
+                      style={{
+                        fontSize: 10,
+                        letterSpacing: "0.16em",
+                        textTransform: "uppercase",
+                        color: "#8b3a1a",
+                        marginBottom: 6,
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      Not the Best Fit If
+                    </div>
+                    <div
+                      style={{
+                        fontSize: 16,
+                        color: "#1e1408",
+                        lineHeight: 1.5,
+                        fontFamily: "var(--font-garamond), Georgia, serif",
+                      }}
+                    >
+                      {country.notBestFit}
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
 
             <div className="section-hdr">Cost &amp; Healthcare</div>
 

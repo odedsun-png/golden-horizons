@@ -389,29 +389,112 @@ export default function DestinationsPage() {
                       {dest.name}
                     </div>
 
-                    <div
-                      style={{
-                        color: "#f6ead0",
-                        fontSize: 13,
-                        lineHeight: 1.35,
-                        marginBottom: 8,
-                        fontFamily: "var(--font-garamond), Georgia, serif",
-                      }}
-                    >
-                      {dest.description.slice(0, 82)}...
-                    </div>
+                    {dest.cardData ? (
+                      <>
+                        <div
+                          style={{
+                            color: "#f6ead0",
+                            fontSize: 12,
+                            lineHeight: 1.35,
+                            marginBottom: 6,
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          {dest.cardData.visaLabel}
+                        </div>
 
-                    <div
-                      style={{
-                        color: "#f3dfab",
-                        fontSize: 13,
-                        fontStyle: "italic",
-                        marginBottom: 8,
-                        fontFamily: "var(--font-garamond), Georgia, serif",
-                      }}
-                    >
-                      from ${monthlyCost.toLocaleString()}/mo
-                    </div>
+                        <div
+                          style={{
+                            color: "#f3dfab",
+                            fontSize: 13,
+                            fontStyle: "italic",
+                            marginBottom: 6,
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          {dest.cardData.monthlyBudget}/mo
+                        </div>
+
+                        <div
+                          style={{
+                            display: "flex",
+                            gap: 4,
+                            marginBottom: 6,
+                            flexWrap: "wrap",
+                          }}
+                        >
+                          {(
+                            Object.entries(dest.cardData.scores) as [
+                              string,
+                              number,
+                            ][]
+                          ).map(([k, v]) => {
+                            const lbl: Record<string, string> = {
+                              cost: "Cost",
+                              healthcare: "HC",
+                              safety: "Safety",
+                              lifestyle: "Life",
+                              visaEase: "Visa",
+                              englishEase: "Eng",
+                            };
+                            return (
+                              <div
+                                key={k}
+                                style={{
+                                  background: "rgba(201,168,76,0.15)",
+                                  border: "1px solid rgba(201,168,76,0.45)",
+                                  borderRadius: 2,
+                                  padding: "2px 5px",
+                                  fontSize: 10,
+                                  color: "#f3dfab",
+                                  fontFamily:
+                                    "var(--font-playfair), Georgia, serif",
+                                }}
+                              >
+                                {lbl[k] || k} {v}
+                              </div>
+                            );
+                          })}
+                        </div>
+
+                        <div
+                          style={{
+                            color: "#7ef0a0",
+                            fontSize: 11,
+                            marginBottom: 8,
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          ✓ {dest.cardData.socialSecurityFit}
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div
+                          style={{
+                            color: "#f6ead0",
+                            fontSize: 13,
+                            lineHeight: 1.35,
+                            marginBottom: 8,
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          {dest.description.slice(0, 82)}...
+                        </div>
+
+                        <div
+                          style={{
+                            color: "#f3dfab",
+                            fontSize: 13,
+                            fontStyle: "italic",
+                            marginBottom: 8,
+                            fontFamily: "var(--font-garamond), Georgia, serif",
+                          }}
+                        >
+                          from ${monthlyCost.toLocaleString()}/mo
+                        </div>
+                      </>
+                    )}
 
                     <span
                       style={{
