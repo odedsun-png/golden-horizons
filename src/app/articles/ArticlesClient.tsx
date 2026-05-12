@@ -1,8 +1,6 @@
 "use client";
-
 import { useMemo, useState } from "react";
 import Link from "next/link";
-
 type Article = {
   slug: string;
   title: string;
@@ -14,14 +12,12 @@ type Article = {
   date?: string;
   displayCategory: string;
 };
-
 type Props = {
   articles: Article[];
   categoryGroups: Record<string, Article[]>;
   categories: string[];
   editorPick: Article | null;
 };
-
 const CATEGORY_IMAGES: Record<string, string> = {
   "All Stories":
     "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -76,12 +72,9 @@ const CATEGORY_IMAGES: Record<string, string> = {
   "Expat Life":
     "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=800",
 };
-
 const DEFAULT_IMAGE =
   "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800";
-
 const MAX_ARTICLES = 9; // 3 columns × 3 rows
-
 function slugHash(slug: string): number {
   let h = 5381;
   for (let i = 0; i < slug.length; i++) {
@@ -89,7 +82,6 @@ function slugHash(slug: string): number {
   }
   return Math.abs(h);
 }
-
 function buildMixedArticles(
   allArticles: Article[],
   groups: Record<string, Article[]>,
@@ -125,16 +117,13 @@ function buildMixedArticles(
   }
   return result;
 }
-
 function normalizeCategory(category?: string) {
   return category?.trim() || "Uncategorized";
 }
-
 function getCategoryImage(category?: string) {
   const normalized = normalizeCategory(category);
   return CATEGORY_IMAGES[normalized] || DEFAULT_IMAGE;
 }
-
 function getNewestArticleImage(categoryArticles: Article[]): string {
   const sorted = [...categoryArticles].sort((a, b) =>
     (b.date || "").localeCompare(a.date || "")
@@ -148,13 +137,11 @@ function getNewestArticleImage(categoryArticles: Article[]): string {
     DEFAULT_IMAGE
   );
 }
-
 function getArticleImage(article: Article) {
   if (article.heroImage?.trim()) return article.heroImage;
   if (article.image?.trim()) return article.image;
   return getCategoryImage(article.category);
 }
-
 export default function ArticlesClient({
   articles,
   categoryGroups,
@@ -162,7 +149,6 @@ export default function ArticlesClient({
   editorPick,
 }: Props) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
   const articlesForGrid = useMemo(() => {
     if (selectedCategory) {
       return [...(categoryGroups[selectedCategory] || [])]
@@ -171,7 +157,6 @@ export default function ArticlesClient({
     }
     return buildMixedArticles(articles, categoryGroups, MAX_ARTICLES);
   }, [articles, categoryGroups, selectedCategory]);
-
   const categoryCards = [
     {
       label: "All Stories",
@@ -188,32 +173,25 @@ export default function ArticlesClient({
       image: getNewestArticleImage(categoryGroups[category] || []),
     })),
   ];
-
   function scrollToResults() {
     window.setTimeout(() => {
       const resultsSection = document.getElementById("article-results");
-
       if (!resultsSection) return;
-
       const y = resultsSection.getBoundingClientRect().top + window.scrollY - 90;
-
       window.scrollTo({
         top: y,
         behavior: "smooth",
       });
     }, 150);
   }
-
   function selectCategory(category: string | null) {
     setSelectedCategory(category);
     scrollToResults();
   }
-
   function clearFilters() {
     setSelectedCategory(null);
     scrollToResults();
   }
-
   return (
     <>
       <div
@@ -235,7 +213,6 @@ export default function ArticlesClient({
         >
           Explore the Archive
         </div>
-
         <h2
           style={{
             margin: "0 0 18px",
@@ -247,7 +224,6 @@ export default function ArticlesClient({
         >
           Browse retirement abroad stories by topic.
         </h2>
-
         <div
           style={{
             display: "flex",
@@ -273,7 +249,6 @@ export default function ArticlesClient({
           >
             All
           </button>
-
           {categories.map((category) => (
               <button
                 key={category}
@@ -296,7 +271,6 @@ export default function ArticlesClient({
                 {category}
               </button>
             ))}
-
           {selectedCategory && (
             <button
               type="button"
@@ -317,14 +291,10 @@ export default function ArticlesClient({
           )}
         </div>
       </div>
-
       <div className="section-banner">Browse by Section</div>
-
       <div
-        className="cat-index"
+        className="cat-index grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
           gap: 0,
           borderLeft: "1px solid #c9a84c",
           borderTop: "1px solid #c9a84c",
@@ -335,7 +305,6 @@ export default function ArticlesClient({
             item.category === null
               ? !selectedCategory
               : selectedCategory === item.category;
-
           return (
             <button
               key={item.label}
@@ -366,7 +335,6 @@ export default function ArticlesClient({
                   transition: "transform 0.25s ease",
                 }}
               />
-
               <div
                 style={{
                   position: "absolute",
@@ -377,7 +345,6 @@ export default function ArticlesClient({
                   boxShadow: isActive ? "inset 0 0 0 3px #c9a84c" : "none",
                 }}
               />
-
               <div
                 style={{
                   position: "relative",
@@ -401,7 +368,6 @@ export default function ArticlesClient({
                 >
                   {item.label}
                 </div>
-
                 <div
                   className="cat-count"
                   style={{
@@ -414,7 +380,6 @@ export default function ArticlesClient({
                 >
                   {item.count} articles
                 </div>
-
                 <div
                   className="cat-desc"
                   style={{
@@ -431,13 +396,11 @@ export default function ArticlesClient({
           );
         })}
       </div>
-
       {editorPick && !selectedCategory && (
         <>
           <div className="section-banner">
             Editor&rsquo;s Pick · This Week&rsquo;s Must-Read
           </div>
-
           <div className="editor-pick">
             <div className="ep-img-wrap">
               <img
@@ -448,28 +411,23 @@ export default function ArticlesClient({
                   e.currentTarget.src = DEFAULT_IMAGE;
                 }}
               />
-
               <div className="ep-caption">
                 <p>{editorPick.excerpt || editorPick.description}</p>
               </div>
             </div>
-
             <div className="ep-content">
               <div className="ep-kicker">
                 {editorPick.displayCategory || "Featured"}
               </div>
-
               <Link
                 href={`/articles/${editorPick.slug}`}
                 className="ep-headline"
               >
                 {editorPick.title}
               </Link>
-
               <p className="ep-body">
                 {editorPick.description || editorPick.excerpt}
               </p>
-
               <Link href={`/articles/${editorPick.slug}`} className="ep-read">
                 Read the full story →
               </Link>
@@ -477,11 +435,9 @@ export default function ArticlesClient({
           </div>
         </>
       )}
-
       <div id="article-results" className="section-banner">
         {selectedCategory ? `${selectedCategory} Stories` : "Latest Stories"}
       </div>
-
       {articlesForGrid.length > 0 ? (
         <div className="articles-grid">
           {articlesForGrid.map((article) => (
@@ -498,7 +454,6 @@ export default function ArticlesClient({
                   e.currentTarget.src = getCategoryImage(article.displayCategory);
                 }}
               />
-
               <div className="art-cat">{article.displayCategory}</div>
               <div className="art-title">{article.title}</div>
               <span className="art-read">Read →</span>
@@ -519,7 +474,6 @@ export default function ArticlesClient({
           No stories found in this section yet.
         </div>
       )}
-
       <div className="load-more">
         <p className="load-count">
           Showing {articlesForGrid.length}{" "}
