@@ -1,9 +1,7 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import SubscribeBox from "@/components/SubscribeBox";
-
 type ArticleCard = {
   slug: string;
   title: string;
@@ -12,18 +10,15 @@ type ArticleCard = {
   description: string;
   date: string;
 };
-
 function getSectionLabel(category: string): string {
   return category.split("·")[0].trim() || "Retirement Abroad";
 }
-
 export default function HomeClient({ allArticles }: { allArticles: ArticleCard[] }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [pickedArticles, setPickedArticles] = useState<ArticleCard[]>([]);
   const [articleGroupIndex, setArticleGroupIndex] = useState(0);
   const [articleGroupVisible, setArticleGroupVisible] = useState(true);
   const [articleGroups, setArticleGroups] = useState<ArticleCard[][]>([]);
-
   const slides = [
     {
       image:
@@ -51,15 +46,12 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
         "Historic streets, sea views, walkable neighborhoods, and a softer rhythm — with the numbers checked before the dream begins.",
     },
   ];
-
   useEffect(() => {
     const interval = window.setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 7000);
-
     return () => window.clearInterval(interval);
   }, [slides.length]);
-
   useEffect(() => {
     if (allArticles.length === 0) return;
     const shuffled = [...allArticles].sort(() => Math.random() - 0.5);
@@ -74,7 +66,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
     setArticleGroups(groups);
     setPickedArticles(groups[0]);
   }, [allArticles]);
-
   useEffect(() => {
     if (articleGroups.length === 0) return;
     const interval = window.setInterval(() => {
@@ -90,7 +81,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
     }, 9000);
     return () => window.clearInterval(interval);
   }, [articleGroups]);
-
   return (
     <main className="mag-page">
       <div className="site">
@@ -101,7 +91,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           </span>
           <span>April 2026</span>
         </div>
-
         <div className="masthead">
           <div className="dateline">
             <span>The Retirement Abroad Magazine</span>
@@ -110,11 +99,9 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             </span>
             <span>April 2026 · Issue 58</span>
           </div>
-
           <Link href="/" className="mastname">
             Golden Horizons
           </Link>
-
           <div className="issue-line">
             <span className="issue-tag">
               <strong>This Issue:</strong> Where $2,000/month buys a life worth
@@ -126,7 +113,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             </span>
           </div>
         </div>
-
         <nav className="nav">
           <Link href="/" className="active">
             Cover
@@ -135,7 +121,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           <Link href="/destinations">Destinations</Link>
           <Link href="#subscribe">Subscribe Free</Link>
         </nav>
-
         <div className="hero-wrap">
           {slides.map((slide, i) => (
             <div
@@ -148,7 +133,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             >
               <img src={slide.image} alt={slide.title} className="hero-img" />
               <div className="hero-overlay" />
-
               <div className="hero-text">
                 <div className="hero-kicker">{slide.kicker}</div>
                 {i === 0
@@ -159,7 +143,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             </div>
           ))}
         </div>
-
         <div className="hero-caption">
           <p>
             Three windows into the Golden Horizons promise: old-world charm, sea
@@ -167,19 +150,15 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             possible.
           </p>
         </div>
-
         <div className="cover-story">
           <div className="mag-label">Cover Story · The Destination Report</div>
-
           <h2 className="cover-headline">
             The places where your money sets you free — and why more Americans
             are finding them every day
           </h2>
-
           <div className="byline">
             By the Editors of Golden Horizons · Cover Story · April 2026
           </div>
-
           <p className="body-text">
             There are places in the world where $2,000 a month buys the kind of
             life most Americans spend their entire career chasing. A terrace
@@ -187,19 +166,16 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             actually afford to see. These places are not secrets — they are
             simply overlooked.
           </p>
-
           <p className="body-text">
             Golden Horizons exists to change that. Every morning we find one of
             these places, dig into the real numbers, and bring it straight to
             you. No hype. No sales pitch. Just the truth about what is possible —
             and what it actually costs.
           </p>
-
           <Link href="/articles" className="read-more">
             Read all stories in this issue →
           </Link>
         </div>
-
         <div className="pullquote">
           <p>
             &ldquo;Most people plan carefully for retirement. Almost none plan{" "}
@@ -207,14 +183,11 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           </p>
           <cite>— The Golden Horizons Editors</cite>
         </div>
-
         <div id="subscribe">
           <SubscribeBox variant="inline" />
         </div>
-
         {/* ===== PLANNING GUIDES HUB ===== */}
         <div id="planning-guides" className="section-banner">Start Here: Retirement Abroad Planning Guides</div>
-
         <div
           style={{
             padding: "28px 36px 32px",
@@ -234,14 +207,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           >
             Six essential guides for Americans planning retirement abroad — covering budget, healthcare, visas, taxes, safety, and the full planning checklist.
           </p>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: 12,
-            }}
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               {
                 href: "/best-countries-to-retire-abroad-on-a-budget",
@@ -342,7 +308,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             ))}
           </div>
         </div>
-
         <div className="section-banner" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingRight: 24 }}>
           <span>Inside This Issue</span>
           <span style={{ display: "flex", gap: 7 }}>
@@ -361,7 +326,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             ))}
           </span>
         </div>
-
         <div
           className="below-fold"
           style={{
@@ -400,7 +364,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
               </>
             )}
           </div>
-
           <div className="bf-col">
             {pickedArticles.length >= 3 && (
               <>
@@ -432,7 +395,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
               </>
             )}
           </div>
-
           <div className="bf-col">
             <div className="sb-pull">
               <p>
@@ -441,7 +403,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
               </p>
               <cite>— Barbara, 63 · Lisbon, $1,900/mo</cite>
             </div>
-
             <div
               style={{
                 background: "#faf5e9",
@@ -463,7 +424,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
               >
                 Editor&apos;s Note
               </div>
-
               <p
                 style={{
                   fontSize: 15,
@@ -477,7 +437,6 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
                 &ldquo;The best time to retire abroad was ten years ago. The
                 second best time is today.&rdquo;
               </p>
-
               <div
                 style={{
                   fontSize: 12,
@@ -491,36 +450,26 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             </div>
           </div>
         </div>
-
         <div className="ornament">— ✦ —</div>
-
         <footer className="mag-footer">
           <div className="footer-name">Golden Horizons</div>
-
           <p>
             The retirement abroad magazine for Americans who aren&rsquo;t done
             yet.
           </p>
-
           <div className="footer-links">
             <Link href="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
-
             <Link href="/terms">Terms of Use</Link>
             <span>|</span>
-
             <Link href="/disclaimer">Disclaimer</Link>
             <span>|</span>
-
             <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
             <span>|</span>
-
             <Link href="/editorial-policy">Editorial Policy</Link>
             <span>|</span>
-
             <Link href="/contact">Contact</Link>
           </div>
-
           <p style={{ marginTop: 12, fontSize: 11, opacity: 0.5 }}>
             © 2026 Golden Horizons — All rights reserved
           </p>
