@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import RetirementFinder from "@/components/RetirementFinder";
 import { countries } from "@/lib/countries";
-
 const siteUrl = "https://golden-horizons.org";
-
 export const metadata: Metadata = {
   title: "Best Places to Retire Abroad in 2026 | Golden Horizons",
   description:
@@ -47,10 +45,8 @@ export const metadata: Metadata = {
     },
   },
 };
-
 export default function DestinationsPage() {
   const more = countries;
-
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -67,7 +63,6 @@ export default function DestinationsPage() {
       url: `${siteUrl}/destinations/${country.id}`,
     })),
   };
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -87,7 +82,6 @@ export default function DestinationsPage() {
       },
     ],
   };
-
   return (
     <main className="mag-page">
       <script
@@ -96,14 +90,12 @@ export default function DestinationsPage() {
           __html: JSON.stringify(itemListSchema),
         }}
       />
-
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
-
       <div className="site">
         <div className="topbar">
           <span>Vol. 58, No. 1</span>
@@ -112,7 +104,6 @@ export default function DestinationsPage() {
           </span>
           <span>April 2026</span>
         </div>
-
         <div className="masthead">
           <div className="dateline">
             <span>The Retirement Abroad Magazine</span>
@@ -121,11 +112,9 @@ export default function DestinationsPage() {
             </span>
             <span>April 2026 · Issue 58</span>
           </div>
-
           <Link href="/" className="mastname">
             Golden Horizons
           </Link>
-
           <div className="issue-line">
             <span className="issue-tag">
               <strong>This Issue:</strong> Where $2,000/month buys a life worth
@@ -137,7 +126,6 @@ export default function DestinationsPage() {
             </span>
           </div>
         </div>
-
         <nav className="nav">
           <Link href="/">Cover</Link>
           <Link href="/articles">All Stories</Link>
@@ -146,7 +134,6 @@ export default function DestinationsPage() {
           </Link>
           <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
         </nav>
-
         {/* BRIGHT EDITORIAL HERO - NO TEXT BOX */}
         <section
           style={{
@@ -167,7 +154,6 @@ export default function DestinationsPage() {
               objectPosition: "center",
             }}
           />
-
           <div
             style={{
               position: "absolute",
@@ -177,7 +163,6 @@ export default function DestinationsPage() {
               pointerEvents: "none",
             }}
           />
-
           <div
             style={{
               position: "absolute",
@@ -201,7 +186,6 @@ export default function DestinationsPage() {
             >
               The Destination Report · 2026 World Rankings
             </div>
-
             <h1
               style={{
                 margin: "0 0 16px",
@@ -215,7 +199,6 @@ export default function DestinationsPage() {
             >
               The places where <em>your money</em> sets you free.
             </h1>
-
             <p
               style={{
                 margin: 0,
@@ -232,14 +215,12 @@ export default function DestinationsPage() {
             </p>
           </div>
         </section>
-
         <div className="hero-caption">
           <p>
             Mediterranean café life — where retirement starts to feel lighter,
             slower, and more affordable.
           </p>
         </div>
-
         <div className="dest-intro">
           <div>
             <div className="intro-kicker">A note from our editors</div>
@@ -248,7 +229,6 @@ export default function DestinationsPage() {
               it&rsquo;s your turn.&rdquo;
             </div>
           </div>
-
           <div className="intro-body">
             These are the places where Americans like you are discovering
             something unexpected: that{" "}
@@ -264,14 +244,12 @@ export default function DestinationsPage() {
             feeling more alive.
           </div>
         </div>
-
         <div className="dest-section-label">
           <div className="sl-kicker">Personal Retirement Match</div>
           <div className="sl-title">
             Find the country that actually fits your life.
           </div>
         </div>
-
         <section
           style={{
             padding: "34px 48px",
@@ -283,7 +261,6 @@ export default function DestinationsPage() {
         >
           <RetirementFinder defaultOpen={false} />
         </section>
-
         <div className="dest-pullquote">
           <span className="pq-ornament">— ✦ —</span>
           <div className="pq-text">
@@ -296,15 +273,11 @@ export default function DestinationsPage() {
             — Barbara, 63 · Now living in Lisbon on $1,900/month
           </div>
         </div>
-
         <div className="more-section">
           <div className="more-kicker">All Destinations · 26 Ranked</div>
-
           <div
-            className="more-grid"
+            className="more-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
               borderLeft: "1px solid #c9a84c",
               borderTop: "1px solid #c9a84c",
               gap: 0,
@@ -315,7 +288,6 @@ export default function DestinationsPage() {
                 (a, b) => a + b,
                 0
               );
-
               return (
                 <Link
                   key={dest.id}
@@ -343,7 +315,6 @@ export default function DestinationsPage() {
                       transform: "scale(1.03)",
                     }}
                   />
-
                   <div
                     style={{
                       position: "absolute",
@@ -352,7 +323,6 @@ export default function DestinationsPage() {
                         "linear-gradient(to top, rgba(17,10,2,0.94) 0%, rgba(17,10,2,0.66) 48%, rgba(17,10,2,0.22) 100%)",
                     }}
                   />
-
                   <div
                     style={{
                       position: "relative",
@@ -376,7 +346,6 @@ export default function DestinationsPage() {
                     >
                       #{dest.rank} Ranked · {dest.flag}
                     </div>
-
                     <div
                       style={{
                         color: "#ffffff",
@@ -388,7 +357,6 @@ export default function DestinationsPage() {
                     >
                       {dest.name}
                     </div>
-
                     {dest.cardData ? (
                       <>
                         <div
@@ -402,7 +370,6 @@ export default function DestinationsPage() {
                         >
                           {dest.cardData.visaLabel}
                         </div>
-
                         <div
                           style={{
                             color: "#f3dfab",
@@ -414,7 +381,6 @@ export default function DestinationsPage() {
                         >
                           {dest.cardData.monthlyBudget}/mo
                         </div>
-
                         <div
                           style={{
                             display: "flex",
@@ -456,7 +422,6 @@ export default function DestinationsPage() {
                             );
                           })}
                         </div>
-
                         <div
                           style={{
                             color: "#7ef0a0",
@@ -481,7 +446,6 @@ export default function DestinationsPage() {
                         >
                           {dest.description.slice(0, 82)}...
                         </div>
-
                         <div
                           style={{
                             color: "#f3dfab",
@@ -495,7 +459,6 @@ export default function DestinationsPage() {
                         </div>
                       </>
                     )}
-
                     <span
                       style={{
                         color: "#ffffff",
@@ -513,7 +476,6 @@ export default function DestinationsPage() {
             })}
           </div>
         </div>
-
         <div className="sub-section" id="subscribe">
           <div className="sub-eyebrow">
             Every morning. In your inbox. Free.
@@ -528,26 +490,20 @@ export default function DestinationsPage() {
             people who made the move. No fluff. Just the truth about what&rsquo;s
             possible.
           </p>
-
           <Link href="/?scrollTo=subscribe" className="sub-btn">
             Start My Free Subscription {"→"}
           </Link>
-
           <div className="sub-trust">
             ◆ &nbsp; Join 5,000+ readers planning their next chapter &nbsp; ◆
           </div>
         </div>
-
         <div className="ornament">— ✦ —</div>
-
         <footer className="mag-footer">
           <div className="footer-name">Golden Horizons</div>
-
           <p>
             The retirement abroad magazine for Americans who aren&rsquo;t done
             yet.
           </p>
-
           <div className="footer-links">
             <Link href="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
@@ -561,7 +517,6 @@ export default function DestinationsPage() {
             <span>|</span>
             <Link href="/contact">Contact</Link>
           </div>
-
           <p style={{ marginTop: 12, fontSize: 11, opacity: 0.5 }}>
             © 2026 Golden Horizons — All rights reserved
           </p>
