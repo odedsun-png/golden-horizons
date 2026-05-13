@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { getCountryById } from "@/lib/countries";
 
@@ -125,6 +125,7 @@ export default function TaxesPage() {
           <Link href="/">Cover</Link>
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
+          <Link href="/tax-guide">Tax Guide</Link>
           <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
         </nav>
 
