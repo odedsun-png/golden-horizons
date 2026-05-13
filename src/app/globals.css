@@ -1013,3 +1013,13 @@ html {
     line-height: 1.4;
   }
 }
+
+/* ===================================================
+   TEMPORARY TAX GUIDE IMAGE FIX
+   Hides broken/blank Tax Guide image banners until
+   unique country images are added later.
+   =================================================== */
+
+.tg-card-img {
+  display: none !important;
+}
