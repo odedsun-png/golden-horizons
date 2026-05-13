@@ -4,7 +4,7 @@ category: Hidden Gems
 slug: turkiye-hidden-coastal-towns-like-kas-for-retirement--v2
 date: 2026-04-21
 image: https://images.pexels.com/photos/29205396/pexels-photo-29205396.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
-description: Discover daily life in Kaş, Türkiye: a serene town offering community, culture, and stunning views, perfect for retirees seeking tranquility abroad.
+description: "Discover daily life in Kaş, Türkiye: a serene town offering community, culture, and stunning views, perfect for retirees seeking tranquility abroad."
 featured: false
 ---
 

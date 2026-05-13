@@ -4,7 +4,7 @@ category: Cost
 slug: malaysia-what-2200-a-month-gets-you-in-penang
 date: 2026-04-25
 image: https://images.pexels.com/photos/5904675/pexels-photo-5904675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-description: Explore retirement in Penang, Malaysia with $2,200/month budget: affordable living, vibrant culture, and quality healthcare for senior Americans.
+description: "Explore retirement in Penang, Malaysia with $2,200/month budget: affordable living, vibrant culture, and quality healthcare for senior Americans."
 featured: false
 ---
 
