@@ -428,3 +428,87 @@ export default function TaxGuideClient() {
     </div>
   );
 }
+/* ==================================================
+   TAX GUIDE — FINAL CTA + DISCLAIMER
+   Scoped only to /tax-guide components
+================================================== */
+
+.tg-final-cta {
+  background: #1a0f05;
+  color: #f6efe1;
+  text-align: center;
+  padding: 64px 28px 54px;
+  border-top: 1px solid #c59a2d;
+  border-bottom: 1px solid #c59a2d;
+}
+
+.tg-final-cta .tg-kicker,
+.tg-final-cta-kicker {
+  color: #c59a2d;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+.tg-final-cta h2 {
+  max-width: 720px;
+  margin: 0 auto 18px;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.05;
+  font-weight: 700;
+  color: #fff8ea;
+}
+
+.tg-final-cta p {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e8d6aa;
+}
+
+.tg-final-cta a,
+.tg-final-cta-button {
+  display: inline-block;
+  background: #d4af37;
+  color: #1a0f05;
+  padding: 18px 42px;
+  border: 1px solid #d4af37;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  transition: all 0.2s ease;
+}
+
+.tg-final-cta a:hover,
+.tg-final-cta-button:hover {
+  background: #f1d26a;
+  color: #1a0f05;
+}
+
+.tg-legal-disclaimer {
+  background: #151515;
+  color: #e8d6aa;
+  text-align: center;
+  padding: 54px 34px 58px;
+  border-top: 1px solid #c59a2d;
+  border-bottom: 1px solid #c59a2d;
+}
+
+.tg-legal-disclaimer h3 {
+  color: #c59a2d;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 12px;
+  margin: 0 0 22px;
+  font-weight: 500;
+}
+
+.tg-legal-disclaimer p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #e8d6aa;
+}
