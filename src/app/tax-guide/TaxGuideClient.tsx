@@ -240,7 +240,7 @@ export default function TaxGuideClient() {
                     Verify official rules before making tax or residency decisions.
                   </div>
                   {country.officialLink !== "#" ? (
-                    <a
+                    
                       href={country.officialLink}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -381,21 +381,7 @@ export default function TaxGuideClient() {
         })}
       </div>
 
-      {/* SECTION 8 — DISCLAIMER */}
-      <div className="tg-disclaimer" style={{ margin: "0 36px 28px" }}>
-        <strong>Important Legal Disclaimer:</strong> This guide is for general educational and
-        informational purposes only. It does not constitute tax, legal, or financial advice and
-        should not be relied upon as such. Tax laws, residency rules, and treaty provisions change
-        frequently and vary significantly by individual circumstance. Golden Horizons is a
-        retirement-abroad lifestyle publication — we are not tax advisors, attorneys, or CPAs.
-        Before making any tax, financial, or residency decision, consult a qualified international
-        tax attorney, a CPA experienced in US expat taxation, and/or a licensed immigration attorney
-        in your destination country. All &ldquo;may qualify,&rdquo; &ldquo;may not be taxed,&rdquo;
-        and similar language reflects general educational descriptions of how these systems work —
-        not guarantees of any specific outcome for your situation.
-      </div>
-
-      {/* SECTION 9 — NEWSLETTER CTA */}
+      {/* SECTION 8 — NEWSLETTER CTA (now before disclaimer) */}
       <div className="tg-newsletter">
         <div className="tg-newsletter-eyebrow">Free Retirement Abroad Guide</div>
         <h2 className="tg-newsletter-title">
@@ -407,6 +393,23 @@ export default function TaxGuideClient() {
         <Link href="/?scrollTo=subscribe" className="tg-newsletter-link">
           Get the Free Guide →
         </Link>
+      </div>
+
+      {/* SECTION 9 — DISCLAIMER (now after CTA, styled to match dark box) */}
+      <div className="tg-newsletter" style={{ background: "#1a1a1a", borderTop: "none", marginTop: 0 }}>
+        <div className="tg-newsletter-eyebrow" style={{ color: "#a0896a" }}>Important Legal Disclaimer</div>
+        <p className="tg-newsletter-body" style={{ color: "#c8b99a", fontSize: 13, lineHeight: 1.75, maxWidth: 700, margin: "0 auto" }}>
+          This guide is for general educational and informational purposes only. It does not
+          constitute tax, legal, or financial advice and should not be relied upon as such. Tax
+          laws, residency rules, and treaty provisions change frequently and vary significantly by
+          individual circumstance. Golden Horizons is a retirement-abroad lifestyle publication —
+          we are not tax advisors, attorneys, or CPAs. Before making any tax, financial, or
+          residency decision, consult a qualified international tax attorney, a CPA experienced in
+          US expat taxation, and/or a licensed immigration attorney in your destination country.
+          All &ldquo;may qualify,&rdquo; &ldquo;may not be taxed,&rdquo; and similar language
+          reflects general educational descriptions of how these systems work — not guarantees of
+          any specific outcome for your situation.
+        </p>
       </div>
     </div>
   );
