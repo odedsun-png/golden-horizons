@@ -32,10 +32,19 @@ export default function TaxGuideClient() {
         <h1 className="tg-hero-title">
           35 Countries Where Retirees Can Legally Stretch Their Retirement Income Abroad
         </h1>
-        <p className="tg-hero-body">
-          A research guide to territorial tax systems, flat-rate programs, and US treaty advantages
-          — with document checklists, official-source links, and legal disclaimers built in.
-        </p>
+        <div className="tg-hero-body">
+          <p>Retiring abroad is not just about where life costs less.</p>
+          <p>
+            It is about where your retirement income may go further — after taxes, residency rules,
+            healthcare costs, and visa requirements are considered.
+          </p>
+          <p>
+            This guide compares 35 countries with territorial tax systems, flat-rate retiree
+            programs, U.S. treaty advantages, and retirement visa pathways — so you can see where
+            Social Security, pension income, and savings may stretch further before you choose your
+            next chapter.
+          </p>
+        </div>
         <div className="tg-hero-byline">
           <strong>Educational Guide Only</strong> · Not tax or legal advice ·{" "}
           <strong>Consult a qualified international tax advisor before making any decisions</strong>
@@ -170,7 +179,11 @@ export default function TaxGuideClient() {
           const isExpanded = expandedCard === country.slug;
           const shortHook = country.cardHook.split(". ")[0] + ".";
           return (
-            <div key={country.slug} className={`tg-card${isExpanded ? " tg-card--open" : ""}`}>
+            <div
+              key={country.slug}
+              className={`tg-card${isExpanded ? " tg-card--open" : ""}`}
+              style={{ border: "1px solid #c9a84c" }}
+            >
               {/* Faded image banner */}
               <div
                 className="tg-card-img"
