@@ -28,16 +28,22 @@ export default function TaxGuideClient() {
     <div>
       {/* SECTION 1 — HERO */}
       <div className="tg-hero">
-        <div className="tg-hero-kicker">The Money File · Tax Strategies for Retirees Abroad</div>
+        <div className="tg-hero-kicker">
+          The Money File · Tax Strategies for Retirees Abroad
+        </div>
+
         <h1 className="tg-hero-title">
           35 Countries Where Retirees Can Legally Stretch Their Retirement Income Abroad
         </h1>
+
         <div className="tg-hero-body">
           <p>Retiring abroad is not just about where life costs less.</p>
+
           <p>
             It is about where your retirement income may go further — after taxes, residency rules,
             healthcare costs, and visa requirements are considered.
           </p>
+
           <p>
             This guide compares 35 countries with territorial tax systems, flat-rate retiree
             programs, U.S. treaty advantages, and retirement visa pathways — so you can see where
@@ -45,9 +51,12 @@ export default function TaxGuideClient() {
             next chapter.
           </p>
         </div>
+
         <div className="tg-hero-byline">
           <strong>Educational Guide Only</strong> · Not tax or legal advice ·{" "}
-          <strong>Consult a qualified international tax advisor before making any decisions</strong>
+          <strong>
+            Consult a qualified international tax advisor before making any decisions
+          </strong>
         </div>
       </div>
 
@@ -56,27 +65,30 @@ export default function TaxGuideClient() {
         <Link href="/">Golden Horizons</Link> › Tax Guide
       </div>
 
-      {/* SECTION 2 — JERSEY VS. THE WORLD */}
+      {/* SECTION 2 — U.S. VS. THE WORLD */}
       <div className="tg-compare">
-        <div className="tg-compare-header">The Benchmark: U.S. Retirement Costs vs. The 35 Destinations</div>
+        <div className="tg-compare-header">
+          The Benchmark: U.S. Retirement Costs vs. The 35 Destinations
+        </div>
+
         <div className="tg-compare-grid">
           <div className="tg-compare-col">
-            <div className="tg-compare-col-title">🇺🇸 The High-Tax U.S. Retirement Baseline</div>
+            <div className="tg-compare-col-title">
+              🇺🇸 The High-Tax U.S. Retirement Baseline
+            </div>
+
             <div className="tg-compare-col-stat">
               Federal tax + possible state tax exposure
             </div>
-            <div className="tg-compare-col-stat">
-              High property taxes in many states
-            </div>
+            <div className="tg-compare-col-stat">High property taxes in many states</div>
             <div className="tg-compare-col-stat">
               Higher healthcare and insurance costs
             </div>
-            <div className="tg-compare-col-stat">
-              Higher monthly cost of living
-            </div>
+            <div className="tg-compare-col-stat">Higher monthly cost of living</div>
             <div className="tg-compare-col-stat">
               Retirement income can shrink quickly before lifestyle spending
             </div>
+
             <div
               style={{
                 fontSize: 12,
@@ -95,6 +107,7 @@ export default function TaxGuideClient() {
 
           <div className="tg-compare-col">
             <div className="tg-compare-col-title">🌍 The 35 Countries Compared</div>
+
             <div className="tg-compare-col-stat">
               <strong>Territorial systems:</strong> foreign-source income may not be taxed locally
             </div>
@@ -107,6 +120,7 @@ export default function TaxGuideClient() {
             <div className="tg-compare-col-stat">
               <strong>Retiree visa programs:</strong> structured pathways with defined requirements
             </div>
+
             <div
               style={{
                 fontSize: 12,
@@ -126,35 +140,34 @@ export default function TaxGuideClient() {
       {/* SECTION 3 — FILTER TABS */}
       <div className="tg-tabs-wrap">
         <div className="tg-tabs-header">Filter by tax strategy</div>
+
         <div className="tg-tabs" role="tablist">
-          {(
-            [
-              {
-                key: "all" as TaxCategory,
-                name: "All Countries",
-                count: CATEGORY_COUNTS.all,
-                desc: "All 35 retirement destinations",
-              },
-              {
-                key: "territorial" as TaxCategory,
-                name: "Territorial Tax",
-                count: CATEGORY_COUNTS.territorial,
-                desc: "Countries that may not tax foreign-source income",
-              },
-              {
-                key: "flat-rate" as TaxCategory,
-                name: "Flat-Rate Programs",
-                count: CATEGORY_COUNTS["flat-rate"],
-                desc: "Special rates and programs for qualifying retirees",
-              },
-              {
-                key: "treaty" as TaxCategory,
-                name: "Treaty Advantages",
-                count: CATEGORY_COUNTS.treaty,
-                desc: "Countries with active US bilateral tax treaties",
-              },
-            ]
-          ).map((tab) => (
+          {[
+            {
+              key: "all" as TaxCategory,
+              name: "All Countries",
+              count: CATEGORY_COUNTS.all,
+              desc: "All 35 retirement destinations",
+            },
+            {
+              key: "territorial" as TaxCategory,
+              name: "Territorial Tax",
+              count: CATEGORY_COUNTS.territorial,
+              desc: "Countries that may not tax foreign-source income",
+            },
+            {
+              key: "flat-rate" as TaxCategory,
+              name: "Flat-Rate Programs",
+              count: CATEGORY_COUNTS["flat-rate"],
+              desc: "Special rates and programs for qualifying retirees",
+            },
+            {
+              key: "treaty" as TaxCategory,
+              name: "Treaty Advantages",
+              count: CATEGORY_COUNTS.treaty,
+              desc: "Countries with active US bilateral tax treaties",
+            },
+          ].map((tab) => (
             <button
               key={tab.key}
               role="tab"
@@ -174,49 +187,51 @@ export default function TaxGuideClient() {
       <div className="section-banner">
         Retirement Tax Destinations · {filtered.length} Countries
       </div>
+
       <div className="tg-grid" role="tabpanel" aria-label={`${activeTab} countries`}>
         {filtered.map((country) => {
           const isExpanded = expandedCard === country.slug;
           const shortHook = country.cardHook.split(". ")[0] + ".";
+
           return (
             <div
               key={country.slug}
               className={`tg-card${isExpanded ? " tg-card--open" : ""}`}
             >
-              {/* Faded image banner */}
               <div
                 className="tg-card-img"
                 style={{
-                  backgroundImage: `url(${country.imageUrl || "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"})`,
+                  backgroundImage: `url(${
+                    country.imageUrl ||
+                    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                  })`,
                 }}
                 role="img"
                 aria-label={country.imageAlt || country.country}
               />
 
-              {/* Always-visible header */}
               <div className="tg-flag" role="img" aria-label={`${country.country} flag`}>
                 {country.flag}
               </div>
+
               <div className="tg-card-header">
                 <div>
                   <div className="tg-name">{country.country}</div>
                   <div className="tg-region">{country.region}</div>
                 </div>
+
                 <span className={`tg-cat-label ${country.category}`}>
                   {country.categoryLabel}
                 </span>
               </div>
 
-              {/* Tax display badge */}
               <div className="tg-tax-badge">
                 <span className="tg-tax-number">{country.taxDisplay}</span>
                 <span className="tg-tax-sub">{country.taxDisplaySubtext}</span>
               </div>
 
-              {/* Short hook preview */}
               <div className="tg-hook-preview">{shortHook}</div>
 
-              {/* Expand toggle */}
               <button
                 className="tg-card-toggle"
                 onClick={() => setExpandedCard(isExpanded ? null : country.slug)}
@@ -226,33 +241,36 @@ export default function TaxGuideClient() {
                 {isExpanded ? "▲ Close details" : "▼ View details"}
               </button>
 
-              {/* Expanded details */}
               {isExpanded && (
                 <div id={`card-details-${country.slug}`} className="tg-card-details">
                   <div className="tg-angle">{country.taxAngle}</div>
                   <div className="tg-program">{country.program}</div>
                   <div className="tg-hook">{country.cardHook}</div>
+
                   <div className="tg-best-for">
                     <strong>Best For</strong>
                     {country.bestFor}
                   </div>
+
                   <div className="tg-verify">
                     Verify official rules before making tax or residency decisions.
                   </div>
-                 {country.officialLink !== "#" ? (
-  <a
-    href={country.officialLink}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="tg-link"
-  >
+
+                  {country.officialLink !== "#" ? (
+                    <a
+                      href={country.officialLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="tg-link"
                     >
-                      {country.officialLinkLabel} ↗
+                      {country.officialLinkLabel} {"↗"}
                     </a>
                   ) : (
                     <span className="tg-link-pending">
                       {country.officialLinkLabel}
-                      <span className="tg-link-pending-label">Official Source Pending</span>
+                      <span className="tg-link-pending-label">
+                        Official Source Pending
+                      </span>
                     </span>
                   )}
                 </div>
@@ -265,12 +283,15 @@ export default function TaxGuideClient() {
       {/* SECTION 6 — EVIDENCE VAULT */}
       <div className="tg-evidence">
         <div className="tg-evidence-kicker">Preparation Guide</div>
+
         <h2 className="tg-evidence-title">Document Guide: Your Evidence Vault</h2>
+
         <p className="tg-evidence-sub">
           Most countries require a substantial documentation package for retirement residency
           applications. Here&rsquo;s what you typically need — though requirements vary by country.
           Always verify with official immigration and tax authorities in your destination country.
         </p>
+
         <div className="tg-evidence-grid">
           <div className="tg-evidence-card">
             <span className="tg-evidence-icon">💰</span>
@@ -283,6 +304,7 @@ export default function TaxGuideClient() {
               <li>Bank statements showing regular deposits</li>
             </ul>
           </div>
+
           <div className="tg-evidence-card">
             <span className="tg-evidence-icon">🏠</span>
             <div className="tg-evidence-card-title">Housing Documentation</div>
@@ -294,6 +316,7 @@ export default function TaxGuideClient() {
               <li>Proof of local address registration</li>
             </ul>
           </div>
+
           <div className="tg-evidence-card">
             <span className="tg-evidence-icon">🪪</span>
             <div className="tg-evidence-card-title">Identity Documents</div>
@@ -305,6 +328,7 @@ export default function TaxGuideClient() {
               <li>Consular notarization where required</li>
             </ul>
           </div>
+
           <div className="tg-evidence-card">
             <span className="tg-evidence-icon">🏦</span>
             <div className="tg-evidence-card-title">Financial Records</div>
@@ -316,6 +340,7 @@ export default function TaxGuideClient() {
               <li>Foreign bank account opening confirmation</li>
             </ul>
           </div>
+
           <div className="tg-evidence-card">
             <span className="tg-evidence-icon">🔒</span>
             <div className="tg-evidence-card-title">Background &amp; Health</div>
@@ -327,6 +352,7 @@ export default function TaxGuideClient() {
               <li>Vaccination records where required</li>
             </ul>
           </div>
+
           <div className="tg-evidence-card">
             <span className="tg-evidence-icon">📋</span>
             <div className="tg-evidence-card-title">Tax &amp; Compliance Docs</div>
@@ -339,6 +365,7 @@ export default function TaxGuideClient() {
             </ul>
           </div>
         </div>
+
         <div className="tg-disclaimer" style={{ marginTop: 24, marginBottom: 0 }}>
           <strong>Disclaimer:</strong> Document requirements vary widely by country, visa type, and
           individual circumstances. This checklist is a general educational guide only. Always verify
@@ -350,6 +377,7 @@ export default function TaxGuideClient() {
       {/* SECTION 7 — FAQ */}
       <div className="tg-faq">
         <div className="tg-ref-kicker">Common Questions</div>
+
         <h2 className="tg-faq-title">
           Frequently Asked Questions About Retiring Abroad &amp; Taxes
         </h2>
@@ -382,34 +410,52 @@ export default function TaxGuideClient() {
         })}
       </div>
 
-      {/* SECTION 8 — NEWSLETTER CTA (now before disclaimer) */}
+      {/* SECTION 8 — NEWSLETTER CTA */}
       <div className="tg-newsletter">
         <div className="tg-newsletter-eyebrow">Free Retirement Abroad Guide</div>
+
         <h2 className="tg-newsletter-title">
           Get the free guide before choosing where to retire.
         </h2>
+
         <p className="tg-newsletter-body">
           Compare costs, healthcare, visas, taxes, and lifestyle across top retirement countries.
         </p>
+
         <Link href="/?scrollTo=subscribe" className="tg-newsletter-link">
           Get the Free Guide →
         </Link>
       </div>
 
-      {/* SECTION 9 — DISCLAIMER (now after CTA, styled to match dark box) */}
-      <div className="tg-newsletter" style={{ background: "#1a1a1a", borderTop: "none", marginTop: 0 }}>
-        <div className="tg-newsletter-eyebrow" style={{ color: "#a0896a" }}>Important Legal Disclaimer</div>
-        <p className="tg-newsletter-body" style={{ color: "#c8b99a", fontSize: 13, lineHeight: 1.75, maxWidth: 700, margin: "0 auto" }}>
+      {/* SECTION 9 — LEGAL DISCLAIMER */}
+      <div
+        className="tg-newsletter"
+        style={{ background: "#1a1a1a", borderTop: "none", marginTop: 0 }}
+      >
+        <div className="tg-newsletter-eyebrow" style={{ color: "#a0896a" }}>
+          Important Legal Disclaimer
+        </div>
+
+        <p
+          className="tg-newsletter-body"
+          style={{
+            color: "#c8b99a",
+            fontSize: 13,
+            lineHeight: 1.75,
+            maxWidth: 700,
+            margin: "0 auto",
+          }}
+        >
           This guide is for general educational and informational purposes only. It does not
           constitute tax, legal, or financial advice and should not be relied upon as such. Tax
           laws, residency rules, and treaty provisions change frequently and vary significantly by
-          individual circumstance. Golden Horizons is a retirement-abroad lifestyle publication —
-          we are not tax advisors, attorneys, or CPAs. Before making any tax, financial, or
-          residency decision, consult a qualified international tax attorney, a CPA experienced in
-          US expat taxation, and/or a licensed immigration attorney in your destination country.
-          All &ldquo;may qualify,&rdquo; &ldquo;may not be taxed,&rdquo; and similar language
-          reflects general educational descriptions of how these systems work — not guarantees of
-          any specific outcome for your situation.
+          individual circumstance. Golden Horizons is a retirement-abroad lifestyle publication — we
+          are not tax advisors, attorneys, or CPAs. Before making any tax, financial, or residency
+          decision, consult a qualified international tax attorney, a CPA experienced in US expat
+          taxation, and/or a licensed immigration attorney in your destination country. All
+          &ldquo;may qualify,&rdquo; &ldquo;may not be taxed,&rdquo; and similar language reflects
+          general educational descriptions of how these systems work — not guarantees of any
+          specific outcome for your situation.
         </p>
       </div>
     </div>
