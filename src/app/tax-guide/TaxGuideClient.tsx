@@ -1,14 +1,14 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
-import { taxGuideCountries, faqItems, type TaxCategory } from "./taxGuideData";
+import { faqItems, taxGuideCountries, type TaxCategory } from "./taxGuideData";
 
 const CATEGORY_COUNTS = {
   all: taxGuideCountries.length,
-  territorial: taxGuideCountries.filter((c) => c.category === "territorial").length,
-  "flat-rate": taxGuideCountries.filter((c) => c.category === "flat-rate").length,
-  treaty: taxGuideCountries.filter((c) => c.category === "treaty").length,
+  territorial: taxGuideCountries.filter((country) => country.category === "territorial").length,
+  "flat-rate": taxGuideCountries.filter((country) => country.category === "flat-rate").length,
+  treaty: taxGuideCountries.filter((country) => country.category === "treaty").length,
 };
 
 export default function TaxGuideClient() {
@@ -16,21 +16,19 @@ export default function TaxGuideClient() {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
-  const filtered = useMemo(
-    () =>
-      activeTab === "all"
-        ? taxGuideCountries
-        : taxGuideCountries.filter((c) => c.category === activeTab),
-    [activeTab]
-  );
+  const filtered = useMemo(() => {
+    if (activeTab === "all") {
+      return taxGuideCountries;
+    }
+
+    return taxGuideCountries.filter((country) => country.category === activeTab);
+  }, [activeTab]);
 
   return (
     <div>
       {/* SECTION 1 — HERO */}
       <div className="tg-hero">
-        <div className="tg-hero-kicker">
-          The Money File · Tax Strategies for Retirees Abroad
-        </div>
+        <div className="tg-hero-kicker">The Money File · Tax Strategies for Retirees Abroad</div>
 
         <h1 className="tg-hero-title">
           35 Countries Where Retirees Can Legally Stretch Their Retirement Income Abroad
@@ -54,9 +52,7 @@ export default function TaxGuideClient() {
 
         <div className="tg-hero-byline">
           <strong>Educational Guide Only</strong> · Not tax or legal advice ·{" "}
-          <strong>
-            Consult a qualified international tax advisor before making any decisions
-          </strong>
+          <strong>Consult a qualified international tax advisor before making any decisions</strong>
         </div>
       </div>
 
@@ -73,17 +69,11 @@ export default function TaxGuideClient() {
 
         <div className="tg-compare-grid">
           <div className="tg-compare-col">
-            <div className="tg-compare-col-title">
-              🇺🇸 The High-Tax U.S. Retirement Baseline
-            </div>
+            <div className="tg-compare-col-title">🇺🇸 The High-Tax U.S. Retirement Baseline</div>
 
-            <div className="tg-compare-col-stat">
-              Federal tax + possible state tax exposure
-            </div>
+            <div className="tg-compare-col-stat">Federal tax + possible state tax exposure</div>
             <div className="tg-compare-col-stat">High property taxes in many states</div>
-            <div className="tg-compare-col-stat">
-              Higher healthcare and insurance costs
-            </div>
+            <div className="tg-compare-col-stat">Higher healthcare and insurance costs</div>
             <div className="tg-compare-col-stat">Higher monthly cost of living</div>
             <div className="tg-compare-col-stat">
               Retirement income can shrink quickly before lifestyle spending
@@ -184,9 +174,7 @@ export default function TaxGuideClient() {
       </div>
 
       {/* SECTION 4 — COUNTRY CARDS */}
-      <div className="section-banner">
-        Retirement Tax Destinations · {filtered.length} Countries
-      </div>
+      <div className="section-banner">Retirement Tax Destinations · {filtered.length} Countries</div>
 
       <div className="tg-grid" role="tabpanel" aria-label={`${activeTab} countries`}>
         {filtered.map((country) => {
@@ -194,10 +182,7 @@ export default function TaxGuideClient() {
           const shortHook = country.cardHook.split(". ")[0] + ".";
 
           return (
-            <div
-              key={country.slug}
-              className={`tg-card${isExpanded ? " tg-card--open" : ""}`}
-            >
+            <div key={country.slug} className={`tg-card${isExpanded ? " tg-card--open" : ""}`}>
               <div
                 className="tg-card-img"
                 style={{
@@ -220,9 +205,7 @@ export default function TaxGuideClient() {
                   <div className="tg-region">{country.region}</div>
                 </div>
 
-                <span className={`tg-cat-label ${country.category}`}>
-                  {country.categoryLabel}
-                </span>
+                <span className={`tg-cat-label ${country.category}`}>{country.categoryLabel}</span>
               </div>
 
               <div className="tg-tax-badge">
@@ -268,9 +251,7 @@ export default function TaxGuideClient() {
                   ) : (
                     <span className="tg-link-pending">
                       {country.officialLinkLabel}
-                      <span className="tg-link-pending-label">
-                        Official Source Pending
-                      </span>
+                      <span className="tg-link-pending-label">Official Source Pending</span>
                     </span>
                   )}
                 </div>
@@ -382,17 +363,17 @@ export default function TaxGuideClient() {
           Frequently Asked Questions About Retiring Abroad &amp; Taxes
         </h2>
 
-        {faqItems.map((item, i) => {
-          const isOpen = expandedFaq === i;
+        {faqItems.map((item, index) => {
+          const isOpen = expandedFaq === index;
 
           return (
-            <div key={i} className={`tg-faq-item${isOpen ? " tg-faq-item--open" : ""}`}>
+            <div key={item.question} className={`tg-faq-item${isOpen ? " tg-faq-item--open" : ""}`}>
               <button
                 type="button"
                 className="tg-faq-q"
-                onClick={() => setExpandedFaq(isOpen ? null : i)}
+                onClick={() => setExpandedFaq(isOpen ? null : index)}
                 aria-expanded={isOpen}
-                aria-controls={`faq-answer-${i}`}
+                aria-controls={`faq-answer-${index}`}
               >
                 <span>{item.question}</span>
                 <span className="tg-faq-arrow" aria-hidden="true">
@@ -401,7 +382,7 @@ export default function TaxGuideClient() {
               </button>
 
               {isOpen && (
-                <div id={`faq-answer-${i}`} className="tg-faq-a">
+                <div id={`faq-answer-${index}`} className="tg-faq-a">
                   {item.answer}
                 </div>
               )}
@@ -410,7 +391,7 @@ export default function TaxGuideClient() {
         })}
       </div>
 
-           {/* SECTION 8 — NEWSLETTER CTA */}
+      {/* SECTION 8 — NEWSLETTER CTA */}
       <div className="tg-free-guide-cta">
         <div className="tg-free-guide-eyebrow">Free Retirement Abroad Guide</div>
 
@@ -433,14 +414,17 @@ export default function TaxGuideClient() {
 
         <p className="tg-legal-notice-body">
           This guide is for general educational and informational purposes only. It does not
-          constitute tax, legal, or financial advice and should not be relied upon as such. Tax
-          laws, residency rules, and treaty provisions change frequently and vary significantly by
+          constitute tax, legal, or financial advice and should not be relied upon as such. Tax laws,
+          residency rules, and treaty provisions change frequently and vary significantly by
           individual circumstance. Golden Horizons is a retirement-abroad lifestyle publication — we
           are not tax advisors, attorneys, or CPAs. Before making any tax, financial, or residency
           decision, consult a qualified international tax attorney, a CPA experienced in US expat
           taxation, and/or a licensed immigration attorney in your destination country. All
           &ldquo;may qualify,&rdquo; &ldquo;may not be taxed,&rdquo; and similar language reflects
-          general educational descriptions of how these systems work — not guarantees of any
-          specific outcome for your situation.
+          general educational descriptions of how these systems work — not guarantees of any specific
+          outcome for your situation.
         </p>
       </div>
+    </div>
+  );
+}
