@@ -1015,11 +1015,668 @@ html {
 }
 
 /* ===================================================
-   TEMPORARY TAX GUIDE IMAGE FIX
-   Hides broken/blank Tax Guide image banners until
-   unique country images are added later.
+   TAX GUIDE PAGE — GOLDEN HORIZONS MAGAZINE STYLE
    =================================================== */
 
+.tg-hero {
+  padding: 34px 36px 30px;
+  background:
+    linear-gradient(135deg, rgba(250,245,233,0.96), rgba(240,232,213,0.96)),
+    radial-gradient(circle at top right, rgba(201,168,76,0.18), transparent 35%);
+  border-bottom: 2px solid #1e1408;
+}
+
+.tg-hero-kicker {
+  font-size: 10px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #8b6914;
+  margin-bottom: 12px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.8px;
+  color: #1e1408;
+  max-width: 820px;
+  margin-bottom: 16px;
+}
+
+.tg-hero-body {
+  font-size: 21px;
+  line-height: 1.65;
+  color: #2b1a00;
+  max-width: 780px;
+  margin-bottom: 18px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-hero-byline {
+  display: inline-block;
+  background: #1e1408;
+  color: #faf5e9;
+  border: 1px solid #c9a84c;
+  padding: 10px 14px;
+  font-size: 15px;
+  line-height: 1.55;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-compare {
+  padding: 30px 36px;
+  border-bottom: 2px solid #1e1408;
+  background: #faf5e9;
+}
+
+.tg-compare-header {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #faf5e9;
+  background: #1e1408;
+  padding: 6px 12px;
+  display: inline-block;
+  margin-bottom: 18px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.tg-compare-col {
+  background: #f5edd8;
+  border: 1px solid #c9a84c;
+  padding: 20px;
+}
+
+.tg-compare-col-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1e1408;
+  margin-bottom: 12px;
+}
+
+.tg-compare-col-stat {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #2b1a00;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.45);
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-compare-col-stat:last-of-type {
+  border-bottom: none;
+}
+
+.tg-compare-vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b6914;
+  font-size: 18px;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+
+.tg-tabs-wrap {
+  padding: 28px 36px;
+  background: #f0e8d5;
+  border-bottom: 2px solid #1e1408;
+}
+
+.tg-tabs-header {
+  font-size: 10px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #8b6914;
+  margin-bottom: 14px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #c9a84c;
+  border: 1px solid #c9a84c;
+}
+
+.tg-tab {
+  background: #faf5e9;
+  border: none;
+  padding: 16px 14px;
+  text-align: left;
+  cursor: pointer;
+  min-height: 118px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tg-tab:hover {
+  background: #f5edd8;
+}
+
+.tg-tab.active {
+  background: #1e1408;
+}
+
+.tg-tab-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #1e1408;
+  margin-bottom: 4px;
+}
+
+.tg-tab-count {
+  font-size: 13px;
+  font-style: italic;
+  color: #8b6914;
+  margin-bottom: 6px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-tab-desc {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #5a4010;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-tab.active .tg-tab-name,
+.tg-tab.active .tg-tab-count,
+.tg-tab.active .tg-tab-desc {
+  color: #c9a84c;
+}
+
+.tg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #c9a84c;
+  padding: 1px;
+  border-bottom: 2px solid #1e1408;
+}
+
+.tg-card {
+  position: relative;
+  background: #faf5e9;
+  padding: 18px;
+  min-height: 390px;
+  border: 0;
+  overflow: hidden;
+  transition: background 0.15s;
+}
+
+.tg-card:hover {
+  background: #f5edd8;
+}
+
+.tg-card--open {
+  background: #f0e8d5;
+}
+
+.tg-card-img {
+  height: 92px;
+  margin: -18px -18px 14px;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(1.08) saturate(1.08) brightness(0.82) sepia(0.08);
+  border-bottom: 1px solid #c9a84c;
+}
+
+.tg-flag {
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.tg-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.tg-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #1e1408;
+  line-height: 1.12;
+}
+
+.tg-region {
+  font-size: 13px;
+  color: #8b6914;
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-cat-label {
+  display: inline-block;
+  border: 1px solid #c9a84c;
+  color: #8b6914;
+  background: #f5edd8;
+  padding: 4px 7px;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-tax-badge {
+  border-top: 2px solid #1e1408;
+  border-bottom: 1px solid #c9a84c;
+  padding: 10px 0;
+  margin-bottom: 12px;
+}
+
+.tg-tax-number {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #1e1408;
+  line-height: 1;
+}
+
+.tg-tax-sub {
+  display: block;
+  font-size: 12px;
+  color: #8b6914;
+  font-style: italic;
+  margin-top: 3px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-hook-preview {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2b1a00;
+  margin-bottom: 14px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-card-toggle {
+  background: transparent;
+  border: none;
+  color: #8b6914;
+  padding: 0;
+  font-size: 14px;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-card-toggle:hover {
+  color: #1e1408;
+}
+
+.tg-card-details {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #c9a84c;
+}
+
+.tg-angle {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e1408;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.tg-program {
+  display: inline-block;
+  background: #1e1408;
+  color: #c9a84c;
+  padding: 5px 8px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-hook {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #2b1a00;
+  margin-bottom: 12px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-best-for {
+  background: #faf5e9;
+  border-left: 3px solid #c9a84c;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #2b1a00;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-best-for strong {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8b6914;
+  margin-bottom: 3px;
+}
+
+.tg-verify {
+  font-size: 13px;
+  font-style: italic;
+  color: #7a5c1e;
+  margin-bottom: 12px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-link,
+.tg-link-pending {
+  display: inline-block;
+  background: #8b6914;
+  color: #faf5e9;
+  border: 2px solid #6b4f0f;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.tg-link:hover {
+  background: #6b4f0f;
+}
+
+.tg-link-pending {
+  background: #f5edd8;
+  color: #8b6914;
+  border-color: #c9a84c;
+}
+
+.tg-link-pending-label {
+  display: block;
+  font-family: 'EB Garamond', serif;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 3px;
+}
+
+.tg-ref-section,
+.tg-evidence,
+.tg-faq,
+.tg-newsletter {
+  padding: 34px 36px;
+  border-bottom: 2px solid #1e1408;
+  background: #faf5e9;
+}
+
+.tg-ref-kicker,
+.tg-evidence-kicker,
+.tg-newsletter-eyebrow {
+  font-size: 10px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #8b6914;
+  margin-bottom: 10px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-ref-title,
+.tg-evidence-title,
+.tg-faq-title,
+.tg-newsletter-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  line-height: 1.15;
+  color: #1e1408;
+  margin-bottom: 16px;
+}
+
+.tg-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tg-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #faf5e9;
+  border: 1px solid #c9a84c;
+}
+
+.tg-table th {
+  background: #1e1408;
+  color: #c9a84c;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 9px;
+  text-align: left;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-table td {
+  border-bottom: 1px solid #e0cc99;
+  padding: 10px 9px;
+  vertical-align: top;
+}
+
+.tg-t-country {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e1408;
+}
+
+.tg-t-cat {
+  display: inline-block;
+  border: 1px solid #c9a84c;
+  padding: 4px 7px;
+  font-size: 10px;
+  color: #8b6914;
+  white-space: nowrap;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-evidence-sub {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #2b1a00;
+  max-width: 760px;
+  margin-bottom: 22px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #c9a84c;
+  border: 1px solid #c9a84c;
+}
+
+.tg-evidence-card {
+  background: #f5edd8;
+  padding: 20px;
+}
+
+.tg-evidence-icon {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tg-evidence-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: #1e1408;
+  margin-bottom: 10px;
+}
+
+.tg-evidence-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tg-evidence-list li {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #2b1a00;
+  margin-bottom: 6px;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-faq-item {
+  border-top: 1px solid #c9a84c;
+  padding: 18px 0;
+}
+
+.tg-faq-q {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 800;
+  color: #1e1408;
+  margin-bottom: 8px;
+}
+
+.tg-faq-a {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #2b1a00;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-disclaimer {
+  background: #f0e8d5;
+  border: 1px solid #c9a84c;
+  padding: 16px 20px;
+  font-size: 15px;
+  font-style: italic;
+  color: #5a4010;
+  line-height: 1.65;
+  font-family: 'EB Garamond', serif;
+}
+
+.tg-newsletter {
+  text-align: center;
+  background: #1e1408;
+  color: #faf5e9;
+}
+
+.tg-newsletter-title {
+  color: #faf5e9;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tg-newsletter-body {
+  color: #d4c4a0;
+  font-size: 18px;
+  line-height: 1.75;
+  max-width: 640px;
+  margin: 0 auto 24px;
+  font-family: 'EB Garamond', serif;
+}
+
+@media (max-width: 900px) {
+  .tg-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tg-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tg-evidence-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tg-compare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tg-compare-vs {
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tg-hero,
+  .tg-compare,
+  .tg-tabs-wrap,
+  .tg-ref-section,
+  .tg-evidence,
+  .tg-faq,
+  .tg-newsletter {
+    padding: 24px 16px;
+  }
+
+  .tg-hero-title {
+    font-size: 30px;
+  }
+
+  .tg-hero-body {
+    font-size: 18px;
+  }
+
+  .tg-grid,
+  .tg-tabs,
+  .tg-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tg-card {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .tg-card-img {
+    margin: -16px -16px 14px;
+  }
+
+  .tg-card-header {
+    flex-direction: column;
+  }
+
+  .tg-ref-title,
+  .tg-evidence-title,
+  .tg-faq-title,
+  .tg-newsletter-title {
+    font-size: 26px;
+  }
+
+  .tg-table {
+    min-width: 760px;
+  }
+}
+
+/* ===================================================
+   SCOPED TAX GUIDE IMAGE FIX
+   Only hides Tax Guide country card image banners.
+   Does not affect homepage, articles, or destination images.
+   =================================================== */
 .tg-card-img {
   display: none !important;
 }
