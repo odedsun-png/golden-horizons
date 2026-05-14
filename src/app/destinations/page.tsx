@@ -132,6 +132,7 @@ export default function DestinationsPage() {
           <Link href="/destinations" className="active">
             Destinations
           </Link>
+          <Link href="/tax-guide">TAX GUIDE</Link>
           <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
         </nav>
         {/* BRIGHT EDITORIAL HERO - NO TEXT BOX */}

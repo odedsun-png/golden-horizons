@@ -54,6 +54,7 @@ export default function PrivacyPolicyPage() {
           <Link href="/">Cover</Link>
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
+          <Link href="/tax-guide">TAX GUIDE</Link>
           <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
         </nav>
 

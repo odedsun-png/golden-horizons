@@ -373,6 +373,7 @@ export default async function ArticleDetailPage({
             All Stories
           </Link>
           <Link href="/destinations">Destinations</Link>
+          <Link href="/tax-guide">TAX GUIDE</Link>
           <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
         </nav>
 
