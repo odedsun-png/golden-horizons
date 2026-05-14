@@ -162,7 +162,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Tax Holiday",
     taxDisplaySubtext: "foreign-income option",
-    imageUrl: "https://images.unsplash.com/photo-1591111280524-e0bc82d89e36?w=600&q=80",
+    imageUrl: "/Uruguay.jpg",
     imageAlt: "Montevideo Uruguay coast",
   },
   {
@@ -228,7 +228,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "0% Local Tax",
     taxDisplaySubtext: "on qualifying foreign-source income",
-    imageUrl: "https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=600&q=80",
+    imageUrl: "/Bolivia.jpg",
     imageAlt: "Bolivia Uyuni salt flats",
   },
   {
@@ -294,7 +294,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "0% Local Tax",
     taxDisplaySubtext: "on qualifying foreign-source income",
-    imageUrl: "https://images.unsplash.com/photo-1563191911-e65a8d8f4b26?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=600&q=80",
     imageAlt: "Vanuatu Pacific island paradise",
   },
   {
@@ -338,7 +338,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "0% Income Tax",
     taxDisplaySubtext: "no personal income tax",
-    imageUrl: "https://images.unsplash.com/photo-1570660954895-8e12b1f8ab84?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80",
     imageAlt: "Qatar Doha skyline and waterfront",
   },
   {
@@ -360,7 +360,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "0% Income Tax",
     taxDisplaySubtext: "no personal income tax",
-    imageUrl: "https://images.unsplash.com/photo-1548574505-5e239809f0e7?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=600&q=80",
     imageAlt: "Bahamas Caribbean beach and turquoise water",
   },
 
@@ -516,7 +516,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "10%",
     taxDisplaySubtext: "flat income tax",
-    imageUrl: "https://images.unsplash.com/photo-1603836649440-c8b3d1cbaefd?w=600&q=80",
+    imageUrl: "/Bulgaria.jpg",
     imageAlt: "Bulgaria Sofia and mountains",
   },
   {
@@ -560,7 +560,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "20%",
     taxDisplaySubtext: "local income tax",
-    imageUrl: "https://images.unsplash.com/photo-1565793979959-2c94b2df7143?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
     imageAlt: "Tbilisi Georgia old town and mountains",
   },
   {
@@ -696,7 +696,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Pension Benefit",
     taxDisplaySubtext: "retiree visa incentives",
-    imageUrl: "https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
     imageAlt: "Dominican Republic beach and palm trees",
   },
   {
@@ -741,7 +741,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "ok",
     taxDisplay: "Treaty",
     taxDisplaySubtext: "U.S. pension rules",
-    imageUrl: "https://images.unsplash.com/photo-1595591564367-0fb4fc5eb39a?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=600&q=80",
     imageAlt: "Ireland Cliffs of Moher",
   },
   {
@@ -808,7 +808,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "ok",
     taxDisplay: "Treaty",
     taxDisplaySubtext: "special entry permit",
-    imageUrl: "https://images.unsplash.com/photo-1554530777-3d5fc3ae17a4?w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
     imageAlt: "Barbados Caribbean beach",
   },
 ];
