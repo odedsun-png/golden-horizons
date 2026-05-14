@@ -26,6 +26,15 @@ export default function TaxGuideClient() {
 
   return (
     <div>
+      {/* HERO IMAGE */}
+      <div className="tg-hero-img-wrap">
+        <img
+          src="/pexels-kampus-8170230.jpg"
+          alt="Retirees enjoying life abroad"
+          className="tg-hero-img"
+        />
+      </div>
+
       {/* SECTION 1 — HERO */}
       <div className="tg-hero">
         <div className="tg-hero-kicker">
@@ -236,6 +245,10 @@ export default function TaxGuideClient() {
                 <span className="tg-tax-sub">{country.taxDisplaySubtext}</span>
               </div>
 
+              <div className="tg-tax-note">
+                Local country tax only — U.S. citizens may still owe U.S. taxes.
+              </div>
+
               <div className="tg-hook-preview">{shortHook}</div>
 
               <button
@@ -251,6 +264,11 @@ export default function TaxGuideClient() {
                 <div id={`card-details-${country.slug}`} className="tg-card-details">
                   <div className="tg-angle">{country.taxAngle}</div>
                   <div className="tg-program">{country.program}</div>
+                  {country.category === "territorial" && (
+                    <div className="tg-scope-note">
+                      Territorial tax refers to local country tax only. U.S. citizens must still file U.S. returns and may owe U.S. taxes on worldwide income.
+                    </div>
+                  )}
                   <div className="tg-hook">{country.cardHook}</div>
 
                   <div className="tg-best-for">

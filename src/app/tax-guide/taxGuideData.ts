@@ -50,9 +50,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Panama offers a territorial tax system and the Pensionado Visa for retirees. Foreign-source income may qualify for favorable treatment. Verify official rules before making tax or residency decisions.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",
     imageAlt: "Panama canal and skyline",
   },
   {
@@ -72,9 +72,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Costa Rica has a territorial tax system and offers Pensionado residency for retirees. Foreign pension income may not be taxed locally. Verify all rules with official sources.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&q=80",
     imageAlt: "Costa Rica rainforest and waterfall",
   },
   {
@@ -94,9 +94,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Belize QRP program offers residency with potential exemption from local tax on foreign income. Verify official QRP eligibility rules and current program status before applying.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1534850336045-c6c6d287f89e?w=600&q=80",
     imageAlt: "Belize Caribbean reef and coast",
   },
   {
@@ -116,9 +116,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Nicaragua Law 694 offers retirement residency with potential tax benefits. Foreign-source income treatment depends on residency status. Verify official rules before making any decisions.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1502472584811-0a2f2feb8968?w=600&q=80",
     imageAlt: "Nicaragua volcano and colonial city",
   },
   {
@@ -138,9 +138,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Guatemala's territorial tax system may not tax foreign-source income locally. Rentista residency available for qualifying retirees. Verify all rules before making tax or residency decisions.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1544465544-1b71aee9dfa3?w=600&q=80",
     imageAlt: "Guatemala Antigua colonial architecture and volcano",
   },
   {
@@ -162,7 +162,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Tax Holiday",
     taxDisplaySubtext: "foreign-income option",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1591111280524-e0bc82d89e36?w=600&q=80",
     imageAlt: "Montevideo Uruguay coast",
   },
   {
@@ -182,9 +182,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Paraguay has a territorial tax system taxing only locally-sourced income. Foreign pension income may not be subject to local tax. Verify official rules and residency requirements.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=600&q=80",
     imageAlt: "Paraguay South America landscape",
   },
   {
@@ -204,9 +204,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Ecuador retirement residency visa available for pensioners. Foreign pension income may receive favorable tax treatment depending on applicable rules. Verify all rules with a qualified advisor.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=600&q=80",
     imageAlt: "Ecuador Quito and Andes mountains",
   },
   {
@@ -226,9 +226,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Bolivia uses a territorial tax system. Foreign-source income may not be taxed locally. Verify official rules, residency requirements, and consult a qualified advisor before making decisions.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=600&q=80",
     imageAlt: "Bolivia Uyuni salt flats",
   },
   {
@@ -248,9 +248,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Malaysia MM2H visa offers long-term residency. Foreign-source income may receive favorable tax treatment depending on rules in effect. Verify current program requirements before applying.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80",
     imageAlt: "Kuala Lumpur Malaysia skyline",
   },
   {
@@ -270,9 +270,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Philippines SRRV provides a dedicated retirement visa. Foreign-source income may not be taxed locally for qualifying holders. Verify official program rules before making any decisions.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80",
     imageAlt: "Philippines tropical beach and island",
   },
   {
@@ -292,9 +292,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Vanuatu has no personal income tax, capital gains tax, or inheritance tax. Resident visa available for qualifying individuals. Verify current program requirements before applying.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "on foreign-source income",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Local Tax",
+    taxDisplaySubtext: "on qualifying foreign-source income",
+    imageUrl: "https://images.unsplash.com/photo-1563191911-e65a8d8f4b26?w=600&q=80",
     imageAlt: "Vanuatu Pacific island paradise",
   },
   {
@@ -314,9 +314,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "The UAE has no personal income tax. Retirement and Golden Visa programs available for qualifying individuals. Verify current visa requirements and financial thresholds with official UAE authorities.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "personal income tax",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Income Tax",
+    taxDisplaySubtext: "no personal income tax",
+    imageUrl: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80",
     imageAlt: "Dubai UAE modern skyline",
   },
   {
@@ -336,9 +336,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "Qatar has no personal income tax. Permanent residency pathways are available for qualifying individuals. Verify current program requirements with official Qatari authorities.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "personal income tax",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Income Tax",
+    taxDisplaySubtext: "no personal income tax",
+    imageUrl: "https://images.unsplash.com/photo-1570660954895-8e12b1f8ab84?w=600&q=80",
     imageAlt: "Qatar Doha skyline and waterfront",
   },
   {
@@ -358,9 +358,9 @@ export const taxGuideCountries: CountryCard[] = [
     seoSummary:
       "The Bahamas has no income tax, capital gains tax, or inheritance tax. Residency programs available for qualifying individuals. Verify current program requirements before applying.",
     verificationStatus: "check",
-    taxDisplay: "0%",
-    taxDisplaySubtext: "personal income tax",
-    imageUrl: FALLBACK_IMG,
+    taxDisplay: "0% Income Tax",
+    taxDisplaySubtext: "no personal income tax",
+    imageUrl: "https://images.unsplash.com/photo-1548574505-5e239809f0e7?w=600&q=80",
     imageAlt: "Bahamas Caribbean beach and turquoise water",
   },
 
@@ -384,7 +384,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "7%",
     taxDisplaySubtext: "flat tax program",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&q=80",
     imageAlt: "Greece Santorini and Aegean Sea",
   },
   {
@@ -406,7 +406,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "7%",
     taxDisplaySubtext: "flat tax program",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80",
     imageAlt: "Italy Amalfi Coast",
   },
   {
@@ -428,7 +428,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "5%",
     taxDisplaySubtext: "pension tax option",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1522156373667-4c7234bbd804?w=600&q=80",
     imageAlt: "Cyprus Mediterranean coastline",
   },
   {
@@ -450,7 +450,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "15%",
     taxDisplaySubtext: "flat tax program",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
     imageAlt: "Malta Valletta Grand Harbour",
   },
   {
@@ -472,7 +472,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "20%",
     taxDisplaySubtext: "possible flat rate",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&q=80",
     imageAlt: "Portugal Lisbon tram and cityscape",
   },
   {
@@ -494,7 +494,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "10%",
     taxDisplaySubtext: "low-tax ceiling",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80",
     imageAlt: "Andorra Pyrenees mountains and village",
   },
   {
@@ -516,7 +516,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "10%",
     taxDisplaySubtext: "flat income tax",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1603836649440-c8b3d1cbaefd?w=600&q=80",
     imageAlt: "Bulgaria Sofia and mountains",
   },
   {
@@ -538,7 +538,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "15%",
     taxDisplaySubtext: "flat tax program",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=600&q=80",
     imageAlt: "Mauritius tropical island and lagoon",
   },
   {
@@ -560,7 +560,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "20%",
     taxDisplaySubtext: "local income tax",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1565793979959-2c94b2df7143?w=600&q=80",
     imageAlt: "Tbilisi Georgia old town and mountains",
   },
   {
@@ -582,7 +582,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "9–15%",
     taxDisplaySubtext: "flat income tax",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1555990538-c01c6462f8e2?w=600&q=80",
     imageAlt: "Montenegro Bay of Kotor",
   },
 
@@ -607,7 +607,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "ok",
     taxDisplay: "Treaty",
     taxDisplaySubtext: "U.S. pension rules",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80",
     imageAlt: "France Paris Eiffel Tower",
   },
   {
@@ -630,7 +630,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "ok",
     taxDisplay: "Treaty",
     taxDisplaySubtext: "U.S. pension rules",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=600&q=80",
     imageAlt: "Spain Seville architecture",
   },
   {
@@ -652,7 +652,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Variable",
     taxDisplaySubtext: "treaty + residency rules",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=600&q=80",
     imageAlt: "Mexico Oaxaca colonial architecture",
   },
   {
@@ -674,7 +674,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Variable",
     taxDisplaySubtext: "remittance rules",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=600&q=80",
     imageAlt: "Thailand temple and tropical scenery",
   },
   {
@@ -696,7 +696,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Pension Benefit",
     taxDisplaySubtext: "retiree visa incentives",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=600&q=80",
     imageAlt: "Dominican Republic beach and palm trees",
   },
   {
@@ -718,7 +718,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Variable",
     taxDisplaySubtext: "pension tax benefit",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=600&q=80",
     imageAlt: "Colombia Medellin mountains",
   },
   {
@@ -741,7 +741,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "ok",
     taxDisplay: "Treaty",
     taxDisplaySubtext: "U.S. pension rules",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1595591564367-0fb4fc5eb39a?w=600&q=80",
     imageAlt: "Ireland Cliffs of Moher",
   },
   {
@@ -763,7 +763,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Variable",
     taxDisplaySubtext: "residency-based rules",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
     imageAlt: "Turkey Istanbul and Aegean coast",
   },
   {
@@ -785,7 +785,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "check",
     taxDisplay: "Low-tax",
     taxDisplaySubtext: "foreign-income planning",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
     imageAlt: "Dominica Caribbean rainforest island",
   },
   {
@@ -808,7 +808,7 @@ export const taxGuideCountries: CountryCard[] = [
     verificationStatus: "ok",
     taxDisplay: "Treaty",
     taxDisplaySubtext: "special entry permit",
-    imageUrl: FALLBACK_IMG,
+    imageUrl: "https://images.unsplash.com/photo-1554530777-3d5fc3ae17a4?w=600&q=80",
     imageAlt: "Barbados Caribbean beach",
   },
 ];
