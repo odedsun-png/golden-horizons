@@ -14,6 +14,7 @@ const CATEGORY_COUNTS = {
 export default function TaxGuideClient() {
   const [activeTab, setActiveTab] = useState<TaxCategory>("all");
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const filtered = useMemo(
     () =>
@@ -351,12 +352,33 @@ export default function TaxGuideClient() {
         <h2 className="tg-faq-title">
           Frequently Asked Questions About Retiring Abroad &amp; Taxes
         </h2>
-        {faqItems.map((item, i) => (
-          <div key={i} className="tg-faq-item">
-            <div className="tg-faq-q">{item.question}</div>
-            <div className="tg-faq-a">{item.answer}</div>
-          </div>
-        ))}
+
+        {faqItems.map((item, i) => {
+          const isOpen = expandedFaq === i;
+
+          return (
+            <div key={i} className={`tg-faq-item${isOpen ? " tg-faq-item--open" : ""}`}>
+              <button
+                type="button"
+                className="tg-faq-q"
+                onClick={() => setExpandedFaq(isOpen ? null : i)}
+                aria-expanded={isOpen}
+                aria-controls={`faq-answer-${i}`}
+              >
+                <span>{item.question}</span>
+                <span className="tg-faq-arrow" aria-hidden="true">
+                  {isOpen ? "▲" : "▼"}
+                </span>
+              </button>
+
+              {isOpen && (
+                <div id={`faq-answer-${i}`} className="tg-faq-a">
+                  {item.answer}
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
 
       {/* SECTION 8 — DISCLAIMER */}
