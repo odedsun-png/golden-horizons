@@ -410,42 +410,28 @@ export default function TaxGuideClient() {
         })}
       </div>
 
-      {/* SECTION 8 — NEWSLETTER CTA */}
-      <div className="tg-newsletter">
-        <div className="tg-newsletter-eyebrow">Free Retirement Abroad Guide</div>
+           {/* SECTION 8 — NEWSLETTER CTA */}
+      <div className="tg-free-guide-cta">
+        <div className="tg-free-guide-eyebrow">Free Retirement Abroad Guide</div>
 
-        <h2 className="tg-newsletter-title">
+        <h2 className="tg-free-guide-title">
           Get the free guide before choosing where to retire.
         </h2>
 
-        <p className="tg-newsletter-body">
+        <p className="tg-free-guide-body">
           Compare costs, healthcare, visas, taxes, and lifestyle across top retirement countries.
         </p>
 
-        <Link href="/?scrollTo=subscribe" className="tg-newsletter-link">
+        <Link href="/?scrollTo=subscribe" className="tg-free-guide-button">
           Get the Free Guide →
         </Link>
       </div>
 
       {/* SECTION 9 — LEGAL DISCLAIMER */}
-      <div
-        className="tg-newsletter"
-        style={{ background: "#1a1a1a", borderTop: "none", marginTop: 0 }}
-      >
-        <div className="tg-newsletter-eyebrow" style={{ color: "#a0896a" }}>
-          Important Legal Disclaimer
-        </div>
+      <div className="tg-legal-notice">
+        <div className="tg-legal-notice-eyebrow">Important Legal Disclaimer</div>
 
-        <p
-          className="tg-newsletter-body"
-          style={{
-            color: "#c8b99a",
-            fontSize: 13,
-            lineHeight: 1.75,
-            maxWidth: 700,
-            margin: "0 auto",
-          }}
-        >
+        <p className="tg-legal-notice-body">
           This guide is for general educational and informational purposes only. It does not
           constitute tax, legal, or financial advice and should not be relied upon as such. Tax
           laws, residency rules, and treaty provisions change frequently and vary significantly by
@@ -458,6 +444,3 @@ export default function TaxGuideClient() {
           specific outcome for your situation.
         </p>
       </div>
-    </div>
-  );
-}
