@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import SubscribeBox from "@/components/SubscribeBox";
 import { taxGuideCountries, faqItems, type TaxCategory } from "./taxGuideData";
 
 const CATEGORY_COUNTS = {
@@ -182,7 +181,6 @@ export default function TaxGuideClient() {
             <div
               key={country.slug}
               className={`tg-card${isExpanded ? " tg-card--open" : ""}`}
-              style={{ border: "1px solid #c9a84c" }}
             >
               {/* Faded image banner */}
               <div
@@ -260,77 +258,6 @@ export default function TaxGuideClient() {
             </div>
           );
         })}
-      </div>
-
-      {/* SECTION 5 — REFERENCE TABLE */}
-      <div className="tg-ref-section">
-        <div className="tg-ref-kicker">Complete Reference</div>
-        <h2 className="tg-ref-title">All 35 Countries at a Glance</h2>
-        <div style={{ overflowX: "auto" }}>
-          <table className="tg-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Country</th>
-                <th>Category</th>
-                <th>Tax Angle</th>
-                <th>Program</th>
-                <th>Region</th>
-              </tr>
-            </thead>
-            <tbody>
-              {taxGuideCountries.map((c, i) => (
-                <tr key={c.slug}>
-                  <td style={{ color: "#8b6914", fontSize: 13, fontFamily: "EB Garamond, serif" }}>
-                    {i + 1}
-                  </td>
-                  <td>
-                    <span style={{ fontSize: 18, marginRight: 6 }}>{c.flag}</span>
-                    <span className="tg-t-country">{c.country}</span>
-                  </td>
-                  <td>
-                    <span className={`tg-t-cat ${c.category}`}>{c.categoryLabel}</span>
-                  </td>
-                  <td style={{ fontSize: 14, fontFamily: "EB Garamond, serif", lineHeight: 1.5 }}>
-                    {c.taxAngle}
-                  </td>
-                  <td
-                    style={{
-                      fontSize: 13,
-                      fontStyle: "italic",
-                      fontFamily: "EB Garamond, serif",
-                      color: "#5a4010",
-                    }}
-                  >
-                    {c.program}
-                  </td>
-                  <td
-                    style={{
-                      fontSize: 13,
-                      fontFamily: "EB Garamond, serif",
-                      color: "#8b6914",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    {c.region}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p
-          style={{
-            fontSize: 13,
-            fontStyle: "italic",
-            color: "#8b6914",
-            marginTop: 14,
-            fontFamily: "EB Garamond, serif",
-          }}
-        >
-          All information is for educational purposes only. Verify official rules before making any
-          tax or residency decisions. Consult a qualified international tax advisor.
-        </p>
       </div>
 
       {/* SECTION 6 — EVIDENCE VAULT */}
@@ -448,18 +375,16 @@ export default function TaxGuideClient() {
 
       {/* SECTION 9 — NEWSLETTER CTA */}
       <div className="tg-newsletter">
-        <div className="tg-newsletter-eyebrow">Stay Informed</div>
+        <div className="tg-newsletter-eyebrow">Free Retirement Abroad Guide</div>
         <h2 className="tg-newsletter-title">
-          Get the Tax &amp; Residency Updates That Matter to Retirees Abroad
+          Get the free guide before choosing where to retire.
         </h2>
         <p className="tg-newsletter-body">
-          Tax laws change. Visa programs evolve. New countries open their doors. Our free newsletter
-          keeps you current on what matters — written for Americans planning or living retirement
-          abroad.
+          Compare costs, healthcare, visas, taxes, and lifestyle across top retirement countries.
         </p>
-        <div style={{ maxWidth: 560, margin: "0 auto" }}>
-          <SubscribeBox variant="sidebar" />
-        </div>
+        <Link href="/?scrollTo=subscribe" className="tg-newsletter-link">
+          Get the Free Guide →
+        </Link>
       </div>
     </div>
   );
