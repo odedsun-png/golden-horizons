@@ -6,9 +6,9 @@ import { faqItems, taxGuideCountries, type TaxCategory } from "./taxGuideData";
 
 const CATEGORY_COUNTS = {
   all: taxGuideCountries.length,
-  territorial: taxGuideCountries.filter((country) => country.category === "territorial").length,
-  "flat-rate": taxGuideCountries.filter((country) => country.category === "flat-rate").length,
-  treaty: taxGuideCountries.filter((country) => country.category === "treaty").length,
+  territorial: taxGuideCountries.filter((c) => c.category === "territorial").length,
+  "flat-rate": taxGuideCountries.filter((c) => c.category === "flat-rate").length,
+  treaty: taxGuideCountries.filter((c) => c.category === "treaty").length,
 };
 
 export default function TaxGuideClient() {
@@ -16,19 +16,21 @@ export default function TaxGuideClient() {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
-  const filtered = useMemo(() => {
-    if (activeTab === "all") {
-      return taxGuideCountries;
-    }
-
-    return taxGuideCountries.filter((country) => country.category === activeTab);
-  }, [activeTab]);
+  const filtered = useMemo(
+    () =>
+      activeTab === "all"
+        ? taxGuideCountries
+        : taxGuideCountries.filter((c) => c.category === activeTab),
+    [activeTab]
+  );
 
   return (
     <div>
       {/* SECTION 1 — HERO */}
       <div className="tg-hero">
-        <div className="tg-hero-kicker">The Money File · Tax Strategies for Retirees Abroad</div>
+        <div className="tg-hero-kicker">
+          The Money File · Tax Strategies for Retirees Abroad
+        </div>
 
         <h1 className="tg-hero-title">
           35 Countries Where Retirees Can Legally Stretch Their Retirement Income Abroad
@@ -52,7 +54,9 @@ export default function TaxGuideClient() {
 
         <div className="tg-hero-byline">
           <strong>Educational Guide Only</strong> · Not tax or legal advice ·{" "}
-          <strong>Consult a qualified international tax advisor before making any decisions</strong>
+          <strong>
+            Consult a qualified international tax advisor before making any decisions
+          </strong>
         </div>
       </div>
 
@@ -61,7 +65,7 @@ export default function TaxGuideClient() {
         <Link href="/">Golden Horizons</Link> › Tax Guide
       </div>
 
-      {/* SECTION 2 — U.S. VS. THE WORLD */}
+      {/* SECTION 2 — U.S. VS DESTINATIONS */}
       <div className="tg-compare">
         <div className="tg-compare-header">
           The Benchmark: U.S. Retirement Costs vs. The 35 Destinations
@@ -69,12 +73,22 @@ export default function TaxGuideClient() {
 
         <div className="tg-compare-grid">
           <div className="tg-compare-col">
-            <div className="tg-compare-col-title">🇺🇸 The High-Tax U.S. Retirement Baseline</div>
+            <div className="tg-compare-col-title">
+              🇺🇸 The High-Tax U.S. Retirement Baseline
+            </div>
 
-            <div className="tg-compare-col-stat">Federal tax + possible state tax exposure</div>
-            <div className="tg-compare-col-stat">High property taxes in many states</div>
-            <div className="tg-compare-col-stat">Higher healthcare and insurance costs</div>
-            <div className="tg-compare-col-stat">Higher monthly cost of living</div>
+            <div className="tg-compare-col-stat">
+              Federal tax + possible state tax exposure
+            </div>
+            <div className="tg-compare-col-stat">
+              High property taxes in many states
+            </div>
+            <div className="tg-compare-col-stat">
+              Higher healthcare and insurance costs
+            </div>
+            <div className="tg-compare-col-stat">
+              Higher monthly cost of living
+            </div>
             <div className="tg-compare-col-stat">
               Retirement income can shrink quickly before lifestyle spending
             </div>
@@ -96,7 +110,9 @@ export default function TaxGuideClient() {
           <div className="tg-compare-vs">vs.</div>
 
           <div className="tg-compare-col">
-            <div className="tg-compare-col-title">🌍 The 35 Countries Compared</div>
+            <div className="tg-compare-col-title">
+              🌍 The 35 Countries Compared
+            </div>
 
             <div className="tg-compare-col-stat">
               <strong>Territorial systems:</strong> foreign-source income may not be taxed locally
@@ -174,7 +190,9 @@ export default function TaxGuideClient() {
       </div>
 
       {/* SECTION 4 — COUNTRY CARDS */}
-      <div className="section-banner">Retirement Tax Destinations · {filtered.length} Countries</div>
+      <div className="section-banner">
+        Retirement Tax Destinations · {filtered.length} Countries
+      </div>
 
       <div className="tg-grid" role="tabpanel" aria-label={`${activeTab} countries`}>
         {filtered.map((country) => {
@@ -182,7 +200,10 @@ export default function TaxGuideClient() {
           const shortHook = country.cardHook.split(". ")[0] + ".";
 
           return (
-            <div key={country.slug} className={`tg-card${isExpanded ? " tg-card--open" : ""}`}>
+            <div
+              key={country.slug}
+              className={`tg-card${isExpanded ? " tg-card--open" : ""}`}
+            >
               <div
                 className="tg-card-img"
                 style={{
@@ -205,7 +226,9 @@ export default function TaxGuideClient() {
                   <div className="tg-region">{country.region}</div>
                 </div>
 
-                <span className={`tg-cat-label ${country.category}`}>{country.categoryLabel}</span>
+                <span className={`tg-cat-label ${country.category}`}>
+                  {country.categoryLabel}
+                </span>
               </div>
 
               <div className="tg-tax-badge">
@@ -246,12 +269,14 @@ export default function TaxGuideClient() {
                       rel="noopener noreferrer"
                       className="tg-link"
                     >
-                      {country.officialLinkLabel} {"↗"}
+                      {country.officialLinkLabel} ↗
                     </a>
                   ) : (
                     <span className="tg-link-pending">
                       {country.officialLinkLabel}
-                      <span className="tg-link-pending-label">Official Source Pending</span>
+                      <span className="tg-link-pending-label">
+                        Official Source Pending
+                      </span>
                     </span>
                   )}
                 </div>
@@ -261,7 +286,7 @@ export default function TaxGuideClient() {
         })}
       </div>
 
-      {/* SECTION 6 — EVIDENCE VAULT */}
+      {/* SECTION 5 — DOCUMENT GUIDE */}
       <div className="tg-evidence">
         <div className="tg-evidence-kicker">Preparation Guide</div>
 
@@ -279,7 +304,7 @@ export default function TaxGuideClient() {
             <div className="tg-evidence-card-title">Proof of Income</div>
             <ul className="tg-evidence-list">
               <li>Social Security award letter</li>
-              <li>Pension statements (last 3–6 months)</li>
+              <li>Pension statements</li>
               <li>Investment account statements</li>
               <li>IRS tax transcripts or returns</li>
               <li>Bank statements showing regular deposits</li>
@@ -290,8 +315,8 @@ export default function TaxGuideClient() {
             <span className="tg-evidence-icon">🏠</span>
             <div className="tg-evidence-card-title">Housing Documentation</div>
             <ul className="tg-evidence-list">
-              <li>Signed lease agreement (apostilled)</li>
-              <li>Property purchase deed (if buying)</li>
+              <li>Signed lease agreement</li>
+              <li>Property purchase deed</li>
               <li>Utility bills in your name</li>
               <li>Landlord contact information</li>
               <li>Proof of local address registration</li>
@@ -302,10 +327,10 @@ export default function TaxGuideClient() {
             <span className="tg-evidence-icon">🪪</span>
             <div className="tg-evidence-card-title">Identity Documents</div>
             <ul className="tg-evidence-list">
-              <li>Valid US passport (6+ months remaining)</li>
-              <li>Certified birth certificate (apostilled)</li>
-              <li>Marriage certificate (if applicable)</li>
-              <li>Passport photos (check country specs)</li>
+              <li>Valid US passport</li>
+              <li>Certified birth certificate</li>
+              <li>Marriage certificate if applicable</li>
+              <li>Passport photos</li>
               <li>Consular notarization where required</li>
             </ul>
           </div>
@@ -314,11 +339,11 @@ export default function TaxGuideClient() {
             <span className="tg-evidence-icon">🏦</span>
             <div className="tg-evidence-card-title">Financial Records</div>
             <ul className="tg-evidence-list">
-              <li>Bank statements (6–12 months)</li>
+              <li>Bank statements</li>
               <li>Proof of sufficient liquid assets</li>
-              <li>Brokerage / investment account letters</li>
+              <li>Brokerage account letters</li>
               <li>Wire transfer documentation</li>
-              <li>Foreign bank account opening confirmation</li>
+              <li>Foreign bank account confirmation</li>
             </ul>
           </div>
 
@@ -326,8 +351,8 @@ export default function TaxGuideClient() {
             <span className="tg-evidence-icon">🔒</span>
             <div className="tg-evidence-card-title">Background &amp; Health</div>
             <ul className="tg-evidence-list">
-              <li>FBI criminal background check (apostilled)</li>
-              <li>State police clearance (some countries)</li>
+              <li>FBI criminal background check</li>
+              <li>State police clearance where required</li>
               <li>Medical fitness certificate</li>
               <li>International health insurance proof</li>
               <li>Vaccination records where required</li>
@@ -339,10 +364,10 @@ export default function TaxGuideClient() {
             <div className="tg-evidence-card-title">Tax &amp; Compliance Docs</div>
             <ul className="tg-evidence-list">
               <li>Last 2–3 years US tax returns</li>
-              <li>FBAR filings (FinCEN 114) if applicable</li>
+              <li>FBAR filings if applicable</li>
               <li>US tax compliance certification</li>
               <li>Foreign account disclosure documents</li>
-              <li>Local tax registration (once established)</li>
+              <li>Local tax registration once established</li>
             </ul>
           </div>
         </div>
@@ -355,7 +380,7 @@ export default function TaxGuideClient() {
         </div>
       </div>
 
-      {/* SECTION 7 — FAQ */}
+      {/* SECTION 6 — FAQ */}
       <div className="tg-faq">
         <div className="tg-ref-kicker">Common Questions</div>
 
@@ -363,17 +388,17 @@ export default function TaxGuideClient() {
           Frequently Asked Questions About Retiring Abroad &amp; Taxes
         </h2>
 
-        {faqItems.map((item, index) => {
-          const isOpen = expandedFaq === index;
+        {faqItems.map((item, i) => {
+          const isOpen = expandedFaq === i;
 
           return (
-            <div key={item.question} className={`tg-faq-item${isOpen ? " tg-faq-item--open" : ""}`}>
+            <div key={i} className={`tg-faq-item${isOpen ? " tg-faq-item--open" : ""}`}>
               <button
                 type="button"
                 className="tg-faq-q"
-                onClick={() => setExpandedFaq(isOpen ? null : index)}
+                onClick={() => setExpandedFaq(isOpen ? null : i)}
                 aria-expanded={isOpen}
-                aria-controls={`faq-answer-${index}`}
+                aria-controls={`faq-answer-${i}`}
               >
                 <span>{item.question}</span>
                 <span className="tg-faq-arrow" aria-hidden="true">
@@ -382,7 +407,7 @@ export default function TaxGuideClient() {
               </button>
 
               {isOpen && (
-                <div id={`faq-answer-${index}`} className="tg-faq-a">
+                <div id={`faq-answer-${i}`} className="tg-faq-a">
                   {item.answer}
                 </div>
               )}
@@ -391,28 +416,46 @@ export default function TaxGuideClient() {
         })}
       </div>
 
-      {/* SECTION 8 — NEWSLETTER CTA */}
-      <div className="tg-free-guide-cta">
-        <div className="tg-free-guide-eyebrow">Free Retirement Abroad Guide</div>
+      {/* SECTION 7 — FINAL CTA */}
+      <div className="tg-newsletter">
+        <div className="tg-newsletter-eyebrow">Free Retirement Abroad Guide</div>
 
-        <h2 className="tg-free-guide-title">
+        <h2 className="tg-newsletter-title">
           Get the free guide before choosing where to retire.
         </h2>
 
-        <p className="tg-free-guide-body">
+        <p className="tg-newsletter-body">
           Compare costs, healthcare, visas, taxes, and lifestyle across top retirement countries.
         </p>
 
-        <Link href="/?scrollTo=subscribe" className="tg-free-guide-button">
+        <Link href="/?scrollTo=subscribe" className="tg-newsletter-link">
           Get the Free Guide →
         </Link>
       </div>
 
-      {/* SECTION 9 — LEGAL DISCLAIMER */}
-      <div className="tg-legal-notice">
-        <div className="tg-legal-notice-eyebrow">Important Legal Disclaimer</div>
+      {/* SECTION 8 — LEGAL DISCLAIMER */}
+      <div
+        className="tg-newsletter"
+        style={{
+          background: "#1a1a1a",
+          borderTop: "1px solid #c9a227",
+          marginTop: 0,
+        }}
+      >
+        <div className="tg-newsletter-eyebrow" style={{ color: "#c9a227" }}>
+          Important Legal Disclaimer
+        </div>
 
-        <p className="tg-legal-notice-body">
+        <p
+          className="tg-newsletter-body"
+          style={{
+            color: "#c8b99a",
+            fontSize: 13,
+            lineHeight: 1.75,
+            maxWidth: 700,
+            margin: "0 auto",
+          }}
+        >
           This guide is for general educational and informational purposes only. It does not
           constitute tax, legal, or financial advice and should not be relied upon as such. Tax laws,
           residency rules, and treaty provisions change frequently and vary significantly by
@@ -421,94 +464,10 @@ export default function TaxGuideClient() {
           decision, consult a qualified international tax attorney, a CPA experienced in US expat
           taxation, and/or a licensed immigration attorney in your destination country. All
           &ldquo;may qualify,&rdquo; &ldquo;may not be taxed,&rdquo; and similar language reflects
-          general educational descriptions of how these systems work — not guarantees of any specific
-          outcome for your situation.
+          general educational descriptions of how these systems work — not guarantees of any
+          specific outcome for your situation.
         </p>
       </div>
     </div>
   );
-}
-/* ==================================================
-   TAX GUIDE — FINAL CTA + DISCLAIMER
-   Scoped only to /tax-guide components
-================================================== */
-
-.tg-final-cta {
-  background: #1a0f05;
-  color: #f6efe1;
-  text-align: center;
-  padding: 64px 28px 54px;
-  border-top: 1px solid #c59a2d;
-  border-bottom: 1px solid #c59a2d;
-}
-
-.tg-final-cta .tg-kicker,
-.tg-final-cta-kicker {
-  color: #c59a2d;
-  text-transform: uppercase;
-  letter-spacing: 0.28em;
-  font-size: 11px;
-  margin-bottom: 18px;
-}
-
-.tg-final-cta h2 {
-  max-width: 720px;
-  margin: 0 auto 18px;
-  font-size: clamp(30px, 4vw, 46px);
-  line-height: 1.05;
-  font-weight: 700;
-  color: #fff8ea;
-}
-
-.tg-final-cta p {
-  max-width: 680px;
-  margin: 0 auto 30px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #e8d6aa;
-}
-
-.tg-final-cta a,
-.tg-final-cta-button {
-  display: inline-block;
-  background: #d4af37;
-  color: #1a0f05;
-  padding: 18px 42px;
-  border: 1px solid #d4af37;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 17px;
-  transition: all 0.2s ease;
-}
-
-.tg-final-cta a:hover,
-.tg-final-cta-button:hover {
-  background: #f1d26a;
-  color: #1a0f05;
-}
-
-.tg-legal-disclaimer {
-  background: #151515;
-  color: #e8d6aa;
-  text-align: center;
-  padding: 54px 34px 58px;
-  border-top: 1px solid #c59a2d;
-  border-bottom: 1px solid #c59a2d;
-}
-
-.tg-legal-disclaimer h3 {
-  color: #c59a2d;
-  text-transform: uppercase;
-  letter-spacing: 0.28em;
-  font-size: 12px;
-  margin: 0 0 22px;
-  font-weight: 500;
-}
-
-.tg-legal-disclaimer p {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 15px;
-  line-height: 1.85;
-  color: #e8d6aa;
 }
