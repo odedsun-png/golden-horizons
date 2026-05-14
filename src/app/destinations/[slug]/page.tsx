@@ -340,7 +340,7 @@ export default async function DestinationDetailPage({
             Destinations
           </Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
-          <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
+          <Link href="/#subscribe">Subscribe Free</Link>
         </nav>
 
         <div className="breadcrumb">
@@ -1307,7 +1307,7 @@ export default async function DestinationDetailPage({
                 Real costs. Real places. One story, every morning.
               </div>
 
-              <Link href="/?scrollTo=subscribe" className="mag-btn">
+              <Link href="/#subscribe" className="mag-btn">
                 Start My Free Subscription →
               </Link>
 

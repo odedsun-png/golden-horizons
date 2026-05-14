@@ -120,7 +120,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
-          <Link href="#subscribe">Subscribe Free</Link>
+          <Link href="/#subscribe">Subscribe Free</Link>
         </nav>
         <div className="hero-wrap">
           {slides.map((slide, i) => (

@@ -446,7 +446,7 @@ export default function TaxGuideClient() {
           Compare costs, healthcare, visas, taxes, and lifestyle across top retirement countries.
         </p>
 
-        <Link href="/?scrollTo=subscribe" className="tg-newsletter-link">
+        <Link href="/#subscribe" className="tg-newsletter-link">
           Get the Free Guide →
         </Link>
       </div>

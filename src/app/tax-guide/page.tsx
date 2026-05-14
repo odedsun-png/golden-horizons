@@ -229,7 +229,7 @@ export default function TaxGuidePage() {
           <Link href="/tax-guide" className="active">
             Tax Guide
           </Link>
-          <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
+          <Link href="/#subscribe">Subscribe Free</Link>
         </nav>
 
         {/* CLIENT COMPONENT — ALL INTERACTIVE CONTENT */}

@@ -54,7 +54,7 @@ export default function AffiliateDisclosurePage() {
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
-          <Link href="/?scrollTo=subscribe">Subscribe Free</Link>
+          <Link href="/#subscribe">Subscribe Free</Link>
         </nav>
 
         <article
