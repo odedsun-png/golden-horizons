@@ -239,12 +239,13 @@ export default function TaxGuideClient() {
                   <div className="tg-verify">
                     Verify official rules before making tax or residency decisions.
                   </div>
-                  {country.officialLink !== "#" ? (
-                    
-                      href={country.officialLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="tg-link"
+                 {country.officialLink !== "#" ? (
+  <a
+    href={country.officialLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="tg-link"
+  >
                     >
                       {country.officialLinkLabel} ↗
                     </a>
