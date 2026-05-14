@@ -1,657 +1,717 @@
 /* ===================================================
-   TAX GUIDE PAGE — GOLDEN HORIZONS MAGAZINE STYLE
+   FINAL TAX GUIDE FIX — GOLDEN HORIZONS STYLE
+   Paste at VERY BOTTOM of src/app/globals.css
+   Fixes:
+   1) Broken/plain masthead on /tax-guide
+   2) Wide full-screen layout issue
+   3) Repeated fallback image strips
+   4) Keeps Golden Horizons magazine style
    =================================================== */
 
-.tg-hero {
-  padding: 34px 36px 30px;
+/* PAGE SHELL */
+body {
+  background: #e6ddca !important;
+}
+
+.mag-page {
+  min-height: 100vh !important;
+  background: #e6ddca !important;
+  color: #1a0f00 !important;
+  font-family: "EB Garamond", Georgia, serif !important;
+}
+
+.mag-page .site {
+  max-width: 980px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  background: #faf5e9 !important;
+  border-left: 1px solid #d4b896 !important;
+  border-right: 1px solid #d4b896 !important;
+  overflow: hidden !important;
+}
+
+/* TOP BLACK BAR */
+.mag-page .topbar {
+  background: #1e1408 !important;
+  padding: 7px 36px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.mag-page .topbar span {
+  display: inline-block !important;
+  font-size: 10px !important;
+  letter-spacing: 2.5px !important;
+  text-transform: uppercase !important;
+  color: #c9a84c !important;
+  font-family: "EB Garamond", Georgia, serif !important;
+  line-height: 1.2 !important;
+}
+
+/* MASTHEAD */
+.mag-page .masthead {
+  padding: 24px 36px 18px !important;
+  text-align: center !important;
+  border-bottom: 3px double #1e1408 !important;
+  background: #faf5e9 !important;
+}
+
+.mag-page .dateline {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 18px !important;
+  font-size: 15px !important;
+  line-height: 1.45 !important;
+  color: #24170a !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #c9a84c !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 13px !important;
+  font-family: "EB Garamond", Georgia, serif !important;
+}
+
+.mag-page .mastname {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 66px !important;
+  font-weight: 900 !important;
+  color: #1e1408 !important;
+  line-height: 1 !important;
+  letter-spacing: -2.5px !important;
+  text-decoration: none !important;
+  display: block !important;
+}
+
+.mag-page .issue-line {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 28px !important;
+  margin-top: 10px !important;
+  flex-wrap: wrap !important;
+}
+
+.mag-page .issue-tag {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  font-style: italic !important;
+  color: #1f1408 !important;
+  font-weight: 600 !important;
+  font-family: "EB Garamond", Georgia, serif !important;
+}
+
+.mag-page .issue-tag strong {
+  font-style: normal !important;
+  color: #1a0f00 !important;
+  font-weight: 800 !important;
+}
+
+/* NAV */
+.mag-page .nav {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  border-bottom: 2px solid #1e1408 !important;
+  background: #faf5e9 !important;
+  overflow-x: auto !important;
+}
+
+.mag-page .nav a {
+  display: block !important;
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: #1e1408 !important;
+  text-decoration: none !important;
+  padding: 10px 26px !important;
+  border-right: 1px solid #c9a84c !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  transition: background 0.15s !important;
+  font-family: "EB Garamond", Georgia, serif !important;
+  line-height: 1.4 !important;
+}
+
+.mag-page .nav a:last-child {
+  border-right: none !important;
+}
+
+.mag-page .nav a:hover {
+  background: #f0e8d5 !important;
+}
+
+.mag-page .nav a.active {
+  background: #1e1408 !important;
+  color: #c9a84c !important;
+}
+
+/* BREADCRUMB FIX */
+.mag-page .breadcrumb {
+  padding: 10px 36px !important;
+  border-bottom: 1px solid #c9a84c !important;
+  background: #faf5e9 !important;
+  font-size: 13px !important;
+  font-style: italic !important;
+  color: #8b6914 !important;
+  font-family: "EB Garamond", Georgia, serif !important;
+}
+
+.mag-page .breadcrumb a {
+  color: #8b6914 !important;
+  text-decoration: underline !important;
+}
+
+/* TAX GUIDE HERO */
+.mag-page .tg-hero {
+  padding: 34px 36px 30px !important;
   background:
     linear-gradient(135deg, rgba(250,245,233,0.96), rgba(240,232,213,0.96)),
-    radial-gradient(circle at top right, rgba(201,168,76,0.18), transparent 35%);
-  border-bottom: 2px solid #1e1408;
+    radial-gradient(circle at top right, rgba(201,168,76,0.18), transparent 35%) !important;
+  border-bottom: 2px solid #1e1408 !important;
 }
 
-.tg-hero-kicker {
-  font-size: 10px;
-  letter-spacing: 3.5px;
-  text-transform: uppercase;
-  color: #8b6914;
-  margin-bottom: 12px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-hero-kicker {
+  font-size: 10px !important;
+  letter-spacing: 3.5px !important;
+  text-transform: uppercase !important;
+  color: #8b6914 !important;
+  margin-bottom: 12px !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 1.08;
-  letter-spacing: -0.8px;
-  color: #1e1408;
-  max-width: 820px;
-  margin-bottom: 16px;
+.mag-page .tg-hero-title {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 42px !important;
+  font-weight: 900 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.8px !important;
+  color: #1e1408 !important;
+  max-width: 820px !important;
+  margin: 0 0 16px !important;
 }
 
-.tg-hero-body {
-  font-size: 21px;
-  line-height: 1.65;
-  color: #2b1a00;
-  max-width: 780px;
-  margin-bottom: 18px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-hero-body {
+  font-size: 21px !important;
+  line-height: 1.65 !important;
+  color: #2b1a00 !important;
+  max-width: 780px !important;
+  margin: 0 0 18px !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-hero-byline {
-  display: inline-block;
-  background: #1e1408;
-  color: #faf5e9;
-  border: 1px solid #c9a84c;
-  padding: 10px 14px;
-  font-size: 15px;
-  line-height: 1.55;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-hero-byline {
+  display: inline-block !important;
+  background: #1e1408 !important;
+  color: #faf5e9 !important;
+  border: 1px solid #c9a84c !important;
+  padding: 10px 14px !important;
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-compare {
-  padding: 30px 36px;
-  border-bottom: 2px solid #1e1408;
-  background: #faf5e9;
+/* COMPARE SECTION */
+.mag-page .tg-compare {
+  padding: 30px 36px !important;
+  border-bottom: 2px solid #1e1408 !important;
+  background: #faf5e9 !important;
 }
 
-.tg-compare-header {
-  font-size: 10px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #faf5e9;
-  background: #1e1408;
-  padding: 6px 12px;
-  display: inline-block;
-  margin-bottom: 18px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-compare-header,
+.mag-page .section-banner {
+  font-size: 10px !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  color: #faf5e9 !important;
+  background: #1e1408 !important;
+  padding: 7px 12px !important;
+  display: inline-block !important;
+  margin-bottom: 18px !important;
+  font-family: "EB Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
 }
 
-.tg-compare-grid {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 18px;
-  align-items: stretch;
+.mag-page .section-banner {
+  display: block !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #c9a84c !important;
 }
 
-.tg-compare-col {
-  background: #f5edd8;
-  border: 1px solid #c9a84c;
-  padding: 20px;
+.mag-page .tg-compare-grid {
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+  gap: 18px !important;
+  align-items: stretch !important;
 }
 
-.tg-compare-col-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 21px;
-  font-weight: 800;
-  line-height: 1.25;
-  color: #1e1408;
-  margin-bottom: 12px;
+.mag-page .tg-compare-col {
+  background: #f5edd8 !important;
+  border: 1px solid #c9a84c !important;
+  padding: 20px !important;
 }
 
-.tg-compare-col-stat {
-  font-size: 17px;
-  line-height: 1.55;
-  color: #2b1a00;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(201,168,76,0.45);
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-compare-col-title {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 21px !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  color: #1e1408 !important;
+  margin-bottom: 12px !important;
 }
 
-.tg-compare-col-stat:last-of-type {
-  border-bottom: none;
+.mag-page .tg-compare-col-stat {
+  font-size: 17px !important;
+  line-height: 1.55 !important;
+  color: #2b1a00 !important;
+  padding: 8px 0 !important;
+  border-bottom: 1px solid rgba(201,168,76,0.45) !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-compare-vs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #8b6914;
-  font-size: 18px;
-  font-style: italic;
-  font-family: 'Playfair Display', serif;
+.mag-page .tg-compare-vs {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #8b6914 !important;
+  font-size: 18px !important;
+  font-style: italic !important;
+  font-family: "Playfair Display", Georgia, serif !important;
 }
 
-.tg-tabs-wrap {
-  padding: 28px 36px;
-  background: #f0e8d5;
-  border-bottom: 2px solid #1e1408;
+/* FILTER TABS */
+.mag-page .tg-tabs-wrap {
+  padding: 28px 36px !important;
+  background: #f0e8d5 !important;
+  border-bottom: 2px solid #1e1408 !important;
 }
 
-.tg-tabs-header {
-  font-size: 10px;
-  letter-spacing: 3.5px;
-  text-transform: uppercase;
-  color: #8b6914;
-  margin-bottom: 14px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-tabs-header {
+  font-size: 10px !important;
+  letter-spacing: 3.5px !important;
+  text-transform: uppercase !important;
+  color: #8b6914 !important;
+  margin-bottom: 14px !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-tabs {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: #c9a84c;
-  border: 1px solid #c9a84c;
+.mag-page .tg-tabs {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1px !important;
+  background: #c9a84c !important;
+  border: 1px solid #c9a84c !important;
 }
 
-.tg-tab {
-  background: #faf5e9;
-  border: none;
-  padding: 16px 14px;
-  text-align: left;
-  cursor: pointer;
-  min-height: 118px;
-  transition: background 0.15s, color 0.15s;
+.mag-page .tg-tab {
+  background: #faf5e9 !important;
+  border: none !important;
+  padding: 16px 14px !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  min-height: 118px !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-tab:hover {
-  background: #f5edd8;
+.mag-page .tg-tab.active {
+  background: #1e1408 !important;
 }
 
-.tg-tab.active {
-  background: #1e1408;
+.mag-page .tg-tab-name {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  color: #1e1408 !important;
+  margin-bottom: 4px !important;
 }
 
-.tg-tab-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: 800;
-  color: #1e1408;
-  margin-bottom: 4px;
+.mag-page .tg-tab-count,
+.mag-page .tg-tab-desc {
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  color: #8b6914 !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-tab-count {
-  font-size: 13px;
-  font-style: italic;
-  color: #8b6914;
-  margin-bottom: 6px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-tab.active .tg-tab-name,
+.mag-page .tg-tab.active .tg-tab-count,
+.mag-page .tg-tab.active .tg-tab-desc {
+  color: #c9a84c !important;
 }
 
-.tg-tab-desc {
-  font-size: 13px;
-  line-height: 1.4;
-  color: #5a4010;
-  font-family: 'EB Garamond', serif;
+/* COUNTRY GRID */
+.mag-page .tg-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1px !important;
+  background: #c9a84c !important;
+  padding: 1px !important;
+  border-bottom: 2px solid #1e1408 !important;
 }
 
-.tg-tab.active .tg-tab-name,
-.tg-tab.active .tg-tab-count,
-.tg-tab.active .tg-tab-desc {
-  color: #c9a84c;
+.mag-page .tg-card {
+  position: relative !important;
+  background: #faf5e9 !important;
+  padding: 18px !important;
+  min-height: 300px !important;
+  border: 0 !important;
+  overflow: hidden !important;
+  transition: background 0.15s !important;
 }
 
-.tg-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: #c9a84c;
-  padding: 1px;
-  border-bottom: 2px solid #1e1408;
+.mag-page .tg-card:hover {
+  background: #f5edd8 !important;
 }
 
-.tg-card {
-  position: relative;
-  background: #faf5e9;
-  padding: 18px;
-  min-height: 390px;
-  border: 0;
-  overflow: hidden;
-  transition: background 0.15s;
+.mag-page .tg-card--open {
+  background: #f0e8d5 !important;
 }
 
-.tg-card:hover {
-  background: #f5edd8;
-}
-
-.tg-card--open {
-  background: #f0e8d5;
-}
-
+/* IMPORTANT: hide repeated fallback image bars */
+.mag-page .tg-card-img,
 .tg-card-img {
-  height: 92px;
-  margin: -18px -18px 14px;
-  background-size: cover;
-  background-position: center;
-  filter: contrast(1.08) saturate(1.08) brightness(0.82) sepia(0.08);
-  border-bottom: 1px solid #c9a84c;
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background-image: none !important;
+  overflow: hidden !important;
 }
 
-.tg-flag {
-  font-size: 26px;
-  line-height: 1;
-  margin-bottom: 8px;
+.mag-page .tg-flag {
+  font-size: 26px !important;
+  line-height: 1 !important;
+  margin-bottom: 8px !important;
 }
 
-.tg-card-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: flex-start;
-  margin-bottom: 12px;
+.mag-page .tg-card-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+  align-items: flex-start !important;
+  margin-bottom: 12px !important;
 }
 
-.tg-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-weight: 800;
-  color: #1e1408;
-  line-height: 1.12;
+.mag-page .tg-name {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #1e1408 !important;
+  line-height: 1.12 !important;
 }
 
-.tg-region {
-  font-size: 13px;
-  color: #8b6914;
-  font-style: italic;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-region {
+  font-size: 13px !important;
+  color: #8b6914 !important;
+  font-style: italic !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-cat-label {
-  display: inline-block;
-  border: 1px solid #c9a84c;
-  color: #8b6914;
-  background: #f5edd8;
-  padding: 4px 7px;
-  font-size: 9px;
-  letter-spacing: 1.3px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-cat-label {
+  display: inline-block !important;
+  border: 1px solid #c9a84c !important;
+  color: #8b6914 !important;
+  background: #f5edd8 !important;
+  padding: 4px 7px !important;
+  font-size: 9px !important;
+  letter-spacing: 1.3px !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-tax-badge {
-  border-top: 2px solid #1e1408;
-  border-bottom: 1px solid #c9a84c;
-  padding: 10px 0;
-  margin-bottom: 12px;
+.mag-page .tg-tax-badge {
+  border-top: 2px solid #1e1408 !important;
+  border-bottom: 1px solid #c9a84c !important;
+  padding: 10px 0 !important;
+  margin-bottom: 12px !important;
 }
 
-.tg-tax-number {
-  display: block;
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  font-weight: 900;
-  color: #1e1408;
-  line-height: 1;
+.mag-page .tg-tax-number {
+  display: block !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  color: #1e1408 !important;
+  line-height: 1 !important;
 }
 
-.tg-tax-sub {
-  display: block;
-  font-size: 12px;
-  color: #8b6914;
-  font-style: italic;
-  margin-top: 3px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-tax-sub {
+  display: block !important;
+  font-size: 12px !important;
+  color: #8b6914 !important;
+  font-style: italic !important;
+  margin-top: 3px !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-hook-preview {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #2b1a00;
-  margin-bottom: 14px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-hook-preview,
+.mag-page .tg-hook,
+.mag-page .tg-best-for,
+.mag-page .tg-verify,
+.mag-page .tg-faq-a,
+.mag-page .tg-evidence-sub,
+.mag-page .tg-newsletter-body {
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-card-toggle {
-  background: transparent;
-  border: none;
-  color: #8b6914;
-  padding: 0;
-  font-size: 14px;
-  font-style: italic;
-  cursor: pointer;
-  text-decoration: underline;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-hook-preview {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #2b1a00 !important;
+  margin-bottom: 14px !important;
 }
 
-.tg-card-toggle:hover {
-  color: #1e1408;
+.mag-page .tg-card-toggle {
+  background: transparent !important;
+  border: none !important;
+  color: #8b6914 !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  font-style: italic !important;
+  cursor: pointer !important;
+  text-decoration: underline !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-card-details {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid #c9a84c;
+.mag-page .tg-card-details {
+  margin-top: 14px !important;
+  padding-top: 14px !important;
+  border-top: 1px solid #c9a84c !important;
 }
 
-.tg-angle {
-  font-family: 'Playfair Display', serif;
-  font-size: 17px;
-  font-weight: 700;
-  color: #1e1408;
-  line-height: 1.35;
-  margin-bottom: 8px;
+.mag-page .tg-angle {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #1e1408 !important;
+  line-height: 1.35 !important;
+  margin-bottom: 8px !important;
 }
 
-.tg-program {
-  display: inline-block;
-  background: #1e1408;
-  color: #c9a84c;
-  padding: 5px 8px;
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-program {
+  display: inline-block !important;
+  background: #1e1408 !important;
+  color: #c9a84c !important;
+  padding: 5px 8px !important;
+  font-size: 10px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 10px !important;
 }
 
-.tg-hook {
-  font-size: 15px;
-  line-height: 1.65;
-  color: #2b1a00;
-  margin-bottom: 12px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-link,
+.mag-page .tg-link-pending {
+  display: inline-block !important;
+  background: #8b6914 !important;
+  color: #faf5e9 !important;
+  border: 2px solid #6b4f0f !important;
+  padding: 9px 12px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  font-family: "Playfair Display", Georgia, serif !important;
 }
 
-.tg-best-for {
-  background: #faf5e9;
-  border-left: 3px solid #c9a84c;
-  padding: 10px 12px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.55;
-  color: #2b1a00;
-  font-family: 'EB Garamond', serif;
+/* LOWER SECTIONS */
+.mag-page .tg-ref-section,
+.mag-page .tg-evidence,
+.mag-page .tg-faq,
+.mag-page .tg-newsletter {
+  padding: 34px 36px !important;
+  border-bottom: 2px solid #1e1408 !important;
+  background: #faf5e9 !important;
 }
 
-.tg-best-for strong {
-  display: block;
-  font-size: 10px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #8b6914;
-  margin-bottom: 3px;
+.mag-page .tg-ref-title,
+.mag-page .tg-evidence-title,
+.mag-page .tg-faq-title,
+.mag-page .tg-newsletter-title {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 32px !important;
+  line-height: 1.15 !important;
+  color: #1e1408 !important;
+  margin-bottom: 16px !important;
 }
 
-.tg-verify {
-  font-size: 13px;
-  font-style: italic;
-  color: #7a5c1e;
-  margin-bottom: 12px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-table-wrap {
+  width: 100% !important;
+  overflow-x: auto !important;
 }
 
-.tg-link,
-.tg-link-pending {
-  display: inline-block;
-  background: #8b6914;
-  color: #faf5e9;
-  border: 2px solid #6b4f0f;
-  padding: 9px 12px;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  font-family: 'Playfair Display', serif;
+.mag-page .tg-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  background: #faf5e9 !important;
+  border: 1px solid #c9a84c !important;
 }
 
-.tg-link:hover {
-  background: #6b4f0f;
+.mag-page .tg-table th {
+  background: #1e1408 !important;
+  color: #c9a84c !important;
+  font-size: 10px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  padding: 9px !important;
+  text-align: left !important;
 }
 
-.tg-link-pending {
-  background: #f5edd8;
-  color: #8b6914;
-  border-color: #c9a84c;
+.mag-page .tg-table td {
+  border-bottom: 1px solid #e0cc99 !important;
+  padding: 10px 9px !important;
+  vertical-align: top !important;
 }
 
-.tg-link-pending-label {
-  display: block;
-  font-family: 'EB Garamond', serif;
-  font-size: 10px;
-  font-style: italic;
-  font-weight: 400;
-  margin-top: 3px;
+.mag-page .tg-evidence-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1px !important;
+  background: #c9a84c !important;
+  border: 1px solid #c9a84c !important;
 }
 
-.tg-ref-section,
-.tg-evidence,
-.tg-faq,
-.tg-newsletter {
-  padding: 34px 36px;
-  border-bottom: 2px solid #1e1408;
-  background: #faf5e9;
+.mag-page .tg-evidence-card {
+  background: #f5edd8 !important;
+  padding: 20px !important;
 }
 
-.tg-ref-kicker,
-.tg-evidence-kicker,
-.tg-newsletter-eyebrow {
-  font-size: 10px;
-  letter-spacing: 3.5px;
-  text-transform: uppercase;
-  color: #8b6914;
-  margin-bottom: 10px;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-faq-item {
+  border-top: 1px solid #c9a84c !important;
+  padding: 18px 0 !important;
 }
 
-.tg-ref-title,
-.tg-evidence-title,
-.tg-faq-title,
-.tg-newsletter-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  line-height: 1.15;
-  color: #1e1408;
-  margin-bottom: 16px;
+.mag-page .tg-faq-q {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 21px !important;
+  font-weight: 800 !important;
+  color: #1e1408 !important;
+  margin-bottom: 8px !important;
 }
 
-.tg-table-wrap {
-  width: 100%;
-  overflow-x: auto;
+.mag-page .tg-disclaimer {
+  background: #f0e8d5 !important;
+  border: 1px solid #c9a84c !important;
+  padding: 16px 20px !important;
+  font-size: 15px !important;
+  font-style: italic !important;
+  color: #5a4010 !important;
+  line-height: 1.65 !important;
+  font-family: "EB Garamond", Georgia, serif !important;
 }
 
-.tg-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #faf5e9;
-  border: 1px solid #c9a84c;
+.mag-page .tg-newsletter {
+  text-align: center !important;
+  background: #1e1408 !important;
+  color: #faf5e9 !important;
 }
 
-.tg-table th {
-  background: #1e1408;
-  color: #c9a84c;
-  font-size: 10px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 9px;
-  text-align: left;
-  font-family: 'EB Garamond', serif;
+.mag-page .tg-newsletter-title {
+  color: #faf5e9 !important;
 }
 
-.tg-table td {
-  border-bottom: 1px solid #e0cc99;
-  padding: 10px 9px;
-  vertical-align: top;
-}
-
-.tg-t-country {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #1e1408;
-}
-
-.tg-t-cat {
-  display: inline-block;
-  border: 1px solid #c9a84c;
-  padding: 4px 7px;
-  font-size: 10px;
-  color: #8b6914;
-  white-space: nowrap;
-  font-family: 'EB Garamond', serif;
-}
-
-.tg-evidence-sub {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #2b1a00;
-  max-width: 760px;
-  margin-bottom: 22px;
-  font-family: 'EB Garamond', serif;
-}
-
-.tg-evidence-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: #c9a84c;
-  border: 1px solid #c9a84c;
-}
-
-.tg-evidence-card {
-  background: #f5edd8;
-  padding: 20px;
-}
-
-.tg-evidence-icon {
-  font-size: 26px;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.tg-evidence-card-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 19px;
-  font-weight: 800;
-  color: #1e1408;
-  margin-bottom: 10px;
-}
-
-.tg-evidence-list {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.tg-evidence-list li {
-  font-size: 15px;
-  line-height: 1.55;
-  color: #2b1a00;
-  margin-bottom: 6px;
-  font-family: 'EB Garamond', serif;
-}
-
-.tg-faq-item {
-  border-top: 1px solid #c9a84c;
-  padding: 18px 0;
-}
-
-.tg-faq-q {
-  font-family: 'Playfair Display', serif;
-  font-size: 21px;
-  font-weight: 800;
-  color: #1e1408;
-  margin-bottom: 8px;
-}
-
-.tg-faq-a {
-  font-size: 17px;
-  line-height: 1.75;
-  color: #2b1a00;
-  font-family: 'EB Garamond', serif;
-}
-
-.tg-disclaimer {
-  background: #f0e8d5;
-  border: 1px solid #c9a84c;
-  padding: 16px 20px;
-  font-size: 15px;
-  font-style: italic;
-  color: #5a4010;
-  line-height: 1.65;
-  font-family: 'EB Garamond', serif;
-}
-
-.tg-newsletter {
-  text-align: center;
-  background: #1e1408;
-  color: #faf5e9;
-}
-
-.tg-newsletter-title {
-  color: #faf5e9;
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tg-newsletter-body {
-  color: #d4c4a0;
-  font-size: 18px;
-  line-height: 1.75;
-  max-width: 640px;
-  margin: 0 auto 24px;
-  font-family: 'EB Garamond', serif;
-}
-
+/* MOBILE */
 @media (max-width: 900px) {
-  .tg-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .mag-page .tg-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  .tg-tabs {
-    grid-template-columns: repeat(2, 1fr);
+  .mag-page .tg-tabs {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  .tg-evidence-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .mag-page .tg-evidence-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  .tg-compare-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .tg-compare-vs {
-    padding: 4px 0;
+  .mag-page .tg-compare-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 
 @media (max-width: 768px) {
-  .tg-hero,
-  .tg-compare,
-  .tg-tabs-wrap,
-  .tg-ref-section,
-  .tg-evidence,
-  .tg-faq,
-  .tg-newsletter {
-    padding: 24px 16px;
+  .mag-page .topbar {
+    padding: 6px 16px !important;
   }
 
-  .tg-hero-title {
-    font-size: 30px;
+  .mag-page .topbar .hide-mob,
+  .mag-page .dateline .hide-mob {
+    display: none !important;
   }
 
-  .tg-hero-body {
-    font-size: 18px;
+  .mag-page .masthead {
+    padding: 16px 16px 14px !important;
   }
 
-  .tg-grid,
-  .tg-tabs,
-  .tg-evidence-grid {
-    grid-template-columns: 1fr;
+  .mag-page .mastname {
+    font-size: 38px !important;
+    letter-spacing: -1px !important;
   }
 
-  .tg-card {
-    min-height: auto;
-    padding: 16px;
+  .mag-page .dateline {
+    font-size: 13px !important;
   }
 
-  .tg-card-img {
-    margin: -16px -16px 14px;
+  .mag-page .issue-tag {
+    font-size: 13px !important;
   }
 
-  .tg-card-header {
-    flex-direction: column;
+  .mag-page .nav {
+    justify-content: flex-start !important;
   }
 
-  .tg-ref-title,
-  .tg-evidence-title,
-  .tg-faq-title,
-  .tg-newsletter-title {
-    font-size: 26px;
+  .mag-page .nav a {
+    padding: 8px 14px !important;
+    font-size: 10px !important;
   }
 
-  .tg-table {
-    min-width: 760px;
+  .mag-page .tg-hero,
+  .mag-page .tg-compare,
+  .mag-page .tg-tabs-wrap,
+  .mag-page .tg-ref-section,
+  .mag-page .tg-evidence,
+  .mag-page .tg-faq,
+  .mag-page .tg-newsletter {
+    padding: 24px 16px !important;
+  }
+
+  .mag-page .breadcrumb {
+    padding: 10px 16px !important;
+  }
+
+  .mag-page .tg-hero-title {
+    font-size: 30px !important;
+  }
+
+  .mag-page .tg-hero-body {
+    font-size: 18px !important;
+  }
+
+  .mag-page .tg-grid,
+  .mag-page .tg-tabs,
+  .mag-page .tg-evidence-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .mag-page .tg-card {
+    min-height: auto !important;
+    padding: 16px !important;
+  }
+
+  .mag-page .tg-card-header {
+    flex-direction: column !important;
+  }
+
+  .mag-page .tg-ref-title,
+  .mag-page .tg-evidence-title,
+  .mag-page .tg-faq-title,
+  .mag-page .tg-newsletter-title {
+    font-size: 26px !important;
+  }
+
+  .mag-page .tg-table {
+    min-width: 760px !important;
   }
 }
