@@ -234,7 +234,7 @@ export default function TaxGuideClient() {
                       rel="noopener noreferrer"
                       className="tg-link"
                     >
-                      {country.officialLinkLabel} ↗
+                      {country.officialLinkLabel} {"↗"}
                     </a>
                   ) : (
                     <span className="tg-link-pending">
