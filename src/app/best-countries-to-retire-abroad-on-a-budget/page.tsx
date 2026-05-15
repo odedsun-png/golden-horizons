@@ -169,6 +169,23 @@ export default function BudgetRetirementPage() {
               This guide uses Golden Horizons cost data to show you what is actually achievable and where.
             </p>
 
+            <div style={{ background: "#f0e8d0", border: "2px solid #c9a84c", padding: "18px 22px", marginBottom: 24, borderRadius: 2 }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b6914", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 10 }}>The Short Answer</div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 17, color: "#1a0f00", lineHeight: 1.65, marginBottom: 8 }}>
+                <strong>Which countries are best for retiring abroad on a budget?</strong> Based on Golden Horizons cost data, the top picks for American retirees in 2026 are:
+              </p>
+              <ul style={{ fontFamily: "EB Garamond, serif", fontSize: 17, color: "#2b1a00", lineHeight: 1.7, paddingLeft: 22, margin: "0 0 10px" }}>
+                <li><strong>Thailand (~$940/mo)</strong> — low cost, strong private hospitals, flexible visa options</li>
+                <li><strong>Malaysia (~$960/mo)</strong> — English widely spoken, MM2H retirement visa, modern healthcare</li>
+                <li><strong>Ecuador (~$1,010/mo)</strong> — uses the US dollar, straightforward residency, popular expat city Cuenca</li>
+                <li><strong>Colombia (~$1,070/mo)</strong> — improving safety, modern healthcare in Medellín, pension visa pathway</li>
+                <li><strong>Mexico (~$1,160/mo)</strong> — close to the US, large expat communities, varied climate options</li>
+              </ul>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#6b5d47", fontStyle: "italic", margin: 0 }}>
+                Estimates cover rent, food, utilities, local transport, and basic healthcare for a single retiree. Costs vary by city and lifestyle. Always verify current conditions before making decisions.
+              </p>
+            </div>
+
             <div className="dyk">
               <div className="dyk-icon">◆</div>
               <div>
@@ -234,23 +251,56 @@ export default function BudgetRetirementPage() {
               with recent expat reports and official sources.
             </p>
 
+            <div className="section-hdr">Best For — and Not Best For</div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 28 }}>
+              <div style={{ background: "#f0f5e8", border: "1px solid #8aab5a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#3d6b1f", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Best For</div>
+                {[
+                  "Retirees living primarily on Social Security",
+                  "Couples or singles open to a simpler lifestyle",
+                  "Those comfortable using local healthcare for routine care",
+                  "Americans who want to stretch a modest nest egg further",
+                  "People willing to spend a month visiting before committing",
+                  "Those open to learning the basics of a new culture",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✓ {item}</div>
+                ))}
+              </div>
+              <div style={{ background: "#faf0f0", border: "1px solid #c47a7a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b2020", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Not Best For</div>
+                {[
+                  "Those who need specialist medical care close by",
+                  "Retirees who plan to return to the US frequently",
+                  "People unwilling to navigate foreign bureaucracy",
+                  "Those with active caregiving responsibilities at home",
+                  "Anyone relying on Medicare abroad without checking coverage limits",
+                  "Retirees who prefer stability over affordability",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✗ {item}</div>
+                ))}
+              </div>
+            </div>
+
             <div className="section-hdr">What $1,500 a Month Actually Gets You</div>
 
             <p className="art-article-body" style={{ marginBottom: 18 }}>
               In Thailand, $1,500 a month covers a furnished apartment in Chiang Mai, daily meals at local restaurants and
-              markets, a motorbike or rideshare for transport, and access to private hospitals that are considerably cheaper
-              than anything in the United States. You would have money left over.
+              markets, a motorbike or rideshare for transport, and access to{" "}
+              <Link href="/healthcare-abroad-for-american-retirees" style={{ color: "#8b6914" }}>private hospitals</Link>{" "}
+              that can be considerably cheaper than comparable care in the United States. You would have money left over.
             </p>
 
             <p className="art-article-body" style={{ marginBottom: 18 }}>
               In Ecuador, $1,500 covers a one-bedroom in Cuenca&rsquo;s historic center, groceries, utilities, and a gym membership.
               Ecuador uses the US dollar, so there is no exchange rate risk. Healthcare quality in major cities is decent,
-              though rural areas are more limited. The residency path is relatively straightforward.
+              though rural areas are more limited. The <Link href="/visa-rules-for-americans-retiring-abroad" style={{ color: "#8b6914" }}>residency path</Link> is relatively straightforward.
             </p>
 
             <p className="art-article-body" style={{ marginBottom: 20 }}>
               In Colombia&rsquo;s Medellín, $1,500 buys a comfortable apartment in a good neighborhood, full-time internet,
-              local transport, and regular dining out. Healthcare in Medellín is surprisingly modern. Safety has improved
+              local transport, and regular dining out. Healthcare in Medellín is surprisingly modern.{" "}
+              <Link href="/safest-countries-to-retire-abroad" style={{ color: "#8b6914" }}>Safety</Link> has improved
               significantly — though research neighborhoods carefully and stay in touch with current expat communities.
             </p>
 
@@ -264,7 +314,7 @@ export default function BudgetRetirementPage() {
                 "Research at least 2–3 countries before narrowing down",
                 "Visit your top choice for at least 4 weeks first",
                 "Open a no-fee international bank account",
-                "Meet with a CPA who specializes in US expat taxes",
+                "Meet with a CPA who specializes in <a href='/taxes-for-americans-retiring-overseas' style='color:#8b6914;text-decoration:underline'>US expat taxes</a>",
                 "Budget for healthcare separately — don&apos;t guess",
                 "Research visa options for your income level",
                 "Find local expat forums for your target destination",
@@ -291,8 +341,10 @@ export default function BudgetRetirementPage() {
 
             <p className="art-article-body" style={{ marginBottom: 16 }}>
               <strong>Picking based on cost alone.</strong> A country that costs $800 a month is not a good deal
-              if the nearest hospital is two hours away and the visa requires leaving every 30 days. Healthcare
-              quality and visa stability matter as much as price, especially as you get older.
+              if the nearest hospital is two hours away and the visa requires leaving every 30 days.{" "}
+              <Link href="/healthcare-abroad-for-american-retirees" style={{ color: "#8b6914" }}>Healthcare quality</Link>{" "}
+              and <Link href="/visa-rules-for-americans-retiring-abroad" style={{ color: "#8b6914" }}>visa stability</Link>{" "}
+              matter as much as price, especially as you get older.
             </p>
 
             <p className="art-article-body" style={{ marginBottom: 16 }}>
@@ -312,6 +364,18 @@ export default function BudgetRetirementPage() {
               Living there means dealing with bureaucracy, bad days, healthcare appointments, and ordinary weeks.
               Stay for a full month or longer in any destination you&rsquo;re seriously considering.
             </p>
+
+            <div style={{ background: "#1e1408", padding: "20px 24px", marginBottom: 28, textAlign: "center" }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#c9a84c", letterSpacing: "1px", marginBottom: 8 }}>
+                Every morning, one story like this — free.
+              </div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 14 }}>
+                Golden Horizons delivers calm, practical retirement-abroad guidance to your inbox each morning. No noise. No pressure.
+              </p>
+              <Link href="/#subscribe" className="mag-btn" style={{ display: "inline-block" }}>
+                Start My Free Subscription →
+              </Link>
+            </div>
 
             <div className="section-hdr">Frequently Asked Questions</div>
 
