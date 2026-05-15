@@ -156,6 +156,31 @@ export default function ChecklistPage() {
               This checklist covers what most experienced expats wish they had known before they left.
             </p>
 
+            <div style={{ background: "#fdf8ec", border: "1px solid #c9a84c", borderLeft: "4px solid #c9a84c", padding: "14px 18px", marginBottom: 20 }}>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#5a4010", fontStyle: "italic", margin: 0, lineHeight: 1.65 }}>
+                <strong style={{ fontStyle: "normal" }}>General information only.</strong> Immigration rules, tax obligations, Medicare policies, healthcare options, and financial requirements vary by country and change over time. Verify all requirements with official sources — including the IRS, the Social Security Administration, and the US Embassy in your destination country — and consult a licensed immigration attorney and a US-qualified CPA before making any decisions.
+              </p>
+            </div>
+
+            <div style={{ background: "#1e1408", padding: "20px 24px", marginBottom: 20 }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#c9a84c", letterSpacing: "1px", marginBottom: 12 }}>
+                What do Americans need to do to retire abroad?
+              </div>
+              {[
+                "Choose a country and research its retirement visa options for your income type",
+                "Set up international-friendly banking and confirm your Social Security payment arrangements",
+                "Arrange international health insurance before you leave — Medicare generally does not cover routine care outside the US, with limited exceptions",
+                "Confirm your annual US tax and FBAR filing obligations with a qualified expat CPA",
+                "Prepare certified copies of all critical documents well in advance",
+                "Consider renting first before making any permanent housing decisions",
+              ].map((item) => (
+                <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 6, paddingLeft: 16, position: "relative" }}>
+                  <span style={{ position: "absolute", left: 0, color: "#c9a84c" }}>◆</span>
+                  {item}
+                </div>
+              ))}
+            </div>
+
             <div className="dyk">
               <div className="dyk-icon">◆</div>
               <div>
@@ -167,6 +192,36 @@ export default function ChecklistPage() {
                   making anything permanent.
                 </div>
               </div>
+            </div>
+
+            <p className="art-article-body" style={{ marginBottom: 12, fontSize: 16, fontStyle: "italic", color: "#5a4010" }}>
+              The table below outlines a suggested planning timeline based on common expat experience. Actual timeframes will vary depending on your destination, visa type, and personal situation — treat these as general guidance, not fixed deadlines.
+            </p>
+
+            <div style={{ overflowX: "auto", marginBottom: 28 }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "EB Garamond, serif", fontSize: 16 }}>
+                <thead>
+                  <tr style={{ background: "#1e1408" }}>
+                    <th style={{ padding: "10px 14px", textAlign: "left", color: "#c9a84c", fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", borderRight: "1px solid #3a2a10" }}>Phase</th>
+                    <th style={{ padding: "10px 14px", textAlign: "left", color: "#c9a84c", fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", borderRight: "1px solid #3a2a10" }}>Timeframe</th>
+                    <th style={{ padding: "10px 14px", textAlign: "left", color: "#c9a84c", fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>Key Focus Areas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { phase: "Research & Planning", timeframe: "12 months out", focus: "Country research, visa options, expat CPA consultation, healthcare planning" },
+                    { phase: "Documents & Setup", timeframe: "6 months out", focus: "Visa application, international health insurance, banking, medical records" },
+                    { phase: "Final Logistics", timeframe: "1 month out", focus: "IRS address update, mail forwarding, notify banks, confirm coverage" },
+                    { phase: "Settling In", timeframe: "First 90 days", focus: "Rent before buying, local accounts, find a local doctor, file US taxes" },
+                  ].map((row, i) => (
+                    <tr key={row.phase} style={{ background: i % 2 === 0 ? "#faf5e9" : "#f5edd8" }}>
+                      <td style={{ padding: "10px 14px", color: "#2b1a00", fontWeight: 600, borderRight: "1px solid #e0cc99", verticalAlign: "top" }}>{row.phase}</td>
+                      <td style={{ padding: "10px 14px", color: "#8b6914", fontStyle: "italic", borderRight: "1px solid #e0cc99", verticalAlign: "top", whiteSpace: "nowrap" }}>{row.timeframe}</td>
+                      <td style={{ padding: "10px 14px", color: "#2b1a00", verticalAlign: "top" }}>{row.focus}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
 
             <div className="section-hdr">12 Months Before You Leave</div>
@@ -192,6 +247,13 @@ export default function ChecklistPage() {
               ))}
             </div>
 
+            <p className="art-article-body" style={{ marginBottom: 24, fontSize: 16 }}>
+              To compare which countries may best fit your budget and lifestyle, see our{" "}
+              <Link href="/best-countries-to-retire-abroad-on-a-budget" style={{ color: "#8b6914" }}>Best Countries to Retire Abroad on a Budget</Link>{" "}
+              guide or{" "}
+              <Link href="/destinations" style={{ color: "#8b6914" }}>browse all destination profiles</Link>.
+            </p>
+
             <div className="section-hdr">6 Months Before You Leave</div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 28 }}>
@@ -215,6 +277,11 @@ export default function ChecklistPage() {
               ))}
             </div>
 
+            <p className="art-article-body" style={{ marginBottom: 24, fontSize: 16 }}>
+              For a detailed overview of healthcare options, coverage gaps, and what to ask international insurers, see our{" "}
+              <Link href="/healthcare-abroad-for-american-retirees" style={{ color: "#8b6914" }}>Healthcare Abroad for American Retirees</Link> guide.
+            </p>
+
             <div className="section-hdr">1 Month Before You Leave</div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 28 }}>
@@ -236,6 +303,11 @@ export default function ChecklistPage() {
               ))}
             </div>
 
+            <p className="art-article-body" style={{ marginBottom: 24, fontSize: 16 }}>
+              For a breakdown of the most common retirement visa types and which countries offer them, see our{" "}
+              <Link href="/visa-rules-for-americans-retiring-abroad" style={{ color: "#8b6914" }}>Visa Rules for Americans Retiring Abroad</Link> guide.
+            </p>
+
             <div className="section-hdr">First 90 Days Abroad</div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 28 }}>
@@ -255,6 +327,36 @@ export default function ChecklistPage() {
                   ✓ {item}
                 </div>
               ))}
+            </div>
+
+            <p className="art-article-body" style={{ marginBottom: 24, fontSize: 16 }}>
+              If safety and stability are among your priorities, our{" "}
+              <Link href="/safest-countries-to-retire-abroad" style={{ color: "#8b6914" }}>Safest Countries to Retire Abroad</Link> guide covers the factors that tend to matter most for American retirees researching destinations.
+            </p>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 28 }}>
+              <div style={{ background: "#f0f5e8", border: "1px solid #8aab5a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#3d6b1f", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Best For</div>
+                {[
+                  "Retirees who can begin planning 12 or more months in advance",
+                  "Those with stable Social Security, pension, or passive income",
+                  "People willing to rent before buying and try a location first",
+                  "Retirees comfortable maintaining annual US tax compliance from abroad",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✓ {item}</div>
+                ))}
+              </div>
+              <div style={{ background: "#faf0f0", border: "1px solid #c47a7a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b2020", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Not Best For</div>
+                {[
+                  "Anyone planning to move within 2–3 months without adequate preparation time",
+                  "Retirees who expect Medicare to cover healthcare expenses abroad",
+                  "People seeking to fully exit US tax obligations — US citizens file US returns regardless of where they live",
+                  "Anyone unwilling to work with an expat CPA and immigration professional",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✗ {item}</div>
+                ))}
+              </div>
             </div>
 
             <div className="section-hdr">Things Most People Forget</div>
@@ -284,6 +386,18 @@ export default function ChecklistPage() {
               absentee ballot. Register through your last state of US residence using FVAP.gov (Federal Voting
               Assistance Program) to maintain this right.
             </p>
+
+            <div style={{ background: "#1e1408", padding: "20px 24px", marginBottom: 28, textAlign: "center" }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#c9a84c", letterSpacing: "1px", marginBottom: 8 }}>
+                Every morning, one story like this — free.
+              </div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 14 }}>
+                Golden Horizons delivers calm, practical retirement-abroad guidance to your inbox each morning. No noise. No pressure.
+              </p>
+              <Link href="/#subscribe" className="mag-btn" style={{ display: "inline-block" }}>
+                Start My Free Subscription →
+              </Link>
+            </div>
 
             <div className="section-hdr">Frequently Asked Questions</div>
 
