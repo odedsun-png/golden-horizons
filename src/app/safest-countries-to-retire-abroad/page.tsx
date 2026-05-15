@@ -6,7 +6,7 @@ const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/safest-countries-to-retire-abroad`;
 
 export const metadata: Metadata = {
-  title: "Safest Countries to Retire Abroad for Americans (2026) | Golden Horizons",
+  title: "Safest Countries to Retire Abroad for Americans (2026)",
   description:
     "Which countries are safest for American retirees in 2026? Safety scores, practical context, and what safety actually means day-to-day for retirees abroad — from Golden Horizons.",
   alternates: { canonical: canonicalUrl },

@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Us | Golden Horizons",
+  title: "About Us",
   description: "Golden Horizons helps Americans 55+ explore retirement destinations where their money goes further and their everyday life gets better.",
 };
 

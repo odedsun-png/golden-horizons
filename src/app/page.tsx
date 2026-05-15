@@ -5,7 +5,7 @@ import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Golden Horizons — Retirement Abroad Magazine for Americans",
+  title: { absolute: "Golden Horizons — Retirement Abroad Magazine for Americans" },
   description:
     "Golden Horizons helps Americans find the best places to retire abroad — real costs, healthcare, visas, and lifestyle. Free daily stories.",
   alternates: {

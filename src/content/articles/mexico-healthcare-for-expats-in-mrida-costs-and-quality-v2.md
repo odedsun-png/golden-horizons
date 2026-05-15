@@ -1,5 +1,5 @@
 ---
-title: "Mexico - Healthcare for Expats in MÃ©rida: Costs and Quality — A Local's Perspective"
+title: "Mexico - Healthcare for Expats in Mérida: Costs and Quality — A Local's Perspective"
 category: Healthcare
 slug: mexico-healthcare-for-expats-in-mrida-costs-and-quality--v2
 date: 2026-04-26

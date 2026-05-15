@@ -5,7 +5,7 @@ const siteUrl = "https://golden-horizons.org";
 const contactEmail = "newsletter@golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | Golden Horizons",
+  title: "Terms of Use",
   description:
     "Terms of Use for Golden Horizons, including no professional advice, no reliance, limitation of liability, arbitration, class action waiver, affiliate disclosures, AI-assisted content, newsletter terms, and reader responsibility.",
   alternates: {

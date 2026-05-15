@@ -128,6 +128,7 @@ export default function SubscribeBox({
             <form
               onSubmit={handleSubmit}
               className={isSidebar ? "space-y-2.5" : "space-y-3"}
+              aria-label="Newsletter subscription form"
             >
               <div
                 className={
@@ -136,8 +137,12 @@ export default function SubscribeBox({
                     : "grid grid-cols-1 gap-3 md:grid-cols-3"
                 }
               >
+                <label htmlFor="sb-first-name" className="sr-only">First name</label>
                 <input
+                  id="sb-first-name"
+                  name="firstName"
                   type="text"
+                  autoComplete="given-name"
                   placeholder="First Name (optional)"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
@@ -150,8 +155,12 @@ export default function SubscribeBox({
                   }}
                 />
 
+                <label htmlFor="sb-last-name" className="sr-only">Last name</label>
                 <input
+                  id="sb-last-name"
+                  name="lastName"
                   type="text"
+                  autoComplete="family-name"
                   placeholder="Last Name (optional)"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
@@ -164,8 +173,12 @@ export default function SubscribeBox({
                   }}
                 />
 
+                <label htmlFor="sb-email" className="sr-only">Email address</label>
                 <input
+                  id="sb-email"
+                  name="email"
                   type="email"
+                  autoComplete="email"
                   placeholder="Email Address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}

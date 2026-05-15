@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  poweredByHeader: false,
   allowedDevOrigins: ["*.preview.same-app.com"],
   images: {
     unoptimized: true,

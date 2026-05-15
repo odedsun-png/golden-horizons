@@ -6,7 +6,7 @@ const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/best-countries-to-retire-abroad-on-a-budget`;
 
 export const metadata: Metadata = {
-  title: "Best Countries to Retire Abroad on a Budget (2026) | Golden Horizons",
+  title: "Best Countries to Retire Abroad on a Budget (2026)",
   description:
     "Compare the most affordable countries for American retirees in 2026. Real monthly cost breakdowns, visa notes, healthcare scores, and honest tradeoffs — from Golden Horizons.",
   alternates: { canonical: canonicalUrl },

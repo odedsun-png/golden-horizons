@@ -295,18 +295,26 @@ export default function Newsletter() {
               <>
                 <h3 className="nl-form-title">Send me the free guide</h3>
 
-                <form className="nl-form" onSubmit={handleSubmit}>
+                <form className="nl-form" onSubmit={handleSubmit} aria-label="Newsletter subscription form">
                   <div className="nl-name-row">
+                    <label htmlFor="nl-first-name" className="sr-only">First name</label>
                     <input
+                      id="nl-first-name"
+                      name="firstName"
                       type="text"
+                      autoComplete="given-name"
                       className="nl-input"
                       placeholder="First name"
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
                       required
                     />
+                    <label htmlFor="nl-last-name" className="sr-only">Last name</label>
                     <input
+                      id="nl-last-name"
+                      name="lastName"
                       type="text"
+                      autoComplete="family-name"
                       className="nl-input"
                       placeholder="Last name"
                       value={lastName}
@@ -315,8 +323,12 @@ export default function Newsletter() {
                     />
                   </div>
 
+                  <label htmlFor="nl-email" className="sr-only">Email address</label>
                   <input
+                    id="nl-email"
+                    name="email"
                     type="email"
+                    autoComplete="email"
                     className="nl-input"
                     placeholder="Your email address"
                     value={email}

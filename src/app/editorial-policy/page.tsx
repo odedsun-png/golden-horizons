@@ -4,7 +4,7 @@ import Link from "next/link";
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Editorial Policy | Golden Horizons",
+  title: "Editorial Policy",
   description:
     "Golden Horizons editorial policy covering editorial standards, AI-assisted content, affiliate independence, corrections, sponsored content, source practices, and no professional advice.",
   alternates: {

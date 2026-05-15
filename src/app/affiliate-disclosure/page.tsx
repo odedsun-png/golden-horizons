@@ -4,7 +4,7 @@ import Link from "next/link";
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Affiliate Disclosure | Golden Horizons",
+  title: "Affiliate Disclosure",
   description:
     "Affiliate Disclosure for Golden Horizons, including advertising, sponsorships, partner links, paid placements, and compensation disclosures.",
   alternates: {

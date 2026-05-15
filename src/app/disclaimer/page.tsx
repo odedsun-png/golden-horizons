@@ -4,7 +4,7 @@ import Link from "next/link";
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | Golden Horizons",
+  title: "Disclaimer",
   description:
     "Legal disclaimer for Golden Horizons, including no professional advice, no reliance, affiliate disclosure, sponsored content disclosure, AI-assisted content disclosure, and limitation of liability.",
   alternates: {

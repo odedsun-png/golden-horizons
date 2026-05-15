@@ -7,7 +7,7 @@ import ArticlesClient from "./ArticlesClient";
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Retirement Abroad Articles, Guides & Cost Breakdowns | Golden Horizons",
+  title: "Retirement Abroad Articles, Guides & Cost Breakdowns",
   description:
     "Browse Golden Horizons retirement abroad articles covering cost of living, healthcare, visas, safety, housing, lifestyle, and the best places for Americans to retire overseas.",
   alternates: {

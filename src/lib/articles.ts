@@ -107,7 +107,10 @@ export async function getArticleBySlug(slug: string): Promise<Article | null> {
     const articleData = data as ArticleData;
 
     const processedContent = await remark().use(html).process(content);
-    const contentHtml = processedContent.toString();
+    const contentHtml = processedContent
+      .toString()
+      .replace(/<h1>/g, "<h2>")
+      .replace(/<\/h1>/g, "</h2>");
 
     const cleanDate = safeDate(articleData.date);
     const cleanDatePublished = safeDate(articleData.datePublished, articleData.date);

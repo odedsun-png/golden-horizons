@@ -6,7 +6,7 @@ const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/taxes-for-americans-retiring-overseas`;
 
 export const metadata: Metadata = {
-  title: "Taxes for Americans Retiring Overseas (2026 Guide) | Golden Horizons",
+  title: "Taxes for Americans Retiring Overseas (2026 Guide)",
   description:
     "What American retirees need to know about US taxes overseas: filing requirements, FBAR, FATCA, Social Security taxes abroad, tax treaties, and the Foreign Tax Credit. Updated 2026.",
   alternates: { canonical: canonicalUrl },

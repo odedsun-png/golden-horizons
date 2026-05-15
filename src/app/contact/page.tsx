@@ -4,7 +4,7 @@ import Link from "next/link";
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Contact | Golden Horizons",
+  title: "Contact",
   description:
     "Contact Golden Horizons for newsletter questions, story ideas, advertising inquiries, privacy requests, legal notices, partnerships, and reader feedback.",
   alternates: {

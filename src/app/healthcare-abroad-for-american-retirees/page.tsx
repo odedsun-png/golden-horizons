@@ -6,7 +6,7 @@ const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/healthcare-abroad-for-american-retirees`;
 
 export const metadata: Metadata = {
-  title: "Healthcare Abroad for American Retirees (2026 Guide) | Golden Horizons",
+  title: "Healthcare Abroad for American Retirees (2026 Guide)",
   description:
     "What American retirees need to know about healthcare abroad: Medicare overseas, private insurance options, top healthcare countries, and how to find English-speaking doctors.",
   alternates: { canonical: canonicalUrl },

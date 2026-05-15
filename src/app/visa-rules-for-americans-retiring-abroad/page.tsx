@@ -6,7 +6,7 @@ const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/visa-rules-for-americans-retiring-abroad`;
 
 export const metadata: Metadata = {
-  title: "Visa Rules for Americans Retiring Abroad (2026 Guide) | Golden Horizons",
+  title: "Visa Rules for Americans Retiring Abroad (2026 Guide)",
   description:
     "A practical overview of retirement and residency visas for Americans, covering pensionado programs, income-based visas, and what to verify before you apply. Updated 2026.",
   alternates: { canonical: canonicalUrl },

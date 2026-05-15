@@ -863,6 +863,13 @@ body {
   .art-meta { flex-direction: column; gap: 3px; }
   .article-main .hero-img { height: 210px; }
   .sidebar { padding: 20px 16px; border-top: 2px solid #1e1408; }
+  .breadcrumb { padding: 9px 16px; }
+  .hero-text { right: 16px; }
+}
+
+@media (max-width: 480px) {
+  .dest-row { grid-template-columns: repeat(2, 1fr); }
+  .more-grid { grid-template-columns: 1fr; }
 }
 
 /* ===================================================

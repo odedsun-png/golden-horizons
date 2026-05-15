@@ -4,7 +4,7 @@ import RetirementFinder from "@/components/RetirementFinder";
 import { countries } from "@/lib/countries";
 const siteUrl = "https://golden-horizons.org";
 export const metadata: Metadata = {
-  title: "Best Places to Retire Abroad in 2026 | Golden Horizons",
+  title: "Best Places to Retire Abroad in 2026",
   description:
     "Compare the best places for Americans to retire abroad in 2026, including monthly cost, healthcare, visas, safety, climate, and lifestyle.",
   alternates: {

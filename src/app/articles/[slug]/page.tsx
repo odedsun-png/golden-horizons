@@ -107,7 +107,7 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Article Not Found | Golden Horizons",
+      title: "Article Not Found",
       robots: {
         index: false,
         follow: false,
@@ -132,7 +132,7 @@ export async function generateMetadata({
   );
 
   return {
-    title: `${article.title} | Golden Horizons`,
+    title: article.title,
     description,
     alternates: {
       canonical: canonicalUrl,

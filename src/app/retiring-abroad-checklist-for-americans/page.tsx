@@ -6,7 +6,7 @@ const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/retiring-abroad-checklist-for-americans`;
 
 export const metadata: Metadata = {
-  title: "Retiring Abroad Checklist for Americans (2026) | Golden Horizons",
+  title: "Retiring Abroad Checklist for Americans (2026)",
   description:
     "A practical step-by-step checklist for Americans retiring abroad. What to do before you leave, what to set up when you arrive, and what most people forget. Updated 2026.",
   alternates: { canonical: canonicalUrl },

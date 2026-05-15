@@ -4,7 +4,7 @@ import Link from "next/link";
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Golden Horizons",
+  title: "Privacy Policy",
   description:
     "Privacy Policy for Golden Horizons, including how we collect, use, store, share, and protect personal information for our website, newsletter, free guides, forms, affiliate links, analytics, and third-party services.",
   alternates: {

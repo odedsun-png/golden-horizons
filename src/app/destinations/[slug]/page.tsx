@@ -36,7 +36,7 @@ export async function generateMetadata({
 
   if (!country) {
     return {
-      title: "Destination Not Found | Golden Horizons",
+      title: "Destination Not Found",
       robots: {
         index: false,
         follow: false,
@@ -51,7 +51,7 @@ export async function generateMetadata({
   );
 
   return {
-    title: `${title} | Golden Horizons`,
+    title,
     description,
     alternates: {
       canonical: canonicalUrl,
