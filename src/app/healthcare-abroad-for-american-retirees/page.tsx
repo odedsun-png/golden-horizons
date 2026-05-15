@@ -156,8 +156,32 @@ export default function HealthcarePage() {
               Healthcare is the question most Americans ask first when they consider retiring abroad — and for good reason.
               The US Medicare system largely does not follow you overseas. Understanding your options before you move
               is not optional. This guide covers what Medicare actually covers abroad, what insurance alternatives exist,
-              and which countries score highest for healthcare quality among Golden Horizons&rsquo; ranked destinations.
+              and which countries score highest for healthcare quality among Golden Horizons&rsquo;{" "}
+              <Link href="/destinations" style={{ color: "#8b6914" }}>ranked destinations</Link>.
             </p>
+
+            <div style={{ background: "#fdf8ec", border: "1px solid #c9a84c", borderLeft: "4px solid #c9a84c", padding: "14px 18px", marginBottom: 20 }}>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#5a4010", fontStyle: "italic", margin: 0, lineHeight: 1.65 }}>
+                <strong style={{ fontStyle: "normal" }}>General information only.</strong> Medicare rules, insurance availability, healthcare quality, and local conditions change frequently and vary by location. Nothing in this guide constitutes medical, insurance, or legal advice. Verify all details with official sources and speak with a qualified professional before making decisions.
+              </p>
+            </div>
+
+            <div style={{ background: "#f0e8d0", border: "2px solid #c9a84c", padding: "18px 22px", marginBottom: 24, borderRadius: 2 }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b6914", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 10 }}>The Short Answer</div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 17, color: "#1a0f00", lineHeight: 1.65, marginBottom: 8 }}>
+                <strong>What do American retirees need to know about healthcare abroad?</strong>
+              </p>
+              <ul style={{ fontFamily: "EB Garamond, serif", fontSize: 17, color: "#2b1a00", lineHeight: 1.7, paddingLeft: 22, margin: "0 0 10px" }}>
+                <li><strong>Medicare generally does not cover routine care abroad.</strong> Original Medicare (Parts A and B) is designed for use in the United States. Most American retirees abroad pay out of pocket or use private insurance for day-to-day care.</li>
+                <li><strong>Private and local insurance are the most common solutions.</strong> Options may include international expat plans, local private insurance in your destination country, and in some cases access to the host country&rsquo;s health system. Coverage and eligibility vary by country and plan.</li>
+                <li><strong>Private hospital quality can be strong in some destinations, but access, cost, and standards vary by city, facility, and insurance coverage.</strong> Countries like Portugal, Costa Rica, Thailand, and Malaysia score well in Golden Horizons&rsquo; healthcare rankings. Research your specific location carefully.</li>
+                <li><strong>Costs depend on age, health history, and country.</strong> International expat insurance for retirees may range from $200 to $600 per month or more depending on coverage. Local plans can sometimes be less expensive. Get quotes before you move.</li>
+                <li><strong>Build your healthcare network before you need it.</strong> Locate English-speaking doctors, learn the local emergency number, and bring a complete copy of your medical records.</li>
+              </ul>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#6b5d47", fontStyle: "italic", margin: 0 }}>
+                This is general guidance only. Always verify Medicare coverage, insurance terms, and local healthcare access with official sources and a qualified professional before making decisions.
+              </p>
+            </div>
 
             <div className="dyk">
               <div className="dyk-icon">◆</div>
@@ -191,14 +215,15 @@ export default function HealthcarePage() {
               Many Americans who retire abroad keep their Medicare enrollment active, even though it does not cover them
               where they live. This allows them to use Medicare when they return to the US for visits, major procedures,
               or if they ever move back. Dropping Medicare coverage has implications for future re-enrollment premiums.
-              Discuss this with a Medicare counselor or benefits advisor before making any changes.
+              Discuss this with a Medicare counselor or <Link href="/retiring-abroad-checklist-for-americans" style={{ color: "#8b6914" }}>benefits advisor</Link> before making any changes.
             </p>
 
             <div className="section-hdr">Healthcare Scores by Destination</div>
 
             <p className="art-article-body" style={{ marginBottom: 16 }}>
-              The table below shows healthcare scores from Golden Horizons&rsquo; destination rankings alongside the estimated
-              monthly healthcare cost from each country&rsquo;s cost-of-living data. Scores are 1–5; 5 is best. The monthly
+              The table below shows healthcare scores from Golden Horizons&rsquo;{" "}
+              <Link href="/best-countries-to-retire-abroad-on-a-budget" style={{ color: "#8b6914" }}>destination rankings</Link>{" "}
+              alongside the estimated monthly healthcare cost from each country&rsquo;s cost-of-living data. Scores are 1–5; 5 is best. The monthly
               cost figure covers routine private healthcare access — not insurance premiums.
             </p>
 
@@ -238,6 +263,37 @@ export default function HealthcarePage() {
               </tbody>
             </table>
 
+            <div className="section-hdr">Best For — and Not Best For</div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 28 }}>
+              <div style={{ background: "#f0f5e8", border: "1px solid #8aab5a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#3d6b1f", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Best For</div>
+                {[
+                  "Retirees with stable, manageable health conditions",
+                  "Those willing to research coverage before moving",
+                  "People planning to live near a major city with access to private hospitals",
+                  "Those comfortable combining local and international plans",
+                  "Retirees open to using private healthcare routinely",
+                  "Those who can visit a destination before committing",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✓ {item}</div>
+                ))}
+              </div>
+              <div style={{ background: "#faf0f0", border: "1px solid #c47a7a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b2020", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Not Best For</div>
+                {[
+                  "Those with complex ongoing specialist care needs",
+                  "Anyone relying solely on Medicare coverage abroad",
+                  "Retirees planning to live in remote rural areas",
+                  "Those who haven't researched insurance options yet",
+                  "People with conditions that may affect insurability",
+                  "Those unwilling to navigate a foreign health system",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✗ {item}</div>
+                ))}
+              </div>
+            </div>
+
             <div className="section-hdr">Your Healthcare Checklist Abroad</div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 28 }}>
@@ -254,6 +310,7 @@ export default function HealthcarePage() {
                 "Learn how the local emergency number system works",
                 "Consider medical evacuation insurance for remote locations",
                 "Keep a list of all medications, allergies, and conditions translated",
+                "Review how <a href='/taxes-for-americans-retiring-overseas' style='color:#8b6914;text-decoration:underline'>US expat tax rules</a> may affect your Medicare and healthcare coverage decisions",
               ].map((item) => (
                 <div
                   key={item}
@@ -269,7 +326,7 @@ export default function HealthcarePage() {
               <strong>Assuming healthcare quality matches the ranking.</strong> Country-level scores are averages.
               A city with a top-tier private hospital may be in a country with a moderate overall score. Conversely,
               a high-scoring country may have excellent care in the capital but limited options in rural areas.
-              Research your specific city, not just the country.
+              Research your <Link href="/destinations" style={{ color: "#8b6914" }}>specific city</Link>, not just the country.
             </p>
 
             <p className="art-article-body" style={{ marginBottom: 16 }}>
@@ -289,6 +346,18 @@ export default function HealthcarePage() {
               plans and can be a significant expense. Research dental costs in your destination. Many popular
               retirement countries offer significantly cheaper dental care than the US — sometimes 50–70% less.
             </p>
+
+            <div style={{ background: "#1e1408", padding: "20px 24px", marginBottom: 28, textAlign: "center" }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#c9a84c", letterSpacing: "1px", marginBottom: 8 }}>
+                Every morning, one story like this — free.
+              </div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 14 }}>
+                Golden Horizons delivers calm, practical retirement-abroad guidance to your inbox each morning. No noise. No pressure.
+              </p>
+              <Link href="/#subscribe" className="mag-btn" style={{ display: "inline-block" }}>
+                Start My Free Subscription →
+              </Link>
+            </div>
 
             <div className="section-hdr">Frequently Asked Questions</div>
 
