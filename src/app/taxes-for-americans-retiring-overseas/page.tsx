@@ -154,8 +154,32 @@ export default function TaxesPage() {
               no matter where they live. Moving abroad does not end your US tax obligations. What it does is add a
               layer of complexity — new filing requirements, potential new taxes in your host country, and the need
               to understand how the two systems interact. This guide covers the core concepts every American retiree
-              abroad needs to know — and why you need a qualified expat CPA, not a general tax preparer.
+              abroad needs to know — and why you need a{" "}
+              <Link href="/retiring-abroad-checklist-for-americans" style={{ color: "#8b6914" }}>qualified expat CPA</Link>, not a general tax preparer.
             </p>
+
+            <div style={{ background: "#fdf8ec", border: "1px solid #c9a84c", borderLeft: "4px solid #c9a84c", padding: "14px 18px", marginBottom: 20 }}>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#5a4010", fontStyle: "italic", margin: 0, lineHeight: 1.65 }}>
+                <strong style={{ fontStyle: "normal" }}>General information only.</strong> US tax law, FBAR and FATCA requirements, tax treaty rules, and foreign tax obligations are complex, change over time, and vary by individual circumstance. Nothing in this guide constitutes tax, legal, or financial advice. Consult a US-licensed CPA who specializes in expat taxation before making any decisions.
+              </p>
+            </div>
+
+            <div style={{ background: "#f0e8d0", border: "2px solid #c9a84c", padding: "18px 22px", marginBottom: 24, borderRadius: 2 }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b6914", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 10 }}>The Short Answer</div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 17, color: "#1a0f00", lineHeight: 1.65, marginBottom: 8 }}>
+                <strong>What do Americans need to know about taxes when retiring overseas?</strong>
+              </p>
+              <ul style={{ fontFamily: "EB Garamond, serif", fontSize: 17, color: "#2b1a00", lineHeight: 1.7, paddingLeft: 22, margin: "0 0 10px" }}>
+                <li><strong>Moving abroad does not end US tax obligations.</strong> The US taxes its citizens on worldwide income regardless of where they live. Americans abroad are generally still required to file a federal income tax return each year if their income exceeds the filing threshold.</li>
+                <li><strong>Foreign bank accounts may trigger additional reporting.</strong> If you hold foreign financial accounts with a combined total above $10,000 at any point in the year, you may be required to file an FBAR (FinCEN Form 114) — separately from your tax return and with the Treasury, not the IRS.</li>
+                <li><strong>The Foreign Tax Credit may help reduce double taxation.</strong> If you pay income taxes in your host country, you may be able to use those taxes as a credit against your US tax liability. Rules are complex and vary by income type and treaty status.</li>
+                <li><strong>Tax treaties may affect how your income is treated.</strong> Some countries have tax treaties with the United States that can affect how Social Security, pensions, or other income is taxed. Not all countries have such treaties, and treaty terms vary. Verify current status with a qualified professional.</li>
+                <li><strong>An expat-specialist CPA is strongly recommended.</strong> Expat tax returns may involve FBAR, FATCA, foreign tax credits, treaty provisions, and state tax issues. These are specialized areas that a general tax preparer may not handle correctly.</li>
+              </ul>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#6b5d47", fontStyle: "italic", margin: 0 }}>
+                This is general guidance only. Tax rules change and vary by individual situation. Always verify with the IRS, official government sources, and a qualified tax professional before making decisions.
+              </p>
+            </div>
 
             <div className="dyk">
               <div className="dyk-icon">◆</div>
@@ -222,6 +246,42 @@ export default function TaxesPage() {
               expat CPA — not a general preparer who occasionally helps people with foreign income — matters enormously.
             </p>
 
+            <div className="section-hdr">Best For — and Not Best For</div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
+              <div style={{ background: "#f0f5e8", border: "1px solid #8aab5a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#3d6b1f", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Best For</div>
+                {[
+                  "Those with straightforward income — Social Security or one pension",
+                  "Retirees in countries with a US income tax treaty",
+                  "Those who hire a specialist expat CPA before moving",
+                  "People willing to file US returns annually from abroad",
+                  "Those who understand FBAR and FATCA obligations in advance",
+                  "Retirees with a plan for state tax residency before they leave",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✓ {item}</div>
+                ))}
+              </div>
+              <div style={{ background: "#faf0f0", border: "1px solid #c47a7a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b2020", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Not Best For</div>
+                {[
+                  "Those hoping moving abroad eliminates US tax obligations",
+                  "Anyone planning to use a general tax preparer for expat returns",
+                  "Those with complex investment portfolios or multiple income types",
+                  "Retirees in countries without a US tax treaty",
+                  "Those who haven't addressed state tax residency before leaving",
+                  "Anyone unfamiliar with FBAR or FATCA reporting requirements",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✗ {item}</div>
+                ))}
+              </div>
+            </div>
+
+            <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#6b5d47", fontStyle: "italic", marginBottom: 28 }}>
+              Healthcare costs and coverage abroad are a separate but related planning consideration. See our{" "}
+              <Link href="/healthcare-abroad-for-american-retirees" style={{ color: "#8b6914" }}>Healthcare Abroad for American Retirees</Link> guide.
+            </p>
+
             <div className="section-hdr">Tax Checklist for Retirees Moving Abroad</div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 28 }}>
@@ -245,10 +305,15 @@ export default function TaxesPage() {
               ))}
             </div>
 
+            <p className="art-article-body" style={{ marginBottom: 24, fontSize: 16 }}>
+              For estimated monthly living costs by destination — which affect how far your retirement income may stretch — see our{" "}
+              <Link href="/best-countries-to-retire-abroad-on-a-budget" style={{ color: "#8b6914" }}>Budget Retirement Guide</Link>.
+            </p>
+
             <div className="section-hdr">Common Tax Mistakes Abroad</div>
 
             <p className="art-article-body" style={{ marginBottom: 16 }}>
-              <strong>Stopping US tax filing after moving abroad.</strong> This is illegal and can result in
+              <strong>Stopping US tax filing after <Link href="/visa-rules-for-americans-retiring-abroad" style={{ color: "#8b6914" }}>moving abroad</Link>.</strong> This is illegal and can result in
               substantial penalties and interest. The obligation to file US taxes continues until you are no longer
               a US citizen — or until your income falls below the filing threshold. Moving does not change this.
             </p>
@@ -262,7 +327,7 @@ export default function TaxesPage() {
             <p className="art-article-body" style={{ marginBottom: 16 }}>
               <strong>Ignoring state taxes.</strong> Some US states — California, New York, Virginia, and South Carolina
               among the most aggressive — will attempt to tax you on worldwide income even after you have moved abroad,
-              unless you have cleanly established domicile elsewhere. This is a separate issue from federal taxes.
+              unless you have cleanly <Link href="/destinations" style={{ color: "#8b6914" }}>established domicile elsewhere</Link>. This is a separate issue from federal taxes.
               Properly severing your state tax residency before you move is important.
             </p>
 
@@ -272,6 +337,18 @@ export default function TaxesPage() {
               not routinely handle this work will miss things. Use someone who does expat returns as a significant
               part of their practice.
             </p>
+
+            <div style={{ background: "#1e1408", padding: "20px 24px", marginBottom: 28, textAlign: "center" }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#c9a84c", letterSpacing: "1px", marginBottom: 8 }}>
+                Every morning, one story like this — free.
+              </div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 14 }}>
+                Golden Horizons delivers calm, practical retirement-abroad guidance to your inbox each morning. No noise. No pressure.
+              </p>
+              <Link href="/#subscribe" className="mag-btn" style={{ display: "inline-block" }}>
+                Start My Free Subscription →
+              </Link>
+            </div>
 
             <div className="section-hdr">Frequently Asked Questions</div>
 
