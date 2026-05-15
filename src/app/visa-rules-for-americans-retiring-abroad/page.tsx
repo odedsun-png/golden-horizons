@@ -151,10 +151,33 @@ export default function VisaPage() {
 
             <p className="art-intro">
               The visa question is usually the first thing that stops people from moving forward with retirement abroad —
-              and it does not need to. Most popular retirement destinations have specific visa categories designed for
+              and it does not need to. Most <Link href="/destinations" style={{ color: "#8b6914" }}>popular retirement destinations</Link> have specific visa categories designed for
               retirees with pension income. This guide explains the main categories, what they generally require, and
               what you need to verify before you apply.
             </p>
+
+            <div style={{ background: "#fdf8ec", border: "1px solid #c9a84c", borderLeft: "4px solid #c9a84c", padding: "14px 18px", marginBottom: 20 }}>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#5a4010", fontStyle: "italic", margin: 0, lineHeight: 1.65 }}>
+                <strong style={{ fontStyle: "normal" }}>General information only.</strong> Immigration rules, income thresholds, processing times, and eligibility requirements change frequently and vary by country. Nothing in this guide constitutes legal or immigration advice. Verify all requirements with the official immigration authority of your destination country or a licensed immigration attorney before making any decisions.
+              </p>
+            </div>
+
+            <div style={{ background: "#f0e8d0", border: "2px solid #c9a84c", padding: "18px 22px", marginBottom: 24, borderRadius: 2 }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b6914", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 10 }}>The Short Answer</div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 17, color: "#1a0f00", lineHeight: 1.65, marginBottom: 8 }}>
+                <strong>What visa options do Americans have for retiring abroad?</strong>
+              </p>
+              <ul style={{ fontFamily: "EB Garamond, serif", fontSize: 17, color: "#2b1a00", lineHeight: 1.7, paddingLeft: 22, margin: "0 0 10px" }}>
+                <li><strong>Most popular retirement countries have dedicated retiree visas.</strong> These typically require proof of regular pension income, passive income, or a sufficient financial reserve. Requirements vary by country and change over time.</li>
+                <li><strong>Two main types: pension-based and passive income visas.</strong> Pensionado programs, common in Latin America, generally require a qualifying pension or Social Security income. Passive income or solvency visas, common in Europe, may accept a broader range of income sources.</li>
+                <li><strong>Income thresholds apply and can change.</strong> Most programs set a minimum monthly income or savings balance, determined by each government. These figures may be updated at any time — always verify the current threshold with official sources.</li>
+                <li><strong>Working with a licensed local attorney or qualified immigration professional can help reduce errors and delays.</strong> Immigration paperwork, document certification, and translation requirements are complex. Many retirees find local legal help well worth the cost.</li>
+                <li><strong>Tourist entries are not a substitute for long-term residency.</strong> Living in a country on visa-free or tourist entries is legally precarious in most destinations. If you plan to stay permanently, a proper residency permit is the appropriate path.</li>
+              </ul>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#6b5d47", fontStyle: "italic", margin: 0 }}>
+                This is general guidance only. Rules vary by country and change frequently. Verify all requirements with official government sources and a licensed immigration attorney before applying.
+              </p>
+            </div>
 
             <div className="dyk">
               <div className="dyk-icon">◆</div>
@@ -171,6 +194,37 @@ export default function VisaPage() {
             </div>
 
             <div className="section-hdr">Common Visa Categories for American Retirees</div>
+
+            <p className="art-article-body" style={{ marginBottom: 12 }}>
+              Most retirement visa programs fall into one of three broad categories based on your primary income source. This is a simplified guide only — actual eligibility depends on current thresholds and requirements in each country. Verify your specific situation with official sources.
+            </p>
+
+            <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: 12, fontFamily: "EB Garamond, serif" }}>
+              <thead>
+                <tr style={{ background: "#1e1408", color: "#c9a84c" }}>
+                  <th style={{ textAlign: "left", padding: "10px 12px", fontSize: 11, letterSpacing: "2px", textTransform: "uppercase" }}>Your Situation</th>
+                  <th style={{ textAlign: "left", padding: "10px 12px", fontSize: 11, letterSpacing: "2px", textTransform: "uppercase" }}>Typical Visa Type</th>
+                  <th style={{ textAlign: "left", padding: "10px 12px", fontSize: 11, letterSpacing: "2px", textTransform: "uppercase" }}>Example Countries</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { situation: "Pension or Social Security income", type: "Pensionado / Retirement Visa", examples: "Panama, Costa Rica, Ecuador, Colombia" },
+                  { situation: "Passive income — investments, savings, rental", type: "Passive Income / Solvency Visa", examples: "Portugal (D7), Spain, Mexico, Italy" },
+                  { situation: "Lump-sum savings or financial reserve", type: "Deposit-based or Investment Visa", examples: "Thailand (OA), Malaysia (MM2H)" },
+                ].map((row, i) => (
+                  <tr key={row.situation} style={{ background: i % 2 === 0 ? "#faf5e9" : "#f5edd8", borderBottom: "1px solid #e0cc99" }}>
+                    <td style={{ padding: "10px 12px", fontSize: 16, color: "#2b1a00", fontWeight: "bold" }}>{row.situation}</td>
+                    <td style={{ padding: "10px 12px", fontSize: 15, color: "#5a4010" }}>{row.type}</td>
+                    <td style={{ padding: "10px 12px", fontSize: 15, color: "#5a4010", fontStyle: "italic" }}>{row.examples}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
+            <p style={{ fontFamily: "EB Garamond, serif", fontSize: 14, color: "#6b5d47", fontStyle: "italic", marginBottom: 24 }}>
+              Categories are simplified. Many programs have overlapping or additional requirements. Verify your eligibility with official sources before planning around any specific program.
+            </p>
 
             <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: 28, fontFamily: "EB Garamond, serif" }}>
               <thead>
@@ -213,6 +267,42 @@ export default function VisaPage() {
               Verify all current requirements with the official immigration authority of each country or a licensed attorney.
             </p>
 
+            <div className="section-hdr">Best For — and Not Best For</div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
+              <div style={{ background: "#f0f5e8", border: "1px solid #8aab5a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#3d6b1f", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Best For</div>
+                {[
+                  "Those with a qualifying pension or passive income source",
+                  "Retirees willing to work with a licensed local attorney",
+                  "Those with 6–12 months to plan before their move date",
+                  "People who have researched healthcare access in their destination",
+                  "Those comfortable navigating document certification requirements",
+                  "Retirees whose income type matches a known visa program",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✓ {item}</div>
+                ))}
+              </div>
+              <div style={{ background: "#faf0f0", border: "1px solid #c47a7a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b2020", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Not Best For</div>
+                {[
+                  "Those without a qualifying income or savings level",
+                  "Anyone hoping to work remotely without checking visa work rules",
+                  "Those planning to rely on tourist entries long-term",
+                  "Retirees in a hurry — most programs take months to process",
+                  "Those who haven't verified their income type qualifies",
+                  "Anyone expecting visa rules to stay the same as when they researched",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✗ {item}</div>
+                ))}
+              </div>
+            </div>
+
+            <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#6b5d47", fontStyle: "italic", marginBottom: 28 }}>
+              Healthcare access varies significantly by country and city. Before finalizing a destination, see our{" "}
+              <Link href="/healthcare-abroad-for-american-retirees" style={{ color: "#8b6914" }}>Healthcare Abroad for American Retirees</Link> guide.
+            </p>
+
             <div className="section-hdr">Visa Application Checklist</div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 28 }}>
@@ -236,12 +326,17 @@ export default function VisaPage() {
               ))}
             </div>
 
+            <p className="art-article-body" style={{ marginBottom: 24, fontSize: 16 }}>
+              Your residency choice may also have implications for your US tax obligations. For an overview, see our{" "}
+              <Link href="/taxes-for-americans-retiring-overseas" style={{ color: "#8b6914" }}>Taxes for Americans Retiring Overseas</Link> guide.
+            </p>
+
             <div className="section-hdr">Common Visa Mistakes</div>
 
             <p className="art-article-body" style={{ marginBottom: 16 }}>
               <strong>Relying on outdated information.</strong> Visa rules change frequently. Income thresholds go up.
               Programs get paused or restructured. A blog post from 2022 may describe a program that has since changed
-              significantly. Always verify with the official consulate or immigration authority before starting any application.
+              significantly. Always verify with the <Link href="/retiring-abroad-checklist-for-americans" style={{ color: "#8b6914" }}>official consulate or immigration authority</Link> before starting any application.
             </p>
 
             <p className="art-article-body" style={{ marginBottom: 16 }}>
@@ -260,8 +355,20 @@ export default function VisaPage() {
             <p className="art-article-body" style={{ marginBottom: 24 }}>
               <strong>Not checking if Social Security qualifies as pension income.</strong> Most pensionado-style visas
               accept US Social Security as qualifying pension income, but not all. Some require income from a government
-              or employer pension specifically. Confirm your income type qualifies before you plan around a specific program.
+              or employer pension specifically. Confirm your <Link href="/best-countries-to-retire-abroad-on-a-budget" style={{ color: "#8b6914" }}>income type qualifies</Link> before you plan around a specific program.
             </p>
+
+            <div style={{ background: "#1e1408", padding: "20px 24px", marginBottom: 28, textAlign: "center" }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#c9a84c", letterSpacing: "1px", marginBottom: 8 }}>
+                Every morning, one story like this — free.
+              </div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 14 }}>
+                Golden Horizons delivers calm, practical retirement-abroad guidance to your inbox each morning. No noise. No pressure.
+              </p>
+              <Link href="/#subscribe" className="mag-btn" style={{ display: "inline-block" }}>
+                Start My Free Subscription →
+              </Link>
+            </div>
 
             <div className="section-hdr">Frequently Asked Questions</div>
 
