@@ -156,6 +156,30 @@ export default function SafetyPage() {
               index, what those scores mean in practice, and what tools you should use to verify current conditions.
             </p>
 
+            <div style={{ background: "#fdf8ec", border: "1px solid #c9a84c", borderLeft: "4px solid #c9a84c", padding: "14px 18px", marginBottom: 20 }}>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 15, color: "#5a4010", fontStyle: "italic", margin: 0, lineHeight: 1.65 }}>
+                <strong style={{ fontStyle: "normal" }}>General information only.</strong> Safety scores in this guide represent Golden Horizons&rsquo; editorial assessment of general conditions for expat retirees — they are not official crime statistics or government rankings. Conditions vary significantly within countries, cities, and neighborhoods and can change at any time. Always verify current safety conditions through the US State Department at travel.state.gov before making any relocation decisions.
+              </p>
+            </div>
+
+            <div style={{ background: "#1e1408", padding: "20px 24px", marginBottom: 20 }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#c9a84c", letterSpacing: "1px", marginBottom: 12 }}>
+                Which countries score highest in Golden Horizons&rsquo; editorial safety index?
+              </div>
+              {[
+                "Portugal, Spain, New Zealand, Malta, and the Azores each score 5/5 — the highest editorial safety rating",
+                "Costa Rica, Thailand, Malaysia, Greece, Vietnam, Italy, and France each score 4/5 — also widely popular with American retirees",
+                "Scores reflect Golden Horizons’ editorial assessment of general expat conditions, not official crime statistics",
+                "Safety can vary significantly at the neighborhood level — a national score is a starting point, not a guarantee",
+                "Always verify current conditions through the US State Department at travel.state.gov before making any decisions",
+              ].map((item) => (
+                <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 6, paddingLeft: 16, position: "relative" }}>
+                  <span style={{ position: "absolute", left: 0, color: "#c9a84c" }}>◆</span>
+                  {item}
+                </div>
+              ))}
+            </div>
+
             <div className="dyk">
               <div className="dyk-icon">◆</div>
               <div>
@@ -216,6 +240,35 @@ export default function SafetyPage() {
               </tbody>
             </table>
 
+            <p className="art-article-body" style={{ marginBottom: 12, fontSize: 16, fontStyle: "italic", color: "#5a4010" }}>
+              The groupings below summarize Golden Horizons&rsquo; editorial safety tiers. These are planning-level categories, not official government ratings. Scores represent general conditions for expat retirees and do not reflect every neighborhood or every period of time.
+            </p>
+
+            <div style={{ overflowX: "auto", marginBottom: 28 }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "EB Garamond, serif", fontSize: 16 }}>
+                <thead>
+                  <tr style={{ background: "#1e1408" }}>
+                    <th style={{ padding: "10px 14px", textAlign: "left", color: "#c9a84c", fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", borderRight: "1px solid #3a2a10" }}>Safety Tier</th>
+                    <th style={{ padding: "10px 14px", textAlign: "left", color: "#c9a84c", fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", borderRight: "1px solid #3a2a10" }}>Countries (from index)</th>
+                    <th style={{ padding: "10px 14px", textAlign: "left", color: "#c9a84c", fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { tier: "Excellent (5/5)", countries: "Portugal, Spain, New Zealand, Malta, Azores", notes: "Generally calm for expat retirees in typical residential areas; costs vary significantly by destination" },
+                    { tier: "Very Good (4/5)", countries: "Costa Rica, Thailand, Malaysia, Greece, Vietnam, Italy, France", notes: "Often viewed as comfortable by many expat retirees; neighborhood-level research still important before committing" },
+                    { tier: "Research Carefully", countries: "Other destinations", notes: "Country-level scores can mask significant local variation — always research specific cities and neighborhoods" },
+                  ].map((row, i) => (
+                    <tr key={row.tier} style={{ background: i % 2 === 0 ? "#faf5e9" : "#f5edd8" }}>
+                      <td style={{ padding: "10px 14px", color: "#2b1a00", fontWeight: 600, borderRight: "1px solid #e0cc99", verticalAlign: "top", whiteSpace: "nowrap" }}>{row.tier}</td>
+                      <td style={{ padding: "10px 14px", color: "#8b6914", borderRight: "1px solid #e0cc99", verticalAlign: "top" }}>{row.countries}</td>
+                      <td style={{ padding: "10px 14px", color: "#2b1a00", verticalAlign: "top" }}>{row.notes}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
             <div className="section-hdr">What Safety Means at the Neighborhood Level</div>
 
             <p className="art-article-body" style={{ marginBottom: 18 }}>
@@ -261,6 +314,13 @@ export default function SafetyPage() {
               ))}
             </div>
 
+            <p className="art-article-body" style={{ marginBottom: 24, fontSize: 16 }}>
+              Safety is one piece of a larger planning process. For a full step-by-step relocation guide, see our{" "}
+              <Link href="/retiring-abroad-checklist-for-americans" style={{ color: "#8b6914" }}>Retiring Abroad Checklist for Americans</Link>.
+              For an overview of visa and residency options by destination, see our{" "}
+              <Link href="/visa-rules-for-americans-retiring-abroad" style={{ color: "#8b6914" }}>Visa Rules for Americans Retiring Abroad</Link> guide.
+            </p>
+
             <div className="section-hdr">Common Safety Mistakes Abroad</div>
 
             <p className="art-article-body" style={{ marginBottom: 16 }}>
@@ -290,6 +350,50 @@ export default function SafetyPage() {
               in case of an emergency or evacuation and provides you with current security alerts for your country
               of residence.
             </p>
+
+            <p className="art-article-body" style={{ marginBottom: 24, fontSize: 16 }}>
+              For a breakdown of estimated monthly costs by destination, see our{" "}
+              <Link href="/best-countries-to-retire-abroad-on-a-budget" style={{ color: "#8b6914" }}>Best Countries to Retire Abroad on a Budget</Link> guide.
+              For healthcare planning considerations, see our{" "}
+              <Link href="/healthcare-abroad-for-american-retirees" style={{ color: "#8b6914" }}>Healthcare Abroad for American Retirees</Link> guide.
+            </p>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 28 }}>
+              <div style={{ background: "#f0f5e8", border: "1px solid #8aab5a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#3d6b1f", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Best For</div>
+                {[
+                  "Retirees for whom day-to-day calm and walkability are top priorities",
+                  "Those comfortable with established-destination costs in exchange for higher editorial safety scores",
+                  "Retirees willing to do neighborhood-level research before committing to a location",
+                  "People who plan to visit for several weeks before relocating",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✓ {item}</div>
+                ))}
+              </div>
+              <div style={{ background: "#faf0f0", border: "1px solid #c47a7a", padding: "16px 18px" }}>
+                <div style={{ fontFamily: "Playfair Display, serif", fontSize: 13, fontWeight: 700, color: "#8b2020", letterSpacing: "2px", textTransform: "uppercase", marginBottom: 12 }}>Not Best For</div>
+                {[
+                  "Retirees prioritizing the absolute lowest monthly cost — the highest-scoring safety destinations tend to carry higher price tags",
+                  "Anyone making a location decision based solely on a national safety score — neighborhood variation can be significant",
+                  "Those seeking a guarantee of safety — no destination can offer that",
+                  "Retirees unwilling to monitor current conditions through official travel advisories",
+                ].map((item) => (
+                  <div key={item} style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#2b1a00", lineHeight: 1.55, marginBottom: 7 }}>✗ {item}</div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ background: "#1e1408", padding: "20px 24px", marginBottom: 28, textAlign: "center" }}>
+              <div style={{ fontFamily: "Playfair Display, serif", fontSize: 15, fontWeight: 700, color: "#c9a84c", letterSpacing: "1px", marginBottom: 8 }}>
+                Every morning, one story like this — free.
+              </div>
+              <p style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 14 }}>
+                Golden Horizons delivers calm, practical retirement-abroad guidance to your inbox each morning. No noise. No pressure.
+              </p>
+              <Link href="/#subscribe" className="mag-btn" style={{ display: "inline-block" }}>
+                Start My Free Subscription →
+              </Link>
+            </div>
 
             <div className="section-hdr">Frequently Asked Questions</div>
 
