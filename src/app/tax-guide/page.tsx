@@ -7,7 +7,7 @@ const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
   title:
-    "Tax Guide: 35 Countries Where Retirees Can Stretch Retirement Income Abroad | Golden Horizons",
+    "Tax Guide: 35 Countries Where Retirees Can Stretch Retirement Income Abroad",
   description:
     "Compare 35 tax-friendly retirement destinations, including countries with territorial tax systems, low flat-tax programs, retiree visas, and treaty advantages for Americans considering retirement abroad.",
   keywords: [
