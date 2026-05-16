@@ -154,27 +154,36 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
         <div className="cover-story">
           <div className="mag-label">Cover Story · The Destination Report</div>
           <h2 className="cover-headline">
-            The places where your money sets you free — and why more Americans
-            are finding them every day
+            The retirement Americans were quietly told to give up on is already
+            happening — in 26 countries we track every week.
           </h2>
           <div className="byline">
             By the Editors of Golden Horizons · Cover Story · April 2026
           </div>
           <p className="body-text">
-            There are places in the world where $2,000 a month buys the kind of
-            life most Americans spend their entire career chasing. A terrace
-            overlooking the sea. Fresh food every morning. A doctor you can
-            actually afford to see. These places are not secrets — they are
-            simply overlooked.
+            If your monthly check is $1,800 and you&apos;ve been quietly doing
+            the math, this magazine is for you. We aren&apos;t here to sell you
+            a course, a condo, or a citizenship-by-investment scheme. We&apos;re
+            here to do one thing: every morning, find a real place where Social
+            Security is a livable income, walk through what it actually costs —
+            rent, groceries, a hospital visit, the visa — and put the answer in
+            your inbox before your coffee gets cold.
           </p>
           <p className="body-text">
-            Golden Horizons exists to change that. Every morning we find one of
-            these places, dig into the real numbers, and bring it straight to
-            you. No hype. No sales pitch. Just the truth about what is possible —
-            and what it actually costs.
+            No million-dollar nest egg required. No relocation seminar. No
+            &ldquo;limited-time&rdquo; anything. Just the country, the city, the
+            number, and the trade-offs the brochures leave out.
           </p>
+          <p className="body-text">
+            Twenty-six countries researched. Two hundred and fifty-three reports
+            indexed. One sent to you tomorrow morning, free.
+          </p>
+          <Link href="/#subscribe" className="read-more">
+            Get tomorrow&apos;s destination report →
+          </Link>
+          {" · "}
           <Link href="/articles" className="read-more">
-            Read all stories in this issue →
+            Or browse the archive
           </Link>
         </div>
         <div className="pullquote">
