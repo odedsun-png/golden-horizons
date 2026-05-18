@@ -55,6 +55,7 @@ export default function EditorialPolicyPage() {
           <Link href="/">Cover</Link>
           <Link href="/articles">All Stories</Link>
           <Link href="/destinations">Destinations</Link>
+          <Link href="/food">Food</Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
           <Link href="/#subscribe">Subscribe Free</Link>
         </nav>

@@ -26,6 +26,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    {
+      url: `${siteUrl}/food`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
     // Pillar pages
     {
       url: `${siteUrl}/best-countries-to-retire-abroad-on-a-budget`,
