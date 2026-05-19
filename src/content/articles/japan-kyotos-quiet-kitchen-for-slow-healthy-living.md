@@ -3,8 +3,7 @@ title: "Japan - Kyoto’s Quiet Kitchen for Slow Healthy Living — A Local's Pe
 category: Home Cooking
 slug: japan-kyotos-quiet-kitchen-for-slow-healthy-living
 date: 2026-05-04
-image: https://images.pexels.com/photos/19282147/pexels-photo-19282147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-description: Explore the gentle rhythm of Kyoto's food culture through local markets and home cooking for a healthier retirement life.
+image: "https://images.pexels.com/photos/29518254/pexels-photo-29518254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"description: Explore the gentle rhythm of Kyoto's food culture through local markets and home cooking for a healthier retirement life.
 featured: false
 ---
 
