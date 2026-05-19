@@ -1,6 +1,8 @@
 "use client";
-import { useMemo, useState } from "react";
+
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+
 type Article = {
   slug: string;
   title: string;
@@ -12,12 +14,14 @@ type Article = {
   date?: string;
   displayCategory: string;
 };
+
 type Props = {
   articles: Article[];
   categoryGroups: Record<string, Article[]>;
   categories: string[];
   editorPick: Article | null;
 };
+
 const CATEGORY_IMAGES: Record<string, string> = {
   "All Stories":
     "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -72,64 +76,83 @@ const CATEGORY_IMAGES: Record<string, string> = {
   "Expat Life":
     "https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=800",
 };
+
 const DEFAULT_IMAGE =
   "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800";
-const MAX_ARTICLES = 9; // 3 columns × 3 rows
+
+const INITIAL_ARTICLES = 9;
+const LOAD_MORE_ARTICLES = 6;
+
 function slugHash(slug: string): number {
   let h = 5381;
+
   for (let i = 0; i < slug.length; i++) {
     h = ((h << 5) + h) ^ slug.charCodeAt(i);
   }
+
   return Math.abs(h);
 }
+
 function buildMixedArticles(
   allArticles: Article[],
-  groups: Record<string, Article[]>,
-  maxCount: number
+  groups: Record<string, Article[]>
 ): Article[] {
   const cats = Object.keys(groups).sort();
+
   if (cats.length === 0) {
-    return [...allArticles]
-      .sort((a, b) => slugHash(a.slug) - slugHash(b.slug))
-      .slice(0, maxCount);
+    return [...allArticles].sort((a, b) => slugHash(a.slug) - slugHash(b.slug));
   }
+
   const sortedGroups: Record<string, Article[]> = {};
+
   for (const cat of cats) {
     sortedGroups[cat] = [...groups[cat]].sort(
       (a, b) => slugHash(a.slug) - slugHash(b.slug)
     );
   }
+
   const indices: Record<string, number> = {};
   for (const cat of cats) indices[cat] = 0;
+
   const result: Article[] = [];
-  while (result.length < maxCount) {
+
+  while (result.length < allArticles.length) {
     let added = false;
+
     for (const cat of cats) {
-      if (result.length >= maxCount) break;
       const idx = indices[cat];
+
       if (idx < sortedGroups[cat].length) {
         result.push(sortedGroups[cat][idx]);
         indices[cat]++;
         added = true;
       }
     }
+
     if (!added) break;
   }
+
   return result;
 }
+
 function normalizeCategory(category?: string) {
   return category?.trim() || "Uncategorized";
 }
+
 function getCategoryImage(category?: string) {
   const normalized = normalizeCategory(category);
   return CATEGORY_IMAGES[normalized] || DEFAULT_IMAGE;
 }
+
 function getNewestArticleImage(categoryArticles: Article[]): string {
   const sorted = [...categoryArticles].sort((a, b) =>
     (b.date || "").localeCompare(a.date || "")
   );
+
   const newest = sorted[0];
+
   if (!newest) return DEFAULT_IMAGE;
+
   return (
     newest.heroImage?.trim() ||
     newest.image?.trim() ||
@@ -137,11 +160,13 @@ function getNewestArticleImage(categoryArticles: Article[]): string {
     DEFAULT_IMAGE
   );
 }
+
 function getArticleImage(article: Article) {
   if (article.heroImage?.trim()) return article.heroImage;
   if (article.image?.trim()) return article.image;
   return getCategoryImage(article.category);
 }
+
 export default function ArticlesClient({
   articles,
   categoryGroups,
@@ -149,14 +174,25 @@ export default function ArticlesClient({
   editorPick,
 }: Props) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const articlesForGrid = useMemo(() => {
+  const [visibleCount, setVisibleCount] = useState(INITIAL_ARTICLES);
+
+  useEffect(() => {
+    setVisibleCount(INITIAL_ARTICLES);
+  }, [selectedCategory]);
+
+  const allFilteredArticles = useMemo(() => {
     if (selectedCategory) {
-      return [...(categoryGroups[selectedCategory] || [])]
-        .sort((a, b) => slugHash(a.slug) - slugHash(b.slug))
-        .slice(0, MAX_ARTICLES);
+      return [...(categoryGroups[selectedCategory] || [])].sort(
+        (a, b) => slugHash(a.slug) - slugHash(b.slug)
+      );
     }
-    return buildMixedArticles(articles, categoryGroups, MAX_ARTICLES);
+
+    return buildMixedArticles(articles, categoryGroups);
   }, [articles, categoryGroups, selectedCategory]);
+
+  const articlesForGrid = allFilteredArticles.slice(0, visibleCount);
+  const hasMoreArticles = visibleCount < allFilteredArticles.length;
+
   const categoryCards = [
     {
       label: "All Stories",
@@ -173,25 +209,37 @@ export default function ArticlesClient({
       image: getNewestArticleImage(categoryGroups[category] || []),
     })),
   ];
+
   function scrollToResults() {
     window.setTimeout(() => {
       const resultsSection = document.getElementById("article-results");
       if (!resultsSection) return;
+
       const y = resultsSection.getBoundingClientRect().top + window.scrollY - 90;
+
       window.scrollTo({
         top: y,
         behavior: "smooth",
       });
     }, 150);
   }
+
   function selectCategory(category: string | null) {
     setSelectedCategory(category);
     scrollToResults();
   }
+
   function clearFilters() {
     setSelectedCategory(null);
     scrollToResults();
   }
+
+  function loadMoreArticles() {
+    setVisibleCount((current) =>
+      Math.min(current + LOAD_MORE_ARTICLES, allFilteredArticles.length)
+    );
+  }
+
   return (
     <>
       <div
@@ -213,6 +261,7 @@ export default function ArticlesClient({
         >
           Explore the Archive
         </div>
+
         <h2
           style={{
             margin: "0 0 18px",
@@ -224,6 +273,7 @@ export default function ArticlesClient({
         >
           Browse retirement abroad stories by topic.
         </h2>
+
         <div
           style={{
             display: "flex",
@@ -249,28 +299,29 @@ export default function ArticlesClient({
           >
             All
           </button>
+
           {categories.map((category) => (
-              <button
-                key={category}
-                type="button"
-                onClick={() => selectCategory(category)}
-                style={{
-                  cursor: "pointer",
-                  border: "1px solid #8b6914",
-                  background:
-                    selectedCategory === category ? "#2d2416" : "#faf5e9",
-                  color:
-                    selectedCategory === category ? "#f5d06f" : "#2d2416",
-                  padding: "8px 12px",
-                  fontSize: 12,
-                  letterSpacing: "1.5px",
-                  textTransform: "uppercase",
-                  fontFamily: "var(--font-garamond), Georgia, serif",
-                }}
-              >
-                {category}
-              </button>
-            ))}
+            <button
+              key={category}
+              type="button"
+              onClick={() => selectCategory(category)}
+              style={{
+                cursor: "pointer",
+                border: "1px solid #8b6914",
+                background:
+                  selectedCategory === category ? "#2d2416" : "#faf5e9",
+                color: selectedCategory === category ? "#f5d06f" : "#2d2416",
+                padding: "8px 12px",
+                fontSize: 12,
+                letterSpacing: "1.5px",
+                textTransform: "uppercase",
+                fontFamily: "var(--font-garamond), Georgia, serif",
+              }}
+            >
+              {category}
+            </button>
+          ))}
+
           {selectedCategory && (
             <button
               type="button"
@@ -291,7 +342,9 @@ export default function ArticlesClient({
           )}
         </div>
       </div>
+
       <div className="section-banner">Browse by Section</div>
+
       <div
         className="cat-index grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
         style={{
@@ -305,6 +358,7 @@ export default function ArticlesClient({
             item.category === null
               ? !selectedCategory
               : selectedCategory === item.category;
+
           return (
             <button
               key={item.label}
@@ -335,6 +389,7 @@ export default function ArticlesClient({
                   transition: "transform 0.25s ease",
                 }}
               />
+
               <div
                 style={{
                   position: "absolute",
@@ -345,6 +400,7 @@ export default function ArticlesClient({
                   boxShadow: isActive ? "inset 0 0 0 3px #c9a84c" : "none",
                 }}
               />
+
               <div
                 style={{
                   position: "relative",
@@ -368,6 +424,7 @@ export default function ArticlesClient({
                 >
                   {item.label}
                 </div>
+
                 <div
                   className="cat-count"
                   style={{
@@ -380,6 +437,7 @@ export default function ArticlesClient({
                 >
                   {item.count} articles
                 </div>
+
                 <div
                   className="cat-desc"
                   style={{
@@ -396,11 +454,13 @@ export default function ArticlesClient({
           );
         })}
       </div>
+
       {editorPick && !selectedCategory && (
         <>
           <div className="section-banner">
             Editor&rsquo;s Pick · This Week&rsquo;s Must-Read
           </div>
+
           <div className="editor-pick">
             <div className="ep-img-wrap">
               <img
@@ -411,23 +471,28 @@ export default function ArticlesClient({
                   e.currentTarget.src = DEFAULT_IMAGE;
                 }}
               />
+
               <div className="ep-caption">
                 <p>{editorPick.excerpt || editorPick.description}</p>
               </div>
             </div>
+
             <div className="ep-content">
               <div className="ep-kicker">
                 {editorPick.displayCategory || "Featured"}
               </div>
+
               <Link
                 href={`/articles/${editorPick.slug}`}
                 className="ep-headline"
               >
                 {editorPick.title}
               </Link>
+
               <p className="ep-body">
                 {editorPick.description || editorPick.excerpt}
               </p>
+
               <Link href={`/articles/${editorPick.slug}`} className="ep-read">
                 Read the full story →
               </Link>
@@ -435,9 +500,11 @@ export default function ArticlesClient({
           </div>
         </>
       )}
+
       <div id="article-results" className="section-banner">
         {selectedCategory ? `${selectedCategory} Stories` : "Latest Stories"}
       </div>
+
       {articlesForGrid.length > 0 ? (
         <div className="articles-grid">
           {articlesForGrid.map((article) => (
@@ -454,6 +521,7 @@ export default function ArticlesClient({
                   e.currentTarget.src = getCategoryImage(article.displayCategory);
                 }}
               />
+
               <div className="art-cat">{article.displayCategory}</div>
               <div className="art-title">{article.title}</div>
               <span className="art-read">Read →</span>
@@ -474,11 +542,55 @@ export default function ArticlesClient({
           No stories found in this section yet.
         </div>
       )}
-      <div className="load-more">
+
+      <div
+        className="load-more"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 14,
+          padding: "26px 0 34px",
+          borderTop: "1px solid #c9a84c",
+          background: "#faf5e9",
+        }}
+      >
         <p className="load-count">
-          Showing {articlesForGrid.length}{" "}
+          Showing {articlesForGrid.length} of {allFilteredArticles.length}{" "}
           {selectedCategory ? `${selectedCategory} stories` : "stories"}
         </p>
+
+        {hasMoreArticles && (
+          <button
+            type="button"
+            onClick={loadMoreArticles}
+            style={{
+              appearance: "none",
+              background: "#faf5e9",
+              color: "#1a0f00",
+              border: "1px solid #8b6914",
+              padding: "10px 22px",
+              fontFamily: "var(--font-garamond), Georgia, serif",
+              fontSize: 12,
+              fontWeight: 700,
+              letterSpacing: "1.5px",
+              textTransform: "uppercase",
+              cursor: "pointer",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "#2d2416";
+              e.currentTarget.style.color = "#f5d06f";
+              e.currentTarget.style.borderColor = "#c9a84c";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "#faf5e9";
+              e.currentTarget.style.color = "#1a0f00";
+              e.currentTarget.style.borderColor = "#8b6914";
+            }}
+          >
+            See More Articles
+          </button>
+        )}
       </div>
     </>
   );
