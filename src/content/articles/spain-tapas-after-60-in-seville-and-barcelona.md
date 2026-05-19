@@ -3,7 +3,7 @@ title: "Spain - Tapas After 60 in Seville and Barcelona — A Local's Perspectiv
 category: Food Culture
 slug: spain-tapas-after-60-in-seville-and-barcelona
 date: 2026-05-04
-image: https://images.pexels.com/photos/36975217/pexels-photo-36975217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+image: "https://images.pexels.com/photos/24596510/pexels-photo-24596510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 description: Explore tapas culture in Seville and Barcelona for retirees in Spain, blending community and cuisine after 60.
 featured: false
 ---
