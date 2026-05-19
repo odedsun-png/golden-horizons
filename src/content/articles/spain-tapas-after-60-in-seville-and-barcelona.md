@@ -16,7 +16,7 @@ Walking through the vibrant streets of Seville or the bustling avenues of Barcel
 
 In both Seville and Barcelona, the day often winds down with a leisurely visit to a local tapas bar. This isn't merely about the food; it’s a social ritual. Dinner in Spain typically starts later than in the U.S., often around 9 or 10 p.m. This can be a delightful adjustment for those who enjoy a slower pace and extended evenings. Tapas, which can include dishes like patatas bravas, jamón ibérico, and gambas al ajillo, are shared among friends and family, encouraging conversation and connection.
 
-![photo](https://images.pexels.com/photos/18639886/pexels-photo-18639886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![photo](https://images.pexels.com/photos/6142844/pexels-photo-6142844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 
 The cost of enjoying tapas varies, but a casual evening with a few plates and a glass of wine may often cost around €20 to €30 per person. However, the experience offers more than just sustenance; it provides a window into Spanish life where meals are less about fueling up and more about fostering relationships.
 
