@@ -3,7 +3,7 @@ title: "Mexico - The Real Market Foods of Mexico City — A Local's Perspective"
 category: Street Food
 slug: mexico-the-real-market-foods-of-mexico-city
 date: 2026-05-04
-image: https://images.pexels.com/photos/36975217/pexels-photo-36975217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+image: "https://images.pexels.com/photos/13201061/pexels-photo-13201061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 description: Explore Mexico City's vibrant street food culture, an integral part of daily life, offering insights for retirees considering living abroad.
 featured: false
 ---
