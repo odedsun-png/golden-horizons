@@ -3,7 +3,7 @@ title: "Greece - Village Tavern Life and Olive Oil Cooking in Crete — A Local'
 category: Mediterranean
 slug: greece-village-tavern-life-and-olive-oil-cooking-in-crete
 date: 2026-05-04
-image: image: https://images.pexels.com/photos/34624141/pexels-photo-34624141.jpeg?cs=srgb&dl=pexels-hani-salama-1956859194-34624141.jpg&fm=jpg
+image: https://images.pexels.com/photos/34624141/pexels-photo-34624141.jpeg?cs=srgb&dl=pexels-hani-salama-1956859194-34624141.jpg&fm=jpg
 description: Explore Cretan village dining and olive oil culture—perfect for retirees seeking authentic Mediterranean lifestyle in Crete.
 featured: false
 ---
