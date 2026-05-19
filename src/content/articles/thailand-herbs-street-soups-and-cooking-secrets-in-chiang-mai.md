@@ -3,7 +3,7 @@ title: "Thailand - Herbs, Street Soups, and Cooking Secrets in Chiang Mai — A 
 category: Cooking Techniques
 slug: thailand-herbs-street-soups-and-cooking-secrets-in-chiang-mai
 date: 2026-05-04
-![photo](https://images.pexels.com/photos/31027042/pexels-photo-31027042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+image: "https://images.pexels.com/photos/31027042/pexels-photo-31027042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 description: Discover the herbs and street soups that shape Chiang Mai's local cuisine for retirees considering a move.
 featured: false
 ---
