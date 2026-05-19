@@ -3,7 +3,7 @@ title: "Thailand - Herbs, Street Soups, and Cooking Secrets in Chiang Mai — A 
 category: Cooking Techniques
 slug: thailand-herbs-street-soups-and-cooking-secrets-in-chiang-mai
 date: 2026-05-04
-image: https://images.pexels.com/photos/19282147/pexels-photo-19282147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+![photo](https://images.pexels.com/photos/31027042/pexels-photo-31027042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 description: Discover the herbs and street soups that shape Chiang Mai's local cuisine for retirees considering a move.
 featured: false
 ---
@@ -16,7 +16,7 @@ Chiang Mai, a city renowned for its rich culture and history, offers a culinary 
 
 In Chiang Mai, food is woven seamlessly into the daily rhythm of life. The day often begins with a visit to a local market, where fresh herbs like lemongrass, kaffir lime leaves, and galangal are as common as the morning sun. These herbs are integral to the city's cuisine, infusing dishes with layers of flavor that are both complex and refreshing. Street vendors line the roads, offering bowls of "khao soi," a coconut curry noodle soup that is a staple in the local diet. This dish, with its blend of crispy and soft noodles, is often enjoyed as a leisurely brunch, reflecting the city’s unhurried pace.
 
-![photo](https://images.pexels.com/photos/34267736/pexels-photo-34267736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![photo](https://images.pexels.com/photos/32977251/pexels-photo-32977251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 
 Dining in Chiang Mai is a communal affair. Locals gather at small, family-run eateries where meals are shared and enjoyed together. A simple meal at these eateries may often cost around 40 to 60 baht, making it accessible for most retirees. However, a practical limitation is the language barrier at markets, where vendors may not speak English, requiring some effort and patience to navigate.
 
