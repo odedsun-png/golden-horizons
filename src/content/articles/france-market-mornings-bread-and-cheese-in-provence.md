@@ -16,7 +16,7 @@ The early morning air in Provence is filled with the scent of freshly baked brea
 
 In Provence, food is not just sustenance; it’s a central aspect of social and family life. Markets open early, with locals perusing stalls brimming with vibrant produce, artisanal cheeses, and freshly baked baguettes. The market is a hub of activity where the day begins, and for many retirees, it's a chance to integrate into a community that values quality and tradition over convenience.
 
-![photo](https://images.pexels.com/photos/18639886/pexels-photo-18639886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![photo](https://images.pexels.com/photos/13526267/pexels-photo-13526267.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 
 A typical day might start with a visit to the market, where the cost of basic produce may often fall around a modest sum, depending on the season and the particular town. This routine underscores a lifestyle that prioritizes freshness and local sourcing. However, navigating these markets can present tradeoffs, such as language barriers and the need for cash, as many vendors do not accept credit cards.
 
