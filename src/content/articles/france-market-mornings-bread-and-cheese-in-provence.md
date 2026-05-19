@@ -3,7 +3,7 @@ title: "France - Market Mornings, Bread, and Cheese in Provence — A Local's Pe
 category: Local Markets
 slug: france-market-mornings-bread-and-cheese-in-provence
 date: 2026-05-04
-image: https://images.pexels.com/photos/36975217/pexels-photo-36975217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+image: "https://images.pexels.com/photos/35815220/pexels-photo-35815220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 description: Explore Provencal markets where fresh produce and local culture shape retirement life for Americans seeking new experiences.
 featured: false
 ---
