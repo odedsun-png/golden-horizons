@@ -3,7 +3,7 @@ title: "Tacos and Mole Poblano in Mexico City vs Oaxaca"
 category: Food
 slug: mexico-best-tacos-and-mole-poblano-in-mexico-city-vs-oaxaca
 date: 2026-05-19
-image: 
+image: https://images.pexels.com/photos/27603299/pexels-photo-27603299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 description: "Local food culture shows how meals, prices, portions, and dining habits shape daily life for retirees."
 featured: false
 ---
