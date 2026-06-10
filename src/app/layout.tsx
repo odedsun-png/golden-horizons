@@ -1,12 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, EB_Garamond } from "next/font/google";
-import dynamic from "next/dynamic";
+import NewsletterPopup from "@/components/NewsletterPopupClient";
 import "./globals.css";
-
-const NewsletterPopup = dynamic(
-  () => import("@/components/NewsletterPopup"),
-  { ssr: false }
-);
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
