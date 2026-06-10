@@ -9,7 +9,7 @@ type ArticleCard = {
   image: string;
   description: string;
   date: string;
-};
+};h
 function getSectionLabel(category: string): string {
   return category.split("·")[0].trim() || "Retirement Abroad";
 }
@@ -17,7 +17,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
   const [currentSlide, setCurrentSlide] = useState(0);
   const [pickedArticles, setPickedArticles] = useState<ArticleCard[]>([]);
   const [articleGroupIndex, setArticleGroupIndex] = useState(0);
-  const [articleGroupVisible, setArticleGroupVisible] = useState(true);
+  const [articleGroupVisible, setArticleGroupVisible] = useState(true);h
   const [articleGroups, setArticleGroups] = useState<ArticleCard[][]>([]);
   const slides = [
     {
@@ -85,11 +85,11 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
     <main className="mag-page">
       <div className="site">
         <div className="topbar">
-          <span>Vol. 58, No. 1</span>
+          <span>Vol. 60, No. 1</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
           </span>
-          <span>April 2026</span>
+          <span>June 2026</span>
         </div>
         <div className="masthead">
           <div className="dateline">
@@ -97,7 +97,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
             </span>
-            <span>April 2026 · Issue 58</span>
+            <span>June 2026 · Issue 60</span>
           </div>
           <Link href="/" className="mastname">
             Golden Horizons
@@ -159,7 +159,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             happening — in 26 countries we track every week.
           </h2>
           <div className="byline">
-            By the Editors of Golden Horizons · Cover Story · April 2026
+            By the Editors of Golden Horizons · Cover Story · June 2026
           </div>
           <p className="body-text">
             If your monthly check is $1,800 and you&apos;ve been quietly doing
