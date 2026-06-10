@@ -72,9 +72,9 @@ export default function NewsletterPopup() {
           style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: 'url(/Bahamas.jpg)',
+            backgroundImage: 'url(/Barbados.jpg)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center 40%',
+            backgroundPosition: 'center 55%',
           }}
         />
         {/* Gradient overlay for readability */}
