@@ -251,7 +251,7 @@ export default function NewsletterPopup() {
               (e.currentTarget as HTMLButtonElement).style.color = 'rgba(255,255,255,0.35)';
             }}
           >
-            No thanks
+            No, thank you
           </button>
 
           {/* Bottom rule */}
