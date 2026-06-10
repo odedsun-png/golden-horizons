@@ -9,7 +9,7 @@ type ArticleCard = {
   image: string;
   description: string;
   date: string;
-};h
+};
 function getSectionLabel(category: string): string {
   return category.split("·")[0].trim() || "Retirement Abroad";
 }
@@ -17,7 +17,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
   const [currentSlide, setCurrentSlide] = useState(0);
   const [pickedArticles, setPickedArticles] = useState<ArticleCard[]>([]);
   const [articleGroupIndex, setArticleGroupIndex] = useState(0);
-  const [articleGroupVisible, setArticleGroupVisible] = useState(true);h
+  const [articleGroupVisible, setArticleGroupVisible] = useState(true);
   const [articleGroups, setArticleGroups] = useState<ArticleCard[][]>([]);
   const slides = [
     {
