@@ -195,6 +195,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           <cite>— The Golden Horizons Editors</cite>
         </div>
         <div id="subscribe">
+          <span id="subscribe-box" aria-hidden="true" style={{ display: 'block', height: 0 }} />
           <SubscribeBox variant="inline" />
         </div>
         {/* ===== PLANNING GUIDES HUB ===== */}
