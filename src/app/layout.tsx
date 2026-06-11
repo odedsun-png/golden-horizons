@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, EB_Garamond } from "next/font/google";
+import Script from "next/script";
 import NewsletterPopup from "@/components/NewsletterPopupClient";
 import "./globals.css";
 
@@ -8,7 +9,6 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
   display: "swap",
 });
-
 const garamond = EB_Garamond({
   subsets: ["latin"],
   variable: "--font-garamond",
@@ -25,22 +25,16 @@ export const metadata: Metadata = {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },
   metadataBase: new URL(siteUrl),
-
   title: {
     default: "Golden Horizons — Retirement Abroad Magazine",
     template: "%s | Golden Horizons",
   },
-
   description:
     "Golden Horizons is a premium retirement-abroad magazine helping Americans compare cost of living, healthcare, visas, safety, housing, and lifestyle in the best countries to retire abroad.",
-
   applicationName: "Golden Horizons",
-
   authors: [{ name: "Golden Horizons Editors" }],
-
   creator: "Golden Horizons",
   publisher: "Golden Horizons",
-
   keywords: [
     "retire abroad",
     "retirement abroad",
@@ -53,7 +47,6 @@ export const metadata: Metadata = {
     "retire on Social Security",
     "Golden Horizons",
   ],
-
   robots: {
     index: true,
     follow: true,
@@ -65,7 +58,6 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -75,14 +67,12 @@ export const metadata: Metadata = {
     description:
       "Compare the best places to retire abroad with real cost breakdowns, healthcare insights, visa guidance, safety notes, and lifestyle stories for Americans planning their next chapter.",
   },
-
   twitter: {
     card: "summary_large_image",
     title: "Golden Horizons — Retirement Abroad Magazine",
     description:
       "A premium retirement-abroad magazine for Americans comparing cost of living, healthcare, visas, safety, housing, and lifestyle overseas.",
   },
-
   category: "Retirement Travel",
 };
 
@@ -118,6 +108,36 @@ export default function RootLayout({
             __html: JSON.stringify(structuredData),
           }}
         />
+
+        {/* Meta Pixel */}
+        <Script
+          id="meta-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '1052369247454753');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1052369247454753&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
+
         <NewsletterPopup />
         {children}
       </body>
