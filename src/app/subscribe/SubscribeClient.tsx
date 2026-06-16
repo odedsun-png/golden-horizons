@@ -434,7 +434,7 @@ export default function SubscribeClient() {
                 >
                   {loading
                     ? "Subscribing…"
-                    : "Get the Starter Kit + Daily Story →"}
+                    : "Send Me the Free Starter Kit →"}
                 </button>
 
                 {error && <p className={s.errorMsg}>{error}</p>}
