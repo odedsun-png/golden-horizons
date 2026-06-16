@@ -7,10 +7,19 @@ import s from "./subscribe.module.css";
 const TICKER_TEXT =
   "◆  Today's issue goes out at 7:00 AM EST  ◆  This morning's story: Retire in Portugal on $1,750/month  ◆  Real costs · Real visas · Real life  ◆  Free every morning";
 
+const STARTER_KIT_ITEMS = [
+  "Monthly retirement-abroad budget checklist",
+  "Visa questions to ask before choosing a country",
+  "Healthcare comparison guide",
+  "Housing and rental red flags",
+  "Country shortlist worksheet",
+];
+
 export default function SubscribeClient() {
   const [heroEmail, setHeroEmail] = useState("");
   const [heroLoading, setHeroLoading] = useState(false);
   const [heroSuccess, setHeroSuccess] = useState(false);
+  const [heroError, setHeroError] = useState("");
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -23,17 +32,22 @@ export default function SubscribeClient() {
     e.preventDefault();
     if (!heroEmail || !heroEmail.includes("@")) return;
     setHeroLoading(true);
+    setHeroError("");
     try {
-      await fetch("/api/subscribe", {
+      const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: heroEmail }),
       });
-      setHeroSuccess(true);
-      window.location.href =
-        "https://golden-horizons.org/#subscribe?email=" +
-        encodeURIComponent(heroEmail);
+      if (res.ok) {
+        setHeroSuccess(true);
+      } else {
+        const data = await res.json();
+        setHeroError(data.error || "Something went wrong. Please try again.");
+      }
     } catch {
+      setHeroError("Network error. Please check your connection and try again.");
+    } finally {
       setHeroLoading(false);
     }
   }
@@ -54,16 +68,13 @@ export default function SubscribeClient() {
       });
       if (res.ok) {
         setSuccess(true);
-        window.location.href =
-          "https://golden-horizons.org/#subscribe?email=" +
-          encodeURIComponent(email);
       } else {
         const data = await res.json();
         setError(data.error || "Something went wrong. Please try again.");
-        setLoading(false);
       }
     } catch {
       setError("Network error. Please check your connection and try again.");
+    } finally {
       setLoading(false);
     }
   }
@@ -104,7 +115,7 @@ export default function SubscribeClient() {
 
           <div className={s.subTags}>
             <span className={s.subTag}>
-              Free Daily Newsletter — One real retirement story, every morning
+              Free Starter Kit + Daily Newsletter — one real retirement story, every morning
             </span>
             <span className={s.subTag}>
               No fluff. Real costs, real visas, real life — delivered by 7 AM
@@ -144,41 +155,45 @@ export default function SubscribeClient() {
           <div className={s.heroOverlay} />
           <div className={s.heroContent}>
             <p className={s.heroEyebrow}>
-              Free Daily Newsletter · Golden Horizons
+              Free Starter Kit + Daily Newsletter · Golden Horizons
             </p>
             <h1 className={s.heroH1}>
-              Join readers planning their next chapter.{" "}
-              <em>Start this morning.</em>
+              Get the free Retirement Abroad Starter Kit —{" "}
+              <em>plus one real story every morning.</em>
             </h1>
             <p className={s.heroSub}>
-              One real retirement-abroad story in your inbox by 7 AM — the
-              costs, the visa, the healthcare, and the truth the brochures leave
-              out.
+              Five practical guides to compare countries, costs, visas, and
+              healthcare — plus a real retirement-abroad story in your inbox
+              every morning by 7 AM.
             </p>
 
             {heroSuccess ? (
               <p className={s.heroSuccess}>
-                ✓ You&rsquo;re in — check your inbox at 7 AM tomorrow.
+                ✓ You&rsquo;re in — check your inbox for the Starter Kit and
+                watch for tomorrow&rsquo;s story at 7 AM.
               </p>
             ) : (
-              <form onSubmit={handleHeroSubmit} className={s.heroForm}>
-                <input
-                  type="email"
-                  required
-                  placeholder="Your email address"
-                  value={heroEmail}
-                  onChange={(e) => setHeroEmail(e.target.value)}
-                  className={s.heroInput}
-                  aria-label="Email address"
-                />
-                <button
-                  type="submit"
-                  disabled={heroLoading}
-                  className={s.heroBtn}
-                >
-                  {heroLoading ? "Joining…" : "Join Free →"}
-                </button>
-              </form>
+              <>
+                <form onSubmit={handleHeroSubmit} className={s.heroForm}>
+                  <input
+                    type="email"
+                    required
+                    placeholder="Your email address"
+                    value={heroEmail}
+                    onChange={(e) => setHeroEmail(e.target.value)}
+                    className={s.heroInput}
+                    aria-label="Email address"
+                  />
+                  <button
+                    type="submit"
+                    disabled={heroLoading}
+                    className={s.heroBtn}
+                  >
+                    {heroLoading ? "Sending…" : "Send Me the Free Starter Kit →"}
+                  </button>
+                </form>
+                {heroError && <p className={s.heroErrorMsg}>{heroError}</p>}
+              </>
             )}
 
             <p className={s.heroTrust}>
@@ -241,7 +256,32 @@ export default function SubscribeClient() {
           </p>
         </section>
 
-        {/* 9. TODAY'S ISSUE PREVIEW */}
+        {/* 9. STARTER KIT BLOCK */}
+        <section className={s.starterKitBlock}>
+          <span className={s.starterKitLabel}>Free Retirement Abroad Starter Kit</span>
+          <h2 className={s.starterKitH2}>
+            Five practical guides — sent to new subscribers.
+          </h2>
+          <p className={s.starterKitIntro}>
+            When you subscribe, you&rsquo;ll receive five guides to help you
+            compare countries, plan your budget, and ask the right questions
+            before you move.
+          </p>
+          <ul className={s.kitList}>
+            {STARTER_KIT_ITEMS.map((item) => (
+              <li key={item} className={s.kitItem}>
+                <span className={s.kitDiamond}>◆</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className={s.starterKitNote}>
+            Delivered after you confirm your email — along with your first
+            daily story.
+          </p>
+        </section>
+
+        {/* 10. TODAY'S ISSUE PREVIEW */}
         <section className={s.previewSection}>
           <div className={s.previewGrid}>
             {/* Left column */}
@@ -302,7 +342,7 @@ export default function SubscribeClient() {
           </div>
         </section>
 
-        {/* 10. MID-PAGE URGENCY BAR */}
+        {/* 11. MID-PAGE URGENCY BAR */}
         <div className={s.midUrgency}>
           <strong className={s.midUrgencyStrong}>
             Today&rsquo;s full issue — including the visa breakdown and the
@@ -314,27 +354,27 @@ export default function SubscribeClient() {
           </em>
         </div>
 
-        {/* 11. MAIN SUBSCRIBE FORM */}
+        {/* 12. MAIN SUBSCRIBE FORM */}
         <section className={s.formSection} id="subscribe">
-          <span className={s.sectionLabel}>Free Daily Newsletter</span>
+          <span className={s.sectionLabel}>Free Starter Kit + Daily Newsletter</span>
 
           {success ? (
             <div className={s.successBox}>
               <p className={s.successTitle}>You&rsquo;re in.</p>
               <p className={s.successBody}>
-                Tomorrow&rsquo;s issue will be in your inbox by 7 AM. Welcome
-                to Golden Horizons.
+                Check your inbox for the Starter Kit, and watch for
+                tomorrow&rsquo;s Golden Horizons story by 7 AM.
               </p>
             </div>
           ) : (
             <>
               <h2 className={s.formH2}>
-                Get tomorrow&rsquo;s story in your inbox by 7 AM.
+                Get the Free Starter Kit + tomorrow&rsquo;s story by 7 AM.
               </h2>
               <p className={s.formBody}>
-                One real retirement destination. Real costs. Real visa. Real
-                life. Free every morning — no strings, no upsells, unsubscribe
-                anytime.
+                Five practical retirement-abroad guides delivered after you
+                subscribe — plus one real destination story every morning. No
+                strings, no upsells, unsubscribe anytime.
               </p>
 
               <form onSubmit={handleMainSubmit} noValidate>
@@ -394,7 +434,7 @@ export default function SubscribeClient() {
                 >
                   {loading
                     ? "Subscribing…"
-                    : "Send Me Tomorrow's Story — It's Free →"}
+                    : "Get the Starter Kit + Daily Story →"}
                 </button>
 
                 {error && <p className={s.errorMsg}>{error}</p>}
@@ -409,13 +449,12 @@ export default function SubscribeClient() {
           )}
         </section>
 
-        {/* 12. TESTIMONIALS */}
+        {/* 13. TESTIMONIALS */}
         <section className={s.testimonials}>
           <span className={s.testimonialsLabel}>
             What Readers Say After Their First Week
           </span>
           <div className={s.testimonialsGrid}>
-            {/* Card 1 */}
             <div className={s.testimonialCard}>
               <p className={s.testimonialQuote}>
                 &ldquo;I&rsquo;ve been thinking about retiring abroad for three
@@ -430,7 +469,6 @@ export default function SubscribeClient() {
               </div>
             </div>
 
-            {/* Card 2 */}
             <div className={s.testimonialCard}>
               <p className={s.testimonialQuote}>
                 &ldquo;I thought I needed $2 million to retire comfortably.
@@ -445,7 +483,6 @@ export default function SubscribeClient() {
               </div>
             </div>
 
-            {/* Card 3 */}
             <div className={s.testimonialCard}>
               <p className={s.testimonialQuote}>
                 &ldquo;I read it every morning before I get out of bed.
@@ -462,7 +499,7 @@ export default function SubscribeClient() {
           </div>
         </section>
 
-        {/* 13. FOOTER */}
+        {/* 14. FOOTER */}
         <footer className="mag-footer">
           <div className="footer-name">Golden Horizons</div>
           <p>

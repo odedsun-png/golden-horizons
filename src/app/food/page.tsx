@@ -181,7 +181,7 @@ export default async function FoodPage() {
             Food
           </Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
-          <Link href="/#subscribe">Subscribe Free</Link>
+          <Link href="/subscribe">Subscribe Free</Link>
         </nav>
 
         {/* Single H1 for the page */}
@@ -219,7 +219,7 @@ export default async function FoodPage() {
             Compare costs, healthcare, visas, and lifestyle across top
             retirement countries.
           </p>
-          <Link href="/#subscribe" className="mag-button">
+          <Link href="/subscribe" className="mag-button">
             Get the Free Guide →
           </Link>
         </section>

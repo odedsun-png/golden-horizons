@@ -606,6 +606,84 @@
   line-height: 1.55;
 }
 
+/* ── HERO ERROR ──────────────────────────────────────── */
+.heroErrorMsg {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #f0a0a0;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* ── STARTER KIT BLOCK ───────────────────────────────── */
+.starterKitBlock {
+  background: #1e1408;
+  border-top: 2px solid #c9a84c;
+  border-bottom: 2px solid #c9a84c;
+  padding: 42px 52px;
+}
+
+.starterKitLabel {
+  font-size: 10px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  font-family: 'EB Garamond', serif;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.starterKitH2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #faf5e9;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.starterKitIntro {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #d4c4a0;
+  margin-bottom: 24px;
+  max-width: 680px;
+}
+
+.kitList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 32px;
+  margin-bottom: 22px;
+}
+
+.kitItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  color: #f2dfb0;
+  line-height: 1.5;
+}
+
+.kitDiamond {
+  color: #c9a84c;
+  font-size: 10px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.starterKitNote {
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(201, 168, 76, 0.7);
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 768px) {
   .urgencyBar { padding: 10px 16px; font-size: 15px; }
@@ -638,4 +716,8 @@
 
   .testimonials { padding: 32px 16px; }
   .testimonialsGrid { grid-template-columns: 1fr; }
+
+  .starterKitBlock { padding: 28px 20px; }
+  .starterKitH2 { font-size: 22px; }
+  .kitList { grid-template-columns: 1fr; gap: 10px; }
 }

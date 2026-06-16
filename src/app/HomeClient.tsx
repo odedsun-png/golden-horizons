@@ -121,7 +121,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           <Link href="/destinations">Destinations</Link>
           <Link href="/food">Food</Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
-          <Link href="/#subscribe">Subscribe Free</Link>
+          <Link href="/subscribe">Subscribe Free</Link>
         </nav>
         <div className="hero-wrap">
           {slides.map((slide, i) => (
@@ -179,7 +179,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             Twenty-six countries researched. Two hundred and fifty-three reports
             indexed. One sent to you tomorrow morning, free.
           </p>
-          <Link href="/#subscribe" className="read-more">
+          <Link href="/subscribe" className="read-more">
             Get tomorrow&apos;s destination report →
           </Link>
           {" · "}

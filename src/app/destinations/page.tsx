@@ -134,7 +134,7 @@ export default function DestinationsPage() {
           </Link>
           <Link href="/food">Food</Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
-          <Link href="/#subscribe">Subscribe Free</Link>
+          <Link href="/subscribe">Subscribe Free</Link>
         </nav>
         {/* BRIGHT EDITORIAL HERO - NO TEXT BOX */}
         <section
@@ -492,7 +492,7 @@ export default function DestinationsPage() {
             people who made the move. No fluff. Just the truth about what&rsquo;s
             possible.
           </p>
-          <Link href="/#subscribe" className="sub-btn">
+          <Link href="/subscribe" className="sub-btn">
             Start My Free Subscription {"→"}
           </Link>
           <div className="sub-trust">

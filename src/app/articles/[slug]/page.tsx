@@ -375,7 +375,7 @@ export default async function ArticleDetailPage({
           <Link href="/destinations">Destinations</Link>
           <Link href="/food">Food</Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
-          <Link href="/#subscribe">Subscribe Free</Link>
+          <Link href="/subscribe">Subscribe Free</Link>
         </nav>
 
         <div className="breadcrumb">
@@ -465,7 +465,7 @@ export default async function ArticleDetailPage({
               <div className="mag-sub-body">
                 Real costs. Real places. One story, every morning.
               </div>
-              <Link href="/#subscribe" className="mag-btn">
+              <Link href="/subscribe" className="mag-btn">
                 Start My Free Subscription →
               </Link>
               <div className="mag-trust">◆ Join 5,000+ readers ◆</div>

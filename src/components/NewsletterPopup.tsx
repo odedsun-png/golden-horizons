@@ -31,7 +31,7 @@ export default function NewsletterPopup() {
         }, 650);
       }
     } else {
-      window.location.href = '/#subscribe-box';
+      window.location.href = '/subscribe';
     }
   }
 

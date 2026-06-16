@@ -190,7 +190,7 @@ export default function AboutPage() {
                 One idea at a time.
               </p>
               <Link
-                href="/#subscribe"
+                href="/subscribe"
                 className="inline-block px-8 py-4 bg-amber-400 text-black font-bold rounded hover:bg-amber-300 transition-colors"
                 style={{ fontSize: "15px" }}
               >

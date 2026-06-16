@@ -140,7 +140,7 @@ export default function BudgetRetirementPage() {
           <Link href="/destinations">Destinations</Link>
           <Link href="/food">Food</Link>
           <Link href="/tax-guide">TAX GUIDE</Link>
-          <Link href="/#subscribe">Subscribe Free</Link>
+          <Link href="/subscribe">Subscribe Free</Link>
         </nav>
 
         <div className="breadcrumb">
@@ -373,7 +373,7 @@ export default function BudgetRetirementPage() {
               <p style={{ fontFamily: "EB Garamond, serif", fontSize: 16, color: "#f5edd8", lineHeight: 1.6, marginBottom: 14 }}>
                 Golden Horizons delivers calm, practical retirement-abroad guidance to your inbox each morning. No noise. No pressure.
               </p>
-              <Link href="/#subscribe" className="mag-btn" style={{ display: "inline-block" }}>
+              <Link href="/subscribe" className="mag-btn" style={{ display: "inline-block" }}>
                 Start My Free Subscription →
               </Link>
             </div>
@@ -443,7 +443,7 @@ export default function BudgetRetirementPage() {
               <div className="mag-sub-eyebrow">Free Subscription</div>
               <div className="mag-sub-headline">Start reading Golden Horizons every morning</div>
               <div className="mag-sub-body">Real costs. Real places. One story, every morning.</div>
-              <Link href="/#subscribe" className="mag-btn">Start My Free Subscription →</Link>
+              <Link href="/subscribe" className="mag-btn">Start My Free Subscription →</Link>
               <div className="mag-trust">◆ Join 5,000+ readers ◆</div>
             </div>
 
