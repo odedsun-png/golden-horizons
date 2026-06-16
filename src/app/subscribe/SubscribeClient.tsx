@@ -5,7 +5,7 @@ import Link from "next/link";
 import s from "./subscribe.module.css";
 
 const TICKER_TEXT =
-  "◆  Today's issue goes out at 7:00 AM EST  ◆  This morning's story: Retire in Portugal on $1,750/month  ◆  Real costs · Real visas · Real life  ◆  Free every morning";
+  "◆  Today's issue goes out around 7:30 AM EST  ◆  This morning's story: Retire in Portugal on $1,750/month  ◆  Real costs · Real visas · Real life  ◆  Free every morning";
 
 const STARTER_KIT_ITEMS = [
   "Monthly retirement-abroad budget checklist",
@@ -16,6 +16,8 @@ const STARTER_KIT_ITEMS = [
 ];
 
 export default function SubscribeClient() {
+  const [heroFirstName, setHeroFirstName] = useState("");
+  const [heroLastName, setHeroLastName] = useState("");
   const [heroEmail, setHeroEmail] = useState("");
   const [heroLoading, setHeroLoading] = useState(false);
   const [heroSuccess, setHeroSuccess] = useState(false);
@@ -37,7 +39,7 @@ export default function SubscribeClient() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: heroEmail }),
+        body: JSON.stringify({ email: heroEmail, firstName: heroFirstName, lastName: heroLastName }),
       });
       if (res.ok) {
         setHeroSuccess(true);
@@ -118,7 +120,7 @@ export default function SubscribeClient() {
               Free Starter Kit + Daily Newsletter — one real retirement story, every morning
             </span>
             <span className={s.subTag}>
-              No fluff. Real costs, real visas, real life — delivered by 7 AM
+              No fluff. Real costs, real visas, real life — delivered by 7:30 AM EST
             </span>
           </div>
         </div>
@@ -139,7 +141,7 @@ export default function SubscribeClient() {
         <div className={s.urgencyBar}>
           <div className={s.pulseDot} />
           <span>
-            Today&rsquo;s issue goes out at 7:00 AM EST — subscribe now and it
+            Today&rsquo;s issue goes out around 7:30 AM EST — subscribe now and it
             will be waiting when you wake up
           </span>
         </div>
@@ -164,24 +166,43 @@ export default function SubscribeClient() {
             <p className={s.heroSub}>
               Five practical guides to compare countries, costs, visas, and
               healthcare — plus a real retirement-abroad story in your inbox
-              every morning by 7 AM.
+              every morning by 7:30 AM EST.
             </p>
 
             {heroSuccess ? (
               <p className={s.heroSuccess}>
                 ✓ You&rsquo;re in — check your inbox for the Starter Kit and
-                watch for tomorrow&rsquo;s story at 7 AM.
+                watch for tomorrow&rsquo;s story by 7:30 AM EST.
               </p>
             ) : (
               <>
                 <form onSubmit={handleHeroSubmit} className={s.heroForm}>
                   <input
+                    type="text"
+                    placeholder="First name"
+                    value={heroFirstName}
+                    onChange={(e) => setHeroFirstName(e.target.value)}
+                    className={s.heroInputFirst}
+                    autoComplete="given-name"
+                    aria-label="First name"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last name"
+                    value={heroLastName}
+                    onChange={(e) => setHeroLastName(e.target.value)}
+                    className={s.heroInputLast}
+                    autoComplete="family-name"
+                    aria-label="Last name"
+                  />
+                  <input
                     type="email"
                     required
-                    placeholder="Your email address"
+                    placeholder="Email address"
                     value={heroEmail}
                     onChange={(e) => setHeroEmail(e.target.value)}
-                    className={s.heroInput}
+                    className={s.heroInputEmail}
+                    autoComplete="email"
                     aria-label="Email address"
                   />
                   <button
@@ -215,7 +236,7 @@ export default function SubscribeClient() {
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
-            <span className={s.statNumber}>7 AM</span>
+            <span className={s.statNumber}>7:30 AM</span>
             <span className={s.statLabel}>In Your Inbox Daily</span>
           </div>
           <div className={s.statDivider} />
@@ -251,7 +272,7 @@ export default function SubscribeClient() {
             actually possible for you.
           </p>
           <p className={s.neighborsBold}>
-            Today&rsquo;s issue goes out at 7:00 AM. It takes 5 minutes to
+            Today&rsquo;s issue goes out around 7:30 AM EST. It takes 5 minutes to
             read. It is free. And it might change what you do next.
           </p>
         </section>
@@ -300,7 +321,7 @@ export default function SubscribeClient() {
               <div className={s.lockedBox}>
                 Subscribers only. Today&rsquo;s full issue — including the visa
                 breakdown, the neighborhood comparison, and the one thing that
-                surprised our researcher — goes out at 7:00 AM EST. Subscribe
+                surprised our researcher — goes out around 7:30 AM EST. Subscribe
                 free below to read it.
               </div>
             </div>
@@ -346,7 +367,7 @@ export default function SubscribeClient() {
         <div className={s.midUrgency}>
           <strong className={s.midUrgencyStrong}>
             Today&rsquo;s full issue — including the visa breakdown and the
-            neighborhood guide — goes out at 7:00 AM EST.
+            neighborhood guide — goes out around 7:30 AM EST.
           </strong>
           <em className={s.midUrgencyNote}>
             Subscribe now and it will be in your inbox when you wake up tomorrow
@@ -363,13 +384,13 @@ export default function SubscribeClient() {
               <p className={s.successTitle}>You&rsquo;re in.</p>
               <p className={s.successBody}>
                 Check your inbox for the Starter Kit, and watch for
-                tomorrow&rsquo;s Golden Horizons story by 7 AM.
+                tomorrow&rsquo;s Golden Horizons story by 7:30 AM EST.
               </p>
             </div>
           ) : (
             <>
               <h2 className={s.formH2}>
-                Get the Free Starter Kit + tomorrow&rsquo;s story by 7 AM.
+                Get the Free Starter Kit + tomorrow&rsquo;s story by 7:30 AM EST.
               </h2>
               <p className={s.formBody}>
                 Five practical retirement-abroad guides delivered after you

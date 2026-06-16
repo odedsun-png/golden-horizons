@@ -150,28 +150,43 @@
 
 .heroForm {
   display: flex;
-  max-width: 540px;
-  gap: 0;
+  max-width: 940px;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 
-.heroInput {
-  flex: 1;
-  min-width: 260px;
+/* shared base for all three hero inputs */
+.heroInputFirst,
+.heroInputLast,
+.heroInputEmail {
   background: #fffaf0;
-  border: 2px solid #c9a84c;
-  border-right: none;
-  padding: 14px 16px;
+  border: 1px solid #c9a84c;
+  padding: 0 16px;
   height: 52px;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'EB Garamond', serif;
   color: #1e1408;
   outline: none;
+  transition: border-color 0.15s;
 }
 
-.heroInput::placeholder {
+.heroInputFirst:focus,
+.heroInputLast:focus,
+.heroInputEmail:focus {
+  border-color: #8b6914;
+}
+
+.heroInputFirst::placeholder,
+.heroInputLast::placeholder,
+.heroInputEmail::placeholder {
   color: #6f6250;
   opacity: 1;
 }
+
+.heroInputFirst  { width: 170px; flex-shrink: 0; }
+.heroInputLast   { width: 170px; flex-shrink: 0; }
+.heroInputEmail  { flex: 1; min-width: 260px; }
 
 .heroBtn {
   background: #c9a84c;
@@ -713,12 +728,13 @@
   .heroContent { left: 16px; right: 16px; bottom: 22px; }
   .heroH1 { font-size: 28px; letter-spacing: -0.5px; margin-bottom: 10px; }
   .heroSub { font-size: 16px; margin-bottom: 16px; }
-  .heroForm { flex-direction: column; max-width: 100%; }
-  .heroInput {
-    min-width: 0;
+  .heroForm { flex-direction: column; flex-wrap: wrap; max-width: 100%; gap: 8px; }
+  .heroInputFirst,
+  .heroInputLast,
+  .heroInputEmail {
     width: 100%;
-    border-right: 2px solid #c9a84c;
-    height: 46px;
+    flex: none;
+    height: 48px;
   }
   .heroBtn { width: 100%; padding: 14px; height: auto; }
 
