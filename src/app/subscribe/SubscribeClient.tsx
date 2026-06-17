@@ -5,10 +5,9 @@ import Link from "next/link";
 import s from "./subscribe.module.css";
 
 const TICKER_TEXT =
-  "◆  Today's issue goes out around 7:30 AM EST  ◆  This morning's story: Retire in Portugal on $1,750/month  ◆  Real costs · Real visas · Real life  ◆  Free every morning";
+  "◆  Today's issue goes out at 7:30 AM EST  ◆  This morning's story: Retire in Portugal on $1,750/month  ◆  Real costs · Real visas · Real life  ◆  Free every morning";
 
 export default function SubscribeClient() {
-  const [heroFirstName, setHeroFirstName] = useState("");
   const [heroEmail, setHeroEmail] = useState("");
   const [heroLoading, setHeroLoading] = useState(false);
   const [heroSuccess, setHeroSuccess] = useState(false);
@@ -23,10 +22,7 @@ export default function SubscribeClient() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: heroEmail,
-          firstName: heroFirstName,
-        }),
+        body: JSON.stringify({ email: heroEmail }),
       });
       if (res.ok) {
         setHeroSuccess(true);
@@ -75,14 +71,6 @@ export default function SubscribeClient() {
             Golden Horizons
           </Link>
 
-          <div className={s.subTags}>
-            <span className={s.subTag}>
-              Free Starter Kit + Daily Newsletter — three real retirement-abroad stories, every morning
-            </span>
-            <span className={s.subTag}>
-              No fluff. Real costs, real visas, real life — delivered by 7:30 AM EST
-            </span>
-          </div>
         </div>
 
         {/* 4. NAVIGATION */}
@@ -97,16 +85,7 @@ export default function SubscribeClient() {
           </Link>
         </nav>
 
-        {/* 5. URGENCY BAR */}
-        <div className={s.urgencyBar}>
-          <div className={s.pulseDot} />
-          <span>
-            Today&rsquo;s issue goes out around 7:30 AM EST — subscribe now and it
-            will be waiting when you wake up
-          </span>
-        </div>
-
-        {/* 6. HERO */}
+        {/* 5. HERO */}
         <section className={s.hero}>
           <img
             src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1400"
@@ -120,9 +99,12 @@ export default function SubscribeClient() {
               Could You Retire Abroad on Less Than You Think?
             </h1>
             <p className={s.heroSub}>
-              Get the free Starter Kit: five practical guides covering countries,
-              costs, visas, healthcare, and taxes — plus three real
-              retirement-abroad stories in your inbox every morning by 7:30 AM EST.
+              The free Starter Kit covers the countries, costs, visas, and
+              healthcare options most Americans never consider.
+            </p>
+            <p className={s.heroSub}>
+              Plus three real retirement-abroad stories in your inbox every
+              morning by 7:30 AM EST.
             </p>
 
             {heroSuccess ? (
@@ -133,15 +115,6 @@ export default function SubscribeClient() {
             ) : (
               <>
                 <form onSubmit={handleHeroSubmit} className={s.heroForm}>
-                  <input
-                    type="text"
-                    placeholder="First name (optional)"
-                    value={heroFirstName}
-                    onChange={(e) => setHeroFirstName(e.target.value)}
-                    className={s.heroInputFirst}
-                    autoComplete="given-name"
-                    aria-label="First name"
-                  />
                   <input
                     type="email"
                     required
@@ -157,7 +130,7 @@ export default function SubscribeClient() {
                     disabled={heroLoading}
                     className={s.heroBtn}
                   >
-                    {heroLoading ? "Sending…" : "Send My Free Starter Kit →"}
+                    {heroLoading ? "Sending…" : "Get My Free Kit + Daily Stories →"}
                   </button>
                 </form>
                 {heroError && <p className={s.heroErrorMsg}>{heroError}</p>}
@@ -219,7 +192,7 @@ export default function SubscribeClient() {
             actually possible for you.
           </p>
           <p className={s.neighborsBold}>
-            Today&rsquo;s issue goes out around 7:30 AM EST. It takes 5 minutes to
+            Today&rsquo;s issue goes out at 7:30 AM EST. It takes 5 minutes to
             read. It is free. And it might change what you do next.
           </p>
         </section>
