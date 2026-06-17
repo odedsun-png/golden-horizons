@@ -12,7 +12,6 @@ export default function SubscribeBox({
 }: SubscribeBoxProps) {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
   const [status, setStatus] = useState<
     "idle" | "loading" | "success" | "error"
   >("idle");
@@ -41,7 +40,6 @@ export default function SubscribeBox({
         body: JSON.stringify({
           email,
           firstName: firstName || "",
-          lastName: lastName || "",
         }),
       });
 
@@ -52,7 +50,6 @@ export default function SubscribeBox({
         setMessage("Welcome! Check your inbox to confirm.");
         setEmail("");
         setFirstName("");
-        setLastName("");
         setShowThankYou(true);
       } else {
         setStatus("error");
@@ -134,7 +131,7 @@ export default function SubscribeBox({
                 className={
                   isSidebar
                     ? "space-y-2.5"
-                    : "grid grid-cols-1 gap-3 md:grid-cols-3"
+                    : "grid grid-cols-1 gap-3 md:grid-cols-2"
                 }
               >
                 <label htmlFor="sb-first-name" className="sr-only">First name</label>
@@ -146,24 +143,6 @@ export default function SubscribeBox({
                   placeholder="First Name (optional)"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  className={[
-                    "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
-                    isSidebar ? "px-3 py-2 text-sm" : "px-4 py-2.5 text-sm",
-                  ].join(" ")}
-                  style={{
-                    fontFamily: "var(--font-garamond), Georgia, serif",
-                  }}
-                />
-
-                <label htmlFor="sb-last-name" className="sr-only">Last name</label>
-                <input
-                  id="sb-last-name"
-                  name="lastName"
-                  type="text"
-                  autoComplete="family-name"
-                  placeholder="Last Name (optional)"
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
                   className={[
                     "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
                     isSidebar ? "px-3 py-2 text-sm" : "px-4 py-2.5 text-sm",

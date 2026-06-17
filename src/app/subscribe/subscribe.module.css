@@ -147,7 +147,6 @@
 }
 
 .heroInputFirst,
-.heroInputLast,
 .heroInputEmail {
   background: #fffaf0;
   border: 1px solid #c9a84c;
@@ -161,21 +160,18 @@
 }
 
 .heroInputFirst:focus,
-.heroInputLast:focus,
 .heroInputEmail:focus {
   border-color: #8b6914;
 }
 
 .heroInputFirst::placeholder,
-.heroInputLast::placeholder,
 .heroInputEmail::placeholder {
   color: #6f6250;
   opacity: 1;
 }
 
-.heroInputFirst  { width: 170px; flex-shrink: 0; }
-.heroInputLast   { width: 170px; flex-shrink: 0; }
-.heroInputEmail  { flex: 1; min-width: 260px; }
+.heroInputFirst  { width: 210px; flex-shrink: 0; }
+.heroInputEmail  { flex: 1; min-width: 300px; }
 
 .heroBtn {
   background: #c9a84c;
@@ -396,7 +392,6 @@
   .heroSub { font-size: 16px; margin-bottom: 16px; }
   .heroForm { flex-direction: column; flex-wrap: wrap; max-width: 100%; gap: 8px; }
   .heroInputFirst,
-  .heroInputLast,
   .heroInputEmail {
     width: 100%;
     flex: none;

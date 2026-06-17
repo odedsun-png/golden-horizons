@@ -9,7 +9,6 @@ const TICKER_TEXT =
 
 export default function SubscribeClient() {
   const [heroFirstName, setHeroFirstName] = useState("");
-  const [heroLastName, setHeroLastName] = useState("");
   const [heroEmail, setHeroEmail] = useState("");
   const [heroLoading, setHeroLoading] = useState(false);
   const [heroSuccess, setHeroSuccess] = useState(false);
@@ -27,7 +26,6 @@ export default function SubscribeClient() {
         body: JSON.stringify({
           email: heroEmail,
           firstName: heroFirstName,
-          lastName: heroLastName,
         }),
       });
       if (res.ok) {
@@ -138,21 +136,12 @@ export default function SubscribeClient() {
                 <form onSubmit={handleHeroSubmit} className={s.heroForm}>
                   <input
                     type="text"
-                    placeholder="First name"
+                    placeholder="First name (optional)"
                     value={heroFirstName}
                     onChange={(e) => setHeroFirstName(e.target.value)}
                     className={s.heroInputFirst}
                     autoComplete="given-name"
                     aria-label="First name"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Last name"
-                    value={heroLastName}
-                    onChange={(e) => setHeroLastName(e.target.value)}
-                    className={s.heroInputLast}
-                    autoComplete="family-name"
-                    aria-label="Last name"
                   />
                   <input
                     type="email"
@@ -169,7 +158,7 @@ export default function SubscribeClient() {
                     disabled={heroLoading}
                     className={s.heroBtn}
                   >
-                    {heroLoading ? "Sending…" : "Send Me the Free Starter Kit →"}
+                    {heroLoading ? "Sending…" : "Show Me Where Retirement Goes Further →"}
                   </button>
                 </form>
                 {heroError && <p className={s.heroErrorMsg}>{heroError}</p>}
@@ -186,27 +175,27 @@ export default function SubscribeClient() {
         <div className={s.statsStrip} aria-label="Newsletter facts">
           <div className={s.statItem}>
             <span className={s.statNumber}>26</span>
-            <span className={s.statLabel}>Countries Covered</span>
+            <span className={s.statLabel}>Destinations Researched For You</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
             <span className={s.statNumber}>5 min</span>
-            <span className={s.statLabel}>To Read Each Issue</span>
+            <span className={s.statLabel}>All You Need Each Morning</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
             <span className={s.statNumber}>7:30 AM</span>
-            <span className={s.statLabel}>In Your Inbox Daily</span>
+            <span className={s.statLabel}>Waiting When You Wake Up</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
             <span className={s.statNumber}>3</span>
-            <span className={s.statLabel}>Real Stories Per Issue</span>
+            <span className={s.statLabel}>Real Options Every Morning</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
             <span className={s.statNumber}>$0</span>
-            <span className={s.statLabel}>Forever Free</span>
+            <span className={s.statLabel}>No Card. No Catch.</span>
           </div>
         </div>
 
