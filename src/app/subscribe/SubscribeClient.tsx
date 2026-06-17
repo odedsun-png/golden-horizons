@@ -117,13 +117,12 @@ export default function SubscribeClient() {
           <div className={s.heroOverlay} />
           <div className={s.heroContent}>
             <h1 className={s.heroH1}>
-              Get the free Retirement Abroad Starter Kit —{" "}
-              <em>plus three real retirement-abroad stories every morning.</em>
+              Could You Retire Abroad on Less Than You Think?
             </h1>
             <p className={s.heroSub}>
-              Five practical guides to compare countries, costs, visas, and
-              healthcare — plus three real retirement-abroad stories in your
-              inbox every morning by 7:30 AM EST.
+              Get the free Starter Kit: five practical guides covering countries,
+              costs, visas, healthcare, and taxes — plus three real
+              retirement-abroad stories in your inbox every morning by 7:30 AM EST.
             </p>
 
             {heroSuccess ? (
@@ -158,7 +157,7 @@ export default function SubscribeClient() {
                     disabled={heroLoading}
                     className={s.heroBtn}
                   >
-                    {heroLoading ? "Sending…" : "Show Me Where Retirement Goes Further →"}
+                    {heroLoading ? "Sending…" : "Send My Free Starter Kit →"}
                   </button>
                 </form>
                 {heroError && <p className={s.heroErrorMsg}>{heroError}</p>}
