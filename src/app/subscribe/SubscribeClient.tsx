@@ -130,7 +130,7 @@ export default function SubscribeClient() {
                     disabled={heroLoading}
                     className={s.heroBtn}
                   >
-                    {heroLoading ? "Sending…" : "Get My Free Kit + Daily Stories →"}
+                    {heroLoading ? "Sending…" : "Get My Free Kit + Stories →"}
                   </button>
                 </form>
                 {heroError && <p className={s.heroErrorMsg}>{heroError}</p>}
@@ -147,12 +147,12 @@ export default function SubscribeClient() {
         <div className={s.statsStrip} aria-label="Newsletter facts">
           <div className={s.statItem}>
             <span className={s.statNumber}>26</span>
-            <span className={s.statLabel}>Destinations Researched For You</span>
+            <span className={s.statLabel}>Destinations Researched</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
             <span className={s.statNumber}>5 min</span>
-            <span className={s.statLabel}>All You Need Each Morning</span>
+            <span className={s.statLabel}>Morning Read</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
@@ -162,7 +162,7 @@ export default function SubscribeClient() {
           <div className={s.statDivider} />
           <div className={s.statItem}>
             <span className={s.statNumber}>3</span>
-            <span className={s.statLabel}>Real Options Every Morning</span>
+            <span className={s.statLabel}>Real Stories Daily</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
@@ -174,7 +174,7 @@ export default function SubscribeClient() {
         {/* 8. WHAT YOUR NEIGHBORS ALREADY KNOW */}
         <section className={s.neighborsBlock}>
           <span className={s.sectionLabel}>
-            What Your Neighbors Already Know
+            What Readers Are Discovering Before Breakfast
           </span>
           <h2 className={s.neighborsH2}>
             Every morning, somewhere, someone is reading about a life you{" "}
