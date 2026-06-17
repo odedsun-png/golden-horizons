@@ -144,7 +144,7 @@
   line-height: 1.55;
   color: rgba(250, 245, 233, 0.92);
   max-width: 600px;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
 }
 
@@ -214,9 +214,9 @@
   margin-top: 12px;
   font-size: 13px;
   font-style: italic;
-  color: rgba(242, 223, 176, 0.75);
+  color: rgba(250, 245, 233, 0.88);
   font-family: 'EB Garamond', serif;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 1px 4px rgba(30, 20, 8, 0.35);
 }
 
 .heroSuccess {
