@@ -171,7 +171,29 @@ export default function SubscribeClient() {
           </div>
         </div>
 
-        {/* 8. WHAT READERS ARE DISCOVERING */}
+        {/* 8. VIDEO — SUBSCRIBE TEASER */}
+        <section className={s.videoSection}>
+          <span className={s.videoLabel}>Watch Before You Subscribe</span>
+          <h2 className={s.videoH2}>See exactly what lands in your inbox</h2>
+          <div className={s.videoWrap}>
+            <video
+              controls
+              preload="metadata"
+              className={s.videoEl}
+              aria-label="Golden Horizons subscribe preview video"
+            >
+              <source src="/videos/sub-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className={s.videoCta}>
+            <a href="#subscribe" className={s.videoCtaBtn}>
+              Get My Free Kit + Stories →
+            </a>
+          </div>
+        </section>
+
+        {/* 9. WHAT READERS ARE DISCOVERING */}
         <section className={s.neighborsBlock}>
           <span className={s.sectionLabel}>
             What Readers Are Discovering Before Breakfast
