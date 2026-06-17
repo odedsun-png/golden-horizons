@@ -194,6 +194,30 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           </p>
           <cite>— The Golden Horizons Editors</cite>
         </div>
+        {/* ===== INTRO VIDEO ===== */}
+        <div style={{ background: "#f5ede0", borderTop: "2px solid #1e1408", borderBottom: "2px solid #1e1408", padding: "52px 52px 44px", textAlign: "center" }}>
+          <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", color: "#8b6914", fontFamily: "var(--font-garamond), Georgia, serif", marginBottom: 14 }}>
+            Watch: Why I Built Golden Horizons
+          </p>
+          <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: 34, fontWeight: 700, color: "#1e1408", lineHeight: 1.15, marginBottom: 10, letterSpacing: "-0.5px" }}>
+            See what you&rsquo;ll get in under a minute
+          </h2>
+          <p style={{ fontFamily: "var(--font-garamond), Georgia, serif", fontSize: 19, lineHeight: 1.6, color: "#4a3f2f", maxWidth: 620, margin: "0 auto 28px" }}>
+            Henry Brooks explains the free Starter Kit, the daily stories, and how Golden Horizons helps you compare retirement options abroad.
+          </p>
+          <div style={{ maxWidth: 780, margin: "0 auto", border: "2px solid #1e1408", boxShadow: "0 8px 32px rgba(30,20,8,0.18)", background: "#000", aspectRatio: "16/9", overflow: "hidden" }}>
+            <video controls preload="metadata" style={{ width: "100%", height: "100%", display: "block", objectFit: "contain" }} aria-label="Golden Horizons intro video">
+              <source src="/videos/gh-first-page-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div style={{ marginTop: 28 }}>
+            <a href="#subscribe" style={{ display: "inline-block", background: "#c9a84c", color: "#1e1408", fontFamily: "var(--font-playfair), Georgia, serif", fontSize: 15, fontWeight: 800, letterSpacing: "0.5px", padding: "14px 28px", border: "2px solid #c9a84c", textDecoration: "none", whiteSpace: "nowrap" }}>
+              Get My Free Kit + Stories →
+            </a>
+          </div>
+        </div>
+
         <div id="subscribe">
           <span id="subscribe-box" aria-hidden="true" style={{ display: 'block', height: 0 }} />
           <SubscribeBox variant="inline" />

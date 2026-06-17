@@ -171,33 +171,7 @@ export default function SubscribeClient() {
           </div>
         </div>
 
-        {/* 8. VIDEO SECTION */}
-        <section className={s.videoSection}>
-          <span className={s.videoLabel}>Watch: Why I Built Golden Horizons</span>
-          <h2 className={s.videoH2}>See what you&rsquo;ll get in under a minute</h2>
-          <p className={s.videoSub}>
-            Henry Brooks explains the free Starter Kit, the daily stories, and how
-            Golden Horizons helps you compare retirement options abroad.
-          </p>
-          <div className={s.videoWrap}>
-            <video
-              controls
-              preload="metadata"
-              className={s.videoEl}
-              aria-label="Golden Horizons intro video"
-            >
-              <source src="/videos/gh-first-page-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className={s.videoCta}>
-            <a href="#subscribe" className={s.videoCtaBtn}>
-              Get My Free Kit + Stories →
-            </a>
-          </div>
-        </section>
-
-        {/* 9. WHAT READERS ARE DISCOVERING */}
+        {/* 8. WHAT READERS ARE DISCOVERING */}
         <section className={s.neighborsBlock}>
           <span className={s.sectionLabel}>
             What Readers Are Discovering Before Breakfast
