@@ -48,29 +48,11 @@ export default function SubscribeClient() {
       </div>
 
       <div className="site">
-        {/* 2. TOP BAR */}
-        <div className="topbar">
-          <span>Vol. 60, No. 1</span>
-          <span className="hide-mob">
-            golden-horizons.org · The Retirement Abroad Magazine
-          </span>
-          <span>June 2026</span>
-        </div>
-
-        {/* 3. MASTHEAD */}
+        {/* 2. MASTHEAD */}
         <div className="masthead">
-          <div className="dateline">
-            <span>The Retirement Abroad Magazine</span>
-            <span className="hide-mob">
-              For Americans Who Are Ready for What&rsquo;s Next
-            </span>
-            <span>June 2026 · Issue 60</span>
-          </div>
-
           <Link href="/" className="mastname">
             Golden Horizons
           </Link>
-
         </div>
 
         {/* 4. NAVIGATION */}
