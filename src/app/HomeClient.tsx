@@ -206,7 +206,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             Henry Brooks explains the free Starter Kit, the daily stories, and how Golden Horizons helps you compare retirement options abroad.
           </p>
           <div style={{ maxWidth: 780, margin: "0 auto", border: "2px solid #1e1408", boxShadow: "0 8px 32px rgba(30,20,8,0.18)", background: "#000", aspectRatio: "16/9", overflow: "hidden" }}>
-            <video controls preload="metadata" style={{ width: "100%", height: "100%", display: "block", objectFit: "contain" }} aria-label="Golden Horizons intro video">
+            <video controls preload="metadata" poster="/images/cover-video-thumbnail.jpg" style={{ width: "100%", height: "100%", display: "block", objectFit: "contain" }} aria-label="Golden Horizons intro video">
               <source src="/videos/cover-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
