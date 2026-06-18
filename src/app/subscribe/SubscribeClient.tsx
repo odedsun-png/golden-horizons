@@ -161,6 +161,7 @@ export default function SubscribeClient() {
             <video
               controls
               preload="metadata"
+              poster="/images/sub-video-thumbnail.jpg"
               className={s.videoEl}
               aria-label="Golden Horizons subscribe preview video"
             >
