@@ -1,9 +1,11 @@
 ---
 title: "Thailand - Best Pad Thai and Tom Yum Goong in Bangkok vs Chiang Mai"
+category: food
+slug: thailand-best-pad-thai-and-tom-yum-goong-in-bangkok-vs-chiang-mai
 date: 2026-06-19
 country: Thailand
-topic: Thailand - Best Pad Thai and Tom Yum Goong in Bangkok vs Chiang Mai
-hero_image: https://images.pexels.com/photos/12481161/pexels-photo-12481161.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+description: A practical food travel guide covering Pad Thai and Tom Yum Goong, with prices, portions, and where to eat in Bangkok vs Chiang Mai.
+image: https://images.pexels.com/photos/12481161/pexels-photo-12481161.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 ---
 
 ## Quick Taste
