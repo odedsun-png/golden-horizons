@@ -81,7 +81,7 @@ export default function SubscribeBox({
           <div
             className={[
               "bg-[#faf5e9]",
-              isSidebar ? "p-5" : "px-5 py-6 md:px-7 md:py-7",
+              isSidebar ? "p-5" : "px-5 py-8 md:px-7 md:py-7",
             ].join(" ")}
           >
             <div className="mx-auto mb-3 h-[2px] w-14 bg-[#a68d5c]" />
@@ -124,14 +124,14 @@ export default function SubscribeBox({
 
             <form
               onSubmit={handleSubmit}
-              className={isSidebar ? "space-y-2.5" : "space-y-3"}
+              className={isSidebar ? "space-y-2.5" : "space-y-4 md:space-y-3"}
               aria-label="Newsletter subscription form"
             >
               <div
                 className={
                   isSidebar
                     ? "space-y-2.5"
-                    : "grid grid-cols-1 gap-3 md:grid-cols-2"
+                    : "grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-3"
                 }
               >
                 <label htmlFor="sb-first-name" className="sr-only">First name</label>
@@ -144,8 +144,10 @@ export default function SubscribeBox({
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                   className={[
-                    "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
-                    isSidebar ? "px-3 py-2 text-sm" : "px-4 py-2.5 text-sm",
+                    "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#6b5a42] focus:border-[#2d2416] focus:outline-none",
+                    isSidebar
+                      ? "px-3 py-2 text-sm"
+                      : "px-5 py-4 text-base md:px-4 md:py-2.5 md:text-sm",
                   ].join(" ")}
                   style={{
                     fontFamily: "var(--font-garamond), Georgia, serif",
@@ -163,8 +165,10 @@ export default function SubscribeBox({
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   className={[
-                    "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#8d7b5f] focus:border-[#2d2416] focus:outline-none",
-                    isSidebar ? "px-3 py-2 text-sm" : "px-4 py-2.5 text-sm",
+                    "w-full border border-[#b89a5a] bg-[#fffaf0] text-[#1e1408] placeholder-[#6b5a42] focus:border-[#2d2416] focus:outline-none",
+                    isSidebar
+                      ? "px-3 py-2 text-sm"
+                      : "px-5 py-4 text-base md:px-4 md:py-2.5 md:text-sm",
                   ].join(" ")}
                   style={{
                     fontFamily: "var(--font-garamond), Georgia, serif",
@@ -179,7 +183,7 @@ export default function SubscribeBox({
                   "w-full border-2 border-[#2d2416] bg-[#2d2416] uppercase tracking-[0.1em] text-[#faf5e9] transition-colors hover:border-[#1e1408] hover:bg-[#1e1408] disabled:cursor-not-allowed disabled:opacity-50",
                   isSidebar
                     ? "px-4 py-2.5 text-xs"
-                    : "px-5 py-3 text-xs md:text-sm",
+                    : "px-6 py-5 text-base font-bold md:px-5 md:py-3 md:text-xs md:font-normal",
                 ].join(" ")}
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
@@ -204,7 +208,7 @@ export default function SubscribeBox({
             <p
               className={[
                 "mt-3 text-center text-[#6b5d47]",
-                isSidebar ? "text-[10px]" : "text-[11px]",
+                isSidebar ? "text-[10px]" : "text-xs md:text-[11px]",
               ].join(" ")}
               style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
