@@ -1,7 +1,42 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Search, Check } from "lucide-react";
 import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
 import FoodClient, { type SlimArticle } from "./FoodClient";
+import styles from "./Food.module.css";
+
+const CATEGORY_TILES = [
+  {
+    name: "Cheap Local Meals",
+    image:
+      "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=500",
+  },
+  {
+    name: "Best Food Markets",
+    image:
+      "https://images.pexels.com/photos/10023264/pexels-photo-10023264.jpeg?auto=compress&cs=tinysrgb&w=500",
+  },
+  {
+    name: "Comfort Food Abroad",
+    image:
+      "https://images.pexels.com/photos/27535815/pexels-photo-27535815.jpeg?auto=compress&cs=tinysrgb&w=500",
+  },
+  {
+    name: "Seafood Countries",
+    image:
+      "https://images.pexels.com/photos/10067622/pexels-photo-10067622.jpeg?auto=compress&cs=tinysrgb&w=500",
+  },
+  {
+    name: "Street Food Guides",
+    image:
+      "https://images.pexels.com/photos/10162327/pexels-photo-10162327.jpeg?auto=compress&cs=tinysrgb&w=500",
+  },
+  {
+    name: "Retiree-Friendly Eating",
+    image:
+      "https://images.pexels.com/photos/10194835/pexels-photo-10194835.jpeg?auto=compress&cs=tinysrgb&w=500",
+  },
+];
 
 const siteUrl = "https://golden-horizons.org";
 
@@ -110,6 +145,7 @@ export default async function FoodPage() {
     heroImage: a.heroImage,
     image: a.image,
     date: a.date,
+    readTime: a.readTime,
   });
 
   const breadcrumbSchema = {
@@ -184,45 +220,122 @@ export default async function FoodPage() {
           <Link href="/subscribe">Subscribe Free</Link>
         </nav>
 
-        {/* Single H1 for the page */}
-        <div className="page-header">
-          <span className="ph-kicker">The Food File</span>
-          <h1 className="ph-title">Food</h1>
-          <span className="ph-count">
-            Food culture, markets, and everyday eating abroad for retirees and
-            slow travelers.
-            {foodArticles.length > 0 && ` · ${foodArticles.length} articles`}
-          </span>
-        </div>
-
-        {/*
-          FoodClient owns:
-            1. Country search input + quick-filter buttons
-            2. Rotating featured story (hidden during search)
-            3. Article grid (hidden during search)
-            4. Search results view
-          The default SSR render (no search active) exposes all article
-          links to crawlers for full SEO coverage.
-        */}
-        <FoodClient
-          foodArticles={foodArticles.map(slimArticle)}
-          featuredArticle={featuredArticle ? slimArticle(featuredArticle) : null}
-          gridArticles={gridArticles.map(slimArticle)}
+        {/* Hero */}
+      <section className={styles.hero} aria-labelledby="food-hero-heading">
+        <img
+          className={styles.heroImg}
+          src="/European%20caffee.jpg"
+          alt="A warm European street café and outdoor market scene"
         />
+        <div className={styles.heroOverlay} aria-hidden="true" />
+        <div className={styles.heroContent}>
+          <div className={styles.heroInner}>
+            <p className={styles.heroKicker}>The Food File</p>
+            {/* Single H1 for the page */}
+            <h1 id="food-hero-heading" className={styles.heroTitle}>
+              Food Abroad, Without the Tourist Filter
+            </h1>
+            <p className={styles.heroSub}>
+              Real meals. Local markets. Food prices that make sense.
+              Cultural eating habits for retirees and slow travelers.
+              {foodArticles.length > 0 && ` · ${foodArticles.length} stories`}
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <div className="ornament">— ✦ —</div>
+      {/*
+        FoodClient owns:
+          1. Search bar + country chips
+          2. Rotating featured story / Editor's Pick (hidden during search)
+          3. Article grid (hidden during search)
+          4. Search results view
+        The default SSR render (no search active) exposes all article
+        links to crawlers for full SEO coverage.
+      */}
+      <FoodClient
+        foodArticles={foodArticles.map(slimArticle)}
+        featuredArticle={featuredArticle ? slimArticle(featuredArticle) : null}
+        gridArticles={gridArticles.map(slimArticle)}
+      />
 
-        <section className="mag-cta" id="free-guide">
-          <p className="kicker">Free Retirement Abroad Guide</p>
-          <h2>Get the free guide before choosing where to retire.</h2>
-          <p>
-            Compare costs, healthcare, visas, and lifestyle across top
-            retirement countries.
+      {/* Browse by what matters most */}
+      <div className={styles.sectionTitleRow}>
+        <span className={styles.sectionRule} aria-hidden="true" />
+        <h2 className={styles.sectionTitle}>Browse by What Matters Most</h2>
+        <span className={styles.sectionRule} aria-hidden="true" />
+      </div>
+      <div className={styles.categoryGrid}>
+        {CATEGORY_TILES.map((tile) => (
+          <a key={tile.name} href="#food-stories" className={styles.categoryCard}>
+            <img
+              className={styles.categoryBg}
+              src={tile.image}
+              alt=""
+              aria-hidden="true"
+            />
+            <span className={styles.categoryIcon} aria-hidden="true">
+              <Search size={20} />
+            </span>
+            <span className={styles.categoryName}>{tile.name}</span>
+          </a>
+        ))}
+      </div>
+
+      {/* Newsletter CTA */}
+      <section className={styles.newsletter} id="free-guide">
+        <img
+          className={styles.newsletterImg}
+          src="/European%20caffee.jpg"
+          alt="Coffee and a travel journal on a café table"
+        />
+        <div className={styles.newsletterBody}>
+          <h2 className={styles.newsletterHeadline}>
+            Get 3 real retirement-abroad stories every morning
+          </h2>
+          <p className={styles.newsletterSub}>
+            Practical insights on food, cost of living, healthcare, and the
+            best places to live well abroad.
           </p>
-          <Link href="/subscribe" className="mag-button">
-            Get the Free Guide →
-          </Link>
-        </section>
+          <form className={styles.newsletterForm} action="/subscribe">
+            <label
+              htmlFor="newsletter-email"
+              style={{
+                position: "absolute",
+                width: 1,
+                height: 1,
+                overflow: "hidden",
+                clip: "rect(0 0 0 0)",
+              }}
+            >
+              Email address
+            </label>
+            <input
+              id="newsletter-email"
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email address"
+              className={styles.newsletterInput}
+            />
+            <button type="submit" className={styles.newsletterBtn}>
+              Subscribe Free
+            </button>
+          </form>
+          <p className={styles.trustLine}>No spam. Unsubscribe anytime.</p>
+          <ul className={styles.benefitList}>
+            <li>
+              <Check size={14} aria-hidden="true" /> 100% Free
+            </li>
+            <li>
+              <Check size={14} aria-hidden="true" /> Unbiased &amp; Practical
+            </li>
+            <li>
+              <Check size={14} aria-hidden="true" /> Trusted by Readers
+            </li>
+          </ul>
+        </div>
+      </section>
 
         <footer className="mag-footer">
           <div className="footer-name">Golden Horizons</div>
