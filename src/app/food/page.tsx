@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Search, Mail, Check } from "lucide-react";
+import { Search, Check } from "lucide-react";
 import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
 import FoodClient, { type SlimArticle } from "./FoodClient";
 import styles from "./Food.module.css";
@@ -169,65 +169,58 @@ export default async function FoodPage() {
   };
 
   return (
-    <main className={styles.page}>
+    <main className="mag-page articles-page">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <div className={styles.topBar}>
-        <span>This issue: Where $2,000/month buys a life worth living</span>
-        <span>
-          Inside: The Money Page · The Destination Report · The Health File
-        </span>
-      </div>
-
-      <div className={styles.masthead}>
-        <button
-          type="button"
-          className={styles.iconBtn}
-          aria-label="Search Golden Horizons"
-        >
-          <Search size={18} />
-        </button>
-
-        <div className={styles.mastWrap}>
-          <Link href="/" className={styles.mastName}>
-            Golden Horizons
-          </Link>
-          <span className={styles.tagline}>
-            Real Places. Real Costs. Real Freedom.
+      <div className="site">
+        <div className="topbar">
+          <span>Vol. 60, No. 1</span>
+          <span className="hide-mob">
+            golden-horizons.org · The Retirement Abroad Magazine
           </span>
+          <span>June 2026</span>
         </div>
 
-        <Link href="/subscribe" className={styles.subscribeBtn}>
-          <Mail size={14} aria-hidden="true" />
-          Subscribe Free
-        </Link>
-      </div>
+        <div className="masthead">
+          <div className="dateline">
+            <span>The Retirement Abroad Magazine</span>
+            <span className="hide-mob">
+              For Americans Who Are Ready for What&rsquo;s Next
+            </span>
+            <span>June 2026 · Issue 60</span>
+          </div>
 
-      <nav className={styles.nav} aria-label="Primary">
-        <Link href="/destinations" className={styles.navLink}>
-          Destinations
-        </Link>
-        <Link href="/articles" className={styles.navLink}>
-          All Stories
-        </Link>
-        <Link
-          href="/food"
-          className={`${styles.navLink} ${styles.navLinkActive}`}
-        >
-          Food
-        </Link>
-        <Link href="/tax-guide" className={styles.navLink}>
-          Tax Guide
-        </Link>
-        <Link href="/subscribe" className={styles.navLink}>
-          Subscribe
-        </Link>
-      </nav>
+          <Link href="/" className="mastname">
+            Golden Horizons
+          </Link>
 
-      {/* Hero */}
+          <div className="issue-line">
+            <span className="issue-tag">
+              <strong>This Issue:</strong> Where $2,000/month buys a life worth
+              living
+            </span>
+            <span className="issue-tag">
+              <strong>Inside:</strong> The Money Page · The Destination Report ·
+              The Health File
+            </span>
+          </div>
+        </div>
+
+        <nav className="nav">
+          <Link href="/">Cover</Link>
+          <Link href="/articles">All Stories</Link>
+          <Link href="/destinations">Destinations</Link>
+          <Link href="/food" className="active">
+            Food
+          </Link>
+          <Link href="/tax-guide">TAX GUIDE</Link>
+          <Link href="/subscribe">Subscribe Free</Link>
+        </nav>
+
+        {/* Hero */}
       <section className={styles.hero} aria-labelledby="food-hero-heading">
         <img
           className={styles.heroImg}
@@ -344,25 +337,33 @@ export default async function FoodPage() {
         </div>
       </section>
 
-      <footer className={styles.footer}>
-        <div className={styles.footerName}>Golden Horizons</div>
-        <p className={styles.footerTagline}>
-          Helping retirees live better for less — anywhere in the world.
-        </p>
-        <div className={styles.footerLinks}>
-          <Link href="/privacy-policy">Privacy Policy</Link>
-          <span>|</span>
-          <Link href="/terms">Terms of Use</Link>
-          <span>|</span>
-          <Link href="/disclaimer">Disclaimer</Link>
-          <span>|</span>
-          <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
-          <span>|</span>
-          <Link href="/editorial-policy">Editorial Policy</Link>
-          <span>|</span>
-          <Link href="/contact">Contact</Link>
-        </div>
-      </footer>
+        <footer className="mag-footer">
+          <div className="footer-name">Golden Horizons</div>
+
+          <p>
+            The retirement abroad magazine for Americans who aren&rsquo;t done
+            yet.
+          </p>
+
+          <div className="footer-links">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <span>|</span>
+            <Link href="/terms">Terms of Use</Link>
+            <span>|</span>
+            <Link href="/disclaimer">Disclaimer</Link>
+            <span>|</span>
+            <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>
+            <span>|</span>
+            <Link href="/editorial-policy">Editorial Policy</Link>
+            <span>|</span>
+            <Link href="/contact">Contact</Link>
+          </div>
+
+          <p style={{ fontSize: 11, opacity: 0.5, marginTop: 8 }}>
+            © 2026 Golden Horizons — All rights reserved
+          </p>
+        </footer>
+      </div>
     </main>
   );
 }
