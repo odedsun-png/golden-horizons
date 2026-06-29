@@ -60,15 +60,23 @@ export default function FoodClient({
 
   // Filter all food articles (including the featured one) so it
   // appears in search results even when hidden from the default grid.
-  // Articles follow the pattern "Country - subtitle" so startsWith on
-  // the lowercased title or slug is precise and avoids false positives.
+  // Matches anywhere in the title, slug, description, or excerpt so
+  // dish names ("pizza", "tacos") and food costs work, not just
+  // country names at the start of the title.
   const searchResults = useMemo(() => {
     const q = searchQuery.toLowerCase().trim();
     if (!q) return [];
     return foodArticles.filter((article) => {
-      const t = article.title.toLowerCase();
-      const s = article.slug.replace(/-/g, " ").toLowerCase();
-      return t.startsWith(q) || s.startsWith(q);
+      const haystack = [
+        article.title,
+        article.slug.replace(/-/g, " "),
+        article.description,
+        article.excerpt,
+        article.category,
+      ]
+        .join(" ")
+        .toLowerCase();
+      return haystack.includes(q);
     });
   }, [searchQuery, foodArticles]);
 
