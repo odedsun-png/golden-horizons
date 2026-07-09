@@ -287,14 +287,17 @@ export default function ArticlesClient({
             onClick={() => selectCategory(null)}
             style={{
               cursor: "pointer",
-              border: "1px solid #8b6914",
-              background: !selectedCategory ? "#2d2416" : "#faf5e9",
-              color: !selectedCategory ? "#f5d06f" : "#2d2416",
-              padding: "8px 12px",
-              fontSize: 12,
-              letterSpacing: "1.5px",
-              textTransform: "uppercase",
+              border: !selectedCategory ? "1px solid #8b6914" : "1px solid #c9a84c",
+              borderRadius: "999px",
+              background: !selectedCategory ? "#8b6914" : "transparent",
+              color: !selectedCategory ? "#faf5e9" : "#2d2416",
+              padding: "9px 18px",
+              fontSize: 14,
+              fontWeight: !selectedCategory ? 700 : 400,
+              letterSpacing: "normal",
               fontFamily: "var(--font-garamond), Georgia, serif",
+              whiteSpace: "nowrap",
+              transition: "border-color 0.15s, background 0.15s, color 0.15s",
             }}
           >
             All
@@ -307,15 +310,17 @@ export default function ArticlesClient({
               onClick={() => selectCategory(category)}
               style={{
                 cursor: "pointer",
-                border: "1px solid #8b6914",
-                background:
-                  selectedCategory === category ? "#2d2416" : "#faf5e9",
-                color: selectedCategory === category ? "#f5d06f" : "#2d2416",
-                padding: "8px 12px",
-                fontSize: 12,
-                letterSpacing: "1.5px",
-                textTransform: "uppercase",
+                border: selectedCategory === category ? "1px solid #8b6914" : "1px solid #c9a84c",
+                borderRadius: "999px",
+                background: selectedCategory === category ? "#8b6914" : "transparent",
+                color: selectedCategory === category ? "#faf5e9" : "#2d2416",
+                padding: "9px 18px",
+                fontSize: 14,
+                fontWeight: selectedCategory === category ? 700 : 400,
+                letterSpacing: "normal",
                 fontFamily: "var(--font-garamond), Georgia, serif",
+                whiteSpace: "nowrap",
+                transition: "border-color 0.15s, background 0.15s, color 0.15s",
               }}
             >
               {category}
