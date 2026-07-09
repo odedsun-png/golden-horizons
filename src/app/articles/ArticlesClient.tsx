@@ -522,9 +522,14 @@ export default function ArticlesClient({
                 }}
               />
 
-              <div className="art-cat">{article.displayCategory}</div>
-              <div className="art-title">{article.title}</div>
-              <span className="art-read">Read →</span>
+              <div className="art-body">
+                <div className="art-cat">{article.displayCategory}</div>
+                <div className="art-title">{article.title}</div>
+                {(article.description || article.excerpt) && (
+                  <p className="art-summary">{article.description || article.excerpt}</p>
+                )}
+                <span className="art-read">Read →</span>
+              </div>
             </Link>
           ))}
         </div>
