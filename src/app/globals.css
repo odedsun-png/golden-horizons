@@ -773,7 +773,7 @@ body {
 
 .art-article-body { font-size: 20px; line-height: 1.88; color: #2b1a00; font-family: 'EB Garamond', serif; }
 .art-article-body p { margin-bottom: 18px; }
-.art-article-body h2 { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #faf5e9; background: #1e1408; padding: 6px 12px; display: inline-block; margin: 26px 0 16px; font-family: 'EB Garamond', serif; font-weight: 400; }
+.art-article-body h2 { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #faf5e9; background: #1e1408; padding: 6px 12px; display: inline-block; margin: 26px 0 16px; font-family: 'EB Garamond', serif; font-weight: 400; }
 .art-article-body h3 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #1e1408; margin: 24px 0 12px; }
 .art-article-body img { width: 100%; display: block; height: 190px; object-fit: cover; margin: 20px 0 5px; filter: contrast(1.05) saturate(1.12) brightness(0.88) sepia(0.06); }
 .art-article-body a { color: #8b6914; text-decoration: underline; }
@@ -860,13 +860,16 @@ body {
   .article-layout { grid-template-columns: 1fr; }
   .article-main { border-right: none; padding: 20px 16px; }
   .art-headline { font-size: 26px; }
-  .art-intro { font-size: 18px; }
-  .art-article-body { font-size: 18px; }
+  .art-intro { font-size: 20px; }
+  .art-article-body { font-size: 20px; }
   .art-meta { flex-direction: column; gap: 3px; }
   .article-main .hero-img { height: 210px; }
   .sidebar { padding: 20px 16px; border-top: 2px solid #1e1408; }
   .breadcrumb { padding: 9px 16px; }
   .hero-text { right: 16px; }
+  .art-article-body h3 { font-size: 24px; }
+  .art-title { font-size: 17px; }
+  .art-summary { font-size: 15px; }
 }
 
 @media (max-width: 480px) {
