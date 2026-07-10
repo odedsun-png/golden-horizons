@@ -78,15 +78,16 @@ export default function SubscribeClient() {
           <div className={s.heroOverlay} />
           <div className={s.heroContent}>
             <h1 className={s.heroH1}>
-              Could You Retire Abroad on Less Than You Think?
+              Americans Are Retiring Abroad on $1,500 a Month. Here&rsquo;s
+              What They Know That You Don&rsquo;t.
             </h1>
             <p className={s.heroSub}>
-              The free Starter Kit covers the countries, costs, visas, and
-              healthcare options most Americans never consider.
+              Every morning, we send you one real place where Social Security
+              covers rent, healthcare, and daily life — with the exact costs,
+              visa steps, and trade-offs.
             </p>
             <p className={s.heroSub}>
-              Plus three real retirement-abroad stories in your inbox every
-              morning by 7:30 AM EST.
+              Free. In your inbox by 7:30 AM. Takes 5 minutes to read.
             </p>
 
             {heroSuccess ? (
@@ -112,7 +113,7 @@ export default function SubscribeClient() {
                     disabled={heroLoading}
                     className={s.heroBtn}
                   >
-                    {heroLoading ? "Sending…" : "Get My Free Kit + Stories →"}
+                    {heroLoading ? "Sending…" : "Get Tomorrow's Story Free →"}
                   </button>
                 </form>
                 {heroError && <p className={s.heroErrorMsg}>{heroError}</p>}
@@ -120,7 +121,11 @@ export default function SubscribeClient() {
             )}
 
             <p className={s.heroTrust}>
-              <em>Free forever · No spam · Unsubscribe anytime</em>
+              <em>
+                Plus a free Starter Kit: budget checklist, visa questions,
+                healthcare comparison, and country shortlist. No card. No
+                spam. Unsubscribe anytime.
+              </em>
             </p>
           </div>
         </section>
@@ -139,24 +144,24 @@ export default function SubscribeClient() {
           <div className={s.statDivider} />
           <div className={s.statItem}>
             <span className={s.statNumber}>7:30 AM</span>
-            <span className={s.statLabel}>Waiting When You Wake Up</span>
+            <span className={s.statLabel}>In Your Inbox by 7:30 AM</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
-            <span className={s.statNumber}>3</span>
-            <span className={s.statLabel}>Real Stories Daily</span>
+            <span className={s.statNumber}>2</span>
+            <span className={s.statLabel}>New Stories Every Day</span>
           </div>
           <div className={s.statDivider} />
           <div className={s.statItem}>
             <span className={s.statNumber}>$0</span>
-            <span className={s.statLabel}>No Card. No Catch.</span>
+            <span className={s.statLabel}>Free Forever</span>
           </div>
         </div>
 
         {/* 8. VIDEO — SUBSCRIBE TEASER */}
         <section className={s.videoSection}>
           <span className={s.videoLabel}>Watch Before You Subscribe</span>
-          <h2 className={s.videoH2}>See exactly what lands in your inbox</h2>
+          <h2 className={s.videoH2}>Here&rsquo;s Exactly What You&rsquo;ll Get</h2>
           <div className={s.videoWrap}>
             <video
               controls
@@ -171,7 +176,7 @@ export default function SubscribeClient() {
           </div>
           <div className={s.videoCta}>
             <a href="#subscribe" className={s.videoCtaBtn}>
-              Get My Free Kit + Stories →
+              Get Tomorrow&rsquo;s Story Free →
             </a>
           </div>
         </section>
@@ -182,74 +187,76 @@ export default function SubscribeClient() {
             What Readers Are Discovering Before Breakfast
           </span>
           <h2 className={s.neighborsH2}>
-            Every morning, somewhere, someone is reading about a life you{" "}
-            <em>haven&rsquo;t planned yet.</em>
+            What Landed in Readers&rsquo; Inboxes This Week
           </h2>
           <p className={s.neighborsBody}>
-            A two-bedroom apartment in Lisbon for $850 a month. A visa that
-            takes 60 days and costs $500. A hospital that charges $40 for a
-            doctor&rsquo;s visit — no insurance needed.
+            Monday: $100/month private health insurance in T&uuml;rkiye —
+            JCI-accredited hospitals, English-speaking doctors, and how the
+            public option works for $30/month.
           </p>
           <p className={s.neighborsBody}>
-            Golden Horizons finds those places, runs the real numbers, and puts
-            the full picture in your inbox before breakfast. No hype. No
-            affiliate fluff. Just the information you need to decide if this is
-            actually possible for you.
+            Wednesday: 3 money mistakes that cost Americans thousands when
+            they move abroad — and the fix for each one.
+          </p>
+          <p className={s.neighborsBody}>
+            Thursday: $400/month rent in Cuenca, Ecuador — a UNESCO city with
+            year-round spring weather and a pensioner visa that requires just
+            $800/month income.
           </p>
           <p className={s.neighborsBold}>
-            Today&rsquo;s issue goes out at 7:30 AM EST. It takes 5 minutes to
-            read. It is free. And it might change what you do next.
+            This is what you&rsquo;ll get. Real places. Real numbers. Every
+            morning.
           </p>
         </section>
 
         {/* 9. TESTIMONIALS */}
         <section className={s.testimonials}>
-          <span className={s.testimonialsLabel}>
-            What Readers Say After Their First Week
-          </span>
+          <span className={s.testimonialsLabel}>See What You&rsquo;ll Get</span>
+          <p className={s.testimonialQuote}>Recent stories from the archive:</p>
           <div className={s.testimonialsGrid}>
             <div className={s.testimonialCard}>
-              <p className={s.testimonialQuote}>
-                &ldquo;I&rsquo;ve been thinking about retiring abroad for three
-                years. After one week of Golden Horizons, I finally had a real
-                number to work with. Now I have a date.&rdquo;
-              </p>
-              <div className={s.testimonialFooter}>
-                <div className={s.testimonialAvatar}>B</div>
-                <cite className={s.testimonialCite}>
-                  Barbara A., 63 · Retired Teacher · Now in Lisbon
-                </cite>
-              </div>
+              <a
+                href="https://golden-horizons.org/articles/albania-beach-retirement-living-in-sarande"
+                className={s.testimonialCite}
+              >
+                Albania: Beach Retirement Living in Sarand&euml; — $300/month
+                rent, 300+ sunny days, 20,000-person coastal town
+              </a>
             </div>
 
             <div className={s.testimonialCard}>
-              <p className={s.testimonialQuote}>
-                &ldquo;I thought I needed $2 million to retire comfortably.
-                Golden Horizons showed me I was wrong — and showed me exactly
-                where $1,800 a month is genuinely enough.&rdquo;
-              </p>
-              <div className={s.testimonialFooter}>
-                <div className={s.testimonialAvatar}>J</div>
-                <cite className={s.testimonialCite}>
-                  James R., 67 · Former Engineer · Now in Medell&iacute;n
-                </cite>
-              </div>
+              <a
+                href="https://golden-horizons.org/articles/turkiye-healthcare-quality-for-expats-in-turkiye"
+                className={s.testimonialCite}
+              >
+                T&uuml;rkiye: Healthcare Quality for Expats — $100/month
+                private insurance, JCI-accredited hospitals
+              </a>
             </div>
 
             <div className={s.testimonialCard}>
-              <p className={s.testimonialQuote}>
-                &ldquo;I read it every morning before I get out of bed.
-                It&rsquo;s the only email I actually look forward to. My wife
-                and I are moving to Costa Rica in March.&rdquo;
-              </p>
-              <div className={s.testimonialFooter}>
-                <div className={s.testimonialAvatar}>T</div>
-                <cite className={s.testimonialCite}>
-                  Tom &amp; Linda S., 61 &amp; 59 · Moving March 2027
-                </cite>
-              </div>
+              <a
+                href="https://golden-horizons.org/articles/mexico-hidden-beach-towns-like-mazunte-for-retirement"
+                className={s.testimonialCite}
+              >
+                Mexico: Hidden Beach Towns Like Mazunte — $1,500/month total
+                budget, no resorts, no crowds
+              </a>
+            </div>
+
+            <div className={s.testimonialCard}>
+              <a
+                href="https://golden-horizons.org/articles/georgia-hidden-wine-villages-in-kakheti-for-retirement"
+                className={s.testimonialCite}
+              >
+                Georgia: Hidden Wine Villages in Kakheti — $250/month rent,
+                1-year visa-free
+              </a>
             </div>
           </div>
+          <p className={s.testimonialQuote}>
+            408 reports published. New ones every morning.
+          </p>
         </section>
 
         {/* 11. FOOTER */}

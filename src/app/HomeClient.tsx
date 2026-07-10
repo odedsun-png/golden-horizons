@@ -213,7 +213,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
           </div>
           <div style={{ marginTop: 28 }}>
             <a href="#subscribe" style={{ display: "inline-block", background: "#c9a84c", color: "#1e1408", fontFamily: "var(--font-playfair), Georgia, serif", fontSize: 15, fontWeight: 800, letterSpacing: "0.5px", padding: "14px 28px", border: "2px solid #c9a84c", textDecoration: "none", whiteSpace: "nowrap" }}>
-              Get My Free Kit + Stories →
+              Get Tomorrow&rsquo;s Story Free →
             </a>
           </div>
         </div>

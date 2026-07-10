@@ -212,7 +212,7 @@ export default function SubscribeBox({
               ].join(" ")}
               style={{ fontFamily: "var(--font-garamond), Georgia, serif" }}
             >
-              ◆ Trusted by 5,000+ readers planning their next chapter ◆
+              ◆ New stories published every morning ◆
             </p>
           </div>
 
