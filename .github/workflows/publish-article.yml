@@ -41,7 +41,7 @@ EOF
       - name: Commit and push
         run: |
           git config user.name "Golden Horizons Bot"
-          git config user.email "bot@ golden-horizons.netlify.app"
+          git config user.email "bot@golden-horizons.netlify.app"
           
           git add "src/content/articles/${{ inputs.slug }}.md"
           git commit -m "Add: ${{ inputs.title || inputs.slug }}"
