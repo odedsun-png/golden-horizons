@@ -190,11 +190,11 @@ export default function TaxGuidePage() {
       <div className="site">
         {/* TOPBAR */}
         <div className="topbar">
-          <span>Vol. 60, No. 1</span>
+          <span>Vol. 61, No. 1</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
           </span>
-          <span>June 2026</span>
+          <span>July 2026</span>
         </div>
 
         {/* MASTHEAD */}
@@ -204,7 +204,7 @@ export default function TaxGuidePage() {
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
             </span>
-            <span>June 2026 · Issue 60</span>
+            <span>July 2026 · Issue 61</span>
           </div>
 
           <Link href="/" className="mastname">
