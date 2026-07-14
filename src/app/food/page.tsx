@@ -177,11 +177,11 @@ export default async function FoodPage() {
 
       <div className="site">
         <div className="topbar">
-          <span>Vol. 60, No. 1</span>
+          <span>Vol. 61, No. 1</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
           </span>
-          <span>June 2026</span>
+          <span>July 2026</span>
         </div>
 
         <div className="masthead">
@@ -190,7 +190,7 @@ export default async function FoodPage() {
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
             </span>
-            <span>June 2026 · Issue 60</span>
+            <span>July 2026 · Issue 61</span>
           </div>
 
           <Link href="/" className="mastname">
