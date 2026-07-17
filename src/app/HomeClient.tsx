@@ -176,8 +176,8 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             number, and the trade-offs the brochures leave out.
           </p>
           <p className="body-text">
-            Twenty-six countries researched. Two hundred and fifty-three reports
-            indexed. One sent to you tomorrow morning, free.
+            Twenty-six countries researched. Four hundred and thirty-three reports
+indexed. One sent to you tomorrow morning, free.
           </p>
           <Link href="/subscribe" className="read-more">
             Get tomorrow&apos;s destination report →
