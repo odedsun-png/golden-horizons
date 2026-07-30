@@ -51,6 +51,9 @@ export default function SubscribeBox({
         setEmail("");
         setFirstName("");
         setShowThankYou(true);
+        if (typeof window !== "undefined" && (window as any).fbq) {
+          (window as any).fbq("track", "Subscribe", { value: 0, currency: "USD" });
+        }
       } else {
         setStatus("error");
         setMessage(data.error || "Something went wrong. Please try again.");
