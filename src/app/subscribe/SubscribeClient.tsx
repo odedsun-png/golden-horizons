@@ -26,8 +26,8 @@ export default function SubscribeClient() {
       });
       if (res.ok) {
         setHeroSuccess(true);
-        if (typeof window !== "undefined" && (window as any).fbq) {
-          (window as any).fbq("track", "Subscribe", { value: 0, currency: "USD" });
+        if (typeof window !== "undefined" && window.fbq) {
+          window.fbq("track", "Subscribe", { value: 0, currency: "USD" });
         }
       } else {
         const data = await res.json();

@@ -27,8 +27,8 @@ export default function Newsletter() {
 
       if (res.ok && data.success) {
         setSubmitted(true);
-        if (typeof window !== "undefined" && (window as any).fbq) {
-          (window as any).fbq("track", "Subscribe", { value: 0, currency: "USD" });
+        if (typeof window !== "undefined" && window.fbq) {
+          window.fbq("track", "Subscribe", { value: 0, currency: "USD" });
         }
       } else {
         setError(data.error || "Something went wrong. Please try again.");
