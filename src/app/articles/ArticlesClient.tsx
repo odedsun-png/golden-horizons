@@ -26,7 +26,7 @@ const CATEGORY_IMAGES: Record<string, string> = {
   "All Stories":
     "https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&w=800",
   Beach:
-    "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=800",
   "Best Cities":
     "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=800",
   Climate:
@@ -206,7 +206,7 @@ export default function ArticlesClient({
       count: categoryGroups[category]?.length || 0,
       desc: `Browse ${category.toLowerCase()} stories`,
       category,
-      image: getNewestArticleImage(categoryGroups[category] || []),
+      image: getCategoryImage(category),
     })),
   ];
 
