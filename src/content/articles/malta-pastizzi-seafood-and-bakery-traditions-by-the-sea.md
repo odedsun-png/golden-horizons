@@ -5,7 +5,7 @@ slug: maltas-culinary-delights-food-guide
 date: 2026-08-03
 country: Malta
 description: "A practical food guide to Malta - Pastizzi, Seafood, and Bakery Traditions by the Sea, covering flavor, prices, portions, ordering tips, and local eating habits."
-image: https://images.pexels.com/photos/1228523/pexels-photo-1228523.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/33608751/pexels-photo-33608751/free-photo-of-golden-crispy-croissant-on-baking-paper.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
 ---
 
 ## Quick Taste
