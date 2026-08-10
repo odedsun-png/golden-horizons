@@ -23,7 +23,7 @@ Batumi, an active city on Georgia's Black Sea coast, is home to approximately 15
 
 Renting an apartment in Batumi can be surprisingly affordable. In the city center or along Rustaveli Avenue, a one-bedroom apartment with a sea view can cost between $300 and $500 per month. For those looking for more space, a two-bedroom apartment averages around $600. The New Boulevard area offers modern high-rises with amenities like pools and gyms, catering to retirees seeking comfort and convenience.
 
-![photo](https://images.unsplash.com/photo-1635504303506-45e139efbf4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxMXx8R2VvcmdpYXxlbnwwfDB8fHwxNzgxOTQ0NzczfDA&ixlib=rb-4.1.0&q=80&w=1080)
+![photo](https://images.pexels.com/photos/34682317/pexels-photo-34682317.jpeg?auto=compress&cs=tinysrgb&fit=max&w=1080)
 
 However, building quality can vary significantly. Some older buildings may lack modern insulation or reliable heating, which can be uncomfortable during the cooler months. Inspect properties thoroughly or hire a local agent to ensure your chosen home meets your expectations.
 
