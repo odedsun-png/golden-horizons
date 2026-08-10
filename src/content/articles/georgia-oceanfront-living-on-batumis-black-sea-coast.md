@@ -3,7 +3,7 @@ title: "Georgia - Oceanfront Living on Batumi’s Black Sea Coast — A Local's 
 category: Beach
 slug: georgia-oceanfront-living-on-batumis-black-sea-coast
 date: 2026-06-20
-image:"https://images.pexels.com/photos/38165391/pexels-photo-38165391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+image: "https://images.pexels.com/photos/38165391/pexels-photo-38165391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 description: Retire affordably along Batumi's scenic Black Sea coast with monthly living costs between $1,200-$1,500 — but plan for language barriers and healthcare needs.
 featured: false
 ---
