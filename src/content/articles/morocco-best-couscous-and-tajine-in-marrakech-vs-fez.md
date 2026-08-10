@@ -5,7 +5,7 @@ slug: morocco-best-couscous-and-tajine-in-marrakech-vs-fez
 date: 2026-06-25
 country: Morocco
 description: "A practical food guide to Morocco - Best Couscous and Tajine in Marrakech vs Fez, covering flavor, prices, portions, ordering tips, and local eating habits."
-image: https://images.pexels.com/photos/31273768/pexels-photo-31273768.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/36984667/pexels-photo-36984667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 ## Quick Taste
