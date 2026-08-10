@@ -3,7 +3,7 @@ title: "Philippines - Food, Festivals, and Daily Culture in the Philippines — 
 category: Culture
 slug: philippines-food-festivals-and-daily-culture-in-the-philippines
 date: 2026-06-24
-image: https://images.unsplash.com/photo-1531761535209-180857e963b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxQaGlsaXBwaW5lc3xlbnwwfDB8fHwxNzgyMjkwNDM1fDA&ixlib=rb-4.1.0&q=80&w=1080
+image: https://images.pexels.com/photos/28080714/pexels-photo-28080714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 description: Street food in Manila and vibrant festivals like Sinulog in Cebu provide retirees affordable tastes and cultural experiences.
 featured: false
 ---
