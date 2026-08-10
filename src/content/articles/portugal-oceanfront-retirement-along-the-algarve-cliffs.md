@@ -3,7 +3,7 @@ title: "Portugal - Oceanfront Retirement Along the Algarve Cliffs — A Local's 
 category: Beach
 slug: portugal-oceanfront-retirement-along-the-algarve-cliffs
 date: 2026-06-22
-image: https://images.pexels.com/photos/28080714/pexels-photo-28080714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+image: https://images.pexels.com/photos/17887520/pexels-photo-17887520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 description: Algarve's sunny shores see 300 sunny days yearly; budget €2,500–€3,500 monthly for a fulfilling retirement.
 featured: false
 ---
