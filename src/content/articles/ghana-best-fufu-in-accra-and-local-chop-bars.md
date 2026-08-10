@@ -12,7 +12,7 @@ image: https://images.pexels.com/photos/35305066/pexels-photo-35305066.jpeg?auto
 
 Fufu in Accra is a staple dish with a smooth, dough-like texture, and the city's chop bars are better for experiencing traditional flavors, while upscale restaurants offer a more refined ambiance. Fufu, made from cassava and plantains, is typically served with a variety of soups or stews, such as light soup, groundnut soup, or palm nut soup. In Accra, chop bars are the go-to spots for locals seeking hearty meals, providing a lively atmosphere where the dish is enjoyed with hands, enhancing the tactile experience.
 
-![Food image](https://images.pexels.com/photos/5344729/pexels-photo-5344729.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
+![Food image](https://images.pexels.com/photos/15148672/pexels-photo-15148672.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
 
 Visitors to Accra will find that fufu is more than just a meal; it is a cultural experience. The texture of the fufu, often compared to a thick, elastic dough, complements the spicy flavors of the accompanying soups. Traditionally, fufu is eaten with the fingers, which allows diners to form small balls to dip into the soup. This tactile method of eating is integral to the experience and is usually accompanied by a glass of palm wine or a bottle of chilled Star beer. Variations in preparation and accompaniments are common, with some chop bars offering a spicier soup or a larger portion of meat. For first-time visitors, chop bars provide a more immersive experience, while those seeking a quieter environment might prefer a restaurant setting.
 
@@ -26,7 +26,7 @@ The significance of fufu in Ghanaian culture goes beyond its nutritional value. 
 
 In Accra, fufu is a dish best enjoyed in the company of others, often at a local chop bar. These informal eateries are scattered throughout the city and are popular among locals for their affordable prices and traditional flavors. When dining at a chop bar, patrons typically order fufu with a choice of soup, such as light soup with goat meat or palm nut soup with fish. The dish is served in large bowls, with the fufu submerged in the soup, allowing it to absorb the flavors.
 
-![Local dining](https://images.pexels.com/photos/2005935/pexels-photo-2005935.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
+![Food image](https://images.pexels.com/photos/27081953/pexels-photo-27081953.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
 
 Eating fufu is an art in itself. Locals use their right hand to pinch off a small portion of fufu, shape it into a ball, and dip it into the soup. This method enhances the taste and texture, as the fufu absorbs the spicy flavors of the soup. It is customary to eat fufu without chewing, allowing it to slide down the throat, which is believed to enhance digestion. For those new to this experience, it might take a few tries to master the technique, but it is an essential part of enjoying the dish as the locals do.
 
