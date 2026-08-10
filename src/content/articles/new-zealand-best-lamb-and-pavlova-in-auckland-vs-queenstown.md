@@ -5,14 +5,14 @@ slug: new-zealand-best-lamb-and-pavlova-in-auckland-vs-queenstown
 date: 2026-06-27
 country: New Zealand
 description: "A practical food guide to New Zealand - Best Lamb and Pavlova in Auckland vs Queenstown, covering flavor, prices, portions, ordering tips, and local eating habits."
-image: https://images.pexels.com/photos/18138319/pexels-photo-18138319.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: https://images.pexels.com/photos/17988080/pexels-photo-17988080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 ## Quick Taste
 
 Lamb and pavlova are culinary highlights in New Zealand, offering succulent flavors and a delicate sweetness, respectively. Auckland is ideal for those seeking convenience and a wide variety of dining options, while Queenstown provides a more intimate setting with scenic views. In Auckland, lamb is often seasoned with local herbs and spices, delivering a robust flavor that complements its tender texture. Queenstown emphasizes freshness, with lamb sourced from nearby farms, offering a taste of the countryside. For pavlova, Auckland presents a range of creative variations, while Queenstown adheres to the traditional recipe, ensuring a classic experience.
 
-![Food image](https://images.pexels.com/photos/17259057/pexels-photo-17259057.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
+![Food image](https://images.pexels.com/photos/18330963/pexels-photo-18330963.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
 
 Visitors to New Zealand will find lamb to be a significant part of the local diet, typically served with seasonal vegetables and a hint of mint sauce. The pavlova, a meringue-based dessert, is usually topped with fresh fruits like kiwifruit, strawberries, and passionfruit, providing a refreshing contrast to the lamb's savory profile. Auckland's diverse food scene means you'll encounter variations of these dishes that incorporate international influences, while Queenstown's offerings are more likely to stay true to traditional methods. Whether you prefer larger portions or lighter options, Auckland caters to diverse preferences, whereas Queenstown excels in providing a taste of New Zealand's food heritage.
 
