@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Search, Check } from "lucide-react";
 import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
+import { getMagazineMasthead } from "@/lib/masthead";
 import FoodClient, { type SlimArticle } from "./FoodClient";
 import styles from "./Food.module.css";
 
@@ -113,6 +114,7 @@ export const metadata: Metadata = {
 };
 
 export default async function FoodPage() {
+  const masthead = getMagazineMasthead();
   const slugs = await getAllArticleSlugs();
 
   const articles = await Promise.all(
@@ -177,11 +179,11 @@ export default async function FoodPage() {
 
       <div className="site">
         <div className="topbar">
-          <span>Vol. 61, No. 1</span>
+          <span>{masthead.volumeLabel}</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
           </span>
-          <span>July 2026</span>
+          <span>{masthead.monthYear}</span>
         </div>
 
         <div className="masthead">
@@ -190,7 +192,7 @@ export default async function FoodPage() {
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
             </span>
-            <span>July 2026 · Issue 61</span>
+            <span>{masthead.issueLine}</span>
           </div>
 
           <Link href="/" className="mastname">

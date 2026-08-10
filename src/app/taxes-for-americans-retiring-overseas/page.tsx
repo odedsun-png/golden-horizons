@@ -1,9 +1,13 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { getCountryById } from "@/lib/countries";
+import { getMagazineMasthead } from "@/lib/masthead";
 
 const siteUrl = "https://golden-horizons.org";
 const canonicalUrl = `${siteUrl}/taxes-for-americans-retiring-overseas`;
+
+// Revalidate hourly so the masthead's Month/Issue advances automatically
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Taxes for Americans Retiring Overseas (2026 Guide)",
@@ -63,6 +67,7 @@ const faqs = [
 ];
 
 export default function TaxesPage() {
+  const masthead = getMagazineMasthead();
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -103,16 +108,16 @@ export default function TaxesPage() {
 
       <div className="site">
         <div className="topbar">
-          <span>Vol. 58, No. 1</span>
+          <span>{masthead.volumeLabel}</span>
           <span className="hide-mob">golden-horizons.org · The Retirement Abroad Magazine</span>
-          <span>April 2026</span>
+          <span>{masthead.monthYear}</span>
         </div>
 
         <div className="masthead">
           <div className="dateline">
             <span>The Retirement Abroad Magazine</span>
             <span className="hide-mob">For Americans Who Are Ready for What&rsquo;s Next</span>
-            <span>April 2026 · Issue 58</span>
+            <span>{masthead.issueLine}</span>
           </div>
           <Link href="/" className="mastname">Golden Horizons</Link>
           <div className="issue-line">

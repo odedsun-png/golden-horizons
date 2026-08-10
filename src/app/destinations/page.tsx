@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import RetirementFinder from "@/components/RetirementFinder";
 import { countries } from "@/lib/countries";
+import { getMagazineMasthead } from "@/lib/masthead";
 const siteUrl = "https://golden-horizons.org";
+// Revalidate hourly so the masthead's Month/Issue advances automatically
+export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Best Places to Retire Abroad in 2026",
   description:
@@ -46,6 +49,7 @@ export const metadata: Metadata = {
   },
 };
 export default function DestinationsPage() {
+  const masthead = getMagazineMasthead();
   const more = countries;
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -98,11 +102,11 @@ export default function DestinationsPage() {
       />
       <div className="site">
         <div className="topbar">
-          <span>Vol. 61, No. 1</span>
+          <span>{masthead.volumeLabel}</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
           </span>
-          <span>July 2026</span>
+          <span>{masthead.monthYear}</span>
         </div>
         <div className="masthead">
           <div className="dateline">
@@ -110,7 +114,7 @@ export default function DestinationsPage() {
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
             </span>
-            <span>July 2026 · Issue 61</span>
+            <span>{masthead.issueLine}</span>
           </div>
           <Link href="/" className="mastname">
             Golden Horizons

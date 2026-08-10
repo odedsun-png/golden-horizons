@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import HomeClient from "./HomeClient";
 import { getAllArticleSlugs, getArticleBySlug } from "@/lib/articles";
+import { getMagazineMasthead } from "@/lib/masthead";
 
 const siteUrl = "https://golden-horizons.org";
+
+// Revalidate hourly so the masthead's Month/Issue advances automatically
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: { absolute: "Golden Horizons — Retirement Abroad Magazine for Americans" },
@@ -50,6 +54,7 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
+  const masthead = getMagazineMasthead();
   const slugs = await getAllArticleSlugs();
   const rawArticles = await Promise.all(slugs.map((s) => getArticleBySlug(s)));
 
@@ -97,7 +102,7 @@ export default async function HomePage() {
           __html: JSON.stringify(webPageSchema),
         }}
       />
-      <HomeClient allArticles={allArticles} />
+      <HomeClient allArticles={allArticles} masthead={masthead} />
     </>
   );
 }

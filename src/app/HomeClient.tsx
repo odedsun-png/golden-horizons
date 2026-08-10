@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import SubscribeBox from "@/components/SubscribeBox";
+import type { MagazineMasthead } from "@/lib/masthead";
 type ArticleCard = {
   slug: string;
   title: string;
@@ -13,7 +14,13 @@ type ArticleCard = {
 function getSectionLabel(category: string): string {
   return category.split("·")[0].trim() || "Retirement Abroad";
 }
-export default function HomeClient({ allArticles }: { allArticles: ArticleCard[] }) {
+export default function HomeClient({
+  allArticles,
+  masthead,
+}: {
+  allArticles: ArticleCard[];
+  masthead: MagazineMasthead;
+}) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [pickedArticles, setPickedArticles] = useState<ArticleCard[]>([]);
   const [articleGroupIndex, setArticleGroupIndex] = useState(0);
@@ -85,11 +92,11 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
     <main className="mag-page">
       <div className="site">
         <div className="topbar">
-          <span>Vol. 61, No. 1</span>
+          <span>{masthead.volumeLabel}</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
           </span>
-          <span>July 2026</span>
+          <span>{masthead.monthYear}</span>
         </div>
         <div className="masthead">
           <div className="dateline">
@@ -97,7 +104,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
             </span>
-            <span>July 2026 · Issue 61</span>
+            <span>{masthead.issueLine}</span>
           </div>
           <Link href="/" className="mastname">
             Golden Horizons
@@ -159,7 +166,7 @@ export default function HomeClient({ allArticles }: { allArticles: ArticleCard[]
             happening — in 26 countries we track every week.
           </h2>
           <div className="byline">
-            By the Editors of Golden Horizons · Cover Story · July 2026
+            By the Editors of Golden Horizons · Cover Story · {masthead.monthYear}
           </div>
           <p className="body-text">
             If your monthly check is $1,800 and you&apos;ve been quietly doing

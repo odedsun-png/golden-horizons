@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArticleBySlug, getAllArticleSlugs } from "@/lib/articles";
+import { getMagazineMasthead } from "@/lib/masthead";
 
 type PageParams = Promise<{ slug: string }>;
 
 const siteUrl = "https://golden-horizons.org";
+
+// Revalidate hourly so the masthead's Month/Issue advances automatically
+export const revalidate = 3600;
 
 function cleanText(value: string | undefined | null) {
   if (!value) return "";
@@ -181,6 +185,7 @@ export default async function ArticleDetailPage({
 }: {
   params: PageParams;
 }) {
+  const masthead = getMagazineMasthead();
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
   if (!article) notFound();
@@ -335,11 +340,11 @@ export default async function ArticleDetailPage({
 
       <div className="site">
         <div className="topbar">
-          <span>Vol. I, No. 1</span>
+          <span>{masthead.volumeLabel}</span>
           <span className="hide-mob">
             golden-horizons.org · The Retirement Abroad Magazine
           </span>
-          <span>April 2026</span>
+          <span>{masthead.monthYear}</span>
         </div>
 
         <div className="masthead">
@@ -348,7 +353,7 @@ export default async function ArticleDetailPage({
             <span className="hide-mob">
               For Americans Who Are Ready for What&rsquo;s Next
             </span>
-            <span>April 2026 · Issue 1</span>
+            <span>{masthead.issueLine}</span>
           </div>
 
           <Link href="/" className="mastname">
