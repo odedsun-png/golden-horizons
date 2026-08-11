@@ -182,7 +182,7 @@ Information checked: August 11, 2026
 
 ## About Golden Horizons
 
-Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad. We focus on the decision that matters: what your money may make possible, whether you can legally stay, whether healthcare and ordinary daily life work for you, and what you should test before committing. Travel first. Test the reality. Then decide.
+Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings may make possible around the world. We look beyond the vacation photos—at cost of living, legal stay, healthcare, housing, and everyday life—so you can discover places worth exploring before making a major move. Travel first. Test the reality. Then decide.
 
 ## Final Verdict
 
