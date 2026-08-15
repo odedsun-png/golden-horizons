@@ -1,7 +1,7 @@
 ---
-title: "Ireland’s Safest Rural Towns for Retirement"
+title: "Ireland - Rural Towns Worth Testing for Retirement Safety"
 category: Safety
-slug: ireland-safest-rural-towns-for-retirement
+slug: ireland-rural-towns-worth-testing-for-retirement-safety
 date: 2026-08-15
 image: https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxJcmVsYW5kJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3ODY4MDk2MDB8MA&ixlib=rb-4.1.0&q=80&w=1080
 description: "Explore the safety of Roscommon Town, Boyle, and Castlerea for retirement in rural Ireland."
