@@ -4,7 +4,7 @@ category: Hidden Gems
 slug: bolivia-hidden-colonial-towns-like-potosi-for-retirement
 date: 2026-08-16
 image: https://images.unsplash.com/photo-1571422657325-63704f9273ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxCb2xpdmlhJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3ODY4OTAwODF8MA&ixlib=rb-4.1.0&q=80&w=1080
-description: "Explore Bolivia's colonial towns like Potosí for potential retirement, focusing on heritage and affordability."
+description: "Explore Bolivia’s colonial towns as possible retirement scouting destinations, with practical caveats on costs, healthcare and residency."
 featured: false
 ---
 
