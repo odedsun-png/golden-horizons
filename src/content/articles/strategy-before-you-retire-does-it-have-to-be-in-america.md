@@ -82,7 +82,7 @@ Residency pathways and visa requirements are country-specific and must be verifi
 
 ## The Golden Horizons 30-Day Test
 
-- Rent a short-term stay (3–6 months) in a target area to gauge climate, groceries, and healthcare access.
+- Rent a short-term stay in a target area to gauge climate, groceries, and healthcare access.
 - Contact local expat groups for housing, services, and healthcare recommendations.
 - Check official visa/residency pathways for the candidate country and begin pre-application steps.
 - Verify Social Security payment rules for the chosen country using SSA’s Payments Abroad Screening Tool.
@@ -123,7 +123,6 @@ Evaluate climate, community infrastructure, and service access in your target ar
 - [U.S. Travel.State.Gov](https://travel.state.gov/content/travel/en/us-visas/immigrate/retirement.html)
 - [IRS – Publication 54](https://www.irs.gov/publications/p54)
 - [SSA – Payments Abroad Screening Tool](https://www.ssa.gov/international/payments_outsideUS.html)
-- [Medicare – U.S. Citizens Living Abroad](https://cms.gov/sites/)
 - [Canadian Travel/Retiring Abroad](https://travel.gc.ca/travelling/living-abroad/retiring)
 - [Smartraveller – Retiring overseas](https://www.smartraveller.gov.au/before-you-go/activities/retiring-overseas)
 - [Kiplinger – Retirement Abroad insights](https://www.kiplinger.com/retirement/retirement-planning/how-to-manage-retirement-savings-when-living-abroad)
