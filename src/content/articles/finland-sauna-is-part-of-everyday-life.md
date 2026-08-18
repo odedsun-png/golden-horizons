@@ -21,7 +21,3 @@ Visitors to Finland will notice the prevalence of saunas everywhere, from urban 
 ## Source
 
 [Visit Finland (Official Tourism Organization)](https://www.visitfinland.com/en/practical-tips/facts-about-finland/)
-
-## More from Golden Horizons
-
-[Discover more Did You Know postcards](/did-you-know/)
