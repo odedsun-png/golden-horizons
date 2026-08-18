@@ -21,7 +21,3 @@ So, if you find yourself in Spain, embrace the local lifestyle and enjoy a late-
 ## Source
 
 [Spain.info](https://www.spain.info/en/travel-tips/opening-times-public-holidays-spain/)
-
-## More from Golden Horizons
-
-[Discover more Did You Know postcards](/did-you-know/)
