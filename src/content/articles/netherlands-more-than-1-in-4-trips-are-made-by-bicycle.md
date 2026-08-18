@@ -23,7 +23,3 @@ Additionally, employers in the Netherlands can offer a tax-free mileage allowanc
 ## Source
 
 [Government of the Netherlands](https://www.government.nl/themes/transport/bicycles/bicycle-policy-in-the-netherlands)
-
-## More from Golden Horizons
-
-[Discover more Did You Know postcards](/did-you-know/)
