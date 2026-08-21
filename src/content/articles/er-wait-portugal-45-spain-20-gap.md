@@ -1,145 +1,207 @@
 ---
-title: "Portugal vs Spain: Why ER wait times differ in two Iberian health systems—and what it means for retirement healthcare access"
+title: "Portugal vs Spain ER Wait Times: What the Numbers Actually Show and What Retirees Should Plan Around"
 category: Healthcare
 slug: er-wait-portugal-45-spain-20-gap
 date: 2026-08-20
 image: https://images.unsplash.com/photo-1531772337062-9d94547f333f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxQb3J0dWdhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzg3MjY2MDQ3fDA&ixlib=rb-4.1.0&q=80&w=1080
-description: "Explore why ER wait times differ between Portugal and Spain and the implications for retirees considering healthcare access abroad."
+description: "A data-driven comparison of emergency room wait times in Portugal vs Spain — real numbers by hospital, how the Manchester Triage system works, private ER alternatives, and what retirees should actually plan around."
 featured: false
 ---
 
-# Portugal vs Spain: Why ER wait times differ in two Iberian health systems—and what it means for retirement healthcare access
+# Portugal vs Spain ER Wait Times: What the Numbers Actually Show and What Retirees Should Plan Around
 
-**Golden Horizons Status:** 🟢 STRONG FIT TO TEST
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY HEALTHCARE**
 
-> **THE SHORT ANSWER:** Emergency room wait times in Portugal and Spain differ due to structural, organizational, and capacity-related factors. Portugal's emergency services have undergone reforms like "Ligue Antes, Salve Vidas," affecting wait times variably across regions. Spain's system also shows regional variation, influenced by its autonomous communities' management. Understanding these dynamics is crucial for retirees considering healthcare access in these countries.
+> **THE SHORT ANSWER:** Both Portugal and Spain use the same Manchester Triage system with the same target wait times: 0 minutes for red (emergency), 10 minutes for orange, 60 minutes for yellow (urgent), and 120 minutes for green. The real gap isn't in the system design — it's in the overflow. Portugal's public hospitals regularly exceed targets by 3-7x during summer months: Santa Maria Hospital in Lisbon hit 7+ hours for yellow-band patients in August 2026. Spain's public ERs run 4-8 hours for non-urgent cases in Andalusia. Private ERs in both countries see urgent patients in 20-47 minutes for €150-250. The retiree takeaway: your ER experience depends on which hospital, what season, and whether you carry private insurance — not which country.
 
 ## Retirement Snapshot
 
-**Primary decision:**  
-Understanding ER wait-time dynamics in Portugal vs Spain for retirement planning.
+**Primary decision:**
+Whether ER access differences between Portugal and Spain should influence where you retire.
 
-**Best fit:**  
-Retirees seeking to understand healthcare access and ER wait times in Portugal and Spain.
+**Best fit:**
+Retirees with chronic conditions or age-related health concerns who need to understand real emergency care access before choosing a country.
 
-**Biggest warning:**  
-Regional variation and policy-driven pathways can significantly affect ER access, making it essential to research specific areas.
+**Biggest warning:**
+Country-level averages are misleading. Hospital São João in Porto waits 3 hours 37 minutes while Santa Maria in Lisbon waits 7+ hours — both are in Portugal, both are public. The variance within each country dwarfs the variance between them.
 
-**Healthcare:**  
-Portugal and Spain both have regional variations in ER wait times, influenced by local policies and capacity.
+**Planning-budget lens:**
+Private health insurance (€80-200/month in Portugal, €100-250/month in Spain) effectively eliminates the public ER wait-time problem. Private ER visits cost €150-250 for consultation and basic workup, with waits of 20-47 minutes.
 
-## What the headline asks and why it matters for retirees
+## The Triage System: Identical in Both Countries
 
-Emergency room (ER) wait times are a critical factor for retirees considering healthcare access in Portugal and Spain. The differences in wait times between these two countries can be attributed to various factors, including system design, triage policies, and regional capacity pressures. For retirees, understanding these differences is vital for making informed decisions about where to live and how to access healthcare services.
+Portugal and Spain both use the Manchester Triage System (MTS), a five-color protocol that determines how quickly you're seen based on clinical urgency — not arrival order:
 
-Portugal's emergency services have implemented reforms such as "Ligue Antes, Salve Vidas," which aim to manage patient flow and reduce unnecessary ER visits. These reforms have had mixed impacts on wait times, with significant regional variation. In contrast, Spain's national health system (SNS) operates under regional administration, leading to differences in ER management across its autonomous communities. Both countries face capacity pressures, with hospital occupancy and seasonal demand affecting wait times.
+| Color | Severity | Target Wait | What It Covers |
+|-------|----------|-------------|----------------|
+| Red | Emergency | 0 minutes | Cardiac arrest, major trauma, airway obstruction |
+| Orange | Very Urgent | 10 minutes | Chest pain, severe bleeding, stroke symptoms |
+| Yellow | Urgent | 60 minutes | Fractures, high fever, abdominal pain, breathing difficulty |
+| Green | Standard | 120 minutes | Sprains, minor cuts, mild infections, earache |
+| Blue | Non-Urgent | 240 minutes | Cold symptoms, mild rash, prescription renewals |
 
-For retirees, these dynamics mean that ER wait times can vary widely depending on the region and specific hospital. Understanding the local healthcare landscape, including the availability of private options and real-time wait-time data, can help retirees plan for healthcare access in their chosen destination.
+Red and orange patients are seen immediately in both countries — neither system fails at true emergencies. The wait-time gap hits yellow, green, and blue patients, where both countries regularly exceed the MTS targets.
 
-## How ED wait-time dynamics function in each system (Portugal and Spain)
+## What Portuguese Public ERs Actually Look Like in 2026
 
-### Portugal
+Portugal's SNS (Serviço Nacional de Saúde) hospitals are under sustained pressure, and the numbers are stark.
 
-Portugal's emergency services have undergone significant reforms aimed at improving efficiency and reducing wait times. The "Ligue Antes, Salve Vidas" initiative encourages patients to call before visiting the ER, allowing for better triage and management of non-urgent cases. Despite these efforts, wait times remain variable across regions due to factors such as hospital occupancy and the distribution of Serviço Nacional de Saúde (SNS) emergency departments.
+**Summer 2026 data (June 21 – August 12):** Yellow-wristband patients — the "urgent" category covering fractures, high fevers, and abdominal pain — waited an average of 56 minutes for their first medical observation nationally. That's close to the 60-minute target, but the average hides extreme variation between hospitals.
 
-Real-time monitoring through the SNS Monitor provides insights into current wait times, helping patients make informed decisions about when and where to seek care. However, high utilization of emergency services and regional capacity pressures continue to challenge the system.
+**Hospital-level reality:**
+- **Santa Maria Hospital, Lisbon:** 7 hours 19 minutes average wait for yellow-band patients (August 2026). Seventeen patients with yellow wristbands were waiting simultaneously when this was recorded.
+- **Hospital de Barreiro (south of Lisbon):** 11+ hours average wait for initial assessment across all categories.
+- **Hospital São João, Porto:** 3 hours 37 minutes — significantly better than Lisbon, but still 3.6x the yellow-band target.
+- **Hospital de Faro (Algarve):** 41 minutes for urgent patients — close to target, though a recent IT glitch temporarily inflated displayed times.
 
-### Spain
+The pattern: Lisbon-area hospitals are critically overloaded. Porto is strained but functional. The Algarve and smaller regional hospitals perform closer to triage targets.
 
-Spain's national health system (SNS) also experiences regional variation in ER wait times, influenced by the management practices of its autonomous communities. While Spain faces its own capacity pressures, publicly accessible data indicate ongoing efforts to manage ER flow and capacity effectively. Regional differences in triage protocols and hospital resources contribute to the variation in wait times.
+### The "Ligue Antes, Salve Vidas" Reform
 
-Spain's approach to healthcare management emphasizes regional autonomy, allowing for tailored solutions to local challenges. This flexibility can lead to differences in wait times and healthcare experiences across the country.
+In 2024, Portugal introduced "Ligue Antes, Salve Vidas" (Call Before You Go, Save Lives), requiring patients to call the SNS 24 triage line before visiting most public ERs. The goal: filter non-urgent cases to primary care, reducing ER overcrowding.
 
-## Publicly available indicators and caveats about comparing country-wide wait times
+The results are mixed. Call volume to SNS 24 jumped 58.9% between 2024 and 2025. But the phone line itself became overloaded — wait times for the triage call increased significantly, and projections estimate up to 1 million unanswered calls during the 2025-26 winter season. The reform reduced unnecessary ER visits at some hospitals but created a new bottleneck: you can't get through the phone gate to reach the ER gate.
 
-Comparing ER wait times between Portugal and Spain requires careful consideration of the available data and the context in which it is collected. Both countries provide real-time wait-time indicators, but the data collection methods and reporting standards can differ significantly.
+For retirees, this means: if you use Portugal's public ER, you may need to call SNS 24 first (phone: 808 24 24 24). Budget time for the phone wait on top of the ER wait.
 
-In Portugal, the SNS Monitor offers real-time data on ER wait times, providing transparency and aiding in decision-making. Spain's data, while available, is less uniform nationally and varies by region. These differences in data transparency and collection can affect perceived gaps in wait times between the two countries.
+## What Spanish Public ERs Actually Look Like in 2026
 
-Retirees should be aware of these caveats when comparing ER wait times and consider the broader healthcare context, including regional policies and capacity pressures, when planning for healthcare access in Portugal or Spain.
+Spain's SNS (Sistema Nacional de Salud) is managed by its 17 autonomous communities, so ER performance varies by region rather than following a single national pattern.
 
-![descriptive destination image](https://images.unsplash.com/photo-1601839181465-c33194a13cb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxIb3NwaXRhbCUyMEVtZXJnZW5jeSUyMFJvb218ZW58MHwwfHx8MTc4NzI2NzI4NXww&ixlib=rb-4.1.0&q=80&w=1080)
+**Available data points:**
+- **Catalonia:** Average ER wait time of 61.9 minutes across all public and public-financed hospitals (most recent comprehensive data, 2023). This is close to the 60-minute yellow-band target.
+- **Andalusia:** Total time spent in A&E (from arrival to discharge or admission) ranges from 6 to 10 hours. Waits spike in evenings, weekends, and flu season.
+- **National estimate for non-life-threatening cases:** 4-8 hours in public ERs.
+
+Spain publishes less centralized real-time ER data than Portugal. Portugal's SNS Monitor (snsmonitor.pt) shows live wait times by hospital — you can check before you go. Spain's equivalent data is scattered across regional health portals, making comparison harder.
+
+**The honest read:** Spain's public ER waits are comparable to Portugal's — 4-8 hours for non-urgent cases is the norm in both countries' major hospitals. Neither country delivers consistently on the 60-minute yellow-band target in urban hospitals during peak periods.
+
+## Private ERs: The Shortcut That Changes the Equation
+
+This is where the retiree-relevant gap opens — not between countries, but between public and private.
+
+### Portugal Private ERs
+
+- **Hospital Lusíadas Porto:** Green-band (standard) patients wait 20 minutes. Yellow-band (urgent) patients wait 43 minutes.
+- **Hospital Lusíadas Lisboa:** Green-band wait: 35 minutes. Yellow-band wait: 47 minutes.
+- **Cost:** An urgent care package (consultation + basic labs + X-ray) runs approximately €230. Individual ER consultation starts around €150.
+- **Major private networks:** CUF, Lusíadas, Hospital da Luz — all operate 24/7 ERs in Lisbon, Porto, and the Algarve.
+- **Real-time tracking:** tempodeespera.pt aggregates wait times from both public SNS hospitals and private networks (CUF, Lusíadas, Hospital da Luz).
+
+### Spain Private ERs
+
+- **Quirónsalud, HM, Vithas networks:** Minor issues (UTI, sore throat, mild rash) are typically seen within an hour at any centro médico.
+- **Cost:** Initial ER consultation and triage: €150-250. Total ER visit with treatment: €200-400+.
+- **Major private networks:** Quirónsalud (Spain's largest private group), Vithas, HM Hospitales — all run 24/7 Servicio de Urgencias.
+- **Vithas Xanit (Costa del Sol):** English and German-speaking staff, strong international patient focus — a practical option for retirees in Malaga/Marbella.
+
+**The math:** Private health insurance in Portugal costs €80-200/month (age-dependent). In Spain, €100-250/month. Either eliminates the public ER wait-time problem entirely. A retiree who budgets €150-200/month for private insurance will never wait 7 hours for a yellow-band assessment.
+
+![European hospital corridor](https://images.unsplash.com/photo-1601839181465-c33194a13cb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxIb3NwaXRhbCUyMEVtZXJnZW5jeSUyMFJvb218ZW58MHwwfHx8MTc4NzI2NzI4NXww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Identify 3–5 retirement towns in Portugal and 3–5 in Spain; note the closest public ERs and their reported real-time wait indicators.
-2. Check the SNS Monitor real-time ER wait times for Portugal near your target residence and compare to a Spanish equivalent (regional hospital data where available).
-3. Review the pre-ER triage requirements in the Portuguese SNS (Ligue Antes, Salve Vidas) and in the relevant Spanish regions where you might live.
-4. Call or visit a local primary-care center to understand gatekeeping rules and typical wait times for non-emergency visits.
-5. If considering long-term residency, document any private-insurance options or private ER access in both countries and compare costs and wait-times.
-6. Map travel considerations to ERs for potential emergencies (distance, travel times, and ambulance access).
+1. Check live ER wait times at your target city's hospitals right now: use snsmonitor.pt for Portugal or tempodeespera.pt for both public and private. For Spain, check your target region's health portal (e.g., CatSalut for Catalonia, SAS for Andalusia).
+2. Identify the closest public ER and the closest private ER to your intended residence. Map the drive time to each at peak traffic hours.
+3. Get private health insurance quotes from two providers in your target country: Médis or Multicare in Portugal; Sanitas or Adeslas in Spain. Compare ER coverage, co-pays, and which private hospitals are in-network.
+4. Call the private ER nearest your target residence and ask: What's the typical wait for a yellow-band (urgent) patient? What does an ER visit cost without insurance?
+5. If you take regular medication, identify how to access emergency prescriptions in each country — Portugal's SNS 24 line can authorize emergency refills; Spain's centros de salud handle urgent prescriptions during business hours.
+6. Ask your insurance provider whether ambulance transport (INEM in Portugal, SAMUR/061 in Spain) is covered and whether you'll be taken to the nearest public hospital or can request a private facility.
 
 ## Practical Comparison
 
-### System design and triage policy
+### Public ER wait times (yellow-band / urgent)
 
-**What the evidence says:**  
-Portugal’s SNS has implemented triage measures like SNS 24 to filter non-urgent visits, influencing ER visit patterns and wait times. Spain’s SNS relies on regional administration with national guidelines, showing regional differences in ER management.
+**What the evidence says:**
+Portugal national average: 56 minutes (summer 2026), but ranges from 41 minutes in Faro to 7+ hours at Santa Maria in Lisbon. Spain Catalonia average: 62 minutes (2023 data). Andalusia total ER time: 6-10 hours. Both countries exceed MTS targets at major urban hospitals.
 
-**What to check next:**  
-Examine how local ERs near retirement destinations handle triage, after-hours access, and referral pathways.
+**What to check next:**
+Look up real-time waits at the specific hospitals near your target residence — the country average is meaningless when one Lisbon hospital waits 3x longer than another.
 
-### Capacity pressures and regional variation
+### Private ER access and cost
 
-**What the evidence says:**  
-Both Portugal and Spain experience ER wait times affected by hospital occupancy, seasonal demand, and regional supply, with strong regional variation noted.
+**What the evidence says:**
+Portugal private (Lusíadas): 20-47 minutes, ~€230 for an urgent care package. Spain private (Quirónsalud/Vithas): under 60 minutes for minor issues, €150-250 consultation. Private insurance eliminates the wait-time gap for €80-250/month.
 
-**What to check next:**  
-Map wait-time expectations to specific regions and consider proximity to major centers.
+**What to check next:**
+Whether a private hospital with a 24/7 ER exists within 30 minutes of your target residence. In rural Algarve or inland Spain, private ER access may require a longer drive.
 
-### Data transparency and real-time information
+### Pre-ER triage requirements
 
-**What the evidence says:**  
-Portugal offers real-time ER wait indicators via SNS Monitor, while Spain’s data is more regionally scattered.
+**What the evidence says:**
+Portugal requires calling SNS 24 (808 24 24 24) before visiting most public ERs under the "Ligue Antes, Salve Vidas" policy. The phone line itself has growing wait times (58.9% increase in call volume, 2024-2025). Spain has no national pre-ER phone requirement.
 
-**What to check next:**  
-Determine how retirees can access current wait-time data for nearest ERs and whether real-time data influence care-seeking decisions.
+**What to check next:**
+Whether your target hospital enforces the phone-first rule and how long the SNS 24 wait typically runs at your intended visit time.
+
+### Real-time wait data transparency
+
+**What the evidence says:**
+Portugal leads: SNS Monitor (snsmonitor.pt) shows live wait times by hospital, triage color, and region. tempodeespera.pt adds private hospitals. Spain's data is fragmented across 17 regional portals with no single national dashboard.
+
+**What to check next:**
+Bookmark the real-time tracker for your country. In Portugal, snsmonitor.pt. In Spain, find your region's specific portal.
 
 ## The Trade-Off
 
-**What you may gain:**  
-- Clarity about the structural reasons behind ER wait-time variation.
-- Realistic expectations for ER access in retirement in Portugal vs Spain.
-- Practical guidance on using triage policies and real-time wait data to plan healthcare access.
+**What you may gain by choosing Portugal for healthcare access:**
+- Real-time ER wait transparency (SNS Monitor — check before you go)
+- Lower private insurance costs (€80-200/month vs €100-250 in Spain)
+- SNS public healthcare with no monthly premium (tax-funded, €5-10 per GP visit)
 
-**What you may give up:**  
-- A simple “Portugal is slower than Spain” blanket claim; the reality is more nuanced, with regional variation and policy-driven pathways that can help or hinder access depending on location and timing.
+**What you may gain by choosing Spain:**
+- No pre-ER phone triage requirement (walk in directly)
+- Convenio especial: full public coverage for €60-157/month — simpler than Portugal's per-visit model
+- Larger private hospital networks in tourist/expat areas (Costa del Sol, Valencia)
 
-![descriptive destination image](https://images.unsplash.com/photo-1624004015322-a94d3a4eff39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwzfHxIb3NwaXRhbCUyMEVtZXJnZW5jeSUyMFJvb218ZW58MHwwfHx8MTc4NzI2NzI4NXww&ixlib=rb-4.1.0&q=80&w=1080)
+**What neither country solves:**
+- Public ER overcrowding during summer and flu season (4-10 hour waits at urban hospitals in both)
+- Rural healthcare gaps (fewer ERs, longer ambulance times outside major cities)
+
+![Medical facility waiting area](https://images.unsplash.com/photo-1624004015322-a94d3a4eff39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwzfHxIb3NwaXRhbCUyMEVtZXJnZW5jeSUyMFJvb218ZW58MHwwfHx8MTc4NzI2NzI4NXww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### Do Portugal and Spain have real-time ER wait-time data available to the public?
+### Are ER wait times really shorter in Spain than Portugal?
 
-Portugal does via SNS Monitor; Spain’s data exist but are more regionally scattered. ([snsmonitor.pt](https://snsmonitor.pt/en/urgencias))
+Not consistently. Catalonia's average public ER wait is 62 minutes; Portugal's national yellow-band average is 56 minutes (summer 2026). The gap between hospitals within each country is far larger than the gap between countries: Faro waits 41 minutes while Santa Maria in Lisbon waits 7+ hours. Both countries' urban public ERs run 4-10 hours for non-urgent cases during peak periods. ([catalannews.com](https://www.catalannews.com/society-science/item/waiting-time-in-catalan-public-hospitals-emergency-units-surpasses-an-hour-on-average))
 
-### Are ER wait times uniform across each country?
+### What does a private ER visit cost if I don't have insurance?
 
-No. Both countries show substantial regional variation and capacity-driven differences. ([ers.pt](https://www.ers.pt/media/n41luj1r/executive-summary.pdf))
+In Portugal, Hospital Lusíadas charges approximately €230 for an urgent care package (consultation, basic labs, X-ray). In Spain, private ER consultation and triage runs €150-250, with total visits reaching €200-400+ depending on treatment. Private insurance (€80-250/month depending on country and age) covers most or all of these costs and drops wait times to 20-47 minutes. ([urgentdoc.eu](https://urgentdoc.eu/blog/public-er-vs-private-clinics-spain-tourists/))
 
-### What policy changes have affected ER access in Portugal recently?
+### Do I have to call before going to the ER in Portugal?
 
-Reforms like Ligue Antes, Salve Vidas aim to triage calls before ER visits and guide patients appropriately; impact on wait times has been mixed and regionally variable. ([frontiersin.org](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1694713/full?utm_source=openai))
+In most public SNS hospitals, yes. The "Ligue Antes, Salve Vidas" program requires calling the SNS 24 line (808 24 24 24) for telephone triage before visiting the ER. A nurse assesses your symptoms and directs you to the appropriate level of care. Call volume jumped 58.9% between 2024 and 2025, meaning the phone wait itself can add significant time. Private hospitals do not require a phone call — you walk in directly. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC12568453/))
 
-### Do official sources label one country as having consistently shorter ER waits than the other?
+### Can I check ER wait times before I go?
 
-No definitive national average is published; credible sources emphasize regional variation and system design factors rather than a single country-wide metric. ([ers.pt](https://www.ers.pt/media/n41luj1r/executive-summary.pdf))
+Portugal has the best real-time transparency: SNS Monitor (snsmonitor.pt) shows live wait times by hospital, triage category, and region for all public ERs. The independent site tempodeespera.pt adds private hospitals (CUF, Lusíadas, Hospital da Luz). Spain has no equivalent national dashboard — ER data is published by individual autonomous communities, making it harder to check in advance. ([theportugalnews.com](https://www.theportugalnews.com/news/2026-08-13/emergency-room-wait-times-are-rising-again/1069473))
+
+### Will I always be seen faster at a private hospital?
+
+In urban areas, yes — consistently. Lusíadas Porto sees green-band patients in 20 minutes and yellow-band in 43 minutes. Quirónsalud centers in Spain typically see minor cases within an hour. However, in rural areas, the nearest private ER may be 45-90 minutes away, making the public hospital faster by geography even if its wait is longer. Always map both your nearest public and private ERs before settling on a residence. ([lusiadas.pt](https://www.lusiadas.pt/en/hospitals-clinics/hospital-lusiadas-porto))
 
 ## Check Today's Information Before You Decide
 
-- [OECD Health Profile 2025 – Portugal](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/country-health-profile-2025-country-notes_7e72146d/portugal_6d4acb43/56041c8e-en.pdf)
-- [SNS Monitor – Emergency Department wait times (Portugal)](https://snsmonitor.pt/en/urgencias)
-- [ERS – Acesso aos Serviços de Urgência do SNS (Executive Summary)](https://www.ers.pt/media/n41luj1r/executive-summary.pdf)
-- [Spain – Commonwealth Fund 2026 Profile (Spain)](https://www.commonwealthfund.org/sites/default/files/2026-04/2026_Country-Profiles_Spain.pdf)
-- [Spain – Key indicators (National Health System)](https://inclasns.sanidad.gob.es/main.html?lang=EN)
+- [SNS Monitor — Live ER Wait Times (Portugal)](https://snsmonitor.pt/en)
+- [Tempo de Espera — Public + Private ER Waits (Portugal)](https://tempodeespera.pt/en)
+- [ERS — Access to SNS Emergency Services Report](https://www.ers.pt/media/n41luj1r/executive-summary.pdf)
+- [Spain Commonwealth Fund Health Profile 2026](https://www.commonwealthfund.org/sites/default/files/2026-04/2026_Country-Profiles_Spain.pdf)
+- [Spain National Health System Key Indicators](https://inclasns.sanidad.gob.es/main.html?lang=EN)
+- [Portugal SNS 24 Telephone Triage Reform (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12568453/)
 
 ## Sources & Verification
 
-- [OECD Health Profile 2025 – Portugal](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/country-health-profile-2025-country-notes_7e72146d/portugal_6d4acb43/56041c8e-en.pdf)
-- [SNS Monitor – Emergency Department wait times (Portugal)](https://snsmonitor.pt/en/urgencias)
-- [ERS – Acesso aos Serviços de Urgência do SNS (Executive Summary)](https://www.ers.pt/media/n41luj1r/executive-summary.pdf)
-- [Spain – Commonwealth Fund 2026 Profile (Spain)](https://www.commonwealthfund.org/sites/default/files/2026-04/2026_Country-Profiles_Spain.pdf)
-- [Spain – Key indicators (National Health System)](https://inclasns.sanidad.gob.es/main.html?lang=EN)
+- [ER wait times rising — The Portugal News (August 2026)](https://www.theportugalnews.com/news/2026-08-13/emergency-room-wait-times-are-rising-again/1069473)
+- [Long waits expose strain on Portugal's public healthcare — Xinhua (August 2026)](https://english.news.cn/europe/20260817/993bf9e597224606b18e2cdadcbb17c6/c.html)
+- [SNS 24 telephone triage reform — PMC (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12568453/)
+- [Catalan ER average wait time — Catalan News](https://www.catalannews.com/society-science/item/waiting-time-in-catalan-public-hospitals-emergency-units-surpasses-an-hour-on-average)
+- [Spain A&E waits and corridor patients — Tailor Made Healthcare](https://www.tailormadehealthcarespain.org/post/spain-s-public-healthcare-waiting-and-delays)
+- [Public ERs vs private clinics in Spain — UrgentDoc](https://urgentdoc.eu/blog/public-er-vs-private-clinics-spain-tourists/)
+- [Hospital Lusíadas Porto — Lusíadas Saúde](https://www.lusiadas.pt/en/hospitals-clinics/hospital-lusiadas-porto)
+- [Faro/Portimão system error — Portugal Resident](https://www.portugalresident.com/system-error-inflates-waiting-times-at-faro-and-portimao-ae-units/)
 
 Information checked: August 20, 2026
 
@@ -156,6 +218,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟢 STRONG FIT TO TEST**
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY HEALTHCARE**
 
-Understanding the differences in ER wait times between Portugal and Spain is crucial for retirees planning their healthcare access abroad. While both countries face regional variations and capacity pressures, knowing the local healthcare landscape can help retirees make informed decisions about where to live and how to access emergency services effectively.
+The "Portugal is slower, Spain is faster" narrative doesn't survive contact with the data. Both countries use the same triage system with the same targets. Both countries' urban public ERs run 4-10 hours for non-urgent cases during peak periods. The real variable isn't the country — it's the specific hospital and whether you carry private insurance. A retiree with €150-200/month private coverage will wait 20-47 minutes at a Lusíadas in Portugal or under an hour at a Quirónsalud in Spain. Without insurance, you're in the same 4-8 hour public queue in either country. Check snsmonitor.pt or tempodeespera.pt for Portugal's live data. Map your nearest public and private ERs in your target city. Then test it — visit the ER waiting room during a weekday afternoon and count the wristband colors yourself.
