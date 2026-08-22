@@ -14,13 +14,13 @@ tags:
   - retirement abroad
   - cost of living
 author: "Golden Horizons"
-image: "https://images.pexels.com/photos/37326856/pexels-photo-37326856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+image: "https://images.pexels.com/photos/1239312/pexels-photo-1239312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 image_alt: "Dakos barley rusk topped with fresh tomatoes herbs and olive oil on a rustic plate in Crete Greece"
 ---
 
 # Dakos in Crete: The Barley Rusk Salad You'll Crave After One Bite — Local Food Guide
 
-![Dakos-style bruschetta topped with fresh tomatoes, herbs, and olive oil on a rustic surface](https://images.pexels.com/photos/37326856/pexels-photo-37326856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+![Tomato salad with olive oil, herbs, and fresh ingredients — the flavors at the heart of Cretan dakos](https://images.pexels.com/photos/1239312/pexels-photo-1239312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
 ## Quick Taste
 
