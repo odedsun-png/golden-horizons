@@ -13,11 +13,13 @@ tags:
   - cost of living
 author: "Golden Horizons"
 date: 2026-08-22
-image: ""
+image: "https://images.pexels.com/photos/37024910/pexels-photo-37024910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 image_alt: "Bandeja paisa platter with fríjoles rice chicharrón chorizo plantain avocado arepa and fried egg in Medellín Colombia"
 ---
 
 # Bandeja Paisa in Colombia: What the Giant Platter Actually Costs — Local Food Guide
+
+![Bandeja paisa platter with grilled meat, rice, beans, plantain, arepa, and chicharrón served on a Colombian table](https://images.pexels.com/photos/37024910/pexels-photo-37024910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
 ## Quick Taste
 
@@ -32,6 +34,8 @@ Bandeja paisa traces to the arrieros — the muleteers who hauled coffee, salt, 
 The platter as a named, standardized concept didn't appear until 1950, when COTELCO (the Colombian Hotel and Tourism Association) formally recognized "bandeja paisa" as Antioquia's signature regional dish to promote local gastronomy. Before that, it was just what paisas ate. In 2005, the Colombian government proposed making it the national dish under the more regionally neutral name "bandeja montañera," but the proposal drew pushback — bandeja paisa represents one region, not all of Colombia, and coastal, Amazonian, and Pacific communities objected. It has no official national-dish status and no UNESCO intangible-heritage designation, despite what some tourism copy claims.
 
 What does have protected status is the identity rule paisas enforce among themselves: the fríjoles antioqueños are the dish's anchor. Made with cargamanto beans (a local cranberry-type variety) cooked slowly with pork hock, carrot, green plantain, and aliños, then finished with hogao stirred through, they are thick, reddish, and savory-sweet. A widely cited local maxim: "If it's not fríjoles antioqueños, it's not bandeja paisa." The meats can vary. The beans cannot.
+
+![Traditional Colombian breakfast spread with eggs, rice, plantains, and coffee — the calentado paisa morning ritual](https://images.pexels.com/photos/37347242/pexels-photo-37347242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
 ## How Locals Eat It
 
@@ -58,6 +62,8 @@ Casa Vieja in La Candelaria (established 1969) is the capital's most historicall
 Smaller towns in the coffee region serve bandeja paisa at fondas with less markup. The beans tend to be thicker here, cooked longer with more pork hock. Prices run lower than Medellín — expect 20,000–35,000 COP at a fonda, sometimes with morcilla (blood sausage) included by default.
 
 Prices are rising fast. Medellín restaurant association (Acodres) data shows corrientazo prices rose 11% from 2023 to 2025, with further increases in January 2026 following the minimum-wage hike. Treat any published price as a moving target and check the whiteboard menu by the door.
+
+![Colorful street food cart in Bogotá serving local Colombian dishes to passersby](https://images.pexels.com/photos/37597786/pexels-photo-37597786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
 ## Regional Variations
 
