@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "What $1,200/mo Gets You in Medellin, Colombia"
 category: Cost
@@ -216,4 +215,3 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 **Golden Horizons Verdict: 🟢 SOLID OPTION**
 
 Medellín offers a viable option for retirees on a $1,200/month budget, with affordable housing in neighborhoods like Laureles and Belén, manageable living costs, and a vibrant cultural scene. However, careful planning for residency and healthcare is essential.
-```

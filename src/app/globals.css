@@ -775,7 +775,7 @@ body {
 .art-article-body p { margin-bottom: 18px; }
 .art-article-body h2 { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #faf5e9; background: #1e1408; padding: 6px 12px; display: inline-block; margin: 26px 0 16px; font-family: 'EB Garamond', serif; font-weight: 400; }
 .art-article-body h3 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #1e1408; margin: 24px 0 12px; }
-.art-article-body img { width: 100%; display: block; height: 190px; object-fit: cover; margin: 20px 0 5px; filter: contrast(1.05) saturate(1.12) brightness(0.88) sepia(0.06); }
+.art-article-body img { width: 100%; max-width: 100%; display: block; height: 190px; object-fit: cover; margin: 20px 0 5px; filter: contrast(1.05) saturate(1.12) brightness(0.88) sepia(0.06); }
 .art-article-body a { color: #8b6914; text-decoration: underline; }
 
 .dyk { background: #f5edd8; border-top: 2px solid #1e1408; border-bottom: 2px solid #1e1408; padding: 16px 20px; margin: 24px 0; display: flex; gap: 16px; align-items: flex-start; }
