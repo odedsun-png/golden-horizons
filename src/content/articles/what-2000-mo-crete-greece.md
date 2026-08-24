@@ -10,144 +10,173 @@ featured: false
 
 # What $2,000/mo Gets You in Crete, Greece
 
-> You can live in Crete on $2,000/month, especially in inland or suburban areas. Expect to pay €350–€500 (~$385-550) for a one-bedroom apartment outside city centers. Groceries can cost around €200–€300 (~$220-330) monthly. Utilities, including internet, typically run €100–€150 (~$110-165). Private health insurance is often necessary for residency, adding to the budget. Visa requirements include proof of income or savings and private health insurance.
+> $2,000/month buys a genuinely comfortable life in Crete — not just survival. A furnished one-bedroom in Chania's old town rents for EUR450-650 (~$495-715). In Heraklion's suburbs, EUR350-500 (~$385-550). Groceries at a Sklavenitis or Lidl supermarket run EUR200-280 (~$220-308)/month for one person. Utilities and 50 Mbps internet add EUR100-150 (~$110-165). Private health insurance through Ethniki Asfalistiki or Interamerican costs EUR80-180 (~$88-198)/month depending on age. That leaves EUR300-500 (~$330-550) for dining out, transport, and island life — a real cushion.
 
 ## Retirement Snapshot
 
-**Primary decision:**  
-Can you live comfortably in Crete on $2,000/month?
+**Primary decision:**
+Whether $2,000/month delivers a comfortable retirement in Crete — or just an adequate one.
 
-**Best fit:**  
-Retirees seeking a Mediterranean lifestyle with a modest budget.
+**Best fit:**
+Retirees who want Mediterranean weather, affordable food, and the pace of island life without the price tag of the French Riviera or the Amalfi Coast.
 
-**Biggest warning:**  
-Private health insurance is often required for residency, adding to monthly expenses.
+**Biggest warning:**
+Greece's Financially Independent Person (FIP) visa requires proof of EUR2,000+/month (~$2,200) in passive income — your $2,000 barely qualifies, and exchange rate swings could push you below the threshold.
 
-**Planning-budget lens:**  
-Budget carefully for rent, groceries, and healthcare to stay within $2,000/month.
+**Planning-budget lens:**
+Core costs run EUR1,000-1,400 (~$1,100-1,540)/month. That leaves $460-900 for healthcare, dining, travel, and emergencies — a comfortable margin if you stay outside tourist-heavy coastal zones.
 
-**Residency:**  
-Non-EU nationals need a visa with income/savings proof and private health insurance.
+**Residency:**
+The FIP visa requires EUR2,000+/month in pension or passive income, private health insurance, and a clean criminal record. Processing takes 2-4 months through the Greek consulate.
 
-**Healthcare:**  
-Public healthcare (EOPYY) is available, but private insurance is often necessary.
+**Healthcare:**
+Greece's public EOPYY system covers residents, but you need private insurance for the visa. Most retirees keep both — EOPYY for hospitals, private for faster GP access and English-speaking doctors.
 
-**Housing / daily life:**  
-Affordable rents in inland/suburban areas; higher costs in coastal or expat-favored zones.
+**Housing / daily life:**
+Chania and Rethymno are the expat favorites. Heraklion is cheaper but grittier. Small inland villages like Archanes or Vamos offer the lowest rents but require a car.
 
-## Life in Crete on $2,000/month: Housing, Groceries, Utilities, Transport, Dining, and Everyday Life
+## The $2,000 Monthly Budget — Line by Line
 
-Living in Crete on a $2,000/month budget is possible, but it requires careful planning. A one-bedroom apartment outside city centers typically costs €350–€500 (~$385-550) per month. Coastal areas or popular expat zones might be pricier, so consider inland or suburban neighborhoods for more affordable options.
+Here's what $2,000 actually buys, broken down in euros at roughly EUR1 = $1.10:
 
-Groceries for a single retiree range from €200–€300 (~$220-330) monthly. Local markets and supermarkets offer fresh produce and essentials at reasonable prices. Dining out at a local taverna can cost around €10–€15 (~$11-16) per meal, making it an affordable occasional treat.
+**Rent (furnished one-bedroom):**
+Chania old town or Splantzia: EUR450-650 (~$495-715). Heraklion suburbs (Ammoudara, Alikarnassos): EUR350-500 (~$385-550). Rethymno: EUR400-550 (~$440-605). Agios Nikolaos: EUR350-450 (~$385-495). Small inland villages: EUR250-400 (~$275-440) — but you'll need a car.
 
-Utilities, including electricity, water, and internet, generally cost €100–€150 (~$110-165) monthly. Public transport is a practical option, with bus fares typically around €1.50 (~$1.65) per ride, making it easy to explore the island without a car.
+**Groceries:**
+A monthly shop at Sklavenitis, Lidl, or AB Vasilopoulos for one person: EUR200-280 (~$220-308). Greek olive oil, feta, tomatoes, bread, chicken, and seasonal fruit are cheap. Imported items — cheddar cheese, peanut butter, American-brand anything — cost 2-3x more.
 
-## Residency and Healthcare: Visa Pathways, Private Insurance, and Public System Access
+**Utilities + internet:**
+Electricity, water, and 50 Mbps internet through Cosmote or Nova: EUR100-150 (~$110-165)/month. Crete gets hot in summer — if you run AC heavily in July-August, electricity can spike to EUR80-100 (~$88-110) alone. Winter heating is minimal.
 
-For non-EU nationals, obtaining a residency visa in Greece requires meeting specific criteria. You'll need to demonstrate a stable income or sufficient savings, secure private health insurance, and gather necessary documents like a passport, birth certificate, and police clearance. Processing times and exact requirements can vary, so consulting with the Greek consulate or an immigration lawyer is advisable.
+**Healthcare:**
+Private insurance through Ethniki Asfalistiki or Interamerican: EUR80-180 (~$88-198)/month depending on age and coverage. A GP visit at a private clinic like Venizeleio-Pananeio in Heraklion: EUR30-50 (~$33-55). At a public EOPYY clinic with your AMKA number: EUR0-5.
 
-Healthcare in Crete is accessible through the public system (EOPYY), but long-term residents often rely on private insurance for comprehensive coverage. Private health insurance costs vary based on age and coverage level, so it's essential to compare plans and factor this into your budget.
+**Transport:**
+City bus (KTEL) fare in Heraklion or Chania: EUR1.50-2.00 (~$1.65-2.20). A taxi across Chania: EUR5-8 (~$5.50-8.80). Inter-city bus Chania to Heraklion (2.5 hours): EUR15 (~$16.50). Most Crete retirees eventually rent or buy a car — expect EUR200-300 (~$220-330)/month for a small used car including gas and insurance.
 
-![Crete Greece neighborhood street](https://images.unsplash.com/photo-1601836743857-4d1e6da20a32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxDcmV0ZSUyMEdyZWVjZXxlbnwwfDB8fHwxNzg3NTMwMzYwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+**What's left for daily life:**
+After rent, groceries, utilities, insurance, and transport, you've got roughly EUR300-500 (~$330-550) for dining out, entertainment, and extras. That's 20-30 taverna dinners, a weekend trip to Samaria Gorge, and a few glasses of Cretan wine on the harbor.
 
-## The $2,000 Monthly Test
+Bottom line: $2,000 in Crete isn't tight — it's comfortable, with a real margin for enjoying the island.
 
-**Headline budget:** $2,000/month  
-**1-bedroom long-term rent:** €350–€500 (~$385-550)  
-**Groceries / basic food:** €200–€300 (~$220-330)  
-**Utilities + internet:** €100–€150 (~$110-165)  
-**Local transportation:** €1.50 (~$1.65) per bus ride  
-**Dining / everyday extras:** €10–€15 (~$11-16) per meal  
-**Estimated core monthly spend:** €850–€1,150 (~$935-1,265)  
-**Potential remaining buffer / shortfall:** $735-1,065 buffer for healthcare and other expenses  
-**Evidence confidence:** Based on current local data and expat experiences  
-**GH Budget Read:** Feasible with careful planning and choice of location
+## What Your Day Actually Looks Like
+
+A Greek coffee (elliniko) at a kafeneio in Chania's old harbor: EUR1.50-2.50 (~$1.65-2.75). A freddo cappuccino at any café: EUR2.50-3.50 (~$2.75-3.85). A tyropita (cheese pie) from a bakery: EUR1.50-2.50 (~$1.65-2.75). Lunch at a neighborhood taverna — grilled fish, salad, bread, house wine: EUR10-15 (~$11-16.50). A full dinner at a mid-range restaurant in Rethymno harbor — appetizers, main, dessert, local wine: EUR18-30 (~$20-33). A liter of Cretan olive oil at the laiki (street market): EUR6-8 (~$6.60-8.80). A beer at a beach bar: EUR3.50-5.00 (~$3.85-5.50).
+
+Crete's climate is your biggest budget ally. Summers are hot and dry (85-95°F), winters are mild (50-65°F) with rain. You won't own a winter coat. The swimming season runs May through October — that's 6 months of free entertainment at beaches like Elafonisi, Balos, or Marathi.
+
+The pace matters too. Crete moves slowly. Shops close for afternoon siesta (2-5 PM). Dinner starts at 9 PM. Nobody rushes. If you're coming from a US city, the adjustment is cultural as much as financial.
+
+## Residency: The Financially Independent Person Visa
+
+The FIP visa is Greece's path for retirees without EU citizenship. Requirements:
+
+- Proof of passive income of at least EUR2,000/month (~$2,200) — Social Security, pension, investment income
+- Private health insurance valid in Greece (mandatory for the visa)
+- Clean criminal record from the US (FBI background check, apostilled)
+- Proof of accommodation in Greece (rental contract)
+- Sufficient savings — some consulates want to see EUR24,000+ (~$26,400) in a bank account
+
+Apply at the Greek consulate in the US. Processing runs 2-4 months. Once in Greece, register at the local Aliens Bureau (Ypiresia Allodapon) for your residence permit. You'll also need an AFM (tax number) from the local Eforia (tax office) and an AMKA (social security number) for public healthcare access.
+
+Here's the thing worth knowing: the EUR2,000/month threshold is the minimum, and some consulates interpret it strictly. If your Social Security check is $2,000 USD and the euro strengthens, you could technically fall below EUR2,000. Keep EUR3,000-5,000 in a Greek bank account as a cushion.
 
 ## Practical Comparison
 
-### Housing affordability in Crete
+### Chania vs Heraklion vs Rethymno
 
-**What the evidence says:**  
-1-bedroom rents outside city centers commonly €350–€500/month; furnished options may vary; some areas higher near coastlines or expat pockets.
+**What the evidence says:**
+Chania is the expat favorite — a Venetian harbor, walkable old town, and the most English-speaking services. One-bedrooms run EUR450-650 (~$495-715). Heraklion is the island's capital and commercial hub — cheaper (EUR350-500 / ~$385-550) but noisier and less charming. Rethymno splits the difference — smaller than Chania, prettier than Heraklion, with rents at EUR400-550 (~$440-605). All three have hospitals.
 
-**What to check next:**  
-Identify preferred neighborhood (e.g., Heraklion outskirts, Chania suburbs, smaller towns), verify length of lease, confirm whether utilities are included in rent.
+**What to check next:**
+Spend a week in each during your 30-day test. Chania's old town floods with tourists June-September — visit in shoulder season (April-May or October) to see your actual daily life.
 
-### Healthcare access for expats
+### Private insurance vs EOPYY public healthcare
 
-**What the evidence says:**  
-Public system (EOPYY) exists; private insurance often required for residency permits; costs vary by plan.
+**What the evidence says:**
+EOPYY covers hospital stays, prescriptions, and some specialist visits at public facilities — but wait times for specialists run 2-8 weeks, and most public clinic staff speak limited English. Private insurance through Ethniki Asfalistiki (EUR80-120/month) or Interamerican (EUR100-180/month) gets you into private clinics with shorter waits and English-speaking doctors. A GP visit at a public EOPYY clinic costs EUR0-5; the same visit privately costs EUR30-50.
 
-**What to check next:**  
-Confirm visa requirements for private insurance; compare private plan costs for age group; locate nearest hospitals/clinics.
+**What to check next:**
+Get quotes from Ethniki and Interamerican for your age. Ask about the pre-existing condition waiting period — it's typically 12-24 months in Greece.
 
-### Residency visa requirements
+### Crete vs mainland Greece (Athens, Thessaloniki)
 
-**What the evidence says:**  
-Non-EU residency options exist, with income/savings thresholds and required documents; specifics vary by program.
+**What the evidence says:**
+Athens has more healthcare options and cultural amenities but higher rents (EUR500-800 for a one-bedroom) and city pollution. Thessaloniki is cheaper than Athens with good healthcare but cold winters. Crete offers better weather, lower costs outside tourist zones, and the island lifestyle — but fewer specialist hospitals (complex cases get airlifted to Athens) and limited winter flight connections.
 
-**What to check next:**  
-Identify exact visa type applicable to retiree (e.g., financially independent), document list, processing times, and annual renewal rules.
+**What to check next:**
+If you need regular access to a specific medical specialist, verify that the specialty exists on-island. Venizeleio Hospital in Heraklion and Chania General Hospital are the island's largest, but rare specialties may require a flight to Athens.
+
+### $2,000 in Crete vs $2,000 in Portugal or Spain
+
+**What the evidence says:**
+Portugal's Algarve offers similar climate and lower healthcare costs (SNS at EUR5-10/visit vs Greece's EUR30-50 private), but higher rent in popular areas. Spain's Costa Blanca has comparable costs and easier public healthcare enrollment. Crete wins on food costs (taverna lunches EUR10-15 vs EUR12-18 in Spain) and summer weather, but loses on winter flight connectivity and specialist healthcare depth.
+
+**What to check next:**
+If healthcare is your top priority, Portugal or Spain may edge out Greece. If weather, food, and pace of life matter more, Crete wins.
 
 ## The Trade-Off
 
-**What you may gain:**  
-- Affordable living in a Mediterranean climate.
-- Access to local markets and fresh produce.
-- A slower pace of life with strong community ties.
+**What you may gain:**
+- A furnished one-bedroom for EUR350-650 (~$385-715) — 40-60% less than comparable Mediterranean spots in France or Italy
+- Taverna lunches for EUR10-15 (~$11-16.50) with wine — try that in Nice
+- 300+ days of sunshine and a 6-month swimming season
+- A real financial cushion — $460-900/month left after core costs
 
-**What you may give up:**  
-- Higher costs in coastal or expat-favored areas.
-- The necessity of private health insurance for residency.
-- Limited public healthcare access for long-term foreign residents.
-
-![Crete Greece coastal town](https://images.unsplash.com/photo-1575237402880-4b496a83ae04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwzfHxDcmV0ZSUyMEdyZWVjZXxlbnwwfDB8fHwxNzg3NTMwMzYwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+**What you may give up:**
+- Specialist healthcare that requires a flight to Athens for complex cases
+- The FIP visa threshold sits right at your $2,000 budget — exchange rate risk is real
+- A car is nearly essential outside Chania and Heraklion — add EUR200-300/month
+- Greek bureaucracy moves slowly — AMKA, AFM, and residence permit paperwork can take weeks of in-person visits
+- Limited direct flights from the US in winter (most connect through Athens)
 
 ## The Golden Horizons 30-Day Test
 
-1. Contact a Crete-based real estate agent and request quotes for furnished 1-bedroom units in Heraklion, Chania, Rethymno, and Agios Nikolaos; compare total monthly costs including utilities.
-2. Visit a private clinic in a chosen town to discuss AMKA/equivalents, private insurance requirements, and typical GP visit costs.
-3. Get a preliminary visa/residence consultation with the Greek consulate or an immigration lawyer to confirm the retiree visa pathway and required documents.
-4. Do a week of grocery shopping in a local market and a supermarket (bread, chicken, coffee prices) to estimate monthly groceries.
-5. Test public transport options (bus routes) between neighborhoods and towns; estimate monthly transit costs.
-6. Check internet service options (carrier plans, speeds) and price for home broadband in the chosen area; verify reliability for remote work/communication.
+1. Rent a furnished one-bedroom in Chania's Splantzia or Koum Kapi neighborhood for EUR450-600 (~$495-660) and track every euro you spend for 30 days — rent, food, transport, healthcare, entertainment.
+2. Do a full weekly grocery shop at Sklavenitis in Chania or AB Vasilopoulos in Heraklion — rice, olive oil, feta, chicken, vegetables, bread, coffee — and record the total.
+3. Eat lunch at a different neighborhood taverna every day for a week — log prices (expect EUR10-15 per meal with a drink).
+4. Visit Venizeleio-Pananeio Hospital in Heraklion or Chania General Hospital — ask about AMKA registration, EOPYY enrollment for foreigners, and whether they have English-speaking staff.
+5. Get private insurance quotes from Ethniki Asfalistiki and Interamerican for your age — ask about pre-existing conditions, annual caps, and which Crete hospitals are in-network.
+6. Take the KTEL bus from Chania to Heraklion (EUR15, 2.5 hours) — then take a taxi back (EUR120-150). Compare. Decide whether you need a car.
+
+![Crete Greece coastal town](https://images.unsplash.com/photo-1575237402880-4b496a83ae04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwzfHxDcmV0ZSUyMEdyZWVjZXxlbnwwfDB8fHwxNzg3NTMwMzYwfDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### Can a U.S. retiree live in Crete with $2,000/month?
+### Can I live comfortably in Crete on $2,000/month?
 
-Yes, in certain inland/suburban areas with modest rents (€350–€500) and careful budgeting for private healthcare insurance when required; exact viability depends on visa requirements and healthcare costs (Source: Discover Crete; EU cross-border healthcare; Expat Den).
+Yes — and "comfortably" actually means comfortably here, not just scraping by. Core costs (rent, groceries, utilities, insurance, transport) run EUR1,000-1,400 (~$1,100-1,540)/month in Chania or Heraklion. That leaves $460-900 for dining out, entertainment, and travel. You can eat at a taverna 3-4 times a week, take weekend trips to Rethymno, and still have an emergency buffer. The key is staying outside tourist-heavy coastal zones for rent. (discovercrete.com)
 
-### What is the minimum rental price for a furnished 1-bedroom in Crete?
+### What visa do I need to retire in Greece as an American?
 
-Approximately €350–€500/month outside city centers in several areas; prices vary by neighborhood and lease terms (Source: Discover Crete).
+The Financially Independent Person (FIP) visa requires EUR2,000+/month (~$2,200) in passive income, private health insurance, a clean FBI background check (apostilled), and proof of accommodation. Apply at the Greek consulate — processing takes 2-4 months. Once in Greece, register at the local Aliens Bureau for your residence permit and get your AFM (tax number) and AMKA (social security number) at the local Eforia and IKA offices. The permit renews annually. (mfa.gr)
 
-### Is private health insurance mandatory for Greek residence permits?
+### What healthcare is available for foreign retirees in Crete?
 
-In many retiree/residency pathways, private health insurance is part of the permit requirements; public options exist via EOPYY, but access may be limited for long-term foreign residents (Source: Expat-focused health-insurance guides; EU cross-border healthcare summaries).
+Two tracks: public EOPYY (free or EUR0-5/visit once you have an AMKA number) and private. The public system covers hospitals like Venizeleio in Heraklion and Chania General, but wait times run 2-8 weeks for specialists and most staff speak limited English. Private insurance through Ethniki Asfalistiki (EUR80-120/month) or Interamerican (EUR100-180/month) gets you into private clinics with English-speaking doctors and shorter waits. A private GP visit costs EUR30-50 (~$33-55). (expatden.com)
 
-### What are typical visa steps for a financially independent person relocating to Crete?
+### Do I need a car in Crete?
 
-Identify the applicable visa type, prepare proof of income or savings, secure private health insurance, collect documents (passport, birth certificate, police clearance, medical certificate), and submit to the Greek authorities; processing times vary (Source: Greek visa guidance; expat visa summaries).
+In Chania or Heraklion city centers, no — KTEL buses run regularly and most errands are walkable. Outside city centers, yes. Crete is 260 km long, public bus routes are limited in rural areas, and taxis add up fast (EUR5-8 per city trip, EUR120-150 for Chania-to-Heraklion). A small used car with insurance and gas runs EUR200-300 (~$220-330)/month. Most retirees who stay longer than a year buy a car. (discovercrete.com)
 
-### What are the main healthcare facilities in Crete?
+### What's the biggest financial risk of retiring in Crete on $2,000?
 
-Hospitals and clinics exist in major towns; EOPYY-contracted private clinics/hospitals offer access; private insurance is commonly used for expat continuity; check local hospital lists in Heraklion/Chania (Source: EU cross-border healthcare; expat healthcare guides).
+The FIP visa requires EUR2,000/month in passive income. Your $2,000 USD converts to roughly EUR1,820 at current rates — which is below the threshold. If the euro strengthens further, you could fall short at renewal time. Keep EUR3,000-5,000 in a Greek bank account as a buffer, and check the exchange rate before each annual renewal. The second risk is healthcare: complex medical cases require airlifting to Athens, which private insurance covers but adds stress. (numbeo.com)
 
 ## Check Today's Information Before You Decide
 
-- [Discover Crete – Calculating the Cost of Living in Greece](https://www.discovercrete.com/content/calculating-the-cost-of-living-in-greece)
-- [European Commission – Cross-border healthcare (Greece)](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/european-health-insurance-card/how-use-card/greece-european-health-insurance-card_en)
-- [Expat Den – Greece healthcare for expats](https://www.expatden.com/greece/healthcare/)
+- [Discover Crete – Cost of Living in Greece](https://www.discovercrete.com/content/calculating-the-cost-of-living-in-greece)
+- [European Commission – Cross-border Healthcare (Greece)](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/european-health-insurance-card/how-use-card/greece-european-health-insurance-card_en)
+- [Expat Den – Greece Healthcare for Expats](https://www.expatden.com/greece/healthcare/)
+- [Numbeo – Heraklion Cost of Living](https://www.numbeo.com/cost-of-living/in/Heraklion)
 
 ## Sources & Verification
 
-- [Discover Crete – Calculating the Cost of Living in Greece](https://www.discovercrete.com/content/calculating-the-cost-of-living-in-greece)
-- [European Commission – Cross-border healthcare (Greece)](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/european-health-insurance-card/how-use-card/greece-european-health-insurance-card_en)
-- [Expat Den – Greece healthcare for expats](https://www.expatden.com/greece/healthcare/)
-- [Expat Focus – Healthcare in Greece for expats](https://www.expatfocus.com/move/healthcare-in-greece)
-- [Insu.gr – Health insurance for residence permits](https://insu.gr/en/insurance/residence-permit/)
+- [Discover Crete](https://www.discovercrete.com/content/calculating-the-cost-of-living-in-greece) – Rent ranges, grocery costs, utility estimates for Crete.
+- [Expat Den](https://www.expatden.com/greece/healthcare/) – Healthcare system overview, insurance requirements for expats.
+- [European Commission](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/european-health-insurance-card/how-use-card/greece-european-health-insurance-card_en) – Public healthcare access for residents.
+- [Numbeo](https://www.numbeo.com/cost-of-living/in/Heraklion) – Cost of living data, rent and grocery benchmarks.
+- [Greek MFA](https://www.mfa.gr) – Visa requirements, FIP visa pathway.
 
 Information checked: August 23, 2026
 
@@ -166,4 +195,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟢 STRONG FIT TO TEST**
 
-Living in Crete on $2,000/month is achievable with careful planning, especially in inland or suburban areas. Consider private health insurance and visa requirements as part of your budget.
+$2,000/month in Crete buys a genuinely comfortable life — not the razor-thin margin of a $1,200 budget in Medellín. You get a furnished one-bedroom for EUR350-650, taverna lunches for EUR10-15, and full healthcare coverage for under EUR200/month. The real risk isn't affordability — it's the FIP visa threshold. Your $2,000 converts to roughly EUR1,820 right now, which is below the EUR2,000 minimum. Keep a cash buffer in a Greek bank, and check the exchange rate before each renewal. If your income is $2,200+ or you have savings to supplement, this is a confident yes. At exactly $2,000, it's a strong yes with one asterisk.
