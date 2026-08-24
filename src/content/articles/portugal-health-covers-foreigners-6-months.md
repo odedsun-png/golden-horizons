@@ -90,4 +90,118 @@ Utilities for a one-bedroom (electricity, water, gas, internet): EUR120-180 (~$1
 
 The climate helps your budget too — Lisbon gets 300+ days of sunshine. No heating bill from May to October, and even winter heating is a fraction of what you'd spend in the northeastern US.
 
-![
+![Lisbon Portugal neighborhood street](https://images.unsplash.com/photo-1786618315943-2490b8f94d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxQb3J0dWdhbCUyMGhlYWx0aGNhcmV8ZW58MHwwfHx8MTc4NzQyMzAyNnww&ixlib=rb-4.1.0&q=80&w=1080)
+
+## Practical Comparison
+
+### SNS public healthcare vs private insurance only
+
+**What the evidence says:**
+SNS costs EUR5-10 per GP visit with your número de utente. Private insurance alone runs EUR40-80/month but covers private hospitals like Hospital da Luz and CUF Descobertas with shorter waits and English-speaking staff. Most expat retirees carry both — SNS as their primary system, private insurance for urgent specialist access and the visa requirement.
+
+**What to check next:**
+Get quotes from Multicare and Médis for your age bracket. Ask specifically about pre-existing condition waiting periods — they typically run 6-12 months.
+
+### Lisbon vs Porto vs Algarve for healthcare access
+
+**What the evidence says:**
+Lisbon has the most hospitals and shortest specialist referral times — Hospital de Santa Maria (the country's largest public hospital) and 3+ major private hospitals within 15 minutes. Porto has Hospital São João and lower living costs (one-bedroom: EUR600-900 / ~$654-980 vs Lisbon's EUR800-1,400 / ~$870-1,525). The Algarve has fewer hospitals but a large English-speaking expat community and lower rents in Faro or Lagos (EUR550-800 / ~$599-870).
+
+**What to check next:**
+If you have a chronic condition requiring regular specialist visits, Lisbon or Porto is safer. If you're healthy and prioritize cost, the Algarve or Porto suburbs work.
+
+### AIMA backlog: what to do while you wait
+
+**What the evidence says:**
+AIMA appointment wait times run 3-6 months in 2026. During this period, you can't enroll in the SNS. Your private insurance is your only coverage. Some centros de saúde will issue a temporary número de utente with your AIMA receipt (comprovativo de agendamento) — but this varies by location and isn't guaranteed.
+
+**What to check next:**
+During your 30-day test, visit your local centro de saúde with your AIMA receipt and ask directly whether they'll issue a temporary número de utente. The answer differs by district.
+
+### Portugal vs Spain for healthcare costs
+
+**What the evidence says:**
+Spain's public healthcare system has similar quality but a simpler enrollment process — you get a SIP card at your local centro de salud almost immediately with your NIE. Portugal's SNS has slightly lower co-pays (EUR5-10 vs Spain's EUR0-4 but with longer waits). Spain's private insurance runs EUR60-120/month vs Portugal's EUR40-80. Living costs in Lisbon and Barcelona are comparable; Madrid and Porto are cheaper.
+
+**What to check next:**
+If the AIMA backlog concerns you, Spain's faster enrollment might tip the scale — but Portugal's NHR 2.0 tax regime may offset that.
+
+## The Trade-Off
+
+**What you may gain:**
+- GP visits for EUR5-10 (~$5.50-11) — less than most US co-pays
+- Prescriptions for EUR2-5 per box instead of $50-200 in the US
+- An MRI for EUR30-50 (~$33-55) through the SNS — vs $500-1,500 in the US
+- Private insurance for EUR40-80/month that covers hospitals Americans would recognize as world-class
+
+**What you may give up:**
+- 3-6 months of AIMA processing where you're stuck on private insurance only
+- Specialist wait times of 2-8 weeks through the SNS (private insurance cuts this to days)
+- Portuguese-language medical appointments at most centros de saúde — private hospitals like CUF and Hospital da Luz have English-speaking staff, but your SNS family doctor probably doesn't
+- Medicare coverage — once you leave the US for 6+ months, Medicare stops covering you abroad
+
+## The Golden Horizons 30-Day Test
+
+1. Walk into the centro de saúde nearest your accommodation in Lisbon (try USF Baixa or USF Saldanha) — bring your passport and ask what documents you'd need for número de utente enrollment. Note the wait time they quote.
+2. Book a private GP visit at Hospital da Luz Lisboa — EUR50-80 (~$55-87). Evaluate the facility, language support, and how the experience compares to your US doctor.
+3. Call the SNS 24 helpline (808 24 24 24) — it has English-language options. Ask about urgent-care access for residents and the co-payment structure.
+4. Get insurance quotes from Multicare and Médis for your age and health profile. Ask about pre-existing condition waiting periods, annual caps, and what the plan covers at private vs public hospitals.
+5. Visit a Finanças office to understand the NIF application process — you'll need this before anything else in Portugal.
+6. Walk into a pharmacy (Farmácia) and ask the price of 2-3 medications you currently take — compare to your US co-pays. Portugal's subsidized pharmacy prices are often the most convincing data point.
+
+![Portugal coastal town](https://images.unsplash.com/photo-1764383381198-0fff09cb38b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwzfHxQb3J0dWdhbCUyMGhlYWx0aGNhcmV8ZW58MHwwfHx8MTc4NzQyMzAyNnww&ixlib=rb-4.1.0&q=80&w=1080)
+
+## Frequently Asked Questions
+
+### What is the número de utente and why do I need it?
+
+The número de utente is your SNS patient number — think of it as your key to public healthcare in Portugal. Without it, you pay private rates (EUR50-80 for a GP visit). With it, the same visit costs EUR5-10. You get it by registering at your local centro de saúde with your AIMA residence permit, NIF, and proof of address. Most centers process it within a week, though Lisbon locations can take 2-4 weeks. (gov.pt)
+
+### Can I access emergency care before my número de utente is processed?
+
+Yes — Portuguese ERs treat everyone regardless of enrollment status. But here's the cost difference: with a número de utente and a GP referral, an ER visit costs EUR15-18 (~$16-20). Without enrollment, you'll pay the full uninsured rate, which can run EUR50-150 (~$55-163) depending on the hospital. Your private insurance (required for the D7 visa anyway) covers ER visits at private hospitals like CUF or Hospital da Luz with minimal co-pays. (ers.pt)
+
+### How long does the AIMA residency process take in 2026?
+
+Plan for 3-6 months from your D7 visa entry to receiving your residence permit. The visa itself takes 2-4 months through the US consulate. Once in Portugal, your AIMA appointment may be another 3-6 months out due to backlog. During this entire period, your private insurance is your healthcare safety net. Some centros de saúde will issue a temporary número de utente with your AIMA receipt — ask at your local center, as policies vary by district. (gov.pt)
+
+### What does private health insurance actually cover vs the SNS?
+
+SNS covers GP visits (EUR5-10), specialist referrals (EUR7-15), hospital stays, and subsidized prescriptions — but with wait times of 2-8 weeks for specialists. Private insurance through Multicare (EUR40-60/month) or Médis (EUR50-80/month) gets you into private hospitals like Hospital da Luz and CUF Descobertas within days, with English-speaking doctors and shorter waits. Most expat retirees carry both: SNS for routine care and prescriptions, private for anything urgent. (ec.europa.eu)
+
+### What happens to my Medicare if I move to Portugal?
+
+Medicare doesn't cover healthcare outside the US. Once you've been abroad for 6+ consecutive months, you're effectively off the system. If you return to the US later, you can re-enroll during the general enrollment period (January-March), but there may be late-enrollment penalties of 10% per year you were unenrolled. Factor this into your decision — Portugal's healthcare is cheaper, but the Medicare bridge-burning is permanent until you come back. (medicare.gov)
+
+## Check Today's Information Before You Decide
+
+- [How to obtain the SNS user number](https://www2.gov.pt/en/servicos/pedir-o-numero-de-utente-do-sns)
+- [Foreigners' access to SNS](https://ers.pt/pt/utentes/perguntas-frequentes/faq/acesso-de-cidadaos-estrangeiros-a-prestacao-de-cuidados-de-saude-no-servico-nacional-de-saude/)
+- [General residency guidance](https://www.gov.pt/guias/residir-em-portugal)
+
+## Sources & Verification
+
+- [Gov.pt](https://www2.gov.pt/en/servicos/pedir-o-numero-de-utente-do-sns) – SNS user number enrollment process, centro de saúde registration.
+- [ERS](https://ers.pt/pt/utentes/perguntas-frequentes/faq/acesso-de-cidadaos-estrangeiros-a-prestacao-de-cuidados-de-saude-no-servico-nacional-de-saude/) – Foreigners' access to SNS, co-payment rules, emergency care access.
+- [European Commission](https://ec.europa.eu/social/main.jsp?catId=1250&langId=en) – Portugal healthcare system overview, public/private comparison.
+- [Gov.pt - Residir em Portugal](https://www.gov.pt/guias/residir-em-portugal) – Residency pathways, D7 visa requirements, AIMA process.
+- [DR (Diário da República)](https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-67564445-67572134) – Immigration law framework.
+
+Information checked: August 23, 2026
+
+## Related Golden Horizons Guides
+
+- [Healthcare Abroad for American Retirees](/healthcare-abroad-for-american-retirees)
+- [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-americans)
+- [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans-retiring-abroad)
+- [Taxes for Americans Retiring Overseas](/taxes-for-americans-retiring-overseas)
+
+## About Golden Horizons
+
+Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad. We focus on the decision that matters: what your money may make possible, whether you can legally stay, whether healthcare and ordinary daily life work for you, and what you should test before committing. Travel first. Test the reality. Then decide.
+
+## Final Verdict
+
+**Golden Horizons Verdict: 🟢 STRONG FIT TO TEST**
+
+Portugal's SNS is the real deal — EUR5-10 GP visits, EUR2-5 prescriptions, and EUR30-50 MRIs, all on the same terms as Portuguese citizens. Private insurance at EUR40-80/month covers the gap. The catch is the 3-6 month AIMA backlog before you can enroll, and the language barrier at public centros de saúde. But if you carry private insurance during the wait (you have to for the visa anyway), the transition works. Compare the total — EUR90-170/month for full healthcare coverage — to $500-800 in the US, and the math speaks for itself. Worth the 30-day test.
