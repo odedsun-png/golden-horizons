@@ -3,7 +3,7 @@ title: "What $2,500/mo in Tarragona, Spain, actually buys a retiree: housing, gr
 category: Cost
 slug: what-2500-mo-tarragona-spain
 date: 2026-08-30
-image: https://images.unsplash.com/photo-1722520592119-1df361e0493d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxUYXJyYWdvbmElMjBTcGFpbiUyMGNpdHlzY2FwZXxlbnwwfDB8fHwxNzg4MTM0NTAxfDA&ixlib=rb-4.1.0&q=80&w=1080
+image: https://images.unsplash.com/photo-1639650708447-8dc68c363563?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080
 description: "Explore what $2,500/month can buy a retiree in Tarragona, Spain, including housing, groceries, and transport."
 featured: false
 ---
