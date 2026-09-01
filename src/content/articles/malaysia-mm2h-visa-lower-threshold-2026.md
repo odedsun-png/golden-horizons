@@ -57,7 +57,7 @@ Processing times can vary, so check with the nearest Malaysian consulate for the
 **Estimated core monthly spend:** RM4,600-6,900 (~$1,000-1,500)  
 **Potential remaining buffer / shortfall:** $500-$1,000 buffer  
 **Evidence confidence:** High, based on current expat reports  
-**GH Budget Read:** 🟢 STRONG FIT TO TEST
+**GH Budget Read:** STRONG FIT TO TEST
 
 Healthcare costs are not included in this budget and should be planned separately. Malaysia offers both public and private healthcare options, with private insurance recommended for comprehensive coverage.
 
@@ -127,7 +127,7 @@ Explore expat forums and local community groups for support networks.
 
 ## Frequently Asked Questions
 
-### What is the name of Malaysia’s long-stay visa program for foreigners?
+### What is the name of Malaysia's long-stay visa program for foreigners?
 
 Malaysia My Second Home (MM2H) is the long-stay visa program designed for foreigners seeking residency in Malaysia. (motac.gov.my)
 
@@ -157,7 +157,7 @@ The official 2026 MM2H application guidelines can be found on the MOTAC site. (m
 
 ## Sources & Verification
 
-- [MOTAC: Malaysia’s Ministry of Tourism, Arts and Culture – MM2H](https://www.motac.gov.my/en/program-kementerian/malaysia-my-second-home-mm2h/)
+- [MOTAC: Malaysia's Ministry of Tourism, Arts and Culture – MM2H](https://www.motac.gov.my/en/program-kementerian/malaysia-my-second-home-mm2h/)
 - [MOTAC: MM2H Application Guidelines Booklet (2026)](https://www.motac.gov.my/wp-content/uploads/2026/05/Mm2h-Application-Guidelines-Booklet.pdf)
 - [IMI (Immigration Department of Malaysia)](https://www.imi.gov.my/)
 - [BERNAMA](https://www.bernama.com/en/news.php?id=1991735)
@@ -179,6 +179,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟢 STRONG FIT TO TEST**
+**Golden Horizons Verdict: STRONG FIT TO TEST**
 
 Malaysia's updated MM2H visa program for 2026 offers a promising option for retirees seeking a long-term stay. With changes to income and savings requirements, the program may be more accessible than before. However, potential applicants should verify the latest guidelines and consider healthcare costs separately.
