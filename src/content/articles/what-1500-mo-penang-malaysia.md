@@ -113,14 +113,14 @@ Test local transport options like Grab and buses for convenience.
 
 ## The Golden Horizons 30-Day Test
 
-1. Visit Penang’s cost-of-living page and identify 3 candidate neighborhoods with 1-bedroom rent ranges around RM 1,500–2,500; note actual listings.
+1. Visit Penang's cost-of-living page and identify 3 candidate neighborhoods with 1-bedroom rent ranges around RM 1,500–2,500; note actual listings.
 2. Sample 4 grocery items (bread, chicken, milk, coffee) at 2 local markets or supermarkets and record prices; compare to RM 600–1,100/month estimate.
 3. Schedule a check with Pantai Hospital Penang and Gleneagles Penang to confirm private-room rates and typical GP visit costs.
 4. Take 4 Grab trips in George Town to measure typical trip costs and travel times for a week.
 5. Visit a hawker center for 2-3 meals and a mid-range restaurant dinner for two; document per-meal costs.
 6. Consult Malaysia immigration/embassy sources for current long-term visa options, required documents, processing times, and fees applicable to a 60–75-year-old retiree.
 
-![Penang Malaysia street scene](https://images.unsplash.com/photo-1661153803116-12622590e75f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxQZW5hbmclMjBNYWxheXNpYSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc4ODI2NzIzNnww&ixlib=rb-4.1.0&q=80&w=1080)
+![Penang Malaysia street scene](https://images.unsplash.com/photo-1661153803116-12622590e75f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxQZW5hbmclMjBNYWxheXNpYSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc4ODI2NzIzNnww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
@@ -175,6 +175,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟢 STRONG FIT TO TEST**
+**Golden Horizons Verdict: STRONG FIT TO TEST**
 
 Penang offers a viable retirement option for those on a $1,500 monthly budget, with affordable living costs, accessible healthcare, and a welcoming expat community. However, careful budgeting and verification of visa requirements are essential.
