@@ -6,7 +6,6 @@
    Masthead / topbar / nav / footer are unchanged shared markup.
    Scoped via CSS Modules — does not affect any other page.
    ════════════════════════════════════════════════════════════ */
-
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
   position: relative;
@@ -14,15 +13,13 @@
   overflow: hidden;
   background: #1e1408;
 }
-
 .heroImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: contrast(1.08) saturate(1.15) brightness(0.7) sepia(0.1);
+  filter: contrast(1.06) saturate(1.12) brightness(0.96) sepia(0.04);
 }
-
 .heroOverlay {
   position: absolute;
   inset: 0;
@@ -34,7 +31,6 @@
     rgba(30, 20, 8, 0.04) 100%
   );
 }
-
 .heroContent {
   position: absolute;
   inset: 0;
@@ -42,11 +38,9 @@
   align-items: center;
   padding: 0 6vw;
 }
-
 .heroInner {
   max-width: 620px;
 }
-
 .heroKicker {
   font-family: var(--font-garamond), Georgia, serif;
   font-size: 12px;
@@ -56,7 +50,6 @@
   color: #c9a84c;
   margin: 0 0 14px;
 }
-
 .heroTitle {
   font-family: var(--font-playfair), Georgia, serif;
   font-size: clamp(34px, 5.2vw, 60px);
@@ -65,7 +58,6 @@
   color: #faf5e9;
   margin: 0 0 16px;
 }
-
 .heroSub {
   font-family: var(--font-garamond), Georgia, serif;
   font-size: clamp(16px, 1.6vw, 21px);
@@ -74,7 +66,6 @@
   margin: 0;
   max-width: 560px;
 }
-
 /* ── Section title with rule lines ──────────────────────── */
 .sectionTitleRow {
   display: flex;
@@ -84,13 +75,11 @@
   margin: 0 auto;
   padding: 38px 36px 22px;
 }
-
 .sectionRule {
   flex: 1;
   height: 1px;
   background: #c9a84c;
 }
-
 .sectionTitle {
   font-family: var(--font-playfair), Georgia, serif;
   font-size: 13px;
@@ -100,7 +89,6 @@
   color: #8b6914;
   white-space: nowrap;
 }
-
 /* ── Browse-by category cards ───────────────────────────── */
 .categoryGrid {
   display: grid;
@@ -111,19 +99,16 @@
   margin: 0 36px 38px;
   border-bottom: 2px solid #1e1408;
 }
-
 @media (max-width: 980px) {
   .categoryGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 560px) {
   .categoryGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 .categoryCard {
   position: relative;
   display: flex;
@@ -138,11 +123,9 @@
   isolation: isolate;
   transition: background 0.15s;
 }
-
 .categoryCard:hover {
   background: #f0e8d5;
 }
-
 .categoryBg {
   position: absolute;
   inset: 0;
@@ -153,7 +136,6 @@
   opacity: 0.14;
   filter: sepia(0.2);
 }
-
 .categoryIcon {
   position: relative;
   display: inline-flex;
@@ -166,7 +148,6 @@
   border: 1px solid #c9a84c;
   color: #8b6914;
 }
-
 .categoryName {
   position: relative;
   font-family: var(--font-playfair), Georgia, serif;
@@ -175,7 +156,6 @@
   color: #1a0f00;
   line-height: 1.3;
 }
-
 /* ── Newsletter CTA ──────────────────────────────────────── */
 .newsletter {
   display: grid;
@@ -184,23 +164,20 @@
   background: #1e1408;
   overflow: hidden;
 }
-
 .newsletterImg {
   width: 100%;
   height: 100%;
   min-height: 280px;
   object-fit: cover;
   display: block;
-  filter: contrast(1.08) saturate(1.1) brightness(0.7) sepia(0.1);
+  filter: contrast(1.06) saturate(1.1) brightness(0.96) sepia(0.04);
 }
-
 .newsletterBody {
   padding: 40px 44px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .newsletterHeadline {
   font-family: var(--font-playfair), Georgia, serif;
   font-size: clamp(24px, 2.8vw, 32px);
@@ -209,7 +186,6 @@
   line-height: 1.2;
   margin: 0 0 12px;
 }
-
 .newsletterSub {
   font-family: var(--font-garamond), Georgia, serif;
   font-size: 16px;
@@ -218,13 +194,11 @@
   margin: 0 0 22px;
   max-width: 460px;
 }
-
 .newsletterForm {
   display: flex;
   gap: 10px;
   margin-bottom: 12px;
 }
-
 .newsletterInput {
   flex: 1;
   height: 52px;
@@ -236,11 +210,9 @@
   font-size: 15px;
   outline: none;
 }
-
 .newsletterInput::placeholder {
   color: #8b6914;
 }
-
 .newsletterBtn {
   height: 52px;
   padding: 0 26px;
@@ -256,12 +228,10 @@
   white-space: nowrap;
   transition: background 0.15s;
 }
-
 .newsletterBtn:hover {
   background: #e0c46c;
   border-color: #e0c46c;
 }
-
 .trustLine {
   font-family: var(--font-garamond), Georgia, serif;
   font-size: 12.5px;
@@ -269,7 +239,6 @@
   color: #8b6914;
   margin: 0 0 18px;
 }
-
 .benefitList {
   display: flex;
   gap: 22px;
@@ -278,7 +247,6 @@
   margin: 0;
   padding: 0;
 }
-
 .benefitList li {
   display: flex;
   align-items: center;
@@ -287,12 +255,10 @@
   font-size: 13px;
   color: #d4c4a0;
 }
-
 .benefitList svg {
   color: #c9a84c;
   flex-shrink: 0;
 }
-
 @media (max-width: 860px) {
   .newsletter {
     grid-template-columns: 1fr;
@@ -310,7 +276,6 @@
     width: 100%;
   }
 }
-
 @media (max-width: 640px) {
   .heroContent {
     padding: 0 22px;
