@@ -5,14 +5,14 @@ slug: pasticada-splits-slow-cooked-beef-in-cherry-sauce
 date: 2026-09-01
 country: Croatia
 description: "A practical food guide to Pasticada: Split's Slow-Cooked Beef in Cherry Sauce, covering flavor, prices, portions, ordering tips, and local eating habits."
-image: https://images.pexels.com/photos/13245140/pexels-photo-13245140.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
+image: "https://images.unsplash.com/photo-1559847844-d9d2bc807d82?auto=format&fit=crop&w=1200&h=627&q=80"
 ---
 
 ## Quick Taste
 
 In the heart of Split's lively old town, the aroma of pasticada wafts through the air as you step into a cozy konoba—a traditional Croatian tavern. This slow-cooked beef dish, simmered in a cherry sauce, offers a tender, melt-in-your-mouth experience that is both savory and slightly sweet. Typically served with gnocchi or homemade pasta, a plate of pasticada costs around HRK 80-120 (about $12-18). For those considering a longer stay in Split, this dish represents a taste of the leisurely, flavor-filled lifestyle that characterizes Dalmatian cuisine.
 
-![Food image](https://images.pexels.com/photos/20635783/pexels-photo-20635783.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
+![Food image](https://plus.unsplash.com/premium_photo-1745341291304-046d25d14fd3?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1200&h=627)
 
 ## The Story Behind the Dish
 
