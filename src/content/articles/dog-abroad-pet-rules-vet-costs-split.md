@@ -3,7 +3,7 @@ title: "Living with a Dog in Split: Pet Entry Rules, Vet Costs, and Daily Life f
 category: Expat
 slug: dog-abroad-pet-rules-vet-costs-split
 date: 2026-09-02
-image: https://images.unsplash.com/photo-1602436012494-74da0a911c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxTcGxpdCUyMENyb2F0aWElMjBjb2FzdHxlbnwwfDB8fHwxNzg4MzUzMjc4fDA&ixlib=rb-4.1.0&q=80&w=1080
+image:(https://images.unsplash.com/photo-1628502301579-bf8b22d3c685?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=80&w=1080)
 description: "Explore pet entry rules, vet costs, and daily life with a dog in Split, Croatia."
 featured: false
 ---
