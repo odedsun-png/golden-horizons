@@ -17,7 +17,7 @@ featured: false
 **Biggest warning:** Central district living may exceed budget  
 
 ## Cost of Living in Tbilisi for a Retiree
-For $420 a month, you could secure a comfortable one-bedroom apartment in Tbilisi's outer districts, such as Didube or Gldani. In contrast, central areas like Vake or Vera demand $500 to $750 for similar accommodations. Groceries and basic food items typically cost $175 to $250 monthly, while utilities and internet add another $50 to $100. Dining out in a mid-range restaurant costs about $10 to $15 per meal, and a local bus ride is under $1. With these figures, a modest lifestyle in Tbilisi can range from $1,000 to $1,400 monthly, depending on your choices.
+For $250 to $450 a month, you could secure a comfortable one-bedroom apartment in Tbilisi's outer districts, such as Didube or Gldani. In contrast, central areas like Vake or Vera demand $500 to $750 for similar accommodations. Groceries and basic food items typically cost $175 to $250 monthly, while utilities and internet add another $50 to $100. Dining out in a mid-range restaurant costs about $10 to $15 per meal, and a local bus ride is under $1. With these figures, a modest lifestyle in Tbilisi can range from $1,000 to $1,400 monthly, depending on your choices.
 
 **Estimated core monthly spend:** $1,000-$1,400  
 **Remaining buffer vs the $1,000 budget:** -$400 short  
@@ -65,26 +65,26 @@ Georgia does not offer a dedicated retirement visa, so retirees must navigate st
 2. Visit two non-central neighborhoods (Didube, Gldani) and price a furnished 1BR, grocery basket (three items), and a coffee/meal price at a mid-range cafe.
 3. Obtain two private healthcare quotes or visit two private clinics to gauge consult costs for an age-60+ patient.
 4. Check residency pathways via official government or legally verified sources for current retirement-related options.
-5. Create a month-long meal and transport plan (three safe dairies for groceries, two dining-out days, and 20 local transit rides) and tally expected costs.
+5. Create a month-long meal and transport plan (three grocery stores, two dining-out days, and 20 local transit rides) and tally expected costs.
 6. Compile U.S. cost anchors for rent, groceries, casual dining, and private health-insurance premiums for age 60–64.
 
 ![Tbilisi street scene](https://images.unsplash.com/photo-1670956845553-bcfe897f52eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxUYmlsaXNpJTIwR2VvcmdpYSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc4OTAxMTM2NHww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 ### Is there a Georgia retiree visa?
-No; Georgia does not publish a dedicated retirement visa; residency is via standard routes (assets, family ties, etc.). (myresidencepermit.ge)
+No; Georgia does not publish a dedicated retirement visa; residency is via standard routes (assets, family ties, etc.).
 
 ### What is a typical monthly rent for a 1BR in central Tbilisi?
-Central 1BR often $500–$750/month, depending on area and furnishing; outer districts can be $250–$450. (tbilisiexpats.com)
+Central 1BR often $500–$750/month, depending on area and furnishing; outer districts can be $250–$450.
 
 ### Are healthcare costs covered for retirees in Georgia?
-Healthcare is accessible via private clinics with insurance; public care exists but varies in eligibility; plan for private care. (expatden.com)
+Healthcare is accessible via private clinics with insurance; public care exists but varies in eligibility; plan for private care.
 
 ### What is the rough daily cost for a coffee or casual meal in central areas?
-Coffee/casual meal typically in the ₾8–₾25 range depending on venue; USD equivalents vary with exchange rate. (numbeo.com)
+Coffee/casual meal typically in the ₾8–₾25 range depending on venue; USD equivalents vary with exchange rate.
 
 ### Do you pay Georgia taxes on foreign pensions?
-Georgia has tax rules regarding retirees but specific exemptions depend on resident status; consult the Georgia Department of Revenue. (dor.georgia.gov)
+Georgia has tax rules regarding retirees but specific exemptions depend on resident status; consult the Georgia Department of Revenue.
 
 ## Check Today's Information Before You Decide
 - [Numbeo: Cost of Living in Tbilisi](https://www.numbeo.com/cost-of-living/in/Tbilisi)
@@ -92,7 +92,7 @@ Georgia has tax rules regarding retirees but specific exemptions depend on resid
 - [MyResidencePermit: Retire in Georgia](https://myresidencepermit.ge/blog/retire-in-georgia-residence-permit/)
 
 ## Sources & Verification
-- [Numbeo: Cost of Living in Tbilisi](https://www.numbeo.com/cost-of-living/in-Tbilisi)
+- [Numbeo: Cost of Living in Tbilisi](https://www.numbeo.com/cost-of-living/in/Tbilisi)
 - [Expat Guides: Cost of Living in Tbilisi](https://www.tbilisiexpats.com/start-here/cost-of-living/)
 - [Expat Den: Georgia Cost of Living](https://www.expatden.com/georgia/cost-of-living-in-tbilisi/)
 - [Georgia Expats: Cost of Living in Tbilisi](https://georgiaexpats.com/guides/cost-of-living/)
