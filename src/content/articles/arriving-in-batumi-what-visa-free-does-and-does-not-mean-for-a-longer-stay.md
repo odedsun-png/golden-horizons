@@ -1,254 +1,245 @@
 ---
-title: "Arriving in Batumi: What visa-free access implies for a longer stay, and the verified residency paths and costs retirees should know (as of 2026)"
+title: "Arriving in Batumi: What “Visa-Free” Does—and Does Not—Mean for a Longer Stay"
 category: Visa
 slug: arriving-in-batumi-what-visa-free-does-and-does-not-mean-for-a-longer-stay
 date: 2026-09-13
 image: https://images.unsplash.com/photo-1685802831085-636c6d8aeb55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxCYXR1bWklMjBHZW9yZ2lhJTIwY29hc3R8ZW58MHwwfHx8MTc4OTMzOTQzNnww&ixlib=rb-4.1.0&q=80&w=1080
-description: "Visa-free entry is not automatic long-term residency in Batumi. See Georgia’s permit paths, documents, healthcare questions, and 2026 budget signals."
+description: "Americans can enter Georgia visa-free for up to 365 days, but Batumi residency, healthcare, and costs need careful checking."
 featured: false
 ---
-# Arriving in Batumi: What visa-free access implies for a longer stay, and the verified residency paths and costs retirees should know (as of 2026)
+# Arriving in Batumi: What “Visa-Free” Does—and Does Not—Mean for a Longer Stay
 
-> **THE SHORT ANSWER:** Batumi can make a longer stay look easy: Black Sea walks, a lower-cost daily rhythm, and the appealing simplicity of arriving visa-free. But “visa-free” is a visitor arrangement, not automatic permission to settle for years. Published 2026 estimates place a solo retiree’s non-housing spending around $900-$1,300 per month, with $900 representing the lower planning end and $1,300 the higher planning end before housing and healthcare. Before planning a stay beyond 90 days, confirm the State Agency for Development of Public Services permit category, income evidence, savings evidence, and document rules that apply to your own case.
+> **THE SHORT ANSWER:** A U.S. passport holder may be able to enter Georgia visa-free for up to 365 days, making Batumi unusually practical for a long scouting stay. A 30-day test can show you what groceries, buses, taxis, utilities, coffee, and dinners actually cost. The supplied 2026 research does not provide verified dollar figures for a one-bedroom, healthcare coverage, or residence thresholds, so do not build a plan around an unverified $1,000, $1,500, $2,000, or $2,500 monthly estimate. Visa-free entry is not permanent residence, local healthcare enrollment, or a guaranteed path after day 365.
+
+A 365-day visitor allowance changes the emotional math of a place. Instead of trying to judge Batumi between airport arrival and a 10-day hotel checkout, you could have time to see what happens when the Black Sea weather turns wet, summer crowds thin, and an ordinary grocery run matters more than the waterfront view.
+
+That is why Batumi deserves a closer look. Georgia’s reported visa-free allowance of up to 365 days can give an American far more breathing room than the familiar 90-day visitor clock. But it is still a visitor stay—not a promise of permanent residence, healthcare coverage, or an easy path after day 365.
 
 ## Retirement Snapshot
 
 **Primary decision:**  
-Whether a visa-free arrival can become a lawful longer stay through a Georgian residence permit.
+Whether Georgia’s up-to-365-day visa-free entry gives you enough time to test Batumi before pursuing a formal residence route.
 
 **Best fit:**  
-A retiree aged 60-75 who can document income or savings, can live with seasonal rental swings, and is willing to spend 30 days testing Batumi before making a larger commitment.
+An American who wants a 30-day to 365-day trial period, can tolerate seasonal housing swings, and does not need a confirmed retirement-residence category before arriving.
 
 **Biggest warning:**  
-A 90-day visitor assumption is not a residence plan. Georgia’s State Agency for Development of Public Services and Matsne legal texts govern formal permit routes.
+The memo does not confirm a current retirement visa category, income threshold, healthcare premium, or neighborhood rent in dollars for September 2026.
 
 **Planning-budget lens:**  
-Published 2026 estimates place non-housing spending for one person around $900-$1,300 per month, before healthcare and with housing varying by area and season.
+Batumi’s 2026 cost sources describe lower expenses than many U.S. metro areas, but Old Town and seafront housing can cost more during the busy summer months.
 
 **Residency:**  
-Longer stays require an official residence permit or another lawful extension path, with documented income or funds tied to the permit category.
+Visa-free entry of up to 365 days may be available to U.S. citizens, while formal residence routes require separate, current official confirmation.
 
 **Healthcare:**  
-Foreign residents commonly plan around private care and private insurance, especially for routine appointments and coverage certainty.
-
-**Housing / daily life:**  
-A 1-bedroom can vary widely between central Batumi, newer seaside districts, and outer areas; summer tourism can change asking prices.
+Foreigners can seek public and private care, but coverage, eligibility, insurer terms, and fees vary by provider and residence status.
 
 **Safety:**  
-Review current local reporting and official travel information close to departure, particularly as political conditions can change during 2026.
+The memo provides no verified crime comparison that would support calling Batumi safer than a particular U.S. city.
 
-## Visa-Free Arrival Is Easy. Staying Is the Real Question.
+**Climate:**  
+Batumi’s Black Sea setting brings humid weather and meaningful seasonal variation across 12 months.
 
-The first few days in Batumi could feel pleasantly uncomplicated: a temporary apartment, a walk along the waterfront, perhaps a café stop before deciding which streets feel most comfortable for daily errands. That ease is part of the appeal.
+## Visa-Free Time Is Generous—But It Is Not Residency
 
-But a visitor stay and a long-term home are not the same thing. Once your plans extend beyond a short visit—especially beyond 90 days—the important questions shift from where to rent to whether you have the right permit route, the right documents, and enough clearly documented financial support.
+### A long visit can be valuable without becoming permanent
 
-Georgia’s State Agency for Development of Public Services, often called SDA in official material, outlines residence-permit categories, documentation standards, and income or savings evidence. Matsne, Georgia’s legal database, carries the underlying law and updates that shape visa, extension, and residence rules.
+Georgia’s visa policy is widely reported to allow U.S. citizens a visa-free stay of up to 365 days. For anyone used to counting down a 90-day visitor stay elsewhere, that can feel remarkably open-ended: nearly 12 months to learn the streets around Old Town, experience a rainy Batumi winter, and decide whether the city still feels right once the novelty wears off.
 
-### What “visa-free” does not promise
+Still, one distinction matters. Visa-free entry governs your permission to be present. Residence is a separate legal status.
 
-Visa-free access does not create permanent or open-ended residency. It is a visitor arrangement; a residence permit is a different legal position, with its own documents, renewal conditions, and proof requirements.
+The supplied research does not confirm an exact 2026 residence category, income level, savings amount, document list, filing office, fee, or approval timeline for an American retirement applicant. In other words, the generous entry rule may make Batumi an excellent place to explore, but it should not be treated as an automatic bridge to living there indefinitely.
 
-For a retiree aged 60-75, the encouraging news is that Georgia has formal pathways for foreign residents. The less romantic part is that the appropriate pathway depends on the permit category, your documented resources, and the evidence the SDA accepts when you apply in 2026.
+### What to do with the uncertainty
 
-### Prepare the paperwork before you fall in love with the view
+You do not need every residency answer before taking a 30-day scouting trip. You do need to avoid building a 365-day plan around an assumed renewal, an unconfirmed retirement permit, or a residence route described only by a relocation company.
 
-Before a waterfront apartment starts to feel like home, begin with the documents. Gather proof of regular income, proof of savings, identity documents, and any translations requested for the permit route you intend to pursue.
+Think of a longer stay in three layers:
 
-The SDA portal is the right first stop because its document list and financial standards can change. Do not build a retirement plan around a casual understanding of “visa-free.” Confirm your intended stay length, the relevant permit category, and the current income or savings requirement with the SDA or a Georgian consulate before booking a long lease.
+1. Your permitted visa-free stay.
+2. Your ability to rent a lawful long-term home.
+3. Your healthcare coverage while you are not yet a resident.
 
-A practical sequence looks like this:
+The first layer may be clear for up to 365 days. The other two require current, direct answers from Georgian authorities, housing providers, hospitals, and insurers.
 
-1. Read the SDA Migration and Residence Permits guidance before departure and identify the category that appears relevant to a stay beyond 90 days.
+Georgia’s policy context is not frozen, either. European reporting from 2025 and 2026 notes continuing scrutiny of Georgia’s visa-policy benchmarks. Before booking a lengthy stay, confirm the current rule again—not just the version you saw while researching months earlier.
 
-2. Gather proof of pension income, savings, passport identity, and any other documents listed by the SDA for that category in 2026.
+### A calm, practical path toward a longer stay
 
-3. Ask whether documents need certified translations before you travel, rather than sorting that out after signing a lease in Batumi.
+Start with the visitor rule, then let real life answer the rest.
 
-4. Review the current legal text in Matsne for visitor-stay and residence provisions, then compare it with the SDA’s current application guidance.
+- Confirm Georgia’s current U.S.-passport policy before departure, including the stated stay limit of up to 365 days and any entry-document requirements.
+- Ask the relevant Georgian government office which residence categories are available to Americans in September 2026. Do not assume a retirement-specific permit exists.
+- Request a written document checklist. Ask whether you need a passport, proof of income or savings, a local address, insurance, certified translations, or apostilles.
+- Ask the same office for the current processing timeline in weeks or months, filing fee, and residence-permit renewal rules.
+- Ask whether Georgia and the United States have a tax treaty that applies to your pension, Social Security, investment income, or other retirement income. The supplied memo does not state the treaty status, so get this answer from a qualified cross-border tax professional before moving.
+- Compare a furnished rental in Old Town with one nearer the seafront before considering a 6-month or 12-month lease.
+- Visit Batumi Referral Hospital and Batumi International Hospital during a scouting stay to understand how non-resident patients arrange appointments and payment.
+- Ask GPI Holding whether a policy covers outpatient care, hospital care, and treatment outside Batumi.
 
-5. Keep copies of every financial record and translation you submit. Residence applications depend on documented sources, not a verbal account of your plans.
+The advantage is time. The caution is that time in Georgia should not be mistaken for a confirmed right to remain forever.
 
-6. Confirm renewal timing and the permit length offered in your category before treating Batumi as a permanent base.
+## What Everyday Life May Cost—And What You Need to Price Yourself
 
-The sea may make a longer stay feel easy on the first afternoon. The permit file is what makes it possible.
+### The promise is real; the dollar math is still personal
 
-## What a Solo Retiree’s Budget Has to Cover
+Numbeo’s June 2026 Batumi data, Expatistan’s September 2026 figures, and Georgia-focused relocation guides all describe Batumi as less expensive than many Western cities. That is encouraging, especially if your U.S. budget is currently shaped by a car, higher utility bills, restaurant prices, or a costly housing market.
 
-Batumi’s appeal is not only the water and the wide promenade. It is the possibility that an ordinary Tuesday—groceries, utilities, a local bus, a café stop, and a modest dinner—may take less out of a retirement check than it would in many American cities.
+But the city does not come with one universal price tag. Housing, food, utilities, dining, and transportation can shift with the season, the apartment, the neighborhood, and exchange-rate movements.
 
-Published 2026 cost guides put non-housing spending for one person at roughly $900-$1,300 per month, excluding healthcare. Treat that as a planning signal, not a promise. Rental season, building condition, internet, dining habits, and private medical coverage all have a say.
+The supplied research identifies two useful housing settings to compare: Old Town and beachfront or seafront areas. It does not provide a verified September 2026 dollar range for a one-bedroom in either area, so a tidy rent figure would create more confidence than the evidence supports.
 
-### Rent is where the monthly math changes
+That matters in Batumi, where summer demand can make a short-term rental feel very different from a winter lease. A seafront view may be wonderful in July. Before committing, you will want to know how the heating, dampness, elevator reliability, and walk to groceries feel in January.
 
-A 1-bedroom is the expense to test most carefully. Numbeo, Expatistan, and Georgia Expats all show that long-term rents vary widely between central Batumi, expat-favored areas, newer seaside buildings, and outer districts.
+### Let your receipts become the budget
 
-The lower-cost choice is generally farther from the central waterfront and newer tourist-oriented buildings. The higher-cost choice is often a furnished 1-bedroom in a central or newer seaside area during high season, when visitors and short-term demand can push asking prices upward.
+Batumi Central Market is a better starting point than a glossy online average. Visit on a weekday, a weekend, and a rainy day. Price bread, milk, eggs, produce, and meat in the same week, then see what you would actually buy for a normal home kitchen.
 
-Rather than trusting one listing, collect at least 3 current options with the same lease length. Compare a central 1-bedroom, an outer-area 1-bedroom, and a furnished unit in a newer building. Then ask what utilities, internet, furnishings, and seasonal terms are included.
+Coffee, casual lunches, bus rides, taxis, groceries, internet, utilities, and modest dinners are all described by 2026 local cost sources as lower than common U.S. benchmarks. Yet the supplied research does not provide a verified dollar price for any one purchase or name a café with a confirmed 2026 menu price.
+
+That gap is worth respecting. Retirement is not lived through one inexpensive coffee; it is lived through 30 coffees, regular groceries, taxis when it rains, a warmer apartment in winter, and the occasional evening out. The question is whether those ordinary choices still feel comfortable on your income after a month.
 
 ### Picture a Tuesday like this
 
-Picture a Tuesday spent living rather than sightseeing: a morning coffee, groceries for the apartment, a bus ride or taxi for an errand, lunch in the neighborhood, a walk along the waterfront, then dinner at home or out. Add mobile service, internet, utility estimates, and the occasional private medical expense, and the real question becomes clearer.
+Picture a Tuesday that begins at Batumi Central Market, where you note the prices of bread, milk, eggs, and local produce before buying a few days’ worth of groceries. From there, take one local bus route and record the fare, then compare it with a taxi quote for roughly the same trip.
 
-It is not whether every coffee or bus ride costs less than it would in the United States. It is whether your own 30-day record of food, transport, utilities, occasional dinners, phone service, rent inquiries, and healthcare fits both the income you can document for residency and the life you want to lead.
+Choose one neighborhood café for coffee, a casual local restaurant for lunch, and a modest dinner near Old Town or the seafront. Keep the bills. Repeat the exercise on three different days, including one rainy day.
 
-### A budget snapshot, with one important blank
+By the end of a month, you will have something more useful than an online estimate: a picture of your own Batumi spending and a sense of whether the city’s daily rhythm suits you when the weather is less cooperative and the visitor crowds have thinned.
 
-**Non-housing planning range:** $900-$1,300 per month  
-**Housing:** Varies by neighborhood, furnishing, building type, and season  
-**Healthcare:** Excluded from the published non-housing range  
-**Transport:** Compare local buses and taxis during a 30-day stay  
-**Dining and groceries:** Track café, market, lunch, and dinner spending separately  
-**Evidence confidence:** Moderate for broad planning; local listing and provider checks are essential  
-**Golden Horizons budget read:** Batumi may work for a careful retiree, but rent and private healthcare need live quotes before a long lease or permit application.
+### Compare Batumi with the life you actually have now
 
-The numbers can look generous on a screen. Your own receipts from a month in Batumi will tell the more useful story.
+The memo indicates that Batumi’s groceries, utilities, local transportation, and casual meals are generally lower than in the United States. It does not provide verified national U.S. rent, grocery, lunch, or age-60-to-64 insurance figures, so a polished-looking dollar comparison would not be responsible here.
 
-## Healthcare Needs to Be Tested, Not Assumed
+Instead, bring three months of your own household statements. Compare your home rent or mortgage, grocery receipts, restaurant meals, car costs, phone plan, utilities, and insurance premiums with 30 days of actual Batumi bills.
 
-A pleasant apartment near the water is easier to picture than a medical appointment. For foreigners in Batumi, though, healthcare planning deserves the same attention as a lease.
+It is less dramatic than a cost-of-living score. For a retirement decision, it is far more revealing.
 
-Do not assume public access will cover your needs simply because you have arrived visa-free. Coverage, eligibility, provider access, and insurance terms can depend on your status and the policy you hold.
+### Healthcare may be accessible—but access is not the same as coverage
 
-Before you settle, request at least 2 quotes from private insurers that will cover an applicant aged 60-75. Ask each insurer about outpatient visits, specialist appointments, emergency treatment, exclusions for existing conditions, waiting periods, annual limits, and whether care in Batumi is included.
+Batumi has both public and private care channels. The research identifies Batumi Referral Hospital and Batumi International Hospital as sensible places to investigate during a scouting stay. GPI Holding may offer locally relevant coverage, but the memo does not verify premiums, co-pays, consultation fees, exclusions, or whether a specific policy meets any residence requirement.
 
-The SDA’s residence guidance is useful for the legal side of a longer stay, while local living guides can help identify the questions foreigners commonly raise about private care. But an insurer’s written terms—not an online comment—should decide whether a plan works for you.
+Ask four questions wherever you inquire about care:
 
-### What to test during a scouting stay
+- What does a non-resident pay?
+- Does an appointment require local insurance?
+- Are your existing medicines available?
+- What happens after an emergency admission?
 
-Visit at least 2 private clinics or hospitals and ask about English-language appointments, cash prices for routine visits, emergency arrangements, and payment before insurance reimbursement. Keep the answers in writing alongside insurer quotes.
+Bring a written list of prescriptions, diagnoses, allergies, and physician contacts from the United States. Medicare generally does not cover healthcare received outside the United States, so it is especially important to understand both local coverage and the care you would need if you returned home after 6 months, 12 months, or several years abroad.
 
-If you rely on Medicare in the United States, remember that ordinary Medicare coverage generally does not pay for care outside the United States. Keep American coverage decisions separate from your Georgian insurance decision, and review return-to-U.S. arrangements before changing anything.
+### The apartment matters as much as the city
 
-The apartment can wait an afternoon. Test healthcare during the same 30 days.
+Batumi’s humid Black Sea climate should be tested in more than one season. Spring and summer may feel lush and inviting; wetter months can make ventilation, heating, window seals, and mold prevention much more consequential.
 
-## Beyond the Postcard: Climate, Property, and Everyday Security
+Do not let a sunny 7-day visit settle a 12-month housing decision. Compare Old Town and seafront buildings in daylight and after dark. Ask to see utility records from a cooler month. Notice the elevator, the walk to groceries, the sound from the street, and how the apartment feels after rain.
 
-Batumi’s coastal setting and seasonal visitor economy shape the texture of daily life. A 1-bedroom that seems quiet in one month may feel entirely different during a summer period, and a street that works for a two-week visit may not suit a 12-month lease.
-
-For property, keep the questions separate: buying and staying are not the same legal status. A property decision should never be treated as a substitute for confirming a valid residence path with the SDA.
-
-Climate is personal, particularly when walking comfort and health needs matter. During a 30-day stay, spend time outdoors in the early morning, at midday, and in the evening. Notice the humidity, rain, walking routes, and whether building heating or cooling feels comfortable for you.
-
-Safety and political context also deserve a current look rather than an old online impression. A March 2026 AP News report concerning European Union visa-free measures for certain Georgian diplomatic passport holders was not a rule for ordinary American retirees. Still, it is a useful reminder that policy conditions can shift.
-
-Batumi may be a lovely place to consider. Let the daily weather, local lease terms, healthcare questions, and current news have as much say as the sea view.
+The lower-cost appeal may be genuine. A comfortable retirement home, though, is never just a number on a listing.
 
 ## Practical Comparison
 
-### Visa-free arrival versus formal residence
+### Visa-free time versus formal residence
 
 **What the evidence says:**  
-Visa-free entry is not automatic long-term residency. For a planned stay beyond 90 days, Georgia’s SDA and Matsne materials point to formal permit or extension rules, with financial evidence and documentation tied to the category.
+U.S. citizens may be able to remain visa-free in Georgia for up to 365 days, while formal residence has separate rules. The memo does not confirm a 2026 retirement-specific category, threshold, document list, fee, or processing period.
 
 **What to check next:**  
-Read the current SDA permit page, then confirm the category, stay length, renewal rules, and document list with the SDA or a Georgian consulate.
+Confirm the current U.S.-passport rule directly with Georgia’s official authorities before departure. Ask for a written list of residence categories, documents, fees, and processing times.
 
-### Central Batumi versus outer neighborhoods
+### Old Town versus seafront housing
 
 **What the evidence says:**  
-A 1-bedroom can vary sharply by area, furnishing, season, and proximity to newer seaside buildings. Numbeo, Expatistan, and Georgia Expats offer broad 2026 signals but cannot price one specific apartment for you.
+Old Town and beachfront or seafront areas are the 2 Batumi housing settings identified in the memo. Rental costs can vary by season, especially around summer demand, and no verified September 2026 dollar range was supplied.
 
 **What to check next:**  
-Compare 3 current long-term listings: one central unit, one newer seaside unit, and one outer-area unit with the same lease length.
+Compare at least 2 furnished one-bedroom listings in each area and ask for a 30-day, 6-month, and 12-month rate.
 
-### Private insurance versus assumptions about public care
+### Online cost averages versus real receipts
 
 **What the evidence says:**  
-Foreigners commonly plan around private healthcare and private insurance. Coverage depends on the insurer, provider, age band, medical history, and the written policy terms.
+Numbeo’s June 2026 data and Expatistan’s September 2026 information provide useful starting points for food, transport, utilities, dining, and rent. Their figures are still subject to neighborhood, season, apartment efficiency, and exchange-rate movement.
 
 **What to check next:**  
-Request 2 insurer quotes for ages 60-75 and ask 2 Batumi clinics or hospitals about appointment access, English support, and direct billing.
+Record 30 days of groceries, coffee, lunches, transport, utilities, internet, and evening meals using receipts from Batumi Central Market and nearby businesses.
 
-### A low-cost month versus a sustainable retirement plan
+### Private care versus public access
 
 **What the evidence says:**  
-Published 2026 planning estimates put non-housing costs around $900-$1,300 monthly, while rent and healthcare sit outside or vary within that broad picture.
+Foreigners can seek care in public and private settings, including Batumi Referral Hospital and Batumi International Hospital. Coverage, fees, insurer participation, and eligibility can differ between non-residents and residents.
 
 **What to check next:**  
-Track 30 days of groceries, cafés, transport, utilities, mobile service, dining, rent inquiries, and medical quotes before deciding what income you need.
-
-### Current conditions versus old online advice
-
-**What the evidence says:**  
-The March 2026 European Union policy news regarding Georgian diplomatic passports did not change ordinary retiree rules, but it shows why current policy review matters.
-
-**What to check next:**  
-Review current SDA guidance, Matsne legal texts, and up-to-date reporting in the final 30 days before travel.
+Ask both hospitals and GPI Holding for written answers about appointments, emergencies, prescriptions, and ongoing care for a U.S. citizen staying 30 days or up to 365 days.
 
 ## The Trade-Off
 
-**What you may gain:**
-- A clearer answer about whether a 90-day visitor stay can become a longer lawful residence through an SDA permit route.
-- A realistic 2026 planning range of $900-$1,300 for non-housing spending before private healthcare and rent.
-- A 30-day chance to compare 3 different 1-bedroom rental areas rather than committing from afar.
-- The ability to collect 2 private insurance quotes before a health need makes the choice urgent.
+### What you may gain:
 
-**What you may give up:**
-- The comforting idea that visa-free arrival automatically means a 12-month or multi-year right to remain.
-- Time spent gathering income proof, savings records, translations, and other SDA-required documents.
-- Some flexibility if a central 1-bedroom becomes more expensive during seasonal demand.
-- The simplicity of relying only on Medicare, which generally does not cover ordinary care outside the United States.
+- Up to 365 days of reported visa-free time to learn whether Batumi works in ordinary life.
+- A 30-day trial that can include groceries, buses, taxis, coffee, lunches, utilities, and healthcare questions before you sign a long lease.
+- Two distinct housing settings to compare: Old Town and the seafront.
+- A 12-month window to experience more than one season, including Batumi’s wetter and cooler months.
 
-![Batumi Georgia waterfront daily life](https://images.unsplash.com/photo-1782664132534-d8f3d07174e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwzfHxCYXR1bWklMjBHZW9yZ2lhJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzg5MzM5NDM3fDA&ixlib=rb-4.1.0&q=80&w=1080)
+### What you may give up:
+
+- A confirmed residence route after day 365. The supplied research does not identify a verified retirement-permit category or threshold.
+- A fixed housing budget. One-bedroom costs can change with season, building condition, and distance from the seafront.
+- Predictable healthcare spending. The memo does not confirm non-resident consultation fees, premiums, co-pays, or policy exclusions.
+- The ease of Medicare coverage at home. Medicare generally does not pay for routine healthcare outside the United States.
+- The comfort of a fixed currency budget. Exchange-rate movement can change what your monthly income buys.
+
+The housing can look manageable at first glance. Healthcare, insurance, residency, and seasonal costs are where a careful test becomes essential.
+
+![Batumi, Georgia waterfront daily life](https://images.unsplash.com/photo-1782664132534-d8f3d07174e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwzfHxCYXR1bWklMjBHZW9yZ2lhJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzg5MzM5NDM3fDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Contact the State Agency for Development of Public Services through its Migration and Residence Permits information page and ask which residence category fits a retiree aged 60-75 planning a stay beyond 90 days.
+1. Before flying, confirm the U.S.-passport visa-free rule with Georgia’s official authorities and save the response showing the current stay limit of up to 365 days.
+2. Rent a furnished apartment for 30 days in Old Town, then spend at least 3 evenings walking the seafront area to compare noise, dampness, groceries, and transport.
+3. Visit Batumi Central Market on 3 separate days and record the prices of bread, milk, eggs, produce, and meat in the same notebook.
+4. Ride 1 local bus route and take 1 taxi over a similar distance; keep both receipts and repeat the comparison during rain.
+5. Visit Batumi Referral Hospital and Batumi International Hospital to ask about non-resident consultations, emergency admission, prescription refills, and English-language communication.
+6. Request a written quote from GPI Holding or another locally active insurer for 30 days, 6 months, and 12 months of coverage, including exclusions for existing conditions.
 
-2. Assemble a sample permit file with passport identification, proof of pension income, proof of savings, and any translations requested by the SDA for your chosen category.
-
-3. Compare 3 current 1-bedroom listings in central Batumi, a newer seaside area, and an outer district; ask each landlord about long-term terms, seasonal changes, utilities, and furnishings.
-
-4. Request written quotes from at least 2 Georgian private insurers for a policy covering someone aged 60-75, including outpatient care, emergency care, exclusions, and waiting periods.
-
-5. Visit 2 Batumi private clinics or hospitals during your stay and ask for routine appointment pricing, English-language availability, emergency procedures, and insurance billing details.
-
-6. Track every grocery visit, coffee, lunch, bus ride, taxi, utility estimate, mobile plan, and dinner for 30 days; compare the total with the published $900-$1,300 non-housing planning range.
-
-![Batumi Georgia street scene](https://images.unsplash.com/photo-1707908884239-5d05f9dd2480?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHw0fHxCYXR1bWklMjBHZW9yZ2lhJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzg5MzM5NDM3fDA&ixlib=rb-4.1.0&q=80&w=1080)
+![Batumi, Georgia street scene](https://images.unsplash.com/photo-1707908884239-5d05f9dd2480?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHw0fHxCYXR1bWklMjBHZW9yZ2lhJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzg5MzM5NDM3fDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### Can a U.S. retiree stay in Batumi for more than 90 days on visa-free entry?
+### How long can a U.S. citizen stay in Batumi without a visa?
 
-Visa-free access is not an automatic long-term residence right. If you plan to remain beyond 90 days, use the Georgian residence-permit or extension route that fits your case. The SDA explains permit categories and required evidence, while Matsne carries the governing legal texts. (Georgia SDA; Matsne)
+Georgia’s visa-free policy is reported to allow U.S. citizens to stay for up to 365 days. Batumi follows Georgia’s national entry rules, so there is no separate city-level visitor permission. Confirm the current rule directly before travel and again before planning around the full 365 days. (Georgia Ministry of Foreign Affairs, mfa.gov.ge)
 
-### What income or savings are required for residence in Georgia?
+### What does a one-bedroom apartment cost in Batumi in 2026?
 
-The required income or savings evidence varies by permit category, so this review does not support one retirement threshold for every applicant. Prepare pension records, bank evidence, identity documents, and any required translations before a 2026 application. The SDA lists the financial evidence and documents required for each permit category. (Georgia SDA)
+The supplied memo confirms that one-bedroom rents vary between Old Town and beachfront or seafront areas, with seasonal swings in 2026. It does not provide a verified dollar range for either area, so this article does not present an invented figure. Review live listings for at least 30 days, 6 months, and 12 months before treating an online average as your budget. (Expatistan, expatistan.com)
 
-### What should I expect to pay for a 1-bedroom in Batumi?
+### Is there a retirement residence permit in Georgia?
 
-A 1-bedroom rent depends on whether you choose central Batumi, a newer seaside district, or an outer neighborhood, as well as the season and furnishings. Compare at least 3 current long-term listings before you make a decision. Numbeo’s June 2026 Batumi page offers a useful broad benchmark, though it is crowd-sourced and not a lease quote. (Numbeo)
+The memo does not verify a distinct retirement residence permit with a confirmed 2026 name, income threshold, savings threshold, or document list. It does say that formal residence options exist beyond visa-free entry, but requirements vary by route and need current confirmation from Georgian authorities. Do not assume that a 365-day visitor stay converts automatically into residence. (Georgia government portals, georgia.gov.ge)
 
-### Is Batumi affordable for a solo retiree?
+### What should I expect from healthcare in Batumi as a foreigner?
 
-Published 2026 guides place non-housing monthly spending for one person around $900-$1,300, excluding healthcare. That can work for some retirees, but rent, private insurance, utilities, and dining habits may change the total. Track your own coffee, groceries, lunches, bus rides, taxis, mobile service, and utility estimates during a 30-day stay. (Georgia Expats)
+Foreigners can use public and private healthcare channels in Batumi, including Batumi Referral Hospital and Batumi International Hospital. The memo does not confirm a 2026 private consultation fee, insurance premium, or public-care eligibility rule for a U.S. non-resident. Ask providers and insurers such as GPI Holding for written pricing before depending on care during a 30-day or 365-day stay. (Numbeo, numbeo.com)
 
-### How should I test healthcare before considering a longer stay?
+### Is Batumi safer than many U.S. cities for retirees?
 
-Get written coverage quotes from at least 2 private insurers for an applicant aged 60-75 before deciding on a residence plan. Then visit 2 local private clinics or hospitals to ask about routine visits, emergency arrangements, English support, and insurer billing. Medicare generally does not cover ordinary care outside the United States, so your Georgian coverage needs its own plan. (Expatistan; Georgia SDA)
+The memo does not provide a verified crime statistic or city-to-city comparison for Batumi and U.S. places. That means a broad claim that Batumi is safer than “many” American cities would go beyond the evidence. During a 30-day stay, walk Old Town and the seafront at 3 different times of day, ask landlords about building security, and check current local public-safety guidance. (European Union, europa.eu)
 
 ## Check Today's Information Before You Decide
 
-- [Georgia SDA: Migration and Residence Permits](https://sda.gov.ge/en/products/migration-residence-permits/)
-- [Matsne: Georgia’s official legal texts](https://matsne.gov.ge/)
-- [Numbeo: Batumi cost of living](https://www.numbeo.com/cost-of-living/in/Batumi)
-- [Expatistan: Batumi cost of living](https://www.expatistan.com/cost-of-living/batumi)
-- [Georgia Expats: Living in Batumi](https://georgiaexpats.com/guides/living-in-batumi/)
-- [AP News: 2026 European Union policy context](https://apnews.com/article/407f4268d428afa088407d10965cc7be)
+- [Georgia Ministry of Foreign Affairs](https://mfa.gov.ge): confirm the current visa-free entry rule for U.S. passport holders.
+- [Georgia government portals](https://georgia.gov.ge): request the current residence categories, documents, fees, and timelines.
+- [Numbeo Batumi](https://www.numbeo.com/cost-of-living/in/Batumi): compare current food, transport, restaurant, utilities, and rent indicators.
+- [Expatistan Batumi](https://www.expatistan.com/cost-of-living/batumi): review current local cost estimates and compare them with 30 days of personal receipts.
+- [European Union visa-policy reporting](https://europa.eu): monitor changes affecting Georgia’s visa-policy context.
 
 ## Sources & Verification
 
-- [Georgia SDA — Migration and Residence Permits](https://sda.gov.ge/en/products/migration-residence-permits/)
-- [Matsne — Law of Georgia and official legal texts](https://matsne.gov.ge/)
-- [Matsne preview — visa and temporary-stay legal material](https://new.matsne.gov.ge/ru/document/download/2278806/22/en/pdf)
-- [Numbeo — Batumi cost of living, June 2026](https://www.numbeo.com/cost-of-living/in/Batumi)
-- [Expatistan — Batumi cost of living, September 2026](https://www.expatistan.com/cost-of-living/batumi)
-- [Georgia Expats — Living in Batumi guide, 2026](https://georgiaexpats.com/guides/living-in-batumi/)
-- [AP News — European Union visa-free policy context, March 2026](https://apnews.com/article/407f4268d428afa088407d10965cc7be)
+- [Georgia Ministry of Foreign Affairs](https://mfa.gov.ge) — Official/Primary: Yes. Supports visa-policy confirmation for U.S. citizens. Checked September 13, 2026. Limitation: current conditions must be confirmed directly before travel.
+- [Georgia government portals](https://georgia.gov.ge) — Official/Primary: Yes. Supports residence-route and document verification. Checked September 13, 2026. Limitation: the memo does not provide a confirmed 2026 retirement category or threshold.
+- [Numbeo, Batumi](https://www.numbeo.com/cost-of-living/in/Batumi) — Official/Primary: No. Supports June 2026 price benchmarks for daily expenses. Checked June 2026. Limitation: user-reported and neighborhood-sensitive data.
+- [Expatistan, Batumi](https://www.expatistan.com/cost-of-living/batumi) — Official/Primary: No. Supports September 2026 cost comparisons. Checked September 2026. Limitation: estimates can change with season and exchange rates.
+- [European Union visa-policy reporting](https://europa.eu) — Official/Primary: Yes. Supports context on Georgia’s visa-policy scrutiny in 2025 and 2026. Checked 2026. Limitation: European visa-policy reporting does not replace Georgia’s entry rules for U.S. citizens.
 
 Information checked: September 13, 2026
 
@@ -265,8 +256,8 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY RESIDENCY**
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-Batumi may suit you if coastal daily life matters, you can document your finances, and you are willing to let the paperwork lead the decision rather than the view. It may frustrate you if you want visa-free arrival to double as an open-ended right to remain, or if seasonal rent shifts and private-healthcare questions feel like too much uncertainty.
+Visa-free entry of up to 365 days makes Batumi an unusually flexible place for an American to test a longer overseas life. It fits someone who values time to observe before deciding—and who is willing to treat the first 30 days as research, not a commitment.
 
-Spend 30 days comparing apartments, insurance quotes, clinic access, and SDA requirements. If the numbers, documents, and ordinary rhythm all hold up, Batumi may become more than a pleasant arrival—it may become a place where your next chapter feels genuinely livable.
+It may frustrate anyone who needs a confirmed residence route, fixed healthcare costs, and predictable long-term housing numbers before arriving. For the right traveler, though, there is something reassuring about having enough time to discover whether a market morning, a rainy walk home, and a quiet evening by the Black Sea could become part of everyday life.
