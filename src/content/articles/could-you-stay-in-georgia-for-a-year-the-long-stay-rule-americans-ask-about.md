@@ -1,85 +1,107 @@
 ---
-title: "Could You Stay in Georgia (the country) for a Year? Residency routes, costs, and practicalities for American retirees (no separate “retirement visa”)"
+title: "Could You Retire in Georgia for a Year? 365 Days Visa-Free, on About $1,500 a Month"
 category: Visa
 slug: could-you-stay-in-georgia-for-a-year-the-long-stay-rule-americans-ask-about
 date: 2026-09-13
-image: https://images.unsplash.com/photo-1615862846029-78de3497ffbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxHZW9yZ2lhJTIwY291bnRyeSUyMGxhbmRzY2FwZXxlbnwwfDB8fHwxNzg5MzEyMzE3fDA&ixlib=rb-4.1.0&q=80&w=1080
-description: "Explore residency options, costs, and practicalities for a year-long stay in Georgia for American retirees."
+image: https://images.unsplash.com/photo-1615862846029-78de3497ffbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080
+description: "Georgia lets Americans stay a full year with no visa. Here's what a year in Tbilisi really costs — and the residency catch to check before you go."
 featured: false
 ---
-# Could You Stay in Georgia (the country) for a Year? Residency routes, costs, and practicalities for American retirees (no separate “retirement visa”)
 
-> You can stay in Georgia for up to 365 days visa-free. For longer stays, explore residence permits tied to property ownership or other grounds. Monthly costs for a solo retiree range from $1,200 to $1,800, depending on lifestyle and location. Healthcare is accessible through private providers, with insurance recommended.
+# Could You Retire in Georgia for a Year? 365 Days Visa-Free, on About $1,500 a Month
+
+> **THE SHORT ANSWER:** Most Americans can live in the country of Georgia for a full year with no visa at all — 365 days, no application. A one-bedroom in central Tbilisi runs $400–$700 a month, groceries $150–$250, utilities and internet $50–$100, and transit $20–$40, which puts a solo retiree between $1,200 and $1,800 a month. There is no dedicated retirement visa; staying past a year means a residence permit tied to property or proof of income. Healthcare is mostly private, and you'll want insurance.
 
 ## Retirement Snapshot
-**Primary decision:** Can you stay in Georgia for a year without a formal retirement visa?  
-**Best fit:** Retirees seeking a low-cost European lifestyle with flexible residency options.  
-**Biggest warning:** No dedicated retirement visa; plan for property-based or other permit routes.
+**Primary decision:** Can you stay in Georgia for a year without a formal retirement visa?
+**Best fit:** Retirees who want a low-cost year abroad and don't mind a country most Americans overlook.
+**Biggest warning:** The easy part is the year you get for free — the residency question is where it gets real.
 
-## Executive Summary and Residency Pathways
-Picture yourself strolling through Tbilisi's lively streets, where the scent of freshly baked khachapuri mingles with the aroma of coffee wafting from nearby cafés. For many Americans, the prospect of spending a year in Georgia is enticing, thanks to the visa-free stay of up to 365 days. However, extending beyond this period requires navigating Georgia's residency pathways.
+## The Year You Get for Free — and the Rule After That
 
-Georgia does not provide a dedicated retirement visa. Instead, long-term residence permits are available, often linked to property ownership or other grounds. These permits require documentation, including proof of income or savings. The State Service Development Agency (SDA) offers detailed guidance on these permits, emphasizing the need for legal income evidence, which can include pensions or societal support.
+Here's what makes Georgia unusual: you don't have to ask permission to spend a year there. U.S. citizens can enter and stay for 365 days visa-free — no forms at a consulate, no proof of savings at the airport, no clock you have to reset every 90 days the way you do across most of Europe. For a year-long test drive of retirement abroad, that's about as low-friction as it gets.
 
-## Cost of Living Deep Dive for a Year-Long Stay (Retiree Budget Scenarios)
-Living in Georgia offers a cost-effective alternative to many Western cities. A one-bedroom apartment in Tbilisi's central districts like Vera or Saburtalo ranges from $400 to $700 per month. Groceries, including fresh produce from local markets, can cost around $150 to $250 monthly. Utilities and internet add another $50 to $100, while local transport remains affordable at about $20 to $40 monthly.
+The friction starts when you want to stay longer. Georgia doesn't offer a retirement visa — there's no single "show us your pension and settle down" pathway. What exists instead is a residence permit, usually tied to owning property or to other grounds, and it asks you to document legal income: a pension or other steady support generally counts.
 
-Dining out is a treat, with a casual meal costing around $5 to $10. Overall, a solo retiree can expect monthly expenses between $1,200 and $1,800, depending on lifestyle choices and neighborhood.
+So don't let anyone sell you a fixed number here. Georgia asks for proof of income rather than publishing one clean threshold everyone can point to, and the exact figure shifts by permit type. That's not a reason to walk away — it's the first thing to pin down, from the State Service Development Agency, before you fall for the apartment.
 
-## Day-in-the-life Scenarios in Tbilisi and Batumi
-Imagine starting your day with a $1.50 cappuccino at a café in Tbilisi's Old Town, followed by a leisurely stroll through the historic streets. Lunch might be a $6 khinkali meal at a local eatery. In the evening, a $10 dinner in Batumi, overlooking the Black Sea, rounds out a day filled with cultural exploration and culinary delights.
+## What a Year in Tbilisi Really Costs
 
-![Georgia cityscape](https://images.unsplash.com/photo-1667826880734-10c5e4ff1b19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxHZW9yZ2lhJTIwY291bnRyeSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc4OTMxMjMxOHww&ixlib=rb-4.1.0&q=80&w=1080)
+Start with rent, because it's the number that moves everything else. A one-bedroom in a central Tbilisi district like Vera or Saburtalo runs $400 to $700 a month. Take the lower end and a $1,500 budget still has plenty of room; take the higher end and you'll feel it, but you're not priced out.
+
+Groceries land around $150 to $250 a month, utilities and internet add another $50 to $100, and getting around the city costs just $20 to $40. Eating out barely registers — a casual meal is $5 to $10. Add it up and a solo retiree lands between $1,200 and $1,800 a month, and the difference between those two numbers is mostly you: how central you live, how often you eat out.
+
+That's the honest version. It's cheaper than nearly any U.S. city, but "cheap" isn't the point — the point is that a Social Security check covers it with something left over.
+
+## A Tuesday in Tbilisi, a Night in Batumi
+
+Picture an ordinary Tuesday, built only from the prices above. You start with a $1.50 cappuccino at a café in the Old Town and take your time with it. Lunch is a plate of khinkali — Georgia's soup dumplings — for about $6 at a neighborhood spot.
+
+Some weeks you trade the city for the coast. Dinner in Batumi, a few hours west on the Black Sea, runs around $10 with a view of the water. None of this is a splurge. It's just what a normal day costs when your rent is $500 and your coffee is a dollar-fifty.
+
+![Tbilisi, Georgia — a central neighborhood street](https://images.unsplash.com/photo-1667826880734-10c5e4ff1b19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080)
+
+## Healthcare: Good Private Care, but Bring Your Own Insurance
+
+Worried about seeing a doctor? That's the right worry to have, and here's the honest shape of it. In Georgia, most expats use private clinics rather than the public system, and the care is generally well regarded. What you don't get is a public safety net you can lean on the way you might at home.
+
+So the plan is simple: carry private health insurance, and treat it as a fixed line in your budget, not an afterthought. Before you sign a lease, find out which clinic you'd actually walk into, and get a real quote for a plan that covers you in Georgia — that one hour of homework is worth more than any ranking online.
 
 ## Practical Comparison
-### Residency route availability and thresholds
-**What the evidence says:** Georgia offers visa-free stays up to 365 days for U.S. citizens. Long-term residence permits may be possible through property ownership or other grounds.  
-**What to check next:** Confirm current visa-free duration for your passport and whether your planned stay requires a residence permit.
 
-### Realistic monthly living costs
-**What the evidence says:** Georgia's cost of living is generally lower than in Western countries, with affordable housing and utilities.  
-**What to check next:** Research neighborhood-specific rent and utility rates in Tbilisi or Batumi.
+### Can you actually stay the full year?
+**What the evidence says:** Yes for U.S. citizens — 365 days visa-free, no permit required for that first year. Longer stays shift you into residence-permit territory, usually via property or other qualifying grounds.
+**What to check next:** Confirm the current visa-free rule for a U.S. passport, and decide now whether your plan is "one year and reassess" or "settle in" — because those are two different paperwork paths.
 
-### Healthcare access for retirees
-**What the evidence says:** Private healthcare is common, with private clinics available. Insurance is recommended.  
-**What to check next:** Investigate private health insurance options and per-visit costs at major clinics.
+### Does the budget really work?
+**What the evidence says:** A solo retiree runs $1,200–$1,800 a month all-in, with rent ($400–$700) as the swing factor between the two.
+**What to check next:** Price one-bedrooms in Vera, Saburtalo, and the Old Town yourself, then set your own low/high budget around the rent you'd actually pay.
 
-### Residency document requirements
-**What the evidence says:** Long-term permits require documentation, including income evidence.  
-**What to check next:** Gather necessary documents and anticipate processing times for your chosen route.
+### What happens when you need a doctor?
+**What the evidence says:** Private clinics are the norm for foreigners and are generally solid; insurance is strongly recommended rather than optional.
+**What to check next:** Get a written quote for a plan that covers Georgia and identify the specific clinic nearest where you'd live.
+
+### Can you clear the residency paperwork?
+**What the evidence says:** Long-term permits require documented legal income — a pension or other steady support generally qualifies — but the exact threshold depends on the permit.
+**What to check next:** Ask the SDA directly what income proof your specific route requires, and confirm it in writing before you commit to anything.
 
 ## The Trade-Off
 **What you may gain:**
-- A year-long stay in a lower-cost environment with access to European-leaning infrastructure and healthcare options.
+- A full year abroad on $1,200–$1,800 a month, with no visa to apply for.
+- Rent from $400 that leaves real room in a Social Security budget.
+- A daily life — $1.50 coffee, $6 lunch, $10 dinner on the coast — that stays affordable without feeling like sacrifice.
 
 **What you may give up:**
-- No simple retirement visa; immigration may require property ownership or other grounds with associated costs.
+- The simplicity of a purpose-built retirement visa, which Georgia doesn't have.
+- Certainty on the residency income requirement, which you'll have to confirm case by case.
+- A public healthcare fallback — private insurance is on you.
 
-![Georgia street scene](https://images.unsplash.com/photo-1672667177377-1be36afce2e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxHZW9yZ2lhJTIwY291bnRyeSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc4OTMxMjMxOHww&ixlib=rb-4.1.0&q=80&w=1080)
+![Tbilisi, Georgia — everyday street life](https://images.unsplash.com/photo-1672667177377-1be36afce2e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
-1. Verify visa-free eligibility for U.S. passport holders for a full 365-day stay via the U.S. State Dept./UK Gov pages.
-2. Research and compare three neighborhoods in Tbilisi (e.g., Vera, Saburtalo, Old Town) for one-bedroom rental ranges.
-3. Contact a Georgia-based private clinic to obtain a rough per-visit cost and check private insurance premiums.
-4. Obtain a provisional plan for a residence permit tied to real estate, including purchase costs and required documents.
-5. Build a simple monthly budget: rent, groceries, utilities, internet, transport, and dining.
-6. Identify two reputable local service providers for long-term stay support and list typical service fees.
+1. Confirm the 365-day visa-free rule still holds for U.S. passports in 2026, straight from the U.S. State Department page — not a forum.
+2. Price one-bedrooms in Vera, Saburtalo, and the Old Town, and write down a real low and high monthly rent.
+3. Build your month from the ground up: rent + $150–$250 groceries + $50–$100 utilities + $20–$40 transit, and see where you land against $1,500.
+4. Get one written health-insurance quote that covers Georgia, and note the monthly cost.
+5. Pick the clinic you'd actually use near your top neighborhood, and find its price for a routine visit.
+6. If you're thinking past year one, email the SDA and ask exactly what income proof your residence-permit route needs — get the answer in writing.
 
 ## Frequently Asked Questions
-### Can an American stay in Georgia for a full year without applying for a visa?
-Yes, U.S. citizens can stay visa-free for up to 365 days. Verify current year status in 2026 updates. (Source: U.S. Department of State)
 
-### Is there a formal Georgia retirement visa?
-No, Georgia does not publish a dedicated retirement visa; long-term permits exist via property-based or other grounds. (Source: Legal.ge)
+### Can an American really stay a full year without a visa?
+Yes. U.S. citizens can stay in Georgia visa-free for up to 365 days, with no application and no permit for that first year. It's one of the longest visa-free windows open to Americans anywhere. Just confirm the rule still stands for 2026 before you book, since entry rules can change. (Source: U.S. Department of State)
 
-### What income or funds are required to obtain a long-term residence permit?
-Georgia typically requires evidence of legal income; specific thresholds vary by permit type. (Source: SDA)
+### Is there a Georgia retirement visa?
+No — Georgia does not publish a dedicated retirement visa. If you want to stay beyond the visa-free year, you apply for a residence permit, most commonly through property ownership or other qualifying grounds. Plan around the permit that fits your situation rather than looking for a "retiree" track that doesn't exist. (Source: Legal.ge)
 
-### What is the rough monthly cost for a one-bedroom in central Georgia for a retiree?
-Expect rent variability by neighborhood; sources indicate modest budgets. (Source: ExpatDen)
+### How much income do I need for a long-term residence permit?
+Georgia asks for evidence of legal income — a pension or other steady support generally counts — but it doesn't hand out one fixed number that applies to everyone; the requirement varies by permit type. That's exactly why it's the first thing to confirm, in writing, with the State Service Development Agency before you commit. Don't rely on a figure you read secondhand. (Source: SDA)
 
-### What are typical healthcare costs for a retiree in Georgia?
-Private clinics exist; plan for private insurance or out-of-pocket costs. (Source: ExpatDen)
+### What does a month actually cost for one person in Tbilisi?
+Budget $1,200 to $1,800 a month all-in for a solo retiree. Rent is the biggest lever — $400 to $700 for a one-bedroom in a central district — with groceries at $150–$250, utilities and internet at $50–$100, and transit at $20–$40. Where you land in that range is mostly about how central you live and how often you eat out. (Source: ExpatDen)
+
+### How does healthcare work for retirees?
+Most foreigners use private clinics, which are generally well regarded, and there isn't a public system you can count on as a newcomer. The standard move is to carry private health insurance and budget for it as a fixed cost. Before you settle, get a quote that covers Georgia and pick the specific clinic you'd use. (Source: ExpatDen)
 
 ## Check Today's Information Before You Decide
 - [SDA Georgia – Residence permits](https://sda.gov.ge/en/residence-permit-and-residence-card/)
@@ -97,14 +119,14 @@ Private clinics exist; plan for private insurance or out-of-pocket costs. (Sourc
 Information checked: September 13, 2026
 
 ## Related Golden Horizons Guides
-- [Healthcare Abroad for American Retirees](/healthcare-abroad-for-american-retirees)
-- [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-americans)
-- [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans-retiring-abroad)
-- [Taxes for Americans Retiring Overseas](/taxes-for-americans-retiring-overseas)
+- [Healthcare Abroad for American Retirees](https://golden-horizons.org/healthcare-abroad-for-american-retirees)
+- [Retiring Abroad Checklist for Americans](https://golden-horizons.org/retiring-abroad-checklist-for-americans)
+- [Visa Rules for Americans Retiring Abroad](https://golden-horizons.org/visa-rules-for-americans-retiring-abroad)
+- [Taxes for Americans Retiring Overseas](https://golden-horizons.org/taxes-for-americans-retiring-overseas)
 
 ## About Golden Horizons
 Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad. We focus on the decision that matters: what your money may make possible, whether you can legally stay, whether healthcare and ordinary daily life work for you, and what you should test before committing. Travel first. Test the reality. Then decide.
 
 ## Final Verdict
-**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**  
-Georgia offers a feasible option for a year-long stay through visa-free entry or residence permits. However, the absence of a dedicated retirement visa requires careful planning and verification of costs and residency requirements.
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
+Georgia is one of the easiest places on earth for an American to spend a year — a full 365 days, no visa — on a budget a Social Security check can carry. The homework is the residency question past year one and the private-insurance line in your budget. Confirm both, and a year in Tbilisi is a genuinely low-risk way to find out whether this life fits you.
