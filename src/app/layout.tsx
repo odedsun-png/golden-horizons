@@ -109,6 +109,20 @@ export default function RootLayout({
           }}
         />
 
+        {/* Google Analytics (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QLPQL9SD2K"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QLPQL9SD2K');
+          `}
+        </Script>
+
         {/* Meta Pixel */}
         <Script
           id="meta-pixel"
