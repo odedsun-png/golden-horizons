@@ -123,6 +123,21 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* Brevo tracker */}
+        <Script
+          src="https://cdn.brevo.com/js/sdk-loader.js"
+          strategy="afterInteractive"
+        />
+        <Script id="brevo-tracker" strategy="afterInteractive">
+          {`
+            window.Brevo = window.Brevo || [];
+            Brevo.push([
+              "init",
+              { client_key: "vq3q7bu408gr3pvm4qq6s1fq" }
+            ]);
+          `}
+        </Script>
+
         {/* Meta Pixel */}
         <Script
           id="meta-pixel"
