@@ -1,576 +1,277 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index,follow" />
-    <title>Compare Travel Insurance for Retirement Scouting Trips | Golden Horizons</title>
-    <meta
-      name="description"
-      content="Planning a scouting trip abroad before you retire overseas? Compare travel-insurance options for trip cancellation, emergency medical care, evacuation, and travel delays before you book."
-    />
-    <link rel="canonical" href="https://golden-horizons.org/travel-insurance" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Compare Travel Insurance for Retirement Scouting Trips" />
-    <meta
-      property="og:description"
-      content="A practical guide to comparing travel-insurance options before visiting a potential retirement destination."
-    />
-    <meta property="og:url" content="https://golden-horizons.org/travel-insurance" />
-    <style>
-      :root {
-        --ink: #211b17;
-        --ink-soft: #4d4239;
-        --muted: #6f6256;
-        --paper: #fbf6ec;
-        --paper-deep: #f2e9d9;
-        --canvas: #e8e1d5;
-        --gold: #c9ad69;
-        --gold-light: #ead9a7;
-        --line: #cfc1a9;
-        --white: #ffffff;
-        --max-width: 760px;
-      }
+import type { Metadata } from "next";
+import Script from "next/script";
 
-      * {
-        box-sizing: border-box;
-      }
+export const metadata: Metadata = {
+  title: "Compare Travel Insurance for Retirement Scouting Trips | Golden Horizons",
+  description:
+    "Planning a scouting trip abroad before you retire overseas? Compare travel-insurance options for trip cancellation, emergency medical care, evacuation, and travel delays before you book.",
+  alternates: { canonical: "https://golden-horizons.org/travel-insurance" },
+  openGraph: {
+    type: "website",
+    title: "Compare Travel Insurance for Retirement Scouting Trips",
+    description:
+      "A practical guide to comparing travel-insurance options before visiting a potential retirement destination.",
+    url: "https://golden-horizons.org/travel-insurance",
+  },
+};
 
-      html {
-        scroll-behavior: smooth;
-      }
+const AFFILIATE_URL = "https://www.squaremouth.com/?aid=24136";
 
-      body {
-        margin: 0;
-        background: var(--canvas);
-        color: var(--ink);
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 18px;
-        line-height: 1.65;
-      }
+const css = `
+  .ti-shell { --ink:#211b17; --ink-soft:#4d4239; --muted:#6f6256; --paper:#fbf6ec;
+    --paper-deep:#f2e9d9; --canvas:#e8e1d5; --gold:#c9ad69; --gold-light:#ead9a7;
+    --line:#cfc1a9; --white:#fff; background:var(--canvas); color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif; font-size:18px; line-height:1.65;
+    min-height:100vh; padding:28px 16px 56px; }
+  .ti-shell * { box-sizing:border-box; }
+  .ti-page { max-width:760px; margin:0 auto; overflow:hidden; background:var(--paper);
+    border:1px solid var(--ink); box-shadow:0 16px 45px rgba(33,27,23,.08); }
+  .ti-masthead { padding:13px 26px; border-bottom:1px solid var(--line); color:var(--muted);
+    font-family:Arial,Helvetica,sans-serif; font-size:11px; font-weight:700;
+    letter-spacing:.14em; text-align:center; text-transform:uppercase; }
+  .ti-hero { padding:52px 56px 42px; text-align:center; border-bottom:4px double var(--ink); }
+  .ti-eyebrow { margin:0 0 14px; color:#806b3f; font-family:Arial,Helvetica,sans-serif;
+    font-size:12px; font-weight:700; letter-spacing:.17em; text-transform:uppercase; }
+  .ti-page h1,.ti-page h2 { margin-top:0; font-family:Georgia,"Times New Roman",serif;
+    font-weight:700; letter-spacing:-.02em; }
+  .ti-page h1 { max-width:640px; margin:0 auto 16px; font-size:clamp(2rem,4.6vw,2.9rem); line-height:1.1; }
+  .ti-sub { max-width:600px; margin:0 auto; color:var(--ink-soft); font-size:1.12rem; line-height:1.55; }
+  .ti-hero-img { display:block; width:100%; height:360px; object-fit:cover; object-position:center; border-bottom:1px solid var(--line); }
+  .ti-plan-img { display:block; width:100%; height:270px; margin:22px 0 28px; object-fit:cover; border:1px solid var(--line); }
+  .ti-content { padding:38px 56px 44px; }
+  .ti-content p { margin:0 0 20px; }
+  .ti-lede { font-size:1.13rem; }
+  .ti-cta { margin:30px 0 10px; padding:30px 24px 26px; background:var(--ink); color:var(--white); text-align:center; }
+  .ti-cta h2 { margin-bottom:8px; color:var(--white); font-size:1.6rem; line-height:1.25; }
+  .ti-cta p { max-width:540px; margin:0 auto 21px; color:#f4ead8; font-size:1rem; line-height:1.5; }
+  .ti-btn { display:inline-flex; align-items:center; justify-content:center; min-height:50px;
+    padding:13px 24px; border:1px solid var(--paper); background:var(--gold-light); color:var(--ink);
+    font-family:Arial,Helvetica,sans-serif; font-size:.94rem; font-weight:800; line-height:1.2;
+    text-decoration:none; transition:background 160ms ease,transform 160ms ease; }
+  .ti-btn:hover,.ti-btn:focus-visible { background:var(--gold); transform:translateY(-1px); }
+  .ti-btn:focus-visible,.ti-page a:focus-visible { outline:3px solid #6c8ca4; outline-offset:3px; }
+  .ti-disclosure { margin:0 0 34px; color:var(--muted); font-family:Arial,Helvetica,sans-serif;
+    font-size:.78rem; line-height:1.55; text-align:center; }
+  .ti-section { margin-top:36px; }
+  .ti-section h2 { margin-bottom:13px; font-size:1.75rem; line-height:1.2; }
+  .ti-section-intro { color:var(--ink-soft); }
+  .ti-list { margin:0; padding:0 0 0 24px; }
+  .ti-list li { margin:8px 0; padding-left:4px; }
+  .ti-list li::marker { color:#806b3f; }
+  .ti-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:22px 0 0; }
+  .ti-card { padding:18px 17px; border:1px solid var(--line); background:var(--paper-deep); }
+  .ti-card strong { display:block; margin-bottom:5px; font-size:1.02rem; }
+  .ti-card span { display:block; color:var(--ink-soft); font-size:.92rem; line-height:1.45; }
+  .ti-callout { margin:28px 0; padding:20px 22px; border-left:4px solid var(--gold); background:var(--paper-deep); }
+  .ti-callout h2 { font-size:1.4rem; margin-bottom:10px; }
+  .ti-callout p:last-child { margin-bottom:0; }
+  .ti-notice { margin-top:38px; padding-top:22px; border-top:4px double var(--ink); }
+  .ti-notice-title { margin:0 0 10px; font-family:Arial,Helvetica,sans-serif; font-size:.75rem;
+    font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+  .ti-notice p { color:var(--ink-soft); font-family:Arial,Helvetica,sans-serif; font-size:.8rem; line-height:1.55; }
+  .ti-notice a { color:#705b31; font-weight:700; }
+  .ti-footer { padding:20px 56px 30px; border-top:1px solid var(--line); color:var(--muted);
+    font-family:Arial,Helvetica,sans-serif; font-size:.75rem; line-height:1.5; text-align:center; }
+  @media (max-width:640px){
+    .ti-shell{ font-size:17px; padding:0; }
+    .ti-page{ border-right:0; border-left:0; box-shadow:none; }
+    .ti-masthead{ padding-right:16px; padding-left:16px; font-size:9px; letter-spacing:.1em; }
+    .ti-hero{ padding:38px 22px 32px; }
+    .ti-hero-img{ height:220px; }
+    .ti-plan-img{ height:200px; }
+    .ti-content{ padding:30px 22px 36px; }
+    .ti-sub,.ti-lede{ font-size:1.04rem; }
+    .ti-grid{ grid-template-columns:1fr; }
+    .ti-cta{ margin-right:-4px; margin-left:-4px; padding-right:17px; padding-left:17px; }
+    .ti-btn{ width:100%; }
+    .ti-footer{ padding-right:22px; padding-left:22px; }
+  }
+`;
 
-      a {
-        color: inherit;
-      }
+export default function TravelInsurancePage() {
+  return (
+    <div className="ti-shell">
+      <style dangerouslySetInnerHTML={{ __html: css }} />
+      <main className="ti-page">
+        <div className="ti-masthead">Golden Horizons &nbsp;&middot;&nbsp; Travel, Money &amp; Retirement</div>
 
-      .page-shell {
-        min-height: 100vh;
-        padding: 28px 16px 56px;
-      }
-
-      .page {
-        max-width: var(--max-width);
-        margin: 0 auto;
-        overflow: hidden;
-        background: var(--paper);
-        border: 1px solid var(--ink);
-        box-shadow: 0 16px 45px rgba(33, 27, 23, 0.08);
-      }
-
-      .masthead {
-        padding: 13px 26px;
-        border-bottom: 1px solid var(--line);
-        color: var(--muted);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.14em;
-        text-align: center;
-        text-transform: uppercase;
-      }
-
-      .hero {
-        padding: 52px 56px 42px;
-        text-align: center;
-        border-bottom: 4px double var(--ink);
-      }
-
-      .eyebrow {
-        margin: 0 0 14px;
-        color: #806b3f;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.17em;
-        text-transform: uppercase;
-      }
-
-      h1,
-      h2,
-      h3 {
-        margin-top: 0;
-        font-family: Georgia, "Times New Roman", serif;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-      }
-
-      h1 {
-        max-width: 620px;
-        margin: 0 auto 16px;
-        font-size: clamp(2.2rem, 5vw, 3.2rem);
-        line-height: 1.08;
-      }
-
-      .hero-subtitle {
-        max-width: 590px;
-        margin: 0 auto;
-        color: var(--ink-soft);
-        font-size: 1.12rem;
-        line-height: 1.55;
-      }
-
-      .hero-image {
-        display: block;
-        width: 100%;
-        height: 360px;
-        object-fit: cover;
-        object-position: center;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .content {
-        padding: 38px 56px 44px;
-      }
-
-      p {
-        margin: 0 0 20px;
-      }
-
-      .lede {
-        color: var(--ink);
-        font-size: 1.13rem;
-      }
-
-      .quiet-note {
-        color: var(--ink-soft);
-      }
-
-      .cta-panel {
-        margin: 30px 0 10px;
-        padding: 30px 24px 26px;
-        background: var(--ink);
-        color: var(--white);
-        text-align: center;
-      }
-
-      .cta-panel h2 {
-        margin-bottom: 8px;
-        color: var(--white);
-        font-size: 1.65rem;
-        line-height: 1.25;
-      }
-
-      .cta-panel p {
-        max-width: 540px;
-        margin: 0 auto 21px;
-        color: #f4ead8;
-        font-size: 1rem;
-        line-height: 1.5;
-      }
-
-      .button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 50px;
-        padding: 13px 24px;
-        border: 1px solid var(--paper);
-        background: var(--gold-light);
-        color: var(--ink);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.94rem;
-        font-weight: 800;
-        line-height: 1.2;
-        text-align: center;
-        text-decoration: none;
-        transition: background 160ms ease, transform 160ms ease;
-      }
-
-      .button:hover,
-      .button:focus-visible {
-        background: var(--gold);
-        transform: translateY(-1px);
-      }
-
-      .button:focus-visible,
-      a:focus-visible {
-        outline: 3px solid #6c8ca4;
-        outline-offset: 3px;
-      }
-
-      .disclosure {
-        margin: 0 0 34px;
-        color: var(--muted);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.78rem;
-        line-height: 1.55;
-        text-align: center;
-      }
-
-      .section {
-        margin-top: 36px;
-      }
-
-      .section h2 {
-        margin-bottom: 13px;
-        font-size: 1.8rem;
-        line-height: 1.2;
-      }
-
-      .section-intro {
-        color: var(--ink-soft);
-      }
-
-      .checklist,
-      .audience-list {
-        margin: 0;
-        padding: 0 0 0 24px;
-      }
-
-      .checklist li,
-      .audience-list li {
-        margin: 8px 0;
-        padding-left: 4px;
-      }
-
-      .checklist li::marker,
-      .audience-list li::marker {
-        color: #806b3f;
-      }
-
-      .trust-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-        margin: 22px 0 0;
-      }
-
-      .trust-card {
-        padding: 18px 17px;
-        border: 1px solid var(--line);
-        background: var(--paper-deep);
-      }
-
-      .trust-card strong {
-        display: block;
-        margin-bottom: 5px;
-        font-size: 1.02rem;
-      }
-
-      .trust-card span {
-        display: block;
-        color: var(--ink-soft);
-        font-size: 0.92rem;
-        line-height: 1.45;
-      }
-
-      .callout {
-        margin: 28px 0;
-        padding: 20px 22px;
-        border-left: 4px solid var(--gold);
-        background: var(--paper-deep);
-      }
-
-      .planning-image {
-        display: block;
-        width: 100%;
-        height: 270px;
-        margin: 22px 0 28px;
-        object-fit: cover;
-        border: 1px solid var(--line);
-      }
-
-      .callout p:last-child {
-        margin-bottom: 0;
-      }
-
-      .bottom-cta {
-        margin-top: 38px;
-      }
-
-      .notice {
-        margin-top: 38px;
-        padding-top: 22px;
-        border-top: 4px double var(--ink);
-      }
-
-      .notice-title {
-        margin: 0 0 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.75rem;
-        font-weight: 800;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
-
-      .notice p {
-        color: var(--ink-soft);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.8rem;
-        line-height: 1.55;
-      }
-
-      .notice a {
-        color: #705b31;
-        font-weight: 700;
-      }
-
-      footer {
-        padding: 20px 56px 30px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.75rem;
-        line-height: 1.5;
-        text-align: center;
-      }
-
-      @media (max-width: 640px) {
-        body {
-          font-size: 17px;
-        }
-
-        .page-shell {
-          padding: 0;
-        }
-
-        .page {
-          border-right: 0;
-          border-left: 0;
-          box-shadow: none;
-        }
-
-        .masthead {
-          padding-right: 16px;
-          padding-left: 16px;
-          font-size: 9px;
-          letter-spacing: 0.1em;
-        }
-
-        .hero {
-          padding: 38px 22px 32px;
-        }
-
-        .content {
-          padding: 30px 22px 36px;
-        }
-
-        .hero-subtitle,
-        .lede {
-          font-size: 1.04rem;
-        }
-
-        .trust-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .cta-panel {
-          margin-right: -4px;
-          margin-left: -4px;
-          padding-right: 17px;
-          padding-left: 17px;
-        }
-
-        .button {
-          width: 100%;
-        }
-
-        footer {
-          padding-right: 22px;
-          padding-left: 22px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page-shell">
-      <main class="page">
-        <div class="masthead">Golden Horizons &nbsp;·&nbsp; Travel, Money &amp; Retirement Advice</div>
-
-        <header class="hero">
-          <p class="eyebrow">Before you book</p>
-          <h1>Compare Travel Insurance Before Your Retirement Scouting Trip</h1>
-          <p class="hero-subtitle">
-            If you are visiting a potential retirement destination, compare coverage for trip
-            cancellation, emergency medical care, evacuation, and travel delays before you book.
+        <header className="ti-hero">
+          <p className="ti-eyebrow">Before you book</p>
+          <h1>You Planned the Trip. Did You Plan for What Could Go Wrong?</h1>
+          <p className="ti-sub">
+            A retirement scouting trip can involve thousands of dollars in flights, lodging, tours,
+            and other non-refundable costs. Before you leave the country, compare travel-insurance
+            options for cancellations, medical emergencies, delays, and evacuation.
           </p>
         </header>
 
         <img
-          class="hero-image"
-          src="golden-horizons-travel-hero.jpg"
-          alt="Mature couple walking with carry-on luggage along a sunny coastal promenade"
-          width="2560"
-          height="1440"
-          fetchpriority="high"
+          className="ti-hero-img"
+          src="/travel-hero.jpg"
+          alt="A mature couple walking with carry-on luggage along a sunny Mediterranean coastal promenade"
+          width={1600}
+          height={900}
         />
 
-        <div class="content">
-          <p class="lede">
-            The flight and rental are usually the easy parts of planning a retirement scouting trip.
-            The harder question is what happens if you become ill, need emergency transportation,
-            cancel the trip, or have to return home unexpectedly.
+        <div className="ti-content">
+          <p className="ti-lede">
+            Most travelers plan where they will stay, what they will see, and how much the trip will
+            cost. Fewer plan for the moment when someone gets sick, a flight is canceled, a trip has
+            to end early, or emergency transportation is needed far from home.
           </p>
-
           <p>
-            Your regular health, Medicare, homeowners, or credit-card coverage may have limitations
-            outside the United States. Check your existing policies before assuming they cover your
-            trip.
+            That is when assumptions become expensive. Your regular health insurance, Medicare,
+            homeowners insurance, or credit-card benefits may not cover every situation overseas. The
+            only way to know what a travel-insurance plan covers is to review its benefits, limits,
+            exclusions, and eligibility requirements.
           </p>
 
-          <p>
-            Depending on the policy, travel insurance may provide benefits for
-            <strong>trip cancellation</strong>, <strong>emergency medical care</strong>,
-            <strong>travel delays</strong>, or <strong>emergency evacuation</strong>. Coverage
-            varies by provider, destination, trip cost, age, medical history, and policy terms.
-          </p>
-
-          <div class="cta-panel" id="compare-top">
-            <h2>Compare plans, limits, exclusions, and prices</h2>
+          <div className="ti-cta">
+            <h2>Do not leave your most expensive risks unexamined</h2>
             <p>
-              Squaremouth is a travel-insurance comparison marketplace. Use it to review available
-              options from multiple providers before choosing a policy for your trip.
+              Compare travel-insurance plans for your destination, dates, trip cost, and coverage
+              priorities before you book.
             </p>
             <a
-              class="button"
-              href="https://www.squaremouth.com/?aid=24136"
+              className="ti-btn"
+              href={AFFILIATE_URL}
               target="_blank"
               rel="nofollow sponsored noopener"
               data-analytics-event="travel_insurance_cta_top"
             >
-              Compare Plans on Squaremouth&nbsp;↗
+              Compare Plans Before You Leave&nbsp;&#8599;
             </a>
           </div>
 
-          <p class="disclosure">
+          <p className="ti-disclosure">
             <strong>Affiliate disclosure:</strong> Golden Horizons may earn a commission if you
             purchase through this Squaremouth link, at no additional cost to you. Squaremouth is a
             comparison marketplace, not an insurance company. Golden Horizons does not select or
             recommend a specific policy. Review the policy documents before purchasing.
           </p>
 
-          <section class="section" aria-labelledby="compare-heading">
-            <h2 id="compare-heading">What to compare before you buy</h2>
-            <p class="section-intro">
-              Do not compare only the premium. Look at the coverage, limits, exclusions, and rules
-              that apply to your specific trip.
-            </p>
-            <ul class="checklist">
-              <li>Whether the plan covers your destination and the full length of your stay.</li>
-              <li>Emergency medical coverage, benefit limits, and how pre-existing conditions are handled.</li>
-              <li>Whether emergency evacuation, medical transportation, and repatriation are included.</li>
-              <li>Trip-cancellation and interruption terms, including qualifying reasons and reimbursement limits.</li>
-              <li>Travel-delay, missed-connection, and baggage benefits.</li>
-              <li>Exclusions, activity restrictions, eligibility rules, and the policy’s documentation requirements.</li>
+          <section className="ti-section" aria-labelledby="ti-ask">
+            <h2 id="ti-ask">Questions travelers often ask too late</h2>
+            <ul className="ti-list">
+              <li>What happens if a medical emergency interrupts the trip?</li>
+              <li>Who pays if emergency transportation or evacuation is required?</li>
+              <li>Would you recover the cost of a canceled or interrupted trip?</li>
+              <li>Are pre-existing medical conditions handled under the plan&#8217;s rules?</li>
+              <li>Would your current health coverage apply at your destination?</li>
+              <li>Are the activities you plan to do covered or excluded?</li>
             </ul>
           </section>
 
-          <section class="section" aria-labelledby="who-heading">
-            <h2 id="who-heading">Travel insurance may be especially worth comparing if…</h2>
-            <ul class="audience-list">
+          <section className="ti-callout" aria-labelledby="ti-assume">
+            <h2 id="ti-assume">The expensive assumption</h2>
+            <p>
+              &#8220;I probably do not need travel insurance&#8221; is not a coverage decision. It is
+              an assumption. If the trip is canceled, interrupted, or affected by a serious medical
+              event, the financial consequences may be much larger than the cost of comparing plans
+              in advance.
+            </p>
+            <p>
+              Travel insurance is not right for every traveler or every trip. Compare the terms and
+              decide based on your own financial exposure and circumstances.
+            </p>
+          </section>
+
+          <section className="ti-section" aria-labelledby="ti-who">
+            <h2 id="ti-who">It may be especially worth comparing if&#8230;</h2>
+            <ul className="ti-list">
               <li>You have significant non-refundable trip expenses.</li>
-              <li>You are traveling outside the United States or visiting a remote destination.</li>
-              <li>You are taking a cruise or planning activities that may be excluded from standard policies.</li>
+              <li>You are traveling outside the United States or to a remote destination.</li>
+              <li>You are taking a cruise or activities that may be excluded from standard policies.</li>
               <li>You are concerned about emergency medical transportation.</li>
-              <li>You have a pre-existing medical condition and need to understand the policy rules.</li>
+              <li>You have a pre-existing medical condition and need to understand the rules.</li>
               <li>You are traveling for an extended period or testing a destination before relocating.</li>
             </ul>
           </section>
 
-          <div class="callout">
-            <p>
-              <strong>There is no one-size-fits-all policy.</strong> A plan that works for a short
-              domestic trip may not be appropriate for an international scouting trip. Compare the
-              details against your itinerary and personal circumstances.
+          <section className="ti-section" aria-labelledby="ti-why">
+            <h2 id="ti-why">Why use a comparison marketplace?</h2>
+            <p className="ti-section-intro">
+              Comparing several plans in one place makes it easier to see how providers differ before
+              you decide.
             </p>
-          </div>
-
-          <section class="section" aria-labelledby="why-heading">
-            <h2 id="why-heading">Why use a comparison marketplace?</h2>
-            <p class="section-intro">
-              Comparing several plans in one place can make it easier to see how providers differ
-              before you make a decision.
-            </p>
-
             <img
-              class="planning-image"
-              src="golden-horizons-travel-detail.jpg"
-              alt="Travel notebook, map, glasses, and pen on a table overlooking a coastal destination"
-              width="2304"
-              height="1536"
+              className="ti-plan-img"
+              src="/travel-planning.jpg"
+              alt="Travel notebook, map, pen, and sunglasses on a table by a window overlooking a coastal destination"
+              width={1400}
+              height={933}
               loading="lazy"
             />
-
-            <div class="trust-grid">
-              <div class="trust-card">
+            <div className="ti-grid">
+              <div className="ti-card">
                 <strong>Compare multiple providers</strong>
                 <span>Review available travel-insurance options in one place.</span>
               </div>
-              <div class="trust-card">
+              <div className="ti-card">
                 <strong>Review coverage details</strong>
                 <span>Compare benefits, limits, exclusions, and prices.</span>
               </div>
-              <div class="trust-card">
+              <div className="ti-card">
                 <strong>Choose by trip type</strong>
-                <span>Look for options relevant to international, cruise, annual, or medical travel.</span>
+                <span>Look for options for international, cruise, annual, or medical travel.</span>
               </div>
-              <div class="trust-card">
+              <div className="ti-card">
                 <strong>Read before you buy</strong>
-                <span>Use the policy documents and provider information to make your final decision.</span>
+                <span>Use the policy documents to make your final decision.</span>
               </div>
             </div>
           </section>
 
-          <div class="cta-panel bottom-cta" id="compare-bottom">
+          <div className="ti-cta" style={{ marginTop: 38 }}>
             <h2>Ready to compare your options?</h2>
-            <p>
-              Review plans for your own destination, dates, trip cost, and coverage priorities.
-            </p>
+            <p>Review plans for your own destination, dates, trip cost, and coverage priorities.</p>
             <a
-              class="button"
-              href="https://www.squaremouth.com/?aid=24136"
+              className="ti-btn"
+              href={AFFILIATE_URL}
               target="_blank"
               rel="nofollow sponsored noopener"
               data-analytics-event="travel_insurance_cta_bottom"
             >
-              Compare Plans on Squaremouth&nbsp;↗
+              Compare Plans on Squaremouth&nbsp;&#8599;
             </a>
           </div>
 
-          <section class="notice" aria-labelledby="notice-heading">
-            <h2 class="notice-title" id="notice-heading">Important information notice</h2>
+          <section className="ti-notice" aria-labelledby="ti-notice-h">
+            <h2 className="ti-notice-title" id="ti-notice-h">Important information notice</h2>
             <p>
               Golden Horizons provides general editorial and educational information only. We do not
               provide insurance, legal, tax, financial, immigration, medical, or retirement advice,
               and we do not recommend any specific policy for your circumstances.
             </p>
             <p>
-              Coverage, prices, and terms vary and can change. Always review the policy documents
-              and verify details with the insurer or Squaremouth before purchasing.
-              <a href="https://golden-horizons.org/disclaimer">Full Disclaimer &amp; Disclosures&nbsp;→</a>
+              Coverage, prices, and terms vary and can change. Always review the policy documents and
+              verify details with the insurer or Squaremouth before purchasing.{" "}
+              <a href="https://golden-horizons.org/disclaimer">Full Disclaimer &amp; Disclosures &#8594;</a>
             </p>
           </section>
         </div>
 
-        <footer>
+        <footer className="ti-footer">
           Golden Horizons may receive compensation from qualifying purchases made through affiliate
           links. This does not increase your cost.
         </footer>
       </main>
-    </div>
 
-    <!-- Optional analytics hook. Connect data-analytics-event values to your analytics provider. -->
-    <script>
-      document.querySelectorAll('[data-analytics-event]').forEach(function (link) {
-        link.addEventListener('click', function () {
-          if (typeof window.gtag === 'function') {
-            window.gtag('event', link.dataset.analyticsEvent, {
-              event_category: 'affiliate_landing_page',
-              event_label: 'squaremouth'
+      {/* Fires GA4 events on CTA clicks — use these to define your Brevo/GA conversion. */}
+      <Script id="ti-analytics" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('[data-analytics-event]').forEach(function(link){
+            link.addEventListener('click', function(){
+              if (typeof window.gtag === 'function') {
+                window.gtag('event', link.dataset.analyticsEvent, {
+                  event_category: 'affiliate_landing_page',
+                  event_label: 'squaremouth'
+                });
+              }
             });
-          }
-        });
-      });
-    </script>
-  </body>
-</html>
+          });
+        `}
+      </Script>
+    </div>
+  );
+}
