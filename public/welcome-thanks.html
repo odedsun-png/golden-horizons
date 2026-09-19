@@ -3,84 +3,96 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Got it — Golden Horizons</title>
+<title>One quick question — Golden Horizons</title>
 <style>
 :root { --green: #1a5632; --cream: #f4f2ec; --ink: #222222; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--cream); color: var(--ink);
   font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; line-height: 1.6; }
 .wrap { max-width: 560px; margin: 0 auto; padding: 40px 22px 56px; text-align: center; }
-.brand { font-size: 15px; letter-spacing: 1px; text-transform: uppercase; color: var(--green); font-weight: 700; margin-bottom: 28px; }
+.brand { font-size: 15px; letter-spacing: 1px; text-transform: uppercase; color: var(--green); font-weight: 700; margin-bottom: 24px; }
+.chosen { font-size: 15px; color: #666; margin-bottom: 22px; }
+.chosen b { color: var(--green); }
+h1 { font-size: 26px; margin: 0 0 22px; color: var(--green); }
+.btn { display: block; width: 100%; box-sizing: border-box; background: #fff; border: 2px solid var(--green);
+  border-radius: 10px; color: var(--green); font-size: 18px; font-weight: 600; text-align: center;
+  padding: 16px 14px; margin: 0 0 12px; cursor: pointer; }
+.btn:hover { background: #eef3ee; }
 .check { width: 72px; height: 72px; border-radius: 50%; background: var(--green); color: #fff;
   font-size: 40px; line-height: 72px; margin: 0 auto 20px; }
-h1 { font-size: 28px; margin: 0 0 10px; color: var(--green); }
 .sub { font-size: 18px; margin: 0 0 28px; color: #444; }
-.card { background: #fff; border-radius: 12px; padding: 24px 20px; margin: 0 0 28px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-.card .label { font-size: 14px; text-transform: uppercase; letter-spacing: .5px; color: #888; margin-bottom: 12px; }
-.chip { display: inline-block; background: var(--green); color: #fff; font-size: 18px; font-weight: 700;
-  padding: 12px 22px; border-radius: 999px; }
-.btn { display: inline-block; background: var(--green); color: #fff !important; text-decoration: none;
-  font-size: 18px; font-weight: 700; padding: 16px 30px; border-radius: 10px; margin: 8px 0; }
-.note { font-size: 16px; color: #555; margin-top: 26px; }
+.cta { display: inline-block; background: var(--green); color: #fff !important; text-decoration: none;
+  font-size: 18px; font-weight: 700; padding: 16px 30px; border-radius: 10px; }
 .footer { font-size: 12px; color: #999; margin-top: 40px; }
+.hidden { display: none; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="brand">Golden Horizons</div>
-  <div class="check">&#10003;</div>
-  <h1>Got it &mdash; thank you.</h1>
-  <p class="sub">Your first two places land in your inbox tomorrow morning.</p>
 
-  <div class="card" id="answerCard">
-    <div class="label">You told us</div>
-    <span class="chip" id="answerChip">You're all set</span>
+  <!-- STEP 2: the second question -->
+  <div id="step2">
+    <p class="chosen" id="chosenLine"></p>
+    <h1>One more — how are you picturing it?</h1>
+    <button class="btn" data-intent="1">Just dreaming for now</button>
+    <button class="btn" data-intent="2">I'd love to visit first</button>
+    <button class="btn" data-intent="3">I'd try living somewhere a month</button>
+    <button class="btn" data-intent="4">Seriously researching a move</button>
   </div>
 
-  <a class="btn" id="guideBtn" href="https://golden-horizons.org/golden-horizons-retirement-abroad-guide.pdf">Open your free guide now &rarr;</a>
-
-  <p class="note" id="nudge">Opening your free guide in a few seconds&hellip;</p>
+  <!-- STEP 3: thank you + guide -->
+  <div id="done" class="hidden">
+    <div class="check">&#10003;</div>
+    <h1>Thank you!</h1>
+    <p class="sub">You're all set. Your first two places land in your inbox tomorrow morning.</p>
+    <a class="cta" href="https://golden-horizons.org/golden-horizons-retirement-abroad-guide.pdf">Download your free guide &rarr;</a>
+  </div>
 
   <div class="footer">Golden Horizons &middot; Real places to live abroad, checked on the ground.</div>
 </div>
 
 <script>
 (function () {
-  var map = {
-    "region-latam":       { text: "Latin America",            group: "region" },
-    "region-europe":      { text: "Europe",                   group: "region" },
-    "region-asia":        { text: "Southeast Asia",           group: "region" },
-    "region-islands":     { text: "Islands & beaches",        group: "region" },
-    "region-all":         { text: "Everywhere — show me all", group: "region" },
-    "intent-dreaming":    { text: "Just dreaming for now",    group: "intent" },
-    "intent-visiting":    { text: "Visit first",              group: "intent" },
-    "intent-month":       { text: "Try a month somewhere",    group: "intent" },
-    "intent-researching": { text: "Seriously researching a move", group: "intent" }
+  var regionMap = {
+    "latam":   "Latin America",
+    "europe":  "Europe",
+    "asia":    "Southeast Asia",
+    "islands": "Islands & beaches",
+    "all":     "Everywhere"
   };
   function param(name) {
     var m = new RegExp("[?&]" + name + "=([^&]+)").exec(window.location.search);
-    return m ? decodeURIComponent(m[1]) : "";
+    return m ? decodeURIComponent(m[1].replace(/\+/g, " ")) : "";
   }
-  var GUIDE = "https://golden-horizons.org/golden-horizons-retirement-abroad-guide.pdf";
-  var a = param("a");
-  var chip = document.getElementById("answerChip");
-  var nudge = document.getElementById("nudge");
-  var card = document.getElementById("answerCard");
-  if (map[a]) {
-    chip.textContent = map[a].text;
-    if (map[a].group === "intent") {
-      // Q2 (intent) answered → seamless bounce to the guide.
-      nudge.textContent = "Opening your free guide in a few seconds…";
-      setTimeout(function () { window.location.href = GUIDE; }, 2800);
-    } else {
-      // Q1 (region) answered → nudge back to the email for Q2, no bounce.
-      nudge.textContent = "One more quick tap waiting in your email — tell us how you're picturing it. Your guide's ready below whenever you want it.";
-    }
-  } else {
-    // Bare visit (no answer): skip the confirmation and redirect isn't triggered.
-    card.style.display = "none";
-    nudge.style.display = "none";
+  var regionCode = param("region");
+  var email = param("email");
+  var regionLabel = regionMap[regionCode] || "";
+
+  var chosenLine = document.getElementById("chosenLine");
+  if (regionLabel) {
+    chosenLine.innerHTML = "You picked <b>" + regionLabel + "</b> ✓";
+  }
+
+  // Save both answers, then show the thank-you + guide.
+  function finish(intentValue) {
+    var payload = { email: email, region: regionLabel, intent: intentValue };
+    try {
+      fetch("/.netlify/functions/save-answers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+    } catch (e) { /* best-effort; still show thank-you */ }
+    document.getElementById("step2").classList.add("hidden");
+    document.getElementById("done").classList.remove("hidden");
+  }
+
+  var buttons = document.querySelectorAll("#step2 .btn");
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function () {
+      finish(parseInt(this.getAttribute("data-intent"), 10));
+    });
   }
 })();
 </script>
