@@ -15,7 +15,7 @@ exports.handler = async function (event) {
   }
 
   var email = (data.email || "").trim();
-  var region = (data.region || "").trim();      // e.g. "Latin America" -> GH_INTEREST (text)
+  var region = (data.region || "").trim();      // e.g. "Latin America" -> GH_REGION (text, NEW field)
   var intent = parseInt(data.intent, 10);       // 1-4 -> GH_INTENT (category)
 
   // No email means we can't identify the contact; accept quietly so the page still shows thank-you.
@@ -23,8 +23,10 @@ exports.handler = async function (event) {
     return { statusCode: 200, body: JSON.stringify({ ok: false, reason: "no-email" }) };
   }
 
+  // NOTE: region goes to GH_REGION, NOT GH_INTEREST — GH_INTEREST is already used
+  // by your Facebook lead ads (retirement-journey answer). Do not overwrite it.
   var attributes = {};
-  if (region) attributes.GH_INTEREST = region;
+  if (region) attributes.GH_REGION = region;
   if (intent >= 1 && intent <= 4) attributes.GH_INTENT = intent;
 
   var apiKey = process.env.BREVO_API_KEY;
