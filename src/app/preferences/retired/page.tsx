@@ -4,8 +4,8 @@ import Link from "next/link";
 const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
-  title: "Preference Saved",
-  description: "Your retirement-stage preference has been saved.",
+  title: "Thanks",
+  description: "We've got your retirement-stage answer.",
   alternates: {
     canonical: `${siteUrl}/preferences/retired`,
   },
@@ -48,17 +48,13 @@ export default function RetiredPreferencePage() {
               marginBottom: 20,
             }}
           >
-            Preference Saved ✓
+            Thanks — we&rsquo;ve got your answer.
           </h1>
 
-          <p style={{ fontSize: 18, opacity: 0.85, marginBottom: 12 }}>
-            Thanks — we&rsquo;ve got it.
-          </p>
-
           <p style={{ fontSize: 17, opacity: 0.78, marginBottom: 36, lineHeight: 1.6 }}>
-            You told us you&rsquo;re already retired abroad, and we&rsquo;ll use
-            that to make Golden Horizons more relevant to where you are in your
-            retirement journey.
+            You let us know you&rsquo;re already retired abroad, and
+            we&rsquo;ll use that to make Golden Horizons more relevant to
+            where you are in your retirement journey.
           </p>
 
           <Link
@@ -73,7 +69,7 @@ export default function RetiredPreferencePage() {
               letterSpacing: "0.02em",
             }}
           >
-            Explore Golden Horizons
+            Explore Golden Horizons →
           </Link>
         </article>
 

@@ -5,9 +5,9 @@ const siteUrl = "https://golden-horizons.org";
 
 export const metadata: Metadata = {
   title: "Thanks",
-  description: "We've got your retirement-stage answer.",
+  description: "Your email frequency request has been received.",
   alternates: {
-    canonical: `${siteUrl}/preferences/dreaming`,
+    canonical: `${siteUrl}/newsletter-frequency`,
   },
   robots: {
     index: false,
@@ -15,7 +15,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function DreamingPreferencePage() {
+export default async function NewsletterFrequencyPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ pref?: string }>;
+}) {
+  const { pref } = await searchParams;
+
+  let askedForLine: string | null = null;
+  if (pref === "daily") {
+    askedForLine = "You asked to stay on the daily edition.";
+  } else if (pref === "weekly") {
+    askedForLine = "You asked to switch to the weekly best-of.";
+  }
+
   return (
     <main className="mag-page legal-page">
       <div className="site">
@@ -48,13 +61,17 @@ export default function DreamingPreferencePage() {
               marginBottom: 20,
             }}
           >
-            Thanks — we&rsquo;ve got your answer.
+            Thanks — your email preference is being updated.
           </h1>
 
+          {askedForLine && (
+            <p style={{ fontSize: 17, opacity: 0.78, marginBottom: 12, lineHeight: 1.6 }}>
+              {askedForLine}
+            </p>
+          )}
+
           <p style={{ fontSize: 17, opacity: 0.78, marginBottom: 36, lineHeight: 1.6 }}>
-            You let us know you&rsquo;re still just dreaming for now, and
-            we&rsquo;ll use that to make Golden Horizons more relevant to
-            where you are in your retirement journey.
+            It can take a little while to take effect on our end.
           </p>
 
           <Link
