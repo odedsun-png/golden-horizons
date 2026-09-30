@@ -19,12 +19,12 @@ const MAIL_LINKS = [
   },
   {
     label: "Open Outlook",
-    href: "https://outlook.live.com",
+    href: "https://outlook.live.com/owa/?nlp=1",
     color: "#0f6cbd",
   },
   {
     label: "Open AOL Mail",
-    href: "https://mail.aol.com",
+    href: "https://login.aol.com/?done=https%3A%2F%2Fmail.aol.com%2F",
     color: "#1f4e79",
   },
 ];
