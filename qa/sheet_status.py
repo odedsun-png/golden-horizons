@@ -8,7 +8,7 @@
 
 It NEVER writes to the sheet. Proposed edits are printed for the report.
 
-Usage: python qa/sheet_status.py [--manual-limit 2] [--json]
+Usage: python qa/sheet_status.py [--manual-limit 2] [--json] [--csv export.csv]
 """
 from __future__ import annotations
 
@@ -60,12 +60,17 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--manual-limit", type=int, default=2)
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--csv", help="read the GHWEBPAGE tab from a local CSV export instead of fetching it")
     args = ap.parse_args(argv)
 
-    code, body = fetch(CSV_URL)
-    if code != 200:
-        print(json.dumps({"error": f"sheet fetch failed: HTTP {code}"}))
-        return 2
+    if args.csv:
+        with open(args.csv, encoding="utf-8") as fh:
+            body = fh.read()
+    else:
+        code, body = fetch(CSV_URL)
+        if code != 200:
+            print(json.dumps({"error": f"sheet fetch failed: HTTP {code}; export the tab to CSV and pass --csv"}))
+            return 2
     rows = list(csv.reader(io.StringIO(body)))
     data = [(i, r + [""] * (21 - len(r))) for i, r in enumerate(rows[1:], start=2)]
     today = dt.date.today().isoformat()
