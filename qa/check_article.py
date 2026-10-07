@@ -248,7 +248,7 @@ def check_text(text: str, path: str = "<stdin>") -> dict:
     desc = fm.get("description", "")
     if len(desc) > 160:
         r.add("description_length", f"description is {len(desc)} chars (max 160)")
-    if fm_block is not None and slug != Path(path).stem and not path.startswith("<"):
+    if fm_block is not None and slug != Path(path).stem and not path.startswith(("<", "origin/")):
         r.add("frontmatter", f"slug '{slug}' does not match filename '{Path(path).stem}'")
 
     # --- H1 + status line
@@ -522,8 +522,14 @@ def changed_since(since: str) -> list[str]:
         ["git", "-C", str(REPO_ROOT), "log", "--since", since, "--name-only", "--diff-filter=AM",
          "--format=", "origin/main", "--", "src/content/articles/*.md"],
         capture_output=True, text=True, check=True).stdout
-    files = sorted({ln.strip() for ln in out.splitlines() if ln.strip()})
-    return [str(REPO_ROOT / f) for f in files if (REPO_ROOT / f).exists()]
+    return sorted({ln.strip() for ln in out.splitlines() if ln.strip()})
+
+
+def read_from_main(relpath: str) -> str | None:
+    """Content of a file as it is on origin/main (None if deleted there)."""
+    res = subprocess.run(["git", "-C", str(REPO_ROOT), "show", f"origin/main:{relpath}"],
+                         capture_output=True)
+    return res.stdout.decode("utf-8") if res.returncode == 0 else None
 
 
 def main(argv=None) -> int:
@@ -537,13 +543,14 @@ def main(argv=None) -> int:
     ap.add_argument("--changed-since", help="check articles added/changed on origin/main since this git date")
     args = ap.parse_args(argv)
 
-    files = list(args.files)
+    results = [check_file(f) for f in args.files]
     if args.changed_since:
-        files += changed_since(args.changed_since)
-    if not files:
-        ap.error("no files given")
-
-    results = [check_file(f) for f in files]
+        for rel in changed_since(args.changed_since):
+            text = read_from_main(rel)
+            if text is not None:
+                results.append(check_text(text, f"origin/main:{rel}"))
+    if not results:
+        ap.error("no files given (or nothing changed)")
     if args.table:
         print(f"{'file':60} {'result':6}  failed checks")
         for res in results:
