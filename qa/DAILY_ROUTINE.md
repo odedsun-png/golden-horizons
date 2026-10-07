@@ -44,7 +44,10 @@ Skip any slug that already has an open PR whose branch starts `qa/fix-<slug>-`.
 ### 2. Per article: check, fact-check, score
 1. Checker result (JSON).
 2. Mandatory fact checks from `score_rubric.md`: State Department advisory
-   (country level + date + state/province level for each named city), Medicare
+   (country level + date + state/province level for each named city — note
+   `travel.state.gov` blocks automated fetches; use the official JSON feed
+   `https://cadataapi.state.gov/api/TravelAdvisories` for level and date, and a
+   search for state/province levels it truncates), Medicare
    2026 deductibles for any procedure comparison, visa income thresholds, neutral
    U.S. prices, local prices with source + date.
 3. Score with the rubric → PUBLISH / MINOR-FIX / MAJOR-REWRITE / FACT-RISK-HOLD.
