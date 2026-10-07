@@ -3,7 +3,7 @@ title: "What $2,000 a Month Gets You in David, Panama — Rent, Groceries, Healt
 category: Cost
 slug: what-2000-mo-david-panama
 date: 2026-10-07
-image: https://images.unsplash.com/photo-1641176912780-3fa33fd20a15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHNlYXJjaHwyfHxEYXZpZCUyMFBhbmFtYSUyMGxhbmRzY2FwZXxlbnwwfDB8fHwxNzkxMzg1MDc2fDA&ixlib=rb-4.1.0&q=80&w=1080
+image: [https://images.unsplash.com/photo-1641176912780-3fa33fd20a15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHNlYXJjaHwyfHxEYXZpZCUyMFBhbmFtYSUyMGxhbmRzY2FwZXxlbnwwfDB8fHwxNzkxMzg1MDc2fDA&ixlib=rb-4.1.0&q=80&w=1080]
 description: "Furnished rent from about $450, an $8 lunch, US dollars, and private hospitals in town. What $2,000 a month really covers in David, Panama."
 featured: false
 ---
