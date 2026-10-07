@@ -10,9 +10,9 @@ featured: false
 
 # What a Private Doctor Visit Costs in Guatemala City — Plus Specialists, the ER, an MRI, and the Catch
 
-**Golden Horizons Status:** 🟡 WORTH TESTING — CARE IS CHEAP, SAFETY AND INSURANCE NEED HOMEWORK
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY HEALTHCARE
 
-> **THE SHORT ANSWER:** A private doctor visit in Guatemala City costs about Q300–Q500 (~$39–$65). A specialist runs about Q300–Q800 (~$39–$104), a 4-hour ER visit with blood work and an X-ray at Centro Médico cost one patient Q1,700 (~$223), and an MRI is about Q3,400 (~$446). Local insurance starts near Q190 (~$25) a month. The catch: the cheapest plans cap hospital coverage at about $5,200 a year, most local insurers stop enrolling new members between ages 65 and 74, and the U.S. State Department rates Guatemala Level 3, "Reconsider travel."
+> **THE SHORT ANSWER:** A private doctor visit in Guatemala City costs about $39–$65. A specialist runs about $39–$104, a 4-hour ER visit with blood work and an X-ray at Centro Médico cost one patient $223, and an MRI is about $446. Local insurance starts near $25 a month. The catch: the cheapest plans cap hospital coverage at about $5,200 a year, most local insurers stop enrolling new members between ages 65 and 74, and the U.S. State Department rates Guatemala Level 3, "Reconsider travel."
 
 Most Americans brace for a $200 bill before they see a doctor. In Guatemala City, you can see a general doctor in a private Zone 10 clinic for less than a tank of gas.
 
@@ -40,25 +40,25 @@ The State Department's advisory (March 2026) is Level 3, with Zone 18 and Villa 
 
 ## The Real Price List: From a Checkup to an MRI
 
-These are published prices from Guatemala City clinics in 2025–2026. They come from a resident's own receipts in Zone 10 and from two price databases. At about Q7.7 to the dollar, every Q100 is roughly $13.
+These are published prices from Guatemala City clinics in 2025–2026. They come from a resident's own receipts in Zone 10 and from two price databases. All prices are shown in U.S. dollars.
 
 ### Everyday visits
 
-**General doctor:** Q300–Q500 (~$39–$65) at private clinics in Zones 10, 15, and 16. Expatistan's average for a 15-minute visit is Q319 (~$41). LivingInGuatemala lists a wider Q150–Q400 (~$19–$52).
+**General doctor:** $39–$65 at private clinics in Zones 10, 15, and 16. Expatistan's average for a 15-minute visit is $41. LivingInGuatemala lists a wider $19–$52.
 
-**Specialist:** Q300–Q800 (~$39–$104). One resident paid Q500–Q700 (~$65–$92) for a routine gynecology visit, and Q400 (~$53) for a first dermatology consult at Novus Dermatología in Zone 10.
+**Specialist:** up to about $104. One resident paid $65–$92 for a routine gynecology visit, and $53 for a first dermatology consult at Novus Dermatología in Zone 10.
 
-**Dental cleaning:** Q200–Q550 (~$26–$72). A dental consult runs Q150–Q400 (~$20–$52).
+**Dental cleaning:** $26–$72. A dental consult runs $20–$52.
 
 ### Tests and emergencies
 
-**Blood work (basic panel):** Q200–Q600 (~$26–$78).
+**Blood work (basic panel):** $26–$78.
 
-**X-ray:** Q150–Q400 (~$19–$52).
+**X-ray:** $19–$52.
 
-**MRI:** about Q3,400 (~$446) at Tecniscan in Zone 10. With insurance, that same resident's share dropped to Q1,205 (~$156).
+**MRI:** about $446 at Tecniscan in Zone 10. With insurance, that same resident's share dropped to $156.
 
-**Emergency room:** Q500–Q2,000 (~$65–$260). Four hours at Centro Médico with respiratory tests, blood work, and a chest X-ray came to Q1,700 (~$223).
+**Emergency room:** up to about $260. Four hours at Centro Médico with respiratory tests, blood work, and a chest X-ray came to $223.
 
 Here's what most guides skip: Guatemala has no national price list for private care. The same visit can cost twice as much a few blocks away, so ask the price before you sit down.
 
@@ -70,7 +70,7 @@ Guatemala City's private hospitals sit in the same zones foreign residents rent 
 
 **Hospital Herrera Llerandi (Zone 10):** a private hospital with its own emergency line, 2334-5955.
 
-**Centro Médico (Zone 10):** a full private hospital with an ER. It's the source of the Q1,700 (~$223) emergency bill above.
+**Centro Médico (Zone 10):** a full private hospital with an ER. It's the source of the $223 emergency bill above.
 
 **Hospital Universitario Esperanza (Zone 10):** a private hospital with a 24-hour line, 2415-9000.
 
@@ -84,7 +84,7 @@ Bottom line: pick your apartment by its distance to a hospital, not just by its 
 
 You can pay cash for a $41 visit. You can't easily pay cash for a week in the hospital, and that's where Guatemala gets complicated for older Americans.
 
-**Cheapest local plan:** Seguros G&T's VivaSalud starts at about Q190 (~$25) a month for one person, Q380 (~$49) for two, and Q915 (~$119) for its adult option. It accepts members aged 18–69, and the basic plan caps hospitalization at Q40,000 (~$5,200) a year.
+**Cheapest local plan:** Seguros G&T's VivaSalud starts at about $25 a month for one person, $49 for two, and $119 for its adult option. It accepts members aged 18–69, and the basic plan caps hospitalization at $5,200 a year.
 
 **Enrollment age limits:** El Roble's Roblemed accepts new members up to 69, Universales MEDIC up to 65, and some premium plans up to 74. After that, your options shrink fast.
 
@@ -134,7 +134,7 @@ If you prefer Antigua, ask your insurer how an ambulance transfer to a Zone 10 h
 
 **What you may gain:**
 
-- A private doctor visit for about $39–$65 and a specialist for about $39–$104.
+- A private doctor visit for about $39–$65 and a specialist for up to about $104.
 - An MRI for about $446, a fraction of typical U.S. self-pay prices.
 - Four private hospitals within one district of the city.
 - Local insurance from about $25 a month if you enroll before 69.
@@ -152,8 +152,8 @@ If you prefer Antigua, ask your insurer how an ambulance transfer to a Zone 10 h
 ## The Golden Horizons 30-Day Test
 
 1. Rent a furnished one-bedroom in Zone 10, 14, or 15 for one month. Compare the real price with the $800–$980 range.
-2. Book a general checkup at a private clinic in Zone 10 and compare the bill with the Q300–Q500 (~$39–$65) range.
-3. Get a basic blood panel and compare it with the Q200–Q600 (~$26–$78) range. Keep the receipt.
+2. Book a general checkup at a private clinic in Zone 10 and compare the bill with the general-doctor range above.
+3. Get a basic blood panel and compare it with the $26–$78 range. Keep the receipt.
 4. Walk into the ER reception at Hospital Herrera Llerandi or Centro Médico and ask for their self-pay deposit policy.
 5. Request written quotes from Seguros G&T and Seguros Universales at your exact age, including the annual hospitalization cap.
 6. Use registered app taxis or your hotel's car service, not street taxis, for every trip, and track what transport costs you for the month.
@@ -164,15 +164,15 @@ If you prefer Antigua, ask your insurer how an ambulance transfer to a Zone 10 h
 
 ### How much is a private doctor visit in Guatemala City?
 
-Expatistan's average for a 15-minute private visit is Q319, about $41. Its estimate is based on only 8 price points, so treat it as a ballpark. Residents commonly report Q300–Q500 (~$39–$65) at clinics in Zones 10, 15, and 16. Ask the price when you book, since there is no national price list. ([expatistan.com](https://www.expatistan.com/price/doctor/new-guatemala))
+Expatistan's average for a 15-minute private visit is about $41. Its estimate is based on only 8 price points, so treat it as a ballpark. Residents commonly report $39–$65 at clinics in Zones 10, 15, and 16. Ask the price when you book, since there is no national price list. ([expatistan.com](https://www.expatistan.com/price/doctor/new-guatemala))
 
 ### What do specialists, the ER, and an MRI cost?
 
-One Zone 10 resident paid Q500–Q700 (~$65–$92) for a specialist visit, and Q1,700 (~$223) for 4 hours in the Centro Médico ER with tests and an X-ray. An MRI at Tecniscan cost about Q3,400 (~$446) self-pay, or Q1,205 (~$156) with insurance. These are personal receipts from 2025–2026, so prices at other clinics will vary. ([kerryinguatemala.substack.com](https://kerryinguatemala.substack.com/p/cost-of-living-in-guatemala-this-381))
+One Zone 10 resident paid $65–$92 for a specialist visit, and $223 for 4 hours in the Centro Médico ER with tests and an X-ray. An MRI at Tecniscan cost about $446 self-pay, or $156 with insurance. These are personal receipts from 2025–2026, so prices at other clinics will vary. ([kerryinguatemala.substack.com](https://kerryinguatemala.substack.com/p/cost-of-living-in-guatemala-this-381))
 
 ### Can I get health insurance in Guatemala at 65 or 70?
 
-Possibly, but options narrow with age. Seguros G&T's VivaSalud starts around Q190 (~$25) a month and accepts members up to 69. Universales MEDIC enrolls up to 65, and some premium plans go to 74. Foreign retirees can't use IGSS for medical coverage, so get written quotes before you commit. ([livinginguatemala.com](https://livinginguatemala.com/moving-from-usa/health-insurance-for-expats-in-guatemala))
+Possibly, but options narrow with age. Seguros G&T's VivaSalud starts around $25 a month and accepts members up to 69. Universales MEDIC enrolls up to 65, and some premium plans go to 74. Foreign retirees can't use IGSS for medical coverage, so get written quotes before you commit. ([livinginguatemala.com](https://livinginguatemala.com/moving-from-usa/health-insurance-for-expats-in-guatemala))
 
 ### Is Guatemala City safe for American retirees?
 
@@ -214,6 +214,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟡 WORTH TESTING — CARE IS CHEAP, SAFETY AND INSURANCE NEED HOMEWORK**
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY HEALTHCARE**
 
 A private doctor visit in Guatemala City costs about $39–$65, a specialist about $39–$104, and an MRI about $446, all at hospitals clustered in Zones 10 and 15. Routine care is affordable on Social Security. The real questions are whether you can still get insurance at your age, and whether you're comfortable with a Level 3 safety advisory. Get two written insurance quotes, then spend 30 days in Zone 10 or 14 and keep every medical receipt before you decide.
