@@ -3,212 +3,205 @@ title: "What a Knee Replacement Costs in Mexico vs. the U.S."
 category: Healthcare
 slug: knee-replacement-cost-mexico-vs-us
 date: 2026-10-07
-image: https://images.unsplash.com/photo-1465256410760-10640339c72c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNZXhpY28lMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc5MTM5OTgxNHww&ixlib=rb-4.1.0&q=80&w=1080
-description: "Knee replacement in Mexico commonly runs $10,000-$15,000 versus $40,000-$70,000+ in the U.S. Learn what to price before choosing care."
+image: https://images.unsplash.com/photo-1508739773434-c26b3d09e071?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZXhpY28lMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc5MTM5OTgxNHww&ixlib=rb-4.1.0&q=80&w=1080
+description: "Knee replacement in Mexico can cost $7,000-$12,000 versus $40,000-$50,000+ in the U.S. Compare packages, cities, safety, and follow-up."
 featured: false
 ---
+
 # What a Knee Replacement Costs in Mexico vs. the U.S.
-**Golden Horizons Status:** 🟡 HIGH-HURDLE — TEST FIRST
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** A private knee replacement in Mexico is commonly quoted around $10,000-$15,000, compared with $40,000-$70,000+ for U.S. private-pay care. That can leave a large gap, but the package must be itemized: implant, surgeon, anesthesia, inpatient stay, and rehabilitation. In Mexico City, a coffee runs $2-$4, lunch is $6-$13, local transit is under $1, and a modest dinner for two is $25-$60. The savings can be real, but recovery planning matters as much as the surgical quote.
+> **THE SHORT ANSWER:** A total knee replacement package in selected Mexican clinics commonly lists at $7,000-$12,000, while U.S. prices often run $40,000-$50,000+ before insurance. Mexicali listings fall around $8,800-$9,600, and some Playa del Carmen quotes run $3,500-$7,000. A Mexico City one-bedroom can run $800-$1,600 monthly, but the real decision is the surgeon, implant, hospital stay, rehabilitation plan, and safe return home.
 
-The most compelling number is not the surgical bill. It is the difference between a lower quote and the life you need to organize around it: a place to recover, a care team you can reach, physical therapy that continues after the hospital stay, and a plan if your knee does not follow the expected script.
+A new knee can carry a startlingly different price tag on opposite sides of the border. In selected Mexican clinics, a total knee replacement package commonly appears in the $7,000-$12,000 range. In the United States, published pre-insurance figures often reach $40,000-$50,000+.
 
-Mexico can make the financial side of knee replacement look dramatically different from private-pay care in the United States. But a new joint is not a weekend medical errand. The central question is whether the savings still hold once you account for the months of recovery that follow.
+That gap deserves a close look, especially if you are paying cash or carrying a high deductible. But knee replacement is not a vacation purchase. The operation is followed by recovery, therapy, transportation, and the practical question that matters most: who will be responsible for you once you leave the hospital?
 
 ## Retirement Snapshot
+
 **Primary decision:**  
-Whether the potential $25,000-$60,000+ surgery-price gap is worth arranging cross-border care, recovery, and follow-up.
+Whether a lower Mexican surgery quote includes the implant, anesthesia, hospital stay, rehabilitation, and follow-up you would need after a total knee replacement.
 
 **Best fit:**  
-A retiree able to pay cash or obtain written insurer approval, stay near the surgical team for several weeks, and compare at least 2-3 itemized quotes.
+An uninsured or underinsured American who can compare at least 2 written quotes, remain near the treating clinic for post-operative care, and arrange rehabilitation before returning to the U.S.
 
 **Biggest warning:**  
-A lower surgery quote is only useful when implant type, anesthesia, inpatient days, rehabilitation, and complication care are spelled out before payment.
+A low headline quote can leave out implant choices, pre-operative testing, hospital nights, therapy sessions, or care for complications.
 
 **Healthcare:**  
-Mexico’s private sector can offer elective orthopedic care, while international insurance plans may require pre-authorization for surgery and rehabilitation. Original Medicare usually does not cover planned care outside the United States, so do not count on it to pay for surgery in Mexico.
+Private-pay care is commonly used by foreign patients in Tijuana, Mexicali, Playa del Carmen, and Mexico City. Medicare and most Medigap policies generally do not pay for planned treatment outside the United States.
 
 **Housing / daily life:**  
-A one-bedroom outside central Mexico City commonly falls around $500-$1,060 monthly; Polanco, Roma Norte, and Condesa usually command more.
+In Mexico City, a one-bedroom near private-hospital access can range from $800-$1,600 a month, with groceries around $250-$350 and utilities plus internet around $60-$120.
 
 **Safety:**  
-The U.S. State Department’s Mexico advisory, updated September 2026, uses state-by-state Level 2, Level 3, and Level 4 designations. Some regions include Do Not Travel guidance, so check the intended city and route before arranging surgery or recovery.
+The U.S. State Department lists Mexico nationally at Level 2, “Exercise Increased Caution,” dated May 29, 2026. Some states carry Level 3 guidance, so check the advisory for the exact state and city where your clinic is located before booking travel.
 
-## What the Surgical Quote Must Actually Cover
+## The Price Gap Is Real. The Package Is the Question.
 
-### The large gap is real—but the package is the real price
+The lower price is not simply a matter of crossing a border. Mexican clinic and medical-tourism listings vary by city, implant, hospital arrangement, anesthesia, and post-operative care.
 
-Private knee replacement pricing in Mexico commonly lands around $10,000-$15,000. Comparable U.S. private-pay figures are commonly cited at $40,000-$70,000+, leaving a possible difference of $25,000-$60,000 before travel, lodging, and recovery support.
+Tijuana and nearby border-care markets commonly show total knee replacement packages around $7,000-$12,000. Mexicali listings fall around $8,800-$9,600, while some Playa del Carmen packages are listed at $3,500-$7,000. Those are city- and clinic-specific offers, not a national Mexican price.
 
-That difference deserves a close look, not a quick decision. Ask every prospective clinic to place five essentials on a single written estimate: the implant, orthopedic surgeon, anesthesia, inpatient stay, and planned rehabilitation. If even one is missing, the bargain can change shape quickly.
+A U.S. procedure can carry a far higher pre-insurance bill, often $40,000-$50,000+ depending on the facility, implant, anesthesia, and local market. For a cash-paying patient, that difference may make a consultation possible. It should not make the decision automatic.
 
-PlacidWay’s Mexico comparison places the procedure around $10,000-$12,000, while broader private-care guides support the wider range. Implant selection, hospital setting, surgeon, and included inpatient days can all move the final total.
+Ask for the complete written package: surgeon, implant model, anesthesia, operating room, hospital stay, medications, imaging, physical therapy, and any additional nights if recovery takes longer than expected. A smaller number is useful only when it buys the same essential care.
 
-### Follow-up is not an afterthought
+## Private Care, Insurance, and the Recovery Plan
 
-Before surgery, ask about imaging, bloodwork, medical clearance, and the number of orthopedic follow-up visits. Then ask the more important recovery question: who answers the phone if pain, swelling, or mobility changes after you leave the hospital?
+Private-pay facilities are commonly used by foreign patients seeking planned orthopedic care in Tijuana, Mexicali, Playa del Carmen, and Mexico City. Mexico City, in particular, has a dense private-hospital and specialist network, with imaging and private consultations available to international patients.
 
-Request a written plan for physical therapy over the first 3-6 months. Doktor.mx and SaludCiudad publish private-consultation guidance, but surgery pricing is generally handled directly by the hospital or clinic. Keep the dated quote, payment terms, and exchange-rate date together from the start.
+Medicare generally does not cover planned medical care outside the United States. If you have Original Medicare, a Mexican procedure may be a private-pay expense even if the same surgery at home would be covered after deductibles and coinsurance. Most Medigap policies also do not cover planned treatment in Mexico, so call your plan before you put down a deposit.
 
-### A Tuesday in Mexico City During Recovery
+Then think beyond the surgical date. You need a written answer on wound checks, pain medicine, movement, travel timing, physical therapy, and what happens if a complication requires more care than the original package includes. The savings need to leave room for recovery, not just the operating room.
 
-A recovery day does not need to be glamorous to be workable. Start with a $2-$4 coffee, have a $6-$13 casual lunch, and leave the $25-$60 dinner for two for an evening when a companion is in town. Local transit costs under $1 per ride, though buses and Metro stairs may be a poor match for a fresh surgical knee.
+## Recovery in Mexico City: What the Everyday Math Looks Like
 
-That is why your lodging matters as much as the neighborhood. A one-bedroom outside the center may run about $500-$1,060 monthly, while Polanco, Roma Norte, and Condesa tend to cost more. Before choosing a building for its restaurants or café scene, check for an elevator, shower access, space for a walker, a nearby pharmacy, and an easy route to appointments.
+Mexico City is not the usual choice for a quick Tijuana procedure, but its costs offer a useful frame for anyone considering a longer private-care stay. A one-bedroom near private-hospital access can run $800-$1,600 a month. Groceries for one person are about $250-$350, while utilities and internet can add $60-$120.
 
-The city can be affordable day to day. Immediately after surgery, however, private rides and a companion may matter more than low-cost public transportation.
+That can make several weeks of recovery feel more manageable than in many U.S. cities. Yet the apartment is only part of the calculation. A companion’s travel, accessible transportation, extra therapy, and a longer stay after surgery can quickly change the total.
 
-## Insurance, Residency, and the Long Road Home
+A quiet recovery Tuesday might begin with a $2-$4 coffee, followed by a short local trip when mobility permits at $0.30-$0.60. Bread, milk, or produce may run $1-$3 per item, and a casual lunch can be $6-$10. By evening, a modest dinner for two may cost $20-$40.
 
-### Written approval beats assumptions
+These are ordinary Mexico City prices, not a medical budget. After surgery, taxi use, lodging, and therapy may matter much more than the cost of coffee.
 
-International and expatriate health plans can cover care outside the United States, but knee replacement coverage is specific to the policy. Ask your insurer, in writing, about pre-authorization, implant coverage, hospital eligibility, rehabilitation, and what happens if you return home after 2 weeks, 6 weeks, or 3 months.
-
-Do not assume that a plan covering a private GP appointment will also cover an elective joint replacement. Get the coverage decision before sending a deposit or booking travel.
-
-Original Medicare generally does not pay for planned surgery in Mexico. If you have Medicare Advantage, Medigap, or an international plan, call the plan directly and ask about overseas elective surgery, hospital care, and physical therapy. Get the answer in writing before you send money.
-
-Private care is often the practical route for Americans arranging elective surgery in Mexico. Mexico’s system includes public and private care, but access can depend on residency status and the program involved. For a scheduled procedure, cash payment or international insurance may offer a more direct path when the coverage details are clear.
-
-### Decide where rehabilitation will happen before surgery
-
-A short stay may cover the operation. Recovery, however, often extends across 3-6 months.
-
-If you plan to recover in Mexico City, compare a furnished apartment outside the center with a higher-cost stay in Polanco, Roma Norte, or Condesa. If you expect to return to the United States, line up U.S.-based physical therapy before leaving Mexico. Carry the operative report, implant information, imaging, medication list, and contact details for the Mexican surgical team.
-
-Mexico uses the peso, so a dollar figure can change between your first inquiry and final payment. Ask for the clinic’s payment terms, quote-validity date, and whether the final bill is fixed before you travel.
-
-### Safety belongs in the medical plan
-
-The U.S. State Department’s September 2026 Mexico advisory assigns different risk levels by state, ranging from Level 2 through Level 4. A medical decision should include the safety profile of the city, the route from airport to lodging, and the practicality of getting to follow-up appointments with limited mobility.
-
-Check the current advisory before selecting a hospital, particularly if the recovery plan extends beyond Mexico City. If the relevant state has a Level 3 or Level 4 designation, or includes Do Not Travel areas, give the location the same scrutiny you give the surgeon and the surgical quote.
-
-A lower bill is welcome. A calm recovery setting, a reachable care team, and a safe route to appointments are worth protecting.
+If you are also considering Mexico as a retirement destination, keep the medical trip and a long-term move separate. Private care may be simple to arrange on a private-pay basis, while public-system access for non-nationals depends on local status and program rules.
 
 ## Practical Comparison
 
-### Mexico cash pay versus U.S. private pay
+### A lower quote can still be a different operation
 
 **What the evidence says:**  
-Mexico private-care guides commonly place knee replacement around $10,000-$15,000, while U.S. private-pay comparisons commonly run $40,000-$70,000+.
+Mexican clinic and aggregator listings show total knee replacement packages in selected cities around $7,000-$12,000, compared with commonly cited U.S. ranges of $40,000-$50,000+ before insurance. Implant type, hospital nights, and therapy can change the final bill.
 
 **What to check next:**  
-Request 2-3 written quotes from private orthopedic providers in Polanco, Roma Norte, or Condesa. Each quote should separately list the implant, surgeon, anesthesia, hospital stay, and rehabilitation.
+Request 2 itemized quotes that name the implant, surgeon, anesthesiologist, hospital stay, laboratory work, medications, and number of physical-therapy sessions.
 
-### A low quote versus a complete quote
+### Tijuana, Mexicali, and Playa del Carmen are not interchangeable
 
 **What the evidence says:**  
-A package may include inpatient care and anesthesia but handle imaging, follow-up, or physical therapy separately. Recovery often stretches across 3-6 months.
+Tijuana has multiple international-patient clinics and published package listings. Mexicali quotes cluster around $8,800-$9,600, while some Playa del Carmen listings begin at $3,500-$7,000.
 
 **What to check next:**  
-Ask for the expected number of post-operative visits and physical-therapy sessions, plus the price of additional inpatient nights. Ask who handles urgent questions after you leave the hospital.
+Ask each clinic why its price differs: hospital category, implant manufacturer, number of inpatient nights, and whether rehabilitation is included.
 
-### International insurance versus cash payment
+### Private care may be simpler than public-system expectations
 
 **What the evidence says:**  
-International plans may cover foreign treatment, but approval for elective surgery, implants, and rehabilitation can vary by plan. Original Medicare generally does not cover planned surgery in Mexico.
+Foreign patients commonly use private-pay facilities for planned orthopedic treatment in Mexico City and border cities. Public access and waiting periods operate differently and depend on local status.
 
 **What to check next:**  
-Call your insurer before travel and request written pre-authorization for surgery, hospitalization, rehabilitation, and any return-home care. Ask whether the approval covers the exact surgeon and facility you choose.
+Ask whether the quote includes a private room, imaging, an English-speaking coordinator, and an emergency plan if a complication requires more than the scheduled stay.
 
-### Mexico City recovery versus a quick return home
+### Recovery logistics can erase an apparent bargain
 
 **What the evidence says:**  
-Mexico City daily costs can be modest, with $2-$4 coffee, $6-$13 lunches, and $20-$40 monthly transit passes. Reduced mobility may make low-cost transit unsuitable after surgery.
+Mexico City’s everyday costs can be modest, but accommodation, taxis, companion travel, and therapy can add up during a recovery stay.
 
 **What to check next:**  
-Price an elevator-equipped apartment, private rides, and a companion’s lodging for at least the first 30 days. Walk the route from the building to the clinic before surgery if you can.
+Price a recovery apartment, accessible transport, and 1 local rehabilitation option before deciding how long to remain near the clinic.
 
-### Price savings versus safety planning
+### The advisory is about the exact destination, not the country in general
 
 **What the evidence says:**  
-Mexico’s September 2026 U.S. State Department advisory varies by state from Level 2 to Level 4, with some areas subject to Do Not Travel guidance.
+Mexico is under a national Level 2 advisory dated May 29, 2026, while some states carry Level 3 guidance. A medical traveler should assess the specific clinic city, not Mexico as one single destination.
 
 **What to check next:**  
-Read the live advisory for the surgical city, airport route, and recovery location before putting down a deposit. Make sure you have a simple plan for getting to follow-up visits without relying on stairs or crowded transit.
+Read the State Department page for the destination state 30 days before travel and again before departure. Share your clinic address and itinerary with family.
 
 ## The Trade-Off
 
-### What you may gain:
-- A private knee replacement quote of about $10,000-$15,000, compared with $40,000-$70,000+ for U.S. private-pay care.
-- A possible surgery-price difference of $25,000-$60,000+ before travel, lodging, and rehabilitation.
-- Day-to-day Mexico City costs that can be manageable during recovery, including $2-$4 coffee and $6-$13 casual lunches.
-- A one-bedroom outside central Mexico City for about $500-$1,060 monthly, leaving room to stay near the care team during early recovery.
+**What you may gain:**
 
-### What you may give up:
-- The ease of seeing your regular U.S. surgeon, primary doctor, and physical therapist in one familiar system.
-- The certainty that insurance will cover implants, hospital care, rehabilitation, or treatment after you return home.
-- Low-cost transit as an easy option during the first weeks, when stairs, crowds, and a fresh knee can make private rides necessary.
-- A simple recovery plan if the city, airport route, or surrounding state carries a Level 3, Level 4, or Do Not Travel advisory.
+- A listed Tijuana package of $7,000-$12,000 instead of a U.S. pre-insurance price often around $40,000-$50,000+.
+- Mexicali package listings around $8,800-$9,600 for patients comparing border-city options.
+- Some Playa del Carmen package listings around $3,500-$7,000, though the included care may differ sharply.
+- A Mexico City recovery apartment around $800-$1,600 monthly, with groceries around $250-$350.
+- Local transit fares of $0.30-$0.60 and casual lunches around $6-$10 during a longer stay.
 
-The best case is not simply a lower procedure price. It is a clear surgical package, a recovery home that works with limited mobility, and a plan that does not fall apart when you leave the hospital.
+**What you may give up:**
 
-![Mexico street scene](https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNZXhpY28lMjBDaXR5JTIwTWV4aWNvfGVufDB8MHx8fDE3OTEzOTk4MTV8MA&ixlib=rb-4.1.0&q=80&w=1080)
+- The comfort of having your surgeon, hospital, and physical therapist close to home.
+- A simple handoff to U.S. rehabilitation if you return without records, imaging, and written therapy instructions.
+- Clear pricing unless your written quote names the implant, anesthesia, hospital nights, medications, and therapy sessions.
+- Easy travel during recovery, when taxis, airport transfers, and a companion may be necessary.
+- A one-size-fits-all safety answer, since the State Department advisory varies by Mexican state.
+
+That does not make Mexico the wrong choice. It makes preparation part of the treatment.
+
+![Mexico street scene](https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNZXhpY298ZW58MHwwfHx8MTc5MTQwMTU3MHww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Contact private orthopedic providers in Polanco, Roma Norte, and Condesa. Request an itemized knee-replacement quote covering the implant, surgeon, anesthesia, inpatient stay, and rehabilitation.
+1. Request 2 written all-inclusive knee replacement quotes from Tijuana clinics, with the surgeon, implant model, anesthesia, hospital stay, medications, and physical therapy listed separately.
 
-2. Ask each provider for its expected follow-up schedule over 3-6 months, including the number of physical-therapy sessions and the cost of extra inpatient nights.
+2. Ask Russald Medical Center or another Tijuana provider whether the estimate includes pre-operative testing, 1 or more inpatient nights, wound checks, and a plan for complications after discharge.
 
-3. Call your U.S. or international insurer and request written confirmation of cross-border surgical coverage, pre-authorization, implant coverage, and rehabilitation benefits. Ask whether original Medicare, Medicare Advantage, Medigap, or your private plan pays anything for the procedure.
+3. Obtain a current U.S. estimate from your hospital, insurer, Medicare provider, or a consumer price source for the same total-knee procedure and implant category.
 
-4. Compare each Mexico quote with the $40,000-$70,000+ U.S. private-pay range, then add airfare, lodging, private rides, and a companion’s stay.
+4. Compare Mexicali listings around $8,800-$9,600 with the Tijuana quote only after confirming that both include the same implant and post-operative services.
 
-5. Price a recovery-ready Mexico City apartment outside the center at roughly $500-$1,060 monthly. In Polanco, Roma Norte, or Condesa, inspect elevator access, bathroom layout, and the route to the orthopedic provider.
+5. Read the State Department advisory for the clinic’s exact state, then review it again within 30 days of departure and immediately before travel.
 
-6. Read the September 2026 U.S. State Department Mexico advisory for the intended city and route, noting any Level 3, Level 4, or Do Not Travel guidance.
+6. Call a physical therapist near your U.S. home and ask whether they can accept you after surgery abroad, with records, imaging, and a surgeon’s rehabilitation instructions in hand.
 
-![Mexico daily life](https://images.unsplash.com/photo-1547686669-9a8cb1a22d91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZXhpY28lMjBDaXR5JTIwTWV4aWNvfGVufDB8MHwwfHx8MTc5MTM5OTgxNXww&ixlib=rb-4.1.0&q=80&w=1080)
+![Mexico daily life](https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZXhpY298ZW58MHwwfHx8MTc5MTQwMTU3MHww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### What does a knee replacement usually cost in Mexico compared with the United States?
-Mexico private-care guides commonly quote $10,000-$15,000 for knee replacement. U.S. private-pay comparisons commonly fall around $40,000-$70,000+, though hospital, implant, and recovery arrangements can change either figure. Ask whether the price includes the surgeon, implant, anesthesia, inpatient stay, imaging, and therapy. (PlacidWay)
+### Is knee replacement in Mexico substantially cheaper than in the U.S. for retirees?
 
-### Will a Mexican clinic give me a firm dollar quote?
-Many clinics quote in the local currency, so the final dollar amount can shift with the exchange rate. Ask for a dated written estimate and a clear payment schedule before sending money. Keep the clinic’s quote, the payment deadline, and the exchange-rate date in the same folder. (Doktor.mx)
+In selected Mexican clinics, total knee replacement is commonly listed at $7,000-$12,000. U.S. pricing is often cited around $40,000-$50,000+ before insurance, depending on the facility and implant. That difference can be substantial for a cash-paying patient, but it matters only when both quotes cover the same core services. Compare surgeon, implant, anesthesia, hospital stay, and rehabilitation in writing. ([russaldclinic.com](https://www.russaldclinic.com/orthopedics/knee-replacement))
 
-### Can international insurance cover a knee replacement in Mexico?
-International health plans can cover overseas treatment, but knee replacement benefits vary by policy. Ask for written pre-authorization before surgery, particularly for implants, inpatient care, and 3-6 months of rehabilitation. Original Medicare generally does not pay for planned surgery in Mexico, so ask your own insurer what it covers. (ExpatDen)
+### What does an all-inclusive knee-replacement package in Mexico usually include?
 
-### Is Mexico City safe enough for medical travel and recovery?
-The U.S. State Department’s Mexico advisory was updated in September 2026 and assigns travel levels by state. Levels can range from Level 2 through Level 4, and some areas carry Do Not Travel guidance. Check the intended surgical city, airport route, and recovery neighborhood before confirming treatment. (U.S. State Department)
+Many packages combine the surgeon’s fee, hospital charges, implant, anesthesia, and a short inpatient stay. Some also include a limited number of physical-therapy sessions, though the exact number varies by clinic. Ask for an itemized quote before paying a deposit, including medications and pre-operative testing. The package should also state what happens if you need an additional hospital night. ([maphospitals.com](https://maphospitals.com/cost-estimator/knee-replacement-total-cost-in-tijuana))
 
-### Why is rehabilitation such a large part of the decision?
-Knee replacement recovery does not end when you leave the hospital. Ask for the physical-therapy plan for the first 3-6 months, including follow-up appointments, mobility support, and the plan for complications after you return home. A lower procedure price can lose its advantage if rehabilitation and follow-up are left unplanned. (CureMeridian)
+### Which Mexican cities have published knee-replacement prices?
+
+Tijuana has the widest set of public-facing international-patient listings, with ranges around $7,000-$12,000. Mexicali listings appear around $8,800-$9,600, and some Playa del Carmen packages begin around $3,500-$7,000. Those are city- and clinic-specific quotes, not one national Mexican price. Collect at least 2 quotes from providers you can contact directly. ([us-uk.bookimed.com](https://us-uk.bookimed.com/clinics/country%3Dmexico/procedure%3Dknee-replacement/cost/))
+
+### What is the current State Department travel advisory for Mexico?
+
+The U.S. State Department lists Mexico nationally at Level 2, “Exercise Increased Caution,” dated May 29, 2026. Some Mexican states have Level 3 guidance, so the national level should not replace a check of your clinic’s location. Look at the advisory before you make a deposit and again before traveling. Medical recovery is easier when your lodging, transport, and clinic route are settled in advance. ([travel.state.gov](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html))
+
+### What is a reasonable U.S. price reference for total knee replacement?
+
+Published U.S. references commonly place total knee replacement in the $40,000-$50,000+ range before insurance. The amount can move sharply by city, hospital, implant, and negotiated insurance rate. Ask your U.S. hospital for a formal estimate using the same procedure and implant category as the Mexican quote. That gives you a fairer comparison than matching a package price against a vague hospital bill. ([embamex.sre.gob.mx](https://embamex.sre.gob.mx/canada/images/pdfs/turismosalud2013-ingles.pdf))
 
 ## Check Today's Information Before You Decide
-- [U.S. State Department Mexico Travel Advisory](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html)
-- [Banco de México exchange-rate information](https://www.banxico.org.mx)
-- [Mexico City cost-of-living reference](https://www.numbeo.com/cost-of-living/in/Mexico-City)
-- [International health insurance for retirees in Mexico](https://www.expatden.com/mexico/health-insurance-for-retirees-in-mexico/)
+
+- [Russald Medical Center knee replacement information](https://www.russaldclinic.com/orthopedics/knee-replacement)
+- [Bookimed knee replacement cost listings in Mexico](https://us-uk.bookimed.com/clinics/country%3Dmexico/procedure%3Dknee-replacement/cost/)
+- [Mexico City cost of living](https://www.numbeo.com/cost-of-living/in/Mexico-City)
+- [Mexico travel advisory](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html)
 
 ## Sources & Verification
-- [PlacidWay: Knee Replacement in Mexico](https://www.placidway.com/experience/137/Knee-Replacement-in-Mexico-Live-Without-Knee-Pain) — commonly cited Mexico and U.S. private-pay surgery ranges.
-- [CureMeridian: Knee Replacement in Mexico](https://curemeridian.com/procedures/knee-replacement/mexico) — procedure and recovery considerations.
-- [U.S. State Department: Mexico Travel Advisory](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html) — current state-by-state travel guidance.
-- [ExpatDen: Health Insurance for Retirees in Mexico](https://www.expatden.com/mexico/health-insurance-for-retirees-in-mexico/) — international insurance and private-care context.
-- [Doktor.mx: Private Consultation Prices](https://doktor.mx/precios) — private medical-visit pricing context.
-- [Commonwealth Fund: Mexico Country Profile](https://www.commonwealthfund.org/sites/default/files/2026-04/2026_Country-Profiles_Mexico.pdf) — public and private healthcare-system context.
-- [FRED: Mexican Peso to U.S. Dollar Exchange Rate](https://fred.stlouisfed.org/data/EXMXUS) — historical exchange-rate reference.
+
+- [Russald Medical Center — Knee Replacement in Tijuana](https://www.russaldclinic.com/orthopedics/knee-replacement) — clinic information for orthopedic treatment and international-patient pricing context.
+- [Bookimed — Knee Replacement Cost in Mexico](https://us-uk.bookimed.com/clinics/country%3Dmexico/procedure%3Dknee-replacement/cost/) — city-level medical-tourism price listings.
+- [Health Tourism — Knee Replacement in Tijuana](https://www.health-tourism.com/knee-replacement/mexico-c-tijuana/) — Tijuana provider and treatment-market context.
+- [Expat360 — Healthcare in Mexico City](https://expat360.org/countries/mexico/mexico-city/healthcare/) — private-care access context in Mexico City.
+- [Numbeo — Cost of Living in Mexico City](https://www.numbeo.com/cost-of-living/in/Mexico-City) — Mexico City housing, food, transport, and utility price anchors.
+- [Expatistan — Mexico City Cost of Living](https://expatistan.com/cost-of-living/mexico-city) — supplementary Mexico City daily-cost comparisons.
+- [U.S. State Department — Mexico Travel Advisory](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html) — current national and state-level travel guidance.
+- [Embassy of Mexico — Health Tourism Reference](https://embamex.sre.gob.mx/canada/images/pdfs/turismosalud2013-ingles.pdf) — background reference for U.S.-Mexico medical-tourism price comparisons.
 
 Information checked: October 7, 2026
 
 ## Related Golden Horizons Guides
+
 - [Healthcare Abroad for American Retirees](/healthcare-abroad-for-american-retirees)
 - [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-americans)
 - [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans-retiring-abroad)
 - [Taxes for Americans Retiring Overseas](/taxes-for-americans-retiring-overseas)
 
 ## About Golden Horizons
+
 Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad. We focus on the decision that matters: what your money may make possible, whether you can legally stay, whether healthcare and ordinary daily life work for you, and what you should test before committing. Travel first. Test the reality. Then decide.
 
 ## Final Verdict
-**Golden Horizons Verdict: 🟠 HIGH-HURDLE — TEST FIRST**
 
-Mexico may fit a retiree who can secure written insurance approval or comfortably pay cash, remain near the surgical team, and give recovery the time and attention it requires. It may be a poor fit if you need simple U.S.-based follow-up, cannot arrange a mobility-friendly recovery home, or would be unsettled by coordinating care across borders.
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-Test the surgeon, the quote, the insurance decision, the apartment, and the route to appointments before you commit. The savings can be substantial; the real value is a recovery plan that lets you focus on walking well again.
+Mexico can offer a striking cash-price difference for total knee replacement, with selected clinic packages far below common U.S. hospital pricing. It fits the careful planner who compares 2 itemized quotes, confirms the implant and hospital plan, arranges rehabilitation at home, and checks the advisory for the exact destination. If those pieces are in place, the price difference may create room for a more comfortable recovery—not merely a cheaper operation.
