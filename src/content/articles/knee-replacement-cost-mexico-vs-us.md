@@ -1,18 +1,18 @@
 ---
-title: "Knee Replacement in Mexico: $11,000–$16,000 in Tijuana — But on Medicare, Home May Cost Less"
+title: "Knee Replacement in Mexico: About $15,900 in Tijuana — But on Medicare, Home May Cost Less"
 category: Healthcare
 slug: knee-replacement-cost-mexico-vs-us
 date: 2026-10-07
 image: https://images.unsplash.com/photo-1508739773434-c26b3d09e071?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZXhpY28lMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc5MTM5OTgxNHww&ixlib=rb-4.1.0&q=80&w=1080
-description: "Tijuana knee packages run about $11,200–$15,895 vs. a $30,249 U.S. average. On Medicare, your share at home may be far less. The real math."
+description: "A Tijuana knee package runs about $15,895 vs. a $30,249 U.S. average. On Medicare, your share at home may be far less. The real math."
 featured: false
 ---
 
-# Knee Replacement in Mexico: $11,000–$16,000 in Tijuana — But on Medicare, Home May Cost Less
+# Knee Replacement in Mexico: About $15,900 in Tijuana — But on Medicare, Home May Cost Less
 
 **Golden Horizons Status:** 🟠 HIGH-HURDLE — TEST FIRST
 
-> **THE SHORT ANSWER:** A total knee replacement package in Tijuana runs about $11,200–$15,895, against a U.S. average of about $30,249 for an inpatient knee replacement. That gap is real if you're under 65 and paying cash. On Original Medicare, your share at home starts with the $1,736 Part A deductible and 20% of doctor bills, often less than the Mexican price. The catch: Tijuana is in Baja California, rated Level 3, "Reconsider travel," by the State Department.
+> **THE SHORT ANSWER:** A published total knee replacement package in Tijuana costs $15,895, against a U.S. average of about $30,249 for an inpatient knee replacement. That gap is real if you're under 65 and paying cash. On Original Medicare, your share at home starts with the $1,736 Part A deductible and 20% of doctor bills, often less than the Mexican price. The catch: Tijuana is in Baja California, rated Level 3, "Reconsider travel," by the State Department.
 
 A new knee in Tijuana can cost half of what a U.S. hospital charges. For a 62-year-old with a high-deductible plan, that can be a difference of about $14,000.
 
@@ -27,7 +27,7 @@ Whether a Tijuana knee package actually saves you money once you count Medicare,
 An American under 65, uninsured or on a high-deductible plan, who can stay near the surgeon for 1–2 weeks and has a companion for the trip.
 
 **Biggest warning:**
-If you have Original Medicare plus a Medigap plan, the same surgery at home may cost you little or nothing beyond deductibles. Paying $11,000–$16,000 in cash in Mexico could cost you more, not less.
+If you have Original Medicare plus a Medigap plan, the same surgery at home may cost you little or nothing beyond deductibles. Paying about $15,900 in cash in Mexico could cost you more, not less.
 
 **Healthcare:**
 Packages are offered at Hospital New City Medical Plaza in Tijuana and by Russald Medical Center in Las Torres Medical Tower. Most Mexican hospitals don't accept U.S. insurance or Medicare and ask for payment up front.
@@ -40,8 +40,6 @@ Mexico is Level 2 nationally (advisory dated May 29, 2026), but Baja California,
 ### What Tijuana charges
 
 **Hospital New City Medical Plaza (via Angeles Health International):** $15,895. This includes round-trip ground transport from San Diego, pre-op tests, surgeon and anesthesiologist fees, the implant, and the hospital stay. It does not include lodging before or after, medication after discharge, or physical therapy at home.
-
-**Dra. Brenda Delangel (listed on PlacidWay, a medical-tourism broker):** a $11,200 package. Treat a broker listing as a starting point, and confirm the price directly with the surgeon.
 
 **Russald Medical Center (Blvd. Agua Caliente, about 20 minutes from the San Diego crossing):** quote-only. Patients typically stay 3–5 days in the hospital and get a structured physical-therapy program to continue at home.
 
@@ -67,7 +65,7 @@ Bottom line: the savings are real for the under-65 and the uninsured. On Medicar
 
 **The surgery warning:** the State Department says care quality varies widely, legal options for malpractice are very limited, and you should confirm emergency facilities and your surgeon's accreditation before any procedure. It strongly recommends insurance that covers medical evacuation.
 
-**Mexico's public system:** IMSS's voluntary family health plan costs about $1,101 a year at ages 60–69 (Mex$19,800 at 2025 rates) and about $1,148 at 70–79. It doesn't accept people with chronic degenerative diseases and excludes ongoing treatment of chronic conditions, so it isn't a route for a knee you already need replaced.
+**Mexico's public system:** IMSS's voluntary family health plan costs about $1,101 a year at ages 60–69 and about $1,148 at 70–79. It doesn't accept people with chronic degenerative diseases and excludes ongoing treatment of chronic conditions, so it isn't a route for a knee you already need replaced.
 
 **Recovering nearby:** Tijuana's everyday prices are modest but thinly reported. A furnished apartment in a normal area runs about $749 a month, a cappuccino about $5.67, a liter of milk about $1.78, a dozen eggs about $2.72, and an 8-km taxi about $12. A short private doctor visit is about $46. Many patients recover on the San Diego side instead, which costs more but keeps U.S. care close.
 
@@ -78,7 +76,7 @@ Bottom line: build in medical-evacuation coverage and a companion, and read the 
 ### Tijuana package vs. U.S. cash price (under 65)
 
 **What the evidence says:**
-Tijuana packages run about $11,200–$15,895, against a $30,249 average inpatient price in the U.S. The gap can be $14,000 or more before travel and lodging.
+A published Tijuana package costs $15,895, against a $30,249 average inpatient price in the U.S. The gap can be $14,000 or more before travel and lodging.
 
 **What to check next:**
 Get 2 written U.S. cash quotes, including from an outpatient surgery center, then compare them with 2 itemized Tijuana quotes.
@@ -111,7 +109,7 @@ Price 10 nights in each, and ask the surgeon when you can safely ride across the
 
 **What you may gain:**
 
-- A package price of about $11,200–$15,895, against a $30,249 U.S. average.
+- A published package price of about $15,900, against a $30,249 U.S. average.
 - An all-in quote that can include transport from San Diego, pre-op tests, implant, and the hospital stay.
 - A savings of $14,000 or more if you're under 65 and paying cash.
 - Surgery about 20 minutes from the San Diego border crossing.
@@ -140,7 +138,7 @@ Price 10 nights in each, and ask the surgeon when you can safely ride across the
 
 ### How much does a knee replacement cost in Tijuana?
 
-Published packages run about $11,200–$15,895. Angeles Health International lists $15,895 at Hospital New City Medical Plaza, including transport from San Diego, pre-op tests, surgeon, anesthesia, implant, and hospital stay. Lodging, post-discharge medicine, and home physical therapy are extra. Get every quote itemized in writing. ([angeleshealth.com](https://www.angeleshealth.com/knee-replacement-surgery-mexico))
+Published prices start around $15,900. Angeles Health International lists $15,895 at Hospital New City Medical Plaza, including transport from San Diego, pre-op tests, surgeon, anesthesia, implant, and hospital stay. Lodging, post-discharge medicine, and home physical therapy are extra. Get every quote itemized in writing. ([angeleshealth.com](https://www.angeleshealth.com/knee-replacement-surgery-mexico))
 
 ### What does a knee replacement cost in the U.S.?
 
@@ -156,7 +154,7 @@ Tijuana is in Baja California, which the State Department rates Level 3, "Recons
 
 ### Can I use Mexico's IMSS for a knee replacement?
 
-Not realistically. IMSS's voluntary family health plan costs about Mex$19,800 a year at ages 60–69, roughly $1,101. It doesn't accept people with chronic degenerative diseases and excludes ongoing chronic-condition treatment. It's designed for residents, not short-stay patients. ([imss.gob.mx](https://www.imss.gob.mx/node/84811))
+Not realistically. IMSS's voluntary family health plan costs about $1,101 a year at ages 60–69. It doesn't accept people with chronic degenerative diseases and excludes ongoing chronic-condition treatment. It's designed for residents, not short-stay patients. ([imss.gob.mx](https://www.imss.gob.mx/node/84811))
 
 ## Check Today's Information Before You Decide
 
@@ -168,7 +166,6 @@ Not realistically. IMSS's voluntary family health plan costs about Mex$19,800 a 
 
 - [Angeles Health International: Knee Replacement Surgery in Tijuana](https://www.angeleshealth.com/knee-replacement-surgery-mexico) — $15,895 package, inclusions and exclusions, Hospital New City Medical Plaza.
 - [Russald Medical Center: Knee Replacement](https://www.russaldclinic.com/orthopedics/knee-replacement) — location, 3–5 day hospital stay, physical-therapy program.
-- [PlacidWay: Knee Replacement Package in Tijuana](https://www.placidway.com/package/6952/Total-Knee-Replacement-Surgery-Package-in-Tijuana-Mexico-by-Dra-Brenda-Delangel) — $11,200 package listing (broker, commercial).
 - [Healthline: Total Knee Replacement Costs](https://www.healthline.com/health/total-knee-replacement-surgery/understanding-costs) — Blue Cross Blue Shield U.S. averages.
 - [JAAOS Global: Chargemaster Prices for Joint Replacement](https://pmc.ncbi.nlm.nih.gov/articles/PMC10489520/) — U.S. hospital list prices (2023).
 - [Medicare.gov: Medicare Costs](https://www.medicare.gov/basics/costs/medicare-costs) — 2026 Part A and Part B deductibles.
@@ -193,4 +190,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟠 HIGH-HURDLE — TEST FIRST**
 
-A Tijuana knee package at about $11,200–$15,895 can save an uninsured American under 65 $14,000 or more against a $30,249 U.S. average. On Original Medicare, the same surgery at home may cost you only deductibles and coinsurance, so Mexico can be the more expensive choice. Add Baja California's Level 3 advisory and limited malpractice recourse, and this works only with careful planning. Get your Medicare or U.S. cash estimate first, then two itemized Tijuana quotes and an evacuation policy before you decide.
+A Tijuana knee package at about $15,900 can save an uninsured American under 65 $14,000 or more against a $30,249 U.S. average. On Original Medicare, the same surgery at home may cost you only deductibles and coinsurance, so Mexico can be the more expensive choice. Add Baja California's Level 3 advisory and limited malpractice recourse, and this works only with careful planning. Get your Medicare or U.S. cash estimate first, then two itemized Tijuana quotes and an evacuation policy before you decide.
