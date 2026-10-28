@@ -9,59 +9,59 @@ featured: false
 ---
 
 # What $2,000 a Month Gets You in Loja, Ecuador—and What It Does Not
-**Golden Horizons Status:** 🟡 WORTH TESTING — CHECK THE VISA INCOME MATH
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY RESIDENCY
 
 > **THE SHORT ANSWER:** On $2,000 a month, one person can live comfortably in Loja. A decent one-bedroom runs $300-$600, a set lunch costs about $3, and the city bus is $0.36—or $0.18 once you're 65. A realistic month comes to roughly $685-$1,400, leaving $600 or more in your pocket. The catch: Ecuador's retirement visa requires $1,446 a month in pension income, and a Social Security check claimed at 62 averages about $1,400.
 
 ## Retirement Snapshot
 
-Loja is the kind of place most Americans have never heard of—and that's part of its charm. This university city of the southern Andes sits at about 2,060 meters (6,760 feet), where the weather stays mild and spring-like all year. You won't need a furnace or an air conditioner, and that alone keeps the utility bill small.
+Loja is a university city in the southern Andes, about 2,060 meters (6,760 feet) up. The weather stays mild and spring-like all year, so you won't need a furnace or an air conditioner, and utility bills stay small.
 
-Ecuador also uses the U.S. dollar. No exchange rates, no conversion math: a $3 lunch is simply three dollars.
+Ecuador uses the U.S. dollar. No exchange rates, no conversion math.
 
 **Primary decision:**
-Can one American retiree live a comfortable, ordinary life in Loja on $2,000 a month—and qualify to stay?
+Can one American retiree live an ordinary, comfortable life in Loja on this budget and qualify to stay?
 
 **Best fit:**
-Someone happy in a $300-$500 apartment, cooking from the local markets, riding the bus, and drawing a pension or Social Security check of at least $1,446 a month.
+Someone happy in a modest apartment, cooking from local markets, riding the bus, and drawing a pension or Social Security check that clears the visa floor.
 
 **Biggest warning:**
 Ecuador's visa income floor is three times its basic monthly wage of $482, or $1,446 in 2026. The wage resets every January, so expect the number to climb.
 
 **Planning-budget lens:**
-A careful month costs about $685. A comfortable month—newer apartment, dinners out most weeks—costs about $1,400. Either way, there's a cushion.
+A careful month costs about $685. A comfortable month, with a newer apartment and dinners out most weeks, costs about $1,400. Either way, there's a cushion.
 
 **Residency:**
-Social Security counts as a pension for Ecuador's Jubilado (pensioner) visa. Each dependent adds $250 a month, so a couple living on one check needs $1,696.
+Social Security counts as a pension for the Jubilado (pensioner) visa. Each dependent adds $250 a month, so a couple living on one check needs $1,696.
 
 **Healthcare:**
 Every visa route requires health insurance valid in Ecuador. Once you're a resident, the public IESS system costs a 2026 minimum of $84.83 a month.
 
 **Housing / daily life:**
-Expats report $300-$400 for a decent one-bedroom in San Sebastián or Jipiro, and $400-$600 for a modern unit in Ciudad Victoria.
+Expats report one-bedrooms from $300 to $400 in San Sebastián or Jipiro, and up to $600 for a modern unit in Ciudad Victoria.
 
 **Safety:**
 The U.S. State Department rates Ecuador overall at Level 2, "Exercise Increased Caution." Its higher-risk zones sit on the coast and the northern border; Loja province is not among them.
 
-## What $2,000 Has to Cover in Loja
+## What Your Money Has to Cover in Loja
 
-Here's what a normal day costs. A cappuccino is about $1.85. A set lunch—soup, a main plate, and juice—is about $3 at a neighborhood spot, or around $7 in the business district. A dozen eggs is about $2, a liter of milk $1, and a half-kilo loaf of bread $1.50.
+Here's what a normal day costs. A cappuccino is about $1.85. A set lunch of soup, a main plate and juice is about $3 at a neighborhood spot, or around $7 in the business district. A dozen eggs is about $2, a liter of milk $1, and a half-kilo loaf of bread $1.50.
 
-Those small numbers add up to a big difference. Cook most of your meals at home, and food for one can stay around $200-$350 a month.
+Cook most of your meals at home and food for one stays around $200 to $350 a month.
 
 ### Where You Live Sets the Budget
 
 Rent is the one number that moves everything else.
 
-**San Sebastián:** Loja's historic heart, around its colonial plaza and clock tower. Expats report decent one-bedrooms for about $300-$400.
+**San Sebastián:** Loja's historic heart, around its colonial plaza and clock tower. Expats report decent one-bedrooms at the low end of the range.
 
-**Jipiro:** Close to the city's big park, with a similar $300-$400 starting range. Prices vary widely—large houses here can top $1,500—so judge each building on its own.
+**Jipiro:** Close to the city's big park, with a similar starting range. Prices vary widely, and large houses here can top $1,500, so judge each building on its own.
 
-**Ciudad Victoria and El Valle:** Newer construction and more modern finishes, with one-bedrooms reported at $400-$600.
+**Ciudad Victoria and El Valle:** Newer construction and more modern finishes, with the highest one-bedroom prices of the three.
 
-The part most guides skip: Vilcabamba, the famous "valley of longevity," is not a Loja neighborhood. It's a separate small town about 40 km (25 miles) south—roughly an hour by bus—with its own expat community and rental market. Visit it, but price it on its own.
+Vilcabamba, the famous "valley of longevity," is not a Loja neighborhood. It's a separate small town about 40 km (25 miles) south, roughly an hour by bus, with its own expat community and rental market. Visit it, but price it on its own.
 
-### The $2,000 Monthly Test
+### The Monthly Budget Test
 
 **Headline budget:** $2,000 per month (one person)
 **Rent, one-bedroom:** $300-$600
@@ -72,55 +72,51 @@ The part most guides skip: Vilcabamba, the famous "valley of longevity," is not 
 **Dining out and extras:** $60-$240
 
 **Estimated core monthly spend:** $685-$1,400
-**What's left over:** $600 to $1,315
-**Visa income requirement (2026):** $1,446/month, plus $250 per dependent
+**Remaining buffer vs the $2,000 budget:** +$600 to +$1,315
+**Income requirement:** $1,446 a month for the Jubilado or Rentista visa, plus $250 per dependent
+**How your money compares to the US:** Loja rent runs a fraction of a typical $1,500-$2,200 U.S. one-bedroom. A set lunch replaces a $12-$18 U.S. one, and groceries come in below a typical $300-$450 U.S. bill. Compare each line with your own current receipts.
 
-The low end assumes a $300 apartment, home cooking, and a few lunches out. The high end assumes a $600 modern unit, more electricity and data, and dinner out most weeks.
+The low end assumes the cheapest apartment, home cooking and a few lunches out. The high end assumes a modern unit, more electricity and data, and dinner out most weeks.
 
-**How it compares to home:** A Loja one-bedroom at $300-$600 costs a fraction of a typical $1,500-$2,200 U.S. rent. A $3 set lunch replaces a $12-$18 one, and $200-$350 in groceries beats a typical $300-$450 U.S. bill.
-
-Bottom line: for one person, $2,000 isn't a tight budget in Loja. It's a comfortable one.
-
-### A Tuesday in Loja
-
-Your morning starts with a $1.85 cappuccino near the Parque Central. You catch the bus to the market for 18 cents, fill a bag with fruit and vegetables, and stop for a $3 set lunch on the way home. In the evening, dinner for two at a sit-down restaurant runs about $21—a treat, not a routine. That's a full, pleasant day for well under $30.
+**A Typical Day in Loja**
+Your morning starts with a $1.85 cappuccino near the Parque Central. You catch the bus to the market for 18 cents, fill a bag with fruit and vegetables, and stop for a $3 set lunch on the way home. Dinner for two at a sit-down restaurant runs about $21, a treat rather than a routine. That's a full, pleasant day for well under $30.
 
 ### The Residency Question Comes First
 
 Your budget tells you whether you can afford Loja. Your visa decides whether you can stay. Ecuador ties both main retirement visas to its basic wage, which rose from $470 in 2025 to $482 in 2026.
 
-**Jubilado (pensioner) visa:** Lifetime pension income—Social Security counts—of at least $1,446 a month.
+**Jubilado (pensioner) visa:** Lifetime pension income, Social Security included, of at least the $1,446 floor.
 
-**Rentista visa:** Steady passive income, such as rent or investment returns, of at least $1,446 a month.
+**Rentista visa:** Steady passive income, such as rent or investment returns, at the same floor.
 
 **Dependents:** Add $250 a month for each.
 
-This is where many readers need to pause. Estimates put the average Social Security check at about $1,400 for those claiming at 62, and about $2,017 at 67. If you claimed early, your benefit may fall just short. Pull out your SSA benefit letter—that number, not an average, is the one that counts.
+Estimates put the average Social Security check at about $1,400 for those claiming at 62, and about $2,017 at 67. If you claimed early, your benefit may fall just short. Pull out your SSA benefit letter. That number, not an average, is the one that counts.
 
 When you're ready, ask an Ecuadorian consulate for the current document list. Expect to need your passport, benefit letter, an FBI background check, and proof of health insurance.
 
 ### Healthcare in Loja
 
-Loja has a solid mix of public and private care. The public Hospital General Isidro Ayora and the IESS hospital network serve residents. Private options include Hospital UTPL and Clínica San Agustín.
+Loja has a mix of public and private care. The public Hospital General Isidro Ayora and the IESS hospital network serve residents. Private options include Hospital UTPL and Clínica San Agustín.
 
 Expats report paying $15-$20 for a private doctor's visit and $30-$40 for a specialist. Once you hold a cédula (resident ID), IESS voluntary coverage starts at $84.83 a month, plus about $16.44 to add a spouse.
 
-One thing to settle before you go: Medicare pays for almost nothing outside the United States. If you drop Part B and later move home, you may face a permanent late-enrollment penalty.
+Medicare pays for almost nothing outside the United States. If you drop Part B and later move home, you may face a permanent late-enrollment penalty.
 
 ## Practical Comparison
 
 ### San Sebastián and Jipiro versus Ciudad Victoria
 
 **What the evidence says:**
-Expats report one-bedrooms around $300-$400 in San Sebastián and Jipiro, versus $400-$600 for modern units in Ciudad Victoria. Reports on Jipiro disagree, so price by building, not by neighborhood name.
+Expats report cheaper one-bedrooms in San Sebastián and Jipiro than the modern units in Ciudad Victoria. Reports on Jipiro disagree, so price by building, not by neighborhood name.
 
 **What to check next:**
-Get three written quotes in each area, and ask whether utilities and internet—$40-$100 a month—are included.
+Get three written quotes in each area, and ask whether utilities and internet are included.
 
 ### Market shopping versus eating out
 
 **What the evidence says:**
-Home cooking keeps food around $200-$350 a month, with eggs near $2 and milk near $1. A $3 set lunch is easy on the budget. A $21 dinner for two is fine weekly, but it adds up fast if it becomes a habit.
+Home cooking keeps food near the low end of the grocery range, with eggs near $2 and milk near $1. A set lunch is easy on the budget. A dinner for two is fine weekly, but it adds up fast if it becomes a habit.
 
 **What to check next:**
 Shop one week at Mercado Centro Comercial Loja and one week at Supermaxi, then compare the two receipts.
@@ -128,7 +124,7 @@ Shop one week at Mercado Centro Comercial Loja and one week at Supermaxi, then c
 ### Jubilado visa versus Rentista visa
 
 **What the evidence says:**
-Both require $1,446 a month in 2026. Jubilado fits Social Security and pensions; Rentista fits rental or investment income. Each dependent adds $250, and every route requires health insurance valid in Ecuador.
+Both use the same 2026 income floor. Jubilado fits Social Security and pensions; Rentista fits rental or investment income. Every route requires health insurance valid in Ecuador.
 
 **What to check next:**
 Ask a consulate which visa fits your income before signing any lease longer than 90 days.
@@ -153,14 +149,14 @@ Spend three nights in Vilcabamba and time the trip back to Loja as if you had a 
 
 **What you may gain:**
 
-- A $300-$600 one-bedroom instead of a typical $1,500-$2,200 U.S. rent.
-- Small daily costs: a $1.85 cappuccino, a $3 set lunch, and an $0.18 senior bus fare.
-- Public health coverage through IESS from $84.83 a month once you're a resident.
-- A monthly cushion of $600 or more on a $2,000 income.
+- A one-bedroom at a fraction of a typical U.S. rent.
+- Small daily costs: a cappuccino, a set lunch, and a senior bus fare of 18 cents.
+- Public health coverage through IESS once you're a resident.
+- A solid monthly cushion on a $2,000 income.
 
 **What you may give up:**
 
-- Easy qualification: a $1,446 visa income floor that an early Social Security claim may not meet.
+- Easy qualification: a visa income floor that an early Social Security claim may not meet.
 - Medicare, which pays for almost nothing in Ecuador.
 - Quick trips home: there are no international flights from Loja, so you'll connect through Quito or Guayaquil.
 - English: support is limited in clinics and government offices, so basic Spanish goes a long way.
@@ -171,15 +167,15 @@ The sweet spot isn't a grand fantasy. It's an ordinary Tuesday where the rent is
 
 ## The Golden Horizons 30-Day Test
 
-1. Before you book anything, compare your SSA benefit letter to $1,446—or $1,696 if your spouse will be your dependent.
+1. Before you book anything, compare your SSA benefit letter to the visa floor, or to $1,696 if your spouse will be your dependent.
 
-2. Split 20 days between San Sebastián and Ciudad Victoria, and collect written one-bedroom quotes in the $300-$600 range. Note which include utilities.
+2. Split 20 days between San Sebastián and Ciudad Victoria, and collect written one-bedroom quotes. Note which include utilities.
 
-3. Shop one week at Mercado Centro Comercial Loja and one at Supermaxi. Multiply the cheaper week by four and see whether it lands near $200-$350.
+3. Shop one week at Mercado Centro Comercial Loja and one at Supermaxi. Multiply the cheaper week by four and see whether it lands in the grocery range above.
 
-4. Ride the bus at $0.36 a trip—$0.18 if you're 65 or older—at morning, midday, and evening hours.
+4. Ride the bus at 36 cents a trip, or 18 cents if you're 65 or older, at morning, midday, and evening hours.
 
-5. Book a $15-$20 check-up at Hospital UTPL or Clínica San Agustín, and ask whether they accept the insurance you plan to carry.
+5. Book a check-up at Hospital UTPL or Clínica San Agustín, and ask whether they accept the insurance you plan to carry.
 
 6. Take the bus to Vilcabamba, about 40 km south, for three nights, and compare its rents and pace with Loja's.
 
@@ -242,6 +238,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟡 WORTH TESTING — CHECK THE VISA INCOME MATH**
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY RESIDENCY**
 
-Yes—$2,000 a month buys one person a comfortable life in Loja, with a typical month costing $685-$1,400 and $600 or more left over. It suits someone who values mild weather, a $300-$500 apartment, and $3 lunches over imported comforts. The real gate isn't money; it's paperwork. Your pension or Social Security must clear $1,446 a month. Start with your SSA benefit letter, then book 30 days split between San Sebastián and Ciudad Victoria.
+Yes. $2,000 a month buys one person a comfortable life in Loja, with a typical month costing $685-$1,400. It suits someone who values mild weather, a modest apartment, and cheap set lunches over imported comforts. The real gate isn't money; it's paperwork. Your pension or Social Security must clear the visa floor. Start with your SSA benefit letter, then book 30 days split between San Sebastián and Ciudad Victoria.
