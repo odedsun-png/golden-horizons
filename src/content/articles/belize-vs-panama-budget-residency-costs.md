@@ -12,9 +12,9 @@ featured: false
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** A one-bedroom averages $191 outside central Belize City and $342 in the centre, compared with $913 outside central Panama City and $1,270 in the centre. Belize City’s basic utilities average $373, while Panama City’s non-rent monthly spending is estimated near $843. A simple Belize City lunch runs $6, while both countries carry a Level 2 U.S. travel advisory in 2026. Belize is the lower-rent choice; Panama City asks more of your monthly income but offers a deeper private-hospital network.
+> **THE SHORT ANSWER:** A one-bedroom averages $191 outside central Belize City and $342 in the centre, compared with $913 outside central Panama City and $1,270 in the centre. Belize City’s basic utilities average $373, while Panama City’s non-rent monthly spending is estimated near $843. A simple Belize City lunch runs $6, while both countries carry a Level 2 U.S. travel advisory in 2026. The catch: Belize’s advisory singles out Southside Belize City, and Original Medicare generally does not pay for care in either country. Belize is the lower-rent choice; Panama City asks more of your monthly income but offers a deeper private-hospital network.
 
-The difference begins with the apartment hunt. In Belize City, an outside-centre one-bedroom averages $191 a month. In Panama City, that same line in your budget averages $913—and the gap keeps shaping the rest of the month.
+The difference begins with the apartment hunt. The same one-bedroom line in your budget is several times larger in Panama City, and the gap shapes the rest of the month.
 
 But rent is not the whole retirement decision. Belize City asks you to look closely at utility bills, neighborhood safety, and the smaller scale of private medical care. Panama City demands more cash each month, then gives you a denser city, U.S.-dollar budgeting, and more private-hospital choices. The real question is not which city is cheaper. It is which version of daily life you can comfortably afford.
 
@@ -27,13 +27,13 @@ Whether Belize City’s low housing costs outweigh Panama City’s higher rent a
 Belize City may suit you if a modest household budget matters most. Panama City may suit you if you can support roughly $1,800–$2,300 a month for a central-city lifestyle and want more medical options nearby.
 
 **Biggest warning:**  
-Belize City utilities average $373 monthly for a larger apartment, while a central Panama City one-bedroom averages $1,270.
+Belize City utilities average $373 monthly for a larger apartment, so a low lease does not mean a low bill.
 
 **Planning-budget lens:**  
 Belize City’s rough lower-spend range is about $1,212–$1,562 monthly. Panama City’s central-lifestyle range is about $2,813–$3,163.
 
 **Residency:**  
-Belize has the Qualified Retired Person program, while Panama has established retiree-residency routes. Before committing, bring current income, document, and fee questions directly to the relevant immigration authority.
+Belize’s Qualified Retired Person program asks for $2,000 a month in retirement income from outside Belize, per the Belize Tourism Board. Panama has established retiree-residency routes. Confirm current income, document and fee details with each immigration authority before committing.
 
 **Healthcare:**  
 Panama City has Hospital Punta Pacífica and Hospital Paitilla, plus insurers such as ASSA. Belize City has Belize Medical Associates and Karl Heusner Memorial Hospital, though its large private-hospital choices are fewer.
@@ -42,15 +42,15 @@ Panama City has Hospital Punta Pacífica and Hospital Paitilla, plus insurers su
 Belize City’s lower rents leave more room for ordinary spending. Panama City’s higher housing costs buy a more built-up urban routine.
 
 **Safety:**  
-Belize is Level 2: Exercise Increased Caution, dated March 12, 2026. Panama is Level 2: Exercise Increased Caution, dated August 19, 2026.
+Belize is Level 2: Exercise Increased Caution, dated March 12, 2026, and its advisory singles out Southside Belize City for a stricter “reconsider travel” warning. Panama is Level 2, dated August 19, 2026; the higher-risk areas are the Darién and the Mosquito Gulf, not Panama City.
 
 ## What Your Monthly Budget Really Has to Carry
 
-Belize City is the clear housing bargain: a one-bedroom averages $342 in the centre and $191 outside it. The low rent can be compelling, especially if you are comparing it with a Panama City apartment averaging $1,270 in the centre or $913 outside it.
+Belize City is the clear housing bargain, especially next to a Panama City apartment at the rents above.
 
 Then the Belize utility bill enters the picture. Electricity, water, and related household bills average $373 for a larger apartment, with internet around $27 and a mobile plan near $50. A low lease does not automatically mean a low-cost month.
 
-Panama City works differently. Plan B Atlas places non-rent spending for one adult near $843 a month. That higher baseline can make the city feel expensive before private insurance, specialist care, or frequent restaurant meals enter the conversation. Still, expenses are in U.S. dollars, which can make planning more straightforward for Americans.
+Panama City works differently. Plan B Atlas places non-rent spending for one adult near that figure each month. That higher baseline can make the city feel expensive before private insurance, specialist care, or frequent restaurant meals enter the conversation. Still, expenses are in U.S. dollars, which can make planning more straightforward for Americans.
 
 ### Belize City: Low Rent, Everyday Bills
 
@@ -60,7 +60,7 @@ Those figures can make a simple kitchen routine feel manageable. A casual restau
 
 ### Panama City: A Higher Floor, More Urban Choice
 
-Panama City’s housing cost is the main divider. Its central rent average is far above Belize City’s, and the estimated $843 in non-rent monthly spending suggests that groceries, transport, household purchases, and everyday convenience are not an afterthought.
+Panama City’s housing cost is the main divider. Its central rent average is far above Belize City’s, and the non-rent estimate suggests that groceries, transport and everyday convenience are not an afterthought.
 
 The attraction is access. Panama City offers more built-up infrastructure, a stronger private-care footprint, and a denser setting for errands. If healthcare convenience is high on your list, that can be worth paying for—but it needs to fit your actual income, not simply look reasonable beside U.S. prices.
 
@@ -72,6 +72,8 @@ A calm residency plan should be in place before it becomes a suitcase in the hal
 
 ## Healthcare Is Where the Comparison Changes
 
+Original Medicare generally does not cover care you get abroad, so price local insurance or self-pay care before you rely on either city ([AARP](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/)).
+
 Panama City has the stronger private-care footprint for a retiree who wants several hospital choices in one urban area. Hospital Punta Pacífica and Hospital Paitilla are major private names to visit, and ASSA can provide age-specific coverage quotes.
 
 Belize City’s options are more limited in scale. Belize Medical Associates offers private care, while Karl Heusner Memorial Hospital is a major public institution. If you rely on a particular specialist, a scouting stay matters: the care you expect may not be as close or as easy to arrange as it would be in Panama City.
@@ -80,7 +82,7 @@ The part to test first is simple: call ahead. Ask for a written self-pay price f
 
 ### The Safety Question Is Local
 
-Both destinations are listed at Level 2: Exercise Increased Caution in 2026. Belize’s advisory is dated March 12, and Panama’s is dated August 19.
+Both destinations are listed at Level 2: Exercise Increased Caution in 2026. Belize’s advisory is dated March 12, and Panama’s is dated August 19. Belize’s text names Southside Belize City as an area to reconsider; ask any landlord or host whether an address is in it. For Panama, the advisory points to the Darién and the Mosquito Gulf.
 
 That means your choice of neighborhood matters as much as your choice of country. Walk the route from transport to your prospective building. Ask how you would handle an evening appointment, a grocery run, or a return from the airport. The tourist view of a city can be very different from the routine of getting home on a Tuesday night.
 
@@ -89,7 +91,7 @@ That means your choice of neighborhood matters as much as your choice of country
 ### The rent gap you will feel every month
 
 **What the evidence says:**  
-Belize City’s one-bedroom averages $191 outside the centre and $342 in the centre. Panama City averages $913 outside the centre and $1,270 in the centre.
+Belize City’s one-bedroom averages $191 outside the centre and $342 in the centre. Panama City runs well above both, from $913 outside the centre to $1,270 in it.
 
 **What to check next:**  
 Visit Fort George and Colonia in Belize City, then El Cangrejo and San Francisco in Panama City. Ask for current one-bedroom listings and clarify whether utilities are included.
@@ -97,7 +99,7 @@ Visit Fort George and Colonia in Belize City, then El Cangrejo and San Francisco
 ### Lower housing costs do not erase utility costs
 
 **What the evidence says:**  
-Belize City utilities average $373, internet $27, and mobile service $50. Panama City’s non-rent spending is estimated near $843 monthly.
+Belize City utilities average $373, internet $27, and mobile service $50. Panama City’s non-rent spending is a separate, higher baseline.
 
 **What to check next:**  
 Ask a prospective Belize landlord for the past three utility bills. In Panama City, track food, transport, pharmacy, and household spending for 30 days.
@@ -105,7 +107,7 @@ Ask a prospective Belize landlord for the past three utility bills. In Panama Ci
 ### Residency needs a current document check
 
 **What the evidence says:**  
-Belize’s QRP route and Panama’s retiree pathways both draw older Americans, but current financial requirements and processing costs need confirmation before a lease begins.
+Belize’s QRP route asks for $2,000 a month from outside Belize; Panama’s retiree pathways have their own bars. Confirm current requirements and processing costs before a lease begins.
 
 **What to check next:**  
 Request a 2026 document list and current fees from the appropriate immigration authority. Bring pension, Social Security, or savings records when you seek professional advice.
@@ -121,7 +123,7 @@ Price a consultation and prescription refill at two facilities in each city. Ask
 ### Safety calls for a neighborhood-by-neighborhood decision
 
 **What the evidence says:**  
-Belize is Level 2 as of March 12, 2026, and Panama is Level 2 as of August 19, 2026.
+Belize is Level 2 as of March 12, 2026, with Southside Belize City singled out, and Panama is Level 2 as of August 19, 2026.
 
 **What to check next:**  
 Read the current U.S. State Department advisory before booking housing. Test your intended route home after dark, including the walk from transport to your building.
@@ -130,16 +132,15 @@ Read the current U.S. State Department advisory before booking housing. Test you
 
 **What you may gain:**
 
-- A Belize City one-bedroom outside the centre averages $191 a month, compared with $913 outside central Panama City.
-- A central Belize City one-bedroom averages $342, leaving more room for groceries, transport, or visits home.
+- Rent a fraction of Panama City’s, leaving more room for groceries, transport or visits home.
 - A casual Belize City lunch averages $6.29, and a cappuccino averages $3.50.
 - Panama City gives you two major private-hospital names to visit—Hospital Punta Pacífica and Hospital Paitilla—within one large urban area.
 
 **What you may give up:**
 
-- Belize City utilities average $373 a month for a larger apartment, even when rent is only $191 or $342.
+- Belize City utilities average $373 a month for a larger apartment, even when rent is low.
 - A dinner for two at a mid-range Belize City restaurant averages $50, so regular dining out can still add up.
-- Central Panama City rent averages $1,270, and non-rent spending is estimated near $843 each month.
+- Panama City rent and non-rent spending sit well above Belize City’s.
 - Both countries are Level 2 destinations in 2026, with Belize’s advisory dated March 12 and Panama’s dated August 19.
 
 The choice comes down to what you cannot compromise on. If a lower monthly housing number makes retirement possible, Belize City deserves a close look. If nearby private medical options carry more weight, Panama City may be worth its higher monthly cost.
@@ -148,9 +149,9 @@ The choice comes down to what you cannot compromise on. If a lower monthly housi
 
 ## The Golden Horizons 30-Day Test
 
-1. Spend seven days near Fort George and Colonia in Belize City, collecting current one-bedroom quotes against the $342 centre and $191 outside-centre anchors.
+1. Spend seven days near Fort George and Colonia in Belize City, collecting current one-bedroom quotes against the anchors above, and confirm none is in Southside.
 
-2. Spend seven days in El Cangrejo and San Francisco in Panama City, comparing listings with the $1,270 central and $913 outside-centre averages.
+2. Spend seven days in El Cangrejo and San Francisco in Panama City, comparing listings with the averages above.
 
 3. Run a Belize City food-and-errands week using milk at $3.75, bread at $2.22, eggs at $3.55, and chicken at $4.36 per pound.
 
@@ -158,7 +159,7 @@ The choice comes down to what you cannot compromise on. If a lower monthly housi
 
 5. Visit Belize Medical Associates and Karl Heusner Memorial Hospital to ask for current self-pay prices for a routine consultation and basic lab work.
 
-6. Visit Hospital Punta Pacífica and Hospital Paitilla in Panama City, then request an age-specific coverage quote from ASSA before deciding whether the city’s $843 non-rent estimate fits your income.
+6. Visit Hospital Punta Pacífica and Hospital Paitilla in Panama City, then request an age-specific coverage quote from ASSA before deciding whether the city’s non-rent estimate fits your income.
 
 ![Belize and Panama street scene](https://images.unsplash.com/photo-1585531454938-a63a84a7c6f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxCZWxpemUlMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTMyMjYzNjl8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
@@ -166,23 +167,23 @@ The choice comes down to what you cannot compromise on. If a lower monthly housi
 
 ### What does a single retiree typically spend in central Panama City?
 
-Plan B Atlas places a central Panama City lifestyle around $1,800–$2,300 monthly for one person. A central one-bedroom averages about $1,270, while non-rent spending is estimated near $843. Private insurance, specialist visits, and frequent dining can push your personal total higher. (Plan B Atlas)
+Plan B Atlas places a central Panama City lifestyle around $1,800–$2,300 monthly for one person. A central one-bedroom averages about $1,270, while non-rent spending is estimated near $843. Private insurance, specialist visits, and frequent dining can push your personal total higher. ([planbatlas.com](https://planbatlas.com/countries/panama/panama-city))
 
 ### What are current Belize City rent anchors for a one-bedroom apartment?
 
-A one-bedroom in Belize City averages about $342 in the city centre and $191 outside the centre. A larger apartment’s monthly utility bundle averages about $373. These are citywide averages, so ask for current quotes on the streets you would actually consider. (Numbeo)
+A one-bedroom in Belize City averages about $342 in the city centre and $191 outside the centre. A larger apartment’s monthly utility bundle averages about $373. These are citywide averages, so ask for current quotes on the streets you would actually consider. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Belize-City))
 
 ### Do Belize and Panama have retirement residency routes?
 
-Belize has the Qualified Retired Person program, and Panama has retiree-residency paths used by many Americans. Ask the relevant immigration authority for the 2026 income, savings, document, and fee requirements before signing a long lease. Keep Panama City’s $913 outside-centre rent in mind as you price the move and your first year abroad. (Wise)
+Belize’s Qualified Retired Person program requires $2,000 a month in retirement income from outside Belize, and Panama has retiree-residency paths used by many Americans. Ask each immigration authority for the 2026 document and fee requirements before signing a long lease. ([belizetourismboard.org](https://www.belizetourismboard.org/programs-events/retirement-program))
 
 ### What are the current U.S. travel advisory levels for Belize and Panama?
 
-Belize is listed at Level 2: Exercise Increased Caution, dated March 12, 2026. Panama is also Level 2: Exercise Increased Caution, dated August 19, 2026. Review the current notices before your first 30-day stay. (U.S. Department of State)
+Belize is listed at Level 2: Exercise Increased Caution, dated March 12, 2026. Panama is also Level 2: Exercise Increased Caution, dated August 19, 2026. Belize’s notice singles out Southside Belize City, and Panama’s higher-risk areas are the Darién and the Mosquito Gulf. Review the current notices before your first 30-day stay. ([travel.state.gov](https://travel.state.gov/en/international-travel/travel-advisories/belize.html))
 
 ### Is healthcare access better in Panama City or Belize City?
 
-Panama City has a larger private-care network, including Hospital Punta Pacífica and Hospital Paitilla. Belize City includes Belize Medical Associates and Karl Heusner Memorial Hospital, but has fewer large private-hospital choices. Panama’s estimated $843 in monthly non-rent spending does not replace an insurance or medical-care budget, so ask each facility for a current self-pay consultation price. (Plan B Atlas)
+Panama City has a larger private-care network, with at least 2 major private hospitals, Hospital Punta Pacífica and Hospital Paitilla. Belize City includes Belize Medical Associates and Karl Heusner Memorial Hospital, but has fewer large private-hospital choices. Original Medicare generally does not cover care in either country, so ask each facility for a current self-pay consultation price and get an insurance quote. ([aarp.org](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/))
 
 ## Check Today's Information Before You Decide
 
@@ -190,6 +191,7 @@ Panama City has a larger private-care network, including Hospital Punta Pacífic
 - [Panama travel advisory](https://travel.state.gov/en/international-travel/travel-advisories/panama.html)
 - [Belize City cost of living](https://www.numbeo.com/cost-of-living/in/Belize-City)
 - [Panama City planning overview](https://planbatlas.com/countries/panama/panama-city)
+- [Belize Tourism Board: Qualified Retirement Program](https://www.belizetourismboard.org/programs-events/retirement-program)
 
 ## Sources & Verification
 
@@ -198,7 +200,8 @@ Panama City has a larger private-care network, including Hospital Punta Pacífic
 - [Numbeo — Panama City Cost of Living](https://www.numbeo.com/cost-of-living/in/Panama-City) — Panama City cost-of-living reference point.
 - [U.S. Department of State — Belize Travel Advisory](https://travel.state.gov/en/international-travel/travel-advisories/belize.html) — Belize Level 2 advisory dated March 12, 2026.
 - [U.S. Department of State — Panama Travel Advisory](https://travel.state.gov/en/international-travel/travel-advisories/panama.html) — Panama Level 2 advisory dated August 19, 2026.
-- [Wise — Panama City Cost of Living](https://wise.com/us/cost-of-living/panama/panama-city) — General Panama City household-cost context.
+- [Belize Tourism Board — Qualified Retirement Program](https://www.belizetourismboard.org/programs-events/retirement-program) — QRP income requirement ($2,000 a month from outside Belize); confirm age and fees with the BTB.
+- [AARP — Does Medicare cover me outside the U.S.?](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/) — Original Medicare generally does not cover care abroad.
 
 Information checked: October 28, 2026
 
