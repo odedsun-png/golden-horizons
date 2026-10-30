@@ -9,35 +9,35 @@ featured: false
 ---
 
 # Oaxaca vs. Mérida: Where Does $2,500 a Month Go Further?
-**Golden Horizons Status:** 🟠 HIGH-HURDLE — CHECK RESIDENCY FIRST
+**Golden Horizons Status:** 🟠 HIGH-HURDLE — TEST FIRST
 
-> **THE SHORT ANSWER:** Both cities fit inside $2,500 a month for one person, and Oaxaca goes a little further. A sample month in central Oaxaca comes to about $1,670, versus about $1,790 in central Mérida. Downtown Oaxaca rent is actually higher—about MXN 13,371 ($720) versus MXN 11,875 ($640)—but a restaurant meal costs half as much: about $6.75 versus $14. The catch: Mexico's temporary residency requires about $4,300 a month in income, so on $2,500 you'll need roughly $72,400 in savings to qualify instead.
+> **THE SHORT ANSWER:** Both cities fit inside $2,500 a month for one person, and Oaxaca goes a little further. A sample month in central Oaxaca comes to about $1,670, versus about $1,790 in central Mérida. Downtown Oaxaca rent is actually higher—about $720 versus $640—but a restaurant meal costs half as much: about $6.75 versus $14. The catch: Mexico's temporary residency requires about $4,300 a month in income, so on $2,500 you'll need roughly $72,400 in savings to qualify instead.
 
 Two Mexican cities, one budget, and two very different ways to spend a Tuesday.
 
 Oaxaca de Juárez sits in a mountain valley at about 1,550 meters (5,100 feet), with cool mornings, famous markets, and a compact historic center you can cover on foot. Mérida, capital of Yucatán, is flat, hot, and spacious, with colonial mansions, leafy avenues, and a daily rhythm built around the afternoon heat.
 
-The prices below come from crowdsourced data converted at 18.56 pesos to the dollar (late October 2026). Treat them as a starting point, then test them in person.
+The prices below come from crowdsourced data converted to dollars at the late-October 2026 exchange rate. Treat them as a starting point, then test them in person.
 
 ## Retirement Snapshot
 
 **Primary decision:**
-Which city leaves more of a $2,500 monthly budget in your pocket—and can you stay long-term on that income?
+Which city leaves more of your monthly budget in your pocket—and can you stay long-term on that income?
 
 **Best fit:**
 Oaxaca suits walkers who love markets, mild weather, and cheap meals. Mérida suits people who want a calmer, more spread-out city and can live with heat and air-conditioning bills.
 
 **Biggest warning:**
-Mexico's 2026 temporary residency requires about MXN 79,771 (about $4,300) a month in income. A $2,500 Social Security check doesn't qualify on its own.
+Mexico's 2026 temporary residency requires about $4,300 a month in income. A Social Security check at this budget level doesn't qualify on its own.
 
 **Planning-budget lens:**
 A sample solo month costs about $1,670 in central Oaxaca and $1,790 in central Mérida. Move outside the center and it drops to about $1,450 and $1,615.
 
 **Residency:**
-The savings route requires about MXN 1,344,373 (about $72,400), held for 12 months. Consulates may vary by 5-10% depending on the exchange rate they use.
+The savings route requires about $72,400, held for 12 months. Consulates may vary by 5-10% depending on the exchange rate they use.
 
 **Healthcare:**
-Residents can buy IMSS public coverage for MXN 19,800 a year (about $89 a month) at ages 60-69. It excludes many pre-existing conditions.
+Residents can buy IMSS public coverage for about $1,067 a year (about $89 a month) at ages 60-69. It excludes many pre-existing conditions.
 
 **Climate:**
 Mérida's average May temperature is close to 29.5°C (85°F). Oaxaca's altitude keeps it far milder, so you'll rarely need air conditioning.
@@ -47,24 +47,24 @@ At last check, the U.S. State Department rated Yucatán Level 1, "Exercise Norma
 
 ## What Your Money Buys in Each City
 
-Here's the surprise most comparisons miss: Oaxaca isn't cheaper on rent. Its downtown one-bedrooms average about MXN 13,371 ($720), while Mérida's average about MXN 11,875 ($640). Oaxaca's historic center is small and in high demand, which keeps rents up.
+Here's the surprise most comparisons miss: Oaxaca isn't cheaper on rent. Its downtown one-bedrooms average about $720, while Mérida's average about $640. Oaxaca's historic center is small and in high demand, which keeps rents up.
 
 Oaxaca wins nearly everywhere else. Restaurants there run about 22% below Mexico's national average, and groceries about 22% below. In Mérida, restaurants run about 9% above average, and groceries sit right at it.
 
 ### Side-by-Side Prices
 
-**Downtown one-bedroom:** Oaxaca MXN 13,371 ($720) · Mérida MXN 11,875 ($640)
-**One-bedroom outside the center:** Oaxaca MXN 9,217 ($497) · Mérida MXN 8,615 ($464)
-**Utilities for two (electric, gas, water):** Oaxaca MXN 889 ($48) · Mérida MXN 1,644 ($89)
-**Internet, 50 Mbps+:** Oaxaca MXN 455 ($25) · Mérida MXN 653 ($35)
-**Restaurant meal with a drink:** Oaxaca MXN 125 ($6.75) · Mérida MXN 259 ($14)
-**Cappuccino:** Oaxaca MXN 52 ($2.80) · Mérida MXN 74 ($4)
-**A dozen eggs:** Oaxaca MXN 32 ($1.70) · Mérida MXN 36 ($1.95)
-**A pound of chicken breast:** Oaxaca MXN 48 ($2.60) · Mérida MXN 66 ($3.55)
+**Downtown one-bedroom:** Oaxaca $720 · Mérida $640
+**One-bedroom outside the center:** Oaxaca $497 · Mérida $464
+**Utilities for two (electric, gas, water):** Oaxaca $48 · Mérida $89
+**Internet, 50 Mbps+:** Oaxaca $25 · Mérida $35
+**Restaurant meal with a drink:** Oaxaca $6.75 · Mérida $14
+**Cappuccino:** Oaxaca $2.80 · Mérida $4
+**A dozen eggs:** Oaxaca $1.70 · Mérida $1.95
+**A pound of chicken breast:** Oaxaca $2.60 · Mérida $3.55
 
 Bottom line: rent slightly favors Mérida, but daily life favors Oaxaca—and daily life is what you pay for every single day.
 
-### The $2,500 Monthly Test
+### The Monthly Budget Test
 
 Rent, utilities, internet, and meal prices come from the data above. Groceries, transport, healthcare, and household costs are Golden Horizons planning allowances—replace them with your own receipts.
 
@@ -77,7 +77,7 @@ Rent, utilities, internet, and meal prices come from the data above. Groceries, 
 **Healthcare (IMSS plus a reserve for visits and prescriptions):** $250
 **Phone and household (allowance):** $100
 **Estimated monthly total:** $1,670
-**Left over from $2,500:** $830
+**Left over from your budget:** $830
 
 **Mérida, central one-bedroom**
 **Rent:** $640
@@ -88,7 +88,7 @@ Rent, utilities, internet, and meal prices come from the data above. Groceries, 
 **Healthcare (IMSS plus a reserve for visits and prescriptions):** $250
 **Phone and household (allowance):** $100
 **Estimated monthly total:** $1,791
-**Left over from $2,500:** $709
+**Left over from your budget:** $709
 
 Move outside the center and the totals fall to about $1,447 in Oaxaca and $1,615 in Mérida.
 
@@ -110,13 +110,13 @@ Before you sign a lease, ask three questions: How many days a week does water ar
 
 ### Residency: The Real Gate
 
-Mexico's 2026 financial requirements are fixed multiples of the UMA, a government unit set at MXN 117.31 a day.
+Mexico's 2026 financial requirements are fixed multiples of the UMA, a government unit set by the government.
 
-**Temporary residency by income:** MXN 79,771 a month (about $4,300), shown for the past 6-12 months.
-**Temporary residency by savings:** MXN 1,344,373 (about $72,400), held for the past 12 months without dipping below it.
+**Temporary residency by income:** about $4,300 a month, shown for the past 6-12 months.
+**Temporary residency by savings:** about $72,400, held for the past 12 months without dipping below it.
 **Each additional family member:** An extra amount per person is required.
 
-Here's the honest picture: on $2,500 a month in Social Security alone, you won't qualify through income. You either need savings at the $72,400 level, or you visit as a tourist. Mexican immigration officers decide at the border how long a visitor may stay, and the maximum is 180 days. Some consulates set their own exchange rate, so check yours before you apply.
+Here's the honest picture: on this budget in Social Security alone, you won't qualify through income. You either need savings at the $72,400 level, or you visit as a tourist. Mexican immigration officers decide at the border how long a visitor may stay, and the maximum is 180 days. Some consulates set their own exchange rate, so check yours before you apply.
 
 ### Healthcare in Each City
 
@@ -124,7 +124,7 @@ Here's the honest picture: on $2,500 a month in Social Security alone, you won't
 
 **Oaxaca** has private options such as Hospital Reforma, plus the public Hospital Regional de Alta Especialidad de Oaxaca. For complex specialist care, many residents travel to Mexico City.
 
-Once you're a resident, IMSS's family health insurance costs MXN 19,800 a year (about $1,067) at ages 60-69, and MXN 20,650 (about $1,113) at 70-79, paid upfront. It won't enroll people with certain conditions—including cancer, chronic kidney or heart failure, and late complications of diabetes—and orthopedic surgery has a two-year waiting period.
+Once you're a resident, IMSS's family health insurance costs about $1,067 a year at ages 60-69, and about $1,113 at 70-79, paid upfront. It won't enroll people with certain conditions—including cancer, chronic kidney or heart failure, and late complications of diabetes—and orthopedic surgery has a two-year waiting period.
 
 Original Medicare generally doesn't cover care in Mexico. Some Medigap plans include limited foreign travel emergency coverage, but it's no substitute for a real health plan.
 
@@ -141,7 +141,7 @@ Get three written quotes for similar one-bedrooms in each city, with utilities a
 ### Walking versus riding
 
 **What the evidence says:**
-Oaxaca's compact center makes most errands walkable. Mérida's Va y Ven buses cost MXN 12 (about $0.65), or MXN 5 (about $0.27) with the social fare card for eligible riders such as seniors—but the heat makes rides more frequent.
+Oaxaca's compact center makes most errands walkable. Mérida's Va y Ven buses cost about $0.65, or about $0.27 with the social fare card for eligible riders such as seniors—but the heat makes rides more frequent.
 
 **What to check next:**
 Do the same three errands—groceries, pharmacy, and a café—from each rental, once at 10 a.m. and once at 3 p.m.
@@ -157,7 +157,7 @@ Ask landlords for the last 12 months of CFE bills in Mérida, and the water sche
 ### Income route versus savings route
 
 **What the evidence says:**
-Temporary residency requires about $4,300 a month in income or about $72,400 in savings. A $2,500 income only qualifies through the savings route.
+Temporary residency requires about $4,300 a month in income or about $72,400 in savings. That income only qualifies through the savings route.
 
 **What to check next:**
 Look up the exact figures on your nearest Mexican consulate's website before booking a long stay.
@@ -184,7 +184,7 @@ Get two private quotes for your age, and ask Star Médica (Mérida) or Hospital 
 - In Oaxaca: reliable water—ask about cisterns and delivery schedules before you sign.
 - In Oaxaca: specialist care close by; complex cases often go to Mexico City.
 - In Mérida: comfortable afternoons, with May averaging close to 29.5°C (85°F).
-- In both: easy residency, since $2,500 a month falls short of the roughly $4,300 income requirement.
+- In both: easy residency, since this budget falls short of the income requirement.
 
 The better city isn't the one that wins one afternoon. It's the one whose ordinary Tuesday still leaves money in your account.
 
@@ -192,7 +192,7 @@ The better city isn't the one that wins one afternoon. It's the one whose ordina
 
 ## The Golden Horizons 30-Day Test
 
-1. Before booking, compare your income and savings to Mexico's thresholds: about $4,300 a month, or about $72,400 in savings.
+1. Before booking, compare your income and savings to Mexico's income and savings thresholds above.
 
 2. Spend 15 days in each city—Oaxaca's Centro or Jalatlaco, and Mérida's Santiago or García Ginerés—and collect three rental quotes in each.
 
@@ -200,7 +200,7 @@ The better city isn't the one that wins one afternoon. It's the one whose ordina
 
 4. Eat 10 ordinary lunches in each city and compare your average to the $6.75 and $14 benchmarks.
 
-5. In Mérida, ride the Va y Ven at MXN 12 and ask how to get the reduced social fare card. In Oaxaca, walk your daily errands.
+5. In Mérida, ride the Va y Ven at about $0.65 a trip and ask how to get the reduced social fare card. In Oaxaca, walk your daily errands.
 
 6. Ask one private hospital in each city for a self-pay consultation price, and ask your landlords for CFE bills (Mérida) and the water schedule (Oaxaca).
 
@@ -212,15 +212,15 @@ Your own receipts from 30 days will be more useful than any online average.
 
 ### Is Oaxaca cheaper than Mérida?
 
-For daily life, yes. Restaurant meals in Oaxaca average about MXN 125 ($6.75) against MXN 259 ($14) in Mérida, and utilities run about $48 versus $89. Downtown rent is the exception: Oaxaca averages about $720 for a one-bedroom, against $640 in Mérida. Overall, our sample month comes out about $120 cheaper in Oaxaca. ([mylifeelsewhere.com](https://www.mylifeelsewhere.com/cost-of-living/mexico/oaxaca-de-juarez-c3593))
+For daily life, yes. Restaurant meals in Oaxaca average about $6.75 against $14 in Mérida, and utilities run about $48 versus $89. Downtown rent is the exception: Oaxaca averages about $720 for a one-bedroom, against $640 in Mérida. Overall, our sample month comes out about $120 cheaper in Oaxaca. ([mylifeelsewhere.com](https://www.mylifeelsewhere.com/cost-of-living/mexico/oaxaca-de-juarez-c3593))
 
 ### Can I get Mexican residency on $2,500 a month?
 
-Not through income alone. In 2026, temporary residency requires about MXN 79,771 a month (about $4,300) in income, or about MXN 1,344,373 (about $72,400) in savings held for 12 months. With $2,500 in income, the savings route is the realistic option. Exchange rates and consulate rules vary by 5-10%, so confirm with your consulate. ([mexperience.com](https://mexperience.com/financial-criteria-for-residency-in-mexico/))
+Not through income alone. In 2026, temporary residency requires about $4,300 a month in income, or about $72,400 in savings held for 12 months. With $2,500 in income, the savings route is the realistic option. Exchange rates and consulate rules vary by 5-10%, so confirm with your consulate. ([mexperience.com](https://mexperience.com/financial-criteria-for-residency-in-mexico/))
 
 ### How much does IMSS health insurance cost for retirees?
 
-IMSS family health insurance costs MXN 19,800 a year (about $1,067) at ages 60-69, and MXN 20,650 (about $1,113) at 70-79, paid upfront. You must be a resident to enroll. It won't accept people with certain pre-existing conditions, and some surgeries have waiting periods of up to two years. ([expansion.mx](https://expansion.mx/finanzas-personales/2025/12/10/modalidad-33-imss-seguro-medico-para-la-familia))
+IMSS family health insurance costs about $1,067 a year at ages 60-69, and about $1,113 at 70-79, paid upfront. You must be a resident to enroll. It won't accept people with certain pre-existing conditions, and some surgeries have waiting periods of up to two years. ([expansion.mx](https://expansion.mx/finanzas-personales/2025/12/10/modalidad-33-imss-seguro-medico-para-la-familia))
 
 ### Does Medicare cover me in Oaxaca or Mérida?
 
@@ -262,6 +262,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟠 HIGH-HURDLE — CHECK RESIDENCY FIRST**
+**Golden Horizons Verdict: 🟠 HIGH-HURDLE — TEST FIRST**
 
 On spending alone, Oaxaca wins by a nose: about $1,670 a month versus $1,790 in Mérida, with $700-$830 left over in either city. Oaxaca rewards walkers and market cooks; Mérida rewards people who want space, safety ratings, and private hospitals, and don't mind the heat. The real hurdle isn't the cost of living. It's residency: $2,500 a month falls short of the roughly $4,300 income requirement, so check your savings against the $72,400 threshold before you plan anything longer than a long visit.
