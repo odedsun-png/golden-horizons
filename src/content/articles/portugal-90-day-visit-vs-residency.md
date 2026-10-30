@@ -13,7 +13,7 @@ featured: false
 
 > **THE SHORT ANSWER:** A 90-day visit lets an American experience Portugal, but it does not make you a Portuguese resident. The usual retirement route is the D7 residence visa, which calls for regular income of roughly $980-$1,040 per month for one applicant, plus housing and health coverage. In Lisbon, a one-bedroom runs about $1,206 outside the center or $1,630 in the center, while a transit pass is about $45 monthly. A practical solo Lisbon budget can land around $1,725-$2,295 before private health coverage.
 
-A Lisbon cappuccino may cost about $3. A one-bedroom can cost $1,206 outside the center. Those numbers can make a long stay feel within reach—until the 90th day arrives and you realize that enjoying Portugal is not the same thing as having the right to live there.
+A Lisbon cappuccino may cost about $3. Rent is the far bigger number. Those numbers can make a long stay feel within reach—until the 90th day arrives and you realize that enjoying Portugal is not the same thing as having the right to live there.
 
 That distinction is the heart of a Portugal retirement plan. A short Schengen stay is valuable for trying out the hills, café rhythm, transit, and grocery routine. But for Americans living on pensions, investments, or other regular income, residence usually means pursuing the D7 visa before making the move.
 
@@ -153,9 +153,9 @@ Request written policy details from both insurers. Ask about monthly premiums, e
 
 ## The Golden Horizons 30-Day Test
 
-1. Read the current D7 guidance from RVG Portugal and visas.pt. Compare the main-applicant income range of roughly $980-$1,040 with your documented pension, Social Security, or investment income.
+1. Read the current D7 guidance from RVG Portugal and visas.pt. Compare the main-applicant income range above with your documented pension, Social Security, or investment income.
 2. Spend time in both Baixa-Chiado and Alfama. Note grocery access, hill walking, noise, transit, and rental listings near each area.
-3. Build a personal Lisbon budget using the $1,206 outside-center and $1,630 city-center rent anchors. Add your own food, travel, and health needs.
+3. Build a personal Lisbon budget using the outside-center and city-center rent figures above. Add your own food, travel, and health needs.
 4. Take at least 10 local transit rides at about $2 each. Then decide whether the $45 monthly pass fits the way you would actually live.
 5. Buy ordinary groceries over four weeks. Compare your total with eggs at about $4 a dozen, bread at about $2 a loaf, and milk at about $1 a liter.
 6. Contact Médis and Multicare. Ask whether plans include CUF Descobertas Hospital or Hospital da Luz Lisboa, and request written answers on exclusions, hospital access, and monthly premiums.
@@ -167,23 +167,23 @@ Request written policy details from both insurers. Ask about monthly premiums, e
 
 ### Can a 90-day tourist stay make me a legal resident of Portugal?
 
-No. A 90-day Schengen visit is for short-term travel, while residence requires a separate route such as the D7 visa. The D7 calls for regular income, housing, and health coverage; for one applicant, the current income reference is roughly $980-$1,040 per month. (RVG Portugal)
+No. A 90-day Schengen visit is for short-term travel, while residence requires a separate route such as the D7 visa. The D7 calls for regular income, housing, and health coverage; for one applicant, the current income reference is roughly $980-$1,040 per month. ([rvg.pt](https://rvg.pt))
 
 ### What income do I need for Portugal’s D7 visa?
 
-For a main applicant, the 2026 reference point is roughly $980-$1,040 per month in regular income. A spouse generally increases the income expectation by 50%, and each dependent generally adds 30%. Gather records that show the income is regular and available to you when you apply. (visas.pt)
+For a main applicant, the 2026 reference point is roughly $980-$1,040 per month in regular income. A spouse generally increases the income expectation by 50%, and each dependent generally adds 30%. Gather records that show the income is regular and available to you when you apply. ([visas.pt](https://visas.pt))
 
 ### What does a one-bedroom apartment cost in Lisbon?
 
-A one-bedroom in Lisbon’s city center averages about $1,630 monthly. Outside the center, the average is about $1,206 monthly. Baixa-Chiado and Alfama can give you a useful feel for central life, but compare actual listings before you commit. (Numbeo)
+A one-bedroom in Lisbon’s city center averages about $1,630 monthly. Outside the center, the average is about $1,206 monthly. Baixa-Chiado and Alfama can give you a useful feel for central life, but compare actual listings before you commit. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Lisbon))
 
 ### What should I budget for ordinary Lisbon utilities and transport?
 
-Basic apartment utilities, broadband, and a mobile plan together can approach $214 monthly. A local one-way transit ticket is about $2, while a monthly pass is about $45. Add groceries, meals out, and rent before deciding whether your income leaves enough room for health coverage. (Numbeo)
+Basic apartment utilities, broadband, and a mobile plan together can approach $214 monthly. A local one-way transit ticket is about $2, while a monthly pass is about $45. Add groceries, meals out, and rent before deciding whether your income leaves enough room for health coverage. ([expatistan.com](https://www.expatistan.com/cost-of-living/lisbon))
 
 ### Do American retirees commonly use private healthcare in Portugal?
 
-Many foreign retirees use private coverage or pay privately alongside Portugal’s public system, especially when quicker appointments matter to them. Ask Médis and Multicare whether their plans include CUF Descobertas Hospital or Hospital da Luz Lisboa. A 90-day visit is a good time to compare insurers, hospitals, and the care options that fit your own needs. (SRS Legal)
+Medicare generally does not pay for routine care outside the United States, so a Portugal health plan needs to stand on its own. Ask Médis and Multicare whether their plans include CUF Descobertas Hospital or Hospital da Luz Lisboa, and request written answers on 3 items before you commit: premiums, exclusions, and hospital access. ([medicare.gov](https://www.medicare.gov/coverage/travel-outside-the-us))
 
 ## Check Today's Information Before You Decide
 
@@ -198,6 +198,7 @@ Check the latest Lisbon price pages before setting a rent target. Also consult t
 - [Expatistan: Cost of Living in Lisbon](https://www.expatistan.com/cost-of-living/lisbon) — provides a second city-cost reference for everyday budgeting.
 - [RVG Portugal D7 guidance](https://rvg.pt) — supports the distinction between a tourist stay and the retirement/passive-income residence route.
 - [visas.pt D7 guidance](https://visas.pt) — supports current D7 income and document-planning checks.
+- [Medicare.gov: Travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-us) — supports the point that Original Medicare generally does not cover routine care abroad.
 - [U.S. Department of State Portugal Travel Advisory](https://travel.state.gov) — supports current travel-planning checks.
 
 Information checked: October 29, 2026
