@@ -11,7 +11,7 @@ featured: false
 # Did You Know? Buying Property in Mexico Doesn't Automatically Grant Residency
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** Buying property in Mexico does not give you residency. In Mexico City, a one-bedroom runs about $805 outside the center or $1,200 in the center, utilities average about $64, internet about $35, a monthly transit pass about $20, and a casual lunch about $11. Residente Temporal and Residente Permanente both require a separate visa application and financial records.
+> **THE SHORT ANSWER:** Buying property in Mexico does not give you residency. In Mexico City, a one-bedroom runs about $770 outside the center or $1,150 in the center, utilities about $61, internet about $34, a monthly transit pass about $19, and a casual lunch about $11. The catch: Residente Temporal and Residente Permanente each need a separate visa application and financial records, and the exact income or savings bar is set by your consulate, not by the deed.
 
 The apartment keys may be real. The balcony, the neighborhood café, and the plan to return every winter may be real, too. But none of them automatically opens the immigration door.
 
@@ -32,7 +32,7 @@ A deed, condominium contract, or home purchase does not replace the financial pa
 Mexico uses visa pathways, usually beginning at a Mexican consulate and continuing with Instituto Nacional de Migración after arrival.
 
 **Housing / daily life:**  
-A one-bedroom averages about $1,200 in the city center and about $805 outside the center. These are broad Mexico City categories, not promises for a particular neighborhood.
+Rents differ sharply between the center and the outside. These are broad Mexico City categories, not promises for a particular neighborhood.
 
 **Healthcare:**  
 Make private-care options and insurance part of the plan before moving, particularly if you expect regular care after age 60.
@@ -69,15 +69,15 @@ Mexico and the United States have an income-tax treaty, but living abroad does n
 
 Mexico City can make daily life feel close at hand: public transit, neighborhood restaurants, groceries, cafés, and apartment living near the services you use every week. But the rent listing is only the opening number.
 
-Mexico City listings updated October 31, 2026 put a one-bedroom at about $1,200 in the city center and about $805 outside the center. Basic monthly utilities average about $64, internet about $35, and mobile service about $29.
+Numbeo's Mexico City page (updated November 1, 2026; 138 contributors in the past 12 months) puts a one-bedroom at about $1,150 in the city center and about $770 outside it. Converted at the roughly 18.8-to-1 rate implied by Numbeo's own single-person total, basic monthly utilities are about $61, internet about $34, and mobile service about $28.
 
 Those are broad city categories, not neighborhood quotes. A central apartment may put errands, transit, restaurants, and medical offices closer by. An outside-center apartment may leave more room for groceries, meals out, and travel home.
 
 ### A Tuesday in Mexico City
 
-Start the morning with a regular cappuccino for about $4. Pick up milk for about $2, bread for about $3, and eggs for about $3. Rice and produce add to the cart, but usually cost less than a similar quick stop in many large U.S. cities.
+Start the morning with a regular cappuccino for about $3.70. Pick up milk for about $1.70, bread for about $2.60, and a dozen eggs for about $2.80. Rice and produce add to the cart, but usually cost less than a similar quick stop in many large U.S. cities.
 
-A one-way local transit ride is about $0.33, while a monthly pass is about $20. An inexpensive restaurant lunch is about $11, and a modest dinner often runs about $11 to $17. These small prices are one reason a Mexico City routine can feel easier on the wallet than daily driving, parking, and restaurant meals in the United States.
+A one-way local transit ride is about $0.32, while a monthly pass is about $19. An inexpensive restaurant lunch is about $11. These small prices are one reason a Mexico City routine can feel easier on the wallet than daily driving, parking, and restaurant meals in the United States.
 
 ### Rent is only half the question
 
@@ -91,11 +91,11 @@ The city can feel generous in the small moments: a subway ride, a corner café, 
 
 Mexico City is a large capital city, and the area you choose will shape far more than your view. Think about where you shop, how you travel after dark, how easily you can get to care, and whether the routes you will use every week feel workable.
 
-Check the U.S. State Department’s Mexico advisory before each scouting trip and again before a long-term move. A broad impression of a city is less useful than knowing how your own daily routine feels.
+The U.S. State Department rates Mexico Level 2, Exercise Increased Caution (reissued May 28, 2026 ET), citing terrorism, crime and kidnapping, and advises against intercity travel after dark. Levels are also set state by state; we could not open the state list today, so check the Mexico City entry yourself before each scouting trip and again before a long-term move. A broad impression of a city is less useful than knowing how your own daily routine feels.
 
 Healthcare deserves the same advance planning as residency. Before choosing an area, identify two nearby hospitals or clinics and ask about appointments, self-pay prices, insurance acceptance, and urgent-care access.
 
-Medicare usually does not pay for routine care outside the United States. Review your Medicare arrangements before leaving, and keep a plan for care during visits home, emergencies, or a future return to U.S. residence.
+Original Medicare generally does not pay for medical services outside the United States. Review your Medicare arrangements before leaving, and keep a plan for care during visits home, emergencies, or a future return to U.S. residence.
 
 A beautiful apartment matters. A grocery store, transit stop, and healthcare option you can reach comfortably may matter more.
 
@@ -120,7 +120,7 @@ Compare the document lists for both routes. Gather bank statements, pension reco
 ### City-center versus outside-center living
 
 **What the evidence says:**  
-A one-bedroom averages about $1,200 in Mexico City’s center and about $805 outside the center. Basic utilities average about $64, internet about $35, and mobile service about $29 per month. (Numbeo, October 31, 2026)
+A one-bedroom averages about $1,150 in Mexico City’s center and about $770 outside the center. Basic utilities average about $61, internet about $34, and mobile service about $28 per month (Numbeo, November 1, 2026).
 
 **What to check next:**  
 Spend 14 days in one area and 14 days in another. Use local transit, grocery stores, cafés, and nearby medical services as you normally would.
@@ -131,15 +131,15 @@ Spend 14 days in one area and 14 days in another. Use local transit, grocery sto
 A purchase does not replace a residency application. A rental gives you time to complete visa steps and learn the city while keeping housing and immigration decisions separate.
 
 **What to check next:**  
-Use a 30-day furnished rental before signing a purchase contract. Compare your actual spending with the city’s published prices: about $4 for a cappuccino, $11 for lunch, $0.33 for one transit ride, and $20 for a monthly transit pass.
+Use a 30-day furnished rental before signing a purchase contract. Compare your actual spending with the city’s published prices: a cappuccino, a casual lunch, one transit ride, and a monthly transit pass.
 
 ## The Trade-Off
 
 **What you may gain:**
-- A one-bedroom outside the city center averages about $805 per month, compared with about $1,200 in the center.
-- Basic utilities average about $64 per month, with internet around $35 and mobile service around $29.
-- Public transit can be a low-cost part of daily life at about $0.33 per ride or $20 for a monthly pass.
-- A café cappuccino costs about $4, while a casual lunch averages about $11.
+- Outside-center rent runs well below city-center rent.
+- Basic utilities average about $61 per month, with internet around $34.
+- Public transit can be a low-cost part of daily life at about $0.32 per ride or $19 for a monthly pass.
+- A casual lunch averages about $11.
 - A 30-day rental gives you time to test the real rhythm of errands, transit, and care before you buy.
 
 **What you may give up:**
@@ -171,37 +171,41 @@ Use a 30-day furnished rental before signing a purchase contract. Compare your a
 
 ### Can I buy a home in Mexico and immediately live there full-time?
 
-No. Buying a home does not automatically grant residency, a visa, or long-term permission to stay in Mexico. You must apply through a residency route such as Residente Temporal or Residente Permanente and meet the consulate’s current financial requirements. Start with the Mexican consulate serving your U.S. address, then follow Instituto Nacional de Migración procedures after arrival when required. (Instituto Nacional de Migración)
+No: buying 1 home does not grant residency, a visa, or long-term permission to stay in Mexico. You must apply through a residency route such as Residente Temporal or Residente Permanente and meet the consulate’s current financial requirements. Start with the Mexican consulate serving your U.S. address, then follow Instituto Nacional de Migración procedures after arrival. The INM page on permanent residency for retirees lists income from a pension and does not list property ownership. ([gob.mx](https://www.gob.mx/inm/es/articulos/todo-lo-que-necesitas-saber-para-convertirte-en-residente-permanente-en-mexico))
 
-### What residency options do retired Americans usually consider?
+### Does Medicare cover me if I retire in Mexico?
 
-The 2 main options are Residente Temporal and Residente Permanente. Permanent residency is often considered by retirees with pension income or savings, while temporary residency can suit a shorter or more flexible plan. The consulate serving your address sets the financial documents it wants to see, so ask for its current threshold before you schedule a move. Plan several months for appointments, document gathering, and the immigration steps. (Instituto Nacional de Migración)
+Generally no: Original Medicare does not pay for medical services outside the United States, apart from narrow emergency exceptions. Plan for private payment or insurance, ask 2 nearby clinics for self-pay prices, and keep a plan for visits home. Residency itself is separate: Residente Temporal and Residente Permanente are the 2 main routes, and your consulate sets the financial documents. ([aarp.org](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/))
 
 ### Should I buy in Mexico City before applying for residency?
 
-A purchase can be part of your long-term plan, but it should not be treated as your visa strategy. Renting for 30 days gives you time to compare the roughly $1,200 city-center average with the roughly $805 outside-center average. Keep the property decision and the immigration decision as 2 separate files. (Numbeo; Instituto Nacional de Migración)
+A purchase can be part of your long-term plan, but it should not be treated as your visa strategy. Renting for 30 days gives you time to compare the roughly $1,150 city-center average with the roughly $770 outside-center average. Keep the property decision and the immigration decision as 2 separate files, and check the state-level advisory for any area you plan to buy in. ([travel.state.gov](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html))
 
 ### What everyday costs should I track during a Mexico City trial stay?
 
-Track rent, utilities, internet, mobile service, groceries, public transit, and restaurant meals. Mexico City listings show about $64 for utilities, $35 for internet, $29 for mobile service, $4 for a cappuccino, $11 for a casual meal, and $20 for a monthly transit pass. Add milk at about $2, bread at about $3, and eggs at about $3 to your grocery log. A written 30-day spending record tells you more than a single apartment listing. (Numbeo, October 31, 2026)
+Track rent, utilities, internet, mobile service, groceries, public transit, and restaurant meals. Numbeo shows about $61 for utilities, $34 for internet, $28 for mobile service, $11 for a casual meal, and $19 for a monthly transit pass, with a single person's non-rent costs near $770 a month. A written 30-day spending record tells you more than a single apartment listing. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Mexico-City))
 
 ### What safety planning should retirees do before moving to Mexico City?
 
-Check the U.S. State Department’s Mexico advisory before every scouting trip and again before committing to a long-term move. During a 30-day stay, test daytime and evening routes between your rental, grocery stores, transit, and 2 nearby healthcare options. Ask nearby clinics about self-pay appointments and urgent-care access. Your own neighborhood routine matters more than an impression formed over a weekend. (U.S. State Department)
+Mexico is Level 2 (May 2026), and Original Medicare generally does not pay for care outside the United States. Check the U.S. State Department’s Mexico advisory before every scouting trip and again before committing to a long-term move. During a 30-day stay, test daytime and evening routes between your rental, grocery stores, transit, and 2 nearby healthcare options. Ask nearby clinics about self-pay appointments and urgent-care access. Your own neighborhood routine matters more than an impression formed over a weekend. ([cadataapi.state.gov](https://cadataapi.state.gov/api/TravelAdvisories))
 
 ## Check Today's Information Before You Decide
 
 - [Mexico residency guidance from Instituto Nacional de Migración](https://www.gob.mx/inm/es/articulos/todo-lo-que-necesitas-saber-para-convertirte-en-residente-permanente-en-mexico)
-- [U.S. State Department travel advisory for Mexico](https://travel.state.gov/)
+- [U.S. State Department travel advisory for Mexico](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html)
+- [State Department travel advisories data feed](https://cadataapi.state.gov/api/TravelAdvisories)
+- [AARP: does Medicare cover you outside the US?](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/)
 - [Cost of Living in Mexico City](https://www.numbeo.com/cost-of-living/in/Mexico-City/)
 
 ## Sources & Verification
 
 - [Instituto Nacional de Migración: Residente Permanente guidance](https://www.gob.mx/inm/es/articulos/todo-lo-que-necesitas-saber-para-convertirte-en-residente-permanente-en-mexico) — residency pathways and immigration-process context for long-term residents.
-- [Numbeo: Cost of Living in Mexico City](https://www.numbeo.com/cost-of-living/in/Mexico-City/) — Mexico City housing categories, utilities, transit, groceries, cafés, and casual dining figures updated October 31, 2026.
-- [U.S. State Department: Mexico travel information](https://travel.state.gov/) — current Mexico travel-advisory information.
+- [Numbeo: Cost of Living in Mexico City](https://www.numbeo.com/cost-of-living/in/Mexico-City/) — Mexico City housing categories, utilities, transit, groceries, cafés, and casual dining figures updated November 1, 2026.
+- [U.S. State Department: Mexico travel advisory](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html) — country advisory.
+- [State Department advisories data feed](https://cadataapi.state.gov/api/TravelAdvisories) — Mexico Level 2, May 28, 2026 (ET).
+- [AARP — Does Medicare cover me outside the US?](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/) — Original Medicare generally does not pay for care abroad.
 
-Information checked: November 1, 2026
+Information checked: November 2, 2026
 
 ## Related Golden Horizons Guides
 
