@@ -12,16 +12,16 @@ featured: false
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** For one person, $2,500 a month works in Lisbon if you keep rent near $1,150–$1,550. Groceries run about $250–$350, utilities and internet about $235–$280, and a senior health plan about $124–$202 a month. Once you're a Lisbon tax resident at 65, buses and the Metro are free. A realistic total lands near $1,909–$2,676. The catch: rent decides everything, and a central address can push you past $2,500.
+> **THE SHORT ANSWER:** For one person, $2,500 a month works in Lisbon if you keep rent near $1,150–$1,550. Groceries run about $250–$350, utilities and internet about $235–$280, and a senior health plan about $124–$202 a month. Once you're a Lisbon tax resident at 65, buses and the Metro are free. A realistic total lands near $1,909–$2,676. The catch: rent decides everything, and a central address can push you past your budget.
 
 For $1.35 you can stand at the counter of Café Janis in Cais do Sodré with an espresso, a few minutes from the river. Lisbon's small pleasures still cost very little.
 
-The apartment is a different story. A furnished place in a normal Lisbon neighborhood runs about $1,059 for a studio and $1,548 for a larger flat. Where you sign the lease decides whether $2,500 feels comfortable or tight.
+The apartment is a different story. A furnished place in a normal Lisbon neighborhood runs about $1,059 for a studio and $1,548 for a larger flat. Where you sign the lease decides whether your budget feels comfortable or tight.
 
 ## Retirement Snapshot
 
 **Primary decision:**
-Whether you can keep rent low enough that $2,500 still covers health insurance and a life you enjoy.
+Whether you can keep rent low enough that your budget still covers health insurance and a life you enjoy.
 
 **Best fit:**
 A single retiree, 65 or older, happy in a smaller apartment in Arroios or Graça, cooking at home most days.
@@ -40,13 +40,13 @@ Private hospitals include Hospital da Luz Lisboa and CUF Descobertas. A 15-minut
 
 ## What $2,500 Has to Cover in Lisbon
 
-Here's the thing about Lisbon: almost everything costs less than at home except the apartment. Rent takes half or more of a $2,500 budget, so the neighborhood you choose matters more than any other line.
+Here's the thing about Lisbon: almost everything costs less than at home except the apartment. Rent takes half or more of your budget, so the neighborhood you choose matters more than any other line.
 
 ### Rent by neighborhood
 
 **Arroios:** central and mixed-use, with one-bedroom listings commonly around $1,150–$1,750. It sits on the green Metro line.
 
-**Graça:** a residential, village-like hilltop with a similar $1,150–$1,750 search range. The views are real, and so are the hills.
+**Graça:** a residential, village-like hilltop with a similar search range. The views are real, and so are the hills.
 
 **Normal-area average:** Expatistan's October 2026 data puts a furnished studio at about $1,059 and a larger 85 m² flat at about $1,548.
 
@@ -58,7 +58,7 @@ Groceries are the good news. A liter of milk is about $1.26, a dozen eggs about 
 
 Eating out can still be an easy treat. A business-district lunch menu with a drink runs about $13.49, and dinner for two with wine is about $48. An 8-km taxi is about $13.49, so most errands are cheaper by Metro.
 
-Bottom line: if your rent stays near $1,150, the rest of Lisbon fits comfortably inside $2,500.
+Bottom line: if your rent stays near the low end of that range, the rest of Lisbon fits comfortably inside the budget.
 
 ## The $2,500 Monthly Test
 
@@ -69,14 +69,14 @@ Bottom line: if your rent stays near $1,150, the rest of Lisbon fits comfortably
 **Health insurance:** $124–$202 for a senior plan such as Multicare's
 **Local transportation:** $0–$44 (free at 65 with Lisbon tax residence; otherwise a $44 monthly pass)
 **Dining / everyday extras:** $150–$250
-**Evidence confidence:** Moderate. These are crowd-sourced city averages, and rents vary by building and furnishing.
+**Data confidence:** Moderate. These are crowd-sourced city averages, and rents vary by building and furnishing.
 **GH Budget Read:** Works for one person at normal-area rents. It gets tight above about $1,800 in rent.
 
 **Estimated core monthly spend:** $1,909–$2,676
 **Remaining buffer vs the $2,500 budget:** +$591 to -$176
 **Income requirement:** $1,034/month for one person on the D7 visa ($1,551 for a couple), plus about $12,409 in savings.
 
-**How your money compares to the US:** A senior private plan in Lisbon runs about $124–$202 a month, close to the $202.90 standard Medicare Part B premium you pay in the U.S. in 2026. If you keep Part B while living abroad, budget for both. And a $2,500 income clears the D7 bar with about $1,466 to spare.
+**How your money compares to the US:** A senior private plan in Lisbon runs about $124–$202 a month, close to the $202.90 standard Medicare Part B premium you pay in the U.S. in 2026. If you keep Part B while living abroad, budget for both. And the headline budget clears the D7 bar with about $1,466 to spare.
 
 **A Typical Day in Lisbon**
 
@@ -94,7 +94,7 @@ Healthcare is part of your legal-stay budget from day one. Private health insura
 
 **Public care (SNS):** once you hold residence, register at your local centro de saúde with your NIF, proof of address, and residence card. Your número de utente is issued the same day. A family doctor can take 6–18 months to assign in Lisbon, so plan on private care first.
 
-**Residency:** the D7 income bar is tied to Portugal's minimum wage, €920 a month in 2026, which is about $1,034. Apply through the Portuguese consulate in the U.S., then complete residence with AIMA, which replaced SEF in October 2023.
+**Residency:** the D7 income bar is tied to Portugal's 2026 minimum wage, about $1,034 a month. Apply through the Portuguese consulate in the U.S., then complete residence with AIMA, which replaced SEF in October 2023.
 
 **Medicare:** it generally doesn't pay for care outside the United States. Decide before you move whether to keep paying Part B as a backup for trips home.
 
@@ -113,7 +113,7 @@ View at least 3 apartments in Arroios and 2 in Alfama, and note the walk to the 
 ### Graça vs. flatter streets
 
 **What the evidence says:**
-Graça has a similar $1,150–$1,750 rent range, but its hills turn a short walk into a climb. An 8-km taxi costs about $13.49 when your knees say no.
+Graça has a similar rent range, but its hills turn a short walk into a climb. A short taxi ride helps when your knees say no.
 
 **What to check next:**
 Walk your likely grocery route twice with a full bag, once in the late afternoon.
@@ -129,7 +129,7 @@ Ask at a Navegante service point what documents you need to get the senior pass 
 ### Local insurance vs. keeping Medicare Part B
 
 **What the evidence says:**
-A Lisbon senior plan costs about $124–$202 a month. Part B costs $202.90 a month in 2026 and generally doesn't pay for care in Portugal.
+A Lisbon senior plan costs about the same as Part B, which costs $202.90 a month in 2026 and generally doesn't pay for care in Portugal.
 
 **What to check next:**
 Get written quotes from Multicare and Médis at your age, and ask about pre-existing conditions and waiting periods.
@@ -141,7 +141,7 @@ Get written quotes from Multicare and Médis at your age, and ask about pre-exis
 - A realistic one-person budget of about $1,909–$2,676, including health insurance.
 - Free buses and Metro at 65 once you're a Lisbon tax resident, a $44-a-month saving.
 - A $1.35 espresso, a $13.49 lunch menu, and $48 dinners for two.
-- A visa income bar of about $1,034 a month, well under $2,500.
+- A visa income bar of about $1,034 a month, well under the headline budget.
 
 **What you may give up:**
 
@@ -154,10 +154,10 @@ Get written quotes from Multicare and Médis at your age, and ask about pre-exis
 
 ## The Golden Horizons 30-Day Test
 
-1. Rent a furnished apartment in Arroios for one month and compare the real price with the $1,150–$1,750 range.
+1. Rent a furnished apartment in Arroios for one month and compare the real price with the Arroios range above.
 2. View 3 one-bedrooms in Graça and walk each one's grocery route with a full bag.
-3. Buy a $44 monthly Navegante pass and track every trip, including how often you'd still take a $13.49 taxi.
-4. Shop at a neighborhood Pingo Doce or Continente for 4 weeks and total it against the $250–$350 grocery plan.
+3. Buy a monthly Navegante pass and track every trip, including how often you'd still take a taxi.
+4. Shop at a neighborhood Pingo Doce or Continente for 4 weeks and total it against your grocery plan.
 5. Book a private check-up at Hospital da Luz Lisboa or CUF Descobertas and compare the bill with the $82 average.
 6. Get written insurance quotes from Multicare and Médis at your exact age, then compare them with the $202.90 Part B premium.
 
@@ -171,7 +171,7 @@ Yes, if rent stays near $1,150–$1,550. A realistic total, including a senior h
 
 ### How much income do I need for Portugal's D7 retirement visa?
 
-The D7 is tied to Portugal's minimum wage, €920 a month in 2026, which is about $1,034 for one person. A spouse adds 50%, for about $1,551 for a couple. Applicants also commonly show about 12 months of that income in savings, roughly $12,409. ([portugalist.com](https://www.portugalist.com/minimum-wage-2026))
+The D7 is tied to Portugal's 2026 minimum wage, about $1,034 a month for one person. A spouse adds 50%, for about $1,551 for a couple. Applicants also commonly show about 12 months of that income in savings, roughly $12,409. ([portugalist.com](https://www.portugalist.com/minimum-wage-2026))
 
 ### What does health insurance cost a retiree in Lisbon?
 
