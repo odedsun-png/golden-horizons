@@ -10,9 +10,9 @@ featured: false
 
 # What $2,000 a Month Gets You in David, Panama — Rent, Groceries, Healthcare, and the Catch
 
-**Golden Horizons Status:** 🟡 WORTH TESTING — THE NUMBER WORKS IN THE RIGHT NEIGHBORHOOD
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** For one person, $2,000 a month works in David. A furnished apartment runs about $449–$835, a business-district lunch is about $8, a monthly bus pass is $46, and local health insurance plans start around $50–$125 a month. A realistic all-in budget lands near $1,300–$2,000, so you keep a real cushion at normal-area rents and very little at upscale ones. The catch: David is hot and humid, air conditioning can triple your electric bill, and some specialist care means a trip to Panama City.
+> **THE SHORT ANSWER:** For one person, $2,000 a month works in David. A furnished apartment runs about $449–$835, a business-district lunch is about $8, a monthly bus pass is $46, and local health insurance starts around $50 a month. Core costs land near $1,130–$1,480 in a normal area, so you keep $520 or more, and closer to $140 at upscale rents. The catch: David is hot and humid, air conditioning can triple your electric bill, and some specialist care means a trip to Panama City.
 
 You get paid in dollars, and in Panama you spend in dollars. There is no exchange rate eating your Social Security check, which is the first thing most American retirees notice here.
 
@@ -30,10 +30,13 @@ A single retiree, or a frugal couple, who values low costs, real hospitals, an a
 The heat. David sits in the lowlands, and running air conditioning is what turns a $57 utility bill into a $180 one.
 
 **Planning-budget lens:**
-A realistic single budget runs about $1,300–$2,000 a month including health insurance, based on the published price lists below.
+A single budget runs about $1,130–$1,480 a month in a normal area, including health insurance, based on the published price lists below.
 
 **Residency:**
-Panama's Pensionado visa is commonly listed at $1,000 a month of guaranteed pension income for one person, or $1,250 for a couple. Confirm the current figure before you apply.
+Panama's immigration service requires a lifetime pension of at least $1,000 a month for the Pensionado visa, plus $250 a month for each dependent.
+
+**Safety:**
+Panama is Level 2, "Exercise increased caution," in the State Department's August 2026 advisory. The higher-risk areas it names are the Darién region and the Mosquito Gulf, far from Chiriquí.
 
 **Healthcare:**
 Two private hospitals in town, Hospital Chiriquí and Mae Lewis Medical Center, plus the public Hospital José Domingo de Obaldía.
@@ -70,11 +73,19 @@ These numbers come from two crowd-sourced price lists, Expatistan (October 2026)
 
 **Extras:** plan about $100 for things like a $10 haircut, $8 for two movie tickets, and a $38 gym membership.
 
-**Estimated total (single):** about $1,300 at normal-area rent with light AC, up to about $2,000 in an expensive area with heavy AC and a premium insurance plan.
+**Estimated core monthly spend:** $1,130–$1,480 in a normal area (light AC and basic insurance at the low end, heavy AC and a broader plan at the high end), or about $1,860 in an expensive area with heavy AC.
 
-For context, the Social Security Administration's average benefit is about $1,335 a month for someone who claims at 62 and about $2,521 at 67. David is one of the few places where the lower of those two numbers can still cover a modest life.
+**Remaining buffer vs the $2,000 budget:** about +$520 to +$870 in a normal area, and about +$140 in an expensive one.
 
-Bottom line: the $2,000 budget holds, with $500–$700 left over, if you rent in a normal area. Choose the upscale apartment and run the AC hard, and you're at break-even.
+**Income requirement:** a lifetime pension of at least $1,000 a month for the Pensionado visa, plus $250 a month per dependent, so $1,250 for a couple.
+
+**How your money compares to the US:** Panama uses the U.S. dollar, so there's no exchange-rate risk on your Social Security check. A local health plan typically costs about the same as or less than the $202.90 standard Medicare Part B premium for 2026, which you still owe if you keep Part B while abroad.
+
+**A Typical Day in David**
+
+A chiva ride across town costs about $0.35. Lunch in the business district is about $8, a liter of milk is $1.49, and a dozen eggs is $2.47. Dinner for two at a pub runs about $21.
+
+Bottom line: the budget holds with a real cushion if you rent in a normal area. Choose the upscale apartment and run the AC hard, and your margin shrinks to about $140.
 
 ## Healthcare and Residency in David
 
@@ -86,9 +97,9 @@ This is the section most guides rush, and it's the one that decides whether Davi
 
 **Medicare:** it generally doesn't pay for care outside the United States. If you plan to come back for major care, keep your U.S. plan in mind when you price local insurance.
 
-**Residency:** Panama's Pensionado visa is widely listed at $1,000 a month of lifetime pension income for one person, $750 if you also own Panamanian property, and $1,250 for a couple. The visa also carries legal discounts, commonly listed as 25% at restaurants, 20% on medical consultations, 25% on airfare, and 50% on movies and entertainment.
+**Residency:** Panama's National Migration Service requires a lifetime pension of at least $1,000 a month, plus $250 a month per dependent. Some guides list a lower bar for property owners, so ask an attorney. The visa also carries legal discounts, commonly listed as 25% at restaurants, 20% on medical consultations, 25% on airfare, and 50% on movies and entertainment.
 
-Bottom line: those Pensionado discounts effectively stretch your $2,000 further. Confirm the current rules with Panama's immigration service or a licensed attorney before you count on them.
+Bottom line: those Pensionado discounts effectively stretch your budget further. Confirm the current rules with Panama's immigration service or a licensed attorney before you count on them.
 
 ## Practical Comparison
 
@@ -128,7 +139,7 @@ Get 2 written quotes, one each from ASSA and MAPFRE, and ask exactly what happen
 
 **What you may gain:**
 
-- Furnished rent from about $449 a month and a realistic budget under $2,000.
+- Furnished rent in the mid-$400s and a core budget near $1,130–$1,480.
 - US dollars, so no exchange-rate risk on your Social Security check.
 - Two private hospitals in town and an airport with daily Copa connections.
 - Pensionado discounts, commonly listed at 25% on restaurants and 20% on medical consultations.
@@ -146,7 +157,7 @@ Get 2 written quotes, one each from ASSA and MAPFRE, and ask exactly what happen
 
 ## The Golden Horizons 30-Day Test
 
-1. Rent a furnished apartment in a normal area for one month. Compare the real price with the $449 reference, and ask about the quieter areas of Urbanización La Hacienda and San Cristóbal.
+1. Rent a furnished apartment in a normal area for one month. Compare the real price with the normal-area reference, and ask about the quieter areas of Urbanización La Hacienda and San Cristóbal.
 2. Keep every utility receipt. If your electric bill heads toward $183 with the AC on, budget for it now.
 3. Shop at Super 99 and Super Barú for 4 weeks and total it against the $300 grocery plan.
 4. Visit Hospital Chiriquí or Mae Lewis Medical Center for a check-up. Compare the bill with the $33 reference and ask where they refer patients for specialists.
@@ -159,7 +170,7 @@ Get 2 written quotes, one each from ASSA and MAPFRE, and ask exactly what happen
 
 ### Can one person really live in David on $2,000 a month?
 
-Yes, for a modest lifestyle. Furnished rent runs about $449 in a normal area and $835 in an expensive one, and a realistic all-in budget lands around $1,300–$2,000 including health insurance. The deciding factors are your neighborhood and how much you run the air conditioning. ([expatistan.com](https://www.expatistan.com/cost-of-living/david))
+Yes, for a modest lifestyle. Furnished rent runs about $449 in a normal area and $835 in an expensive one, and core costs land around $1,130–$1,480 a month in a normal area, including health insurance. The deciding factors are your neighborhood and how much you run the air conditioning. ([expatistan.com](https://www.expatistan.com/cost-of-living/david))
 
 ### How much are utilities in David with air conditioning?
 
@@ -167,7 +178,7 @@ Expatistan lists about $57 a month for two people with normal use, while Numbeo'
 
 ### What is the income requirement for Panama's retiree visa?
 
-Panama's Pensionado visa is widely listed at $1,000 a month of lifetime pension income for one person, $1,250 for a couple, and $750 if you also own property in Panama. Pensionado holders also receive legally mandated discounts, commonly listed as 25% on restaurants and 20% on medical consultations. Confirm current requirements with an immigration attorney before applying. ([libertymundo.com](https://www.libertymundo.com/retire-in-panama/))
+Panama's National Migration Service requires proof of a lifetime pension of at least $1,000 a month, plus $250 a month for each dependent, so a couple needs $1,250. Pensionado holders also receive legally mandated discounts on things like medical consultations. Confirm current requirements with an immigration attorney before applying. ([migracion.gob.pa](https://www.migracion.gob.pa/wp-content/uploads/02-JUBILADO-PENSIONADO.pdf))
 
 ### Is healthcare in David good enough for retirees?
 
@@ -181,17 +192,19 @@ Many retirees manage without one. Local chivas cost about $0.35 a ride, buses re
 
 - [Expatistan: Cost of Living in David](https://www.expatistan.com/cost-of-living/david)
 - [Numbeo: Cost of Living in David](https://www.numbeo.com/cost-of-living/in/David)
-- [Liberty Mundo: Panama Pensionado Visa Guide](https://www.libertymundo.com/retire-in-panama/)
+- [U.S. State Department: Panama Travel Advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pan.html)
+- [Panama National Migration Service: Pensionado Requirements](https://www.migracion.gob.pa/wp-content/uploads/02-JUBILADO-PENSIONADO.pdf)
 
 ## Sources & Verification
 
 - [Expatistan: Cost of Living in David, Panama](https://www.expatistan.com/cost-of-living/david) — rent, utilities, groceries, dining, transport, and doctor-visit prices (October 2026; small sample).
 - [Numbeo: Cost of Living in David](https://www.numbeo.com/cost-of-living/in/David) — rent, utilities, internet, and restaurant prices (August 2026; 15 entries, 4 contributors).
-- [Liberty Mundo: Retire in Panama](https://www.libertymundo.com/retire-in-panama/) — Pensionado income thresholds, discounts, and Boquete budget estimates.
+- [Panama National Migration Service: Jubilado/Pensionado Requirements](https://www.migracion.gob.pa/wp-content/uploads/02-JUBILADO-PENSIONADO.pdf) — $1,000 lifetime pension minimum, $250 per dependent.
+- [Liberty Mundo: Retire in Panama](https://www.libertymundo.com/retire-in-panama/) — Pensionado discounts and Boquete budget estimates.
 - [Expat Exchange: Health Care in David](https://www.expatexchange.com/article/11323/Health-Care-in-David-Health-Care-in-David) — hospitals and insurers.
 - [Expat Exchange: Do I Need Health Insurance in Panama](https://www.expatexchange.com/article/21946/Healthcare-in-Panama-Do-I-need-Health-Insurance-When-Moving-to-Panama) — local premium ranges.
 - [Nomad Watch: David, Panama Guide](https://nomad.watch/cities/PA/david/guide) — airport, buses, shopping, and neighborhoods.
-- [Frommer's: Western Panama](https://www.frommers.com/destinations/western-panama/introduction) — David's lowland climate.
+- [Medicare.gov: Medicare Costs](https://www.medicare.gov/basics/costs/medicare-costs) — 2026 Part B premium.
 
 Information checked: October 7, 2026
 
@@ -208,6 +221,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟡 WORTH TESTING — THE NUMBER WORKS IN THE RIGHT NEIGHBORHOOD**
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-$2,000 a month works in David. At normal-area rents you'll likely keep $500–$700 for travel and savings, you'll spend dollars, and you'll have two private hospitals and an airport in town. The real tests are the heat, your electric bill, and how often you'd need specialist care in Panama City. Spend 30 days in a furnished normal-area rental, keep every receipt, and spend two weekends in Boquete before you decide.
+$2,000 a month works in David. At normal-area rents you'll likely keep $520 or more for travel and savings, you'll spend dollars, and you'll have two private hospitals and an airport in town. The real tests are the heat, your electric bill, and how often you'd need specialist care in Panama City. Spend 30 days in a furnished normal-area rental, keep every receipt, and spend two weekends in Boquete before you decide.
