@@ -81,19 +81,39 @@ function safeDate(value: unknown, fallback?: unknown): string {
   return new Date().toISOString().split('T')[0];
 }
 
+let slugsCache: string[] | null = null;
+
 export async function getAllArticleSlugs(): Promise<string[]> {
+  if (slugsCache) return slugsCache;
+
   if (!fs.existsSync(articlesDirectory)) {
     return [];
   }
 
   const fileNames = fs.readdirSync(articlesDirectory);
 
-  return fileNames
+  slugsCache = fileNames
     .filter((fileName) => fileName.endsWith('.md'))
     .map((fileName) => fileName.replace(/\.md$/, ''));
+  return slugsCache;
 }
 
-export async function getArticleBySlug(slug: string): Promise<Article | null> {
+// Article files ship with the deploy and never change at runtime, so each one
+// only needs to be read and rendered once per process. Without this cache,
+// every article/destination page re-renders all articles to build its
+// "related" lists, which made static generation quadratic and timed out builds.
+const articleCache = new Map<string, Promise<Article | null>>();
+
+export function getArticleBySlug(slug: string): Promise<Article | null> {
+  let cached = articleCache.get(slug);
+  if (!cached) {
+    cached = loadArticle(slug);
+    articleCache.set(slug, cached);
+  }
+  return cached;
+}
+
+async function loadArticle(slug: string): Promise<Article | null> {
   try {
     const fullPath = path.join(articlesDirectory, `${slug}.md`);
 

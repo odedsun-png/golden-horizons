@@ -4,7 +4,7 @@ category: Best Cities
 slug: thailand-best-cities-for-retirees-chiang-mai-vs-hua-hin
 date: 2026-05-24
 image: https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxUaGFpbGFuZHxlbnwwfDB8fHwxNzc5NjExOTc3fDA&ixlib=rb-4.1.0&q=80&w=1080
-description: Expect $1,500–$2,300/month in Chiang Mai or Hua Hin. Both offer unique perks: cultural richness vs. beaches. Check visa, healthcare rules.
+description: "Expect $1,500–$2,300/month in Chiang Mai or Hua Hin. Both offer unique perks: cultural richness vs. beaches. Check visa, healthcare rules."
 featured: false
 ---
 # Thailand - Best Cities for Retirees: Chiang Mai vs Hua Hin — A Local's Perspective
