@@ -4,7 +4,7 @@ category: Real Estate
 slug: vietnam-renting-apartments-and-condos-in-vietnam
 date: 2026-06-25
 image: https://images.unsplash.com/photo-1528127269322-539801943592?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxWaWV0bmFtfGVufDB8MHx8fDE3ODIzNzY4MzF8MA&ixlib=rb-4.1.0&q=80&w=1080
-description: Vietnam's average rent in key locations varies: Ho Chi Minh City offers modern amenities, while Da Nang provides coastal living at lower costs.
+description: "Vietnam's average rent in key locations varies: Ho Chi Minh City offers modern amenities, while Da Nang provides coastal living at lower costs."
 featured: false
 ---
 # Vietnam - Renting Apartments and Condos in Vietnam — A Local's Perspective
