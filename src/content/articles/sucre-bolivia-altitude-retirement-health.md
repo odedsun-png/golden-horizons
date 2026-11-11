@@ -1,192 +1,176 @@
 ---
-title: "Sucre’s Reported Low Rents Come With a High-Altitude Health Question"
+title: "Sucre Sits at 2,810 Meters: What Altitude Means for Your Health, Plus Hospitals and Costs"
 category: Healthcare
 slug: sucre-bolivia-altitude-retirement-health
 date: 2026-11-10
 image: https://images.unsplash.com/photo-1616726002859-0a779b50f3a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxTdWNyZSUyMEJvbGl2aWElMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc5NDM1NTcxMXww&ixlib=rb-4.1.0&q=80&w=1080
-description: "Sucre’s elevation deserves careful consideration before crowd-sourced rent estimates influence a retirement move."
+description: "Sucre sits at 2,810 meters, above the CDC 2,450-meter risk line. Named hospitals, a $462 rent anchor, Medicare costs and the catch."
 featured: false
 ---
 
-# Sucre’s Reported Low Rents Come With a High-Altitude Health Question
+# Sucre Sits at 2,810 Meters: What Altitude Means for Your Health, Plus Hospitals and Costs
 
-**Golden Horizons Status:** 🟠 HIGH-HURDLE — RESEARCH AND TEST CAREFULLY
+**Golden Horizons Status:** 🟠 HIGH-HURDLE — TEST FIRST
 
-> **THE SHORT ANSWER:** Sucre’s reported elevation of roughly 2,790 meters is above the CDC threshold at which unacclimatized travelers sleeping at altitude can be at risk of altitude illness. Individual risk varies. Discuss your travel plans with a qualified clinician if your health history makes that relevant. Rent estimates are crowd-sourced and are not current lease quotes; healthcare costs and local emergency capabilities need direct confirmation.
+> **THE SHORT ANSWER:** Sucre sits at 2,810 meters (about 9,200 feet), 360 meters above the 2,450-meter line where the CDC says unacclimatized sleepers are at risk of altitude illness. A one-bedroom in the center is listed at about $462 a month, and a private doctor visit runs about $15 to $30. The catch: serious conditions may mean travel to a larger city or abroad, Medicare's Part B still costs $202.90 a month, and Bolivia is a State Department Level 2. Talk to your doctor before you book.
 
-A rent figure can catch your eye. The elevation where you sleep can shape ordinary routines and deserves attention before you make a longer-term decision.
+Cheap rent gets your attention. The air you sleep in matters more.
 
-Sucre sits at roughly 2,790 meters above sea level. CDC guidance says unacclimatized travelers sleeping at 2,450 meters or higher can be at risk of altitude illness. That does not mean the city is unsuitable for everyone. It means that housing cost should not be the only factor in deciding whether to visit or consider living there.
-
-The useful question is not whether a short visit can prove that you are medically suited to Sucre. It cannot. Instead, consider what you need to ask a clinician, what you should verify about local healthcare, and whether ordinary daily routines and housing arrangements merit further research.
+At 2,810 meters, Sucre is not extreme by Andean standards, but it is high enough to change how you sleep, walk and recover. This guide covers what the CDC says, which hospitals are named in local news, and what to test before you commit.
 
 ## Retirement Snapshot
 
-**Primary decision:** How might Sucre’s elevation, healthcare access, housing terms, and ordinary routines fit your circumstances?
+**Primary decision:**
+Whether a calm, high-altitude colonial city at low prices fits your heart, lungs, sleep and need for nearby hospitals.
 
-**Best fit:** A prospective retiree who wants to research Sucre carefully, plans any visit with appropriate medical guidance when relevant, and keeps an initial stay reversible.
+**Best fit:**
+A retiree in stable health, cleared by a doctor for 2,810 meters, who will rent first and keep a flight home affordable.
 
-**Biggest warning:** Sucre’s reported elevation is above the CDC threshold where unacclimatized sleepers can be at risk of altitude illness. Individual risk varies, and local emergency capability and medical prices require direct confirmation.
+**Biggest warning:**
+The CDC lists unstable angina, severe COPD, decompensated heart failure and a heart attack or stroke within the past 90 days as contraindications to high-altitude travel. Stable angina, moderate COPD and severe sleep apnea call for caution.
 
-**Healthcare:** A person’s health history matters. If you have relevant heart, lung, blood-pressure, or sleep-related concerns, discuss the specific elevation and itinerary with a clinician familiar with your medical history.
+**Healthcare:**
+Hospital Santa Bárbara, Hospital San Pedro Claver and Hospital Chuquisaca are named in September 2026 local reporting. Expat.com lists doctor visits at $15 to $30.
 
-**Housing / daily life:** The linked Numbeo page displays crowd-sourced rent estimates, not verified lease offers. Confirm prices, lease terms, utilities, and availability directly.
+**Residency:**
+Bolivia has no retiree visa category, and no income figure is published. Applicants file a sworn statement of solvency backed by documents such as bank statements.
 
-**Safety:** The U.S. Department of State lists Bolivia at Level 2 and describes risks that include crime and unrest. Demonstrations can disrupt transportation and essential services. This is country-level guidance, not a safety rating for Sucre or any neighborhood.
+**Safety:**
+The U.S. State Department rates Bolivia Level 2, Exercise Increased Caution, in an advisory dated August 17, 2026. Chapare Province is Level 4, Do Not Travel; it is a separate region from Sucre.
 
-## Why Sucre’s Sleeping Elevation Changes the Health Calculation
+## Why Sucre's Altitude Matters for Retirees
 
-Sucre’s reported elevation is about 2,790 meters. CDC guidance says unacclimatized travelers sleeping at 2,450 meters or higher can be at risk of altitude illness. The CDC advises travelers to ascend gradually and, when possible, avoid traveling from a low elevation to a sleeping elevation above 2,750 meters in one day.
+Expat.com puts Sucre at 2,810 meters. The CDC says travelers sleeping at or above 2,450 meters (8,000 feet) are at risk for altitude illness. It also says to avoid going from below 1,200 meters to a sleeping altitude of 2,750 meters or higher in one day. Sucre is above both lines.
 
-Age alone does not determine an individual’s risk. The CDC says people over 50 have slightly less risk of acute mountain sickness than younger people. However, that general observation is not a personal medical assessment. Health history, itinerary, sleeping elevation, rate of ascent, and a person’s past response to similar altitudes all matter.
+Age is not the deciding factor. Health is. The CDC lists heart disease, lung disease, severe sleep apnea and sickle cell conditions among the problems that need a doctor's input before you go. Ask a clinician who knows altitude medicine.
 
-Some heart, lung, blood-pressure, or sleep-related conditions can require special caution at altitude. If you have a relevant diagnosis, take medication for one of these conditions, or have had problems at altitude before, ask a clinician familiar with your health history about your specific travel plans. Do not use this guide to decide whether you are medically fit to travel or live at altitude.
+Symptoms of acute mountain sickness are a headache plus nausea, dizziness, tiredness or loss of appetite. They usually start 2 to 12 hours after arrival and clear within 1 to 3 days. Confusion, loss of coordination, chest congestion or shortness of breath at rest are different. The CDC says those need descent and medical care.
 
-Everyday function is worth noticing during a visit, but it is not a medical clearance test. Sleep, walking to an errand, climbing stairs, and getting to healthcare may help you understand practical aspects of a location. They cannot establish that long-term residence is medically appropriate.
+The CDC advises avoiding alcohol and heavy exercise for at least the first 48 hours above 2,450 meters. It also says medicines exist that can help prevent altitude illness, so ask your doctor what suits your history.
 
-Altitude-related symptoms can overlap with other health problems. The CDC describes headache, tiredness, nausea, dizziness, and appetite loss among possible symptoms of acute mountain sickness. More serious warning signs can include confusion or loss of coordination, or severe shortness of breath. Seek urgent medical care for severe or worsening symptoms rather than waiting for them to pass. Sucre-specific emergency arrangements should be verified directly before travel.
+## Hospitals and Clinics in Sucre
 
-## How to Plan a Visit Without Treating It as a Medical Test
+Three hospitals come up in Correo del Sur, a Sucre newspaper. Verify each one by phone before you rely on it.
 
-The travel route matters. CDC guidance advises against going directly from below 1,200 meters to a sleeping elevation of 2,750 meters or higher in one day. It recommends gradual ascent and says travelers should discuss their options with a clinician when their itinerary or health history raises concerns.
+**Hospital San Pedro Claver:** Has a CT scanner, according to Correo del Sur on September 30, 2026.
 
-CDC traveler guidance also advises avoiding alcohol and heavy exercise for at least the first 48 hours after arriving above 2,450 meters. These are general travel recommendations, not a substitute for personalized medical advice.
+**Hospital Chuquisaca:** A third-level hospital in the Lajastambo area, with a CT scanner. The same report says it and San Pedro Claver together cover all CT demand in Sucre.
 
-A scouting visit should be for learning about daily logistics—not for diagnosing yourself or deciding that you are medically cleared to live there. You can investigate housing, errands, transportation, healthcare access, and community while following appropriate medical guidance.
+**Hospital Santa Bárbara:** Still waiting for a new CT scanner, with no delivery date, as of the same report.
 
-If you have cardiac, pulmonary, blood-pressure, sleep-apnea, diabetes, or medication concerns, discuss the trip with an appropriate clinician before departure. Ask about the planned sleeping elevation and route, rather than asking only whether travel to Bolivia is appropriate.
+Expat.com says Sucre has private clinics and competent doctors, but serious conditions may require travel to a larger city or abroad. It names no specific clinics, so ask each facility directly about intensive care, oxygen and self-pay deposits.
 
-For an exploratory trip, the U.S. Department of State says U.S. citizens do not need a visa for tourism or business stays of less than 90 days in a year. That is not permission to reside indefinitely or work in Bolivia. Recheck current entry guidance with the relevant authorities immediately before departure.
+## What Sucre Costs, and What Medicare Costs You at Home
 
-## What the Available Rent Data Do—and Do Not—Prove
+Wise lists a center one-bedroom at $462.08 a month and $283.01 outside the center. Wise notes that some prices for Sucre are incomplete, so treat these as a planning anchor, not a quote. Basic utilities are listed at $14.26 and internet at $21.16.
 
-The rent indicators are worth noticing. They are not a retirement budget or a set of available apartments.
+Expat.com puts private health insurance for a single person at $50 to $100 a month and for a couple at $100 to $150.
 
-When checked for this article, the linked Numbeo page displayed average one-bedroom rent estimates of **BOB 3,458.95 in the city center** and **BOB 2,176.06 outside the center**. The page reported that it was last updated in **July 2025**, with 73 data entries and six contributors over the previous 12 months.
+At home, Original Medicare in 2026 charges a $202.90 standard Part B premium, a $283 Part B deductible and a $1,736 Part A inpatient deductible. Check with your plan what it pays outside the United States before you assume it covers you in Bolivia. For a heart or lung problem at 70, home may be the cheaper and safer place to be treated.
 
-These are crowd-sourced estimates, not confirmed lease offers. They do not establish the price of a furnished apartment, a long-term lease, utilities, internet, heating, deposits, or the condition and exact location of a property. Because the displayed information is dated, verify current prices directly before using it in a budget.
-
-Modest nominal rent estimates do not equal a predictable cost of living. A complete monthly budget would also need reliable information about groceries, internet, transportation, medical services, insurance, and currency conversion.
-
-Furnished-room examples should not be treated as independent one-bedroom apartment rents. Nor should a short furnished stay be assumed to cost the same as a 12-month local lease. Request written quotes that spell out the actual terms before comparing housing costs.
+Bolivia's public system is a weak fallback. The Rio Times reports that foreign residents over 60 can register with the public scheme, but enforcement is inconsistent and some people are billed anyway.
 
 ## Practical Comparison
 
-### Nominal rent versus a livable lease
+### Altitude fit versus rent savings
 
-**What the evidence says:**  
-The linked Numbeo page displays crowd-sourced one-bedroom rent estimates, but the page reported a July 2025 update when checked for this article. The estimates are not verified lease quotes and do not establish current availability or the full cost of housing.
+**What the evidence says:**
+Sucre is at 2,810 meters, above the CDC's 2,450-meter risk line. Wise lists a center one-bedroom at $462 and an outside-center one at $283.
 
-**What to check next:**  
-Request at least three independent rental quotes for the areas you are considering. Ask about lease length, furnishing, heating, internet, deposits, utilities, exact location, and termination terms.
+**What to check next:**
+Ask your doctor, in writing, whether your heart and lung history allows sleeping at 2,810 meters.
 
-### The route up matters
+### Hospital access
 
-**What the evidence says:**  
-CDC guidance advises against traveling in one day from below 1,200 meters to a sleeping elevation of 2,750 meters or higher. Sucre is reported at roughly 2,790 meters.
+**What the evidence says:**
+Hospital San Pedro Claver and Hospital Chuquisaca have CT scanners. Hospital Santa Bárbara is still waiting for one.
 
-**What to check next:**  
-Review your itinerary and sleeping elevations with a clinician if your health history or route makes that relevant. CDC guidance recommends gradual ascent; it does not provide a personalized travel plan for you.
+**What to check next:**
+Call two of them and ask about emergency admission, oxygen, intensive care and self-pay deposits.
 
-### Age is not the whole health story
+### Staying on Medicare versus going local
 
-**What the evidence says:**  
-The CDC says people over 50 have slightly less risk of acute mountain sickness than younger travelers. That general finding does not determine an individual’s suitability for travel. Health conditions, itinerary, and prior response to altitude also matter.
+**What the evidence says:**
+Medicare's 2026 Part B premium is $202.90 a month with a $283 deductible. Local insurance is listed at $50 to $100 a month for one person.
 
-**What to check next:**  
-Discuss your diagnoses, medications, prior altitude experience, planned route, and intended sleeping elevation with a qualified clinician when appropriate.
+**What to check next:**
+Ask one insurer for a written quote at your exact age that names altitude exclusions and evacuation coverage.
 
-### Emergency access has to work for you
+### Residency paperwork
 
-**What the evidence says:**  
-Severe shortness of breath, confusion, or loss of coordination can be warning signs requiring urgent medical attention. Sucre-specific emergency capabilities and access arrangements need direct confirmation.
+**What the evidence says:**
+Bolivia has no retiree category and publishes no income figure. The Rio Times lists about $278 for one year of temporary residence, from a fee sheet it calls several years old.
 
-**What to check next:**  
-Ask prospective facilities about their services, oxygen and imaging availability, payment requirements, insurer acceptance, and arrangements for emergency transport or transfer. Confirm details directly with the providers.
-
-### Safety and disruption can affect daily plans
-
-**What the evidence says:**  
-The U.S. Department of State lists Bolivia at Level 2 and describes risks that include crime and unrest. It warns that demonstrations can disrupt transportation and essential services. The separate Level 4 warning for Chapare Province does not identify Sucre.
-
-**What to check next:**  
-Review the live advisory and local transport conditions immediately before and during travel. A country-level advisory does not establish neighborhood-level safety.
+**What to check next:**
+Email a Bolivian consulate and ask which proof of pension income it accepts.
 
 ## The Trade-Off
 
-Sucre presents a real question: whether its setting and housing possibilities are worth researching further, given its elevation and the need to verify healthcare, emergency, insurance, and housing arrangements.
-
 **What you may gain:**
-- A chance to investigate a historic highland city and compare actual housing offers.
-- The opportunity to test ordinary routines during a reversible visit before considering a longer commitment.
 
-**What you may need to consider:**
-- The elevation and the need to discuss individual travel concerns with a clinician when relevant.
-- Uncertainty about current housing costs, healthcare prices, insurance coverage, and local emergency arrangements.
+- A center one-bedroom listed near $462, and doctor visits at $15 to $30.
+- A sleeping altitude below 3,000 meters, where the CDC's stricter ascent limits start.
+- Two hospitals with CT scanners, reported in September 2026.
 
-The rent estimates may make Sucre worth researching. They should not decide the question. Verify the housing terms and healthcare arrangements, and treat any visit as an opportunity to learn—not as a medical test or proof that a move is suitable.
+**What you may give up:**
+
+- Sea-level oxygen, at 2,810 meters.
+- Large-city medicine: serious cases may mean a larger city or a flight abroad.
+- Clear retiree visa rules, since no income figure is published.
 
 ![Sucre Bolivia cityscape](https://images.unsplash.com/photo-1788031736402-31edfd1d1e33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxTdWNyZSUyMEJvbGl2aWElMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQzMzgwNjl8MA&ixlib=rb-4.1.0&q=80&w=1080 )
 
-## The Golden Horizons 14-Day Test
+## The Golden Horizons 30-Day Test
 
-This is a planning framework for a scouting visit, not a medical clearance test. Follow appropriate medical advice about travel and activity. If you feel seriously unwell, seek medical care rather than continuing the itinerary.
-
-1. Before booking, discuss your diagnoses, medications, prior altitude response, and travel route with a clinician if your health history makes that relevant. Ask specifically about the planned sleeping elevation.
-
-2. Treat the trip as an exploratory visit, not permission to reside or work. Recheck current U.S. and Bolivian entry guidance immediately before departure.
-
-3. Review the route and sleeping elevations. CDC guidance recommends gradual ascent and advises against traveling in one day from below 1,200 meters to a sleeping elevation of 2,750 meters or higher. Follow clinician guidance for your own circumstances.
-
-4. Use a reversible furnished stay rather than signing a long lease. Collect written apartment quotes and record the exact address, stairs or elevator, furnishing, heating, utilities, internet, deposit, and termination terms.
-
-5. Investigate ordinary routines at a pace appropriate for your circumstances. Check errands, transportation, housing access, and healthcare routes. These observations can help you assess practical fit, but they cannot diagnose altitude effects or establish medical suitability.
-
-6. Visit or contact prospective medical facilities before an emergency. Ask about services, urgent care, payment requirements, accepted insurance, and emergency transfer arrangements. Obtain insurance terms in writing, including any age limits, altitude exclusions, and evacuation coverage.
+1. Before booking, ask your doctor whether your heart, lungs, blood pressure and sleep apnea allow sleeping at 2,810 meters, and ask about altitude medicine.
+2. Plan a gentle arrival: no alcohol and no heavy exercise for the first 48 hours, and break the trip if you can rather than flying in from below 1,200 meters in one day.
+3. Rent a furnished one-bedroom for 30 days and compare the price with the $462 center and $283 outside-center anchors.
+4. Visit two of Hospital San Pedro Claver, Hospital Chuquisaca and Hospital Santa Bárbara. Ask about emergency admission, oxygen, intensive care and self-pay deposits.
+5. Price one routine doctor visit and compare it with the $15 to $30 range, and ask for a written insurance quote that covers evacuation.
+6. Email a Bolivian consulate and ask which documents prove pension income for temporary residence.
 
 ![Sucre Bolivia neighborhood](https://images.unsplash.com/photo-1773137260755-6d05d3856328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxTdWNyZSUyMEJvbGl2aWElMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQzMzgwNjl8MA&ixlib=rb-4.1.0&q=80&w=1080 )
 
 ## Frequently Asked Questions
 
-### Is Sucre high enough for altitude illness to be a concern?
+### Is Sucre high enough to cause altitude sickness?
 
-It can be. Sucre is reported at about 2,790 meters, while CDC guidance says unacclimatized travelers sleeping at 2,450 meters or higher can be at risk. Individual risk varies. ([Britannica](https://www.britannica.com/place/Sucre ); [CDC Yellow Book](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html ))
+Yes. Sucre sits at 2,810 meters, and the CDC says travelers sleeping at 2,450 meters or higher are at risk for altitude illness. Symptoms usually start 2 to 12 hours after arrival. ([cdc.gov](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html))
 
-### Are retirees inherently more vulnerable because of age?
+### How much is rent in Sucre for a retiree?
 
-Not necessarily. The CDC says people over 50 have slightly less risk of acute mountain sickness than younger travelers. Age alone does not determine an individual’s risk. Health history, itinerary, sleeping elevation, and prior response to altitude also matter. ([CDC Yellow Book](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html ))
+Wise lists a one-bedroom at $462.08 a month in the center and $283.01 outside it. Some Sucre prices are marked incomplete, so confirm with local agents. ([wise.com](https://wise.com/us/cost-of-living/bolivia/sucre))
 
-### Which health concerns should prompt medical advice before going?
+### Which hospitals can handle an emergency in Sucre?
 
-People with relevant heart, lung, blood-pressure, sleep-related, or other medical conditions should discuss their itinerary and intended sleeping elevation with a qualified clinician. The CDC lists certain heart and lung conditions that call for caution and notes that some severe conditions can make high-altitude travel inappropriate. A clinician must assess the individual situation. ([CDC Yellow Book](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html ))
+Three are named in September 2026 reporting: Hospital San Pedro Claver, Hospital Chuquisaca and Hospital Santa Bárbara. The first two have CT scanners, while Santa Bárbara is still waiting for one. ([correodelsur.com](https://correodelsur.com/local/20260930/dos-hospitales-cubren-la-demanda-de-tomografo.html))
 
-### What symptoms require urgent attention?
+### How much does Medicare cost if I keep it while living in Bolivia?
 
-Severe shortness of breath, confusion, or loss of coordination can be warning signs of serious altitude illness. Seek urgent medical care rather than waiting to see whether symptoms pass. Confirm local emergency contacts and capabilities before travel. ([CDC Adventure Travel](https://www.cdc.gov/yellow-book/hcp/travel-for-work-other/adventure-travel.html ))
+The 2026 Part B premium is $202.90 a month, the Part B deductible is $283 and the Part A inpatient deductible is $1,736. Ask your plan what it covers outside the United States. ([cms.gov](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles))
 
-### Will local insurance, Bolivia’s public system, or Medicare pay for care?
+### Is Bolivia safe for American retirees right now?
 
-This has not been verified for Sucre. Do not assume coverage. Visitor and resident eligibility, local insurance age limits, payment practices, and Medicare applicability need written confirmation from your insurer and intended medical facility. Ask about upfront payment, emergency treatment, and evacuation coverage before departure. ([U.S. Department of State: Bolivia Travel Advisory](https://travel.state.gov/en/international-travel/travel-advisories/bolivia.html ))
+Bolivia is Level 2, Exercise Increased Caution, in the advisory dated August 17, 2026, and Chapare Province is Level 4, Do Not Travel. Check the live advisory before you fly. ([travel.state.gov](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bol.html))
 
-## Check Today’s Information Before You Decide
+## Check Today's Information Before You Decide
 
-- [CDC Yellow Book: High-Altitude Travel and Altitude Illness](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html )
-- [CDC Travelers’ Health: Travel to High Altitudes](https://wwwnc.cdc.gov/travel/page/travel-to-high-altitudes )
-- [Encyclopaedia Britannica: Sucre](https://www.britannica.com/place/Sucre )
-- [U.S. Department of State: Bolivia Travel Advisory](https://travel.state.gov/en/international-travel/travel-advisories/bolivia.html )
-- [Numbeo: Cost of Living in Sucre](https://es.numbeo.com/coste-de-vida/ciudad/Sucre-Bolivia )
-- [Wilderness Medical Society: 2024 Altitude Summary](https://wms.org/magazine/1463/2024-Altitude-Summary )
+- [U.S. State Department: Bolivia Travel Advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bol.html)
+- [CDC Travelers' Health: Travel to High Altitudes](https://wwwnc.cdc.gov/travel/page/travel-to-high-altitudes)
+- [Wise: Cost of Living in Sucre](https://wise.com/us/cost-of-living/bolivia/sucre)
 
 ## Sources & Verification
 
-- [CDC Yellow Book — High-Altitude Travel and Altitude Illness](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html ) — altitude-risk thresholds, ascent guidance, and health considerations.
-- [CDC Travelers’ Health — Travel to High Altitudes](https://wwwnc.cdc.gov/travel/page/travel-to-high-altitudes ) — gradual-ascent precautions and first-48-hour guidance.
-- [Encyclopaedia Britannica — Sucre](https://www.britannica.com/place/Sucre ) — Sucre’s reported elevation.
-- [Numbeo — Cost of Living in Sucre](https://es.numbeo.com/coste-de-vida/ciudad/Sucre-Bolivia ) — crowd-sourced cost indicators; its page reported a July 2025 update when checked for this article.
-- [U.S. Department of State — Bolivia Travel Advisory](https://travel.state.gov/en/international-travel/travel-advisories/bolivia.html ) — advisory and travel-entry information, which can change.
-- [Wilderness Medical Society — 2024 Altitude Summary](https://wms.org/magazine/1463/2024-Altitude-Summary ) — ascent and acclimatization guidance.
+- [U.S. State Department: Bolivia Travel Advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bol.html) — Level 2, August 17, 2026; Chapare Province Level 4
+- [CDC Yellow Book: High-Altitude Travel and Altitude Illness](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html) — 2,450-meter and 2,750-meter thresholds, symptoms, conditions of concern
+- [CDC Travelers' Health: Travel to High Altitudes](https://wwwnc.cdc.gov/travel/page/travel-to-high-altitudes) — first-48-hour guidance, who should see a doctor
+- [CMS: 2026 Medicare Parts A & B premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) — Part B $202.90, deductibles $283 and $1,736
+- [Correo del Sur: Dos hospitales cubren la demanda de tomógrafo](https://correodelsur.com/local/20260930/dos-hospitales-cubren-la-demanda-de-tomografo.html) — CT scanners at San Pedro Claver and Hospital Chuquisaca (September 30, 2026)
+- [Expat.com: Sucre guide](https://www.expat.com/en/guide/south-america/bolivia/sucre/) — elevation, doctor visits, insurance range
+- [Wise: Cost of Living in Sucre](https://wise.com/us/cost-of-living/bolivia/sucre) — rent, utilities, internet (no date shown)
+- [The Rio Times: Retire in Bolivia as a foreigner in 2026](https://www.riotimesonline.com/retire-in-bolivia-foreigners-2026/) — residency route, no published income figure, fees (September 2026)
 
-Information checked: November 10, 2026. Recheck official travel, entry, health, and local information before making plans.
+Information checked: November 11, 2026
 
 ## Related Golden Horizons Guides
 
@@ -201,8 +185,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟠 HIGH-HURDLE — RESEARCH AND TEST CAREFULLY**
+**Golden Horizons Verdict: 🟠 HIGH-HURDLE — TEST FIRST**
 
-Sucre’s reported rent estimates may earn it a place on a research list, but they are crowd-sourced and dated. The city’s elevation should be considered early, alongside verified housing terms, healthcare access, insurance, and emergency arrangements.
-
-A reversible visit can help you investigate ordinary daily life. It cannot establish that long-term residence is medically suitable. Discuss relevant health concerns with a qualified clinician, verify important details directly, and avoid making a long-term commitment based on a rent estimate or a single trip.
+Sucre is cheap, with a center one-bedroom near $462 and doctor visits at $15 to $30, but it sits 360 meters above the CDC risk line and serious care may mean leaving the city. It suits a healthy, medically cleared renter. Get your doctor's answer in writing, visit two hospitals in person, and test 30 days before you sign a lease.
