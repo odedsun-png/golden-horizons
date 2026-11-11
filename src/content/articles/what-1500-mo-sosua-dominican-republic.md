@@ -4,7 +4,7 @@ category: Cost
 slug: what-1500-mo-sosua-dominican-republic
 date: 2026-11-10
 image: https://images.unsplash.com/photo-1645408728506-b94d088f10f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxTb3MlQzMlQkFhJTIwRG9taW5pY2FuJTIwUmVwdWJsaWMlMjBiZWFjaHxlbnwwfDB8fHwxNzk0MzU3NDM3fDA&ixlib=rb-4.1.0&q=80&w=1080
-description: "A $1,500 Sosúa budget can be possible with low rent, but utilities, insurance, and medical costs make it a careful test."
+description: "Sosúa core costs run about $1,260 a month for one person, leaving about $240 of a $1,500 budget. Insurance and medical care are the catch."
 featured: false
 ---
 
@@ -12,120 +12,147 @@ featured: false
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** Possibly—but only at the lower end of the rental market and with a closely watched household budget. A supported long-term solo budget ranges from about $1,210 to $1,849 monthly before health insurance, medical care, taxes, deposits, flights, and other major unpriced costs. Rent is the make-or-break number.
-
-A $1,500 budget can look promising in Sosúa—until the apartment search begins. One commercial estimate places an outside-center one-bedroom near $783 a month. A furnished Club Residencial listing on Pedro Clisante came in at $1,092 for a 12-month term, and another advertised one-bedroom reached $1,250.
-
-That is the whole story in miniature. Sosúa may work for a careful solo renter, but it is not a destination where you can assume a single advertised average will carry the day. The question is whether you can find the lower-cost lease, manage electricity and everyday spending, and still have room for the costs this budget does not yet price.
+> **THE SHORT ANSWER:** Yes, but with little room to spare. A one-bedroom outside the center is estimated at about $762 a month, and rent, groceries, utilities, internet, local transport and some meals out add up to roughly $1,260. That leaves about $240 for health insurance, flights home and surprises. The catch: if you keep Medicare Part B ($202.90 a month), almost all of that cushion is gone, and a furnished Club Residencial condo listed at $1,100 erases it.
 
 ## Retirement Snapshot
 
-**Primary decision:** Can a single retiree keep a long-term Sosúa budget near $1,500 without relying on wishful arithmetic?  
-**Best fit:** Someone able to secure a genuinely lower-cost annual rental and willing to track electricity, groceries, and everyday spending.  
-**Biggest warning:** The low-case $290 is unallocated before health insurance, medical care, taxes, deposits, travel, and emergencies—not spare spending money.  
-**Planning-budget lens:** The core budget ranges from $1,210 to $1,849, using a mix of commercial estimates, a current listing sample, and planning allowances.  
-**Housing / daily life:** Rent estimates and listings span roughly $783 to $1,250 monthly for one bedrooms, depending on location and terms.  
+**Primary decision:**
+Whether a beach town on the north coast of the Dominican Republic fits a single retiree's budget once rent, insurance and medical costs are priced.
 
-## What the $1,500 Budget Has to Cover
+**Best fit:**
+A renter who can lock in a lower-cost 12-month lease and who tracks electricity and grocery spending closely.
 
-At the right rent, the budget can work on paper. A November 2026 commercial model estimated one-person monthly costs at $1,438 including rent and utilities. Treat that as a useful reference point, not a promise of an available apartment or a complete personal budget.
+**Biggest warning:**
+The leftover $240 is unallocated. Health insurance, prescriptions, deposits, flights and taxes all come out of it.
 
-The low scenario leaves $290 below the monthly ceiling. But that money already has a waiting list: insurance, prescriptions, medical visits, mobile service, deposits, flights, taxes, furnishing, immigration-related costs if applicable, and the surprises that arrive in any move abroad. It is unallocated before unpriced expenses—not a carefree dinner-and-travel fund.
+**Safety:**
+The U.S. State Department rates the Dominican Republic Level 2, Exercise Increased Caution, for crime, in an advisory dated June 11, 2025. It says violent crime is a concern despite more police in tourist areas, and advises you not to display wealth. The advisory summary names no Puerto Plata restriction.
 
-At the other end, the core math rises above the target before medical care or insurance enters the picture. Transportation and dining are included only as planning allowances because dependable current Sosúa-specific totals were not available.
+**Residency:**
+Dominican Law 171-07 sets the pensionado bar at a foreign pension equal to this whole budget each month, plus $250 a month for each dependent who applies with you. Your spending budget and the income bar are the same number, so you would need a pension that covers the bar and your living costs.
 
-**Headline budget:** $1,500 per month  
-**1-bedroom long-term rent:** $783–$1,092; the low figure is a November 2026 commercial outside-center estimate, while the high figure is an identified furnished Club Residencial listing for a 12-month term  
-**Groceries / basic food:** $204–$250; $204 is a commercial one-person estimate, while $250 is a planning allowance for diet, imported goods, and source uncertainty  
-**Utilities + internet:** $103–$297; derived from commercial and older crowd-sourced indicators, with the high end reflecting source ranges rather than a forecast  
-**Local transportation:** $30–$60 planning allowance; not a verified Sosúa fare total  
-**Dining / everyday extras:** $90–$150 planning allowance; not a reported Sosúa average  
-**Estimated core monthly spend:** $1,210–$1,849  
-**Remaining buffer vs the $1,500 budget:** $290 unallocated before unpriced expenses at the low end; $349 shortfall at the high end  
-**Income requirement:** Not verified; a $1,500 spending budget does not establish eligibility for Dominican residence  
-**Evidence confidence:** LIMITED  
-**GH Budget Read:** TIGHT OR VARIABLE  
+**Healthcare:**
+Plan on private clinics. A forum thread on Puerto Plata care names Clínica Brugal and Bournigal in Puerto Plata and a clinic known as CMC in Sosúa. The posts are several years old and undated, so confirm each one.
 
-The calculation includes rent, groceries, utilities and internet, plus planning allowances for transportation and everyday extras. It excludes health insurance and care, prescriptions, mobile service, deposits, flights, immigration fees, taxes, furnishing, emergencies, entertainment beyond the allowance, and exchange-rate movement.
+**Property:**
+Rent first. Buying is a separate decision for a later trip.
 
-**How your money compares to the US:** Sosúa’s $783 outside-center rent estimate is below the 2025 U.S. median gross one-bedroom rent of $1,362, though gross rent and advertised rent may include different utilities. The $204 Sosúa grocery estimate is also below USDA’s September 2026 low-cost food plans for older adults, roughly $268–$299 before the one-person household adjustment; the baskets use different methods.
+## What Your Budget Has to Cover in Sosúa
+
+Start with rent. CityCost, last updated November 8, 2026, estimates a one-bedroom outside the center at $762 a month and in the center at $852. Those are modeled averages built from AI and user input, so treat them as a planning anchor, not a quote.
+
+Real listings run higher. Long Term Lettings shows a furnished one-bedroom condo at Club Residencial on Pedro Clisante for $1,100 on a 12-month term, with cable, Wi-Fi and electricity included. It also lists a one-bedroom at Infinity Blue for $1,401, though that listing mentions 2023 dates and may be out of date.
+
+Food costs about $200 a month for one person, per CityCost. Utilities and internet for one person run about $126, and local transport about $15. Eating out averages about $157 a month. A budget-restaurant meal is $10.01 and a fast-food meal is $7.67.
+
+## The $1,500 Monthly Test
+
+**Headline budget:** $1,500 per month
+
+**One-bedroom rent (outside the center):** $762 (center: $852)
+
+**Groceries:** about $200
+
+**Utilities and internet:** about $126
+
+**Local transportation:** about $15
+
+**Eating out:** about $157
+
+**Estimated core monthly spend:** $1,260 for one person renting outside the center
+
+**Remaining buffer vs the $1,500 budget:** about $240 a month, or about $150 if you rent in the center
+
+**Income requirement:** a foreign pension of at least $1,500 a month for the Dominican pensionado residency route, plus $250 for each dependent
+
+**How your money compares to the US:** The average U.S. household spent $27,790 on housing and $10,633 on food in 2025, according to the Bureau of Labor Statistics, or about $3,200 a month combined. Your Sosúa core budget is well under half of that, though a household is larger than one retiree.
+
+Health insurance, care, flights home, taxes, deposits and residency fees are not in the $1,260. If you keep Medicare, the 2026 Part B premium is $202.90 a month and the Part B deductible is $283. The Part A inpatient deductible is $1,736. You pay the premium whether or not you use it in the Dominican Republic, and Original Medicare generally does not pay for care abroad, so ask your plan before you rely on it.
 
 **A Typical Day in Sosúa**
 
-Your ordinary Tuesday starts with the kind of grocery basket that makes the budget look possible: a liter of milk was indicated near $1.34, a 500-gram loaf of white bread near $1.57, and a kilogram of rice near $0.63. Older crowd-sourced observations put chicken fillets near $2.78 per pound and bananas near $0.35 per pound.
-
-Those figures are useful clues for a four-week grocery log, not a verified store receipt or a complete daily spending plan. The rice figure is notably low and worth checking in person, while fares, restaurant meals, and the cost of a typical outing still need local testing.
+A cappuccino runs about $2.49. A budget lunch is about $10.01, or $7.67 for fast food. A taxi starts at $3.38 and adds $2.24 per kilometer. Dinner for two at a mid-range restaurant is about $49.15. A day of coffee, lunch and one short taxi comes to roughly $20, and a dinner out more than doubles it.
 
 ## Rent Is the Deciding Variable
 
-The difference between a workable plan and a strained one is not likely to be a small change in your grocery basket. It is housing.
+Groceries and transport will not make or break this budget. Housing will.
 
-A commercial November 2026 estimate placed a one-bedroom outside central areas near $783 monthly and a central unit near $873. Those are estimates, not available-unit quotes. Meanwhile, a marketplace listing identified a furnished one-bedroom in Club Residencial on Pedro Clisante at $1,092 for a 12-month term, while another advertised Sosúa one-bedroom was listed at $1,250.
+At $762, you have room to absorb ordinary variation. At the center price of $852, the cushion is $150. At the $1,100 Club Residencial listing, the core budget rises to about $1,472 even with utilities and internet included, leaving $28. The listing also shows a 3 to 4 month rate of $950, which is a short-stay price, not a lease price.
 
-At $783 rent, the budget has a chance to absorb ordinary variation. At $1,092, it becomes tightly managed before healthcare, taxes, or an unexpected bill. El Batey, Pedro Clisante/Club Residencial, and Sosúa Ocean Village are identifiable rental areas, but a comparable verified one-bedroom long-term price was not available for every area.
+Sosua Ocean Village shows a studio at $1,100 with electricity and water extra, so a lower headline rent can still end up costing the same. Compare units on the all-in monthly total, not the advertised rent.
 
-Older crowd-sourced Sosúa observations showed one-bedroom figures around $27,000 in local currency. Since those observations were last updated in May 2025 and conflict with newer 2026 estimates and listings, use them as older indicators—not as today’s rental inventory. And keep short furnished stays in a separate category from a 12-month lease: visitor pricing is not resident pricing.
+## Before You Sign a Lease: Residency, Healthcare, and Safety
+
+Low prices do not give you permission to stay long term. Law 171-07, published by the Dominican tax authority DGII, requires a foreign pension of at least $1,500 a month for the pensionado program and $2,000 for the rentista program, with $250 more per dependent. It sets no minimum age. Immigration rules can change by resolution, so confirm the current documents with a Dominican consulate or the immigration office, DGM, before you apply.
+
+Healthcare needs the same checking. In the forum thread, one poster called Clínica Brugal in Puerto Plata good, and another claimed the CMC clinic in Sosúa may not treat patients who cannot show they can pay. That is one unverified anecdote, not a rule, but it is a reason to ask about payment terms before you need care.
 
 ## Practical Comparison
 
 ### Rent: The Number That Changes Everything
 
-**What the evidence says:**  
-Current Sosúa estimates and listing samples span roughly $783 to $1,250 for one-bedroom rentals. The $1,092 Club Residencial listing was for a furnished 12-month term; it is one listing, not a market median.
+**What the evidence says:**
+CityCost estimates $762 outside the center and $852 in the center, while a furnished Club Residencial listing asks well above both, with utilities included.
 
-**What to check next:**  
-Obtain written all-in quotes for a one-bedroom, including deposit, utility responsibilities, lease term, furnished status, and any maintenance charges.
+**What to check next:**
+Ask two local agents for written all-in quotes on 12-month leases, including deposit, utilities, furnished status and maintenance charges.
 
-### Groceries: Promising, but Personal
+### Groceries and Daily Costs
 
-**What the evidence says:**  
-A commercial model estimated $204 monthly for one person’s groceries, while U.S. USDA low-cost food plans for older adults ran roughly $268–$299 before the required one-person adjustment. These are different baskets and methodologies.
+**What the evidence says:**
+CityCost estimates about $200 a month for one person, with a budget restaurant meal at $10.01. That is a modeled basket.
 
-**What to check next:**  
-Price a personal four-week grocery basket, including imported foods, water, household supplies, and prescription needs.
+**What to check next:**
+Keep a four-week log of your own groceries, water, household supplies and prescriptions.
 
 ### Utilities: Ask for the Bills
 
-**What the evidence says:**  
-Older crowd-sourced Sosúa data showed a wide utilities range for an approximately 85-square-meter dwelling. Electricity use, particularly air-conditioning, can make this category highly variable.
+**What the evidence says:**
+CityCost lists utilities and internet near $126 for one person, with a range of $57.40 to $164 for a two-person apartment. Air-conditioning can push electricity up.
 
-**What to check next:**  
-Request 12 months of bills from comparable occupied apartments rather than relying on a landlord’s verbal estimate.
+**What to check next:**
+Request 12 months of electricity bills from a comparable occupied apartment, and ask whether backup power is shared.
 
-### Lease Type: A Month Is Not a Year
+### Healthcare Access and Cost
 
-**What the evidence says:**  
-A 12-month furnished one-bedroom listing was $1,092, while shorter stays were offered at different rates. Visitor pricing and long-term resident pricing are not interchangeable.
+**What the evidence says:**
+Sosúa relies on private clinics, and Medicare Part B costs $202.90 a month at home regardless of where you live.
 
-**What to check next:**  
-Compare furnished 30-day options and annual-lease quotes separately, with no assumption that one predicts the other.
+**What to check next:**
+Ask Clínica Brugal and a Sosúa clinic for self-pay prices for a first visit, and ask an international insurer for a quote that includes medical evacuation.
 
-### Medical and Legal Readiness: Still Outside the Math
+### Residency Pathway
 
-**What the evidence says:**  
-Medical care, insurance, prescriptions, residency eligibility, and related costs are not included in the budget test.
+**What the evidence says:**
+Law 171-07 sets the monthly pension minimum at this same budget figure, plus $250 per dependent.
 
-**What to check next:**  
-Request current self-pay and insurance information from local medical services, and confirm residency rules with the appropriate Dominican authority or consulate.
+**What to check next:**
+Email a Dominican consulate and ask in writing which documents prove a foreign pension today.
 
 ## The Trade-Off
 
-What you may gain is a chance at lower housing and grocery spending than national U.S. benchmarks—if you find a genuinely available lower-cost long-term rental and shop with a locally oriented basket.
+**What you may gain:**
 
-What you give up is predictability. Electricity, especially with air-conditioning, may vary widely. Imported foods, transportation, insurance, medical care, deposits, and temporary lodging can quickly consume the apparent savings.
+- Core living costs of about $1,260 a month, with about $240 left from this budget.
+- A walkable beach town where a budget lunch runs about $10.
+- A residency route with a published income bar, if your pension meets it.
 
-The practical question is not whether Sosúa is “cheap.” It is whether the exact apartment, utility arrangement, grocery habits, and medical needs you would have can fit your own $1,500 plan. Before travel, check the current official travel information as well as the costs.
+**What you may give up:**
+
+- Cushion. After Part B, the leftover shrinks to about $37.
+- Easy hospital access, since Sosúa relies on private clinics and larger hospitals are in Puerto Plata or Santiago.
+- Predictable bills, because electricity and air-conditioning swing widely.
 
 ![Sosúa neighborhood street scene](https://images.unsplash.com/photo-1778860540742-c6b0d5e0d6ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxTb3MlQzMlQkFhJTIwRG9taW5pY2FuJTIwUmVwdWJsaWMlMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQzNTc0Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Confirm legal entry requirements directly with Dominican authorities before travel; a trial stay is not long-term residence authorization.
-2. Use short-term lodging for the visit, but do not treat its rate as evidence of what an annual lease will cost.
-3. Tour units in Pedro Clisante/Club Residencial, El Batey, and one less-central area.
-4. Get written rent, deposit, lease, electricity, internet, water, generator, and maintenance terms for every unit considered.
-5. Ask for 12 months of electricity bills from comparable occupied apartments, particularly where air-conditioning is used regularly.
-6. Keep a four-week record of groceries, household supplies, prescriptions, and every local fare; ask a clinic and pharmacy for current self-pay and insurance information.
+1. Ask two local agents for written 12-month quotes on a one-bedroom in Pedro Clisante/Club Residencial and one outside the center, and compare them with the CityCost estimate.
+2. Ask each landlord for 12 months of electricity bills and the exact utilities, Wi-Fi and water terms.
+3. Price six staples, bread, milk, eggs, chicken, rice and bananas, at a local market and a supermarket, and compare your weekly total with the $200 monthly estimate.
+4. Ask Clínica Brugal in Puerto Plata and one Sosúa clinic for self-pay prices for a new-patient visit and what payment they require.
+5. Ask an international insurer for a quote that covers care in the Dominican Republic and evacuation, and add it to the budget.
+6. Email a Dominican consulate and ask which documents prove a monthly foreign pension.
 
 ![Sosúa daily life street scene](https://images.unsplash.com/photo-1745501234120-87751211b6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxTb3MlQzMlQkFhJTIwRG9taW5pY2FuJTIwUmVwdWJsaWMlMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQzNTc0Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
@@ -133,50 +160,48 @@ The practical question is not whether Sosúa is “cheap.” It is whether the e
 
 ### Can one person live in Sosúa for $1,500 a month?
 
-Possibly, but not reliably at every rent level. The supported partial budget ranges from about $1,210 to $1,849 before healthcare, insurance, taxes, travel, deposits, and emergencies. The lower result depends on securing lower-cost housing and keeping variable expenses controlled. ([CityCost](https://citycost.org/sosua/); [Long Term Lettings](https://www.longtermlettings.com/rent/monthly/dominican_republic/sosua/))
+Yes, a core budget of about $1,260 fits, leaving about $240 a month. That uses a $762 rent estimate; at a $1,100 listing the cushion is $28. Insurance and medical care are not included. ([citycost.org](https://citycost.org/sosua/))
 
 ### What rent can a $1,500 budget support in Sosúa?
 
-A commercial estimate placed outside-center rent near $783 and central rent near $873, but current one-bedroom listing samples reached $1,092 and $1,250. That spread is large enough to decide whether the budget works. ([CityCost](https://citycost.org/sosua/); [Long Term Lettings](https://www.longtermlettings.com/rent/monthly/dominican_republic/sosua/); [Realtor.com International](https://www.realtor.com/international/do/sosua-puerto-plata/rent/))
+CityCost estimates $762 outside the center and $852 in the center, while a furnished Club Residencial condo is listed at $1,100 on a 12-month term. Rent much above $1,000 leaves little room for anything else. ([longtermlettings.com](https://www.longtermlettings.com/rent/monthly/dominican_republic/sosua/))
 
-### Are groceries inexpensive in Sosúa?
+### How much pension do I need for Dominican residency?
 
-A November 2026 commercial estimate put one person’s groceries at $204 per month. That is a modeled basket, not a personal quote, and imported products or individual dietary habits can change the total. A trial grocery log is more useful than assuming every household will spend the same amount. ([CityCost](https://citycost.org/sosua/))
+You need a foreign pension of at least $1,500 a month, plus $250 a month for each dependent, under Law 171-07. The law sets no minimum age. Confirm current documents with a consulate or DGM. ([ws945695e.dgii.gov.do](https://ws945695e.dgii.gov.do/legislacion/leyesTributarias/Documents/Leyes%20de%20Incentivos%20y%20Fomentos/171-07.pdf))
 
-### Are utilities included in Sosúa rent?
+### Is Sosúa safe for Americans?
 
-It depends entirely on the lease. One identified Club Residencial listing included Wi-Fi and several services, but electricity terms were not fully established. Ask for written details rather than assuming that utilities, water, backup power, or maintenance are included. ([Long Term Lettings](https://www.longtermlettings.com/rent/monthly/dominican_republic/sosua/))
+The Dominican Republic is Level 2, Exercise Increased Caution, in a State Department advisory dated June 11, 2025, for crime. It says violent crime is a concern and advises you not to display wealth. Check the advisory again before you travel. ([travel.state.gov](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dom.html))
 
-### Does a $1,500 monthly budget qualify an American for Dominican residence?
+### What does Medicare cost if I keep it abroad?
 
-A spending budget and a legal income requirement are different matters. This $1,500 budget does not establish eligibility for any residence route; no qualifying income threshold was verified here. Confirm current requirements with the Dominican authority or consulate responsible for your application. (Residency eligibility requirements were not verified.)
+The 2026 standard Part B premium is $202.90 a month and the Part B deductible is $283. The Part A inpatient hospital deductible is $1,736. Ask your plan what it pays outside the United States. ([cms.gov](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles))
 
 ## Check Today's Information Before You Decide
 
-- [Banco Central de la República Dominicana](https://bancentral.gov.do/)
+- [U.S. State Department, Dominican Republic travel advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dom.html)
 - [CityCost, Sosúa](https://citycost.org/sosua/)
 - [Long Term Lettings, Sosúa](https://www.longtermlettings.com/rent/monthly/dominican_republic/sosua/)
-- [Numbeo, Cost of Living in Sosúa](https://www.numbeo.com/cost-of-living/in/Sosua-Dominican-Republic)
-- [U.S. Census Bureau, ACS B25031](https://data.census.gov/table/ACSDT1Y2025.B25031)
-- [USDA Monthly Food Plans](https://www.fna.usda.gov/research/cnpp/usda-food-plans/cost-food-monthly-reports)
+- [Expat.com, Puerto Plata health care thread](https://www.expat.com/en/forum/central-america/dominican-republic/820779-quality-of-health-care-in-puerto-plata.html)
 
 ## Sources & Verification
 
-- [Banco Central de la República Dominicana](https://bancentral.gov.do/) — Dominican reference exchange rate displayed for November 6, 2026.
-- [CityCost, Sosúa](https://citycost.org/sosua/) — commercial November 2026 estimates for one-person costs, rent, groceries, and utilities.
-- [Long Term Lettings, Sosúa](https://www.longtermlettings.com/rent/monthly/dominican_republic/sosua/) — a dated listing sample including a furnished Club Residencial one-bedroom offered on a 12-month term.
-- [Realtor.com International, Sosúa rentals](https://www.realtor.com/international/do/sosua-puerto-plata/rent/) — a dated listing sample showing an advertised one-bedroom at $1,250 monthly.
-- [Numbeo, Cost of Living in Sosúa](https://www.numbeo.com/cost-of-living/in/Sosua-Dominican-Republic) — older crowd-sourced rent, utility, internet, and food-price indicators.
-- [U.S. Census Bureau, ACS B25031](https://data.census.gov/table/ACSDT1Y2025.B25031) — 2025 U.S. median gross rent for one-bedroom renter-occupied units paying cash rent.
-- [USDA Monthly Food Plans](https://www.fna.usda.gov/research/cnpp/usda-food-plans/cost-food-monthly-reports) — September 2026 U.S. food-at-home benchmarks.
+- [U.S. State Department, Dominican Republic](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dom.html) — Level 2, June 11, 2025, via the official advisory feed
+- [CityCost, Sosúa](https://citycost.org/sosua/) — rent, groceries, utilities, transport and dining estimates, page updated November 8, 2026
+- [Long Term Lettings, Sosúa](https://www.longtermlettings.com/rent/monthly/dominican_republic/sosua/) — furnished 12-month rental listings
+- [DGII, Law 171-07](https://ws945695e.dgii.gov.do/legislacion/leyesTributarias/Documents/Leyes%20de%20Incentivos%20y%20Fomentos/171-07.pdf) — pensionado and rentista income minimums
+- [CMS, 2026 Medicare premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) — Part A and Part B amounts
+- [BLS, Consumer Expenditures 2025](https://www.bls.gov/news.release/cesan.nr0.htm) — average U.S. household housing and food spending
+- [Expat.com forum, Puerto Plata health care](https://www.expat.com/en/forum/central-america/dominican-republic/820779-quality-of-health-care-in-puerto-plata.html) — named clinics, undated posts from several years ago
 
-Information checked: November 10, 2026
+Information checked: November 11, 2026
 
 ## Related Golden Horizons Guides
 
 - [Healthcare Abroad for American Retirees](/healthcare-abroad-for-american-retirees)
 - [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-americans)
-- [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans)
+- [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans-retiring-abroad)
 - [Taxes for Americans Retiring Overseas](/taxes-for-americans-retiring-overseas)
 
 ## About Golden Horizons
@@ -187,4 +212,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-Sosúa may suit a $1,500 monthly plan if your rental search lands near the lower end and you keep close watch on variable bills. It is less suitable for anyone who needs the budget to include insurance, medical care, imported comforts, or a higher-rent furnished apartment without compromise. The most useful next step is a month spent pricing the life you would actually lead: the annual lease, the electricity bills, the grocery basket, and the care you may need.
+Sosúa fits $1,500 only if you land a lower-cost lease, with about $1,260 of core costs and a thin cushion once insurance and Part B are paid. It suits a careful renter with a pension at or above the $1,500 residency bar. Before you commit, get two written lease quotes, price a private clinic, and confirm residency documents with a consulate.
