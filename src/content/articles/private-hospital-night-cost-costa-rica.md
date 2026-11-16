@@ -136,7 +136,7 @@ The Part A inpatient deductible is $1,736 per benefit period in 2026, and the Pa
 
 ### Does Medicare pay for a hospital stay in Costa Rica?
 
-Usually not. Medicare says it "usually doesn't cover health care while you're traveling outside the U.S." with a few exceptions, and Medigap policies may cover emergency care abroad. Read the limits in your own policy. ([medicare.gov](https://www.medicare.gov/coverage/travel-outside-the-u.s.))
+Usually not. Medicare says it "usually doesn't cover health care while you're traveling outside the U.S." with a few exceptions, and Medigap policies may cover emergency care abroad. Ask your Medigap insurer for its foreign-travel limits before you travel in 2026. ([medicare.gov](https://www.medicare.gov/coverage/travel-outside-the-u.s.))
 
 ### How much does a U.S. hospital day cost?
 
