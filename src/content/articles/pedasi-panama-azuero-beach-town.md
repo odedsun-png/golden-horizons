@@ -4,7 +4,7 @@ category: Comparison
 slug: pedasi-panama-azuero-beach-town
 date: 2026-11-15
 image: https://images.unsplash.com/photo-1468413253725-0d5181091126?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxQZWRhcyVDMyVBRCUyMFBhbmFtYSUyMGJlYWNofGVufDB8MHx8fDE3OTQ3OTQwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080
-description: "Pedasí may suit retirees seeking a quieter coastal base, but residency, healthcare, housing, and safety details need local confirmation."
+description: "A Pedasí two-bedroom runs about $650 a month and the Pensionado permit needs a $1,000 pension, but the nearest big hospital is about 1.25 hours away."
 featured: false
 ---
 
@@ -12,156 +12,157 @@ featured: false
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY RESIDENCY
 
-A town of roughly 3,000 people can feel like the answer to a certain kind of retirement question: less traffic, fewer obligations, and a Pacific-side setting where the town itself—not a resort district—sets the pace. That is the appeal of Pedasí, in Panama’s Los Santos province on the Azuero Peninsula.
+Pedasí sits at the far end of the Azuero Peninsula, in Panama's Los Santos province, where the road runs out. It is a small Pacific-side town with beaches a few minutes from the center, not a resort district. For a retiree who wants a slow pace, that is the appeal.
 
-But small-town retirement asks different questions than city retirement. Where would you rent for a year? Which medical provider would you use? Would your insurance work there? Can you qualify to stay long term? Pedasí may be a compelling place to test, but its quiet scale means you should get the practical answers in hand before you build a life around it.
+Small towns ask different questions than cities, though. Where would you rent for a year? How far is the nearest full hospital? Can your pension qualify you to stay? Here are the numbers we could confirm, and the ones you still need to get in writing.
 
-> **THE SHORT ANSWER:** Pedasí is a small coastal town in Panama’s Los Santos province, with preliminary population figures placing the town at roughly 3,000 people. Its scale and Pacific-side setting may appeal to retirees seeking a quieter alternative to a large city. But a long-term move cannot be responsibly priced or approved on general impressions: confirm residency eligibility, lease terms, healthcare access, insurance, utilities, and regional safety information before committing.
+> **THE SHORT ANSWER:** Plan on about $650 a month for a two-bedroom rental and about $2,000 a month for a couple, according to one retirement guide's estimate. The Pensionado residency permit requires a lifetime pension of at least $1,000 a month, or $750 if you own Panama property worth more than $100,000. The U.S. State Department rates Panama Level 2 of 4, and its text names no Los Santos restriction. The catch is healthcare: Pedasí has a public health center, but serious care means a drive of about 1.25 hours to Chitré or Las Tablas.
 
 ## Retirement Snapshot
 
-**Primary decision:** Whether Pedasí’s small-town coastal setting works for a long-term retiree lifestyle once residency, healthcare, housing, and everyday services are confirmed.  
+**Primary decision:** Whether a quiet town with a basic clinic and a 1.25-hour drive to hospital care fits your health and your budget.  
 
-**Best fit:** A retiree who wants a quieter base on the Azuero Peninsula and is prepared to make a careful scouting trip before committing long term.  
+**Best fit:** A relatively healthy retiree with a qualifying lifetime pension, a car or a plan for rides, and a willingness to scout for a month first.  
 
-**Biggest warning:** You will need current local quotes before you can build a dependable retirement budget, estimate a one-bedroom rent, or plan for healthcare.  
+**Biggest warning:** Pedasí is a long way from specialists. Panama City is about 5 hours away by car.  
 
-**Residency:** Panama’s retiree residency options are nationwide; Pedasí itself does not create a separate residency pathway. Confirm the applicable program, income evidence, documents, and process with the appropriate Panamanian consular authority.  
+**Residency:** The Pensionado permit follows national rules, with $250 a month added for each dependent.  
 
-**Healthcare:** Healthcare arrangements can differ between temporary visitors and long-term residents. Ask local providers and insurers what access, pricing, and residency documentation apply to you.  
+**Healthcare:** A public health center (MINSA CAPSI) in town is described as open 24 hours. Chitré has a private hospital with a 24-hour emergency department.  
 
-**Housing / daily life:** Gather dated quotes for long-term rent and services in Pedasí town and nearby coastal areas instead of applying broad Panama figures to a very local market.  
+**Housing / daily life:** One guide puts a two-bedroom near the low end of its range, with some places from $500. Furnished homes with a pool run about $1,200.  
 
-**Safety:** Check current Panama and regional information through official authorities before travel or relocation.  
+**Safety:** Panama is Level 2 (Exercise Increased Caution), dated August 18, 2026. The Do Not Travel areas are the Mosquito Gulf and parts of the Darién Region.  
 
-**Climate:** Pedasí sits on Panama’s Pacific-side Azuero Peninsula; use an extended stay to see how seasonal conditions feel in daily life.  
+**Climate:** Pedasí is on the Pacific side of the peninsula. Budget about $100 a month for electricity, since air conditioning is common.  
 
-**Property:** Buying property and securing residency are separate decisions. Confirm your residency path and practical living costs before treating ownership as part of a retirement plan.  
+**Property:** Buying property is a separate decision from residency. The only link is the $750 pension option for owners of property worth more than $100,000.  
 
-## The Appeal Is Small-Town Scale—So Is the Homework
+## Pedasí Rent and Monthly Costs
 
-Roughly 3,000 residents is more than a demographic detail. It is the clue to what Pedasí may feel like day to day: a town-scale community rather than a large city with a beach nearby.
+One retirement guide lists a two-bedroom house or apartment at about $650 a month, with places for as little as $500. A furnished two-bedroom, two-bathroom home with a private pool is $1,200, and an upscale apartment in a gated community is about $2,000.
 
-Pedasí sits in Los Santos province on the Azuero Peninsula, and tourism sources commonly point to its Pacific-side setting and proximity to Playa Venao. Panama’s tourism authority has also identified Pedasí for destination-management and sustainability projects. For someone who wants a coastal base with a smaller rhythm, that is a meaningful starting point.
+The same guide itemizes a monthly budget of $1,632 for one person: rent, groceries $450, electricity $100, transport $100, internet and streaming $50, cell phone $35, and health care $25. It sums up the whole picture as about $1,800 a month for a single person and about $2,000 for a couple.
 
-The bigger question comes after the first pleasant week. A small town is not simply a quieter version of Panama City. Housing availability, medical appointments, insurance networks, utilities, transportation, and ordinary errands may all work differently. The question is not just whether Pedasí feels charming. It is whether your particular health, mobility, residency, and housing needs can work there reliably.
+Treat these as one guide's estimates, not a market survey. We found no Numbeo city page for Pedasí, and the guide's date is not shown on the page. Ask two local agents for current quotes and confirm lease length, furnishings, deposit, and whether utilities are included.
 
-That makes Pedasí a place to explore with curiosity—and with a notebook.
+## Pensionado Residency Rules
 
-## Before You Fall for the Beach, Test the Essentials
+Panama's immigration service lists the retiree permit requirements on a national form. The pension must be at least $1,000 a month and granted for life. You add proof of $250 a month for each dependent.
 
-Panama has retiree residency routes, including Pensionado programs referenced in general retirement guidance. The rules come from Panamanian immigration law, however, not from the town where you hope to live. Choosing Pedasí does not change the national requirements.
+The form lists two exceptions. If you bought Panama property for more than $100,000 in your own name, the minimum pension drops to $750 a month. Spouses may combine their pensions to reach the $1,000 minimum.
 
-Before you count on pension or Social Security income as part of a residency plan, ask the appropriate Panamanian consular authority which route applies to you and which documents it requires. A general description of a retiree visa is not the same as an approval for an individual applicant.
+The catch is the paperwork. You need a criminal record certificate, a health certificate, a notarized power of attorney, and a letter from the pension provider stating the pension is for life. Private pensions need extra documents from the company and a bank statement. Ask the Panamanian consulate whether your pension type qualifies before you pay for translations.
 
-Healthcare deserves the same direct approach. Panama has public healthcare, and healthcare is a major part of the country’s appeal for many retirees. In Pedasí, though, your useful questions are close to home: which public and private options can you reach, what care may require travel, whether your insurer covers services in the area, and what you would pay as a resident versus a visitor. Ask providers and insurers for answers that apply to your situation.
+## Healthcare Near Pedasí
 
-Then comes the rent. A long-term lease in Pedasí town is not the same as a short furnished stay, and a nearby coastal area should not be treated as the same market. Request quotes that spell out lease length, furnishings, utilities, internet, deposits, and fees. It is less romantic than a beach-town brochure, but it is how a scouting trip becomes a sound retirement decision.
+The town's public health center, MINSA CAPSI, is described as open 24 hours. Pedasí also has two pharmacies, an ambulance, and Red Cross service. The local health center number is 926-0730, and 911 reaches the ambulance service.
+
+For serious care, you go to Las Tablas or Chitré, about 1.25 hours away. Chitré has a private hospital with a 24-hour emergency department. Panama City is about 5 hours by car, or a flight of a little over 30 minutes from the Albrook airport to Pedasí.
 
 ## Practical Comparison
 
 ### Residency pathway
 
 **What the evidence says:**  
-Panama’s retiree residency options are governed nationally. Pedasí does not have its own separate retiree eligibility rules.
+The Pensionado permit needs a lifetime pension at the national minimum, with a lower minimum for Panama property owners. Each dependent adds $250 a month.
 
 **What to check next:**  
-Confirm the applicable Pensionado or other residency route, required income evidence, documents, fees, and timing with the Panamanian consular authority serving your jurisdiction.
+Ask the Panamanian consulate whether your pension qualifies, then request the current document list and fees in writing.
 
 ### Healthcare access
 
 **What the evidence says:**  
-Public and private healthcare arrangements may differ for visitors and residents, while Pedasí-specific costs and coverage for U.S. retirees require direct confirmation.
+Pedasí has a public health center, two pharmacies, and an ambulance. Hospital care is about 1.25 hours away in Chitré or Las Tablas.
 
 **What to check next:**  
-Request written information from local or regional providers and insurers on access, pricing, covered services, and residency documentation. Ask which services can be handled locally and which may require travel.
+Visit the health center on your scouting trip. Ask your insurer in writing whether it covers care in Chitré, and what an air or road transfer would cost.
 
 ### Housing comparison
 
 **What the evidence says:**  
-A dependable current one-bedroom rental range for Pedasí has not been established here, and nearby coastal areas should not be treated as interchangeable with the town.
+One guide lists a two-bedroom with some places from $500 and furnished pool homes at $1,200.
 
 **What to check next:**  
-Request dated long-term lease quotes from at least two local agents for Pedasí town and nearby areas, including furnishings, deposits, utilities, and internet.
+Get dated quotes from two local agents for a one-year lease. Compare furnishings, deposit, utilities, and internet.
 
 ### Daily-life costs
 
 **What the evidence says:**  
-There is no standardized, current local basket for groceries, utilities, internet, and transportation that supports a full retirement budget comparison.
+The same guide budgets $450 for groceries, $100 for electricity, and $50 for internet and streaming, for a single-person total of $1,632.
 
 **What to check next:**  
-Ask local service providers for resident utility and internet terms, then compare those quotes with your own U.S. household spending categories. Keep the comparison like for like: a long-term household budget, not a vacation budget.
+Track your own grocery and electric bills during a one-month stay and compare them with the guide's figures.
 
 ### Safety information
 
 **What the evidence says:**  
-A Pedasí-specific official safety level is not established here.
+Panama is Level 2 (Exercise Increased Caution) due to crime, dated August 18, 2026. The advisory names no Los Santos restriction.
 
 **What to check next:**  
-Review current guidance from the U.S. State Department and relevant Panamanian authorities, paying attention to information applicable to Los Santos and your planned travel patterns.
+Read the full advisory before you travel. Watch for theft and break-ins, which the advisory says rise around the holiday season.
 
 ## The Trade-Off
 
-Pedasí’s appeal is easy to understand: a quieter coastal setting on the Azuero Peninsula, a small-town environment, tourism and expat interest, and ongoing destination-management attention.
+**What you may gain:** A small Pacific-side town where rent can start near $500 a month, beaches 5 to 10 minutes from the center, and a clear national residency rule for pensioners.
 
-The trade-off is that the conveniences of a larger retirement hub may not be packaged neatly for you. Residency, housing, healthcare, insurance, and utility details need to be gathered one by one. If you enjoy doing that groundwork before committing, Pedasí may be worth a serious look. If you need every answer standardized before you arrive, the town’s small scale may feel less liberating.
+**What you may give up:** Easy access to hospitals and specialists. Serious care is about 1.25 hours away, and Panama City is about 5 hours by car. If you cannot drive, or you manage a condition that needs frequent specialist visits, that distance matters more than the rent.
 
 ![Pedasí Panama street scene](https://images.unsplash.com/photo-1709653771859-e1e9516da54a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxQZWRhcyVDMyVBRCUyMFBhbmFtYSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc5NDc5NDAwOXww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Contact the appropriate Panamanian consular authority about Pensionado or other residency options for a U.S. applicant planning to live in Pedasí. Ask for the current income requirements, documentation, fees, and expected process.
+1. Call the Panamanian consulate and ask whether your pension counts as "lifetime" under the national rule, and what documents and fees apply.
 
-2. Request formal, dated quotes for one-bedroom long-term rentals in Pedasí town center and nearby areas from at least two local agents. Compare lease length, furnishings, deposits, utilities, and internet terms.
+2. Request quotes from two local agents for a one-year, two-bedroom lease. Compare them with the guide estimate, and ask what is included in the price.
 
-3. Obtain three insurance quotes suitable for a retiree who expects to reside in Panama. Ask each insurer how coverage works in and around Pedasí and what residency proof is required.
+3. Visit the Pedasí health center and ask what it handles, then call the Chitré private hospital and ask what an emergency visit costs for a visitor.
 
-4. Contact local or regional healthcare providers to ask about appointment access, payment expectations, public-versus-private options, and whether care may require travel outside Pedasí.
+4. Ask three insurers whether your policy covers care in Chitré or Las Tablas, and whether an ambulance transfer is included.
 
-5. Check resident utility and internet options directly with local providers. Confirm available service, monthly terms, installation requirements, and what happens if a landlord controls the account.
+5. Track your real monthly spending for groceries, electricity, and internet. Compare it with $450, $100, and $50.
 
-6. Review current safety and demographic information through the U.S. State Department, Panamanian authorities, INEC, and Gaceta Oficial before deciding whether the town’s size and regional setting fit your needs.
+6. Drive the road from Pedasí to Chitré at least once, and decide whether you are comfortable making that trip on short notice.
 
 ![Pedasí Panama daily life](https://images.unsplash.com/photo-1603057901298-1503ab0f3a61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxQZWRhcyVDMyVBRCUyMFBhbmFtYSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc5NDc5NDAwOXww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### What retiree visa options exist in Panama, and does Pedasí-specific residency differ?
+### How much monthly pension do you need for Panama's Pensionado permit?
 
-Panama has nationwide retiree residency options, including Pensionado programs referenced in general retirement guidance. Pedasí does not create a separate set of official eligibility criteria. Confirm the route, documents, and current requirements with the Panamanian consular authority responsible for your application. ([Kiplinger](https://www.kiplinger.com/retirement/happy-retirement/where-to-retire-living-in-panama-offers-stability-and-charm))
+You need a lifetime pension of at least $1,000 a month, or $750 if you own Panama property worth more than $100,000, plus $250 a month per dependent. Pedasí has no separate rule, because the requirement is national. ([migracion.gob.pa](https://www.migracion.gob.pa/wp-content/uploads/2025/09/02-JUBILADO-PENSIONADO-1.pdf))
 
-### Are healthcare costs in Pedasí covered by Panama’s public system for residents?
+### What healthcare is available in Pedasí?
 
-Healthcare access and pricing can differ between public and private settings, and between visitors and residents. Ask local providers and insurers which services, costs, and residency proofs apply to you before you depend on public access or private coverage. ([Kiplinger](https://www.kiplinger.com/retirement/happy-retirement/where-to-retire-living-in-panama-offers-stability-and-charm))
+The town has a public health center described as open 24 hours, two pharmacies, an ambulance, and Red Cross service. Serious care means a trip of about 1.25 hours to Las Tablas or Chitré, where Chitré has a private hospital with a 24-hour emergency department. ([visitpedasipanama.com](https://visitpedasipanama.com/))
 
-### What is the typical rental range for a one-bedroom home in Pedasí town?
+### What does a one-bedroom or two-bedroom cost to rent in Pedasí?
 
-Do not rely on a single “typical” range without current, dated local quotes. Lease length, furnishings, included utilities, and whether the property is in town or a nearby coastal area can change the comparison. Ask at least two local agents for comparable long-term listings. ([Panama-Properties Pedasí Area Guide](https://www.panama-properties.com/pedasi-area-guide))
+One guide lists a two-bedroom at about $650 a month, with some places from $500 and a furnished pool home at $1,200. It does not give a one-bedroom figure, so ask local agents for dated quotes. ([liveandinvestoverseas.com](https://www.liveandinvestoverseas.com/country-hub/panama/pedasi))
 
-### Is Pedasí considered safe for retirees?
+### Is Pedasí safe for retirees?
 
-Check current official information before deciding. A Panama-wide or travel-oriented description should not substitute for a Pedasí-specific safety assessment. Review guidance applicable to Los Santos, then consider your transportation, mobility, and evening-travel needs. ([Visit Pedasí Panama](https://visitpedasipanama.com/))
+Panama is Level 2 of 4 (Exercise Increased Caution) due to crime, with the advisory dated August 18, 2026. The Do Not Travel areas are the Mosquito Gulf and parts of the Darién Region, and the text names no Los Santos restriction. ([cadataapi.state.gov](https://cadataapi.state.gov/api/TravelAdvisories))
 
-### What is the best way to compare Pedasí with a U.S. retirement baseline?
+### Is Pedasí getting better public services?
 
-Use the same household assumptions on both sides: one person or a couple, long-term residency, equivalent housing, groceries, utilities, transportation, healthcare, and insurance. Gather dated quotes with clear terms instead of comparing a vacation stay in Panama with a full household budget in the United States. ([Inside Panama](https://insidepanama.com/es/lugares/pedasi))
+Panama's tourism authority reported in January 2023 that it planned ambulances and an emergency-care system for the Pedasí destination, but it gave no dates or dollar amounts. Check with the town hall at 926-0717 for the current status. ([atp.gob.pa](https://www.atp.gob.pa/atp-ejecuta-proyectos-en-pedasi-para-asegurar-el-desarrollo-sostenible-del-destino/))
 
 ## Check Today's Information Before You Decide
 
+- [Panama Pensionado requirements, Servicio Nacional de Migración](https://www.migracion.gob.pa/wp-content/uploads/2025/09/02-JUBILADO-PENSIONADO-1.pdf)
+- [U.S. State Department travel advisory feed](https://cadataapi.state.gov/api/TravelAdvisories)
 - [Visit Pedasí Panama](https://visitpedasipanama.com/)
-- [Autoridad de Turismo de Panamá: Pedasí development projects](https://www.atp.gob.pa/atp-ejecuta-proyectos-en-pedasi-para-asegurar-el-desarrollo-sostenible-del-destino/)
-- [INEC population projections](https://www.inec.gob.pa/archivos/P02895625202603191410381-Volumen%20III%20-%20Defunciones%2C%20A%C3%B1o%202024.pdf)
-- [Gaceta Oficial Digital: Pedasí population references](https://www.gacetaoficial.gob.pa/storage/gacetas/2026/01/30438/GacetaNo_30438_20260106.pdf)
 
 ## Sources & Verification
 
-- [INEC population projections](https://www.inec.gob.pa/archivos/P02895625202603191410381-Volumen%20III%20-%20Defunciones%2C%20A%C3%B1o%202024.pdf) — Pedasí district demographic context in 2024 population projections.
-- [Gaceta Oficial Digital](https://www.gacetaoficial.gob.pa/storage/gacetas/2026/01/30438/GacetaNo_30438_20260106.pdf) — Pedasí demographic references by corregimiento.
-- [Autoridad de Turismo de Panamá](https://www.atp.gob.pa/atp-ejecuta-proyectos-en-pedasi-para-asegurar-el-desarrollo-sostenible-del-destino/) — destination-management and development projects in Pedasí.
-- [Visit Pedasí Panama](https://visitpedasipanama.com/) — destination overview for Pedasí and its surrounding area.
-- [Kiplinger](https://www.kiplinger.com/retirement/happy-retirement/where-to-retire-living-in-panama-offers-stability-and-charm) — general retirement considerations for Panama; not Pedasí-specific residency or healthcare pricing.
+- [Servicio Nacional de Migración](https://www.migracion.gob.pa/wp-content/uploads/2025/09/02-JUBILADO-PENSIONADO-1.pdf) — Pensionado pension minimum, exceptions, and documents.
+- [U.S. State Department advisory feed](https://cadataapi.state.gov/api/TravelAdvisories) — Panama Level 2, published August 18, 2026.
+- [Live and Invest Overseas](https://www.liveandinvestoverseas.com/country-hub/panama/pedasi) — rent, monthly budget, and healthcare facilities (undated guide).
+- [Visit Pedasí Panama](https://visitpedasipanama.com/) — local health services, emergency numbers, and travel times.
+- [Autoridad de Turismo de Panamá](https://www.atp.gob.pa/atp-ejecuta-proyectos-en-pedasi-para-asegurar-el-desarrollo-sostenible-del-destino/) — Pedasí destination projects, January 2023.
 
-Information checked: November 15, 2026
+Information checked: November 16, 2026
 
 ## Related Golden Horizons Guides
 
@@ -178,6 +179,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY RESIDENCY**
 
-Pedasí may suit you if the point of retirement is a genuinely smaller Pacific-side town, not a city lifestyle softened by a beach nearby. Its roughly 3,000-person scale is the central clue: it may offer the quieter rhythm many readers want, while requiring more careful local planning than a larger destination.
+Pedasí may suit you if you want a small town, you have a qualifying lifetime pension, and you are comfortable driving about 1.25 hours for hospital care. Low rent is easy on a budget, but the distance to care is the real cost.
 
-Spend a month asking the unglamorous questions—where you would rent, how you would access care, what coverage would follow you, and how you would qualify to stay. If the answers feel workable, Pedasí may be more than a lovely stop on the Azuero Peninsula. It may be the kind of place where a quieter daily life feels like exactly the point.
+Spend a month there before you decide. Confirm your pension qualifies, price a one-year lease, and ask your insurer what it covers in Chitré. If those answers hold up, Pedasí is worth a longer stay.
