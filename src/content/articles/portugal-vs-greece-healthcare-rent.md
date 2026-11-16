@@ -1,328 +1,200 @@
 ---
-title: "Salta, Argentina: Colonial Streets Beneath the Mountains"
-category: Hidden Gem
-slug: salta-argentina-colonial-city
-date: 2026-11-10
-image: "https://images.unsplash.com/photo-1599094792743-7df3e8870800?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080"
-description: "Salta offers historic streets, mountain views, and a compelling retirement possibility. Here is how to test the housing, healthcare, and daily life behind the scenery."
+title: "Portugal vs Greece: Healthcare access and 1-bedroom rents for U.S. retirees (60–75) in 2026"
+category: Comparison
+slug: portugal-vs-greece-healthcare-rent
+date: 2026-11-15
+image: https://images.unsplash.com/photo-1624031031143-7a084c514946?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxQb3J0dWdhbCUyMGNvYXN0fGVufDB8MHx8fDE3OTQ3ODk0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080
+description: "A cautious comparison of resident healthcare access and long-term one-bedroom rents in Portugal and Greece."
 featured: false
 ---
 
-# Salta, Argentina: Colonial Streets Beneath the Mountains
+# Portugal vs Greece for Retirees: Lisbon Rents $1,590, Athens $729, and Who Gets Public Healthcare
 
-Golden Horizons Status: WORTH TESTING — VERIFY THE EVERYDAY REALITY
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY RESIDENCY
 
-> THE SHORT ANSWER: Salta has a clear reason to be on your retirement shortlist: a historic city center in a mountain-framed valley, with the Cathedral Basilica, Cabildo, and Cerro San Bernardo giving the setting substance beyond the photographs. What it does not yet have is a well-established retirement budget. Older price references suggest possibilities, but current housing terms, healthcare, insurance, and residence requirements need personal investigation. Visit for the setting. Decide on the strength of the life you could build there.
+> **THE SHORT ANSWER:** Numbeo's November 14, 2026 data puts a central one-bedroom at $1,590 a month in Lisbon and $729 in Athens, a gap of $860. Portugal's D7 visa income bar is commonly measured against a minimum wage worth about $1,017 a month, while Greece's regional government page lists about $2,210 for a financially independent person. The catch is healthcare: Portugal ties its public system to a valid residence permit, Greece ties public registration to a permit with work access, and Original Medicare, with a $1,736 Part A deductible at home, pays for almost nothing abroad. Athens wins on rent, and Portugal has the clearer healthcare path to test.
 
-Some places enter a retirement search through a spreadsheet. Salta makes its case through the setting first.
+You will not settle this from a spreadsheet. Rent is the easy part to compare, and Athens is clearly cheaper. Healthcare is harder, because in both countries your access depends on the residence permit you hold.
 
-The city sits in the Lerma Valley, where low buildings and narrow streets meet a backdrop of hills and mountains. Its historic architecture combines local materials with colonial-Andean and later European influences. Above it, Cerro San Bernardo offers a view back across the place you might begin to imagine calling home.
-
-That is an invitation—not an answer.
-
-The retirement question begins after the sightseeing: Can you find a comfortable apartment, obtain the care you need, manage the local arrangements, and enjoy an ordinary week?
-
-Salta deserves investigation for its character. Whether it deserves a place in your future depends on the details beneath it.
+This guide puts the numbers side by side, then shows you which questions to ask before you sign a lease in either country.
 
 ## Retirement Snapshot
 
-Primary decision:  
-Does Salta’s historic setting and mountain backdrop offer enough of the life you want to justify a closer look at the practicalities?
+**Primary decision:** Is Athens's lower rent worth a less certain route into public healthcare, or is Lisbon's clearer path worth paying about $860 more a month for a central one-bedroom?
 
-Best fit:  
-Someone drawn to a city with a recognizable historic center, willing to investigate local lease arrangements, healthcare, and the everyday use of Spanish.
+**Best fit:** A retiree with steady pension or Social Security income who will confirm a residence route and healthcare enrollment in writing before choosing a country.
 
-Biggest warning:  
-The available citywide cost references are old and thinly supported. They cannot establish a dependable monthly retirement budget.
+**Biggest warning:** Neither visa guarantees public healthcare on arrival. Portugal's guide says a user number alone does not make the SNS pay your costs, and Greece's AMKA registration needs a permit with work access.
 
-Residency:  
-The State Department says U.S. tourists do not need a visa for visits of 90 days or less. A scouting stay is not residence permission.
+**Residency:** Portugal's D7 income is commonly measured against a minimum wage of about $1,017 a month. Greece's regional page lists about $2,210 a month for a financially independent person, plus 20% for a spouse.
 
-Healthcare:  
-Confirm appropriate local providers, insurance terms, prescription access, and payment arrangements. Do not assume public treatment will be free.
+**Healthcare:** Original Medicare does not pay abroad except in narrow cases. Plan on local insurance, the local public system, or both.
 
-Housing / daily life:  
-Current rental advertisements provide leads, but the lease terms, building charges, guarantees, and eligibility of a foreign applicant still need checking.
+**Safety:** The State Department rates Portugal Level 1 (Exercise Normal Precautions), updated December 22, 2025, and Greece Level 1, updated October 22, 2025. The feed lists one country rating for each, with no separate rating for Lisbon or Athens.
 
-Safety:  
-Argentina was Level 1, “Exercise normal precautions,” on the current State Department country page reviewed for this article. That is not a safety rating for every Salta neighborhood.
+**Housing:** Numbeo's rent data for both capitals is current to November 14, 2026, with 211 contributors for Lisbon and 252 for Athens.
 
-## Colonial Salta and its mountain setting
+## Lisbon vs Athens: One-Bedroom Rents in November 2026
 
-At 1,187 meters above sea level, Salta occupies the northern Lerma Valley. The municipality describes a city of low buildings, narrow streets, and narrow sidewalks, framed by surrounding hills and mountains.
+Numbeo, updated November 14, 2026, shows these monthly rents in U.S. dollars:
 
-That description contains both the attraction and a practical question.
+| One-bedroom, monthly | Lisbon | Athens |
+|---|---:|---:|
+| City centre | $1,590 | $729 |
+| Outside the centre | $1,183 | $618 |
+| Typical central range | $1,323 to $2,095 | $551 to $992 |
+| Basic utilities, 915 sq ft | $148 | $199 |
 
-A compact-looking historic street may be appealing to explore. Whether it works for daily shopping, mobility, and access to your apartment is something to test on foot.
+The contributor counts cover each city's whole cost-of-living page, not rent alone: 211 contributors and 2,197 entries for Lisbon, 252 contributors and 2,493 entries for Athens, both over the past 12 months. That is a crowd-sourced average, not a quote for one building.
 
-The architecture is more layered than the word “colonial” suggests. Argentina’s national tourism material describes adobe, stone, and wood alongside colonial-Andean influences from the Alto Perú region, followed by European styles, particularly Italian ones.
+Two things stand out. The centre-to-centre gap is $860 a month, which is about $10,300 a year. Outside the centre the gap shrinks to $564. And Athens utilities run higher than Lisbon's, so part of the rent saving comes back on the electric bill.
 
-The Cathedral Basilica and historic Cabildo are part of that story. Salta’s appeal does not depend on pretending the whole center belongs to one period. It comes from the different periods sharing the same streets.
+Rent is also where a visa income bar can mislead you. The D7 reference of about $1,017 a month is lower than a central Lisbon one-bedroom. Meeting the bar proves you qualify. It does not prove you can live there.
 
-Cerro San Bernardo gives the city another dimension. The cable car begins at Parque San Martín and climbs to the summit, where you can look across Salta and its surroundings.
+### How to compare like for like
 
-Go for the view. Then come back down and pay attention to the route home.
+Ask each landlord for the same things: monthly rent, deposit, whether utilities and building fees are included, lease length, and furnishing. A furnished central Lisbon flat and an unfurnished Athens flat outside the centre are not the same purchase.
 
-For retirement, the useful landscape includes the supermarket, pharmacy, clinic, and front door—not only the mountains beyond them.
+## Healthcare Access: Portugal SNS vs Greece's Public System
 
-Municipal tourism information places the main rainy season in December through February. A pleasant visit in another month will not show you how your preferred apartment and routine perform throughout the year.
+**Portugal.** The government's migrant health guide says foreign nationals with legal residence can obtain an SNS user number the first time they visit a public health unit. The same guide warns that the number alone does not guarantee the SNS covers your costs. It must be linked to your identification document, a Portuguese tax number (NIF), a full Portuguese address, and a residence permit with a valid expiry date. The SNS 24 line is 808 24 24 24, open 24 hours a day for clinical questions, and 112 is the emergency number.
 
-Sources: [Municipality of Salta](https://municipalidadsalta.gob.ar/informacion-turistica/), [Argentina national tourism: Salta’s architecture](https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/recorrer-la-arquitectura-saltena), and [Visit Salta: Teleférico San Bernardo](https://visitsalta.ar/favoritos/teleferico-san-bernardo/).
+**Greece.** Public-system registration runs through the AMKA social security number. The AIDA country report, updated July 30, 2026, cites a December 2023 joint ministerial decision that requires third-country nationals to hold a residence permit with access to the labour market, plus proof of residence such as an employment contract. Retirees on a financial-independence permit may not fit that wording, so ask the Greek authorities in writing.
 
-## What the available prices do—and do not—prove
+A separate route exists. A July 1, 2025 report says non-EU pensioners with a pensioner residence permit can join public coverage through EOPYY at 8.5% of monthly pension income, with a 25% copay on medicines. That report is a news summary, so confirm the current terms with EFKA before you plan around it.
 
-There is enough evidence to investigate Salta’s costs. There is not enough to advertise a reliable monthly retirement total.
+The Attica regional government's page for financially independent individuals, dated November 1, 2023, also asks for a private insurance policy. Budget for private cover in Greece until a public route is confirmed.
 
-Numbeo’s Spanish-language Salta page displayed the following U.S.-dollar figures during this review:
+Neither source gives a price for a specialist visit or a hospital stay, and Golden Horizons has none to offer. Get written quotes.
 
-| Historical price reference | Displayed amount |
-|---|---:|
-| One-bedroom apartment in the center | $460 monthly |
-| One-bedroom outside the center | $384 monthly |
-| Basic utilities for an 85-square-meter apartment | $98.08 monthly |
-| Broadband internet | $10 monthly |
-| Inexpensive restaurant meal | $7.50 |
-| Cappuccino | $2.55 |
-| One-way local transport ticket | $0.93 |
+## Visa Income Bars: Portugal D7 vs Greece
 
-The important line is below the table on the source page: last updated July 2025, with four contributors identified for the stated reporting period.
+**Portugal D7.** The Portuguese government's December 17, 2025 announcement sets the 2026 national minimum wage at about $1,017 a month, converted at the European Central Bank's November 13, 2026 reference rate of 1.1052 dollars per euro. D7 income is commonly measured against that wage, but no consular checklist could be retrieved for this guide, so confirm the exact amount, the months of proof and the family add-ons with the consulate that serves your state.
 
-Those are historical clues, not current offers.
+**Greece.** The Attica regional administration's page for financially independent individuals, dated November 1, 2023, lists a stable income of about $2,210 a month at the same rate, plus 20% for a spouse and 15% for each child. That puts a couple near $2,652 a month. It lists an application fee of about $1,105. Figures circulating online differ from this page, and the page is three years old, so ask the Greek consulate for the current checklist.
 
-Expatistan provides a second warning rather than a strong confirmation. Its Salta page also displays July 2025 prices and says its estimates rely on few data points and should be treated as a best guess.
+Both visas require income from outside the country. Neither lets you count a local job.
 
-The right response is not to average the two websites. It is to collect better evidence for the decisions you face.
+## What Medicare Costs You at Home, and What It Pays Abroad
 
-### What current rental advertisements add
+Original Medicare in 2026, per CMS and medicare.gov:
 
-The Mercado Libre results page retrieved for this review included:
+- Part A inpatient deductible: $1,736 for each benefit period.
+- Part B annual deductible: $283.
+- Standard Part B premium: $202.90 a month.
 
-- A one-bedroom advertised on Avenida Sarmiento at ARS 580,000.
-- A one-bedroom on Buenos Aires street at ARS 600,000.
-- A Macrocentro one-bedroom on 12 de Octubre at ARS 450,000.
+Medicare.gov says Original Medicare usually does not cover care outside the U.S. The exceptions are narrow, such as an emergency in the U.S. when a foreign hospital is closer than the nearest U.S. hospital that can treat you. Medicare drug plans do not cover prescriptions bought abroad. Medigap policies may cover emergency care when you travel, so check your plan's terms.
 
-These are examples from a results page, not a representative rent range. They do not establish availability, full monthly charges, contract duration, furnishings, or whether you would qualify to rent.
-
-The results also mix locations and contain some inconsistent property labels. Open the individual listing, verify the address and layout, and contact the advertiser before relying on it.
-
-Keep the asking amounts in pesos until you have confirmed the payment currency and practical conversion cost. Converting a current peso advertisement using an old dollar estimate would create precision without a sound comparison.
-
-### Build the budget around your own life
-
-Separate:
-
-- Recurring monthly expenses.
-- Annual and irregular bills divided by 12.
-- Upfront moving and setup cash.
-
-Include housing, building charges, utilities, groceries, transport, communications, healthcare, prescriptions, travel, and any obligations you retain in the United States.
-
-For every amount, record whether it comes from a written quote, a bill, your own receipt, or a planning allowance.
-
-That distinction matters more than producing a neat total before the important questions have answers.
-
-Sources: [Numbeo — Salta](https://es.numbeo.com/coste-de-vida/ciudad/Salta-Argentina), [Expatistan — Salta](https://www.expatistan.com/cost-of-living/salta), and [Mercado Libre — Salta rental results](https://inmuebles.mercadolibre.com.ar/departamentos/alquiler/salta/salta/centro/).
-
-## How to test Salta for 30 days before considering residence
-
-A useful scouting stay has two jobs: let you enjoy the city and find out where your imagined retirement meets resistance.
-
-You do not need to strip the pleasure out of the visit. See the landmarks. Take the cable car. Spend time in the center.
-
-But give an ordinary Tuesday equal attention.
-
-Choose accommodation from which you can test shopping, transport, and access to care. Keep the short-stay price separate from the long-term lease quotes you collect.
-
-When viewing apartments, ask about:
-
-- Rent and payment currency.
-- Expensas, or building charges.
-- Deposit and advance payments.
-- Guarantor or guarantee-insurance requirements.
-- Rent-adjustment formula and frequency.
-- Furnishings and appliances.
-- Heating, cooling, and utility responsibilities.
-- Documents accepted from a foreign applicant.
-- Renewal and early-departure terms.
-
-Do not insist on a particular lease length before learning what is available and appropriate. Compare offers that fit your intended stay.
-
-### Make healthcare an early appointment
-
-The State Department advises travelers to expect medical expenses in Argentina, including at public facilities, and says providers commonly require payment upfront.
-
-That is a reason to arrive with suitable coverage and accessible funds—not to assume every public or private service follows the same payment arrangement.
-
-For a longer stay, confirm your own status and terms with providers and insurers. Ask about age eligibility, exclusions, waiting periods, deductibles, local networks, and ongoing prescriptions.
-
-If a specialist or treatment is essential, establish that access before a rental decision. A general statement about Argentina’s healthcare cannot answer a personal question about care in Salta.
-
-### Keep the legal question separate
-
-The State Department’s guidance supports visa-free tourist visits of 90 days or less for U.S. travelers, with a passport valid at entry.
-
-That gives eligible visitors room to investigate. It does not settle residence eligibility or a landlord’s requirements.
-
-Before planning a move, confirm the current pensionado, rentista, or other appropriate route directly with Argentina’s migration authority or the responsible Argentine consulate. This article does not establish a qualifying income threshold or complete application cost.
-
-Source: [State Department — Argentina entry and healthcare information](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Argentina.html).
+For a retiree aged 65 or older, this changes the math. Staying enrolled keeps your cover at home, but it will not pay a Lisbon or Athens hospital. If a planned procedure is on your list, price it at home first, with your $1,736 Part A deductible or $283 Part B deductible in mind, then get a written local quote before deciding it is cheaper abroad.
 
 ## Practical Comparison
 
-### Housing
+### Residency route
 
-What the evidence says:  
-Older crowd-sourced dollar figures and current peso-denominated advertisements provide different kinds of information. Neither establishes your final housing cost.
+**What the evidence says:**  
+Portugal's D7 income is commonly measured against the national minimum wage. Greece's regional page lists about $2,210 a month, dated November 1, 2023.
 
-What to check next:  
-Collect at least three comparable written offers, including building charges, guarantees, adjustments, deposits, and the documents you would need.
+**What to check next:**  
+Ask the Portuguese consulate and the Greek consulate for their current written checklists, including insurance and proof-of-income rules.
 
-### Historic setting and mobility
+### Healthcare access
 
-What the evidence says:  
-Salta’s low-rise historic setting is documented, as are its narrow streets and sidewalks. The cable car connects Parque San Martín with Cerro San Bernardo.
+**What the evidence says:**  
+Portugal's guide links SNS coverage to a residence permit, tax number and address. Greece's AMKA conditions mention a permit with labour-market access.
 
-What to check next:  
-Test the routes you would use repeatedly. Pay attention to crossings, surfaces, stairs, rest opportunities, and practical alternatives when walking is inconvenient.
+**What to check next:**  
+Ask Portugal's SNS 24 line (808 24 24 24) how a new resident enrolls. Ask EFKA in Greece whether your permit type qualifies for AMKA or the pensioner scheme.
 
-### Legal status
+### One-bedroom rent
 
-What the evidence says:  
-Eligible U.S. tourists can visit for up to 90 days without a visa under the State Department guidance reviewed here. Residence is a separate process.
+**What the evidence says:**  
+Numbeo lists central one-bedrooms at $1,590 in Lisbon and $729 in Athens, with outside-centre rents at $1,183 and $618.
 
-What to check next:  
-Confirm the appropriate route, income evidence, documents, insurance requirements, and fees before making commitments based on a permanent move.
+**What to check next:**  
+Collect two written long-term quotes in Lisbon and two in Athens, with the same furnishing level, and ask what utilities add.
 
-### Healthcare
+### Medicare at home
 
-What the evidence says:  
-Official U.S. guidance warns that medical care can involve upfront payment. This article has not established an individual insurance premium or specialist-care plan.
+**What the evidence says:**  
+Original Medicare charges a $1,736 Part A deductible and a $283 Part B deductible in 2026 and generally does not pay abroad.
 
-What to check next:  
-Obtain written provider and insurance information relevant to your age, medical history, and intended status.
-
-### Currency and price reliability
-
-What the evidence says:  
-The historical dollar references are dated July 2025. Current rental advertisements are commonly displayed in pesos, with contract terms still to be confirmed.
-
-What to check next:  
-Record the exchange rate and fees you actually receive through lawful channels. Track how rent adjustments and other price changes would affect your budget.
+**What to check next:**  
+Call your Medigap insurer and ask what foreign-travel emergency cover your plan includes and what the limit is.
 
 ## The Trade-Off
 
-What you may gain:
+**What you may gain:** Athens offers a central one-bedroom for about $860 less a month than Lisbon on Numbeo's figures. Portugal offers a government guide that spells out how legal residents join the SNS.
 
-- A city with documented architectural character rather than a retirement development built around a single promise.
-- A mountain-framed setting with a viewpoint directly accessible from the city.
-- The possibility of a rewarding daily routine if the housing, language, mobility, and care arrangements suit you.
-- A destination worth investigating without first declaring it a bargain.
+**What you may give up:** In Portugal you pay more for central rent and still need a complete residence file before the SNS covers you. In Greece you may need private insurance and a permit type that opens the public system. Your Medicare card stays valid at home but pays little abroad.
 
-What you must be prepared to manage:
+The apartment may be easier to find in one place. The healthcare path may be easier to follow in the other.
 
-- Cost references too old and limited to carry a retirement decision.
-- Lease arrangements that require careful explanation.
-- The practical relationship between dollar income, peso expenses, and contract adjustments.
-- Healthcare access and payment terms that need individual confirmation.
-- The possibility that a beautiful historic setting may not meet your accessibility needs.
 
-The compromise is not that Salta lacks appeal. Its appeal is easy to establish.
-
-The work is finding out whether it remains appealing when you are dealing with a prescription, a building charge, or a journey you would rather not make on foot.
+![Portugal and Greece cityscape](https://images.unsplash.com/photo-1601581875039-e899893d520c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxHcmVlY2UlMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQ3ODk0OTR8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Check the entry rules before booking.  
-   Confirm the permitted stay and passport requirements. Arrange appropriate travel-health coverage and accessible emergency funds.
+A useful month ends with written answers, not photos.
 
-2. Choose accommodation for research, not just scenery.  
-   Use a short-term base that lets you test the places and services relevant to daily life. Keep its price separate from long-term housing estimates.
+1. Ask the Portuguese consulate for the D7 checklist and write down the monthly income it requires for you and your spouse.
+2. Ask the Greek consulate for the financially independent checklist and the current income and insurance rules.
+3. Request two written long-term quotes for a one-bedroom in central Lisbon and two for central Athens, with utilities and furnishing stated.
+4. Call SNS 24 on 808 24 24 24 and ask how a new resident with a D7 permit registers and what user fees apply.
+5. Ask EFKA in Greece whether your permit type qualifies for AMKA or the pensioner scheme, and what it costs per month.
+6. Call your Medigap insurer, ask what foreign-travel emergency cover you have, and ask your doctor to price one planned procedure at home.
 
-3. Gather comparable rental offers.  
-   Investigate Centro, Macrocentro, and another area that fits your priorities. Verify actual addresses rather than relying only on search filters.
+By the end, you should know two rents, two visa bars and two healthcare routes in writing.
 
-4. Read the financial terms behind the rent.  
-   Record building charges, guarantees, deposits, payment currency, adjustment clauses, furnishings, and foreign-applicant requirements.
-
-5. Repeat an ordinary shopping week.  
-   Keep receipts for the food, medicines, and household supplies you would buy regularly. Record quantities so comparisons remain meaningful.
-
-6. Test daily journeys.  
-   Travel between potential homes, shops, social activities, and appropriate healthcare providers. Note walking conditions, fares, waiting, and reliable transport alternatives.
-
-7. Close the most important unanswered question.  
-   Obtain healthcare and insurance terms, confirm the potential residence route, and decide whether the remaining uncertainty justifies another visit or a different destination.
-
-Do not judge the month only by whether you fell in love with Salta.
-
-Judge it by whether you understand what living there would ask of you.
+![Portugal and Greece neighborhood](https://images.unsplash.com/photo-1568715684971-9ac138754ab9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxHcmVlY2UlMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQ3ODk0OTR8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### Is Salta genuinely a colonial city?
+### How much is a one-bedroom in Lisbon compared with Athens?
 
-Its historic identity is well supported, but its architecture is not all from one period. Argentina’s national tourism material describes colonial-Andean influences, local materials, and later European styles. The Cathedral Basilica and historic Cabildo are documented landmarks within that layered cityscape.
+A central one-bedroom averages $1,590 a month in Lisbon and $729 in Athens, according to Numbeo's November 14, 2026 data. Outside the centre the figures are $1,183 and $618. Numbeo is crowd-sourced, so treat these as planning averages. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Lisbon?displayCurrency=USD))
 
-Source: [Argentina national tourism — Salta architecture](https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/recorrer-la-arquitectura-saltena).
+### What income does the Portugal D7 visa need in 2026?
 
-### Are there mountain views from the city?
+Portugal's 2026 minimum wage is worth about $1,017 a month, and D7 income is commonly measured against it. Confirm the exact figure, months of proof and family add-ons with your consulate. ([portugal.gov.pt](https://portugal.gov.pt/gc25/comunicacao/noticias/governo-aumenta-salario-minimo-para-920-euros-em-2026))
 
-Salta sits in the Lerma Valley, framed by hills and mountains. Cerro San Bernardo provides a specific panoramic viewpoint, reached by cable car from Parque San Martín. A view from an individual apartment depends on the building and position.
+### What income does Greece ask of a financially independent retiree?
 
-Sources: [Municipality of Salta](https://municipalidadsalta.gob.ar/informacion-turistica/) and [Visit Salta](https://visitsalta.ar/favoritos/teleferico-san-bernardo/).
+The Attica regional administration's page, dated November 1, 2023, lists about $2,210 a month, plus 20% for a spouse and 15% per child. The page is three years old, so ask a Greek consulate for the current checklist. ([apdattikis.gov.gr](https://apdattikis.gov.gr/en/process/2-2-1-financially-independent-individuals-article-20-paragraph-1-law-4251-14-issuance/))
 
-### How much does a one-bedroom apartment cost?
+### Does Medicare pay for my care in Portugal or Greece?
 
-This article does not establish a current market average. July 2025 Numbeo figures showed $460 centrally and $384 outside the center, but the sample was small and is dated. Current advertisements offer better leads, provided you confirm the full lease terms and your ability to qualify.
+Almost never. Original Medicare usually does not cover care outside the U.S., and in 2026 you still owe a $1,736 Part A deductible and a $283 Part B deductible when it does apply. Medigap may cover emergency care while you travel. ([medicare.gov](https://www.medicare.gov/coverage/travel-outside-the-u.s.))
 
-Sources: [Numbeo](https://es.numbeo.com/coste-de-vida/ciudad/Salta-Argentina) and [Mercado Libre](https://inmuebles.mercadolibre.com.ar/departamentos/alquiler/salta/salta/centro/).
+### Can a foreign retiree use Portugal's SNS?
 
-### Can an American visit for a month without a visa?
+Foreign nationals with legal residence can obtain an SNS user number at their first visit to a public unit. The number must be linked to 4 items, an ID, a tax number, an address and a valid residence permit, before the SNS covers your costs. ([gov.pt](https://www.gov.pt/en/guias/migrantes-cuidados-de-saude-em-portugal))
 
-The State Department says no visa is required for U.S. tourist visits of 90 days or less. Confirm current conditions before travel. A tourist stay does not authorize residence or establish eligibility for a particular lease.
+## Check Today's Information Before You Decide
 
-Source: [State Department — Argentina](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Argentina.html).
-
-### Is healthcare free for a visiting retiree?
-
-Do not assume so. The State Department warns travelers that medical care involves expenses, including in public facilities, and that upfront payment is commonly required. Confirm your coverage and payment arrangements before you need treatment.
-
-Source: [State Department — Argentina health guidance](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Argentina.html).
-
-### Is Salta a proven low-cost retirement destination?
-
-Not on the evidence reviewed here. Its setting is established; a dependable personal retirement budget still needs current housing, healthcare, insurance, household spending, travel, and legal-cost information.
-
-That is a reason to investigate carefully—not to dismiss it or declare the case closed.
-
-## Check Today’s Information Before You Decide
-
-- [U.S. Department of State: Argentina country information and advisory](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Argentina.html)
-- [Argentina: National Directorate of Migration](https://www.argentina.gob.ar/interior/migraciones)
-- [Mercado Libre: Salta rental search](https://inmuebles.mercadolibre.com.ar/departamentos/alquiler/salta/salta/centro/)
-- [Numbeo: Salta historical price references](https://es.numbeo.com/coste-de-vida/ciudad/Salta-Argentina)
-- [Municipality of Salta: Tourism information](https://municipalidadsalta.gob.ar/informacion-turistica/)
-- [Argentina national tourism: Salta architecture](https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/recorrer-la-arquitectura-saltena)
-- [Visit Salta: Teleférico San Bernardo](https://visitsalta.ar/favoritos/teleferico-san-bernardo/)
+- [State Department travel advisories feed (Portugal and Greece)](https://cadataapi.state.gov/api/TravelAdvisories)
+- [Portugal government: migrant health care guide](https://www.gov.pt/en/guias/migrantes-cuidados-de-saude-em-portugal)
+- [Attica regional administration: financially independent individuals](https://apdattikis.gov.gr/en/process/2-2-1-financially-independent-individuals-article-20-paragraph-1-law-4251-14-issuance/)
+- [Medicare.gov: travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u.s.)
+- [Numbeo: Lisbon](https://www.numbeo.com/cost-of-living/in/Lisbon?displayCurrency=USD)
+- [Numbeo: Athens](https://www.numbeo.com/cost-of-living/in/Athens?displayCurrency=USD)
+- [AIDA: Greece health care report](https://asylumineurope.org/reports/country/greece/content-international-protection/health-care/)
+- [Argophilia: Greece optional insurance for third-country pensioners](https://www.argophilia.com/news/optional-health-insurance-for-third-country-pensioners-terms-and-procedures/243223)
+- [European Central Bank: euro reference rate against the dollar](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html)
 
 ## Sources & Verification
 
-- [Argentina national tourism — Salta architecture](https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/recorrer-la-arquitectura-saltena) — Architectural influences, local materials, and historic landmarks.
-- [Municipality of Salta — Tourism information](https://municipalidadsalta.gob.ar/informacion-turistica/) — Elevation, Lerma Valley location, low-rise profile, narrow streets and sidewalks, and seasonal rainfall description.
-- [Visit Salta — Teleférico San Bernardo](https://visitsalta.ar/favoritos/teleferico-san-bernardo/) — The cable-car connection from Parque San Martín to Cerro San Bernardo. No current fare or accessibility guarantee is claimed.
-- [Numbeo — Salta](https://es.numbeo.com/coste-de-vida/ciudad/Salta-Argentina) — Historical crowd-sourced prices. The retrieved page identified four contributors for its reporting period and a July 2025 update.
-- [Expatistan — Salta](https://www.expatistan.com/cost-of-living/salta) — July 2025 estimates with an explicit limited-data warning.
-- [Mercado Libre — Salta rental results](https://inmuebles.mercadolibre.com.ar/departamentos/alquiler/salta/salta/centro/) — Current asking-price leads visible in the retrieved results. Individual availability, lease terms, full charges, and applicant requirements were not verified.
-- [State Department — Argentina country information](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Argentina.html) — Tourist entry, medical-payment guidance, accessibility cautions, currency practices, and the Level 1 advisory issued July 10, 2026.
-- [Argentina — National Directorate of Migration](https://www.argentina.gob.ar/interior/migraciones) — Official starting point for further residence research. No specific residence threshold or application-cost total is established in this article.
+- [Numbeo: Lisbon](https://www.numbeo.com/cost-of-living/in/Lisbon?displayCurrency=USD) — one-bedroom rents and utilities in U.S. dollars, updated November 14, 2026, 211 contributors.
+- [Numbeo: Athens](https://www.numbeo.com/cost-of-living/in/Athens?displayCurrency=USD) — same measures, updated November 14, 2026, 252 contributors.
+- [State Department travel advisories feed](https://cadataapi.state.gov/api/TravelAdvisories) — Portugal Level 1 (December 22, 2025) and Greece Level 1 (October 22, 2025).
+- [CMS: 2026 Medicare Parts A and B premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) — $1,736 Part A deductible, $283 Part B deductible, $202.90 Part B premium.
+- [Medicare.gov: travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u.s.) — Original Medicare, drug plans and Medigap abroad.
+- [Portugal government: migrant health care guide](https://www.gov.pt/en/guias/migrantes-cuidados-de-saude-em-portugal) — SNS user number, linked documents, SNS 24 line.
+- [Portugal government: 2026 minimum wage announcement](https://portugal.gov.pt/gc25/comunicacao/noticias/governo-aumenta-salario-minimo-para-920-euros-em-2026) — 920 euros a month for 2026.
+- [Attica regional administration: financially independent individuals](https://apdattikis.gov.gr/en/process/2-2-1-financially-independent-individuals-article-20-paragraph-1-law-4251-14-issuance/) — income, add-ons, fee and insurance rule, page dated November 1, 2023.
 
-Information reviewed: November 15, 2026.
+Information checked: November 16, 2026
 
-The State Department’s current country page and its older advisory URL returned different issue dates during review. Both showed Level 1; this article uses the newer July 10, 2026 advisory displayed on the country page.
-
-Historical dollar prices are not presented as current costs. Peso rental advertisements are not converted using an assumed exchange rate. No complete retirement budget, personal residence determination, or individualized insurance quotation is claimed.
-
-This article provides general planning information, not individualized legal, immigration, tax, medical, insurance, or financial advice.
+Euro amounts are converted at the European Central Bank reference rate of 1.1052 dollars per euro (November 13, 2026) and rounded. The Greek AMKA conditions come from the AIDA report (updated July 30, 2026) and the pensioner scheme from a July 1, 2025 news report; both should be confirmed with Greek authorities. No Portuguese consular checklist and no Greek national migration page could be retrieved, so the D7 link to the minimum wage and the Greek income figure should be confirmed for confirmation. This article is general planning information, not legal, immigration, tax, medical or insurance advice.
 
 ## Related Golden Horizons Guides
 
@@ -333,22 +205,10 @@ This article provides general planning information, not individualized legal, im
 
 ## About Golden Horizons
 
-Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad.
-
-We focus on the questions behind the decision: whether your money covers the complete plan, whether you can legally stay, how healthcare will work, and whether ordinary daily life suits you.
-
-Travel first. Test the reality. Then decide.
+Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad. We focus on the decision that matters: what your money may make possible, whether you can legally stay, whether healthcare and ordinary daily life work for you, and what you should test before committing. Travel first. Test the reality. Then decide.
 
 ## Final Verdict
 
-Golden Horizons Verdict: WORTH TESTING — VERIFY THE EVERYDAY REALITY
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY RESIDENCY**
 
-Salta earns attention through its architecture and setting. It earns a retirement decision only when the housing, healthcare, finances, and daily routine work for you.
-
-Visit the center. Look across the city from Cerro San Bernardo. Enjoy the reasons you came.
-
-Then inspect the apartment, make the healthcare inquiries, and try the week you would actually live.
-
-The mountains can persuade you to visit.
-
-The ordinary days should decide whether you stay.
+Athens gives you the lower rent, about $729 a month for a central one-bedroom. Portugal gives you the more clearly documented route into public healthcare. Neither advantage counts until your residence permit, your insurance and your lease are confirmed in writing.
