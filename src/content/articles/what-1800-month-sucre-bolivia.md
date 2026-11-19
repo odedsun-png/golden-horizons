@@ -131,7 +131,7 @@ Email a Bolivian consulate and ask in writing which income documents it accepts 
 - Sea-level air, since the city sits at 2,810 meters.
 - Clear retiree visa rules, since no dedicated retirement visa exists.
 
-![Sucre, Bolivia daily life](https://images.unsplash.com/photo-1788031736402-31edfd1d1e33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxTdWNyZSUyMEJvbGl2aWElMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQyNDUzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080)
+![Sucre, Bolivia daily life](https://images.unsplash.com/photo-1788031736402-31edfd1d1e33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxTdWNyZSUyMEJvbGl2YSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8fDE3OTQyNDUzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080 )
 
 ## The Golden Horizons 30-Day Test
 
@@ -142,7 +142,7 @@ Email a Bolivian consulate and ask in writing which income documents it accepts 
 5. Email a Bolivian consulate and ask which documents prove retirement income for a determined-purpose visa.
 6. Spend your first week resting, walking slowly and noting how you sleep and breathe at 2,810 meters, and talk to your doctor before and after.
 
-![Sucre, Bolivia street scene](https://images.unsplash.com/photo-1773137260755-6d05d3856328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHx1fHNlYXJjaHwyfHxTdWNyZSUyMEJvbGl2aWElMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQyNDUzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080)
+![Sucre, Bolivia street scene](https://images.unsplash.com/photo-1773137260755-6d05d3856328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHx1fHNlYXJjaHwyfHxTdWNyZSUyMEJvbGl2aWElMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQyNDUzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080 )
 
 ## Frequently Asked Questions
 
