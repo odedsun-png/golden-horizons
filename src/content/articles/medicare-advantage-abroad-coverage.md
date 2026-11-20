@@ -4,339 +4,154 @@ category: Healthcare
 slug: medicare-advantage-abroad-coverage
 date: 2026-11-19
 image: "https://images.unsplash.com/photo-1508963493744-76fce69379c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxzdW5ueSUyMHJldGlyZW1lbnQlMjBsaWZlc3R5bGV8ZW58MHwwfHx8MTc5NTAyNjgxMXww&ixlib=rb-4.1.0&q=80&w=1080"
-description: "Does Medicare Advantage cover care abroad? Learn how overseas emergency benefits work, why moving affects enrollment, and what to arrange before leaving."
+description: "Medicare Advantage plans generally don't cover care abroad. Part B costs $202.90 a month in 2026. Know the 3 gaps before you travel or move."
 featured: false
 ---
 
 # Medicare Advantage Abroad: What’s Covered—and What Changes If You Move
 
-Golden Horizons Coverage Alert: CHECK YOUR BENEFITS AND YOUR ENROLLMENT
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY HEALTHCARE
 
-> THE SHORT ANSWER: Your Medicare Advantage plan may cover emergency or urgently needed care while you travel abroad. That does not make it an international health plan. Overseas benefits vary, and moving permanently outside the plan’s service area affects enrollment. Before leaving, answer two separate questions: what will the plan pay for while you are away, and can you remain enrolled for the stay you have planned?
-
-There is a sentence you do not want to hear for the first time at a hospital abroad:
-
-“You’ll need to pay, then claim it back.”
-
-Perhaps your plan will reimburse you. Perhaps the treatment falls outside its benefits. Either way, the insurance card in your wallet has not answered the question in front of you.
-
-Medicare Advantage can feel familiar enough at home that it is easy to carry the same expectations overseas. But “I have emergency coverage” is only the beginning of the conversation.
-
-You need to know what counts as an emergency, what your share could be, and how a claim works. If you are considering retirement abroad, there is another issue: whether the move changes your eligibility to remain in the plan.
-
-A vacation, a season overseas, and a permanent move deserve different conversations.
+> **THE SHORT ANSWER:** Medicare Advantage plans generally don’t cover medical care outside the U.S., and only some add an emergency and urgent-care benefit for travel. In 2026 you still pay $202.90 a month for Part B, and your in-network yearly cost at home is capped at $9,250 or less, with an average cap of $5,421. The catch: you must live in the plan’s service area to stay enrolled, so a move abroad can end the plan. Ask your plan in writing about both questions before you leave.
 
 ## Retirement Snapshot
 
-Primary decision:  
-Does your plan provide suitable protection for the trip, and can you remain enrolled under your travel or relocation circumstances?
+**Primary decision:** Whether to keep your Medicare Advantage plan for a trip, or plan for it to end when you move abroad.  
+**Best fit:** Americans taking trips of a few weeks, or testing a longer stay, who want to know what their plan will pay.  
+**Biggest warning:** An overseas emergency benefit is not coverage for routine visits, prescriptions or follow-up care.  
+**Residency:** You must live in the plan’s service area to join. A long absence or a permanent move can lead to disenrollment.  
+**Healthcare:** Original Medicare also excludes most care outside the U.S., so switching back does not fix the gap.
 
-Biggest warning:  
-An overseas emergency benefit is not proof of coverage for routine appointments, continuing treatment, or life abroad.
+## What Your Plan Pays Abroad, and What Medicare Itself Does Not
 
-Medicare Advantage:  
-Plans generally do not cover medical care outside the United States, but some offer additional emergency and urgently needed care benefits.
+Medicare’s own plan guide says Advantage plans generally don’t cover medical care outside the U.S. Some plans offer an extra benefit for emergency and urgently needed services when traveling. It is not universal, so your plan documents decide.
 
-Permanent relocation:  
-You must live in a Medicare Advantage plan’s service area to join. Moving outside it affects enrollment and creates a Special Enrollment Period.
+Original Medicare is just as limited. It pays for foreign hospital care in only 3 situations: an emergency in the U.S. where a foreign hospital is closer, an emergency crossing Canada between Alaska and another state, or living in the U.S. with a foreign hospital closer to home than a U.S. one. Part A then covers the inpatient stay. Part B covers ambulance and doctor services right before and during that stay. It does not cover return ambulance trips home or doctor visits after discharge.
 
-Medigap:  
-It supplements Original Medicare, not Medicare Advantage. It cannot be used to fill the gaps in an Advantage plan.
+Medicare plans can’t pay for drugs you buy outside the U.S. Dialysis abroad is not covered either, unless it happens during one of those covered hospital stays.
 
-Separate insurance:  
-Travel medical or international health coverage may be needed, depending on the stay. A policy labeled “travel insurance” does not necessarily include medical benefits.
+At home, the 2026 numbers are: Part B premium $202.90 a month, Part B deductible $283, and Part A deductible $1,736 per hospital benefit period. Advantage plans may not exceed $9,250 in-network out-of-pocket, and the average plan limit is $5,421. These are U.S. figures. Abroad, you may pay the full bill first.
 
-Sources: [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf), [Understanding Medicare Advantage Plans](https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf), and [How Medigap Works](https://www.medicare.gov/health-drug-plans/medigap/basics/how-medigap-works).
+## A Trip Is Not a Move
 
-## Separate Medicare’s Rules From Your Plan’s Extra Benefits
+Your plan’s service area is the rule that matters if you are retiring abroad. Medicare says you must live in the plan’s service area to join an Advantage plan. Some plans also set an absence limit. Blue Cross Blue Shield of Arizona, for example, says an HMO member who leaves the service area for more than 6 months may be disenrolled. Other plans differ, and some offer traveler programs, so ask yours.
 
-Original Medicare generally does not cover healthcare outside the United States. Medicare Advantage plans must follow Medicare’s coverage rules, but they may provide additional overseas benefits.
+If you move out of the service area for good, Medicare gives you a Special Enrollment Period. Tell the plan before you move and the window opens the month before and runs 2 full months after the move. If you don’t join another Advantage plan, you land in Original Medicare. Moving back to the U.S. gives you 2 full months after the month you return to join a plan.
 
-That distinction explains why two friends can give you different answers.
+Leaving your Advantage plan is not the same as dropping Part A or Part B. Those are separate decisions, so call 1-800-MEDICARE (1-800-633-4227) first.
 
-One person’s plan may include foreign emergency care. Another plan may not. Neither person’s experience establishes what yours will pay.
+## Medigap and Travel Insurance Fill Different Gaps
 
-For your plan, the answer belongs in its current Evidence of Coverage—not in a general description of the insurance company.
+Medigap works with Original Medicare, not with an Advantage plan. Most Medigap plans (C, D, F, G, M and N among them) pay 80% of billed charges for emergency care abroad after a $250 yearly deductible. They stop at a $50,000 lifetime limit, and the emergency must begin in the first 60 days of the trip. Plans E, H, I and J are no longer sold but still carry the benefit if bought before June 1, 2010.
 
-| Coverage arrangement | What to understand before leaving |
-|---|---|
-| Original Medicare | Foreign care is generally excluded, with narrow exceptions |
-| Medicare Advantage | Some plans add overseas emergency or urgently needed care benefits |
-| Original Medicare with Medigap | Certain Medigap policies provide a limited foreign-travel emergency benefit |
-| Separate travel insurance | Medical protection depends on the policy; some travel policies do not include it |
+That benefit is useful on a trip, not a plan for living abroad. Check your options before leaving your Advantage plan, because you may not be able to buy the Medigap policy you want later.
 
-These are different arrangements, not interchangeable ways of saying “covered abroad.”
+Medicare warns that travel insurance does not necessarily include health coverage. Read the medical limits, pre-existing condition terms, evacuation destination and maximum trip length before you buy.
 
-Source: [Medicare Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
+## How Foreign Hospitals Handle U.S. Plans
 
-### “Outside the United States” has a specific meaning
+Expect to pay first and claim back. Foreign hospitals are not required to file Medicare claims, so you may need form CMS-1490S for the limited covered services. For a private hospital in Lisbon, the CUF international team says it handles guarantees of payment and cost estimates and processes paperwork with international insurers at CUF Tejo Hospital and CUF Descobertas Hospital. That is a service for international insurers, not for U.S. Medicare plans, so ask the hospital before you rely on it.
 
-For Medicare, the U.S. includes the 50 states, Washington, D.C., Puerto Rico, the U.S. Virgin Islands, Guam, American Samoa, and the Northern Mariana Islands.
+## Practical Comparison
 
-Travel to one of those territories is not foreign travel under this definition.
+### Medicare Advantage plan
 
-That does not erase a Medicare Advantage plan’s network or service-area rules. It means the foreign-care exclusion is not the correct starting point for that trip.
+**What the evidence says:**
+Plans generally don’t cover care outside the U.S. Some add emergency and urgent-care travel benefits. In 2026 the in-network cap is $9,250 at most, and the average plan limit is $5,421.
 
-Sources: [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf) and [Medicare’s coverage comparison](https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/your-coverage-options/compare-original-medicare-medicare-advantage).
+**What to check next:**
+Call member services and ask: does my exact plan cover emergency and urgent care abroad, what is my share, do I pay first, and what is the claim deadline?
 
-## What Your Medicare Advantage Plan Might Cover Abroad
+### Original Medicare
 
-Medicare describes overseas emergency and urgently needed care as an extra benefit some Advantage plans offer. It is not a universal promise.
+**What the evidence says:**
+Coverage abroad is limited to 3 situations, and prescriptions bought abroad are never covered. Part B costs $202.90 a month and the Part B deductible is $283 in 2026.
 
-Even where that benefit exists, do not assume it includes a prescription refill, a scheduled specialist visit, or follow-up treatment once an emergency has passed.
+**What to check next:**
+Read Medicare’s foreign-coverage fact sheet and decide how you would pay for care outside those 3 situations.
 
-Ask the plan to explain those situations separately.
+### Medigap
 
-Source: [Understanding Medicare Advantage Plans](https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf).
+**What the evidence says:**
+Most plans pay 80% of billed emergency charges abroad after a $250 deductible, up to $50,000 for life, for emergencies that start in the first 60 days.
 
-### The questions that make “covered” a useful answer
+**What to check next:**
+Ask the insurer whether your letter plan has the foreign-travel benefit, and whether you could still buy one if you leave Advantage.
 
-Have your destination, travel dates, and plan number ready. Then ask:
+### Travel or expat health insurance
 
-- Does my exact plan cover emergency care abroad?
-- Does it also cover urgently needed care?
-- How does the plan define each?
-- What benefit limits, deductibles, copayments, or coinsurance apply?
-- Is follow-up care covered after my condition is stabilized?
-- Must I notify the plan or obtain authorization?
-- Will I need to pay the provider first?
-- What records, translations, and claim forms will you require?
-- What is the claim deadline?
-- Does the benefit include medical transport or evacuation?
+**What the evidence says:**
+Medicare warns that some travel insurance has no health coverage at all.
 
-Ask the representative to identify the relevant pages in the Evidence of Coverage. Keep the response and a call-reference number with your travel documents.
+**What to check next:**
+Get 2 quotes and ask whether they cover pre-existing conditions, prescriptions, a long stay and evacuation to the hospital you would choose.
 
-You are not looking for someone to say, “Yes, we cover emergencies.”
+## The Trade-Off
 
-You are finding out what happens next.
+Keeping your Advantage plan protects your U.S. coverage on short trips. It does not give you routine care or reliable emergency payment abroad.
 
-### Use a situation you could actually face
+**What you may gain:**
+- A plan that keeps working at home after a short trip, with a yearly cap of $9,250 at most.
+- A clear start date if you later use the Special Enrollment Period.
 
-Try this:
+**What you may give up:**
+- Emergency payment abroad you can count on, unless your plan lists it.
+- Your enrollment, if a long absence or a move leaves the service area.
 
-> “I’m spending eight weeks in Portugal. If I fall and need hospital treatment, what would I pay? If I then need a follow-up appointment, would that be covered too?”
+![Medicare Advantage abroad travel scene](https://images.unsplash.com/photo-1605841561924-926295c558fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNZWRpY2FyZSUyMFVuaXRlZCUyMFN0YXRlc3xlbnwwfDB8fHwxNzk1MTQ1MTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080)
 
-If you need regular treatment, ask about that specifically.
+## The Golden Horizons 30-Day Test
 
-A concrete question is harder to answer with a reassuring generality.
+1. Call your plan and ask whether it covers emergency and urgent care abroad, with the dollar limits, in writing.
+2. Ask how many days you can be away before the plan disenrolls you, and whether it has a traveler program.
+3. Price a Medigap policy for your age, and ask if you could buy one after leaving Advantage.
+4. Collect 2 quotes for travel medical insurance and check pre-existing conditions and evacuation terms.
+5. Call a private hospital where you plan to stay, such as CUF Descobertas Hospital, and ask how they bill U.S. patients.
+6. Save claim form CMS-1490S, your plan’s phone number and your medication list in your travel folder.
 
-## A Vacation Is Not the Same as Moving Abroad
-
-This is the distinction that matters most if you are considering retirement overseas.
-
-Medicare Advantage requires residence in the plan’s service area. A foreign emergency benefit does not remove that enrollment requirement.
-
-Source: [Understanding Medicare Advantage Plans](https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf).
-
-### For a short trip
-
-Check the overseas benefit, claims procedure, and any additional insurance you need.
-
-Do not assume your domestic network arrangements explain how a foreign hospital will be paid.
-
-### For an extended temporary stay
-
-Tell the plan the actual length of your absence. Ask how its temporary-absence rules affect enrollment and whether any applicable program changes those rules.
-
-Get the answer for your plan and circumstances. A benefit described as “worldwide” should not be interpreted as permission to remain away indefinitely.
-
-### For a permanent move
-
-Contact the plan before moving.
-
-Medicare explains that moving outside a plan’s service area gives you a Special Enrollment Period. If you are dropped from the old Advantage plan and do not join another Advantage plan during the applicable period, you are enrolled in Original Medicare.
-
-If you notify the plan before moving, the opportunity to change coverage begins the month before the move and continues for two full months afterward. If you notify it after moving, the period begins when you move and continues for two full months afterward.
-
-Returning to Original Medicare does not solve the overseas-care problem. Its foreign coverage remains limited, so you still need arrangements for care in your new country.
-
-Do not confuse leaving a particular Medicare Advantage plan with canceling Medicare Part A or Part B. Those are separate decisions. Before changing either, discuss the consequences with Medicare and, where applicable, Social Security.
-
-Sources: [Medicare’s Special Enrollment Period guidance](https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods) and [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-## What Original Medicare’s Foreign-Care Exceptions Cover
-
-The exceptions are real, but they are not a substitute for the ordinary healthcare arrangements you need when living overseas.
-
-Medicare identifies three circumstances in which it may cover certain services in a foreign hospital:
-
-1. You have a medical emergency while in the U.S., and a suitable foreign hospital is closer than the nearest suitable U.S. hospital.
-2. You have an emergency while traveling through Canada, without unreasonable delay, on the most direct route between Alaska and another state, and a suitable Canadian hospital is closer.
-3. You live in the U.S., and a foreign hospital is closer to home than the nearest U.S. hospital able to treat you—even if the situation is not an emergency.
-
-When the conditions are met, Part A may cover inpatient care. Part B may cover qualifying ambulance and physician services immediately before and during that covered foreign inpatient stay.
-
-Follow-up services after discharge and a return ambulance trip home generally are not covered under this provision.
-
-Source: [Medicare Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-### Cruise ships have a separate rule
-
-Medicare may cover medically necessary services on a cruise ship when the doctor meets the legal requirements and the ship is in a U.S. port or no more than six hours away from one.
-
-It does not cover those services when the ship is more than six hours from a U.S. port.
-
-Source: [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-### Prescriptions bought abroad are another gap
-
-Medicare plans cannot cover prescription drugs purchased outside the U.S.
-
-Having drug coverage at home therefore does not settle the cost of medicines you buy during an overseas stay.
-
-Source: [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-## Medigap Is Not an Add-On to Medicare Advantage
-
-Medigap supplements Original Medicare. It does not supplement Medicare Advantage, and it cannot be used to pay an Advantage plan’s deductibles, copayments, or premiums.
-
-That matters because “buy a supplement for foreign travel” can sound like an easy fix. It is not something you can simply attach to your current Advantage coverage.
-
-Certain Medigap policies include a foreign-travel emergency benefit. Medicare describes that benefit as:
-
-- Payment of 80% of billed charges for qualifying emergency care.
-- A $250 annual deductible.
-- A $50,000 lifetime limit.
-- Coverage only when the emergency begins during the first 60 days of the trip.
-
-That can be useful protection. It is not comprehensive expatriate health insurance.
-
-If you are considering switching to Original Medicare and buying Medigap, investigate your enrollment rights and policy availability before giving up existing coverage. Do not assume you can buy the policy you want whenever you decide to switch.
-
-Sources: [How Medigap Works](https://www.medicare.gov/health-drug-plans/medigap/basics/how-medigap-works) and [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-## Read Past the Words “Travel Insurance”
-
-A policy that reimburses a canceled flight may provide little or no help with a hospital bill.
-
-Medicare specifically warns that travel insurance does not necessarily include health coverage. Read the benefits and restrictions rather than buying on the product name alone.
-
-Source: [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-For a temporary trip, compare medical policies against your destination, age, trip length, and health circumstances.
-
-For relocation, make sure the insurer knows you intend to live abroad—not simply visit. Ask whether the policy is valid for that arrangement and suitable for ongoing care.
-
-Check:
-
-- Existing-condition provisions.
-- Medical limits and your share of costs.
-- Direct payment versus reimbursement.
-- Routine care and prescriptions.
-- Maximum trip duration and residence requirements.
-- Evacuation and repatriation terms.
-- Destination and activity exclusions.
-- Any requirement to maintain other coverage.
-
-### Ask where an evacuation benefit takes you
-
-“Medical evacuation included” leaves an important question unanswered:
-
-> Will the policy arrange transport to an appropriate nearby facility, return me to the United States, or provide some other benefit?
-
-Have the insurer point to the contract language and explain who decides when transport is necessary.
-
-Do not buy a benefit based on a meaning the policy does not promise.
-
-## Before You Travel—or Move Abroad
-
-### 1. Describe the stay accurately
-
-Write down where you will go, how long you will be away, and whether you are relocating. Use the same facts when speaking with your plan and other insurers.
-
-### 2. Read the right year’s documents
-
-Find your Evidence of Coverage and the sections on foreign care, emergencies, urgently needed services, and absence from the service area.
-
-If your stay crosses into a new plan year, check the documents applicable to both parts of the trip.
-
-### 3. Resolve enrollment separately from benefits
-
-Ask whether you can remain enrolled for the proposed absence or move. A positive answer about emergency coverage does not answer this question.
-
-### 4. Establish the payment procedure
-
-Know whom to contact, whether payment may be required first, and what evidence to retain.
-
-For Original Medicare’s limited covered foreign services, foreign hospitals are not required to submit claims. You may need to pay and file for reimbursement yourself. Your Advantage plan may use its own procedure.
-
-Source: [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-### 5. Fill the gaps deliberately
-
-Compare additional coverage against the gaps you have identified—not against a vague promise of peace of mind.
-
-### 6. Carry the useful information
-
-Keep policy details, assistance contacts, medication information, and claim instructions accessible. Leave copies with someone you trust.
-
-If an emergency occurs, seek urgent medical help. Insurance administration comes after immediate safety.
+![Medicare Medicare Advantage abroad daily life](https://images.unsplash.com/photo-1576888841486-afe7f1b2d74a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZWRpY2FyZSUyMFVuaXRlZCUyMFN0YXRlc3xlbnwwfDB8fHwxNzk1MTQ1MTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
 ### Does Medicare Advantage cover emergencies abroad?
 
-Some plans offer additional foreign emergency and urgently needed care benefits. Others may not. Your current plan documents establish the extra coverage available to you.
+Some plans do, but plans generally don’t cover medical care outside the U.S., so check yours. Medicare says some plans offer an extra benefit for emergency and urgently needed services when you travel, and the limit is in your plan documents. ([medicare.gov](https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf))
 
-Source: [Understanding Medicare Advantage Plans](https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf).
+### Can I keep Medicare Advantage after moving abroad?
 
-### Can I keep Medicare Advantage after moving permanently overseas?
+Usually not. Plans require you to live in the service area, and at least one insurer says an HMO member away more than 6 months may be disenrolled. Ask your plan before you go. ([azblue.com](https://www.azblue.com/medicare/101/disenrollmentrightsandresponsibilities))
 
-Do not assume so. Medicare Advantage requires residence in the plan’s service area. Moving outside it affects enrollment and triggers applicable coverage-change rights. Notify the plan before moving and confirm the dates and consequences.
+### What is the most I can pay under Medicare Advantage in 2026?
 
-Sources: [Understanding Medicare Advantage Plans](https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf) and [Special Enrollment Periods](https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods).
+An Advantage plan may not charge more than $9,250 for in-network services or $13,900 for in-network and out-of-network combined, and the average in-network limit is $5,421. These limits apply to covered care, not to prescriptions bought abroad. ([kff.org](https://www.kff.org/medicare/medicare-advantage-in-2026-premiums-out-of-pocket-limits-supplemental-benefits-and-prior-authorization/))
 
-### Will Original Medicare cover me if my Advantage enrollment ends?
+### Does my drug plan cover medicines abroad?
 
-Returning to Original Medicare does not create general overseas medical coverage. Original Medicare’s foreign-care exceptions remain narrow.
+No. Medicare plans can’t cover drugs bought outside the U.S., so buy a longer supply at home. At home, the 2026 Part D out-of-pocket cap is $2,100. ([cms.gov](https://www.cms.gov/newsroom/fact-sheets/final-cy-2026-part-d-redesign-program-instructions))
 
-Source: [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
+### Will a Portuguese private hospital work with my insurance?
 
-### Can Medigap fill the foreign-care gaps in my Advantage plan?
+Ask the hospital, because it may deal with international insurers rather than U.S. Medicare plans. CUF’s international team, listed for 2 hospitals, obtains guarantees of payment and cost estimates for foreign patients at hospitals including CUF Tejo and CUF Descobertas, but you may still pay first. ([cuf.pt](https://cuf.pt/en/cuf-services/international-cuf/our-team))
 
-No. Medigap supplements Original Medicare, not Medicare Advantage. Certain Medigap policies have limited foreign-travel emergency benefits, but obtaining one may require a change in your coverage arrangement and depends on your rights and circumstances.
+## Check Today's Information Before You Decide
 
-Sources: [How Medigap Works](https://www.medicare.gov/health-drug-plans/medigap/basics/how-medigap-works) and [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-### Does a foreign emergency benefit guarantee cashless treatment?
-
-Do not assume that. Ask your plan whether it can pay the provider directly, what you may need to pay first, and how reimbursement works.
-
-### What happens if I return to live in the United States?
-
-Medicare provides a Special Enrollment Period to join a Medicare Advantage or drug plan after moving back to the U.S. The opportunity lasts for two full months after the month you return.
-
-Confirm the eligibility requirements, effective dates, and options available in your new service area.
-
-Source: [Medicare’s Special Enrollment Period guidance](https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods).
-
-### Does separate travel insurance always include medical coverage?
-
-No. Medicare warns that travel insurance does not necessarily include health benefits. Check the policy’s medical coverage and restrictions explicitly.
-
-Source: [Medicare’s overseas-coverage fact sheet](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf).
-
-## Check Today’s Information Before You Decide
-
-- [Medicare: Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf)
-- [Medicare: Understanding Medicare Advantage Plans](https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf)
-- [Medicare: Special Enrollment Periods](https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods)
-- [Medicare: How Medigap Works](https://www.medicare.gov/health-drug-plans/medigap/basics/how-medigap-works)
-- Your plan’s current Evidence of Coverage and applicable notices of benefit changes.
-
-For help with Medicare coverage or enrollment questions, call 1-800-MEDICARE (1-800-633-4227).
+- Your plan’s current member documents and its Annual Notice of Changes.
+- Medicare’s foreign-coverage fact sheet and 2026 cost page.
+- Call 1-800-MEDICARE (1-800-633-4227) for enrollment questions.
+- Any State Department advisory for the country you plan to visit before you book.
 
 ## Sources & Verification
 
-Information reviewed: November 19, 2026.
+- [Medicare Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf) — 3 situations, drugs, cruise rule, Medigap benefit.
+- [Understanding Medicare Advantage Plans](https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf) — foreign travel and service area.
+- [Medicare costs](https://www.medicare.gov/basics/costs/medicare-costs) — 2026 Part B premium, Part B and Part A deductibles.
+- [Special Enrollment Periods](https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods) — moving out of the service area and back.
+- [KFF: Medicare Advantage in 2026](https://www.kff.org/medicare/medicare-advantage-in-2026-premiums-out-of-pocket-limits-supplemental-benefits-and-prior-authorization/) — 2026 out-of-pocket limits.
+- [CMS: 2026 Part D redesign](https://www.cms.gov/newsroom/fact-sheets/final-cy-2026-part-d-redesign-program-instructions) — $2,100 threshold.
+- [BCBS Arizona disenrollment](https://www.azblue.com/medicare/101/disenrollmentrightsandresponsibilities) — six-month absence rule for one plan.
+- [CUF international team](https://cuf.pt/en/cuf-services/international-cuf/our-team) — foreign patient services.
 
-The foreign-care rules, cruise-ship conditions, prescription restrictions, and Medigap travel-benefit figures come from Medicare’s overseas-coverage fact sheet.
-
-Enrollment information comes from Medicare’s Special Enrollment Period guidance and Medicare Advantage publication.
-
-No individual Medicare Advantage plan was evaluated. Overseas benefits, claims procedures, temporary-absence provisions, and coverage limits must be checked against the exact plan and year.
-
-This article provides general planning information, not individualized insurance, legal, or enrollment advice.
+Information checked: November 20, 2026
 
 ## Related Golden Horizons Guides
 
@@ -347,20 +162,10 @@ This article provides general planning information, not individualized insurance
 
 ## About Golden Horizons
 
-Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad.
-
-We focus on what turns an appealing destination into a workable home: whether you can stay, what your money covers, how healthcare works, and whether ordinary life suits you.
-
-Travel first. Test the reality. Then decide.
+Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad. We focus on the decision that matters: what your money may make possible, whether you can legally stay, whether healthcare and ordinary daily life work for you, and what you should test before committing. Travel first. Test the reality. Then decide.
 
 ## Final Verdict
 
-Golden Horizons Coverage Read: POSSIBLE TRAVEL PROTECTION—NOT A PLAN FOR LIFE ABROAD
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY HEALTHCARE**
 
-Your Medicare Advantage plan may provide useful protection during a trip. Establish exactly what it offers before paying for overlapping insurance—or leaving important gaps.
-
-If you are moving, start with enrollment. Then arrange care for the country where you will actually live.
-
-The answer you want before departure is not simply, “I have coverage.”
-
-It is: “I know what is covered, what I may have to pay, and what happens if this stay becomes a move.”
+Your Advantage plan may cover an emergency on a trip, but it is not a plan for living abroad. Confirm the dollar limits and the absence rule in writing, add travel or expat insurance, and treat a permanent move as a coverage change.
