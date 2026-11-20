@@ -1,160 +1,155 @@
 ---
-title: "Medicare Part D and Travel Abroad: Should Americans Keep It or Drop It? (noting limited foreign coverage and travel-insurance alternatives)"
+title: "Medicare Part D Abroad: It Pays $0 Overseas, So Should You Drop It?"
 category: Healthcare
 slug: medicare-part-d-abroad-keep-or-drop
 date: 2026-11-19
 image: https://images.unsplash.com/photo-1508963493744-76fce69379c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxzdW5ueSUyMHJldGlyZW1lbnQlMjBsaWZlc3R5bGV8ZW58MHwwfHx8MTc5NTE0NDAxNHww&ixlib=rb-4.1.0&q=80&w=1080
-description: "Part D generally does not cover prescriptions abroad. Learn what to check before keeping or dropping a drug plan for overseas travel."
+description: "Part D pays $0 for drugs bought abroad. See the 2026 costs, the late-penalty math, and what Medigap covers before you drop your plan."
 featured: false
 ---
 
-# Medicare Part D and Travel Abroad: Should Americans Keep It or Drop It? (noting limited foreign coverage and travel-insurance alternatives)
+# Medicare Part D Abroad: It Pays $0 Overseas, So Should You Drop It?
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY HEALTHCARE
 
-Your Part D card may travel with you, but its prescription coverage generally does not. That can come as an unpleasant surprise when an ordinary refill becomes urgent overseas.
-
-The answer is not necessarily to drop your plan before a long trip or possible move. Part D still has a role in your U.S. Medicare arrangement, and leaving it can create enrollment and penalty concerns later. The sensible approach is to treat Part D as U.S.-based coverage, arrange separate protection for care and medications abroad, and understand what changing plans could mean before you do it.
-
-> **THE SHORT ANSWER:** Treat Medicare Part D as having zero dependable value for filling routine prescriptions abroad: it generally does not cover drugs outside the United States. That does not automatically mean you should drop it. Leaving Part D can create later enrollment and penalty concerns, while Part A and B foreign emergency coverage is narrow. Review your plan, travel insurance, and enrollment options before changing anything.
+> **THE SHORT ANSWER:** Medicare Part D pays $0 for prescriptions you buy outside the U.S., so it cannot be your overseas pharmacy plan. At home it still caps your 2026 drug spending at $2,100 and limits any deductible to $615. The catch: dropping it can trigger a late penalty of 1% of $38.99 for every full month you go uncovered once a gap reaches 63 days. Keep it until you have checked your plan's rules for long stays abroad and priced separate coverage.
 
 ## Retirement Snapshot
 
-**Primary decision:** Whether to keep a U.S.-based Part D drug plan that generally will not pay for prescriptions filled abroad.  
-**Best fit:** Americans taking an overseas trip or considering an extended stay who want to protect future Medicare enrollment options while arranging separate travel-health coverage.  
-**Biggest warning:** Do not assume Part D, or limited emergency coverage under Original Medicare, will cover routine prescriptions abroad.  
-**Residency:** A long stay or move can affect plan service areas and enrollment choices; confirm the consequences with your plan and Medicare before changing coverage.  
-**Healthcare:** Part D is designed for prescriptions filled in the United States. Foreign emergency coverage under Part A and Part B is limited and is not a substitute for travel insurance.
+**Primary decision:** Whether to keep a U.S. Part D plan that will not pay for drugs bought abroad.  
+**Best fit:** Americans on a trip of a few weeks to a few months, or testing a move, who want to protect their way back into U.S. drug coverage.  
+**Biggest warning:** Medicare plans cannot cover drugs you buy outside the U.S., and Original Medicare covers foreign hospital care only in 3 narrow situations.  
+**Residency:** Moving outside your plan's service area opens a Special Enrollment Period, so tell your plan before you go.  
+**Healthcare:** Plan for cash purchases of medicine and a separate travel-health policy that names prescription drugs.
 
-## Your Part D Card Stops at the U.S. Border
+## What Part D Does and Does Not Do Abroad
 
-Medicare Part D is useful prescription coverage at home. It is generally not an overseas pharmacy card.
+Medicare's own fact sheet answers this in two words: "No. Medicare plans can't cover drugs you buy outside the U.S." That holds for a two-week cruise, a winter in Mexico, or a move to Portugal.
 
-For travel abroad, expect to pay out of pocket for medications or arrange travel health insurance that includes prescription-drug coverage. That is true whether you are planning a short trip, spending a season away, or testing the idea of retirement overseas. The card in your wallet may remain important in the United States, but it should not be your plan for an overseas refill.
+Part D still pays for one travel item. It covers every vaccine the Advisory Committee on Immunization Practices recommends, including yellow fever, with no copayment and no deductible. Get those shots at home before you fly.
 
-Original Medicare can sometimes cover limited hospital or doctor services outside the United States in narrow emergency circumstances. Those exceptions matter—but they do not provide broad routine care, and they do not answer the practical question of how you will refill an ongoing prescription abroad.
+Original Medicare is just as narrow. Part A and Part B pay for a foreign hospital stay in only 3 situations, such as when the foreign hospital is closer to your home than the nearest U.S. hospital that can treat you. Even then you pay the usual deductibles and coinsurance. For 2026 that is $1,736 per benefit period under Part A and $283 a year under Part B.
 
-Some Medigap policies may include limited foreign-travel emergency benefits. That is a feature to confirm in your own policy, not a promise that comes with every Medigap plan. Ask what the policy covers abroad, what limits apply, and whether prescription medicines are included.
+Foreign hospitals are not required to file Medicare claims. Expect to pay the full bill at a place such as Hospital Angeles Tijuana or Hospital CIMA, then file Form CMS-1490S yourself if you qualify. Ask each hospital how it bills before you need it.
 
-The central point is simple: Part D is a U.S. benefit, even when your plans stretch far beyond the United States.
+## Dropping Part D: What Rejoining Could Cost
 
-## Before You Drop Part D, Protect Your Way Back
+At home, Part D has real value in 2026. No plan may charge a deductible above $615, and once you spend $2,100 out of pocket on covered drugs you pay nothing more for covered drugs that year.
 
-Keeping Part D because you expect it to pay for prescriptions abroad is usually the wrong reason. Keeping it because it supports continuity with your U.S. drug coverage, formulary, and future enrollment options may be the more important question.
+The penalty is the risk. Medicare adds a late enrollment penalty when you go 63 days or more without Part D or creditable drug coverage after your first chance to enroll. The formula is 1% of the national base premium, $38.99 in 2026, times your number of full uncovered months. A gap of 14 months adds about $5.50 a month, and that amount generally stays with you for as long as you have drug coverage.
 
-Dropping Part D is not a casual suitcase-cleanout decision. If you later want to join again, enrollment timing and late-enrollment penalties may apply depending on your circumstances and whether you qualify for a Special Enrollment Period. Check current rules when you are considering a change—not after you have already ended coverage.
+The pages we checked did not say how time living abroad counts toward that gap. Do not assume it is forgiven. Ask your plan and your State Health Insurance Assistance Program counselor, in writing if you can.
 
-Medicare Advantage plans, Part D plans, and Medigap policies work differently. If you are relocating or spending substantial time outside your plan’s service area, ask the plan directly how a move could affect your choices. What begins as an insurance question can quickly become a question of deadlines and enrollment windows.
-
-Before you cancel anything, ask your current plan for a clear explanation of foreign prescription coverage, formulary exceptions, and what would happen if you leave the plan and later seek coverage again.
+If you move back to the U.S., you get a Special Enrollment Period lasting 2 full months after the month you return. If you move outside your plan's service area, the window opens when you move and runs 2 full months, or starts the month before the move if you tell your plan first.
 
 ## Practical Comparison
 
-### Part D prescriptions abroad
+### Part D drugs bought abroad
 
 **What the evidence says:**  
-Part D generally does not provide coverage for prescriptions filled outside the United States.
+Medicare plans cannot cover drugs you buy outside the U.S. You pay the pharmacy yourself.
 
 **What to check next:**  
-Call your current Part D plan and ask whether its plan documents identify any foreign prescription exception or reimbursement process.
+Ask your plan how many days of a refill it allows before you leave, then ask your doctor to write the prescription with the generic name on it.
 
-### Emergency medical care abroad
+### Hospital care abroad
 
 **What the evidence says:**  
-Original Medicare Part A and Part B may cover certain services abroad only in narrow circumstances. It is not broad travel medical protection.
+Original Medicare pays for a foreign inpatient stay in only 3 situations, and you still owe the $1,736 Part A deductible per benefit period.
 
 **What to check next:**  
-Review Medicare’s travel guidance and identify what emergency coverage would—and would not—apply to your trip.
+Ask any private hospital you might use, such as Hospital Angeles Tijuana or Hospital CIMA, whether it bills your insurer directly or wants payment first.
 
-### Travel insurance for medications
+### Medigap foreign-travel benefit
 
 **What the evidence says:**  
-Travel insurance may be a more relevant source of overseas medical and prescription protection than Part D, but policy terms vary.
+Plans C, D, F, G, M and N pay 80% of billed emergency charges after a $250 yearly deductible, up to a $50,000 lifetime limit. Care must begin in the first 60 days of a trip.
 
 **What to check next:**  
-Request travel-health insurance quotes and ask specifically how each policy handles prescription medicines, refills, and medical emergencies abroad.
+Call your Medigap company and ask whether the $50,000 limit is already used and whether prescriptions count as emergency care.
 
-### Dropping and rejoining Part D
+### Travel-health insurance
 
 **What the evidence says:**  
-Leaving Part D and enrolling again later can involve penalties or enrollment restrictions, depending on timing and circumstances.
+Medicare says travel insurance does not necessarily include health coverage, so you must read the conditions.
 
 **What to check next:**  
-Review current Special Enrollment Period rules before ending coverage, and confirm how they apply to your existing Medicare arrangement.
+Get 3 quotes and ask each one in writing: Are prescriptions covered? Is a pre-existing condition excluded? Is there a cap on stays longer than 60 days?
 
-### Moving or extended travel
+### Medicare Advantage plans
 
 **What the evidence says:**  
-A move or change in service area can affect Medicare Advantage and Part D plan choices. Medigap foreign-travel benefits also vary by policy.
+Advantage plans follow Medicare's rules for coverage outside the U.S. but may add benefits.
 
 **What to check next:**  
-Ask your insurer or plan whether your planned move or extended travel changes your service-area status or available coverage options.
+Call the member number on your card and ask what, if anything, is covered abroad and what a long absence does to your enrollment.
 
 ## The Trade-Off
 
-The upside is clarity. Once you stop expecting Part D to work as an international prescription benefit, you can make a more realistic plan for refills, emergencies, and travel health coverage.
+Keeping Part D costs you a premium for coverage you will not use overseas. Dropping it can save that premium, but it risks a lifelong penalty and a gap when you return.
 
 **What you may gain:**
-- A clearer understanding that Part D is not a reliable way to pay for medications abroad.
-- Fewer false assumptions about what an emergency exception can cover during international travel.
+- Clear expectations: you budget cash for medicine abroad instead of counting on a card that will not work.
+- A tested plan for a prescription emergency, such as a 90-day supply bought before departure where your plan allows it.
 
 **What you may give up:**
-- Some continuity with a U.S.-based formulary if you are abroad and need medication.
-- Protection against later enrollment consequences if you drop Part D without confirming your options.
-
-The difficult part is that keeping Part D and arranging separate overseas protection solve different problems. One does not replace the other.
+- Continuity with your U.S. drug formulary if you drop the plan and must re-enroll.
+- Money, if you let a gap run past 63 days and the penalty applies when you rejoin.
 
 ![Medicare Part D abroad travel scene](https://images.unsplash.com/photo-1605841561924-926295c558fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNZWRpY2FyZSUyMFVuaXRlZCUyMFN0YXRlc3xlbnwwfDB8fHwxNzk1MTQ1MTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Contact your current Part D plan and ask whether it offers any foreign drug coverage or formulary exceptions.
-2. Request the plan’s written explanation of how prescriptions are handled outside the United States.
-3. Read Medicare’s “Travel Outside the U.S.” guidance and separate routine prescription needs from limited emergency-care exceptions.
-4. Obtain travel-health insurance quotes that address prescription medicines abroad, not only hospital emergencies.
-5. Review Medicare Special Enrollment Period guidance before making any decision to drop Part D.
-6. If you may relocate or travel long-term, ask your Medicare Advantage or Medigap insurer how foreign coverage and service-area changes affect your policy.
+1. Call your Part D plan and ask: "Does anything about a stay abroad of 1, 3, or 6 months change my enrollment or refills?" Write down the name and date.
+2. Ask for the largest refill your plan allows before departure, and the exact price of that fill.
+3. Ask your doctor for a printed list of every drug with its generic name and dose, and a copy of the prescriptions for your carry-on bag.
+4. Call your Medigap company and ask whether Plan C, D, F, G, M or N foreign-travel coverage applies to your policy and what is left of the $50,000.
+5. Price 3 travel-health policies and compare prescription coverage line by line.
+6. Call your State Health Insurance Assistance Program at 877-839-2675 and ask whether dropping Part D makes sense for your dates.
 
 ![Medicare Part D abroad daily life](https://images.unsplash.com/photo-1576888841486-afe7f1b2d74a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZWRpY2FyZSUyMFVuaXRlZCUyMFN0YXRlc3xlbnwwfDB8fHwxNzk1MTQ1MTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### Does Medicare Part D cover prescription drugs abroad?
+### Does Medicare Part D cover prescriptions bought abroad?
 
-Generally, no. Medicare guidance indicates that Part D is not designed to cover prescriptions filled outside the United States, so do not rely on it for routine overseas medication needs. ([Medicare’s travel guidance](https://www.medicare.gov/coverage/travel-outside-the-u.s.))
+No. Medicare says its plans cannot cover drugs you buy outside the U.S., so budget to pay cash for any medicine abroad. ([medicare.gov](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf))
 
-### Can I rely on Medicare Part A and Part B for all medical care abroad?
+### Is Part D a government plan or a private one?
 
-No. Original Medicare may cover limited services outside the United States in narrow emergency circumstances, but it is not comprehensive overseas medical coverage. ([Medicare Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf))
+It is a private prescription drug option inside Medicare, and no plan may charge a deductible above $615 in 2026, so compare at least 2 or 3 plans each fall. ([usa.gov](https://www.usa.gov/medicare))
 
-### Do Medigap plans include foreign-travel coverage?
+### What is the Part D late enrollment penalty in 2026?
 
-Some Medigap plans may offer limited emergency coverage for foreign travel, but the benefit is not universal and varies by policy. Ask your insurer for your plan’s specific terms before treating it as travel protection. ([AARP’s Medicare abroad overview](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/))
+It is 1% of the $38.99 national base premium for each full uncovered month after a gap of 63 days or more, so 14 months adds about $5.50 a month. ([cms.gov](https://www.cms.gov/medicare/eligibility-and-enrollment/medicarepresdrugeligenrol/creditablecoveragelateenrollmentpenalty))
 
-### If I drop Part D, can I rejoin later without a penalty?
+### How should I carry prescriptions when I fly abroad?
 
-Possibly, but it depends on your timing, coverage history, and whether you qualify for a Special Enrollment Period. Penalties or enrollment limits may apply in some circumstances, so confirm the current rules before ending coverage. ([Medicare’s Special Enrollment Period guidance](https://www.medicare.gov/sign-up-change-plans/joining-a-health-or-drug-plan/special-circumstances-special-enrollment-periods))
+Keep medicines in a durable, water-resistant carry-on container you can reach during the trip, and carry a copy of the prescription for injectables. Many countries limit some controlled medicines to a 30-day supply. ([cdc.gov](https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travel-health-kits.html))
 
-### Do Medicare Advantage plans work the same way abroad as they do at home?
+### Where can I get free help deciding?
 
-Do not assume they do. Medicare Advantage plans can have service-area and plan-specific rules, and overseas coverage needs to be confirmed directly with the issuer. ([Medicare’s Part D basics](https://www.medicare.gov/health-drug-plans/part-d/basics))
+A State Health Insurance Assistance Program counselor offers one-on-one Medicare help, and the national center answers at 877-839-2675. ([shiphelp.org](https://www.shiphelp.org/about-medicare))
 
-## Check Today’s Information Before You Decide
+## Check Today's Information Before You Decide
 
-- [Medicare travel outside the U.S. guidance](https://www.medicare.gov/coverage/travel-outside-the-u.s.)
-- [Medicare Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf)
-- [Special Enrollment Period guidance](https://www.medicare.gov/sign-up-change-plans/joining-a-health-or-drug-plan/special-circumstances-special-enrollment-periods)
-- [Medicare Part D basics](https://www.medicare.gov/health-drug-plans/part-d/basics)
+- Part D costs for the current year: medicare.gov/health-drug-plans/part-d/basics/costs
+- Your Medigap letter of coverage for foreign travel
+- Your Part D plan's rules for long stays outside the U.S.
+- Travel-health policy wording on prescriptions
 
 ## Sources & Verification
 
-- [Medicare travel outside the U.S. guidance](https://www.medicare.gov/coverage/travel-outside-the-u.s.) — Part D’s limited usefulness abroad and Medicare’s general overseas-coverage limits.
-- [Medicare Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf) — limited exceptions for Medicare-covered services outside the United States.
-- [Special Enrollment Period guidance](https://www.medicare.gov/sign-up-change-plans/joining-a-health-or-drug-plan/special-circumstances-special-enrollment-periods) — enrollment timing and Special Enrollment Period considerations.
-- [Medicare Part D basics](https://www.medicare.gov/health-drug-plans/part-d/basics) — Part D enrollment and plan fundamentals.
-- [AARP Medicare abroad overview](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/) — consumer context on emergency and Medigap foreign-travel considerations.
+- [Medicare Coverage Outside the United States (CMS fact sheet, April 2026)](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf) — Part A/B limits, Part D, Medigap terms, travel insurance.
+- [Medicare drug coverage costs](https://www.medicare.gov/health-drug-plans/part-d/basics/costs) — $615 deductible cap, $2,100 threshold, $38.99 base premium.
+- [Medicare costs](https://www.medicare.gov/basics/costs/medicare-costs) — 2026 Part A and Part B deductibles.
+- [Special Enrollment Periods](https://www.medicare.gov/sign-up-change-plans/joining-a-health-or-drug-plan/special-circumstances-special-enrollment-periods) — moving back to the U.S. and leaving a service area.
+- [CMS creditable coverage and late enrollment penalty](https://www.cms.gov/medicare/eligibility-and-enrollment/medicarepresdrugeligenrol/creditablecoveragelateenrollmentpenalty) — the 63-day rule.
+- [CDC Yellow Book travel health kits](https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travel-health-kits.html) — carrying medicines.
+- [USA.gov Medicare overview](https://www.usa.gov/medicare) — Part D described as a private prescription drug option.
+- [SHIP National Technical Assistance Center](https://www.shiphelp.org/about-medicare) — free counseling contact.
 
-Information checked: November 19, 2026
+Information checked: November 20, 2026
 
 ## Related Golden Horizons Guides
 
@@ -171,4 +166,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY HEALTHCARE**
 
-Whether Part D is worth keeping depends on its role in your broader U.S. Medicare coverage—not on an expectation that it will pay for prescriptions abroad. Before a long international trip or possible move, confirm your enrollment consequences and consider separate arrangements for overseas medical and prescription needs.
+Part D will not pay for a single pill bought abroad, but that is not by itself a reason to drop it. Before you leave, get your plan's written answer on long stays, price travel-health coverage that names prescriptions, and call a SHIP counselor if a gap of 63 days or more is possible.
