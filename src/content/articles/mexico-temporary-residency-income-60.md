@@ -10,7 +10,7 @@ featured: false
 
 # Mexico Temporary Residency for Retirees: Income, Savings, and What to Bring
 
-**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY RESIDENCY
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY RESIDENCY  
 
 > THE SHORT ANSWER: If you’re applying for Mexico’s Temporary Residency on financial grounds, you may be able to qualify through income or through savings or investments. For 2026, Orlando lists at least $4,500 a month in after-tax employment or pension income for the previous six months, or an average monthly bank or investment balance of $74,500 over the previous 12 months. Other consulates publish different figures. Use the checklist from the office that will handle your application.
 
