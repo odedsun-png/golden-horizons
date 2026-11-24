@@ -4,125 +4,121 @@ category: Cost
 slug: retiring-morelia-mexico-costs
 date: 2026-11-23
 image: https://images.unsplash.com/photo-1562218355-1fde5256182d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNb3JlbGlhJTIwTWV4aWNvJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3OTU0ODU0NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080
-description: "A practical look at Morelia’s fragmented cost data, plus the residency, healthcare, and safety questions to settle before moving."
+description: "Morelia core living costs run about $1,100 a month for one person. Check the $7,650 retiree visa bar and Michoacán's Level 4 advisory first."
 featured: false
 ---
 
 # What Retiring in Morelia, Mexico Really Costs
 
-**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY SAFETY
 
-Morelia may look promising on a retirement spreadsheet: city cost references point to a lower-cost profile than many larger expat hubs. But the number that matters most—a dependable monthly total for your own life—is not sitting neatly on one page.
+Morelia's everyday prices are low. Two city price databases put one person's monthly costs, rent included, between $1,102 and $1,147. The harder questions sit outside that number: a residency income bar in the thousands, health coverage you must price yourself, and a State Department advisory for Michoacán that is much stricter than the one for Mexico as a whole.
 
-Rent, groceries, utilities, transportation, and casual meals all have published city estimates. The trouble is that they come from lifestyle-based or crowd-sourced services, not from a single long-term resident budget built around your apartment, your health needs, and your residency status. Morelia is worth pricing seriously. It is not a place to call affordable until you have done that work.
-
-> **THE SHORT ANSWER:** Morelia may offer lower day-to-day costs than many larger expat hubs, but a dependable retirement budget cannot be pinned to one verified monthly figure from the available city data. Rent, groceries, utilities, transport, and casual dining estimates exist through cost-of-living services, but they are crowd-sourced or lifestyle-based rather than resident-specific quotes. Treat Morelia as a place to price in person before calling it affordable.
+> **THE SHORT ANSWER:** One person can cover Morelia's core living costs for about $1,100 a month, including roughly $364 for a one-bedroom and $269 for groceries. The catch is what sits outside that number: a 2026 summary of consulate rules puts the retiree permanent-residency bar near $7,650 a month in income or $307,000 in savings, and the State Department lists Michoacán at Level 4, Do Not Travel. Your Medicare Part B premium costs $202.90 a month at home, so compare any health plan against that. Treat Morelia as a place to test for 30 days, not a place to move on the strength of a cheap rent.
 
 ## Retirement Snapshot
 
-**Primary decision:** Can Morelia’s housing and everyday costs work for your own retirement income after healthcare, residency, and travel expenses are priced separately?  
-**Best fit:** A solo retiree willing to compare current rental listings, build a local price basket, and confirm residency options before making a long commitment.  
-**Biggest warning:** Available city figures are fragmented and do not establish one fully documented monthly budget for a long-term resident.  
-**Planning-budget lens:** Housing is likely to be the largest swing factor, while grocery baskets, utility use, and dining habits can move the monthly total substantially.  
-**Residency:** Mexico uses temporary and permanent residency routes rather than a single retiree visa; financial requirements can vary by consulate and change over time.  
-**Healthcare:** Resident access to IMSS and private insurance options may be possible, but age bands, eligibility, premiums, and exclusions need direct confirmation.  
-**Housing / daily life:** Wise, Expatistan, and CityCost provide Morelia-specific cost references, but their methods and update cycles differ.  
-**Safety:** Check the latest U.S. State Department guidance and regional notes for Michoacán before scouting or relocating.
+**Primary decision:** Can you accept Morelia's low daily costs together with a strict state-level safety advisory and a residency bar that may be higher than your income?
+**Best fit:** A solo retiree with a flexible schedule who will check the advisory, price health coverage in person, and rent for a month before signing a lease.
+**Biggest warning:** The State Department rates Mexico overall at Level 2 (advisory dated May 28, 2026) but lists Michoacán, Morelia's state, at Level 4, Do Not Travel.
+**Planning-budget lens:** Rent is the largest line; groceries and dining out are the lines you control.
+**Residency:** Mexico has no single retiree visa. Income and savings bars differ by consulate and move with the exchange rate.
+**Healthcare:** Original Medicare's Part B deductible is $283 a year in 2026. Mexican coverage must be priced separately.
+**Housing / daily life:** City databases show a center 1-bedroom under $400.
+**Safety:** Read the current Michoacán text on the State Department site before booking a flight.
 
-## What Your Morelia Budget Still Has to Prove
+## Morelia Costs: What the Price Databases Show
 
-The honest starting point is not a tidy rent figure. It is a question: can you build a current budget from real quotes that suits the way you live?
+Morelia is one of the cheaper cities a U.S. retiree is likely to price. Wise lists one person's average monthly cost at $1,102 including rent and $737 without it. CityCost lists $1,147 including rent and $742 without it. The two sit within about $45 of each other.
 
-Wise describes Morelia as a lower-cost Mexican city relative to many larger expat centers. Expatistan and CityCost add city-level reference points for housing and everyday spending. Those pages are useful for getting oriented, but they cannot promise what a particular apartment will cost you—or whether a furnished visitor stay will resemble the price of a longer resident lease.
+The sample behind the numbers is small. Numbeo, which supplies the underlying local prices, reports 15 contributors in the past 18 months for Morelia, with a last update on November 20, 2026, and says some figures are estimated because contributor numbers are low. CityCost describes its data as based on AI and user input. Treat every figure here as a starting point.
 
-Housing is where the search becomes personal. Current city references do not provide a government-verified one-bedroom figure or a consistent neighborhood-by-neighborhood comparison. Ask for at least two live listings, then get clear answers about furnishings, lease length, electricity, water, internet, parking, and deposits. What looks like an easy monthly rent can change once those details are on the table.
+Rent is the largest line. Wise shows $364 for a one-bedroom in the center, and CityCost shows $344 (range $272 to $435). Get two or three live quotes before you plan around either. Basic utilities for an 85 m² apartment are about $50 on Wise, internet at 60 Mbps or faster is about $30, and a mobile plan is about $25.
 
-Groceries deserve the same attention. Published one-person baskets vary because people buy different things, shop in different places, and use different exchange-rate assumptions. Build a month-long list around the food and household goods you genuinely use. That will tell you more than a broad average ever can.
-
-Utilities, internet, local transportation, and casual meals also appear in city databases. Use them as starting points, not fixed bills. Your home, appliances, habits, and the season can all alter the total.
+Groceries come to $269 a month on Wise and $319 on CityCost. Dining out adds about $115 a month on Wise, at $7.77 per inexpensive meal. A monthly transit pass is $25.89 on Wise and $32.00 on CityCost.
 
 ## The Morelia Monthly Test
 
-**Headline budget:** No monthly amount is specified in the headline  
-**1-bedroom long-term rent:** Obtain current written quotes; available city references do not establish a single verified resident rent figure  
-**Groceries / basic food:** Build a personal basket from current local observations; published estimates use differing baskets and assumptions  
-**Utilities + internet:** Confirm the apartment’s included services and obtain current service estimates separately  
-**Local transportation:** Use current city cost references as a starting point, then test the routes you would actually use  
-**Dining / everyday extras:** Treat crowd-sourced meal and service estimates as illustrative rather than guaranteed  
-**Estimated core monthly spend:** Cannot be responsibly calculated from the available city-specific figures  
-**Remaining buffer vs. the headline budget:** Cannot be calculated because no headline budget or complete supported monthly total is available  
-**Income requirement:** Varies by visa type — confirm with the consulate  
-**Evidence confidence:** MODERATE  
-**GH Budget Read:** TIGHT OR VARIABLE  
+**Headline budget:** $2,500 a month, a round planning figure for one person
+**1-bedroom long-term rent:** $364 in the center (Wise); $344 in the center (CityCost)
+**Groceries / basic food:** $269 (Wise) to $319 (CityCost)
+**Utilities + internet:** $50 utilities plus $30 internet and $25 mobile (Wise)
+**Local transportation:** $26 to $32 for a monthly pass
+**Dining / everyday extras:** $115 a month at the Wise dining-out average
+**Estimated core monthly spend:** $1,100 for one person including rent, taken from Wise ($1,102) and CityCost ($1,147)
+**Remaining buffer vs the $2,500 budget:** about $1,400 a month before health coverage, flights home, visa costs and taxes
+**Income requirement:** About $4,500 a month for temporary residency and about $7,650 for permanent residency by the retiree route, per a 2026 summary of consulate figures; confirm with your consulate
+**How your money compares to the US:** The BLS reports average U.S. household spending in 2025 of $2,316 a month on housing and $886 a month on food. Morelia's rent plus utilities is about $414 and groceries are close to $300, but the U.S. figures cover all household sizes and owners, so compare with your own bills.
+**GH Budget Read:** COMFORTABLE ON PAPER, SO PRICE THE EXTRAS
 
-The exclusions matter just as much as the categories above: healthcare or insurance, flights to the United States, taxes, residency application costs, household setup expenses, and costs created by your particular housing choice. Until you price those items, any apparent monthly cushion is simply unallocated money.
+The buffer is not spare cash. Health coverage, flights to the United States, taxes, residency fees and furnishing an apartment all come out of it.
 
 **A Typical Day in Morelia**
 
-The available sources can help you begin tracking broad city costs for a casual meal, utilities, internet, and transportation. They do not provide enough consistently dated U.S. dollar prices linked to named local businesses for an honest daily tab.
+A day built from Wise's prices looks like this: one inexpensive restaurant meal at $7.77, a round trip on the local bus at about $1.26, and groceries of about $9 (a month of groceries divided by 30). That is roughly $18 before rent and utilities.
 
-For a scouting stay, make an ordinary Tuesday your test. Keep notes on the groceries you would buy, the transit you would use, and the kind of meal you would actually eat after the novelty wears off. The useful number is not a vacation-day splurge; it is the pattern you could comfortably repeat.
+For a scouting stay, make an ordinary Tuesday your test. Note what you buy, how you get around and where you eat once the novelty fades. The useful number is the pattern you could repeat for a year.
 
 ## Residency Changes the Math
 
-Mexico does not offer one universal “retiree visa.” Americans considering a move need to separate a visit from temporary or permanent residency through the appropriate pathway.
+Mexico does not have one retiree visa. Americans choose between temporary and permanent residency, and each has its own income or savings test.
 
-That distinction reaches into nearly every cost decision. A short scouting stay can show you how the city feels and what daily errands cost, but it is not the same as establishing legal long-term residency. A furnished short-term rental may also bear little resemblance to the lease you would seek as a resident.
+A 2026 summary of consulate figures from Expat Den puts temporary residency at about $4,500 a month in income, or about $76,000 in savings held for twelve months. It puts the permanent route for retirees and pensioners at about $7,650 a month after tax, or about $307,000 in savings. The Mexican Embassy in Washington is reported to ask for slightly more, and San Diego and Las Vegas quote different dollar amounts. Each consulate converts a peso figure on its own schedule, so the same test can differ by a few hundred dollars between offices.
 
-Financial requirements for Mexican residency can be tied to income or savings standards, and they can vary by consulate jurisdiction. They also change over time. Before you make a move-planning decision, confirm current requirements, documents, and procedures with the Mexican consulate serving your location and with the relevant Mexican immigration authority.
-
-### Start with the questions that affect everything else
-
-Ask the Mexican consulate that serves your area about current temporary and permanent residency requirements, including income or savings documentation. Then compare at least two current one-bedroom listings, noting lease terms, furnishings, deposits, and included utilities.
-
-Next, build a month-long grocery and household basket based on the items you would routinely buy. Ask IMSS and private insurance providers about eligibility, age bands, premiums, exclusions, and residency requirements. Keep scouting-trip expenses separate from a long-term resident budget from the beginning.
+The consulate pages themselves block automated access, so these figures come from a secondary summary. Treat them as planning numbers, add a cushion for exchange-rate movement, and get the written requirement from your consulate before you pay for an appointment.
 
 ## Healthcare and Safety Need Their Own Plan
 
-Healthcare belongs beside housing at the top of your decision, not at the bottom of the spreadsheet. Residents may have potential options through IMSS, while private plans may also be available. Do not add either one to your budget until you have information that applies to your age, residency status, and coverage needs.
+At home, Original Medicare charges a $1,736 Part A deductible for each inpatient benefit period and a $283 Part B deductible in 2026, with a standard Part B premium of $202.90 a month. For a retiree 65 or older, that coverage is already paid for, so any health plan in Mexico is an added cost unless you drop your U.S. coverage. Ask Medicare directly what it pays for care outside the United States before you decide.
 
-Ask direct questions before relying on a plan: Does it accept applicants in your age band? What care is included? Are pre-existing conditions handled differently? Is there a waiting period? What might routine outpatient care cost if you pay yourself? Those answers will matter far more than a broad estimate for a meal out.
+No verified price for Mexican health coverage at your age was available, so none is included in the totals above. Ask each insurer for a written quote that shows your age band, exclusions for existing conditions and any waiting period.
 
-Safety also calls for current information. Review the latest U.S. State Department advisory and regional guidance for Michoacán before you book a scouting visit, then consider how it applies to your intended neighborhood, travel routes, and daily routines.
+On safety, the State Department's Mexico advisory is Level 2, Exercise Increased Caution, last updated May 28, 2026. State-level ratings differ. Michoacán is listed at Level 4, Do Not Travel, and the advisory describes a limited route for U.S. government employees to reach Morelia by air or on specific highways. The full state text was not available to read in full, so read it on travel.state.gov before you plan a trip.
 
 ## Practical Comparison
 
-### Housing: the largest unknown
+### Housing: a low rent with a small sample
 
-Morelia has several cost-of-living references, but they do not offer one consistent, resident-specific long-term rent benchmark across clearly defined neighborhoods. Collect at least two current listings and compare lease length, furnishing level, deposits, and utility inclusions before you decide what housing will cost.
+**What the evidence says:** Both Wise and CityCost list a one-bedroom under $400, from a thin pool of reports.
+**What to check next:** Ask three landlords for the monthly rent, deposit and which of electricity, water and internet are included, then compare with the database figures.
 
 ### Groceries and daily spending: your habits set the total
 
-Published grocery and everyday-price estimates use different baskets, sources, and exchange-rate assumptions. Create a month-long basket of the foods, household goods, transit, and occasional dining you would actually use. That personal list is the one worth carrying into your retirement plan.
+**What the evidence says:** Groceries run $269 to $319 a month depending on the source, and dining out averages $115.
+**What to check next:** Shop for one week of your usual basket in a local market and a supermarket, multiply by four, and compare with the database figure.
 
 ### Residency: a separate financial hurdle
 
-Temporary and permanent residency pathways exist, but financial thresholds can change and may differ by consulate jurisdiction. Request current requirements directly from the Mexican consulate responsible for your location rather than relying on a general summary.
+**What the evidence says:** A 2026 summary puts temporary residency near $4,500 a month and the retiree permanent route higher, with consulate-to-consulate differences.
+**What to check next:** Ask your Mexican consulate for its written income and savings figures, and how many months of statements it wants.
 
 ### Healthcare: price it for your age and needs
 
-IMSS and private insurance are possible healthcare avenues, but costs and eligibility need to be confirmed for the individual applicant. Ask for age-specific information, including exclusions and residency conditions, before treating either option as part of your monthly plan.
+**What the evidence says:** Medicare Part B costs $202.90 a month plus a $283 yearly deductible, and no verified Mexican plan price was available.
+**What to check next:** Request a written quote from an insurer for your age, and ask whether it covers a pre-existing condition and what the waiting period is.
 
 ### Safety: check before you book
 
-Travel and relocation planning for Michoacán calls for current official guidance, not an older report or a broad assumption. Review the latest U.S. State Department advisory before arranging a scouting trip.
+**What the evidence says:** Mexico is Level 2, but Michoacán is listed at Level 4, Do Not Travel.
+**What to check next:** Read the Michoacán section at travel.state.gov within a week of your flight.
 
 ## The Trade-Off
 
-Morelia may reward a retiree who is comfortable doing a little legwork before committing. If your rental choice and spending habits stay disciplined, housing and daily living could be lower than in many U.S. locations. You also have city-specific references for investigating food, services, transportation, and rent rather than relying on Mexico-wide averages.
+**What you may gain:** Living costs of about $1,100 a month, a buffer near $1,400 against a $2,500 budget, and a city where a $7.77 lunch is normal.
+**What you may give up:** Peace of mind on safety, since Michoacán sits at Level 4, plus a residency income bar of thousands of dollars a month and a health plan you must price yourself.
 
-The trade-off is uncertainty. You give up the convenience of a single dependable monthly number until you have current housing, healthcare, and residency information in hand. Residency thresholds, resident healthcare pricing, and exact local grocery costs all need direct confirmation.
+If you can live with those terms, a month on the ground will tell you more than any database.
 
 ![Morelia, Mexico street scene](https://images.unsplash.com/photo-1562218355-1fde5256182d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNb3JlbGlhJTIwTWV4aWNvJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzk1NDg1NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Compare at least two current one-bedroom rental listings in Morelia, including one closer to the center and one farther out.
-2. Ask each landlord or agent for the lease length, deposit, furnishings, and utilities included in the quoted rent.
-3. Build a one-month grocery and household basket using current local prices and your own typical shopping habits.
-4. Request current temporary and permanent residency requirements from the Mexican consulate serving your U.S. location.
-5. Seek IMSS and private insurance information for your age group, including eligibility, premiums, exclusions, and residency rules.
-6. Check the current U.S. State Department guidance for Morelia and surrounding areas of Michoacán before finalizing a scouting itinerary.
+1. Get three live quotes for a one-bedroom and compare each with the database figures.
+2. Ask each landlord for the lease length, deposit, furnishings and which utilities the rent includes.
+3. Build a one-month grocery basket at local prices and compare it with the database figure.
+4. Ask your Mexican consulate for its written temporary and permanent residency income and savings figures.
+5. Get a written health-insurance quote for your age, and ask Medicare what it covers outside the United States.
+6. Read the current Michoacán text on the State Department site and keep your first trip short.
 
 ![Morelia, Mexico daily life](https://images.unsplash.com/photo-1583603220610-b73284a439fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNb3JlbGlhJTIwTWV4aWNvJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzk1NDg1NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080)
 
@@ -130,37 +126,41 @@ The trade-off is uncertainty. You give up the convenience of a single dependable
 
 ### Is Morelia affordable for an American retiree?
 
-It may be, particularly if your housing choice and daily habits fit the city’s lower-cost profile. The available city references do not establish one complete monthly total for a long-term resident, so begin with current rental quotes and your own grocery basket before deciding how comfortably your income will stretch. ([Wise](https://wise.com/us/cost-of-living/mexico/morelia))
+Yes on daily costs: Wise puts one person's monthly spending at $1,102 including rent. Add health coverage, flights and residency costs before judging how far your income will go. ([wise.com](https://wise.com/us/cost-of-living/mexico/morelia))
 
 ### What is a typical monthly rent for a one-bedroom in Morelia?
 
-City cost services publish broad estimates, but they are not substitutes for current listings with a specified location, furnishing level, and lease term. Compare multiple listings and ask which utilities and fees are included before putting any figure into your retirement budget. ([Expatistan](https://expatistan.com/cost-of-living/morelia))
+CityCost lists $344 a month in the center, with a range of $272 to $435. It is based on AI and user input, so confirm with three live listings before you plan around it. ([citycost.org](https://citycost.org/morelia/))
 
 ### Does Mexico have a dedicated retiree visa?
 
-Mexico uses temporary and permanent residency pathways rather than a single retiree visa. Income and savings requirements can change and may vary by consulate jurisdiction, so confirm the current rules with the Mexican consulate serving your area before relying on a general guide. (Expat-focused residency summaries; confirm with the Mexican consulate and INM.)
+Not as a single visa, but retirees can apply for permanent residency, which one 2026 summary puts at about $7,650 a month in income or $307,000 in savings. Your consulate sets its own dollar amount, so get it in writing. ([expatden.com](https://www.expatden.com/mexico/mexico-residency-income-requirements-in-2026-what-changed-and-what-it-means-for-you/))
 
-### What healthcare options should a retiree investigate in Morelia?
+### What does Medicare cost me at home compared with health coverage in Morelia?
 
-Potential options include IMSS for eligible residents and private insurance plans. Ask directly about age eligibility, premiums, exclusions, coverage details, and residency requirements before building healthcare into your monthly plan. (IMSS and private-plan information for the individual applicant.)
+At home, Medicare's 2026 Part B premium is $202.90 a month with a $283 yearly deductible, and the Part A deductible is $1,736 per benefit period. Price a Mexican plan against those figures, and ask Medicare what it covers abroad. ([medicare.gov](https://www.medicare.gov/basics/costs/medicare-costs))
 
-### Can a scouting trip show what retirement in Morelia will cost?
+### Is it safe to visit Morelia on a scouting trip?
 
-Yes—if you treat it as a research trip rather than a vacation budget. Check real rentals, price your normal grocery basket, investigate health coverage, and separate short-stay lodging from long-term resident housing costs. ([CityCost](https://citycost.org/morelia/))
+Mexico is Level 2 in the State Department's advisory, updated May 28, 2026, but Michoacán, Morelia's state, is listed at Level 4. Read the state section before you book. ([cadataapi.state.gov](https://cadataapi.state.gov/api/TravelAdvisories))
 
 ## Check Today's Information Before You Decide
 
-- [Wise — Cost of Living in Morelia](https://wise.com/us/cost-of-living/mexico/morelia)
-- [Expatistan — Cost of Living in Morelia](https://expatistan.com/cost-of-living/morelia)
-- [CityCost — Cost of Living in Morelia](https://citycost.org/morelia/)
+- [Wise: Cost of Living in Morelia](https://wise.com/us/cost-of-living/mexico/morelia)
+- [CityCost: Cost of Living in Morelia](https://citycost.org/morelia/)
+- [Numbeo: Cost of Living in Morelia](https://www.numbeo.com/cost-of-living/in/Morelia-Mexico)
 
 ## Sources & Verification
 
-- [Wise — Cost of Living in Morelia, Mexico](https://wise.com/us/cost-of-living/mexico/morelia) — city-specific lifestyle-based cost-of-living context for Morelia.
-- [Expatistan — Cost of Living in Morelia](https://expatistan.com/cost-of-living/morelia) — crowd-sourced city cost anchors for everyday expenses.
-- [CityCost — Cost of Living in Morelia](https://citycost.org/morelia/) — additional crowd-sourced Morelia cost references and comparisons.
+- [State Department travel advisories feed](https://cadataapi.state.gov/api/TravelAdvisories): Mexico Level 2, published May 28, 2026.
+- [Medicare.gov: Medicare costs](https://www.medicare.gov/basics/costs/medicare-costs): 2026 Part A deductible $1,736, Part B deductible $283, Part B premium $202.90.
+- [Wise: Cost of Living in Morelia](https://wise.com/us/cost-of-living/mexico/morelia): 2026 prices in dollars.
+- [CityCost: Cost of Living in Morelia](https://citycost.org/morelia/): November 2026 prices, AI and user input.
+- [Numbeo: Cost of Living in Morelia](https://www.numbeo.com/cost-of-living/in/Morelia-Mexico): 15 contributors in 18 months, updated November 20, 2026.
+- [Expat Den: Mexico residency income requirements 2026](https://www.expatden.com/mexico/mexico-residency-income-requirements-in-2026-what-changed-and-what-it-means-for-you/): secondary summary of consulate thresholds.
+- [BLS: Consumer Expenditures 2025](https://www.bls.gov/news.release/cesan.nr0.htm): average U.S. housing $27,790 and food $10,633 a year.
 
-Source access dates: November 2026
+Information checked: November 24, 2026
 
 ## Related Golden Horizons Guides
 
@@ -175,8 +175,8 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 ## Final Verdict
 
-**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY SAFETY**
 
-Morelia suits the retiree who is willing to trade a little certainty for a closer look at a city that may cost less day to day than many larger expat hubs. It may frustrate anyone who wants a single finished budget before arriving.
+Morelia suits a flexible retiree who wants a city that costs about $1,100 a month and will check the Level 4 advisory and the residency bar before committing. It will frustrate anyone who needs a settled visa income below $4,500 a month or who will not travel under state-level restrictions.
 
-Test the rental market, your ordinary grocery list, healthcare options, and residency route during a 30-day stay. If those pieces fit your own income and routines, Morelia may deserve more than a place on your list—it may deserve a second month.
+Spend a month there if the advisory allows it and your numbers hold. If they do, Morelia may deserve a second month.
