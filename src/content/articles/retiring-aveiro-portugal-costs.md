@@ -4,7 +4,7 @@ category: Cost
 slug: retiring-aveiro-portugal-costs
 date: 2026-11-23
 image: https://images.unsplash.com/photo-1532546430529-1be093fd5aaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxBdmVpcm8lMjBQb3J0dWdhbCUyMGNvYXN0fGVufDB8MHx8fDE3OTU0ODQ2Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080
-description: "A practical look at Aveiro housing, groceries, utilities, residency steps, and the costs to verify before retiring there."
+description: "Aveiro core costs run about $1,350 a month for one retiree: $805 rent, $270 groceries, $138 utilities. Health cover and the D7 bar need quotes."
 featured: false
 ---
 
@@ -12,144 +12,132 @@ featured: false
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-A coffee, a casual lunch, a bus ride, bread and milk for the kitchen: Aveiro’s everyday prices can look pleasantly manageable. The apartment is where the decision turns. A long-term lease outside the center can put the city within reach; a furnished or central rental can change the entire equation.
+A cappuccino for $2.07, a casual lunch for $13, a month of transit for $33. Aveiro's everyday prices are easy to like. The apartment and the paperwork are where the decision turns.
 
-That is the real question for an American retiree: not whether Aveiro can offer a lower-cost day, but whether housing, healthcare, residency paperwork, and a dollar-based income can work together over time.
+That is the real question for a U.S. retiree: not whether Aveiro has cheap coffee, but whether rent, health coverage and a residency visa work together on a dollar income.
 
-> **THE SHORT ANSWER:** Aveiro has credible 2026 cost references for rent, groceries, utilities, transit, and casual dining, with housing likely to be the largest variable in a one-person budget. But a dependable retirement budget still needs current lease quotes, a residency-appropriate health-insurance quote, and confirmation of D7 income requirements. Published local prices are in euros, and no dated USD conversions were supplied for this comparison.
+> **THE SHORT ANSWER:** Aveiro's core costs for one retiree come to about $1,350 a month: $805 for a one-bedroom outside the center, $270 for groceries, $138 for utilities and internet, $33 for a transit pass, and $105 for eight casual lunches. The catch is that this leaves out health insurance, visa fees, taxes and flights home, and none of those are priced here. Portugal's 2026 minimum wage is $1,006 a month, the benchmark consulates commonly use for D7 income, so confirm your own bar before you plan around it.
 
 ## Retirement Snapshot
 
-**Primary decision:** Whether Aveiro’s housing and ordinary living costs leave enough room for healthcare, residency expenses, travel, and currency swings.  
+**Primary decision:** Whether Aveiro's rent and daily costs leave enough room for health coverage, residency costs, travel and currency swings.
 
-**Best fit:** A retiree willing to rent first, compare several long-term listings, and confirm D7 requirements before treating a local cost estimate as a retirement plan.  
+**Best fit:** A retiree who will rent first, compare several long-term listings, and confirm D7 requirements with a consulate before treating a city-level estimate as a plan.
 
-**Biggest warning:** Published cost ranges do not replace a signed lease, an insurance quote, or current consular guidance.  
+**Biggest warning:** Numbeo prices are user-reported, and no health-insurance premium for Aveiro was available to include.
 
-**Planning-budget lens:** City-level sources support a rough core-cost picture, but not one definitive all-in monthly retirement figure.  
+**Estimated core monthly spend:** $1,350 for one person (rent outside the center, groceries, utilities, internet, transit pass, eight casual lunches), converted at 1.0939 dollars per euro, the ECB rate of November 23, 2026.
 
-**Residency:** Portugal’s D7 route involves proof of stable passive income, accommodation, and supporting documentation.  
+**Remaining buffer vs the $2,500 budget:** $1,150 a month before health insurance, taxes, visa costs, flights and furnishing. Treat it as unallocated, not spare.
 
-**Healthcare:** Healthcare and insurance costs were not priced in the available Aveiro budget references.  
+**Income requirement:** Portugal's government set the 2026 minimum wage at $1,006 a month. Consulates commonly measure D7 income against that wage; ask yours for the exact bar for you and a spouse.
 
-**Housing / daily life:** Housing varies materially by location, furnishing, and lease length; groceries, utilities, transit, and casual meals have published local benchmarks.  
+**How your money compares to the US:** Part B of Original Medicare costs $202.90 a month at home in 2026, plus a $283 deductible. That is close to what Aveiro utilities, internet and a transit pass cost together ($170).
 
-## What Everyday Life in Aveiro Has to Cost
+**Safety:** The State Department lists Portugal at Level 1, Exercise Normal Precautions, last updated December 22, 2025. Its feed shows one nationwide level for Portugal.
 
-The small purchases are easy to picture. Local price references cover coffee, casual meals, basic groceries, transit, and household utilities—the quiet expenses that shape an ordinary week far more than a special dinner does.
+**Healthcare:** Not priced in the city sources. Get a quote before you count any buffer.
 
-But housing is the hinge. Published one-bedroom estimates show a meaningful difference between locations outside the center and more central addresses. They also distinguish long-term, unfurnished planning estimates from visitor-oriented stays. That distinction matters: a furnished apartment aimed at short-term guests can make a resident budget look far less comfortable than it may be under a genuine long-term lease.
+## What Everyday Life in Aveiro Costs
 
-For one person, the local cost picture is best read as a set of moving parts rather than a promise:
+Numbeo's Aveiro page was updated in November 2026 and rests on 44 contributors and 551 entries over the past year. That is a moderate sample, so treat each price as a range.
 
-- **Rent is the swing factor.** Long-term, unfurnished one-bedroom planning estimates outside the center run about **€558–€884 a month**. Central-area estimates are generally higher, with published references around **€680–€900+**, depending on furnishing and timing.
-- **Groceries are easier to plan around.** A groceries-only budget for one adult is commonly estimated at **€200–€300 a month**. Published everyday ranges include bread at roughly **€1–€1.50**, a liter of milk at **€0.90–€1.20**, and 12 eggs at about **€2–€3.50**.
-- **Utilities deserve a winter check.** Electricity, water, gas, and internet are estimated at about **€100–€150 monthly**, though season and a home’s energy efficiency can shift the bill.
-- **Transit may be a useful fixed expense.** A monthly public-transit pass is commonly cited at around **€30–€40**. Confirm the current pass price and eligibility directly before relying on it.
-- **Meals out belong in your lifestyle budget.** Casual restaurant meals are commonly cited at **€8–€15 per person**, while coffee is roughly **€1–€2**.
-
-Using the low and high ends of rent, groceries, utilities and a transit pass, these four categories total about **€888–€1,374 a month**. That is not an all-in retirement budget: it excludes healthcare, insurance, dining beyond occasional meals, visa costs, taxes, deposits, furnishings, travel, and currency movement.
-
-The rent may look manageable on paper. The more important question is whether it remains manageable after health coverage, deposits, flights home, and the exchange rate are added.
-
-### The Costs Your First Budget Will Miss
-
-Aveiro’s published cost references can help you test housing, food, utilities, local transportation, and occasional dining. They cannot complete a retirement budget for you.
-
-Before treating any apparent monthly cushion as spending money, set aside room for:
-
-- Health insurance or other residency-appropriate coverage
-- Visa and residency fees
-- Rental deposits, furnishings, and move-in costs
-- Flights and trips back to the United States
-- Taxes and pension-transfer questions
-- Currency movement between the U.S. dollar and the euro
-
-A basic worksheet can be encouraging. It is not the same thing as an all-in plan. Until those omitted costs have real quotes attached, any surplus is simply unallocated.
+- **Rent is the swing factor.** A one-bedroom outside the center averages $805 a month. In the center it is $1,076. A furnished short-stay listing can cost more than either.
+- **Groceries are easy to plan.** Expatica, using a June 2026 Numbeo snapshot, puts groceries for one person near $270 a month. A liter of milk is $1.10, 12 eggs are $2.84 and a 500-gram loaf is $1.77.
+- **Utilities and internet** run about $138 a month together, with basic utilities for an 85-square-meter apartment at about $102 and internet at about $36. Winter heating can raise the bill.
+- **Transit** is a monthly pass at $33.
+- **Casual meals** cost about $13 at an inexpensive restaurant. Eight of them add $105 to the month.
 
 **A Typical Day in Aveiro**
 
-Your Tuesday may begin with a café coffee, continue with a casual lunch and a transit ride, then end with bread, milk, eggs, and a simple dinner at home. Published references also track everyday items such as a half-liter beer. These are citywide ranges rather than quotes from one particular café, shop, or restaurant, so use them to test your own habits—not to predict every Tuesday forever.
+Your Tuesday might start with a $2.07 cappuccino, continue with a $13 lunch, and end with bread at $1.77 and eggs at $2.84 for dinner at home. These are citywide averages, not quotes from one café or shop, so test them against your own habits.
+
+### The Costs Your First Budget Will Miss
+
+The four categories above cannot complete a retirement budget. Before you count any buffer, set aside room for:
+
+- Health insurance suited to residence in Portugal
+- Visa and residency fees
+- Rental deposits, furnishings and move-in costs
+- Flights back to the United States
+- U.S. and Portuguese tax questions
+- Currency movement between the dollar and the euro
 
 ## Residency Is a Separate Decision From Affordability
 
-A grocery-and-rent worksheet can suggest that life in Aveiro is possible. Legal residence is another gate entirely.
+A rent-and-groceries worksheet can say Aveiro is possible. Legal residence is another gate.
 
-Portugal’s D7 framework is designed for people who can show stable passive income, appropriate accommodation, proof of funds, and supporting documents. Receiving Social Security or holding retirement savings does not, by itself, settle eligibility.
+Portugal's D7 route is for people who can show stable passive income, a place to live and supporting documents. Social Security or savings alone do not settle eligibility. The exact income bar, the proof the consulate accepts and any savings expectations are set by the consulate that handles your file, so ask for them in writing.
 
-### The Practical D7 Question
+Prepare in this order:
 
-The question is not only, “Can I afford Aveiro?” It is also, “Can I document the income, accommodation, funds, and coverage required for the route I plan to use?”
-
-Confirm current income thresholds and document requirements with the Portuguese consulate that handles your application. Do not build a plan around a single online figure for an individual or couple. Requirements can change, and your own circumstances matter.
-
-### A More Sensible Way to Prepare
-
-1. Confirm current D7 requirements with the appropriate Portuguese consulate.
-2. Ask what proof of stable passive income and accommodation is required.
-3. Obtain current long-term rental quotes before using a housing number in an application plan.
-4. Request health-coverage quotes appropriate to residence in Portugal.
-5. Keep residency expenses separate from the monthly household budget.
-6. Record the exchange rate you use when comparing U.S. income with Portugal-based costs.
-
-![Aveiro, Portugal neighborhood scene](https://images.unsplash.com/photo-1531772337062-9d94547f333f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxBdmVpcm8lMjBQb3J0dWdhbCUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc5NTQ4NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080)
+1. Ask the Portuguese consulate for your region what D7 income it requires for you and for a spouse.
+2. Ask what proof of accommodation it accepts.
+3. Get current long-term rental quotes before you use a rent figure in an application plan.
+4. Request a health-insurance quote suited to residence in Portugal.
+5. Keep one-time residency costs out of the monthly household budget.
+6. Write down the exchange rate you use, with its date.
 
 ## Practical Comparison
 
 ### Rent stability and location
 
-**What the evidence says:**  
-Aveiro’s published one-bedroom estimates differ between central and outside-center locations, while furnishing and lease duration can move the result further. Long-term, unfurnished planning estimates are not equivalent to short-stay listings.
+**What the evidence says:**
+Numbeo lists $805 outside the center and $1,076 in the center for a one-bedroom. Furnishing and lease length move the result further.
 
-**What to check next:**  
-Request three current long-term, unfurnished rental quotes and ask which utilities, furnishings, deposits, and lease conditions are included.
+**What to check next:**
+Ask for three long-term, unfurnished quotes and ask which utilities, deposits and lease conditions each one includes.
 
 ### Groceries versus housing
 
-**What the evidence says:**  
-Published grocery references provide a more manageable planning category than housing, but rent remains the larger budget decision for most one-person households.
+**What the evidence says:**
+Groceries near $270 a month are a smaller and steadier category than rent, which is the larger decision for a one-person household.
 
-**What to check next:**  
-Build a one-month grocery basket around the foods you actually buy, then compare it with current rental quotes rather than a generic household average.
+**What to check next:**
+Price a one-month basket of the foods you actually buy at a local supermarket, then compare it with the rental quotes.
 
 ### Residency eligibility
 
-**What the evidence says:**  
-The D7 route requires evidence of stable passive income, accommodation, and supporting documentation. It is not simply a visitor stay extended by optimism.
+**What the evidence says:**
+The D7 route needs stable passive income, accommodation and documents. Portugal's 2026 minimum wage of $1,006 a month is the figure D7 income is commonly measured against.
 
-**What to check next:**  
-Confirm current income thresholds, document requirements, and application instructions with the Portuguese consulate responsible for your case.
+**What to check next:**
+Ask the consulate for the current income bar for one person and for a couple, and what proof it accepts.
 
 ### Healthcare coverage
 
-**What the evidence says:**  
-No current Aveiro-specific insurance premium was available for this cost picture, and healthcare should not be silently assumed inside a rent-and-groceries estimate.
+**What the evidence says:**
+No Aveiro health-insurance premium was available, so the $1,350 core figure includes no health cost. At home, Part B costs $202.90 a month and Part A has a $1,736 deductible per hospital stay in 2026.
 
-**What to check next:**  
-Request a residency-suitable health-insurance quote. Ask what care, exclusions, waiting periods, and geographic coverage it includes.
+**What to check next:**
+Request a residency-suitable quote and ask about exclusions and waiting periods. Ask Medicare and any Medigap insurer what they pay outside the United States before you change coverage.
 
 ### Currency exposure
 
-**What the evidence says:**  
-Aveiro’s local cost references are in euros, while many American retirees receive income in U.S. dollars. The exchange rate can alter the real monthly cost of living.
+**What the evidence says:**
+Aveiro prices are in euros and most U.S. retirees are paid in dollars. This article uses 1.0939 dollars per euro, the ECB rate of November 23, 2026. The rate was 1.0990 on November 20.
 
-**What to check next:**  
-Use a dated exchange-rate source to compare expected income and expenses, then test how the plan looks if the rate moves against you.
+**What to check next:**
+Re-run the budget at a rate 10 percent worse for you and see whether the plan still holds.
 
 ## The Trade-Off
 
-Aveiro offers a practical starting point: published local references for housing, food, utilities, transit, and casual dining, plus a clear residency framework to investigate.
+**What you may gain:** A mid-sized city where a one-bedroom outside the center averages $805 a month, groceries run near $270, and a monthly transit pass costs $33.
 
-What it does not offer is the comfort of a guaranteed all-in budget before you obtain your own lease and insurance quotes. The city may suit someone comfortable renting first, living with some flexibility, and doing the paperwork before committing. It will feel less appealing if you need every major cost settled before you arrive.
+**What you may give up:** A guaranteed all-in budget. Health insurance, visa costs and the D7 income bar all need your own quotes first, and a weaker euro-dollar rate would raise every price here.
+
+Aveiro suits someone comfortable renting first and doing the paperwork before committing. It feels less appealing if you need every major cost settled before you arrive.
+
+![Aveiro, Portugal neighborhood scene](https://images.unsplash.com/photo-1531772337062-9d94547f333f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxBdmVpcm8lMjBQb3J0dWdhbCUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc5NTQ4NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-- Obtain three current quotes for long-term, unfurnished one-bedroom rentals in Aveiro outside the tourist core; confirm lease length, deposits, and included utilities.
-- Price a one-month groceries-only basket at a local supermarket using your usual quantities and dietary preferences.
-- Ask a utility supplier for a full-year estimate covering electricity, water, gas, and average winter and summer use.
-- Confirm the current price and eligibility rules for a one-month local transit pass with the transit authority or vendor.
-- Contact the Portuguese consulate responsible for your application to confirm D7 income requirements, accommodation evidence, and required documents.
-- Collect a health-insurance quote suitable for residence in Portugal and review the coverage scope before placing it in a retirement budget.
+- Get three current quotes for long-term, unfurnished one-bedrooms outside Aveiro's center and confirm lease length, deposit and included utilities.
+- Price a one-month groceries basket at a local supermarket using your usual quantities.
+- Ask a utility supplier for a full-year estimate covering electricity, water, gas and internet in winter and summer.
+- Confirm today's price for a one-month transit pass with the transit operator.
+- Ask the Portuguese consulate for your region, in writing, for the D7 income bar for you and a spouse and the accommodation proof it accepts.
+- Collect a health-insurance quote suited to residence in Portugal and read the exclusions before adding it to your budget.
 
 ![Aveiro, Portugal daily life](https://images.unsplash.com/photo-1707862991399-f1513ecdc765?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxBdmVpcm8lMjBQb3J0dWdhbCUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc5NTQ4NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080)
 
@@ -157,41 +145,42 @@ What it does not offer is the comfort of a guaranteed all-in budget before you o
 
 ### What does retiring in Aveiro cost for one person?
 
-Published 2026 references place a long-term, unfurnished one-bedroom outside the center at roughly €558–€884 monthly, groceries at about €200–€300, utilities and internet at €100–€150, and a transit pass at about €30–€40. Together, those four categories total about €888–€1,374 monthly, before healthcare, insurance, dining, residency costs, taxes, travel, deposits, and other exclusions. ([Visaportuguese](https://visaportuguese.com/places/aveiro))
+Core costs run about $1,350 a month: $805 rent outside the center, $270 groceries, $138 utilities and internet, $33 transit and $105 for eight casual lunches. Healthcare, taxes, visa costs and travel are extra. ([pt.numbeo.com](https://pt.numbeo.com/custo-de-vida/cidade/Aveiro))
 
-### What is the D7 visa for a retiree moving to Portugal?
+### What income do you need for the D7 visa?
 
-The D7 framework is a residence route for people able to show stable passive income, accommodation, proof of funds, and supporting documents. It cannot determine whether any individual applicant qualifies, and current requirements should be confirmed with the Portuguese consulate handling the application. ([Portuguese national visa guidance](https://assets.ctfassets.net/xxg4p8gt3sg6/2JDqBpBYsiakHIt5rWYghZ/1508e0c3965884c37bd261e0f216160f/PORTUGUESE_NATIONAL_VISA.pdf))
+Portugal's 2026 minimum wage is $1,006 a month, and consulates commonly measure D7 income against it. Your consulate sets the exact bar for you and a spouse, so ask it for the figure in writing. ([portugal.gov.pt](https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-aumenta-salario-minimo-para-920-euros-em-2026))
 
-### Is rent lower outside central Aveiro?
+### How much does Medicare cost at home in 2026?
 
-Published cost references indicate that outside-center one-bedroom estimates are generally lower than central-area estimates. The exact difference depends on furnishing, condition, location, and whether the lease is genuinely long term. Ask for current listings on the same lease basis before deciding what your budget can carry. ([Expatica](https://www.expatica.com/pt/cost-of-living/aveiro/))
+Part B costs $202.90 a month with a $283 annual deductible, and Part A has a $1,736 deductible for each hospital benefit period. Compare those costs with a Portuguese insurance quote before you decide what to keep. ([medicare.gov](https://www.medicare.gov/basics/costs/medicare-costs))
 
-### Are groceries and utilities predictable in Aveiro?
+### Is Aveiro safe for older travelers?
 
-They are useful planning categories, but neither is fixed. Grocery spending changes with diet, while utility bills can vary with season, household consumption, and a home’s energy efficiency. A month of receipts and a full-year utility estimate will tell you more than an average alone. ([Numbeo](https://pt.numbeo.com/custo-de-vida/cidade/Aveiro))
+The State Department rates Portugal Level 1, Exercise Normal Precautions, as of its December 22, 2025 update. It advises watching for petty theft in crowded tourist areas and on public transportation. ([cadataapi.state.gov](https://cadataapi.state.gov/api/TravelAdvisories))
 
-### Does residency include healthcare coverage?
+### How much does the exchange rate change the budget?
 
-Healthcare planning depends on the applicable residency rules and the coverage you arrange; the available Aveiro cost sources do not provide a current, comparable insurance premium. Treat healthcare as a separate item until you have a quote that matches your residency plans and coverage needs. Confirm applicable requirements with the consulate and insurers before applying. ([Portuguese national visa guidance](https://assets.ctfassets.net/xxg4p8gt3sg6/2JDqBpBYsiakHIt5rWYghZ/1508e0c3965884c37bd261e0f216160f/PORTUGUESE_NATIONAL_VISA.pdf))
+At the ECB rate of 1.0939 dollars per euro on November 23, 2026, one euro costs $1.09. The rate was 1.0990 on November 20, a gap of about 0.5 percent in three days. ([ecb.europa.eu](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html))
 
-## Check Today’s Information Before You Decide
+## Check Today's Information Before You Decide
 
-- [Aveiro cost of living — Expatica](https://www.expatica.com/pt/cost-of-living/aveiro/)
-- [Aveiro cost of living — Numbeo](https://pt.numbeo.com/custo-de-vida/cidade/Aveiro)
-- [Aveiro rent planning estimates — Visaportuguese](https://visaportuguese.com/places/aveiro)
-- [Portuguese national visa guidance](https://assets.ctfassets.net/xxg4p8gt3sg6/2JDqBpBYsiakHIt5rWYghZ/1508e0c3965884c37bd261e0f216160f/PORTUGUESE_NATIONAL_VISA.pdf)
-- [Portugal retirement relocation considerations — Kiplinger](https://www.kiplinger.com/retirement/move-to-portugal-what-to-consider-financially)
+- [Aveiro prices — Numbeo](https://pt.numbeo.com/custo-de-vida/cidade/Aveiro)
+- [Euro to dollar reference rate — ECB](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html)
+- [Portugal travel advisory — U.S. State Department](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.prt.html)
+- [Medicare costs — Medicare.gov](https://www.medicare.gov/basics/costs/medicare-costs)
 
 ## Sources & Verification
 
-- [Expatica — Aveiro cost of living](https://www.expatica.com/pt/cost-of-living/aveiro/) — city-level housing and everyday-cost context, using published cost-of-living data.
-- [Numbeo — Cost of Living in Aveiro](https://pt.numbeo.com/custo-de-vida/cidade/Aveiro) — crowd-sourced city price references for rent, groceries, dining, and transit.
-- [Visaportuguese — Aveiro planning estimates](https://visaportuguese.com/places/aveiro) — long-term, unfurnished rental planning estimates and utility context.
-- [Portuguese national visa guidance](https://assets.ctfassets.net/xxg4p8gt3sg6/2JDqBpBYsiakHIt5rWYghZ/1508e0c3965884c37bd261e0f216160f/PORTUGUESE_NATIONAL_VISA.pdf) — D7-related income, accommodation, and document framework.
-- [Kiplinger — Financial considerations for moving to Portugal](https://www.kiplinger.com/retirement/move-to-portugal-what-to-consider-financially) — high-level U.S. retirement-relocation context, not an Aveiro-specific cost comparison.
+- [Numbeo — Cost of Living in Aveiro](https://pt.numbeo.com/custo-de-vida/cidade/Aveiro) — rent, utilities, internet, transit and meal prices, updated November 2026, 44 contributors.
+- [Expatica — Aveiro cost of living](https://www.expatica.com/pt/cost-of-living/aveiro/) — groceries estimate, from a June 2026 Numbeo snapshot.
+- [ECB — Euro reference rate, US dollar](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html) — 1.0939 dollars per euro on November 23, 2026.
+- [Medicare.gov — Medicare costs](https://www.medicare.gov/basics/costs/medicare-costs) — 2026 Part A and Part B figures.
+- [CMS — 2026 Medicare Parts A & B premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) — same figures, confirmed.
+- [Portuguese government — 2026 minimum wage](https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-aumenta-salario-minimo-para-920-euros-em-2026) — 920 euros a month in 2026.
+- [U.S. State Department — Travel Advisories feed](https://cadataapi.state.gov/api/TravelAdvisories) — Portugal Level 1, updated December 22, 2025.
 
-Source dates and access date: November 23, 2026
+Information checked: November 24, 2026
 
 ## Related Golden Horizons Guides
 
@@ -208,4 +197,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-Aveiro is worth testing for retirees prepared to rent long term and live with some flexibility. Its everyday-cost references give you a credible place to start, but the deciding work is personal: compare current leases, price health coverage, and confirm D7 requirements before deciding whether the city fits your income. A month spent testing those ordinary routines may tell you more than any promising spreadsheet can.
+Aveiro is worth testing if you will rent long term and can live with some flexibility. Core costs near $1,350 a month leave room on a $2,500 budget, but the deciding work is yours: compare current leases, price health coverage and get the D7 income bar from your consulate before you commit.
