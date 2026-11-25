@@ -8,9 +8,9 @@ description: "Can $3,500 a month carry a retired couple? San Diego one-bedrooms 
 featured: false
 ---
 
-# California vs Portugal for American Retirees: Can $3,500/month Sustain a Couple in 2026?
+Can $3,500 a month support two retirees? Start with the biggest bill: the place you’ll call home.
 
-**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
+California’s rental costs vary dramatically. Here is how three cities compare for a one-bedroom apartment:
 
 A San Diego one-bedroom rents for a median $1,972 a month. Add utilities and internet and the apartment alone takes about two-thirds of what a couple has to spend.
 
@@ -18,7 +18,7 @@ Lisbon looks cheaper on paper, but not everywhere. A one-bedroom in the city cen
 
 > **THE SHORT ANSWER:** A couple on $3,500 a month keeps about $1,200 after a typical San Diego rent and utilities, but about $2,150 after Lisbon rent outside the center. Portugal's D7 visa asks a couple to show about $1,504 a month in passive income, and Original Medicare will not pay for routine care there. The catch: Lisbon's center costs nearly as much as San Diego, and the Medicare Part B premium of $202.90 per person keeps coming out of your check.
 
-## Retirement Snapshot
+Sources: Zillow’s rental-market pages for [Fresno](https://www.zillow.com/rental-manager/market-trends/fresno-ca/), [San Diego](https://www.zillow.com/rental-manager/market-trends/san-diego-ca/), and [San Jose](https://www.zillow.com/rental-manager/market-trends/san-jose-ca/), reviewed November 24, 2026. Figures are market averages for one-bedroom apartments, not quotes for specific homes.
 
 **Primary decision:** Does the same fixed income stretch further in a specific Portuguese neighborhood than in your California city?  
 **Best fit:** Couples with steady monthly income who will rent outside central Lisbon and are willing to carry private health insurance.  
