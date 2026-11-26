@@ -1,5 +1,5 @@
 ---
-title: "Morelia Rent Looks Like $350 a Month. Here’s What It Leaves Out"
+title: "What Retiring in Morelia, Mexico Really Costs"
 category: Cost
 slug: retiring-morelia-mexico-costs
 date: 2026-11-23
@@ -8,7 +8,7 @@ description: "Morelia core living costs run about $1,100 a month for one person.
 featured: false
 ---
 
-# Morelia Rent Looks Like $350 a Month. Here’s What It Leaves Out
+# What Retiring in Morelia, Mexico Really Costs
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY SAFETY
 
