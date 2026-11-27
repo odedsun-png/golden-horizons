@@ -4,7 +4,7 @@ category: Cost
 slug: what-1800-month-sucre-bolivia
 date: 2026-11-09
 image: https://images.unsplash.com/photo-1773137201970-cc534f82569c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxTdWNyZSUyMEJvbGl2aWElMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc5NDI0NTMzOHww&ixlib=rb-4.1.0&q=80&w=1080
-description: "A practical look at whether $1,800 a month can cover rent, food, utilities, transport, and daily life in Sucre."
+description: "Sucre's core costs run about $825 a month for one person, leaving about $975 of a $1,800 budget. Altitude, healthcare and residency are the catch."
 featured: false
 ---
 
@@ -12,126 +12,135 @@ featured: false
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** A modest life in Sucre might fit an $1,800 monthly budget, but the supplied estimates do not prove that it will. A central one-bedroom is listed at about $462 a month. The listed rent, groceries, utilities and internet, and local transport add up to about $692–$912 before dining and other costs. Healthcare, insurance, flights, taxes, and residency expenses need a separate plan.
-
-A central one-bedroom is listed at about **$462 a month**. That number makes Sucre worth a closer look: it leaves room in an $1,800 budget for more than rent alone.
-
-But rent is only the first line in the notebook. There are groceries to buy, bills to pay, rides around town, and questions about healthcare and residency. The appealing number starts the story. Your ordinary routines decide how it ends.
+> **THE SHORT ANSWER:** Yes, a single retiree can cover everyday life in Sucre well within this budget. A one-bedroom in the city center is listed at about $462 a month, and rent, food, utilities, internet, transit and some meals out add up to roughly $825. That leaves about $975 a month for health insurance, flights home and surprises. The catch: Sucre sits at 2,810 meters (about 9,200 feet), Bolivia is a State Department Level 2, and the residency path has no published retiree rules, so confirm all three before you lease anything.
 
 ## Retirement Snapshot
 
-**Primary decision:** Can $1,800 a month cover your everyday life in Sucre, with room for costs beyond rent?  
-**Best fit:** A renter willing to compare housing, use local transport, and keep track of dining and other extras.  
-**Biggest warning:** The core estimate excludes private healthcare, insurance, travel, and immigration-related costs.  
-**Planning-budget lens:** The article gives a broad $1,000–$2,000 monthly estimate, but the listed cost categories add up to less. The difference needs a clear breakdown.  
-**Residency:** Confirm current requirements and documents with Bolivian immigration authorities or a consulate.  
-**Healthcare:** Ask clinics and insurers for current prices and coverage details.  
-**Housing / daily life:** A central one-bedroom is listed at about $462 a month. Current listings may differ.  
-**Safety:** The article cites a U.S. State Department Level 2 advisory for Bolivia in August 2026. Check the current advisory before travel.  
-**Property:** Renting is the more useful first test here.
+**Primary decision:**
+Whether a quiet, high-altitude colonial city at very low prices fits your health, your Spanish and your need for nearby medical care.
 
-## What $1,800 Has to Cover in Sucre
+**Best fit:**
+A renter in good cardiovascular health who wants a slow, walkable city and is willing to test the altitude and the clinics before committing.
 
-The headline number is $1,800. The first big question is housing: the supplied estimate for a central one-bedroom is **$462.08 a month**. That is a planning figure, not a promise that every apartment or lease will match it.
+**Biggest warning:**
+At 2,810 meters, Sucre is high enough that you should talk to your doctor about altitude before you book a long stay. Serious conditions may mean travel to a larger city or abroad.
 
-The article estimates groceries at **$150–$300 a month** for one person, utilities and internet at **$60–$120**, and local transportation at **$20–$30**. Together with the central rent estimate, those listed costs come to about **$692–$912**. Dining and other everyday extras are not included in that subtotal.
+**Safety:**
+The U.S. State Department rates Bolivia Level 2, Exercise Increased Caution, for crime, unrest and health, in an advisory dated August 17, 2026. Large demonstrations can happen with little warning and may block transportation. It lists Chapare Province as Do Not Travel; that is a separate region from Sucre.
 
-That matters because the article also gives a broader core-spending estimate of **$1,000–$2,000**. The supplied figures do not show exactly how that range was calculated. Treat it as an estimate that needs a fuller breakdown—not as a total established by the line items above.
+**Residency:**
+Expat.com says Bolivia has no dedicated retirement visa; retirees use a determined-purpose visa and show a modest monthly income. Confirm current rules with a Bolivian consulate.
 
-Sucre’s appeal is about more than a low rent figure. The draft describes a slower rhythm than a large urban destination and points to daily errands and neighborhood routines. Those are reasons to explore the city, but affordability does not settle the practical questions: healthcare, language needs, safety, and the legal right to stay.
+**Healthcare:**
+Private clinics are the norm for expats. Expat.com lists doctor visits at $15–$30, but the page names no specific hospitals, so get quotes from the clinics you would actually use.
 
-## The Apartment, the Market, and the Everyday Math
+**Property:**
+Renting is the more useful first test here.
 
-Housing can change the budget more than almost any other listed cost. The central one-bedroom estimate is about **$462 a month**. The draft says housing outside the center is generally cheaper, but does not give a specific price. Compare current long-term listings before you build your own monthly plan around that claim.
+## What Your Budget Has to Cover in Sucre
 
-For groceries, the estimate for one person is **$150–$300 a month**. The listed examples include bread at **$1–$2**, milk at **$1.20–$2**, and eggs at **$1–$2**. These prices can help you start a shopping list, but they are not a full monthly food budget.
+Start with rent. Wise lists a one-bedroom in the city center at $462.08 a month and outside the center at $283.01. Those are crowd-sourced averages with no stated date or sample size, so treat them as a planning anchor, not a quote. Expat.com's own range for a furnished center one-bedroom is lower, $200–$300.
 
-The draft puts utilities and internet at **$60–$120 a month**. It estimates short local rides at **$0.40–$1.00**, with monthly transportation at **$20–$30**. A casual restaurant meal is listed at **$6–$12**. An occasional lunch may fit easily; eating out often will change the total.
+Food is cheap. Wise lists milk at $0.80 a liter, a 500-gram loaf of white bread at $1.33, a dozen eggs at $1.26, chicken fillets at $2.49 a kilo and rice at $0.96 a kilo. Expat.com puts groceries for one person at $100–$150 a month, and we budget the top of that range.
 
-The useful test is to price the life you actually want. Choose the kind of apartment you would be comfortable living in. Shop for the foods you normally eat. Add the meals out and rides you expect to take. A budget built around your real habits is more useful than one built around the lowest possible numbers.
+Utilities are small. Wise lists basic utilities for an 85-square-meter apartment at $14.26 and internet at $21.16. Expat.com's single-person range is $30–$50, plus about $10 for gas, so we budget $60 for utilities and gas.
+
+A short bus or taxi ride is cheap too: Wise lists a one-way ticket at $0.19 and a taxi start at $0.57. Wise lists an inexpensive restaurant meal at $1.51 and a mid-range meal for two at $15.74.
 
 ## The $1,800 Monthly Test
 
-**Headline budget:** $1,800 per month  
-**1-bedroom long-term rent:** About $462.08 per month in the city center; the draft says outside-center rents are generally lower, but gives no comparable figure  
-**Groceries / basic food:** $150–$300 per month  
-**Utilities + internet:** $60–$120 per month  
-**Local transportation:** $20–$30 per month  
-**Dining / everyday extras:** Casual meals about $6–$12 each; monthly spending depends on frequency  
-**Estimated core monthly spend:** The draft estimates $1,000–$2,000. The listed rent, groceries, utilities/internet, and transport total about $692–$912 before dining and other extras; the broader estimate needs a clearer breakdown.  
-**Remaining buffer vs the $1,800 budget:** The stated broad estimate implies about $800 left at the low end or a $200 shortfall at the high end. Those figures depend on the unexplained $1,000–$2,000 estimate.  
-**Income requirement:** Varies by visa type — confirm with the consulate  
-**Evidence confidence:** STRONG  
-**GH Budget Read:** COULD WORK
+**Headline budget:** $1,800 per month
 
-The monthly range does not cover the full cost of retiring abroad. Healthcare, private insurance, flights to the United States, taxes, residency fees, apartment furnishings, and unexpected medical needs need their own line in the budget. Do not treat a possible surplus as spending money until you price those costs.
+**One-bedroom rent (city center):** $462 (outside the center: $283)
+
+**Groceries:** about $150
+
+**Utilities and gas:** about $60
+
+**Internet:** about $21
+
+**Local transportation:** about $20 (our allowance for roughly 100 short rides)
+
+**Eating out:** about $110 (15 simple meals plus 4 mid-range dinners)
+
+**Estimated core monthly spend:** $825 for one person renting in the center
+
+**Remaining buffer vs the $1,800 budget:** about $975 a month, or about $1,150 if you rent outside the center
+
+**Income requirement:** Expat.com cites about $300–$500 a month for the determined-purpose visa; confirm with a consulate
+
+**How your money compares to the US:** The average U.S. household spends about $2,316 a month on housing alone and $886 on food, according to BLS 2025 data. Your estimated core spend in Sucre is about a quarter of that housing-plus-food total
+
+Healthcare, insurance, flights home, taxes and residency fees are not in the $825. Expat.com puts private health insurance for a couple at $100–$150 a month. If you keep Medicare, the 2026 Part B premium is $202.90 a month, and you pay it whether or not you use it in Bolivia.
 
 **A Typical Day in Sucre**
 
-The supplied estimates put coffee at **$1.50–$2.50**. A basket of fruit or vegetables at Mercado Central de Sucre may cost **$1–$3**, depending on what you choose. A short ride is estimated at **$0.40–$1.00**. Lunch at a local eatery may be **$4–$7**, while a mid-range dinner for two is estimated at **$15–$25**.
-
-These prices sketch some of the choices that shape a day. They are not a fixed daily budget, and they do not include rent, utilities, healthcare, or other monthly costs. Your habits matter more than any single receipt.
+Coffee at a local café runs about $1. A simple lunch is about $1.51 to $2 at a local eatery. A short ride costs $0.19 on the bus, and an in-city taxi runs $1–$3. Dinner for two at a mid-range restaurant is about $15.74. A day like that costs under $25, and what you add is a visit to the Casa de la Libertad, which lists at about $4.50.
 
 ## Before You Sign a Lease: Residency, Healthcare, and Safety
 
-A lower daily cost does not give you permission to stay long term. The draft says Bolivia has residency options for retirees and other long-stay residents, but it does not list current requirements. Ask Bolivian immigration authorities or a consulate which route applies to your situation, what documents you need, and what steps come next. Do this before making a long-term housing commitment.
+Low prices do not give you permission to stay long term. Expat.com says retirees can apply for a Visa de Objeto Determinado, with an initial fee of about $357, and permanent residence may be possible after two years. Its pages disagree with each other in places, so ask a Bolivian consulate for the current documents before you commit.
 
-Healthcare needs its own price check. The draft says private clinics and hospitals are available in Sucre, but it does not give a verified price for a visit. Ask a clinic for the current self-pay cost of an initial visit and a routine check-up. Then compare those prices with an international insurance policy, including its coverage, exclusions, and limits.
-
-The article cites a U.S. State Department Level 2 advisory for Bolivia in August 2026. Travel guidance can change. Check the current advisory before a scouting trip or move, and consider what it means for the places and activities you have in mind.
+Then there is health. Expat.com says Sucre has competent doctors and private clinics, with medication at about 30% of U.S. prices. It also warns that serious conditions may mean going to a larger city or abroad. Ask any clinic you consider for its self-pay price for a first visit and a routine check-up, and compare that with international insurance that covers evacuation.
 
 ## Practical Comparison
 
 ### Housing affordability
 
-**What the evidence says:**  
-A central one-bedroom is listed at about $462 a month. The draft says housing outside the center is generally cheaper, but gives no specific comparison price.
+**What the evidence says:**
+Wise lists a center one-bedroom at $462 and an outside-center one at $283, while Expat.com gives $200–$300 for a furnished center unit. The sources disagree, so the real price depends on the building and the agent.
 
-**What to check next:**  
-Compare current central and outer-area listings. Ask whether the quoted rent includes utilities and what the lease requires.
+**What to check next:**
+Ask two local agents for current 12-month listings in the center and in an outer neighborhood, and ask whether utilities are included.
 
-### Grocery costs
+### Grocery and daily costs
 
-**What the evidence says:**  
-The draft estimates groceries for one person at $150–$300 a month. Individual item prices vary by store and season.
+**What the evidence says:**
+Wise lists staples such as milk at $0.80 and eggs at $1.26. Expat.com budgets $100–$150 a month for one person.
 
-**What to check next:**  
-Price a basket of foods you normally buy at Mercado Central de Sucre and at a supermarket during a scouting stay.
+**What to check next:**
+Price a week of your usual basket at the market and at a supermarket during a scouting stay.
 
 ### Healthcare access and cost
 
-**What the evidence says:**  
-The draft says private clinics and hospitals are available, but does not establish a reliable medical budget for an individual retiree.
+**What the evidence says:**
+Expat.com lists doctor visits at $15–$30 and says serious conditions may require a larger city or travel abroad.
 
-**What to check next:**  
-Ask for current self-pay prices for a new-patient visit and routine check-up. Review your insurance coverage for care in Bolivia.
+**What to check next:**
+Request current self-pay quotes from two private clinics, and ask any insurer whether it covers medical evacuation from 2,810 meters.
 
 ### Residency pathway
 
-**What the evidence says:**  
-Residency routes exist, but current thresholds, documents, and procedures need confirmation.
+**What the evidence says:**
+Expat.com reports no dedicated retirement visa, a roughly $357 initial fee, and an income proof of about $300–$500 a month. The page does not give a date, so treat the numbers as unconfirmed.
 
-**What to check next:**  
-Ask a Bolivian consulate or immigration authority for the current requirements before making a long-term housing commitment.
+**What to check next:**
+Email a Bolivian consulate and ask in writing which income documents it accepts for a determined-purpose visa.
 
 ## The Trade-Off
 
-The potential gain is a central rent estimate of about **$462 a month**, along with supplied estimates for groceries, utilities, and local transport that may leave room in an $1,800 budget.
+**What you may gain:**
 
-The trade-off is uncertainty. The broader monthly range is not reconciled with the listed costs. The draft also does not price healthcare or insurance, and the claim about English-speaking hospital care needs evidence before it should guide a decision.
+- Core living costs of about $825 a month, with about $975 left over from this budget.
+- A walkable colonial city with simple restaurant meals under $2.
+- Room in the budget for private insurance and trips home.
+
+**What you may give up:**
+
+- Easy access to large hospitals; serious cases may mean a larger city or travel abroad.
+- Sea-level air, since the city sits at 2,810 meters.
+- Clear retiree visa rules, since no dedicated retirement visa exists.
 
 ![Sucre, Bolivia daily life](https://images.unsplash.com/photo-1788031736402-31edfd1d1e33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxTdWNyZSUyMEJvbGl2YSUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8fDE3OTQyNDUzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080 )
 
 ## The Golden Horizons 30-Day Test
 
-1. Contact at least two local landlords or agents about a long-term rental in central Sucre. Ask for current prices and what each rent includes.
-2. Price six staples—bread, milk, eggs, produce, chicken, and coffee—at a grocery store or mercado. Compare the total with your usual weekly spending.
-3. Ask a private clinic for its current price for a new-patient visit and a routine check-up.
-4. Compare those clinic prices with international insurance options. Check what the policies cover in Bolivia and outside the country.
-5. Ask Bolivian immigration authorities or a consulate for current residency information, required documents, and the steps that apply to you.
-6. Track the cost of local transport, a week of lunches, and one dinner for two. Compare your own spending with the estimates in this article.
-
-The goal is not to prove that Sucre can be inexpensive for a month. It is to learn whether your own apartment standards, healthcare needs, transport habits, and meals out fit the budget.
+1. Contact two local agents about a 12-month center rental, using the Wise range above as your price-check range.
+2. Price six staples, bread, milk, eggs, chicken, rice and coffee, at a market and a supermarket, and compare your weekly total with the monthly grocery budget above.
+3. Ask two private clinics for their self-pay price for a new-patient visit and a routine check-up.
+4. Ask an international insurer for a quote that covers care in Bolivia and medical evacuation.
+5. Email a Bolivian consulate and ask which documents prove retirement income for a determined-purpose visa.
+6. Spend your first week resting, walking slowly and noting how you sleep and breathe at 2,810 meters, and talk to your doctor before and after.
 
 ![Sucre, Bolivia street scene](https://images.unsplash.com/photo-1773137260755-6d05d3856328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHx1fHNlYXJjaHwyfHxTdWNyZSUyMEJvbGl2aWElMjBzdHJlZXQlMjBsaWZlfGVufDB8MHx8fDE3OTQyNDUzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080 )
 
@@ -139,39 +148,40 @@ The goal is not to prove that Sucre can be inexpensive for a month. It is to lea
 
 ### Is Sucre affordable for a retiree on $1,800 a month?
 
-It may be possible for a single renter, but the draft’s estimated core costs range from about $1,000 to $2,000 a month. The high end exceeds the budget, and the article does not show a full calculation for that range. Healthcare, insurance, travel, taxes, and residency costs need separate funding. ([Wise](https://wise.com/us/cost-of-living/bolivia/sucre ))
+Yes. A center one-bedroom is listed at $462.08, utilities at $14.26 and internet at $21.16, so a single renter's core spending lands near $825. That leaves about $975 for insurance, travel and emergencies. ([wise.com](https://wise.com/us/cost-of-living/bolivia/sucre))
 
-### What does a one-bedroom apartment cost in Sucre?
+### How much is the Bolivia residency fee for retirees?
 
-The cited city-center estimate is about $462.08 a month. The draft says outside-center rents are generally lower, but prices vary by neighborhood, lease terms, and market conditions. ([Wise](https://wise.com/us/cost-of-living/bolivia/sucre ))
+Expat.com lists an initial fee of about $357 and proof of roughly $300–$500 a month in income, with permanent residence possible after two years for about $200 more. It says there is no dedicated retirement visa. Confirm with a consulate. ([expat.com](https://www.expat.com/en/guide/south-america/bolivia/sucre/))
 
-### What might everyday spending cost?
+### Is Sucre safe for Americans?
 
-The draft estimates coffee at $1.50–$2.50, a casual lunch at $4–$7, a short local ride at $0.40–$1.00, and a produce basket at $1–$3. These are planning estimates, not fixed prices at a specific venue. ([Expat.com](https://www.expat.com/en/guide/south-america/bolivia/sucre/ ))
+Bolivia is Level 2, Exercise Increased Caution, in the State Department advisory dated August 17, 2026, for crime, unrest and health. Petty crime is common in tourist spots, and demonstrations can block transportation with little warning. ([travel.state.gov](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bol.html))
 
-### What is the safety situation for Americans in Sucre?
+### How does Sucre compare with U.S. living costs?
 
-The draft says the U.S. State Department listed Bolivia at Level 2, Exercise Increased Caution, in August 2026. Check the current advisory before travel because guidance can change. ([U.S. Department of State](https://travel.state.gov ))
+The average U.S. household spent about $27,790 on housing and $10,633 on food in 2025, or roughly $3,200 a month combined. Sucre's whole core budget of about $825 is a fraction of that, though households are larger than one retiree. ([bls.gov](https://www.bls.gov/news.release/cesan.nr0.htm))
 
-### Is residency easy for retirees in Bolivia?
+### What does Medicare cost if I keep it abroad?
 
-The supplied article does not establish how easy residency is or whether a particular reader qualifies. Confirm current documents, thresholds, and procedures with Bolivian authorities or a consulate before planning a move. ([Expat.com](https://www.expat.com/en/guide/south-america/bolivia/sucre/ ))
+The 2026 standard Part B premium is $202.90 a month, and the Part B deductible is $283. The Part A inpatient hospital deductible is $1,736. Check with your plan what it pays outside the United States. ([cms.gov](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles))
 
-## Check Today’s Information Before You Decide
+## Check Today's Information Before You Decide
 
-- [U.S. Department of State Bolivia travel information](https://travel.state.gov )
-- [Numbeo: Cost of Living in Sucre](https://www.numbeo.com/cost-of-living/in/Sucre-Bolivia )
-- [Wise: Cost of Living in Sucre](https://wise.com/us/cost-of-living/bolivia/sucre )
-- [Expat.com guide to Sucre](https://www.expat.com/en/guide/south-america/bolivia/sucre/ )
+- [U.S. State Department — Bolivia travel advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bol.html)
+- [Numbeo — Cost of Living in Sucre](https://www.numbeo.com/cost-of-living/in/Sucre-Bolivia)
+- [Wise — Cost of Living in Sucre](https://wise.com/us/cost-of-living/bolivia/sucre)
+- [Expat.com — guide to Sucre](https://www.expat.com/en/guide/south-america/bolivia/sucre/)
 
 ## Sources & Verification
 
-- [Wise: Cost of Living in Sucre](https://wise.com/us/cost-of-living/bolivia/sucre ) — cited for the city-center one-bedroom estimate and related cost context.
-- [Numbeo: Cost of Living in Sucre](https://www.numbeo.com/cost-of-living/in/Sucre-Bolivia ) — cited for city-level grocery, utility, dining, and housing costs.
-- [U.S. Department of State: Bolivia travel information](https://travel.state.gov ) — cited for the August 2026 Level 2 travel-advisory context.
-- [Expat.com guide to Sucre](https://www.expat.com/en/guide/south-america/bolivia/sucre/ ) — cited for general daily-life and residency-planning context.
+- [Wise — Cost of living in Sucre](https://wise.com/us/cost-of-living/bolivia/sucre) — rent, utilities, internet, groceries, transit and restaurant prices in USD (no date shown)
+- [Expat.com — Sucre guide](https://www.expat.com/en/guide/south-america/bolivia/sucre/) — altitude, doctor visits, insurance range, visa notes
+- [U.S. State Department — Bolivia travel advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bol.html) — Level 2, August 17, 2026
+- [BLS — Consumer Expenditures 2025](https://www.bls.gov/news.release/cesan.nr0.htm) — average U.S. household housing and food spending
+- [CMS — 2026 Medicare Parts A & B premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) — Part B premium and deductibles
 
-Information checked: November 9, 2026
+Information checked: November 10, 2026
 
 ## Related Golden Horizons Guides
 
@@ -188,6 +198,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-Sucre may fit an $1,800 monthly budget, but the current figures do not settle the question. The listed costs total about $692–$912 before dining and other extras, while the broader estimate of $1,000–$2,000 needs a clearer breakdown.
-
-Before making plans, compare real rental listings, price the food and transport you would actually use, ask about healthcare costs, and confirm the residency rules. The right answer is not the lowest number on a spreadsheet. It is whether the life you want fits the costs you can verify.
+Sucre makes this budget look generous, with about $825 of core costs and plenty left for insurance and trips home. It suits a healthy, patient renter who values a slow city. Before you sign anything, spend a month testing the altitude, price two private clinics, and get the residency requirements in writing from a Bolivian consulate.
