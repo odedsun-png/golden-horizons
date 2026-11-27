@@ -4,7 +4,7 @@ category: Healthcare
 slug: medigap-keep-or-cancel-moving-mexico
 date: 2026-11-23
 image: https://images.unsplash.com/photo-1615695478392-af177ac550b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZXhpY28lMjBjb2FzdHxlbnwwfDB8fHwxNzk1NDgwNzIwfDA&ixlib=rb-4.1.0&q=80&w=1080
-description: "Before cancelling Medigap for a move to Mexico, understand Medicare’s limits abroad, plan-specific travel benefits, and re-entry risks."
+description: "Medigap pays 80% of foreign emergencies up to $50,000 for life, but cancelling is usually permanent. Here is what to check before you leave."
 featured: false
 ---
 
@@ -12,116 +12,113 @@ featured: false
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY HEALTHCARE
 
-A Medigap premium can feel like an easy expense to cut once Mexico becomes home. But this is one decision where the monthly bill is only half the story. Original Medicare generally offers limited coverage outside the United States, and a Medigap policy may provide only limited, plan-specific help with a qualifying emergency abroad. Cancel too quickly, and returning to comparable supplemental coverage later may be harder than expected.
+A Medigap premium looks like an easy cut once Mexico is home. It is also one of the few choices on this list that you usually cannot undo. Original Medicare mostly stops at the border, and Medigap's foreign benefit is small and narrow.
 
-The real question is not whether Medigap is useful in Mexico. It is whether your particular policy still earns its place in a life that may include care in Mexico, trips back to the United States, and the need for a dependable backup plan.
-
-> **THE SHORT ANSWER:** Don’t cancel Medigap simply because you are moving to Mexico. Original Medicare generally has limited coverage outside the United States, and foreign emergency benefits under Medigap are plan-specific rather than universal. Cancelling may save premiums, but it can also make it harder to buy a policy later. Confirm your plan’s Mexico coverage, claims rules, and your guaranteed-issue rights before deciding.
+> **THE SHORT ANSWER:** Keep Medigap until you have a written answer on three things. Plans C, D, F, G, M and N pay 80% of a foreign emergency after a $250 yearly deductible, up to a $50,000 lifetime limit, and only for emergencies that start in the first 60 days of a trip. Original Medicare mostly pays nothing in Mexico, so you cover the bill yourself. The catch is that once you cancel, Medicare says you usually cannot get the policy back, and a new one can mean medical questions and a wait of up to 6 months.
 
 ## Retirement Snapshot
 
-**Primary decision:** Whether the protection and future flexibility of a Medigap policy justify its premium while living in Mexico.  
+**Primary decision:** Whether Medigap's value on U.S. visits and its small foreign benefit justify the premium while you live in Mexico.
 
-**Best fit:** Retirees who expect to return to the United States for care, value possible foreign emergency protection, or have not confirmed their ability to buy Medigap again later.  
+**Best fit:** Retirees who still see U.S. doctors, plan to return to the U.S. for major care, or have not priced separate Mexico coverage.
 
-**Biggest warning:** Medicare coverage abroad is limited, and cancelling Medigap can reduce your options to return to supplemental coverage later.  
+**Biggest warning:** Medicare says dropping Medigap is usually permanent. Do not cancel to "see how it goes."
 
-**Healthcare:** Some Medigap policies offer limited foreign travel emergency benefits, but coverage, limits, and claim procedures vary by policy.  
+**Healthcare:** Medicare 2026 deductibles are $1,736 for a Part A hospital stay and $283 for Part B. In Mexico you pay private hospitals directly.
 
-**Residency:** A Mexican move involves separate residency and healthcare-planning questions; Medicare or Medigap coverage does not establish a right to live in Mexico.  
+**Residency:** Medicare and Medigap give you no right to live in Mexico. Residency is a separate application with its own income and paperwork rules.
 
-## Medigap Is Not a Mexico Healthcare Plan
+## What Medicare and Medigap Pay in Mexico
 
-The question is not whether Medigap is “good in Mexico.” It is whether your policy offers enough value for the way you expect to use healthcare on both sides of the border.
+Original Medicare generally does not pay for care in Mexico. Medicare says it "usually doesn't cover health care while you're traveling outside the U.S." The exceptions are narrow, such as an emergency that starts in the U.S. when a Mexican hospital is closer than the nearest U.S. hospital that can treat you. Moving there does not create coverage.
 
-Original Medicare generally does not provide comprehensive coverage outside the United States. Medicare identifies limited circumstances in which care abroad may be covered, but those exceptions are not a full medical plan for someone living in Mexico.
+Medigap Plans C, D, F, G, M and N list a foreign travel emergency benefit at 80%, up to plan limits, on Medicare's plan comparison page. Texas Medicare's guide adds the terms: a $250 yearly deductible, a $50,000 lifetime limit, and coverage only for emergencies that begin in the first 60 days of each trip. North Dakota's insurance department chart shows the same $250 and $50,000 figures. The benefit does not cover planned care such as scheduled visits, dental work or surgery.
 
-Some Medigap policies include foreign travel emergency benefits. That may matter if a qualifying emergency occurs, but it is not the same as routine, all-purpose coverage for medical care in Mexico. Benefits can have restrictions, lifetime limits, and specific claim procedures. A policy letter alone is not a complete answer; the details of your policy matter.
+That structure fits a vacation. It does not fit a year-round resident, because the 60-day window applies to each trip, not to your whole stay. Treat Medigap as a U.S. policy with a small foreign extra, not as your Mexico plan.
 
-Before you count Medigap as part of your Mexico healthcare plan, call the insurer and ask:
+Call your insurer before you decide and ask:
 
-- Does my policy include foreign travel emergency coverage?
-- What services qualify, and what exclusions apply?
-- Is there a lifetime limit or another limit on the benefit?
-- How do I file a claim from Mexico?
-- Must I pay a provider first, or does the policy use a particular claims process?
+- Does my plan include foreign travel emergency coverage?
+- Does the 60-day clock restart each time I return to the U.S. and leave again?
+- How much of the lifetime limit have I used?
+- Do I pay the hospital first and file a claim, and what receipts do you need?
 
-It is not the most glamorous part of planning a move. It may be the call that prevents an expensive surprise later.
+## Why Cancelling Is Hard to Undo
 
-## Why Cancelling Can Be Hard to Undo
+Medicare's page on dropping Medigap says that in most cases you won't be able to get it back. Outside your 6-month Medigap Open Enrollment Period, you can generally switch only if you have a guaranteed issue right. If an insurer ends your coverage, you have 63 days to apply for a new policy.
 
-Medigap is private supplemental insurance, and timing often matters as much as coverage. If you cancel because you expect to receive most of your care in Mexico, do not assume you can restart the same coverage later on the same terms.
+A new policy outside those windows can mean higher premiums and medical questions. It may also carry a waiting period of up to 6 months before pre-existing conditions are covered. An older standardized plan you cancel may no longer be sold at all.
 
-Guaranteed-issue rights can apply in certain moving or coverage-change situations, but not every move creates a seamless path back to a Medigap policy. State protections, insurer rules, underwriting, premiums, and the circumstances of your move can all affect what happens next.
+One more link matters. Medicare says you can keep your Medigap policy no matter where you live, but only while you still have Original Medicare. Dropping Part B to save the $202.90 monthly premium for 2026 would put that at risk. Texas Medicare's guide says rejoining Part B later may mean waiting for the January 1 to March 31 General Enrollment Period and a 10% penalty for each full year without it.
 
-That makes “cancel now, sort it out later” the riskiest version of the plan.
+## What You Pay Without Medigap in Mexico
 
-Keeping Medigap may make sense if you expect regular time in the United States, want to preserve supplemental coverage connected to Original Medicare, or have not yet established what alternative foreign medical coverage would provide. Cancelling may be worth considering only after you understand your re-entry options and compare them with coverage designed for care in Mexico.
+At home, Original Medicare charges a $1,736 Part A deductible per benefit period and a $283 Part B deductible in 2026, then 20% of most Part B services. Medigap is what covers those gaps in the U.S. For a retiree 65 or older, a hospital stay on a U.S. visit may cost far less with Medigap than a private hospital bill in Mexico paid out of pocket.
 
-The distinction is important: Medigap may offer limited help with a qualifying emergency abroad, while separate travel or foreign medical insurance may be needed for broader gaps. Neither should be assumed to cover every circumstance without reading the policy.
+In Mexico, you pay the hospital or doctor directly. The Hospital Ángeles network says five of its hospitals hold Joint Commission International accreditation: Pedregal, Lomas, Puebla, Universidad and Acoxpa Centro Sur Querétaro. Ask any hospital you might use, such as Hospital Ángeles Pedregal in Mexico City or Hospital Ángeles Puebla, what deposit it asks for at admission and whether it bills a U.S. insurer directly.
+
+The State Department rates Mexico Level 2, "Exercise increased caution," with the feed entry updated May 28, 2026. It also warns that conditions vary by state and that emergency services are limited in remote or rural areas. News coverage of the June 2026 state table reports Mexico City and Puebla at Level 2 as well; check the state line for your own city on travel.state.gov before you choose where to live.
 
 ## Practical Comparison
 
-### Foreign emergency coverage: useful, but not universal
+### Foreign emergency coverage: useful, but narrow
 
-**What the evidence says:**  
-Original Medicare has limited coverage outside the United States. Some Medigap policies may include foreign travel emergency benefits, but those benefits are not universal and can have limits.
+**What the evidence says:**
+Plans C, D, F, G, M and N pay 80% of a qualifying foreign emergency after a $250 yearly deductible, up to $50,000 for life. It covers emergencies that begin in the first 60 days of a trip, not planned care.
 
-**What to check next:**  
-Ask your insurer for the written foreign emergency benefit, exclusions, limits, and claims instructions for your exact policy.
+**What to check next:**
+Ask your insurer for the foreign travel benefit in writing, including how much of the lifetime limit you have used.
 
-### Cancelling versus future flexibility
+### Cancel now versus keep it
 
-**What the evidence says:**  
-Cancelling Medigap can reduce flexibility because getting a policy later may depend on guaranteed-issue rights, state protections, and insurer underwriting rules.
+**What the evidence says:**
+Medicare says that in most cases you will not get a dropped Medigap policy back. A new policy can mean higher premiums, medical questions and a wait of up to 6 months.
 
-**What to check next:**  
-Review Medicare’s guidance on switching or dropping Medigap, then ask the insurer what would apply if you sought coverage again after living abroad.
+**What to check next:**
+Call your state insurance department and ask whether any guaranteed issue right would apply if you returned to the U.S. in two years.
 
-### Living in Mexico is different from visiting Mexico
+### Home costs with and without Medigap
 
-**What the evidence says:**  
-A short trip and a long-term move create different healthcare needs. Medicare and Medigap rules should not be treated as a complete healthcare plan for residence in Mexico.
+**What the evidence says:**
+In 2026 Original Medicare charges $1,736 for a Part A hospital stay and $283 for Part B before it pays, then 20% of most Part B services. Medigap pays much of that on U.S. visits.
 
-**What to check next:**  
-Confirm your intended Mexican residency status and decide how you would handle routine care, emergencies, and care during visits to the United States.
+**What to check next:**
+Add up how many weeks a year you will be in the U.S. and what a one-week hospital stay would cost you with and without the policy.
 
-### Filling the gaps with foreign medical coverage
+### Filling the gap in Mexico
 
-**What the evidence says:**  
-Private travel or foreign medical insurance may help fill gaps left by Medicare and limited Medigap foreign emergency benefits.
+**What the evidence says:**
+Medicare Advantage plans are not required to cover care abroad, and some disenroll you after more than 6 months outside their service area. Part D does not cover medicine you buy in Mexico.
 
-**What to check next:**  
-Get several policy quotes. Compare covered territory, exclusions, emergency provisions, claims procedures, and treatment of pre-existing conditions before you treat one policy as a replacement for another.
+**What to check next:**
+Get quotes for international or Mexican private health insurance and ask about age limits, pre-existing conditions and whether it covers evacuation to the U.S.
 
 ## The Trade-Off
 
-Keeping Medigap can feel conservative. Cancelling it can feel efficient. Both instincts are understandable—but each choice leaves something on the table.
+Keeping Medigap costs money every month for a benefit you may rarely use in Mexico. Cancelling saves that money but removes your fallback for U.S. care.
 
 **What you may gain:**
-- Possible protection for certain qualifying foreign emergency expenses through a Medigap policy.
-- Continued supplemental coverage connected to Original Medicare when you receive care in the United States.
+- A smaller monthly bill if you rarely return to the U.S.
+- A chance to put that premium toward private insurance built for living in Mexico.
 
 **What you may give up:**
-- Ongoing Medigap premiums that may feel less useful if most of your care is in Mexico.
-- Future flexibility if cancelling leaves you without guaranteed-issue rights or exposes you to underwriting when trying to return.
-
-The premium may be frustrating. The greater frustration would be discovering, after a cancellation, that the policy you once had is no longer easy to replace.
+- Medicare's 80% foreign emergency benefit, up to $50,000, for the first 60 days of a trip.
+- Cheap hospital care on U.S. visits, and the ability to get the same policy back.
 
 ![Mexico daily life](https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNZXhpY298ZW58MHwwfHx8MTc5NTQ4MDcyMXww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-Use the month before you move—or before you send a cancellation notice—to turn assumptions into answers.
+Use the month before you move, or before you send a cancellation notice.
 
-1. Call your Medigap insurer and request a written explanation of foreign emergency coverage, including any lifetime limit and claim-filing steps.
-2. Ask whether your policy has any conditions affecting care received in Mexico and whether you must pay providers before submitting a claim.
-3. Review Medicare’s rules for switching or dropping Medigap before sending a cancellation notice.
-4. Confirm whether your move could trigger guaranteed-issue protections and how the rules apply to your home state and future plans.
-5. Gather at least three quotes for travel or foreign medical coverage that could supplement or replace limited Medigap protection.
-6. Clarify your Mexican residency plans and list where you expect to receive routine care, emergency care, and any care during trips back to the United States.
+1. Call your Medigap insurer and get the foreign travel emergency terms in writing, including the 60-day rule and how much of the lifetime limit remains.
+2. Read Medicare's page on switching or dropping Medigap, and write down the 63-day and 6-month rules that apply to you.
+3. Call your state insurance department and ask what guaranteed issue rights you would have if you came back.
+4. Get three quotes for international or Mexican private health insurance, and compare age limits, pre-existing conditions and evacuation.
+5. Phone the admissions office at Hospital Ángeles Pedregal or Hospital Ángeles Puebla, or the hospital nearest the city you are considering, and ask for the admission deposit and whether they bill U.S. insurers.
+6. Check your city's State Department advisory level, then list where you would get routine care, emergency care and care on U.S. trips.
 
-By the end of that exercise, you should know whether you are keeping Medigap for a real purpose—or simply keeping it because no one has yet explained the alternative clearly.
+If those six answers do not favor cancelling, keep the policy.
 
 ![Mexico street scene](https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZXhpY298ZW58MHwwfHx8MTc5NTQ4MDcyMXww&ixlib=rb-4.1.0&q=80&w=1080)
 
@@ -129,38 +126,43 @@ By the end of that exercise, you should know whether you are keeping Medigap for
 
 ### Does Medicare cover medical care in Mexico?
 
-Medicare coverage outside the United States is limited and does not generally provide comprehensive coverage for care in Mexico. Medicare describes narrow exceptions for certain situations abroad, so review the official guidance before relying on it for a move. ([Medicare travel guidance](https://www.medicare.gov/coverage/travel-outside-the-u-s/))
+Rarely. Original Medicare generally doesn't pay for care in Mexico, with narrow exceptions such as a U.S. emergency where a Mexican hospital is closer. Medigap Plans C, D, F, G, M and N add 80% emergency cover, but only in the first 60 days of a trip. ([texasmedicare.org](https://texasmedicare.org/medicare-in-mexico/))
 
 ### Can I keep my Medigap policy if I move to Mexico?
 
-Moving does not automatically mean you must cancel Medigap, but the practical value of keeping it depends on your policy and healthcare plans. If you are considering a change, review the rules that affect switching, dropping, and later purchasing a Medigap policy. ([Medicare Medigap change guidance](https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/change-policies/switch-drop))
+Yes, as long as you keep Original Medicare, which means paying the 2026 Part B premium of $202.90 a month. The same CMS fact sheet sets the Part B deductible at $283 and the Part A deductible at $1,736. ([cms.gov](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles))
 
 ### Do all Medigap policies cover foreign travel emergencies?
 
-No. Foreign travel emergency coverage is plan-specific, and the benefit may include conditions or limits. Ask your insurer for the terms of your exact policy rather than relying on a general description of Medigap. ([Medicare coverage outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf))
+No. Where it is offered, the benefit is 80% after a $250 yearly deductible, up to a $50,000 lifetime limit. North Dakota's insurance department chart lists it on Plans F, G, M and N, so check your own plan letter. ([insurance.nd.gov](https://www.insurance.nd.gov/node/62))
 
 ### If I cancel Medigap, can I buy it again later?
 
-Possibly, but do not treat it as a certainty. Your ability to buy a policy later can depend on guaranteed-issue rights, state protections, insurer rules, and underwriting. Cancelling before you understand those rules can leave you with fewer choices. ([Medicare: Switch or Drop a Medigap Policy](https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/change-policies/switch-drop))
+Usually not on the same terms. Medicare says you generally have 63 days to apply after an insurer ends coverage, and a new policy outside your 6-month open enrollment can mean medical questions and a wait of up to 6 months. ([medicare.gov](https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/change-policies/switch-drop))
 
 ### Should I buy separate medical coverage for Mexico?
 
-It is sensible to consider travel or foreign medical insurance if you will live in Mexico, particularly because Medicare and Medigap may leave important gaps. Compare policies carefully and verify covered services, exclusions, claim procedures, and whether the policy fits a long-term stay. ([Humana travel-abroad overview](https://www.humana.com/medicare/medicare-resources/medicare-and-traveling-abroad))
+Plan on it, because Medigap's $50,000 lifetime foreign limit and 60-day window do not fit a full-time resident. The Hospital Ángeles network reports Joint Commission International accreditation at 5 of its hospitals, so ask each one about deposits and insurer billing. ([en.hospitalangeles.com](https://en.hospitalangeles.com/joint-commission-international))
 
-## Check Today’s Information Before You Decide
+## Check Today's Information Before You Decide
 
-- [Medicare: Travel Outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u-s/)
-- [Medicare: Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf)
-- [Medicare: Switch or Drop a Medigap Policy](https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/change-policies/switch-drop)
-- [Texas Medicare: Medicare in Mexico](https://texasmedicare.org/medicare-in-mexico/)
+- [Medicare: Travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u.s.)
+- [Medicare: Switch or drop a Medigap policy](https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/change-policies/switch-drop)
+- [CMS: 2026 Medicare Parts A and B premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles)
+- [State Department travel advisory feed](https://cadataapi.state.gov/api/TravelAdvisories)
 
 ## Sources & Verification
 
-- [Medicare: Travel Outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u-s/) — limited Medicare coverage abroad and the role of private insurance planning.
-- [Medicare: Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf) — Medicare and Medigap foreign coverage information.
-- [Medicare: Switch or Drop a Medigap Policy](https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/change-policies/switch-drop) — considerations when changing or ending Medigap coverage.
-- [AARP: Does Medicare Cover Me Outside the U.S.?](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/?src=psn) — practical context on Medicare and Medigap foreign coverage limits.
-- [Texas Department of Insurance Medigap Consumer Guide](https://agate.tdi.state.tx.us/pubs/consumer/medsup.html) — consumer guidance on Medigap coverage and policy decisions.
+- [Medicare: Travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u.s.) — Original Medicare rarely covers care abroad.
+- [Medicare: Compare Medigap plan benefits](https://www.medicare.gov/health-drug-plans/medigap/basics/compare-plan-benefits) — foreign travel emergency at 80% for Plans C, D, F, G, M and N.
+- [Medicare: Switch or drop a Medigap policy](https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/change-policies/switch-drop) — dropping is usually permanent; 63-day and 6-month rules.
+- [CMS: 2026 Medicare Parts A and B premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) — $202.90 Part B premium, $283 Part B and $1,736 Part A deductibles.
+- [Texas Medicare: Medicare in Mexico](https://texasmedicare.org/medicare-in-mexico/) — $250 deductible, $50,000 limit, 60-day rule, Part B re-enrollment.
+- [North Dakota Insurance Department: Medigap plan comparison](https://www.insurance.nd.gov/node/62) — foreign travel emergency at 80%, $250 deductible, $50,000 lifetime limit.
+- [Hospital Ángeles: Joint Commission International](https://en.hospitalangeles.com/joint-commission-international) — five JCI-accredited hospitals.
+- [State Department travel advisories feed](https://cadataapi.state.gov/api/TravelAdvisories) — Mexico Level 2, updated May 28, 2026.
+
+Information checked: November 24, 2026
 
 ## Related Golden Horizons Guides
 
@@ -177,4 +179,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY HEALTHCARE**
 
-Keeping Medigap can be a reasonable choice for a move to Mexico, especially if you want to preserve coverage options for care in the United States or retain possible foreign emergency protection. But it should not be mistaken for comprehensive Mexican healthcare coverage. Before cancelling, get your policy’s foreign-coverage details in writing, understand your ability to re-enter Medigap later, and compare that protection with insurance designed for the life you actually plan to lead.
+Keep Medigap until you have its foreign terms in writing and a priced Mexico plan in hand. The monthly saving is real, but a cancelled policy is usually gone for good.
