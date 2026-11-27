@@ -3,226 +3,173 @@ title: "Costa Rica Pensionado Visa for U.S. Retirees: $1,000 a Month and the Fin
 category: Visa
 slug: costa-rica-pensionado-visa-guide-for-us-retirees
 date: 2026-05-13
-updated: 2026-11-26
 image: "https://images.unsplash.com/photo-1552727131-5fc6af16796d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxDb3N0YSUyMFJpY2F8ZW58MHwwfHx8MTc3ODQ4OTAzMnww&ixlib=rb-4.1.0&q=80&w=1080"
-description: "Costa Rica’s Pensionado visa needs a $1,000 monthly lifetime pension. See what it costs, how long it takes, what Caja charges, and where applicants slip."
+description: "Costa Rica's Pensionado residency needs a $1,000 monthly lifetime pension. See government fees, Caja cost, a 12 to 18 month wait and what Medicare skips."
 featured: false
 ---
 
 # Costa Rica Pensionado Visa for U.S. Retirees: $1,000 a Month and the Fine Print
 
-Costa Rica will let you retire there if you can prove a lifetime pension of $1,000 a month. For a lot of Americans, that's a number Social Security alone can clear.
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY RESIDENCY
 
-So why do people end up stuck in a pile of rejected apostilles, wondering why nobody mentioned the health-system bill?
+> **THE SHORT ANSWER:** Costa Rica's Pensionado residency asks for a lifetime pension of at least $1,000 a month, and guides list Social Security as qualifying. Government fees add up to about $135, plus a deposit of 75% of an open one-year plane ticket. Caja, the public health fund, is estimated at $120 to $150 a month at the minimum income. The catch: the ombudsman reported a backlog of about one year in August 2026, and residents cannot take a salaried job until they hold permanent residence.
 
-Because the income bar is the easy part. The hard parts are the paperwork, the waiting, and the costs that don't show up in a visa headline. This guide covers what the Pensionado requires, what the whole process really costs, and where applicants trip, so your first month in Costa Rica is spent on the beach and not at a translator's office.
+## Retirement Snapshot
 
-## Quick Take
+**Primary decision:** Whether your pension letter will be accepted as lifetime income and whether you can wait a year or more for approval.  
+**Best fit:** A retiree with a certified lifetime pension who can keep plans flexible and budget for fees, translations and Caja.  
+**Biggest warning:** The rules give 3 months to decide a complete file, but waits of 12 to 18 months are being reported.  
+**Residency:** Temporary residence runs up to 2 years and renews. After 3 consecutive years you can apply for permanent residence with no income test.  
+**Healthcare:** Caja membership is required for residents. Original Medicare usually does not pay for care outside the U.S.  
+**Safety:** The State Department rates Costa Rica Level 2, Exercise Increased Caution, dated April 1, 2026, for crime.
 
-- **Best for:** Retirees with a guaranteed lifetime pension who want a clear residency path and a low income threshold.
-- **Income test:** At least $1,000 a month from a lifetime pension, certified by the organization paying it. The applicant’s pension can cover dependents.
-- **Process cost:** Published estimates run roughly $1,500 to $4,000 all-in, depending on whether you hire a lawyer.
-- **Healthcare reality:** Caja, the public system, is mandatory for residents. Contributions run roughly 7% to 11% of declared income.
-- **Monthly budget:** Sources put a retired couple at roughly $2,000 to $3,000 a month and a single retiree at roughly $1,500 to $2,000.
-- **Biggest warning:** Timelines vary from about 3 months to well over a year. Plan for the long end.
-- **Before moving:** Verify visa, tax, healthcare, and housing details with Costa Rica’s immigration authority (DGME) or a qualified attorney, because rules change.
+## What the Pensionado Requires
 
-## Understanding the Pensionado Visa Requirements
+The income test is one number: at least $1,000 a month, paid for life. CRIE, a Costa Rican residency law firm, says fixed-term pensions do not qualify. The Tico Times lists Social Security and public or private pensions as qualifying, but investment or rental income does not count.
 
-The Pensionado is a temporary residence permit granted in renewable two-year periods to foreign nationals and their dependents who can show a lifetime pension from abroad of at least $1,000 a month, or the equivalent in colones.
+The institution that pays you must certify the amount and that it is permanent. For Social Security, ask for a benefit verification letter. A bank statement is not a certificate.
 
-Source: [Fragomen’s Costa Rica pensionado overview](https://www.fragomen.com/insights/costa-rica-retirement-visa-pensionado.html).
+A spouse and children under 25 can be included under the same income, with no extra amount per dependent. Adult children with a disability can also qualify, according to CRIE.
 
-Unlike other residency routes, it doesn’t require an investment or a pile of savings. The formal proof of a permanent, stable lifetime pension is the whole test.
+The core file, as listed by the Rio Times, includes the pension certificate, birth certificate, police certificate, 2 passport photos, a fingerprint receipt and certified copies of every passport page. Foreign documents need an apostille and an official Spanish translation. Migración usually keeps what you file, so order spare copies.
 
-That one word, *lifetime*, causes more rejections than anything else. Fragomen’s immigration team lists the most common mistakes:
+## What the Process Costs and How Long It Takes
 
-- Apostilles placed on notarized copies instead of the original document or a properly issued certification.
-- Pension letters that show the amount but never say the benefit is for life.
-- Letters that state the amount only in dollars, with nothing that lets an official confirm the colón equivalent.
+The Rio Times lists these government charges: $50 for the application, $30 to request the residence document, $30 for its issue and $25 for the migration social fund. That is $135 before the DIMEX card, which is a separate charge with no amount given.
 
-If you receive Social Security or a private pension, ask the payer for a letter that states the monthly amount and that the benefit is paid for life. Then ask about apostille and translation before you pay for anything.
+You also post a repatriation deposit of 75% of an open one-year ticket to your home country. The directorate states the exact amount in your approval.
+
+Most applicants budget $1,000 to $2,000 for an immigration attorney, according to the Tico Times.
+
+Waiting is the larger cost. The rules give the directorate 3 months to decide a complete file. Global Citizen Solutions puts real waits at 12 to 18 months, and International Living at 6 to 18 months. If a document is missing, you get 10 working days to fix it.
+
+## Caja, Medicare and Daily Costs
+
+Caja membership is mandatory for residents, and unbroken coverage is a condition of renewal. Relocate.World cites 7% to 11% of declared income, while the Rio Times quotes lawyers at $120 to $150 a month. Neither is an official tariff, so ask the Caja for your bracket. CRIE adds that some high-cost conditions and complex surgeries may carry a six-month waiting period.
+
+Medicare usually does not cover health care outside the U.S., and Medicare drug plans do not cover prescriptions bought abroad. Medigap policies may cover emergency care while you travel, but that is not a residency plan. Budget for Caja, and for private insurance if you want English-speaking doctors. Relocate.World puts private cover at $100 to $300 a month.
+
+Relocate.World puts a single retiree at $1,600 to $2,000 a month and a couple at $2,500 to $3,000, with a one-bedroom at $700 to $1,200. Those figures cite Numbeo and are estimates, not price lists.
+
+Taxes are a separate question. Costa Rica uses a territorial system, so foreign pensions are not taxed locally today. The Tico Times reports an income tax reform expected by February 2027 and says it is unclear whether foreign pensions would be affected. You still file U.S. returns on worldwide income.
+
+## Practical Comparison
+
+### Lifetime pension rule
+
+**What the evidence says:**  
+The Rio Times, CRIE and the Tico Times all state the same monthly minimum and require the pension to be paid for life. Relocate.World says a Social Security payment of that size qualifies.
+
+**What to check next:**  
+Ask the Social Security Administration for a benefit verification letter, then ask your Costa Rican consulate in writing whether it accepts that letter as the certificate.
+
+### Documents and apostilles
+
+**What the evidence says:**  
+The core file has about 7 items, and foreign documents need an apostille plus an official Spanish translation.
+
+**What to check next:**  
+Confirm the apostille order with the consulate before you pay a translator, and order 2 copies of each document.
+
+### Processing time
+
+**What the evidence says:**  
+The rules allow 3 months. The ombudsman reported a backlog of about one year on August 19, 2026, and the Tico Times cites 12 to 18 months.
+
+**What to check next:**  
+Ask an attorney for the decision time on files filed in the last 60 days, and do not sign a long lease or sell your U.S. home until you have it.
+
+### Health coverage
+
+**What the evidence says:**  
+Estimates run from $70 to $150 a month for Caja, and Medicare usually does not pay abroad.
+
+**What to check next:**  
+Ask for a written Caja estimate at your declared income and 2 private insurance quotes that name your prescriptions.
+
+## The Trade-Off
+
+The Tico Times calls the $1,000 bar the lowest among the top 10 retirement programs in its index, and foreign pensions are untaxed locally today. In return you take on paperwork, a possible wait of a year or more, and mandatory Caja payments.
+
+**What you may gain:**
+- A legal residency path with a low income bar and dependents included.
+- Access to the public Caja system, at an estimated $70 to $150 a month.
+
+**What you may give up:**
+- A year or more of waiting, plus up to $2,000 for an attorney.
+- Salaried work in Costa Rica until you hold permanent residence.
 
 ![Costa Rica scenery](https://images.unsplash.com/photo-1550853123-b81beb0b1449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxMXx8Q29zdGElMjBSaWNhfGVufDB8MHx8fDE3Nzg0ODkwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
-A typical file also includes a valid passport, an apostilled birth certificate, an apostilled criminal record check (for Americans, the federal FBI check), and an apostilled marriage certificate if a spouse is applying with you. Everything foreign must be translated into Spanish by an authorized translator.
+## The Golden Horizons 30-Day Test
 
-Sources: [Costa Rica Immigration Lawyers (PlanB)](https://planb-cr.com/retired-residency-pensionado) and [Taxes for Expats’ Costa Rica guide](https://www.taxesforexpats.com/country-guides/costa-rica/moving-to-costa-rica-from-the-us.html).
-
-After approval, three rules shape your life:
-
-- **Renewal:** Temporary residency is renewed every two years, and you must keep meeting the requirements.
-- **Time in the country:** Many guides describe a minimum stay of about four months a year for temporary residents. Sources disagree, so ask your attorney or the DGME what applies to your case before you plan your travel.
-- **Permanent residency:** After three years of holding temporary residency, you can apply for permanent status, which means fewer renewals.
-
-## The Application Process
-
-Think of this as a scavenger hunt where every item needs a stamp, a translator, and some patience.
-
-**Step 1: Pick your filing route.** You can start through the Costa Rican consulate that serves your U.S. state, or file inside Costa Rica. Filing inside the country generally means you’ll want a local attorney and you’ll need to be there legally, so don’t let a 180-day tourist stay run out while you wait.
-
-**Step 2: Collect and authenticate.** Order the pension letter, birth certificate, and FBI check. Confirm exactly which documents need a federal apostille and which need a state one before you pay for any of them.
-
-**Step 3: Translate.** Use an authorized translator, and make sure the translation matches the apostilled original. Getting the order wrong is how people pay twice.
-
-**Step 4: File.** Pay the government fees, submit the file, and keep the receipt that proves your application is in process.
-
-**Step 5: Wait.** Published processing times range from about 3 to 12 months in one guide to 8 to 18 months in another for applications filed inside Costa Rica. Treat anything faster as a bonus.
-
-**Step 6: Get your resident ID and enroll in Caja.** The DIMEX card is typically issued after approval, not at filing. Caja enrollment follows.
-
-Sources: [Taxes for Expats](https://www.taxesforexpats.com/country-guides/costa-rica/moving-to-costa-rica-from-the-us.html) and [Federal Apostille’s retirement visa guide](https://www.federalapostille.org/visa-guide/costa-rica/retirement/).
+1. Request a Social Security benefit verification letter and check that it shows your monthly amount and that the benefit continues for life.
+2. Email your Costa Rican consulate and ask: "Does this letter satisfy the lifetime pension certificate, and does it need an apostille?" Save the reply.
+3. Ask 2 immigration attorneys for a total written quote covering fees, translations and the deposit, plus the current decision time.
+4. Order 2 apostilled copies of your birth certificate and an FBI police certificate.
+5. Get a Caja estimate and 2 private health quotes that name your prescriptions.
+6. Book a 30-day rental in one target town and price a normal week without a car before you book a one-way flight.
 
 ![Costa Rica landscape](https://images.unsplash.com/photo-1579380231498-e45d45213373?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyMXx8Q29zdGElMjBSaWNhfGVufDB8MHx8fDE3Nzg0ODkwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
-### What the Process Costs
-
-One published estimate puts the whole process at about $1,500 to $4,000. It breaks down like this:
-
-- Application fees: about $50 to $400 (one law firm cites a $250 fee for this category).
-- DIMEX card: about $98 to $123.
-- Refundable guarantee deposit: about $361.
-- Document authentication: about $100 to $300.
-- Translations: about $40 to $500.
-- Attorney fees: about $1,000 to $2,000, if you hire one.
-- Renewal: around $150 every two years.
-
-These are estimates from guide sites, not government price lists. Ask for a written quote that spells out what’s included.
-
-## Benefits and Challenges of the Pensionado Visa
-
-**What you get**
-- The legal right to live in Costa Rica, along with your qualifying dependents.
-- Access to the public health system, Caja.
-- The ability to open bank accounts, own property, and have your U.S. license recognized.
-- A route to permanent residency after three years.
-- No Costa Rican income tax on foreign pension income, according to Fragomen.
-
-**What you don’t get**
-- Permission to take a local job. Employment in Costa Rica is prohibited for both you and your dependents. Owning a company, studying, investing, and working remotely for foreign clients are generally allowed, provided no income comes from Costa Rica.
-
-**A benefit that may have expired**
-Fragomen noted that import perks such as tax-free shipping of household goods, tax-free import of up to two vehicles, and partial real estate transfer tax relief were temporary and valid through June 2026. Today is past that date, so don’t plan a container shipment around them until your attorney confirms the current rules.
-
-**The Caja surprise**
-Many people picture Caja as an optional bonus. It’s a required contribution, based on the income you declare, commonly cited at about 7% to 11% of declared income. At the $1,000 minimum, that’s about $70 to $110 a month.
-
-One guide says Caja has no pre-existing-condition exclusions. Waits for non-emergency care, language barriers, and limited doctor choice are the usual trade-offs.
-
-Many retirees add private insurance for speed and English-speaking providers. The same guide cites a private doctor visit at about $50 to $80 and big procedures costing 50% to 70% less than in the U.S. Hospitals such as CIMA in San José and Clínica Bíblica are popular with expats.
-
-Sources: [Fragomen](https://www.fragomen.com/insights/costa-rica-retirement-visa-pensionado.html) and [Taxes for Expats](https://www.taxesforexpats.com/country-guides/costa-rica/moving-to-costa-rica-from-the-us.html).
-
-## Practical Comparison Table
-
-**Monthly cost**
-- Practical detail: Published budgets put a retired couple at about $2,000 to $3,000 a month. One guide cites an International Living couple budget of $2,240 with rent at $750 and groceries at $500. A single retiree is typically quoted at about $1,500 to $2,000.
-- Retirement note: The visa threshold is $1,000. Your living budget will be a lot higher.
-
-**Rent**
-- Practical detail: One guide estimates San José at about $600 to $1,200, beach towns at $800 to $2,000, and rural areas at $400 to $800.
-- Retirement note: Beach towns cost noticeably more, especially in peak season.
-
-**Healthcare**
-- Practical detail: Caja is mandatory at roughly 7% to 11% of declared income. Private insurance is optional.
-- Retirement note: Price both, and ask what your private plan won’t cover.
-
-**Housing areas**
-- Practical detail: Popular choices include San José, Escazú, Atenas, and Puerto Viejo. One guide calls Puerto Viejo the best value for retirees, at about $1,500 for singles and $2,400 for couples.
-- Retirement note: Rent in a place for a few months before committing.
-
-**Transportation**
-- Practical detail: Buses and taxis work in cities. If you own a car, one guide estimates $200 to $400 a month for fuel, maintenance, registration, and tolls.
-- Retirement note: Test a normal week without a car.
-
-**Safety**
-- Practical detail: The U.S. State Department rates Costa Rica Level 2: Exercise Increased Caution, due to crime. Petty crime is common.
-- Retirement note: Choose secure housing, keep valuables out of sight, and re-check the advisory before you travel.
-
-Sources: [Taxes for Expats](https://www.taxesforexpats.com/country-guides/costa-rica/moving-to-costa-rica-from-the-us.html), [Meridian Residency’s budget guide](https://meridianresidency.com/cost-of-living-costa-rica), and the [U.S. State Department’s Costa Rica advisory](https://travel.state.gov/en/international-travel/travel-advisories/costa-rica.html).
-
-## Healthcare, Visa, Tax, and Safety Notes
-
-**Healthcare:** Plan for Caja first, then decide whether private insurance fills the gaps. Medicare generally doesn’t pay for routine care abroad, so don’t count on it as a backup.
-
-**Visa:** Rules, fees, and processing times change. Confirm everything with the DGME or a qualified attorney before spending money on documents.
-
-**Taxes:** Costa Rica taxes income earned in the country and generally doesn’t tax foreign pensions, according to Fragomen. But U.S. citizens still file U.S. returns on worldwide income and may have to report foreign bank accounts above $10,000 (FBAR). Work with a tax adviser who knows both systems.
-
-**Safety:** Take the Level 2 advisory seriously. Don’t leave belongings in rental cars or on the beach, lock up at night, and learn the local emergency numbers.
-
-## Common Mistakes Retirees Should Avoid
-
-- Assuming bank deposits count as a lifetime pension.
-- Getting an apostille on a notarized copy instead of the original.
-- Submitting a pension letter that never says the benefit is for life.
-- Paying for translations before confirming which documents need an apostille.
-- Treating Caja as optional and leaving it out of the budget.
-- Planning a move around a processing time of three months.
-- Letting a tourist stay expire while the application is pending.
-- Counting on duty-free shipping benefits without checking they still apply.
-- Ignoring the time-in-country rule until renewal.
-- Forgetting U.S. tax and FBAR filings after the move.
-
-## Before You Move Checklist
-
-- Confirm the current income requirement and document list with the DGME or an attorney.
-- Ask your pension payer for a letter stating the amount and that it’s paid for life.
-- Confirm apostille and translation order before you spend money.
-- Get written quotes from at least two attorneys or visa services.
-- Budget for Caja, plus private insurance if you want it.
-- Ask whether any import tax exemptions are still available before shipping belongings.
-- Rent for a few months before buying property.
-- Check distance to a pharmacy, clinic, and grocery store.
-- Review the State Department’s Costa Rica advisory.
-- Talk to a tax adviser about U.S. filing and FBAR rules.
-- Learn some basic Spanish. Your pharmacist will thank you.
-
 ## Frequently Asked Questions
 
-### What documents do I need for the Pensionado visa?
+### Does Social Security count for the Costa Rica Pensionado visa?
 
-You need a letter from your pension payer stating the monthly amount and that it’s for life. You’ll also need a valid passport, a birth certificate, a federal criminal record check, and a marriage certificate if a spouse applies with you. Foreign documents generally need apostilles and Spanish translations. Check the DGME’s current list before you order anything.
+It can, since Relocate.World says a Social Security payment of at least $1,000 a month qualifies, and the Tico Times lists Social Security among qualifying lifetime pensions. Confirm with your consulate in writing. ([relocate.world](https://www.relocate.world/articles/living-in-costa-rica))
 
-### How long does the visa application process take?
+### How much does the Costa Rica Pensionado visa cost?
 
-Published estimates range from about 3 to 12 months in one guide and 8 to 18 months in another for applications filed inside Costa Rica. Incomplete or incorrectly authenticated files are the most common cause of delay.
+Government charges listed for 2026 total $135, plus a deposit of 75% of a one-year ticket. Attorneys typically add $1,000 to $2,000. ([riotimesonline.com](https://www.riotimesonline.com/residency-costa-rica-foreigners-2026/))
 
-### How much does the whole process cost?
+### How long does Costa Rica Pensionado approval take?
 
-One guide estimates about $1,500 to $4,000, including government fees, authentication, translations, and an optional attorney. Get written quotes to see your actual number.
+Typical waits run 12 to 18 months, according to Global Citizen Solutions, while the rules themselves allow 3 months. ([ticotimes.net](https://ticotimes.net/2026/10/08/costa-rica-global-retirement-index-2026))
 
-### Can I work in Costa Rica with a Pensionado visa?
+### What documents do I need for Costa Rica Pensionado residency?
 
-No, not as a local employee. You can generally own a business, invest, study, or work remotely for foreign clients, provided no income comes from Costa Rica. Confirm the details with an attorney before you rely on any of them.
+You need at least 4 core items: pension proof showing the monthly amount and that it is for life, a birth certificate, a police record and passport copies. Foreign documents need an apostille and Spanish translation. ([crie.cr](https://crie.cr/residency-from-pension-in-costa-rica/))
 
-### Is healthcare included with the Pensionado visa?
+### Is Costa Rica safe for retirees right now?
 
-Not for free. Residents must enroll in Caja and pay a monthly contribution based on declared income, commonly around 7% to 11%. Many retirees also buy private insurance.
+The State Department rates Costa Rica Level 2, Exercise Increased Caution, as of April 1, 2026. Petty crime is common throughout the country. ([travel.state.gov](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cri.html))
 
-### What are the residency renewal requirements?
+## Check Today's Information Before You Decide
 
-Temporary residency is renewed every two years, and you must keep meeting the pension requirement. Many guides describe a minimum stay of about four months a year, but sources disagree, so confirm the rule that applies to you. After three years you can apply for permanent residency.
+- Your consulate's written Pensionado checklist
+- Current Migración fees and processing time
+- Your Caja contribution bracket
+- The status of Costa Rica's income tax reform
+- Your Medigap plan's foreign travel emergency terms
 
-### Are the duty-free import benefits still available?
+## Sources & Verification
 
-Fragomen described import tax benefits as temporary and valid through June 2026. Ask a Costa Rican attorney whether they’ve been extended or replaced before you ship anything.
+- [Rio Times: Costa Rica residency 2026](https://www.riotimesonline.com/residency-costa-rica-foreigners-2026/) — fees, documents, deposit, Caja estimate, backlog (published September 20, 2026, updated November 8, 2026).
+- [CRIE: Residency from pension](https://crie.cr/residency-from-pension-in-costa-rica/) — lifetime pension rule, documents, dependents, Caja waiting period.
+- [Tico Times: Global Retirement Index 2026](https://ticotimes.net/2026/10/08/costa-rica-global-retirement-index-2026) — processing time, attorney cost, tax note (October 8, 2026).
+- [Relocate.World: Living in Costa Rica](https://www.relocate.world/articles/living-in-costa-rica) — Social Security, cost of living, Caja percentage (July 20, 2026).
+- [U.S. State Department: Costa Rica travel advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cri.html) — Level 2, April 1, 2026.
+- [Medicare.gov: Travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u.s.) — Medicare and Medigap abroad.
+
+The Costa Rican immigration agency's own pages were not consulted today, so fees and the income figure rest on the sources above.
+
+Information checked: November 27, 2026
 
 ## Related Golden Horizons Guides
 
-- [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans-retiring-abroad)
-- [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-americans)
 - [Healthcare Abroad for American Retirees](/healthcare-abroad-for-american-retirees)
+- [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-americans)
+- [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans-retiring-abroad)
 - [Taxes for Americans Retiring Overseas](/taxes-for-americans-retiring-overseas)
 
 ## About Golden Horizons
 
-Golden Horizons helps Americans age 60+ compare retirement-abroad destinations using practical information about cost of living, healthcare, housing, visas, taxes, safety, walkability, and lifestyle. Our goal is to help readers avoid expensive mistakes before choosing where to live overseas.
+Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad. We focus on the decision that matters: what your money may make possible, whether you can legally stay, whether healthcare and ordinary daily life work for you, and what you should test before committing. Travel first. Test the reality. Then decide.
 
 ## Final Verdict
 
-The Pensionado is one of the friendlier retirement visas out there. The $1,000 income bar is low, you don’t need an investment, and you can aim for permanent residency in three years.
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY RESIDENCY**
 
-But the visa is only the doorway. Budget for the slow paperwork, a mandatory health contribution, and a monthly living cost that sits well above the minimum. If your pension qualifies and you’re comfortable spending real time in the country, it’s a strong option. Confirm the current rules with the DGME or a qualified attorney, then book that scouting trip.
+The Pensionado fits you if your pension letter is accepted as lifetime income. The wait is the weak point: plan for a year or more.
 
-*Information reviewed November 26, 2026. Visa rules, fees, tax incentives, and processing times change. Cost figures come from published guides and are estimates, not guarantees. This article provides general information, not legal, immigration, tax, or financial advice.*
+Get the consulate's written answer on your pension letter, a Caja quote and a current decision time before you pay for apostilles.
