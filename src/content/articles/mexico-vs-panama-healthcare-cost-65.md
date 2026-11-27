@@ -1,115 +1,145 @@
 ---
-title: "Mexico vs. Panama: healthcare costs for a 65-year-old retiree (limited to evidenced rules and prices)"
+title: "Mexico vs. Panama: healthcare costs for a 65-year-old retiree"
 category: Cost
 slug: mexico-vs-panama-healthcare-cost-65
 date: 2026-11-15
 image: https://images.unsplash.com/photo-1615695478392-af177ac550b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZXhpY28lMjBjb2FzdHxlbnwwfDB8fHwxNzk0NzkxMTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080
-description: "A practical look at healthcare coverage and known insurance costs for 65-year-old American retirees considering Mexico or Panama."
+description: "Medicare's 2026 costs, Panama private insurance from $250 a month, and Mexico's IMSS plan at about $93 a month: what a 65-year-old retiree pays."
 featured: false
 ---
 
-# Mexico vs. Panama: healthcare costs for a 65-year-old retiree (limited to evidenced rules and prices)
+# Mexico vs. Panama: healthcare costs for a 65-year-old retiree
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY HEALTHCARE
 
-A lower-cost retirement can lose its appeal quickly if the healthcare plan turns out to be a patchwork. For Americans at 65, the first question is not simply what a doctor’s visit costs in Mexico or Panama. It is whether you can arrange coverage you understand, renew, and use where you actually live.
+A lower-cost retirement can lose its appeal quickly if the healthcare plan turns out to be a patchwork. For Americans at 65, the first question is not simply what a doctor's visit costs in Mexico or Panama. It is whether you can arrange coverage you understand, renew, and use where you actually live.
 
-> **THE SHORT ANSWER:** Panama offers the clearer published benchmark: local private insurance for retirees around age 65 is commonly cited at roughly $250–$500 monthly, with premiums shaped by age, health history, and plan type. Mexico offers a public-and-private mix, but no comparable nationwide premium figure. In both countries, Medicare generally does not provide comprehensive ongoing coverage abroad, so coverage deserves a separate test from day-to-day living costs.
+> **THE SHORT ANSWER:** On a $700 monthly healthcare budget, Panama's published private-insurance range of $250–$415 a month, plus the $202.90 Medicare Part B premium, totals about $453–$618. Mexico's public IMSS plan for ages 60–69 works out to roughly $93 a month, or about $296 with Part B, with a private plan extra. The catch: Medicare does not pay for care you get while living in either country, and many Panama insurers stop accepting new applicants between ages 65 and 70.
 
 ## Retirement Snapshot
 
-**Primary decision:** Whether a 65-year-old can arrange reliable healthcare coverage—not simply find lower medical prices—in Mexico or Panama.  
-**Best fit:** Panama for readers who want a published starting range for local private insurance; Mexico for readers willing to compare public-system eligibility and private-care options city by city.  
-**Biggest warning:** Medicare’s coverage outside the United States is limited, and neither destination has one universal price for a retiree’s healthcare.  
-**Healthcare:** Panama private plans for retirees around ages 65–70 are commonly cited at roughly $250–$500 per month; Mexico’s costs vary by public enrollment, private plan, city, and access needs.  
-**Residency:** Public-system access can differ for visitors and residents. Confirm the rules for the specific residency route before treating public coverage as part of a retirement plan.  
+**Primary decision:**
+Whether a 65-year-old can arrange reliable healthcare coverage in Mexico or Panama, not simply find lower medical prices.
+
+**Best fit:**
+Panama for readers who want a published private-insurance range to start from. Mexico for readers who are legal residents, are comfortable with a public system, and will compare private options city by city.
+
+**Biggest warning:**
+Original Medicare pays for care abroad only in three narrow situations, and living in Mexico or Panama is not one of them.
+
+**Planning-budget lens:**
+A $700 monthly healthcare budget, built from Medicare's 2026 Part B premium plus the local plan prices below.
+
+**Residency:**
+Panama's Pensionado visa asks for a lifetime pension of at least $1,000 a month. Mexico's San Diego consulate asks for proof of income of at least $4,049 a month for a temporary resident visa. Other consulates may set their own amounts.
+
+**Safety:**
+The State Department's Travel Advisory feed lists Mexico at Level 2, "Exercise increased caution" (May 28, 2026), and Panama at Level 2 (August 18, 2026). Mexico's levels differ by state, so check the state you plan to live in.
+
+**Healthcare:**
+Panama City has private hospitals including Pacífica Salud and Centro Médico Paitilla. Mexico pairs the public IMSS with a large private sector.
 
 ## The Coverage Question That Comes Before Price
 
 The less glamorous line in an overseas retirement budget may be the most important one: who is responsible for your care once Medicare is an ocean away?
 
-Medicare coverage outside the United States is limited. There are narrow situations in which it may help with care abroad, and some Medigap policies may cover certain emergency care during foreign travel. That is not the same as having comprehensive, ongoing coverage in Mexico or Panama.
+Medicare's own fact sheet says that in most situations it won't pay for health care or supplies you get outside the U.S. It lists 3 exceptions. Two involve a medical emergency in the U.S. or in Canada on the way to Alaska. The third covers someone who lives in the U.S. and is closer to a foreign hospital. A retiree who lives in Mexico or Panama fits none of them.
 
-For a 65-year-old considering either country, keeping Medicare should not be confused with having a full healthcare plan where you live. Private local insurance, international coverage, direct payment for some services, and—where available—public-system options can each have a role. Your mix will depend on residency status, health history, city, and the insurer or provider.
+Some Medigap plans (C, D, E, F, G, H, I, J, M, and N) offer foreign travel emergency coverage. They pay 80% of billed charges after a yearly deductible, up to a $50,000 lifetime limit, and only for care that begins in the first 60 days of a trip. That is travel protection, not a plan for living abroad.
 
-Mexico has a mixed public-private system. The Mexican Social Security Institute, known as IMSS, is part of the public landscape, while private care remains an important option. Access and out-of-pocket exposure can differ between public and private settings. Mexico is hard to reduce to one tidy monthly number, but that is also the reality you need to plan for.
+Many retirees keep Part B anyway so they can use it on trips home. In 2026 the Part B premium is $202.90 a month and the Part B deductible is $283 a year. Part A, for inpatient stays in the U.S., carries a $1,736 deductible per benefit period. Those are Original Medicare's 2026 figures from Medicare.gov, and they are what you would owe when you are back in the States.
 
 ## Panama Has a Starting Range; Mexico Calls for Local Answers
 
-Panama offers the more concrete starting point. Retirement and healthcare guides commonly cite local private insurance for retirees around ages 65–70 at roughly $250–$500 per month. For a 65-year-old, that range is a useful starting point, since age, health history, coverage limits, and underwriting can all shape the final quote.
+Turnkey Panama's 2026 healthcare page, current as of October 2026, lists local private insurance from insurers such as Pan-American Life, ASSA, and MAPFRE at $250–$415 per person per month around age 60. It also lists hospital-network plans at $144–$232, international plans at $150–$300, and a clinic membership at about $22. The page calls these published ranges, not quotes.
 
-That is a benchmark, not a promise. International plans may cost more, and some insurers may limit new enrollment at later ages. Ask for a written quote rather than building a retirement plan around a broad range.
+The same page says most local insurers stop accepting new applicants between ages 65 and 70. At 65 you may be near the edge of that window, so a quote at your exact age matters more than any range. A routine private doctor visit is listed at $20–$75.
 
-Private coverage is commonly used by foreign retirees in Panama. Public CSS access may be relevant through residency-related arrangements, but do not assume it offers the same provider choice, access, or payment structure as a private plan.
+Mexico works differently. The Commonwealth Fund's 2026 country profile says public insurance covered 77.6 percent of Mexicans in 2023 and private insurance covered 14.5 percent. In 2022, 56 percent of adults who needed care sought it through private facilities, even though they were entitled to public services. Foreign retirees often build a mix of the two.
 
-Mexico does not have a similarly supported nationwide premium range for a 65-year-old American retiree. That does not make it automatically more expensive—or less accessible. It means the answer changes with the city, IMSS eligibility, the terms of a private policy, and how often you expect to use private care.
+IMSS sells a voluntary plan, the Seguro de Salud para la Familia, as an annual payment by age. Since March 1, 2026, the fee for ages 60–69 is set at the equivalent of about $1,110 a year, roughly $93 a month, converted at the exchange rate Numbeo showed in November 2026. The fee itself is set in pesos, so the dollar figure moves with the exchange rate.
 
-The more useful question is not, “Which country is cheaper?” It is, “Can I secure coverage I understand in the city where I intend to live, at a cost that works for my health needs and residency status?”
+## Your 2026 Healthcare Budget Math
+
+**Estimated core monthly spend:** $453–$618 in Panama (Part B premium plus a local private plan at the published range), or about $296 in Mexico using the IMSS voluntary plan alone.
+
+**Remaining buffer vs the $700 budget:** about +$82 to +$247 in Panama, and about +$404 in Mexico before any private plan or out-of-pocket care.
+
+**Income requirement:** $1,000 a month in lifetime pension for Panama's Pensionado visa, plus a dependent allowance. Mexico's San Diego consulate asks for $4,049 a month in income for a temporary resident visa.
+
+**How your money compares to the US:** at home, Original Medicare charges a $202.90 Part B premium, a $283 Part B deductible, and a $1,736 Part A deductible per benefit period in 2026. Abroad you still owe the premium if you keep Part B, and the local plan comes on top.
+
+**A Typical Day in Panama City**
+
+Numbeo's Panama City page, updated November 15, 2026 from 67 contributors, lists an inexpensive meal at $9.03, a monthly public transport pass at $21.00, and basic utilities for an apartment at $127.04. A routine private doctor visit runs $20–$75 per Turnkey Panama, and a clinic membership is about $22 a month.
+
+Bottom line: Panama's range leaves a cushion under $700 if you can still get a local plan at your age. Mexico's IMSS plan looks cheap, but it is a public plan with exclusions and waiting periods, so test it before you count on it.
 
 ## Practical Comparison
 
-### Medicare’s role abroad
+### Medicare's role abroad
 
-**What the evidence says:**  
-Medicare generally does not provide comprehensive ongoing healthcare coverage outside the United States. Certain emergency situations and some Medigap benefits may offer limited help, but they are not a complete retirement-abroad healthcare plan.
+**What the evidence says:**
+Original Medicare pays for care abroad in 3 narrow situations, none of which cover a retiree who lives in Mexico or Panama. Medigap foreign travel emergency coverage pays 80% of billed charges up to a lifetime limit, for the first 60 days of a trip.
 
-**What to check next:**  
-Read Medicare’s current guidance on care outside the United States, then review exactly what your own Medicare and Medigap coverage would—and would not—do abroad.
+**What to check next:**
+Call your Medigap company and ask which foreign travel terms apply to your plan. Then decide whether keeping Part B at $202.90 a month is worth it for trips home.
 
 ### Panama private insurance
 
-**What the evidence says:**  
-Private insurance for retirees around ages 65–70 is commonly cited at roughly $250–$500 per month, with higher costs possible depending on plan type, age, and health history.
+**What the evidence says:**
+Local private plans are listed at $250–$415 a month around age 60, and most insurers stop taking new applicants between ages 65 and 70.
 
-**What to check next:**  
-Request written quotes that list the deductible, benefit limits, exclusions, waiting periods, underwriting questions, and renewal terms. A low premium means little if the coverage leaves out the care you expect to need.
+**What to check next:**
+Request written quotes at your exact age that list the deductible, benefit limits, exclusions, waiting periods, and renewal terms.
 
-### Mexico’s public-private mix
+### Mexico's IMSS voluntary plan
 
-**What the evidence says:**  
-Mexico combines public coverage through IMSS with private-sector care. Access, cost-sharing, and practical predictability can differ between those routes.
+**What the evidence says:**
+The annual fee for ages 60–69 is about $1,110, or $93 a month. A Mexperience guide dated October 22, 2026 says non-Mexicans must hold Temporary or Permanent Resident status, FMM visitor permits do not qualify, and conditions such as malignant tumors and chronic degenerative diseases are excluded.
 
-**What to check next:**  
-Ask the relevant IMSS authority and local private insurers how residency status, enrollment rules, and preexisting conditions affect your options in the city you are considering.
+**What to check next:**
+Ask your local IMSS office for the current fee, the waiting periods for non-emergency care, and how your health history affects enrollment.
 
-### Resident versus visitor status
+### Private insurance in Mexico
 
-**What the evidence says:**  
-Public-system access and private-insurance choices can differ between a short exploratory visitor and a legal long-term resident.
+**What the evidence says:**
+No published source gives a reliable 2026 price for a 65-year-old American. Mexico News Daily's July 2026 column reports one insurer's premium rising 24 percent in a year, and a broker saying other insurers raised rates by as much as 80 percent.
 
-**What to check next:**  
-Confirm whether a policy is available to a visitor, a temporary resident, or a permanent resident before treating it as part of your monthly plan.
+**What to check next:**
+Get 2 written quotes for the city you are considering, and ask each insurer for its maximum entry age and its renewal-increase history.
 
-### The missing city-level comparison
+### Residency income bars
 
-**What the evidence says:**  
-Neither country has a single reliable, nationwide price board for a 65-year-old’s private care, public access, and insurance costs.
+**What the evidence says:**
+Panama's Pensionado visa asks for $1,000 a month in lifetime pension income, plus an added amount for each dependent. Mexico's San Diego consulate sheet asks for $4,049 a month in income or a $68,241 minimum balance.
 
-**What to check next:**  
-Choose one city in Mexico and one in Panama, then obtain dated quotes from insurers and providers serving those exact locations. That is where a broad comparison becomes a decision you can trust.
+**What to check next:**
+Confirm the amount with the specific Mexican consulate you will use, since amounts are set consulate by consulate.
 
 ## The Trade-Off
 
 **What you may gain:**
-- Panama provides a published planning range for local private insurance for retirees in the relevant age band.
-- Mexico offers both public and private healthcare pathways rather than a single system.
+- Panama publishes a planning range for local private insurance, and it uses the U.S. dollar.
+- Mexico's IMSS voluntary plan costs roughly $93 a month for ages 60–69.
+- Mexico offers both public and private routes rather than a single system.
 
 **What you may give up:**
-- Medicare does not generally supply comprehensive ongoing coverage in either destination.
-- A national comparison cannot replace city-specific quotes, residency checks, and insurer underwriting.
-
-The Panama premium range makes the first conversation easier. Mexico may take more calls and more local questions. In either place, the plan that looks best on paper still has to work when you need a specialist, a prescription, or hospital care.
+- Medicare does not pay for ongoing care in either country.
+- Panama's age-60 range may not apply to you at 65, because many insurers stop taking new applicants between 65 and 70.
+- IMSS voluntary enrollment requires legal residency and excludes certain conditions.
+- No published source gives a 2026 private-insurance price for a 65-year-old in Mexico.
 
 ![Mexico vs. Panama healthcare daily life](https://images.unsplash.com/photo-1580223943296-6ae88a88f01e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxNZXhpY28lMjBQYW5hbWF8ZW58MHwwfHx8MTc5NDc5MTE0NXww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Read Medicare’s guidance on coverage outside the United States and identify exactly what your current Medicare and Medigap coverage would—and would not—do abroad.  
-2. Request Panama private-insurance quotes for a 65-year-old that list premiums, deductibles, exclusions, coverage limits, and renewal conditions.  
-3. Ask each Panama insurer whether health history affects the quoted premium or eligibility and whether there is an upper age limit for new enrollment.  
-4. Choose a specific Mexican city and ask IMSS or an appropriate local authority what public coverage route, if any, is available under your intended residency status.  
-5. Request written information from Mexico private insurers or clinics on the coverage and payment arrangements available to foreign retirees in that city.  
-6. Compare each option as a coverage package—not merely a premium—by listing emergency care, specialist access, prescriptions, hospital care, deductibles, and out-of-pocket exposure.  
+1. Call your Medigap company and ask for its foreign travel emergency terms in writing, including its deductible and $50,000 lifetime limit.
+2. Request Panama private-insurance quotes at your exact age, listing premiums, deductibles, exclusions, and the maximum age for new enrollment.
+3. Ask Panama insurers whether your health history changes the quote or blocks enrollment.
+4. Ask a local IMSS office for the current voluntary fee for your age, the waiting periods, and the residency status required.
+5. Request written private-insurance quotes in the Mexican city you are considering, and ask each insurer for its renewal-increase history.
+6. Compare each option as a package, not a premium, by listing emergency care, specialists, prescriptions, hospital stays, and out-of-pocket exposure against the $700 budget.
 
 ![Mexico vs. Panama healthcare cityscape](https://images.unsplash.com/photo-1656261737405-2e8cd9513964?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxNZXhpY28lMjBQYW5hbWF8ZW58MHwwfHx8MTc5NDc5MTE0NXww&ixlib=rb-4.1.0&q=80&w=1080)
 
@@ -117,40 +147,46 @@ The Panama premium range makes the first conversation easier. Mexico may take mo
 
 ### Does Medicare cover a retired American living in Mexico or Panama?
 
-Generally, Medicare does not provide comprehensive ongoing healthcare coverage outside the United States. It may cover care abroad in limited circumstances, and some Medigap policies may provide limited emergency coverage. Review the details before relying on it for an overseas retirement plan. ([Medicare’s guidance](https://www.medicare.gov/coverage/travel-outside-the-us))
+No. Medicare pays for care abroad in only 3 narrow situations, and living in Mexico or Panama is not one of them. Some Medigap plans pay 80% of billed emergency charges after a $250 yearly deductible, up to $50,000, for care that begins in the first 60 days of a trip. ([medicare.gov](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf))
 
 ### How much is private health insurance in Panama at age 65?
 
-Published retiree-focused guidance commonly places local private coverage for people around ages 65–70 at roughly $250–$500 per month. Your actual quote can vary with health history, insurer, plan design, and coverage limits. ([Turnkey Panama’s overview](https://www.turnkeypanama.com/healthcare-panama))
+Turnkey Panama lists local private plans at $250–$415 a month around age 60, and says most insurers stop accepting new applicants between ages 65 and 70. Your quote at 65 depends on health history, plan, and insurer. ([turnkeypanama.com](https://www.turnkeypanama.com/healthcare-panama))
+
+### How much does Mexico's IMSS voluntary plan cost for a 65-year-old?
+
+IMSS sets its annual fee by age group. For ages 60-69, the fee effective March 1, 2026 is about $1,110 a year, or roughly $93 a month, converted from pesos at a November 2026 rate. ([imss.gob.mx](https://www.imss.gob.mx/node/96125))
 
 ### Is there one typical healthcare price for retirees in Mexico?
 
-No. Mexico has public and private healthcare routes, and the cost and accessibility of each can vary by city, residency status, enrollment route, and private plan. ([Commonwealth Fund’s Mexico profile](https://www.commonwealthfund.org/international-health-policy-center/countries/mexico))
+No. Public insurance covered 77.6 percent of Mexicans in 2023 and private insurance covered 14.5 percent, and 56 percent of adults needing care in 2022 sought it privately. Costs depend on the route, city, and plan. ([commonwealthfund.org](https://www.commonwealthfund.org/sites/default/files/2026-04/2026_Country-Profiles_Mexico.pdf))
 
-### Can a visitor use the same healthcare options as a resident?
+### What does daily life cost in Panama City alongside healthcare?
 
-Do not assume so. Public-system access can be tied to residency or enrollment circumstances, while private insurance availability can also depend on legal status and insurer rules. Confirm the terms for your particular visitor or residency status before depending on a plan. ([Commonwealth Fund’s Mexico profile](https://www.commonwealthfund.org/international-health-policy-center/countries/mexico))
+Numbeo lists an inexpensive meal at $9.03, a monthly transport pass at $21.00, and basic utilities at $127.04 as of November 15, 2026, based on 67 contributors. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Panama-City))
 
-### Which country is cheaper for healthcare: Mexico or Panama?
+## Check Today's Information Before You Decide
 
-There is no single apples-to-apples winner. Panama has a clearer published private-insurance planning range, while Mexico requires more city-specific investigation across IMSS and private options. The better choice is the one where you can secure coverage that fits your health needs and budget. ([Turnkey Panama’s overview](https://www.turnkeypanama.com/healthcare-panama))
-
-## Check Today’s Information Before You Decide
-
-- [Medicare Coverage Outside the United States](https://www.medicare.gov/coverage/travel-outside-the-us)
-- [Commonwealth Fund: Mexico Country Profile](https://www.commonwealthfund.org/international-health-policy-center/countries/mexico)
-- [Turnkey Panama: Healthcare Options and Costs](https://www.turnkeypanama.com/healthcare-panama)
-- [Hospital Santa Fe Panama: Plan Médico Tercera Edad](https://www.hospitalsantafepanama.com/wp-content/uploads/2024/10/Plan_Medico_Tercera_Edad.pdf)
+- [Medicare: Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf)
+- [Medicare: What Part A and Part B cost](https://www.medicare.gov/basics/costs/medicare-costs)
+- [U.S. State Department: Travel Advisories feed](https://cadataapi.state.gov/api/TravelAdvisories)
+- [IMSS: Seguro de Salud para la Familia](https://www.imss.gob.mx/node/96125)
+- [Mexperience: How to access IMSS](https://www.mexperience.com/how-to-access-the-mexican-healthcare-system-imss/)
+- [Mexico News Daily: private health insurance premiums](https://mexiconewsdaily.com/mexico-living/hyper-inflation-grips-mexicos-private-health-insurance-market/)
+- [Panama Pensionado visa requirements](https://www.ndm.com.pa/legal-services/labor-immigration-law/pensionado-visa/)
 
 ## Sources & Verification
 
-- [Medicare: Coverage Outside the United States](https://www.medicare.gov/coverage/travel-outside-the-us) — Medicare’s limited coverage rules for care abroad and travel-related considerations.
-- [Commonwealth Fund: Mexico Country Profile](https://www.commonwealthfund.org/sites/default/files/2026-04/2026_Country-Profiles_Mexico.pdf) — Mexico’s public-private healthcare structure, including IMSS and private-sector context.
-- [Turnkey Panama: Healthcare Options and Costs](https://www.turnkeypanama.com/healthcare-panama) — commonly cited private-insurance ranges and planning considerations for retirees in Panama.
-- [RetireFinder: Healthcare in Panama for Retirees](https://retirefinder.com/countries/panama/healthcare/) — retiree-focused guidance on Panama insurance and healthcare planning.
-- [Hospital Santa Fe Panama: Plan Médico Tercera Edad](https://www.hospitalsantafepanama.com/wp-content/uploads/2024/10/Plan_Medico_Tercera_Edad.pdf) — provider material describing plans for older adults.
+- [Medicare: Coverage Outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf) — when Medicare pays abroad and Medigap foreign travel emergency terms.
+- [Medicare: Medicare costs](https://www.medicare.gov/basics/costs/medicare-costs) — 2026 Part B premium, Part B deductible, and Part A deductible.
+- [U.S. State Department: Travel Advisories feed](https://cadataapi.state.gov/api/TravelAdvisories) — Mexico Level 2 (May 28, 2026) and Panama Level 2 (August 18, 2026).
+- [Turnkey Panama: Healthcare Options and Costs](https://www.turnkeypanama.com/healthcare-panama) — published 2026 insurance ranges, doctor-visit prices, and age limits (October 2026).
+- [IMSS: Seguro de Salud para la Familia](https://www.imss.gob.mx/node/96125) — annual voluntary fees by age, effective March 1, 2026.
+- [Commonwealth Fund: Mexico Country Profile 2026](https://www.commonwealthfund.org/sites/default/files/2026-04/2026_Country-Profiles_Mexico.pdf) — public and private coverage shares.
+- [Numbeo: Cost of Living in Panama City](https://www.numbeo.com/cost-of-living/in/Panama-City) — everyday prices (November 15, 2026; crowd-sourced).
+- [Consulate General of Mexico in San Diego: Temporary Resident Visa solvency](https://consulmex.sre.gob.mx/sandiego/images/visas/ingles/5a_Temporary_Resident_Visa_-_Economic_Solvency.pdf) — income and savings requirements, 2026 sheet.
 
-Information checked: November 15, 2026
+Information checked: November 16, 2026
 
 ## Related Golden Horizons Guides
 
@@ -167,4 +203,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY HEALTHCARE**
 
-Panama offers the easier first estimate for a 65-year-old because a local private-insurance range is available. Mexico may still be an excellent fit, but it calls for more local homework on IMSS eligibility and private coverage. In either country, make healthcare your first quote-gathering project—not the last line on the moving checklist.
+Panama offers the easier first estimate for a 65-year-old because a published private-insurance range exists, though the age limit at 65 to 70 needs a written answer. Mexico's IMSS plan is inexpensive on paper and may suit a legal resident, but private-plan pricing needs local quotes. In either country, make healthcare your first quote-gathering project, not the last line on the moving checklist.
