@@ -1,157 +1,169 @@
 ---
-title: "Cuenca vs Medellín for a $1,500/month retiree in 2026: healthcare access and cost anchors for Americans"
+title: "Can $1,700 a Month Work in Brașov? Healthcare and Costs for Americans"
 category: Healthcare
 slug: what-1700-mo-brasov-romania
 date: 2026-11-18
 image: https://images.unsplash.com/photo-1491962848787-57877fa19dc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxDdWVuY2ElMjBFY3VhZG9yJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3OTUwMjc0NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080
-description: "A healthcare-first comparison of Cuenca and Medellín rent anchors, residency questions, and what $1,500 may need to cover."
+description: "Brașov rent runs about $484 outside the center, but residency needs health insurance first. Here is what $1,700 covers and what to check."
 featured: false
 ---
 
-# Cuenca vs Medellín for a $1,500/month retiree in 2026: healthcare access and cost anchors for Americans
+# Can $1,700 a Month Work in Brașov? Healthcare and Costs for Americans
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-A one-bedroom outside central Cuenca is estimated at about $356 a month. In Medellín, the comparable outside-center figure begins around $757. For a retiree trying to make $1,500 cover not only rent but groceries, utilities, transportation, and healthcare, that gap changes the whole conversation.
-
-Cuenca’s lower housing anchors make it the more comfortable place to begin the search. But a retirement move is not won by rent alone. Before either city becomes home, you need to know what healthcare you can use, what it costs under your residency status, and how much of your monthly cushion remains after the ordinary bills arrive.
-
-> **THE SHORT ANSWER:** Cuenca has the clearer edge on published long-term rent anchors: about $356 outside the center or $469 in the center, compared with roughly $757 outside central Medellín and up to about $1,360 in the center. That makes Cuenca the more promising starting point for a $1,500 plan. But healthcare, insurance, utilities, transport, and residency costs need separate confirmation before either city can be called a complete fit.
+> **THE SHORT ANSWER:** Possibly, if you plan healthcare before rent. Numbeo lists a one-bedroom outside the center of Brașov at about $484 a month and utilities at about $175, which leaves roughly $1,009 of a $1,700 budget after rent, utilities, internet and a transit pass. The catch: a long stay in Romania needs medical insurance, and the visa and permit rules are not written for retirees specifically. Keeping Medicare Part B costs $202.90 a month on top of any local cover.
 
 ## Retirement Snapshot
 
-**Primary decision:** Does Cuenca’s lower published housing cost leave enough room within $1,500 for healthcare and the rest of everyday life?
+**Primary decision:**
+Whether a mid-sized Transylvanian city with private hospitals fits a single retiree's budget once rent, insurance and residency paperwork are priced.
 
-**Best fit:** You are willing to test housing and healthcare arrangements before committing to either city.
+**Best fit:**
+A renter who can handle paperwork in a second language and wants private care within reach of home.
 
-**Biggest warning:** Healthcare costs are not fixed for an American retiree in either place. Residency status, insurance, provider choice, and public versus private care can all change the answer.
+**Biggest warning:**
+Romania has no dedicated retirement visa. Retirees generally apply under the long-stay "other purposes" category, and the official eVisa document list shows no pension amount for it.
 
-**Planning-budget lens:** Cuenca’s rent anchors are substantially lower, though they are market estimates rather than signed-lease quotes.
+**Safety:**
+The U.S. State Department rates Romania Level 1, Exercise Normal Precautions, in an advisory dated October 13, 2025. It notes moderate seismic activity and a history of strong earthquakes, with Bucharest at highest risk. The advisory summary names no Brașov-specific restriction.
 
-**Residency:** A short exploratory stay is different from long-term residence. Confirm the appropriate route with the relevant consulate.
+**Residency:**
+The Romanian Immigration Inspectorate says the residence permit for other purposes requires proof of means of maintenance at least equal to the average gross monthly salary, plus proof of social health insurance. The page gives no dollar figure, so confirm the current amount before you apply.
 
-**Healthcare:** Public and private options exist in both countries, but access, eligibility, and out-of-pocket costs depend on your circumstances.
+**Healthcare:**
+Brașov has private hospitals run by two large networks, including Regina Maria Brasov Hospital and the MedLife Hospital in Brașov. Public coverage depends on holding a residence permit first.
 
-**Housing / daily life:** In Medellín, the neighborhood, furnishing level, and utility classification can move the monthly housing bill considerably.
+**Housing / daily life:**
+Numbeo lists a budget restaurant meal at about $11 and a monthly transit pass at about $23.
 
-## The Rent Gap That Shapes the Whole Budget
+## What Your Budget Has to Cover in Brașov
 
-The most important number here is not a restaurant meal or a transit fare. It is the difference between a one-bedroom outside central Cuenca, estimated at about $356, and one outside central Medellín, estimated at roughly $757.
+Start with rent. Numbeo, updated November 18, 2026, from 54 contributors and 1,056 entries over the past 12 months, lists a one-bedroom apartment outside the center at $484 a month, with a range of $384 to $579. In the center the figure is $651, with a range of $548 to $741. These are user-reported averages, so treat them as a planning anchor and not a lease quote.
 
-For Cuenca, 2026 expat-market estimates place a long-term one-bedroom at around $469 in the center and $356 outside it. Treat those figures as useful planning anchors, not a landlord’s promise. Wise estimates groceries for one adult at about $200 to $300 per month and puts broader monthly living costs at around $958.
+Utilities for an 85-square-meter apartment, covering electricity, heating, cooling, water and garbage, average $175 a month on Numbeo, with a range of $153 to $308. Winter heating can push a bill toward the top of that range. Broadband internet averages about $9 and a monthly public transport pass about $23.
 
-Medellín asks more of a modest monthly budget before the rest of life even begins. Published 2026 estimates put an outside-center one-bedroom at roughly $757, while central rent can rise toward $1,360. Laureles is often grouped with outside-center pricing, while El Poblado is associated with higher central pricing. These are asking-rent signals, not contract-bound rates, and the final number can shift with the barrio and whether a place is furnished.
+Groceries are cheap by U.S. standards. Numbeo lists a liter of milk at $1.53, a pound of bread at $1.25, a dozen eggs at $3.38 and a pound of chicken fillets at $3.06. A meal at an inexpensive restaurant is $11.28.
 
-That is why Cuenca gets the early advantage. A lower rent leaves more room to find out what healthcare, insurance, utilities, and transportation will actually cost. In Medellín, rent takes a larger first bite from the same $1,500.
+Add rent outside the center, utilities, internet and a transit pass and you reach about $691. That leaves about $1,009 for food, insurance, medical care, flights and everything else.
 
-## Healthcare May Cost Less — But You Need Your Own Numbers
+## Healthcare Comes First in Brașov
 
-Housing is only the opening act in a healthcare-first retirement decision. Neither city offers one simple price for an American retiree’s doctor visit, test, hospitalization, private insurance, or public-system enrollment.
+For a retiree, healthcare decides the budget more than rent does. Two networks run hospitals in the city.
 
-Start by separating a visit from a move. Healthcare access can change depending on whether you are visiting or legally resident, whether you use public or private care, and what insurance arrangement applies to you. That is true in Cuenca and Medellín alike.
+Regina Maria Brasov Hospital, at Bd. Iuliu Maniu 49, is part of a private network. Its own site lists general, oncologic, bariatric and neurosurgery, orthopedics, ENT, urology, obstetrics-gynecology, intensive care, pediatrics, an outpatient clinic and an emergency room. The adult and pediatric emergency room is listed as open 08:00 to 20:00 seven days a week, so ask where to go overnight.
 
-The question to bring to an insurer, clinic, hospital, or health authority is straightforward: after rent, what would *my* healthcare arrangement cost, and what care could I actually use? Get that answer before treating any leftover budget amount as spending money.
+MedLife lists two hospitals in Brașov, the Spitalul MedLife Turnului and a separate oncology hospital. It also runs the Hyperclinica MedLife Livada Vulturului at Str. Livada Vulturului 10, which offers consultations in about 18 specialties plus CT, radiology and mammography. Neither network posts a self-pay price list on the pages we checked, so you must ask for quotes.
+
+At home, Original Medicare charges a 2026 Part B premium of $202.90 a month, a Part B deductible of $283 and a Part A inpatient deductible of $1,736 per benefit period, according to Medicare.gov. For a 65-plus reader with a stable condition, staying on Medicare can be cheaper than paying a foreign hospital out of pocket, and Original Medicare generally does not pay for care in Romania. Price both before you decide.
 
 ## Practical Comparison
 
-### Long-term rent: Cuenca starts with more breathing room
+### Rent and Utilities
 
-**What the evidence says:**  
-Cuenca’s published one-bedroom anchors are about $356 outside the center and $469 in the center. Medellín’s outside-center estimate is about $757, with central estimates reaching roughly $1,360.
+**What the evidence says:**
+Numbeo lists $484 outside the center and $651 in the center for a one-bedroom, with basic utilities near $175.
 
-**What to check next:**  
-Request current long-term rental listings in the areas you would realistically consider. Ask whether utilities, furnishings, internet, and building charges are included before comparing one monthly figure with another.
+**What to check next:**
+Ask two local agents for written all-in quotes, and ask what heating costs in January for the exact apartment.
 
-### Healthcare planning: the question that rent cannot answer
+### Private Hospital Access
 
-**What the evidence says:**  
-Both destinations have public and private healthcare options, but costs for an American retiree can differ by residency status, provider, insurance arrangement, and type of care.
+**What the evidence says:**
+Regina Maria and MedLife each list a hospital in Brașov on their own sites, but neither page we checked shows prices.
 
-**What to check next:**  
-Ask prospective insurers and healthcare providers for current self-pay and coverage information that applies to your age and intended residency status.
+**What to check next:**
+Email both networks and ask for self-pay prices for a first consultation, blood tests and an emergency visit.
 
-### Residency: test the city, then confirm the path to stay
+### Residency and Insurance
 
-**What the evidence says:**  
-A visitor’s exploratory stay is not the same as legal long-term residence, and healthcare access may be affected by that distinction.
+**What the evidence says:**
+The Immigration Inspectorate asks for proof of means at least equal to the average gross monthly salary and proof of social health insurance. The long-stay visa itself lasts 90 days.
 
-**What to check next:**  
-Confirm the current residency route, documentation, and financial requirements with the appropriate consulate before assuming a $1,500 income supports legal residence.
+**What to check next:**
+Ask the Romanian embassy or consulate for the current salary figure in dollars and which insurance policies it accepts.
 
-### Neighborhood choice: Medellín’s biggest budget variable
+### Safety and Weather
 
-**What the evidence says:**  
-Medellín’s asking rents vary materially by barrio, furnishing, and utility classification. Cuenca’s published center and outside-center figures are also broad averages.
+**What the evidence says:**
+The State Department rates Romania Level 1, and its summary flags earthquake risk rather than crime.
 
-**What to check next:**  
-Compare several current listings in Cuenca and in Medellín areas such as Laureles and El Poblado. Note the lease length, condition, included services, and full monthly housing bill.
+**What to check next:**
+Ask your landlord about the building's age and whether a recent structural survey exists.
 
 ## The Trade-Off
 
-Cuenca’s appeal is easy to see: lower published rent anchors can create room for groceries and the other essentials that make a monthly budget feel livable rather than tight.
+**What you may gain:**
 
-But lower rent does not settle the healthcare question. You still need to understand what coverage is available to you, whether you qualify for it, and what private or self-pay care would mean for your personal budget.
+- Low rent outside the center and groceries priced well below U.S. levels.
+- Two private hospital networks in one mid-sized city.
+- A Level 1 State Department advisory.
 
-Medellín may work if you find the right neighborhood and housing arrangement. The trade-off is that a larger share of $1,500 may disappear into rent, particularly near higher-priced central areas. That leaves less flexibility when healthcare, insurance, or an unplanned expense enters the month.
+**What you may give up:**
 
-![Cuenca and Medellín cityscape](https://images.unsplash.com/photo-1611460414660-9b102659991e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxDdWVuY2ElMjBFY3VhZG9yJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzk1MDI3NDYzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+- Cushion. After rent, utilities, internet, transit and Part B, about $806 is left for food and everything else.
+- A simple visa route, since no retirement category exists.
+- Easy price comparison, because neither hospital network posts self-pay prices online.
+
+![Brașov street scene](https://images.unsplash.com/photo-1611460414660-9b102659991e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxDdWVuY2ElMjBFY3VhZG9yJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzk1MDI3NDYzfDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-1. Collect current long-term one-bedroom listings for Cuenca’s center and outside-center areas, then compare them with listings in Medellín’s Laureles and El Poblado areas.
-2. Separate asking rent from the full monthly housing bill. Ask what utilities, internet, furnishings, and building charges are included.
-3. Build two personal worksheets: one beginning with Cuenca rent around $356 to $469, and one beginning with Medellín rent around $757 or more.
-4. Ask healthcare providers or insurers for current information that applies to a U.S. retiree with your intended residency status.
-5. Confirm whether a short visit gives you the same healthcare access as legal residence. Do not assume it does.
-6. Contact the appropriate consular and health authorities to confirm current residency and healthcare rules before making a long-term housing commitment.
+1. Ask two local agents for written quotes on a one-bedroom outside the center and compare them with Numbeo's $484.
+2. Request twelve months of heating and electricity bills from the landlord.
+3. Email Regina Maria Brasov Hospital and the MedLife Hospital in Brașov for self-pay prices for a first visit and an emergency visit.
+4. Ask your Medicare plan what it pays outside the United States, and price a private international policy.
+5. Ask the Romanian embassy in Washington which documents prove your pension income and what dollar amount equals the average gross monthly salary.
+6. Spend a week shopping at a local market and supermarket and log what you spend against the Numbeo basket.
 
-![Cuenca and Medellín daily life](https://images.unsplash.com/photo-1592240820068-ca0da7d893fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxDdWVuY2ElMjBFY3VhZG9yJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzk1MDI3NDYzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+![Brașov daily life](https://images.unsplash.com/photo-1592240820068-ca0da7d893fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxDdWVuY2ElMjBFY3VhZG9yJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzk1MDI3NDYzfDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### Does $1,500 a month go further in Cuenca or Medellín?
+### Can one person live in Brașov on $1,700 a month?
 
-Based on the published rent anchors, it appears to go further in Cuenca. A one-bedroom outside central Cuenca is estimated around $356, versus roughly $757 outside central Medellín. Those are planning estimates, not guaranteed lease prices. ([Riotimesonline](https://www.riotimesonline.com/cost-of-living-cuenca-ecuador-expats-2026); [SettleMetric](https://settlemetric.com/cities/colombia/medellin/))
+A core spend of about $691 for rent, utilities, internet and transit leaves about $1,009 for food and insurance. That works if you find a one-bedroom near the $484 estimate and keep medical costs predictable. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Brasov?displayCurrency=USD))
 
-### Can a retiree live in Cuenca on $1,500 a month?
+### Is Romania safe for Americans?
 
-Cuenca’s published rent and grocery estimates make the budget plausible as a starting point for a single retiree. Utilities, transportation, insurance, healthcare, travel, taxes, and residency expenses still need their own current quotes. ([Wise](https://wise.com/us/cost-of-living/ecuador/cuenca))
+The State Department rates Romania Level 1, Exercise Normal Precautions, in an advisory dated October 13, 2025. It notes moderate seismic activity, with Bucharest at highest risk. Check the advisory again before you travel. ([travel.state.gov](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.rou.html))
 
-### Why is Medellín harder to assess on a $1,500 budget?
+### What do I need to stay in Romania long term?
 
-Rent is the main pressure point. Outside-center one-bedroom estimates are around $757, and central estimates can rise much higher; costs can vary by barrio, furnishing, and utility classification. ([Colombia Basics](https://colombiabasics.com/medellin/cost-of-living-medellin))
+The permit for other purposes requires proof of means at least equal to the average gross monthly salary and proof of social health insurance. Extensions run up to one year, and the long-stay visa lasts 90 days. ([igi.mai.gov.ro](https://igi.mai.gov.ro/en/other-purposes/))
 
-### Are healthcare costs lower in Cuenca than Medellín?
+### What does Medicare cost if I keep it abroad?
 
-Ask providers and insurers in each city for prices that apply to your situation. Healthcare costs and access can depend on the provider, insurance, public versus private care, and residency status in both countries. ([Ecuador Ministry of Public Health](https://www.mha.gov.ec); [Colombia Ministry of Health and Social Protection](https://www.minsalud.gov.co))
+The 2026 Part B premium is $202.90 a month, the Part B deductible is $283 and the Part A inpatient deductible is $1,736. Ask your plan what it pays outside the United States. ([medicare.gov](https://www.medicare.gov/basics/costs/medicare-costs))
 
-### Does receiving Social Security make someone eligible for residency?
+### Which private hospitals are in Brașov?
 
-Receiving Social Security and qualifying for residency are separate matters. Confirm residency routes and financial requirements with the appropriate consulate or immigration authority before making plans around your income. ([Ecuador Ministry of Public Health](https://www.mha.gov.ec); [Colombia Ministry of Health and Social Protection](https://www.minsalud.gov.co))
+Regina Maria Brasov Hospital lists more than a dozen departments, from surgery to maternity, and an adult emergency room open 08:00 to 20:00 seven days a week. Confirm hours and prices by phone. ([reginamaria.ro](https://www.reginamaria.ro/spitale/spitalul-brasov))
 
 ## Check Today's Information Before You Decide
 
-- [Ecuador Ministry of Public Health](https://www.mha.gov.ec)
-- [Colombia Ministry of Health and Social Protection](https://www.minsalud.gov.co)
-- [Wise: Cost of Living in Cuenca](https://wise.com/us/cost-of-living/ecuador/cuenca)
-- [Colombia Basics: Cost of Living in Medellín](https://colombiabasics.com/medellin/cost-of-living-medellin)
+- [U.S. State Department, Romania travel advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.rou.html)
+- [Romanian Immigration Inspectorate, other purposes](https://igi.mai.gov.ro/en/other-purposes/)
+- [Numbeo, Brașov](https://www.numbeo.com/cost-of-living/in/Brasov?displayCurrency=USD)
+- [Regina Maria Brasov Hospital](https://www.reginamaria.ro/spitale/spitalul-brasov)
 
 ## Sources & Verification
 
-- [Wise: Cost of Living in Cuenca](https://wise.com/us/cost-of-living/ecuador/cuenca) — Cuenca grocery estimates and broader 2026 living-cost context.
-- [Riotimesonline: Cost of Living in Cuenca, Ecuador — Expats 2026](https://www.riotimesonline.com/cost-of-living-cuenca-ecuador-expats-2026) — Cuenca center and outside-center one-bedroom rent anchors.
-- [Colombia Basics: Cost of Living in Medellín](https://colombiabasics.com/medellin/cost-of-living-medellin) — Medellín cost and rent context.
-- [SettleMetric: Living in Medellín, Colombia](https://settlemetric.com/cities/colombia/medellin/) — Medellín market-data and rent-range context.
-- [Colombia Ministry of Health and Social Protection](https://www.minsalud.gov.co) — Colombia health-system authority.
-- [Ecuador Ministry of Public Health](https://www.mha.gov.ec) — Ecuador health-system authority.
+- [U.S. State Department, Romania](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.rou.html) — Level 1, October 13, 2025, via the official advisory feed
+- [Numbeo, Brașov cost of living](https://www.numbeo.com/cost-of-living/in/Brasov?displayCurrency=USD) — rent, utilities, groceries and transport, page updated November 18, 2026
+- [Romanian Immigration Inspectorate, other purposes](https://igi.mai.gov.ro/en/other-purposes/) — means of maintenance and health insurance requirements
+- [Romanian eVisa portal, supporting documents](https://eviza.mae.ro/SupportingDocuments) — D/AS long-stay visa documents
+- [Medicare.gov, 2026 costs](https://www.medicare.gov/basics/costs/medicare-costs) — Part A and Part B amounts
+- [Regina Maria, Brașov hospital](https://www.reginamaria.ro/spitale/spitalul-brasov) — departments, address and emergency room hours
+- [MedLife, Hyperclinica Livada Vulturului](https://www.medlife.ro/hyperclinica-medlife-livada-vulturului-brasov) — Brașov MedLife facilities and services
 
-**Source dates:** 2026. Confirm current costs, residency requirements, and healthcare arrangements before deciding.
+Information checked: November 19, 2026
 
 ## Related Golden Horizons Guides
 
 - [Healthcare Abroad for American Retirees](/healthcare-abroad-for-american-retirees)
-- [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-american-retirees)
-- [Visa Rules for Americans Retiring Abroad](/visa-rules-for-american-retiring-abroad)
+- [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-americans)
+- [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans-retiring-abroad)
 - [Taxes for Americans Retiring Overseas](/taxes-for-americans-retiring-overseas)
 
 ## About Golden Horizons
@@ -162,6 +174,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-For a retiree working with $1,500 a month, Cuenca has the stronger published housing case and may leave more room for the rest of life. Medellín is not automatically out of reach, but its rent anchors demand a careful neighborhood-by-neighborhood test.
-
-Cuenca fits the reader who wants more financial breathing room and is prepared to confirm healthcare arrangements before moving. Medellín may suit someone comfortable making housing the first major research task. Spend 30 days testing the errands, the housing search, and the care you would actually use—then let the place that leaves room for your real life make the decision clearer.
+Brașov can fit $1,700 on housing alone, with about $691 of core costs, but the visa route and healthcare costs are still unpriced. It suits a careful renter who can document pension income and is willing to buy insurance first. Before you commit, get two written lease quotes, ask both hospital networks for self-pay prices, and confirm the income requirement with the Romanian embassy.
