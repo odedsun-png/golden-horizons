@@ -4,92 +4,89 @@ category: Comparison
 slug: albania-vs-montenegro-2000-month
 date: 2026-11-01
 image: https://images.unsplash.com/photo-1738248000857-7760b1e8333d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxBbGJhbmlhJTIwY29hc3R8ZW58MHwwfHx8MTc5MzU4MDAwM3ww&ixlib=rb-4.1.0&q=80&w=1080
-description: "Compare Tirana and Podgorica on rent, groceries, utilities, transport, residency, and healthcare for a $2,000 monthly retirement budget."
+description: "Tirana costs about $1,260 a month outside the center and Podgorica about $1,190. Compare rent, utilities, transit and healthcare for a $2,000 budget."
 featured: false
 ---
 
 # Tirana vs. Podgorica: Where $2,000 Goes Further
-**Golden Horizons Verdict: Golden Horizons Status: 🟡 WORTH TESTING — VERIFY COSTS**
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** A one-bedroom runs about $250-$600 in Tirana and $270-$595 in Podgorica, while groceries land around $220-$380 and $190-$340 respectively. Utilities plus internet can add $125-$220 in Tirana or $115-$200 in Podgorica. A $2,000 monthly plan can work in either capital, but Tirana usually leaves more room when you choose an outside-center apartment and keep regular costs modest.
+> **THE SHORT ANSWER:** On Numbeo's November 1, 2026 data, a single person needs about $1,260 a month in Tirana and about $1,190 in Podgorica outside the center, once rent and everyday costs are added. In the center the totals are about $1,575 and $1,350. Either fits a $2,000 budget, but the catch is that these are user-submitted prices from 115 contributors in Tirana and only 62 in Podgorica, and they leave out healthcare, which Original Medicare generally does not cover abroad.
 
-A coffee near Tirana’s Pazari i Ri can cost $1.50-$2.50. That is a small number, but it hints at the larger appeal of these two Balkan capitals: everyday pleasures do not necessarily have to crowd out rent, groceries, and a little room for the unexpected.
+A cappuccino costs about $2.30 in Tirana and about $2.20 in Podgorica. That is a small number, but it hints at the larger appeal of these two Balkan capitals: everyday pleasures do not have to crowd out rent, groceries, and a little room for the unexpected.
 
-The real question is not whether either city is “cheap.” It is whether $2,000 buys a life that feels comfortable after you choose an apartment, pay the winter bills, find your grocery routine, and account for healthcare. Tirana has the earlier advantage on rent. Podgorica stays close enough to make the decision more personal than a spreadsheet suggests.
+The real question is not whether either city is “cheap.” It is whether $2,000 buys a life that feels comfortable after you choose an apartment, pay the winter bills, and account for healthcare. This month's Numbeo data puts Podgorica slightly ahead on total cost, which reverses what many older guides say.
 
 ## Retirement Snapshot
 
 **Primary decision:**  
-Which capital leaves you with the larger cushion after housing, food, utilities, and everyday getting around.
+Which capital leaves you with the larger cushion after housing, food, utilities, and getting around.
 
 **Best fit:**  
-Tirana suits you if a lower starting rent matters most, with outside-center one-bedrooms around $250-$450. Podgorica may appeal if you are comfortable with outside-center housing around $270-$485 and prefer a quieter capital rhythm.
+Podgorica suits you if the lowest monthly total matters most. Tirana suits you if you prefer a bigger city and accept a slightly higher monthly total, with outside-center rent near $510.
 
 **Biggest warning:**  
-A higher-rent apartment, heavier utility use, regular private medical care, and frequent restaurant meals can move a modest plan toward $1,800-$2,200 a month.
-
-**Planning-budget lens:**  
-Across both cities, core monthly spending can fall roughly between $1,100-$1,400 at the lean end and $1,800-$2,200 when housing and everyday choices run higher.
+Prices come from user submissions and move with exchange rates. Neither total includes private health insurance or medical bills.
 
 **Residency:**  
-Albania and Montenegro have separate long-stay routes, with country-specific income and document requirements to confirm before signing a lease.
+Albania and Montenegro have separate long-stay routes. We did not verify income thresholds for either, so confirm them with each country's immigration office before signing a lease.
 
 **Healthcare:**  
-Public-care eligibility for foreign residents differs by country, while private-care costs depend on the facility and service.
+Original Medicare generally does not pay for care outside the United States, so budget private insurance or self-pay visits on top of the totals above.
 
 **Safety:**  
-Check the current U.S. State Department advisory pages for Albania and Montenegro before booking a scouting stay.
+The U.S. State Department rates Albania Level 2, Exercise Increased Caution (August 25, 2026), and Montenegro Level 1, Exercise Normal Precautions (August 26, 2026).
 
 ## What $2,000 Actually Has to Cover
 
-Tirana takes an early lead at the apartment search. A one-bedroom outside the center runs about $250-$450, compared with roughly $270-$485 in Podgorica. In the center, the gap nearly disappears: about $350-$600 in Tirana and $380-$595 in Podgorica.
+Podgorica takes the lead at the apartment search outside the center. Numbeo lists a one-bedroom there at about $500 a month, against about $510 in Tirana, so rent is nearly a tie. In the center the gap widens: about $820 in Tirana and $660 in Podgorica.
 
-That is why the listing matters more than the city label. A newer apartment with reliable heating, good insulation, and shops within walking distance may be worth more than the lowest rent on the page. The waterfront-style fantasy is easy; the grocery store, bus stop, and utility bill are what shape an ordinary week.
+That is why the listing matters more than the city label. A newer apartment with reliable heating, good insulation, and shops within walking distance may be worth more than the lowest rent on the page.
 
-Food costs are close. A one-person grocery routine runs about $220-$380 in Tirana and $190-$340 in Podgorica. At Pazari i Ri, daily shopping can become part of the rhythm of the neighborhood. Podgorica’s Old Market offers a similar reason to buy what you need for the next few meals rather than fill a cart for the week.
+Everyday costs favor Podgorica too. Numbeo estimates one person's monthly costs without rent at about $760 in Tirana and $690 in Podgorica. Add rent and you reach the totals in the short answer.
 
-Utilities are the quieter budget line. Tirana household utilities run about $100-$180 monthly, plus $25-$40 for internet. Podgorica utilities are about $90-$160, with internet also around $25-$40. The difference is modest, but heating and cooling use can quickly matter more than a few dollars saved on coffee.
+Utilities are the quieter budget line. Basic utilities for an apartment of about 915 square feet run near $100 in Tirana and near $130 in Podgorica, with broadband around $20 and $32. Heating and cooling use can matter more than a few dollars saved on coffee.
 
-Getting around is inexpensive by U.S. standards in both places. Tirana transit costs about $0.75-$1.50 per ride, or $20-$30 for a monthly pass. Podgorica’s monthly pass runs about $15-$25. If you plan to use buses often instead of taxis, Podgorica has a small edge.
+Getting around is inexpensive by U.S. standards in both places. A single ride costs about $0.50 in Tirana and $1.00 in Podgorica. A monthly pass runs about $20 in Tirana and $34 in Podgorica, so Tirana has the edge for frequent bus riders.
 
-Tirana’s casual meals run about $6-$12. Podgorica’s casual meals fall in the same $6-$12 range. A simple coffee in Podgorica costs about $1.50-$2.50, close to Tirana’s $1.50-$2.50 range.
+An inexpensive restaurant meal is about $10 in Tirana and $11 in Podgorica. Milk is about $2.20 a liter in Tirana and $1.30 in Podgorica, and a dozen eggs run about $3.60 and $3.50.
 
-Tirana’s housing advantage is real, especially when you look beyond the center. But housing is only half the story. Healthcare, residency, and the practical comfort of daily life deserve the same attention.
+Podgorica's lower total is real, but modest. Healthcare, residency, and the comfort of daily life deserve the same attention as rent.
 
 ## Residency, Healthcare, and the Details That Change the Math
 
-Neither capital should be chosen on rent alone. A difference of $50 in monthly utilities matters less if the residency process feels unclear or your medical routine requires frequent appointments.
+Neither capital should be chosen on rent alone. A monthly difference of about $70 matters less if the residency process feels unclear or your medical routine requires frequent appointments.
 
-Albania and Montenegro each have their own routes for retirees and other long-stay residents. Before treating either city as home, ask the appropriate consular or immigration office about the current income requirement, proof-of-funds rules, health-coverage expectations, and renewal schedule for the route you plan to use.
+Albania and Montenegro each have their own routes for retirees and other long-stay residents. Before treating either city as home, ask the appropriate consular or immigration office about the current income requirement, proof-of-funds rules, health-coverage expectations, and renewal schedule for the route you plan to use. Montenegro also requires every visitor to register with the local tourism office or police within 24 hours of arrival; hotels usually handle it, but private rentals do not.
 
-Healthcare calls for the same calm preparation. Public-care access for foreign residents varies by country and residence status. Private clinics may quote different prices for a general check-up, laboratory work, imaging, and specialist care. If you take regular medication or expect specialist visits more than two or three times a year, ask for written self-pay prices while you are in each city.
+Healthcare calls for calm preparation. Public-care access for foreign residents varies by country and residence status, and private clinics quote their own prices. If you take regular medication or expect specialist visits more than two or three times a year, ask for written self-pay prices while you are in each city.
 
-Medicare generally does not pay for care outside the United States. That can change the shape of a lean $1,100-$1,400 monthly plan quickly, even when rent looks manageable.
+Original Medicare generally does not pay for medical services outside the United States, apart from narrow emergency exceptions. That can reshape a $1,200 monthly plan quickly, even when rent looks manageable.
 
-For safety planning, review the current U.S. State Department pages before travel. Then approach each city as you would any unfamiliar capital: choose a well-lit street, learn the route between your apartment and your regular shops, and keep copies of essential documents. A rental near the services you will actually use can be worth more than a distant bargain.
+For safety planning, Albania is Level 2 and Montenegro is Level 1. Read the full advisory for each before travel, then choose a well-lit street, learn the route between your apartment and your regular shops, and keep copies of essential documents.
 
 ## Practical Comparison
 
 ### The apartment choice is the biggest swing factor
 
 **What the evidence says:**  
-Tirana’s outside-center one-bedroom range of $250-$450 begins below Podgorica’s $270-$485 range. In the center, homes can reach about $600 in Tirana and $595 in Podgorica, so building age and exact address can erase much of the apparent difference.
+Numbeo lists outside-center one-bedrooms at about $510 in Tirana and $500 in Podgorica, and city-center ones at about $820 and $660. The Tirana range outside the center runs from about $430 to $620.
 
 **What to check next:**  
 Request current listings for two apartments in each city: one central and one outside the center. Ask whether heating, water, building fees, and internet are included.
 
-### Groceries may come down to your own habits
+### Everyday costs may come down to your own habits
 
 **What the evidence says:**  
-A solo grocery routine is about $220-$380 in Tirana and $190-$340 in Podgorica. Tirana coffee runs about $1.50-$2.50, while a casual meal is about $6-$12.
+Numbeo puts a single person's non-rent costs at about $760 in Tirana and $690 in Podgorica. A casual meal is about $10 and $11.
 
 **What to check next:**  
-Buy a week of your usual breakfast, fruit, protein, and pantry staples at Pazari i Ri and the Old Market. Dietary needs and preferred brands can matter more than a broad city average.
+Buy a week of your usual breakfast, fruit, protein, and pantry staples in each city. Dietary needs and preferred brands can matter more than a broad city average.
 
-### Small transit savings add up over time
+### Transit and utilities add up over time
 
 **What the evidence says:**  
-Tirana transit costs about $0.75-$1.50 per ride, with monthly passes around $20-$30. Podgorica monthly passes run about $15-$25. Utilities plus internet can approach $220 in Tirana or $200 in Podgorica during higher-use months.
+Monthly bus passes cost about $20 in Tirana and $34 in Podgorica. Utilities run near $100 in Tirana and $130 in Podgorica.
 
 **What to check next:**  
 Ride the bus during morning and evening hours, then ask the landlord for the prior three utility bills from the apartment you are considering.
@@ -97,7 +94,7 @@ Ride the bus during morning and evening hours, then ask the landlord for the pri
 ### Healthcare and residency need their own test
 
 **What the evidence says:**  
-Both countries require separate residency planning, and public-care access depends on foreign-resident eligibility. Private-care prices vary by clinic, treatment, and city. Medicare generally does not cover routine care outside the United States.
+Both countries require separate residency planning, and public-care access depends on foreign-resident eligibility. Original Medicare generally does not cover routine care outside the United States.
 
 **What to check next:**  
 Contact a private clinic and a public hospital option in each capital. Ask about a general check-up, prescription process, and foreign-resident eligibility before you make a long-term decision.
@@ -106,18 +103,18 @@ Contact a private clinic and a public hospital option in each capital. Ask about
 
 **What you may gain:**
 
-- Tirana outside-center one-bedrooms start around $250 a month.
-- Podgorica’s grocery range starts around $190 a month for one person.
-- A Tirana monthly transit pass costs about $20-$30.
-- A Podgorica monthly transit pass costs about $15-$25.
-- Casual meals in either capital can run about $6-$12.
+- Podgorica's monthly total is lower, about $1,190 outside the center.
+- Tirana's monthly bus pass costs about $20, against about $34 in Podgorica.
+- Tirana's central rent is the higher of the two, but its outside-center rent is close to Podgorica's.
+- Casual meals in either capital run about $10 to $11.
+- Both cities fit comfortably inside a $2,000 budget before healthcare.
 
 **What you may give up:**
 
-- A city-center one-bedroom can reach about $600 in Tirana or $595 in Podgorica.
-- Utility bills can rise toward $180 in Tirana or $160 in Podgorica before internet.
-- Public healthcare access depends on your residence status and the country’s rules.
-- Medicare generally does not pay for routine care in either country.
+- A city-center one-bedroom can reach about $980 in Tirana or $780 in Podgorica at the top of Numbeo's range.
+- Public healthcare access depends on your residence status and the country's rules.
+- Original Medicare generally does not pay for routine care in either country.
+- Podgorica's data rests on only 62 contributors, so treat it as a rough guide.
 - A distant low-rent apartment can make groceries, buses, and medical appointments harder to manage.
 
 The best value is not necessarily the city with the lowest listed rent. It is the one where your apartment, daily errands, medical needs, and long-stay paperwork all feel manageable at the same time.
@@ -126,13 +123,13 @@ The best value is not necessarily the city with the lowest listed rent. It is th
 
 ## The Golden Horizons 30-Day Test
 
-1. View two Tirana rentals: one city-center one-bedroom in the $350-$600 range and one outside-center option in the $250-$450 range. Ask for the prior three utility bills.
+1. View two Tirana rentals: one city-center one-bedroom and one outside-center option. Ask for the prior three utility bills.
 
-2. View two Podgorica rentals: one city-center one-bedroom around $380-$595 and one outside-center option around $270-$485. Check the walk to a grocery shop and bus stop.
+2. View two Podgorica rentals: one city-center one-bedroom and one outside-center option. Check the walk to a grocery shop and bus stop.
 
-3. Build a seven-day grocery basket at Pazari i Ri using the foods you actually buy, then compare it with a similar basket from Podgorica’s Old Market.
+3. Build a seven-day grocery basket from the foods you actually buy in Tirana, then compare it with a similar basket in Podgorica.
 
-4. Take 10 local transit rides in Tirana and compare that total with a $20-$30 monthly pass. Repeat the exercise in Podgorica, where a monthly pass is about $15-$25.
+4. Take 10 local bus rides in Tirana and compare that total with a monthly pass. Repeat the exercise in Podgorica.
 
 5. Ask a private clinic in each capital for a written quote for a general check-up, a specialist consultation, and a basic laboratory panel.
 
@@ -144,49 +141,50 @@ The best value is not necessarily the city with the lowest listed rent. It is th
 
 ### Does $2,000 a month go further in Tirana or Podgorica?
 
-Tirana generally starts lower on rent, with outside-center one-bedrooms around $250-$450 compared with roughly $270-$485 in Podgorica. Grocery ranges are close: about $220-$380 in Tirana and $190-$340 in Podgorica. If your priority is the largest housing cushion, Tirana usually has the edge. (Numbeo, October 2026)
+On Numbeo's November 1, 2026 data, Podgorica is slightly cheaper: about $1,190 a month for one person outside the center against about $1,260 in Tirana, and about $1,350 against $1,575 in the center. Tirana's data has 115 contributors and Podgorica's has 62, so treat the gap as small. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Podgorica))
 
-### What does a one-bedroom apartment cost in the two capitals?
+### Do I need to register when I arrive in Montenegro?
 
-A city-center one-bedroom is about $350-$600 in Tirana and about $380-$595 in Podgorica. Outside the center, the ranges are about $250-$450 in Tirana and $270-$485 in Podgorica. Building age, insulation, furnishings, and included bills can matter as much as the neighborhood label. (Expatistan, October 2026)
+Yes: all visitors must register with the local tourism office or police within 24 hours of arrival. Hotels usually do it for you, but if you rent privately you must register yourself, so ask your landlord on day 1. ([gov.uk](https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements))
 
-### Are groceries cheaper in Tirana or Podgorica?
+### How safe are Tirana and Podgorica for American retirees?
 
-Podgorica’s estimated solo grocery range begins slightly lower, at about $190 a month, while Tirana begins around $220. At the upper end, both cities can reach $340-$380 depending on imported brands, dietary needs, and how often you shop at markets. Try a seven-day basket in each place before drawing a conclusion from broad averages. (Relocation Montenegro, 2026)
+Montenegro is Level 1, Exercise Normal Precautions (August 26, 2026), and Albania is Level 2, Exercise Increased Caution (August 25, 2026), citing crime tied to drug networks and possible large demonstrations. Read each full advisory before booking a scouting stay. ([cadataapi.state.gov](https://cadataapi.state.gov/api/TravelAdvisories))
 
 ### What should an American retiree ask about residency before renting?
 
-Ask for the current 2026 income requirement, proof-of-funds rules, health-coverage expectations, and renewal timing for the exact residence route you plan to use. Albania and Montenegro use separate systems, so a rule from one country cannot be carried across the border. Get answers in writing before committing to a 12-month lease. (How Albania, October 2026)
+Ask for the current income requirement, proof-of-funds rules, health-coverage expectations, and renewal timing for the exact route you plan to use, and get 3 answers in writing before a 12-month lease. Albania and Montenegro run separate systems, so a rule from one cannot be carried across the border. ([punetejashtme.gov.al](https://punetejashtme.gov.al/en/regjimi-i-vizave-per-te-huajt/))
 
 ### How should healthcare affect the monthly comparison?
 
-Medicare generally does not pay for routine care abroad, so private visits, prescriptions, and specialist needs belong in your personal budget. A 30-day scouting stay gives you time to request prices from at least one private clinic and one public-care option in each capital. If medical spending is likely to be regular, the lower rent figure should not be the only number driving your choice. (Kiplinger, 2026)
+Original Medicare generally does not pay for medical services outside the United States, so private visits, prescriptions, and specialist needs belong in your own budget on top of the totals above. A 30-day stay gives you time to request prices from 1 private clinic and 1 public-care option in each capital. ([aarp.org](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/))
 
 ## Check Today's Information Before You Decide
 
 - [Numbeo: Cost of Living in Tirana](https://www.numbeo.com/cost-of-living/in/Tirana)
 - [Numbeo: Cost of Living in Podgorica](https://www.numbeo.com/cost-of-living/in/Podgorica)
-- [Expatistan: Cost of Living in Podgorica](https://www.expatistan.com/cost-of-living/podgorica)
-- [Expatistan: Cost of Living in Tirana](https://es.expatistan.com/cost-of-living/ciudad/tirana)
-- [How Albania cost and visa context](https://youralbania.com/visa-costs)
-- [Relocation Montenegro cost guide](https://www.relocationmontenegro.com/cost-of-living-in-montenegro)
+- [U.S. State Department: Albania advisory](https://travel.state.gov/en/international-travel/travel-advisories/albania.html)
+- [U.S. State Department: Montenegro advisory](https://travel.state.gov/en/international-travel/travel-advisories/montenegro.html)
+- [AARP: does Medicare cover you outside the US?](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/)
+- [Albanian Ministry for Europe and Foreign Affairs: visa regime](https://punetejashtme.gov.al/en/regjimi-i-vizave-per-te-huajt/)
 
 ## Sources & Verification
 
-- [Numbeo: Cost of Living in Tirana](https://www.numbeo.com/cost-of-living/in/Tirana) — rent, groceries, utilities, transit, dining, and household cost ranges for Tirana.
-- [Numbeo: Cost of Living in Podgorica](https://www.numbeo.com/cost-of-living/in/Podgorica) — rent, groceries, utilities, transit, dining, and household cost ranges for Podgorica.
-- [Expatistan: Cost of Living in Podgorica](https://www.expatistan.com/cost-of-living/podgorica) — additional citywide price comparisons for Podgorica.
-- [Expatistan: Cost of Living in Tirana](https://es.expatistan.com/cost-of-living/ciudad/tirana) — additional citywide price comparisons for Tirana.
-- [How Albania cost and visa context](https://youralbania.com/visa-costs) — Albania cost and long-stay planning context.
-- [Relocation Montenegro cost guide](https://www.relocationmontenegro.com/cost-of-living-in-montenegro) — Montenegro household-cost context.
-- [Kiplinger: How Far Your Money Goes in 2026](https://www.kiplinger.com/retirement/retirement-planning/how-far-your-money-goes-in-2026s-best-value-destinations) — retirement-budget comparison methodology.
+- [Numbeo: Cost of Living in Tirana](https://www.numbeo.com/cost-of-living/in/Tirana) — rent, utilities, transit, dining and groceries; 115 contributors, updated November 1, 2026; converted at about 81 per dollar.
+- [Numbeo: Cost of Living in Podgorica](https://www.numbeo.com/cost-of-living/in/Podgorica) — same categories; 62 contributors, updated November 1, 2026; converted at about 1.12 dollars per euro.
+- [U.S. State Department: Albania travel advisory](https://travel.state.gov/en/international-travel/travel-advisories/albania.html) — Level 2, August 25, 2026.
+- [U.S. State Department: Montenegro travel advisory](https://travel.state.gov/en/international-travel/travel-advisories/montenegro.html) — Level 1, August 26, 2026.
+- [State Department advisories data feed](https://cadataapi.state.gov/api/TravelAdvisories) — advisory levels and dates.
+- [AARP: Does Medicare cover me outside the US?](https://www.aarp.org/medicare/does-medicare-cover-me-outside-the-us/) — Original Medicare generally does not pay for care abroad.
+- [Albanian Ministry for Europe and Foreign Affairs: visa regime](https://punetejashtme.gov.al/en/regjimi-i-vizave-per-te-huajt/) — official starting point for Albanian entry and residence questions (page text did not load in our check).
+- [UK Government: Montenegro entry requirements](https://www.gov.uk/foreign-travel-advice/montenegro/entry-requirements) — 24-hour visitor registration rule.
 
-Information checked: November 1, 2026
+Information checked: November 2, 2026
 
 ## Related Golden Horizons Guides
 
 - [Healthcare Abroad for American Retirees](/healthcare-abroad-for-american-retirees)
-- [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-american-retirees)
+- [Retiring Abroad Checklist for Americans](/retiring-abroad-checklist-for-americans)
 - [Visa Rules for Americans Retiring Abroad](/visa-rules-for-americans-retiring-abroad)
 - [Taxes for Americans Retiring Overseas](/taxes-for-americans-retiring-overseas)
 
@@ -198,4 +196,4 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-For a $2,000 monthly retirement plan, Tirana is likely to stretch your housing dollars a little further, especially outside the center. Podgorica remains competitive on groceries, transit, and ordinary daily expenses, but the gap is close enough that your apartment choice and healthcare needs may decide it. Tirana fits the retiree who wants the widest possible housing cushion; Podgorica fits someone who finds its everyday rhythm more comfortable. Spend a month in each, price the life you actually live, and let the ordinary details make the choice.
+For a $2,000 monthly retirement plan, Podgorica comes out slightly cheaper on this month's Numbeo data, while Tirana wins on bus fares and offers a larger city. The gap is small and rests on user-submitted prices, so your apartment choice, residency answers and healthcare needs may decide it. Spend a month in each, price the life you actually live, and let the ordinary details make the choice.
