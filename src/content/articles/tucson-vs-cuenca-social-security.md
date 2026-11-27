@@ -4,7 +4,7 @@ category: Comparison
 slug: tucson-vs-cuenca-social-security
 date: 2026-11-23
 image: https://images.unsplash.com/photo-1698275525871-1d7630530b05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxUdWNzb24lMjBVU0ElMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc5NTQ4MzE5MHww&ixlib=rb-4.1.0&q=80&w=1080
-description: "Cuenca’s lower reported rents may help Social Security go further, but SSA payment rules, residency, healthcare, and local quotes matter."
+description: "A one-bedroom outside Cuenca's center runs about $412 a month vs $1,026 in Tucson (Numbeo). Check SSA rules, visa income and healthcare first."
 featured: false
 ---
 
@@ -12,123 +12,129 @@ featured: false
 
 **Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-> **THE SHORT ANSWER:** Reported one-bedroom rents in Cuenca run about $389–$537 monthly, compared with roughly $1,200–$1,500+ in many Tucson neighborhoods. That makes Cuenca the more promising place to test for a Social Security-based budget. But the figures come from different market sources, and healthcare, Ecuador residency costs, and individual Social Security payment eligibility remain major items to confirm.
+> **THE SHORT ANSWER:** A one-bedroom outside the center runs about $412 a month in Cuenca and $1,026 in Tucson, and Numbeo's single-person costs without rent are about $498 vs $1,054. That puts a Cuenca budget near $910 a month against about $2,080 in Tucson, which is close to the $2,071 average Social Security retired-worker benefit. The catch is that Medicare generally does not pay for care in Ecuador, the residency visa needs $1,446 a month in pension income, and these Numbeo figures come from 45 and 51 contributors, so treat them as a starting point.
 
-A difference of several hundred dollars in monthly rent can change the tone of retirement. It can mean more room for groceries, a meal out, or simply less pressure on a fixed income. On reported housing costs alone, Cuenca has the stronger case: its one-bedroom range sits well below what many Tucson neighborhoods now command.
+A gap of more than $1,100 a month can change retirement. It can mean room for groceries and a meal out instead of a monthly squeeze. On reported prices, Cuenca has the stronger case for a Social Security check.
 
-But rent is only the opening question. Staying in Tucson keeps healthcare, benefit administration, and everyday systems on familiar ground. Moving to Cuenca may lower the monthly outflow, yet asks you to confirm Social Security eligibility abroad, legal residency, insurance, and the life you would actually lead once the novelty wears off.
+But rent is only the first line. Staying in Tucson keeps Medicare, your doctors and your benefit paperwork on familiar ground. Moving to Cuenca asks you to confirm that SSA will pay you there, qualify for residency, and price your own health coverage.
 
 ## Retirement Snapshot
 
-**Primary decision:** Whether Cuenca’s lower reported day-to-day costs are worth the added complexity of living abroad instead of remaining in Tucson.  
+**Primary decision:** Whether Cuenca's lower costs are worth the added work of living abroad instead of staying in Tucson.
 
-**Best fit:** Retirees who can confirm continued Social Security payments abroad, meet Ecuador’s residency requirements, and are willing to gather current housing and healthcare quotes before committing.  
+**Best fit:** Retirees who can confirm continued Social Security payments in Ecuador, meet the visa income bar, and will get written healthcare quotes before signing a lease.
 
-**Biggest warning:** A lower rent figure is not a complete retirement budget. Healthcare, insurance, residency costs, and your personal eligibility to receive benefits abroad all need separate confirmation.  
+**Biggest warning:** Original Medicare usually does not cover care outside the U.S., and the Numbeo cost figures leave out health insurance.
 
-**Planning-budget lens:** Cuenca’s reported rent and everyday-cost ranges are lower, but Tucson and Cuenca figures do not come from one perfectly matched city-to-city budget study.  
+**Planning-budget lens:** Numbeo shows about $910 a month for rent outside the center plus everyday costs in Cuenca, against about $2,080 in Tucson. Both come from the same site, which makes the comparison fairer than mixing sources.
 
-**Residency:** Ecuador has retirement-oriented residency pathways, but confirm income thresholds and requirements with an Ecuadorian consulate.  
+**Visa income:** The pensioner visa requires a monthly pension of at least three times Ecuador's basic wage. Reported 2026 figure: $1,446, plus $250 for each dependent.
 
-**Healthcare:** Public and private options in Ecuador require individual eligibility and price checks; local insurance costs are not included in the reported Cuenca cost ranges.  
+**Healthcare:** Medicare Part B costs $202.90 a month in 2026. Ecuadorian private coverage needs its own quote.
 
-**Housing / daily life:** Cuenca uses U.S. dollars, so there is no currency conversion between a Tucson and Cuenca spending plan.  
+**Safety:** Ecuador is a State Department Level 2 country (Exercise Increased Caution), advisory dated August 17, 2026. Cuenca's province, Azuay, is not on the feed's Do Not Travel or Reconsider Travel lists.
 
-**Safety:** Review current U.S. State Department information for Ecuador and consider conditions relevant to the Cuenca area.
+## Cuenca vs Tucson Rent and Everyday Costs
 
-## The Rent Gap That Starts the Conversation
+Numbeo, updated November 20, 2026, lists these monthly figures for both cities:
 
-The first number most retirees will notice is housing. Recent Cuenca cost guides place a one-bedroom outside the city center at roughly **$389–$537 per month**. Recent Tucson market trackers commonly show one-bedroom rents of about **$1,200–$1,500+** in many neighborhoods.
+| Item | Cuenca | Tucson |
+|---|---|---|
+| 1-bedroom, city center | $555 | $1,434 |
+| 1-bedroom, outside center | $412 | $1,026 |
+| Basic utilities | $40 | $198 |
+| Internet (60+ Mbps) | $25 | $63 |
+| Single person, without rent | $498 | $1,054 |
+| Inexpensive restaurant meal | $3.50 | $19.50 |
 
-That does not mean every Cuenca apartment is a bargain or every Tucson apartment is out of reach. Neighborhood choice matters in both places, and the Cuenca figures are reported ranges from expat-oriented cost guides rather than a guaranteed lease offer. Still, housing is often the heaviest line in a retirement budget. This is a difference worth testing in person.
+Rent outside the center plus the single-person estimate gives about $910 in Cuenca and $2,080 in Tucson. That is a difference of roughly $1,170 a month.
 
-Cuenca’s other reported cost bands point in the same direction:
+Two limits apply. Numbeo's Cuenca page rests on 45 contributors and Tucson on 51, so a few prices can move the averages. And some Cuenca commenters say a few lines, such as taxi fares, are out of date. Use these as planning numbers, then get real quotes.
 
-- **Groceries for one person:** about **$300–$500 monthly** in reported expat cost baskets.
-- **Utilities and internet:** about **$100–$200 monthly**, depending on use and household setup.
-- **Local transportation:** roughly **$20–$60 monthly** in broad expat-budget estimates.
-- **Dining and everyday extras:** about **$150–$450 monthly**, depending on habits.
+## Social Security Abroad, Visa Income and the Questions to Settle First
 
-These are planning markers, not a fully verified monthly total. The reported ranges use different cost-guide methods, and uncertain healthcare costs are excluded. Your total can move quickly with housing standards, travel habits, mobility needs, and the medical coverage you need. Tucson may cost more at the start, but it also keeps the familiar parts of life close at hand.
+SSA's overseas guidance says your benefit is calculated in U.S. dollars and is not raised or cut because you live abroad. U.S. citizens can generally be paid in Ecuador, but check your own case with SSA's Payments Abroad Screening Tool before you count on it. SSA may also ask beneficiaries abroad to return a periodic questionnaire, so ask SSA what applies to you.
 
-## Social Security Abroad, Residency, and the Questions to Settle First
+Settle three questions in this order:
 
-A U.S. citizen may be able to receive Social Security while living abroad, including in eligible countries, but it is not automatic for every beneficiary or every destination. Before treating your benefit as portable income, use the Social Security Administration’s Payments Abroad Screening Tool and read its guidance on payments outside the United States.
+1. **Can your benefit continue in Ecuador?** Use the SSA screening tool and call SSA about your benefit type.
+2. **Can you qualify for residency?** Ecuador's foreign ministry says the pensioner visa needs a monthly pension of at least three Salarios Básicos Unificados (SBU), plus $250 a month for each dependent. A 2026 report puts the SBU at $482, which makes the bar $1,446. The page does not print the dollar figure, so confirm it with an Ecuadorian consulate.
+3. **Does the budget still work after health costs?** That needs a written insurance quote for your age.
 
-Then separate three questions that can easily blur together:
+**Proof of income:** The ministry page asks for a monthly pension paid from abroad. Ask the consulate whether an SSA benefit letter meets that test.
 
-1. **Can your benefits continue while you live outside the United States?** The SSA tool and country guidance address that question.
-2. **Can you legally live in Ecuador long term?** Ecuador has retirement and other residency routes, but confirm current income rules, documents, fees, and eligibility standards with an Ecuadorian consulate.
-3. **Will the resulting budget support your actual life?** That requires current rent quotes, a personal grocery basket, and healthcare or insurance pricing for your age and circumstances.
+Ecuador uses the U.S. dollar, so you skip currency conversion when you compare budgets.
 
-**Income requirement:** Ecuador’s retirement-oriented residency pathways have requirements that should be confirmed directly with an Ecuadorian consulate before you plan around them.
+## Healthcare: What You Keep in Tucson and What You Lose in Cuenca
 
-Cuenca’s use of U.S. dollars is quietly helpful if your income arrives in dollars. There is no exchange-rate calculation just to compare a Cuenca household budget with a Tucson one. That simplicity does not solve the residency or healthcare questions, but it removes one common moving part.
+At home in 2026, Original Medicare charges a $1,736 Part A deductible for each inpatient benefit period and a $283 Part B deductible, plus a $202.90 monthly Part B premium. Medigap can cover some of what those leave.
 
-Then there is healthcare. Tucson keeps you in the U.S. healthcare environment and preserves Medicare access for those who are eligible and remain in the United States. In Cuenca, public and private options exist, but you will want direct answers on access, eligibility, and private coverage before signing a long-term lease.
+Medicare says Original Medicare usually does not cover care outside the U.S., with narrow exceptions. Medicare also says some Medigap plans may cover emergency care when you travel abroad. That is travel cover, not a plan for living in Ecuador.
+
+In Cuenca you would pay for private insurance or care yourself. No Cuenca insurance prices were verified for this guide, so the $910 budget above leaves them out. Adding a monthly premium could narrow the gap. For the same reason, home may be cheaper than abroad for someone who has frequent care needs and Medicare plus Medigap already in place.
 
 ## Practical Comparison
 
-### Housing: Lower Reported Costs, Different Lease Realities
+### Housing: Lower Prices, Different Leases
 
-**What the evidence says:**  
-Cuenca’s reported one-bedroom range of about $389–$537 is well below the roughly $1,200–$1,500+ commonly reported for many Tucson neighborhoods. Both cities have meaningful location-by-location variation.
+**What the evidence says:**
+Numbeo shows a Cuenca one-bedroom at $412 outside the center and $555 in the center. Tucson runs $1,026 and $1,434 on the same site.
 
-**What to check next:**  
-Request current, like-for-like one-bedroom quotes in Cuenca’s center and outside-center areas. Then compare them with Tucson listings that meet your actual needs for space, accessibility, furnishings, utilities, and lease terms.
+**What to check next:**
+Ask two Cuenca landlords for a written one-bedroom quote with utilities included or listed. Compare each with a Tucson listing of the same size and furnishing.
 
-### Groceries: Make the Budget Personal
+### Everyday Costs: Make the Budget Personal
 
-**What the evidence says:**  
-Reported Cuenca grocery baskets for one person run about $300–$500 monthly, but household habits and source methods differ. A fully matched Tucson grocery basket was not available in the same format.
+**What the evidence says:**
+Numbeo puts a single person's monthly costs without rent at about $498 in Cuenca and $1,054 in Tucson. It does not include health insurance.
 
-**What to check next:**  
-Build a short grocery list you would genuinely use and price it with current Cuenca information and the Tucson stores you would actually shop.
+**What to check next:**
+Price your own 20-item grocery list at a Cuenca supermarket during a visit and compare it with your Tucson receipts.
 
 ### Social Security: Confirm Before You Count It
 
-**What the evidence says:**  
-The SSA allows eligible beneficiaries to continue receiving payments in many countries, subject to country and beneficiary conditions.
+**What the evidence says:**
+SSA says benefits are paid in U.S. dollars and are not changed for living abroad. The average retired-worker benefit was about $2,071 a month in 2026, so your own amount may be higher or lower.
 
-**What to check next:**  
-Use the SSA Payments Abroad Screening Tool and review the SSA publication on payments outside the United States before treating Social Security as confirmed income for a Cuenca move.
+**What to check next:**
+Run the SSA screening tool for Ecuador. Log in to your my Social Security account and note your exact monthly amount.
 
-### Healthcare: Familiarity Has Value
+### Healthcare: Medicare Stops at the Border
 
-**What the evidence says:**  
-Tucson keeps retirees within the U.S. healthcare environment. Cuenca requires separate checks on private coverage, public-system access, and the costs that apply to a resident in your circumstances.
+**What the evidence says:**
+Original Medicare usually does not pay for care in Ecuador. At home, you face a $283 Part B deductible and a $1,736 Part A deductible per hospital stay.
 
-**What to check next:**  
-Obtain current private health-insurance options and prices for your age before adding Cuenca to a long-term retirement plan.
+**What to check next:**
+Ask your Medigap insurer in writing what it pays for emergency care abroad. Request a private Ecuador quote for your age and conditions.
 
 ### Residency and Safety: The Work Behind the Lower Rent
 
-**What the evidence says:**  
-Ecuador residency requirements and safety considerations are separate from lower day-to-day cost estimates. Neither is answered by a rent comparison.
+**What the evidence says:**
+The pensioner visa needs three SBU a month, reported as $1,446 for 2026, plus $250 per dependent. The State Department rates Ecuador Level 2 as of August 17, 2026.
 
-**What to check next:**  
-Confirm the residency route that fits you with an Ecuadorian consulate. Review current U.S. State Department information for Ecuador, including details relevant to the Cuenca area.
+**What to check next:**
+Call an Ecuadorian consulate and ask whether an SSA benefit letter proves the pension. Read the full Ecuador advisory for crime and kidnapping warnings.
 
 ## The Trade-Off
 
-Cuenca may offer a meaningful reduction in reported housing and everyday costs, all in U.S. dollars. For an eligible beneficiary, Social Security may continue abroad after you confirm the applicable SSA conditions. That combination is why Cuenca deserves a closer look.
+**What you may gain:** About $1,170 a month in lower rent and everyday costs at Numbeo prices, paid in the same U.S. dollars your benefit arrives in. That is roughly 56% less than the Tucson figure.
 
-Tucson offers something less visible in a rent chart: continuity. Healthcare, benefit administration, housing, and daily errands remain within systems you already know. The trade-off is not simply cheap versus expensive. It is lower reported monthly costs versus the effort of building a reliable life in another country.
+**What you may give up:** Medicare for routine care, familiar doctors, and the simple paperwork of staying put. You also take on a visa income test and SSA checks from abroad.
 
-If your priority is keeping life simple, Tucson has the advantage. If your priority is giving a fixed income more room and you are prepared to do the residency, healthcare, and housing homework, Cuenca may be worth a serious trial stay.
+Tucson offers continuity. Cuenca offers breathing room if you do the homework. If you want simplicity and your health needs are steady, Tucson wins. If you want your check to go further and can plan for private coverage, a trial stay in Cuenca is worth it.
 
 ![Tucson and Cuenca cityscape](https://images.unsplash.com/photo-1611460414660-9b102659991e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxDdWVuY2ElMjBFY3VhZG9yJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzk1NDgzMTkxfDA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## The Golden Horizons 30-Day Test
 
-- Use the [SSA Payments Abroad Screening Tool](https://www.ssa.gov/international/payments_outsideUS.html) to check whether your benefits can continue in Ecuador under your circumstances.
-- Read SSA’s publication, [Your Payments While You Are Outside the United States](https://www.ssa.gov/pubs/EN-05-10137.pdf), and note the questions that apply to your benefit type.
-- Request current one-bedroom rental quotes in Cuenca’s center and outside-center areas instead of relying on a single online range.
-- Pull comparable current one-bedroom listings in Tucson through a local market source. Compare square footage, furnishings, utilities, and lease terms—not just the advertised rent.
-- Create a personal Cuenca grocery basket using current data from [Expatistan](https://www.expatistan.com/cost-of-living/cuenca) or [Expat.com](https://www.expat.com/en/guide/south-america/ecuador/cuenca/).
-- Get current private health-insurance information for your age and review current U.S. State Department guidance for Ecuador before planning a longer stay.
+- Run the [SSA Payments Abroad Screening Tool](https://www.ssa.gov/international/payments_outsideUS.html) for Ecuador and write down the result for your benefit type.
+- Read [SSA's guide to payments outside the United States](https://www.ssa.gov/pubs/EN-05-10137.pdf) and note what it says about periodic questionnaires.
+- Ask two Cuenca landlords for a written one-bedroom quote, in and outside the center, and compare with [Numbeo's Cuenca page](https://www.numbeo.com/cost-of-living/in/Cuenca).
+- Pull three Tucson one-bedroom listings of the same size and set them next to [Numbeo's Tucson page](https://www.numbeo.com/cost-of-living/in/Tucson).
+- Email your Medigap insurer and ask what it pays for emergency care abroad. Request a private health quote for Ecuador.
+- Call an Ecuadorian consulate and ask for the pensioner visa document list. Then read the [State Department's Ecuador advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ecu.html).
 
-The part to test first is not the brochure version of Cuenca. It is the ordinary version: the apartment you could rent, the coverage you could buy, and the amount of your Social Security payment that remains after the essentials are paid.
+The test is the ordinary version of Cuenca: the apartment you could rent, the coverage you could buy, and how much of your check is left after the essentials.
 
 ![Tucson and Cuenca daily life](https://images.unsplash.com/photo-1592240820068-ca0da7d893fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxDdWVuY2ElMjBFY3VhZG9yJTIwc3RyZWV0JTIwbGlmZXxlbnwwfDB8fHwxNzk1NDgzMTkxfDA&ixlib=rb-4.1.0&q=80&w=1080)
 
@@ -136,41 +142,44 @@ The part to test first is not the brochure version of Cuenca. It is the ordinary
 
 ### Can an American receive Social Security while living in Cuenca?
 
-Possibly. The Social Security Administration permits payments abroad in many eligible countries, but eligibility depends on the country and the beneficiary’s circumstances. Check the tool before assuming your payments will continue. ([SSA Payments Abroad Screening Tool](https://www.ssa.gov/international/payments_outsideUS.html))
+Yes, U.S. citizens can generally be paid in Ecuador, and SSA does not raise or cut your benefit for living abroad. The average retired-worker benefit is $2,071 a month in 2026. Run SSA's screening tool for your own case before you move. ([ssa.gov](https://www.ssa.gov/international/payments_outsideUS.html))
 
-### What does a one-bedroom apartment cost in Cuenca?
+### What does a one-bedroom apartment cost in Cuenca compared with Tucson?
 
-Reported 2026 cost-guide ranges place a one-bedroom outside Cuenca’s city center at about $389–$537 monthly, with location affecting the figure. Treat it as a planning range rather than a guaranteed lease offer, and request current local quotes. ([Expatistan: Cost of Living in Cuenca](https://www.expatistan.com/cost-of-living/cuenca))
+Numbeo lists a Cuenca one-bedroom at $555 in the center and $412 outside it, against $1,434 and $1,026 in Tucson. Those averages come from 45 and 51 contributors, so get local quotes. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Cuenca))
 
-### How does Tucson rent compare with Cuenca rent?
+### Does Medicare cover me in Ecuador?
 
-Recent Tucson market trackers commonly show one-bedroom rents around $1,200–$1,500+ in many neighborhoods, while reported Cuenca one-bedroom ranges are far lower. Because the sources do not use identical methods, use the comparison as a reason to investigate rather than as a final budget verdict. ([Apartments.com: Tucson Rent Market Trends](https://www.apartments.com/rent-market-trends/tucson-az/))
+Usually no. Original Medicare does not cover care outside the U.S. except in rare cases, though some Medigap plans may cover emergency care abroad. At home in 2026 you pay a $283 Part B deductible. ([medicare.gov](https://www.medicare.gov/coverage/travel-outside-the-u.s.))
 
-### Does Cuenca use U.S. dollars?
+### How much income do you need for Ecuador's pensioner visa?
 
-Yes. Ecuador uses the U.S. dollar, so you do not need a currency conversion for ordinary Tucson-versus-Cuenca budget planning. Local prices and residency costs still need checking. ([Expat.com: Cuenca Guide](https://www.expat.com/en/guide/south-america/ecuador/cuenca/))
+You need a monthly pension of at least three SBU, reported as $1,446 for 2026, plus $250 for each dependent. The official page names the three-SBU rule but not the dollar amount, so confirm with a consulate. ([gob.ec](https://www.gob.ec/mremh/tramites/concesion-visa-residencia-temporal-jubilado))
 
-### Are there retirement visa options for Ecuador?
+### Is Ecuador safe for retirees?
 
-Ecuador has retirement-oriented and other residency pathways discussed in expatriate guidance. Confirm the relevant income requirements, documents, fees, and eligibility criteria directly with an Ecuadorian consulate before making plans. ([Rewire Abroad: Cuenca, Ecuador](https://www.rewireabroad.com/country/ecuador/city/cuenca-ecuador))
+Ecuador is Level 2 (Exercise Increased Caution) as of August 17, 2026, with Do Not Travel areas in Guayaquil, Esmeraldas and other places. Cuenca's province, Azuay, is not on the feed's Do Not Travel or Reconsider Travel lists. ([travel.state.gov](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ecu.html))
 
 ## Check Today's Information Before You Decide
 
 - [SSA Payments Abroad Screening Tool](https://www.ssa.gov/international/payments_outsideUS.html)
-- [SSA: Your Payments While You Are Outside the United States](https://www.ssa.gov/pubs/EN-05-10137.pdf)
-- [Expatistan: Cost of Living in Cuenca](https://www.expatistan.com/cost-of-living/cuenca)
-- [Expat.com: Living in Cuenca](https://www.expat.com/en/guide/south-america/ecuador/cuenca/)
-- [Rewire Abroad: Cuenca, Ecuador](https://www.rewireabroad.com/country/ecuador/city/cuenca-ecuador)
-- [Apartments.com: Tucson Rent Market Trends](https://www.apartments.com/rent-market-trends/tucson-az/)
+- [Numbeo: Cost of Living in Cuenca](https://www.numbeo.com/cost-of-living/in/Cuenca)
+- [Numbeo: Cost of Living in Tucson](https://www.numbeo.com/cost-of-living/in/Tucson)
+- [Medicare.gov: Costs](https://www.medicare.gov/basics/costs/medicare-costs)
+- [State Department: Ecuador Travel Advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ecu.html)
 
 ## Sources & Verification
 
-- [Social Security Administration: Payments Abroad](https://www.ssa.gov/international/payments_outsideUS.html) — country-specific guidance and the Payments Abroad Screening Tool.
-- [Social Security Administration: Your Payments While You Are Outside the United States](https://www.ssa.gov/pubs/EN-05-10137.pdf) — conditions affecting Social Security payments outside the United States.
-- [Expatistan: Cost of Living in Cuenca](https://www.expatistan.com/cost-of-living/cuenca) — reported Cuenca cost and rent benchmarks.
-- [Expat.com: Cuenca Guide](https://www.expat.com/en/guide/south-america/ecuador/cuenca/) — Cuenca expat-oriented cost information.
-- [Apartments.com: Tucson Rent Market Trends](https://www.apartments.com/rent-market-trends/tucson-az/) — Tucson rental-market context.
-- [MLS of Southern Arizona Rental Report](https://mlssaz.com/wp-content/uploads/2024/01/MLSSAZ_RNT_2023-12.pdf) — Tucson-area rental-market context.
+- [Social Security Administration: Payments Abroad](https://www.ssa.gov/international/payments_outsideUS.html) — country guidance and screening tool.
+- [Social Security Administration: Your Payments While You Are Outside the United States](https://www.ssa.gov/pubs/EN-05-10137.pdf) — how payments work abroad.
+- [Numbeo: Cuenca](https://www.numbeo.com/cost-of-living/in/Cuenca) — rent and everyday costs, updated November 20, 2026 (45 contributors).
+- [Numbeo: Tucson](https://www.numbeo.com/cost-of-living/in/Tucson) — rent and everyday costs, updated November 20, 2026 (51 contributors).
+- [Medicare.gov: Medicare costs](https://www.medicare.gov/basics/costs/medicare-costs) — 2026 Part A and Part B figures.
+- [Medicare.gov: Travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u.s.) — coverage abroad and Medigap.
+- [Ecuador foreign ministry: pensioner visa](https://www.gob.ec/mremh/tramites/concesion-visa-residencia-temporal-jubilado) — three-SBU income rule and $250 per dependent.
+- [State Department: Ecuador Travel Advisory](https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ecu.html) — Level 2, August 17, 2026.
+
+Information checked: November 24, 2026
 
 ## Related Golden Horizons Guides
 
@@ -187,6 +196,6 @@ Golden Horizons helps Americans approaching retirement or already retired explor
 
 **Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-Cuenca’s reported housing and everyday-cost ranges make it the more plausible place for American Social Security to stretch further than in Tucson. It may suit someone ready to trade familiarity for a lower reported cost base and willing to verify every important detail before moving.
+Cuenca's prices make it the more plausible place for a Social Security check to stretch, by roughly $1,170 a month at Numbeo prices. Healthcare is the open item: Medicare will not follow you, and no Cuenca insurance price was verified.
 
-Tucson may be the better fit if straightforward access to familiar U.S. systems matters more than the rent difference. Test Cuenca for a month, price the life you would actually live, and let the answer come from more than one attractive apartment listing.
+Tucson may fit better if you have steady medical needs and value Medicare plus your current doctors. Test Cuenca for a month, price the life you would actually live, and let the numbers decide.
