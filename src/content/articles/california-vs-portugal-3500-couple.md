@@ -1,358 +1,164 @@
 ---
-title: "California vs. Portugal: Can Two Retire on $3,500 a Month in 2026?"
+title: "California vs Portugal for American Retirees: Can $3,500/month Sustain a Couple in 2026?"
 category: Comparison
 slug: california-vs-portugal-3500-couple
 date: 2026-11-23
-updated: 2026-11-24
-image: "https://images.unsplash.com/photo-1532546430529-1be093fd5aaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxQb3J0dWdhbCUyMGNvYXN0fGVufDB8MHx8fDE3OTUzOTE2NzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
-description: "Can a retired couple live on $3,500 a month in California or Portugal? Compare housing, healthcare, residency, taxes, and the costs that can derail a budget."
+image: https://images.unsplash.com/photo-1532546430529-1be093fd5aaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxQb3J0dWdhbCUyMGNvYXN0fGVufDB8MHx8fDE3OTUzOTE2NzF8MA&ixlib=rb-4.1.0&q=80&w=1080
+description: "Can $3,500 a month carry a retired couple? San Diego one-bedrooms rent near $1,972; Lisbon outside the center about $1,176. Medicare and visa facts checked."
 featured: false
 ---
 
-# California vs. Portugal: Can Two Retire on $3,500 a Month in 2026?
+# California vs Portugal for American Retirees: Can $3,500/month Sustain a Couple in 2026?
 
-In California, the retirement conversation can start with the weather and end with the rent. Portugal promises a different conversation: a smaller apartment, a walk to the market, lunch somewhere you don’t need a parking validation.
+**Golden Horizons Status:** 🟡 WORTH TESTING — VERIFY COSTS
 
-Lovely. But will the money last?
+A San Diego one-bedroom rents for a median $1,972 a month. Add utilities and internet and the apartment alone takes about two-thirds of what a couple has to spend.
 
-The short answer: $3,500 a month may work for a couple in parts of Portugal, provided the rent is modest and healthcare, taxes, and transportation fit the plan. It is not a comfortable-budget guarantee for central Lisbon, Cascais, or a sought-after coastal address.
+Lisbon looks cheaper on paper, but not everywhere. A one-bedroom in the city center averages about $1,571, while one outside the center averages about $1,176. Your rent, your visa paperwork and your health coverage decide whether your budget holds up in either place.
 
-California deserves a fair hearing, too. A couple renting in San Diego faces a very different calculation from a couple in Fresno—or homeowners whose mortgage is already paid off.
-
-Portugal does not automatically win because the coffee is cheaper. The winner is the place where your housing, healthcare, taxes, and ordinary Tuesday fit inside your income.
-
-> Golden Horizons status: WORTH TESTING — VERIFY COSTS
->
-> Portugal could stretch your retirement income, particularly outside expensive housing markets. Compare specific neighborhoods, get personal healthcare quotes, and confirm your after-tax income before committing.
+> **THE SHORT ANSWER:** A couple on $3,500 a month keeps about $1,200 after a typical San Diego rent and utilities, but about $2,150 after Lisbon rent outside the center. Portugal's D7 visa asks a couple to show about $1,504 a month in passive income, and Original Medicare will not pay for routine care there. The catch: Lisbon's center costs nearly as much as San Diego, and the Medicare Part B premium of $202.90 per person keeps coming out of your check.
 
 ## Retirement Snapshot
 
-- Primary decision: Which specific community offers a workable retirement for two on $3,500 a month?
-- Best fit: Couples flexible about location, housing size, and daily routine.
-- Biggest budget risk: Choosing an apartment before pricing healthcare, taxes, transportation, and trips home.
-- Housing: Compare rent with rent, not California rent with Portugal’s total living expenses.
-- Residency: Portugal’s D7 is a potential route for qualifying retirees, but approval requires more than an affordable lifestyle.
-- Healthcare: Medicare generally does not cover routine care in Portugal.
-- Currency: Dollar income must cover euro expenses, even when the exchange rate moves against you.
-- First step: Build two household budgets using properties you could actually rent.
+**Primary decision:** Does the same fixed income stretch further in a specific Portuguese neighborhood than in your California city?  
+**Best fit:** Couples with steady monthly income who will rent outside central Lisbon and are willing to carry private health insurance.  
+**Biggest warning:** Original Medicare usually does not cover care outside the U.S., so you pay for care in Portugal yourself while the Part B premium keeps coming out of your check.  
+**Safety:** The U.S. State Department rates Portugal Level 1, Exercise Normal Precautions (advisory dated December 22, 2025). Its summary lists no region with a higher level.  
+**Residency:** The D7 income bar is tied to Portugal's 2026 minimum wage, about $1,003 a month, so it rises when that wage rises.  
+**Healthcare at your age:** Expect to buy a private policy in Portugal; quotes depend on age and plan.  
+**Currency:** Numbeo converts euros at about $1.09. Exchange rates move, so your real cost moves with them.
 
-## First, What Does “$3,500 a Month” Mean?
+## What the Rent and Daily Costs Look Like in San Diego and Lisbon
 
-For this comparison, $3,500 means money available to spend after income taxes and any deductions already taken from your retirement checks.
+Start with the apartment. These are numbers you can check yourself.
 
-If $3,500 is your gross income, start again with the amount that reaches your bank account. And if a Medicare premium has already been deducted from Social Security, don’t count that same premium twice.
+| Monthly cost | San Diego | Lisbon |
+|---|---|---|
+| 1BR, city center | $3,299 | $1,571 |
+| 1BR, outside center | $2,140 | $1,176 |
+| Basic utilities (85 m2) | $259 | $145 |
+| Internet | $68 | $30 |
+| Public transit pass | $72 | $44 |
+| Inexpensive restaurant meal | $25 | $16 |
 
-We’re also assuming two adults renting a modest one-bedroom, no dependents, and a separate fund for moving costs and emergencies.
+These come from Numbeo San Diego (1,179 entries from 110 contributors, updated November 21, 2026) and Numbeo Lisbon (2,265 entries from 215 contributors, updated November 20, 2026). Lisbon prices are Numbeo's euro figures converted at about $1.09.
 
-That last point matters. A monthly budget is not a relocation fund.
+Apartment List puts the median San Diego one-bedroom at $1,972 in November 2026. Numbeo lists Los Angeles one-bedrooms at $2,192 outside the center and $2,522 in the center.
 
-Flights, rental deposits, visa expenses, temporary accommodation, and furnishing an apartment need their own money. If moving eats your entire emergency fund, the monthly budget is only part of the problem.
+Do the math for a couple. A San Diego apartment at the Apartment List median, plus Numbeo utilities and internet, comes to about $2,299. That leaves about $1,200 for food, car or transit, insurance and everything else.
 
-## Start With Housing—Then Compare the Rest
+In Lisbon, rent outside the center plus utilities and internet comes to about $1,351. That leaves about $2,150. Numbeo estimates a single person's monthly spending in Lisbon, excluding rent, at about $826. A second person adds to that, so treat the $2,150 as a ceiling and not a surplus.
 
-Can $3,500 a month support two retirees? Start with the biggest bill: the place you’ll call home.
+Central Lisbon at $1,571 narrows the gap fast. Neighborhood choice matters more than country choice.
 
-California’s rental costs vary dramatically. Here is how three cities compare for a one-bedroom apartment.
+## Medicare, D7 Residency and Taxes for a Couple Moving to Portugal
 
-### Fresno
+**Medicare does not travel well.** Medicare.gov says it usually does not cover health care outside the U.S., with a few exceptions, and drug plans do not cover prescriptions you buy abroad.
 
-- Average monthly one-bedroom rent: $1,200.
-- Remaining from a $3,500 budget: $2,300.
+**You still pay at home.** For 2026, CMS sets the standard Part B premium at $202.90 a month, so a couple pays $405.80 together. The Part B deductible is $283 and the Part A hospital deductible is $1,736 per benefit period. If you stay enrolled, that money goes out before you buy a Portuguese policy. At 65 or older, staying home with Medicare and a Medigap plan may cost you less than Portuguese private insurance plus the Medicare premium. Get both quotes before you decide.
 
-### San Diego
+**D7 visa.** The income bar follows Portugal's minimum wage, which the Portuguese government set at about $1,003 a month for 2026. Guides such as Portugalist report that a couple needs 150% of that, about $1,504 a month, plus savings of about $18,050 (12 months of income). Those are third-party readings. Your consulate has the final word, so ask it for its current checklist in writing.
 
-- Average monthly one-bedroom rent: $2,322.
-- Remaining from a $3,500 budget: $1,178.
+**Taxes.** The IRS says U.S. citizens and resident aliens living abroad are taxed on worldwide income and must file returns. Moving does not end your U.S. filing. Portugal's treatment of foreign pension income has changed in recent years, so ask a cross-border tax adviser about your own mix of Social Security, pension and IRA income.
 
-### San Jose
+## Practical Comparison
 
-- Average monthly one-bedroom rent: $2,500.
-- Remaining from a $3,500 budget: $1,000.
+### Housing cost sensitivity
 
-Those remaining amounts are not spending money. They still have to cover groceries, utilities, transportation, healthcare, entertainment, and unexpected bills.
+**What the evidence says:**  
+A San Diego one-bedroom costs $1,972 at the median, and Numbeo lists Lisbon at $1,176 outside the center and $1,571 in the center.
 
-In Fresno, a couple has considerably more room to work with. In San Diego or San Jose, rent alone takes roughly two-thirds or more of the entire budget.
+**What to check next:**  
+Get two 12-month lease quotes in Lisbon, one central and one outside the center, and compare them with what you pay at home today.
 
-Sources: Zillow’s rental-market pages for [Fresno](https://www.zillow.com/rental-manager/market-trends/fresno-ca/), [San Diego](https://www.zillow.com/rental-manager/market-trends/san-diego-ca/), and [San Jose](https://www.zillow.com/rental-manager/market-trends/san-jose-ca/), reviewed November 24, 2026. These are market averages for one-bedroom apartments, not quotes for specific homes.
+### Healthcare access and cost
 
-### Give Portugal the Same Test
+**What the evidence says:**  
+Original Medicare usually does not pay for care outside the U.S., yet the 2026 Part B premium of $202.90 per person still applies.
 
-Comparing California rent with Portugal’s entire monthly budget would be misleading. So would comparing dollars with euros without accounting for the exchange rate.
+**What to check next:**  
+Ask two insurers for a quote for a couple at your ages. Ask whether they cover pre-existing conditions and which hospital near your Portuguese address is in network.
 
-Instead, find a Portuguese apartment you could actually rent year-round. Convert that rent into dollars using the exchange rate and fees you would pay. Then subtract it from the same $3,500 budget.
+### Residency pathway
 
-For illustration:
+**What the evidence says:**  
+The D7 threshold tracks the national minimum wage of about $1,003 a month, which puts a couple near $1,504 a month in passive income by third-party readings.
 
-- Rent of $1,000 leaves $2,500 for everything else.
-- Rent of $1,300 leaves $2,200.
-- Rent of $1,600 leaves $1,900.
-- Rent of $2,000 leaves $1,500.
+**What to check next:**  
+Call or email the Portuguese consulate that serves your state and ask for the written D7 checklist, including the savings amount and insurance rules.
 
-These are hypothetical dollar amounts, not current Portuguese rental quotes.
+### Currency and budget risk
 
-If you secure a suitable apartment for the equivalent of $1,300 a month, you would have $2,200 left for other expenses. That is more breathing room than the San Diego example—but slightly less than the Fresno example.
+**What the evidence says:**  
+Lisbon prices here use Numbeo's rate of about $1.09 per euro. A 5% move in the rate shifts $1,351 of rent and utilities by about $68.
 
-Now the comparison is fair: rent against rent, with everything expressed in dollars.
+**What to check next:**  
+Record the European Central Bank reference rate today, then rerun your budget at a rate 5% less favorable.
 
-Housing is only round one. Portugal wins financially only if the complete budget works.
+## The Trade-Off
 
-## A Sample Portugal Budget for Two
+**What you may gain:** About $950 more room each month than San Diego if you rent outside central Lisbon, and a residency route through the D7 if your passive income qualifies.
 
-Here is one spending plan to test against actual quotes.
+**What you may give up:** Medicare coverage for everyday care, a familiar tax and healthcare system, and any cushion if the dollar weakens against the euro.
 
-These figures are illustrative allowances, not market averages, available rentals, or personal insurance quotes. All amounts are in U.S. dollars.
+The test is not the view. It is the apartment you can sign, the doctor you can reach and the bill that arrives every month.
 
-- Rent: $1,100.
-- Utilities, internet, and phones: $220.
-- Groceries and household supplies: $480.
-- Local transportation, without owning a car: $120.
-- Healthcare allowance: $400.
-- Restaurants, entertainment, and personal spending: $250.
-- Fund for visits to the United States: $200.
-- Irregular expenses and contingency: $350.
+![California and Portugal cityscape](https://images.unsplash.com/photo-1531772337062-9d94547f333f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwxfHxQb3J0dWdhbCUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc5NTQ3MDc0MHww&ixlib=rb-4.1.0&q=80&w=1080)
 
-Total planned monthly spending: $3,120.
+## The Golden Horizons 30-Day Test
 
-Remaining margin from $3,500: $380.
+- Email the Portuguese consulate serving your state and ask for its current written D7 checklist, including savings and insurance rules.
+- Get two 12-month rental quotes for a one-bedroom in Lisbon: one central and one outside the center.
+- Request two private health-insurance quotes for a couple at your ages and ask each insurer about pre-existing conditions.
+- Call Medicare at 1-800-MEDICARE and ask what you would owe in Part B premiums if you keep coverage while living abroad.
+- Write down the European Central Bank euro-to-dollar rate today and rerun your budget at a rate 5% weaker.
+- Pull your last three months of California spending and compare it line by line with the Lisbon table above.
 
-The worksheet’s job is to expose weak spots.
+At the end you will have two real budgets in front of you, not a country comparison.
 
-Can you find a suitable year-round apartment for the euro equivalent of $1,100? Will $400 cover your actual premiums, prescriptions, and expected out-of-pocket care? Can you live comfortably without a car?
-
-Until those questions have answers, this is a planning exercise—not proof that the move is affordable.
-
-Raise the rent by $300 and the remaining margin falls to $80. Add an unexpectedly expensive prescription or a trip home, and “comfortable” becomes “we need to talk about the budget.”
-
-A plan that works only when nothing goes wrong is not much of a retirement plan.
-
-## Where Portugal Has the Best Chance of Winning
-
-Portugal’s strongest case is usually not “the same California lifestyle, only discounted.”
-
-It is a different daily routine.
-
-A smaller home. More errands on foot. Fewer car expenses, where the location allows it. Neighborhood restaurants rather than tourist addresses. Flexibility about which town gets written on the envelope.
-
-Retirement guidance points budget-conscious newcomers beyond Lisbon and Cascais toward places such as Coimbra, the Silver Coast, and smaller inland communities.
-
-But lower housing costs can come with trade-offs: more driving, fewer English-speaking services, or additional heating needs.
-
-Source: [Expatica’s guide to retiring in Portugal as an American](https://www.expatica.com/pt/moving/visas/retiring-in-portugal-as-an-american-2175013/).
-
-Before choosing an apartment, ask:
-
-- Can we reach groceries, a pharmacy, and routine medical care without driving?
-- Is this genuinely a year-round lease?
-- What does the apartment cost to heat and cool?
-- Are there stairs between us and the front door?
-- Would we enjoy this neighborhood when we aren’t sightseeing?
-
-Visit outside your favorite season, too. A bright terrace in June tells you very little about how an older apartment feels in February.
-
-## Where California Can Still Win
-
-California has an advantage that is easy to overlook: you may already have a life there.
-
-Your doctor knows your history. Your friends know when to show up. You know which freeway to avoid and which supermarket has the good tomatoes.
-
-Those things don’t appear on a rent chart. They still count.
-
-Financially, the comparison changes if you own your home outright, have a favorable existing lease, or can move to a less expensive California community.
-
-If you own, compare your actual property tax, insurance, maintenance, utilities, and association fees with the full cost of renting in Portugal.
-
-Don’t compare a paid-off California house with an expensive California apartment you would never rent.
-
-Portugal may still come out ahead. It just needs to win the comparison you actually face.
-
-## Healthcare: Get the Quote Before You Fall in Love With the Apartment
-
-Medicare is not your everyday healthcare plan in Portugal.
-
-According to [Medicare’s guidance on coverage outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf), foreign coverage is limited. In most situations, Medicare will not pay for care received abroad.
-
-A few exceptions exist. They do not amount to routine coverage for retirement in Portugal.
-
-Portugal’s public system, the Serviço Nacional de Saúde, or SNS, is separate. Eligible legal residents can generally access it after completing the required registration. Visa-stage insurance and access to resident healthcare are not the same thing, and many retirees use private insurance alongside public care.
-
-Source: [Expatica’s guide for American retirees](https://www.expatica.com/pt/moving/visas/retiring-in-portugal-as-an-american-2175013/).
-
-The useful question is not, “Is Portuguese healthcare cheap?”
-
-It is, “What will healthcare cost for the two of us, with our ages, prescriptions, and medical histories?”
-
-Get written answers about:
-
-- Whether both applicants will be accepted.
-- How pre-existing conditions are handled.
-- Deductibles, copayments, exclusions, and annual limits.
-- Hospitals and specialists near the proposed home.
-- Renewal terms as you get older.
-- Coverage during visits to the United States.
-
-Treat the healthcare allowance in the sample budget as provisional until you have personal quotes.
-
-## The D7: Permission to Move, Not Proof You Can Afford It
-
-Portugal’s D7 residence visa is a common route for retirees with recurring passive income, including pensions and qualifying investment income.
-
-Applicants must satisfy financial and documentation requirements. Income alone does not complete the application.
-
-Current 2026 guidance uses a €920 monthly base for the main applicant, plus 50% for a spouse or additional adult. That gives a couple an indicative income floor of €1,380 per month.
-
-Sources: [CSC Advogada’s retirement visa guidance](https://www.cscadvogada.com/portugal-retirement-visa) and [Expatica’s American retirement guide](https://www.expatica.com/pt/moving/visas/retiring-in-portugal-as-an-american-2175013/).
-
-Verify the current checklist with the consular service handling your application. Ask about income evidence, accommodation, insurance, background checks, and proof of funds.
-
-> Visa eligibility answers whether your application may qualify. It does not answer whether you will enjoy living on the money left over.
-
-A couple can clear the income threshold and still struggle with the apartment they want.
-
-Start the residency work early. Falling for a rental first and investigating the paperwork afterward is an expensive way to create suspense.
-
-## Taxes: Leave the Old Portugal Sales Pitch Behind
-
-If an article promises an easy Portuguese retirement tax break without discussing when you arrive and which rules apply, check its date.
-
-Portugal’s old non-habitual resident regime, or NHR, is no longer generally available to new arrivals, although qualifying existing and transitional beneficiaries may retain benefits.
-
-New retirees should not build a budget around the treatment described in older relocation stories.
-
-Source: [Kiplinger’s guide to retiring in Portugal](https://www.kiplinger.com/retirement/happy-retirement/where-to-retire-living-in-portugal).
-
-Moving abroad also does not switch off U.S. tax obligations.
-
-The [IRS explains that U.S. citizens living abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad) generally remain subject to U.S. tax rules on worldwide income, with filing requirements determined by their circumstances.
-
-Social Security, private pensions, government pensions, traditional retirement-account withdrawals, and Roth distributions should not all be tossed into one bucket labeled “retirement income.”
-
-Before moving, ask a qualified U.S.–Portugal tax adviser to model your actual income mix. If you are leaving California, include a review of your state-residency position.
-
-Get the after-tax number first. Then decide what you can spend on the view.
-
-## Your Income Is in Dollars. Your Landlord Wants Euros.
-
-Currency is another reason to leave breathing room.
-
-Here is a hypothetical example—not a current exchange-rate quote:
-
-- If $1 buys €0.90, then $3,500 buys €3,150.
-- If $1 buys €0.85, then $3,500 buys €2,975.
-- If $1 buys €0.80, then $3,500 buys €2,800.
-
-These amounts are before transfer fees.
-
-Between the first and last scenario, the same dollar income buys €350 less each month.
-
-Nothing about your lifestyle has changed. The money simply doesn’t go as far.
-
-Test the budget at a less favorable exchange rate. If it immediately falls apart, the rent is probably too ambitious.
-
-## The Golden Horizons 30-Day Research Test
-
-Before giving notice, selling a house, or announcing your new life over Thanksgiving dinner, do the less photogenic work.
-
-### 1. Pick Two Portuguese Locations
-
-Choose one place that excites you and one that looks financially sensible.
-
-Research actual neighborhoods, not just city names.
-
-### 2. Find Year-Round Rentals You Could Accept
-
-Ask about lease length, deposits, utilities, heating, stairs, furnishings, and seasonal restrictions.
-
-Use available properties rather than a friend’s remarkable deal from several years ago.
-
-### 3. Price Healthcare for Your Household
-
-Use your actual ages and medical histories.
-
-A generic “insurance starts at” advertisement is not a budget.
-
-### 4. Get an After-Tax Income Estimate
-
-Include both countries’ rules and any relevant California obligations.
-
-You need to know what is available to spend—not just what your pension statement says.
-
-### 5. Budget for Trips Home
-
-Estimate a realistic annual travel cost and divide it by 12.
-
-Family visits are part of retirement spending, not an accounting surprise.
-
-### 6. Plan an Ordinary-Life Scouting Stay
-
-Buy groceries, use transportation, view apartments, and spend a few evenings doing absolutely nothing special.
-
-A successful scouting trip should answer more than whether you enjoyed lunch.
+![California and Portugal neighborhood](https://images.unsplash.com/photo-1513377888081-794d8e958972?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDQ1NTl8MHwxfHNlYXJjaHwyfHxQb3J0dWdhbCUyMHN0cmVldCUyMGxpZmV8ZW58MHwwfHx8MTc5NTQ3MDc0MHww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## Frequently Asked Questions
 
-### Can a Couple Retire in Portugal on $3,500 a Month?
+### Can a retired American couple get Portugal's D7 visa with passive income?
 
-Potentially, especially with modest rent and flexibility about location.
+Yes, if you show passive income and savings above the bar, which guides put near $1,504 a month for a couple in 2026 (150% of Portugal's minimum wage of about $1,003). Your consulate sets the final checklist, so confirm it before you sign a lease. ([portugalist.com](https://www.portugalist.com/d7-visa-requirements/))
 
-The deciding factors are actual housing costs, after-tax income, healthcare, transportation needs, and the exchange rate.
+### Can a couple live on $3,500 a month in Lisbon?
 
-Do not treat a national average as a promise about a specific neighborhood.
+Yes, if you rent outside the center: a one-bedroom there averages about $1,176 a month, leaving roughly $2,150 for everything else. Central Lisbon at about $1,571 for a one-bedroom cuts that margin, and Numbeo's Lisbon data rests on 215 contributors. ([numbeo.com](https://www.numbeo.com/cost-of-living/in/Lisbon))
 
-### Is $3,500 Enough for Two Retirees in California?
+### Why is $3,500 a month tight for a couple renting in California?
 
-It can be, depending heavily on housing and healthcare.
+The median San Diego one-bedroom rents for $1,972 a month in November 2026, before utilities of about $259. Other California metros run higher or lower, so price your own city. ([apartmentlist.com](https://www.apartmentlist.com/rent-report/ca/san-diego))
 
-Published one-bedroom rents of $1,200 in Fresno versus $2,322 in San Diego show why one statewide answer is misleading. Existing homeowners have a different calculation again.
+### Does Medicare cover routine healthcare in Portugal?
 
-Sources: [Zillow Fresno](https://www.zillow.com/rental-manager/market-trends/fresno-ca/) and [Zillow San Diego](https://www.zillow.com/rental-manager/market-trends/san-diego-ca/).
+No. Medicare usually does not cover health care outside the U.S., apart from a few exceptions, and Part D drug plans do not cover medicine you buy abroad. The 2026 Part B premium is $202.90 a month per person whether you use it or not. ([medicare.gov](https://www.medicare.gov/coverage/travel-outside-the-u.s.))
 
-### Does Buying a Home in Portugal Solve Residency?
+### Do I still owe U.S. taxes if I retire to Portugal?
 
-Treat housing and immigration as separate decisions.
+Yes. U.S. citizens and resident aliens abroad are taxed on worldwide income and must file a return each year, with a 2-month automatic filing extension for those abroad. Ask a cross-border tax adviser how Portugal treats your pension. ([irs.gov](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad))
 
-The D7 requires an eligible application with income and supporting documents. Having accommodation is only part of that process.
+## Check Today's Information Before You Decide
 
-Do not assume a property purchase by itself gives you permission to live there long-term.
+- [State Department travel advisories feed (Portugal entry)](https://cadataapi.state.gov/api/TravelAdvisories)
+- [CMS: 2026 Medicare Parts A and B premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles)
+- [Medicare.gov: travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u.s.)
+- [Portuguese government: 2026 minimum wage](https://portugal.gov.pt/en/gc25/communication/news/government-increases-minimum-wage-to-920-euros-in-2026)
 
-Source: [Expatica’s American retirement guide](https://www.expatica.com/pt/moving/visas/retiring-in-portugal-as-an-american-2175013/).
+## Sources & Verification
 
-### Can We Rely on the Old NHR Pension Tax Treatment?
+- [U.S. State Department travel advisories feed](https://cadataapi.state.gov/api/TravelAdvisories) — Portugal Level 1, published December 22, 2025.
+- [CMS: 2026 Medicare Parts A and B premiums and deductibles](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) — Part B premium $202.90, Part B deductible $283, Part A deductible $1,736.
+- [Medicare.gov: travel outside the U.S.](https://www.medicare.gov/coverage/travel-outside-the-u.s.) — Original Medicare coverage abroad.
+- [Portuguese government: minimum wage 2026](https://portugal.gov.pt/en/gc25/communication/news/government-increases-minimum-wage-to-920-euros-in-2026) — Monthly minimum wage, the base for the D7 income bar.
+- [Portugalist: D7 visa requirements](https://www.portugalist.com/d7-visa-requirements/) — Third-party reading of the couple income and savings figures.
+- [Numbeo: Lisbon](https://www.numbeo.com/cost-of-living/in/Lisbon) and the San Diego page at numbeo.com/cost-of-living/in/San-Diego — User-submitted prices, updated November 20 and 21, 2026.
+- [Apartment List: San Diego rent report](https://www.apartmentlist.com/rent-report/ca/san-diego) — Median one-bedroom rent, November 2026.
+- [IRS: U.S. citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad) — Worldwide income and filing rules.
 
-Not as a new arrival without confirming eligibility.
-
-The old regime is no longer generally open to newcomers. Transitional and existing-beneficiary rules depend on individual circumstances.
-
-Source: [Kiplinger’s Portugal retirement guide](https://www.kiplinger.com/retirement/happy-retirement/where-to-retire-living-in-portugal).
-
-### Should We Rent Before Buying?
-
-Renting first gives you a chance to test the neighborhood, housing quality, weather, and everyday routine before making a much larger commitment.
-
-Your favorite vacation destination and your best retirement home may not be the same place.
-
-## Final Verdict: Worth Testing, Not Buying Sight Unseen
-
-Portugal deserves a place on the shortlist for a couple living on $3,500 a month.
-
-The strongest case is a modest rental in a carefully chosen location—not an assumption that every Portuguese beach town is affordable.
-
-California deserves an honest comparison, too. A paid-off home or lower-cost rental may offer more financial security than starting over abroad.
-
-Our verdict: worth testing, with housing, healthcare, taxes, and residency settled before committing.
-
-Compare the lives you could actually live. Leave the postcard out of the spreadsheet.
-
-The goal is not to win an argument about which place is cheaper. It is to find a home where you can pay the bills, get the care you need, see the people you love—and still say yes when someone suggests lunch.
-
-## Check Today’s Information Before You Decide
-
-- [Fresno rental-market information](https://www.zillow.com/rental-manager/market-trends/fresno-ca/)
-- [San Diego rental-market information](https://www.zillow.com/rental-manager/market-trends/san-diego-ca/)
-- [San Jose rental-market information](https://www.zillow.com/rental-manager/market-trends/san-jose-ca/)
-- [Retiring in Portugal as an American](https://www.expatica.com/pt/moving/visas/retiring-in-portugal-as-an-american-2175013/)
-- [Portugal retirement visa guidance](https://www.cscadvogada.com/portugal-retirement-visa)
-- [Medicare coverage outside the United States](https://www.medicare.gov/publications/11037-medicare-coverage-outside-the-united-states.pdf)
-- [IRS guidance for U.S. citizens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad)
+Information checked: November 24, 2026
 
 ## Related Golden Horizons Guides
 
@@ -363,10 +169,12 @@ The goal is not to win an argument about which place is cheaper. It is to find a
 
 ## About Golden Horizons
 
-Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad.
+Golden Horizons helps Americans approaching retirement or already retired explore what their Social Security, pension income, and savings might make possible abroad. We focus on the decision that matters: what your money may make possible, whether you can legally stay, whether healthcare and ordinary daily life work for you, and what you should test before committing. Travel first. Test the reality. Then decide.
 
-We focus on the questions that matter: Can you afford it? Can you legally stay? Can you get the care you need? And will you actually enjoy living there?
+## Final Verdict
 
-Travel first. Test the reality. Then decide.
+**Golden Horizons Verdict: 🟡 WORTH TESTING — VERIFY COSTS**
 
-*Information reviewed November 24, 2026. Rental listings, exchange rates, visa requirements, insurance terms, and tax rules can change. Illustrative budgets are planning tools, not guarantees. This article provides general information, not personalized tax, legal, immigration, or financial advice.*
+Portugal can give a couple more room than San Diego, but only outside central Lisbon and only if the D7 and a private health policy work for you. The gap is about $950 a month on rent, utilities and internet, and a Medicare premium of $405.80 for two keeps coming out whether you use it or not.
+
+This move fits couples with steady income above the D7 bar who will rent outside the center. It frustrates anyone who wants a central Lisbon address on a $3,500 budget. Get two real lease quotes and two insurance quotes, then compare.
